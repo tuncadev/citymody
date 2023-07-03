@@ -99,6 +99,18 @@ p {
 .top-mb-menu .account {
   width: 100%; }
 
+header.site-header .right-header {
+  width: 20%; }
+
+header.site-header .left-header {
+  width: 80%; }
+
+header.site-header .left-header .d-none.d-xl-block {
+  width: 100%; }
+
+ul#menu-citymody-home-tr li:last-child {
+  float: right; }
+
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
   background-color: #47B0FB !important;
