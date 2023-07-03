@@ -947,3 +947,6 @@ form#new_project label {
 .cntr-msg .close:hover { color: orange; }
 
 /* Job apply success */
+.textt {
+	color: #fff;
+}
