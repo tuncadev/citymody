@@ -1,0 +1,30 @@
+.submit-company-dashboard {
+	.submit-company-header {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		margin-top: 32px;
+		margin-bottom: 24px;
+	}
+	.entry-title h4 {
+		margin-bottom: 0;
+	}
+	.civi-button.button-rounded {
+		border-color: $border_color;
+		color: $primary_color;
+		margin-right: 10px;
+	}
+	.header-about{
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		@include flex-wrap();
+		.civi-button{
+			margin-bottom: 24px;
+			i{
+				margin-left: 5px;
+				margin-right: 0;
+			}
+		}
+	}
+}

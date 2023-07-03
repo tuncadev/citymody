@@ -1,0 +1,84 @@
+@import "settings/mixins";
+
+.elementor-widget-civi-image-animation {
+	--civi-animation-transformX-0: 20px;
+	--civi-animation-transformY-0: 60px;
+	--civi-animation-transformX-100: 160px;
+	--civi-animation-transformY-100: -40px;
+	--civi-animation-delay: 2000ms;
+	--civi-animation-jump-top: 3%;
+	--civi-animation-jump-left: 3%;
+	&.civi-style-jump{
+		&.jump-top{
+			.civi-image {
+				animation: jump_top var(--civi-animation-delay) infinite ease-in-out
+				alternate;
+			}
+		}
+		&.jump-left{
+			.civi-image {
+				animation: jump_left var(--civi-animation-delay) infinite ease-in-out
+				alternate;
+			}
+		}
+	}
+	&.civi-style-circular-motion {
+		animation: translateAnimation var(--civi-animation-delay) infinite
+				ease-in-out alternate,
+			zindexAnimation calc(var(--civi-animation-delay) * 2) infinite ease-in-out;
+		.civi-image {
+			animation: scaleAnimation var(--civi-animation-delay) infinite ease-in-out
+				alternate;
+			transform: scale(0.5);
+			animation-delay: calc(var(--civi-animation-delay) / -2);
+		}
+	}
+}
+
+@keyframes translateAnimation {
+	0% {
+		@include transform(
+			translateX(var(--civi-animation-transformX-0))
+				translateY(var(--civi-animation-transformY-0))
+		);
+	}
+	100% {
+		@include transform(
+			translateX(var(--civi-animation-transformX-100))
+				translateY(var(--civi-animation-transformY-100))
+		);
+	}
+}
+
+@keyframes scaleAnimation {
+	100% {
+		@include transform(scale(1));
+	}
+}
+
+@keyframes zindexAnimation {
+	25% {
+		z-index: 1;
+	}
+	75% {
+		z-index: -1;
+	}
+}
+
+@keyframes jump_left {
+	0% {
+		@include transform(translateX(0));
+	}
+	100% {
+		@include transform(translateX(var(--civi-animation-jump-left)));
+	}
+}
+
+@keyframes jump_top {
+	0% {
+		@include transform(translateY(0));
+	}
+	100% {
+		@include transform(translateY(var(--civi-animation-jump-top)));
+	}
+}

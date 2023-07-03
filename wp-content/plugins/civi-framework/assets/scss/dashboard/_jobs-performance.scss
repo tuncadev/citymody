@@ -1,0 +1,28 @@
+.jobs-performance-dashboard{
+  .action-search input {
+    width: 300px;
+  }
+  .table-dashboard{
+    .applied {
+      font-weight: 500;
+      color: $secondary_color;
+      span{
+        color: $accent_color;
+      }
+      i{
+        padding-left: 5px;
+        color: $secondary_color;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .jobs-performance-dashboard {
+    .action-search input {
+      width: 100%;
+    }
+    .civi-chart-warpper{
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+a:4:{s:8:"template";s:10:"talenthunt";s:4:"mods";a:9:{i:0;b:0;s:18:"nav_menu_locations";a:1:{s:7:"primary";i:36;}s:18:"custom_css_post_id";i:1538;s:15:"front_page_name";s:4:"1717";s:14:"page_for_posts";s:4:"1945";s:15:"compcard_styles";s:16:"compcard_style-2";s:39:"txt_setting_for_compca_card_button_text";s:17:"Download Sed Card";s:16:"header_textcolor";s:6:"000000";s:16:"background_color";s:6:"ffffff";}s:7:"options";a:2:{s:9:"site_icon";s:1:"0";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:81:"/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+
+";}

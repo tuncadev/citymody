@@ -1,0 +1,77 @@
+#form-invite-popup {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all 0.3s);
+  .bg-overlay {
+    opacity: 1;
+    visibility: unset;
+  }
+  .invite-popup {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 400px;
+    z-index: 9;
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
+  }
+  .btn-close {
+    font-size: 20px;
+    position: absolute;
+    right: 35px;
+  }
+  ul.custom-scrollbar {
+    padding-left: 0;
+    padding-right: 15px;
+    list-style: none;
+    margin-bottom: 0;
+    max-height: 175px;
+    overflow: auto;
+    input {
+      border: 2px solid $secondary_color;
+      margin-top: 7px;
+      margin-right: 3px !important;
+      min-width: 14px;
+    }
+    label {
+      margin-bottom: 0;
+      margin-left: 5px;
+    }
+  }
+  li{
+    @include d-flex();
+    + li{
+      margin-top: 5px;
+    }
+  }
+  h5 {
+    font-size: 24px;
+  }
+  p {
+    color: $secondary_color;
+  }
+  input + input {
+    margin-top: 24px;
+  }
+  .button-warpper {
+    @include d-flex();
+    @include align-items-center();
+    margin-top: 15px;
+    .civi-button {
+      text-align: center;
+      + .civi-button {
+        margin-left: 16px;
+      }
+    }
+    .btn-loading{
+      display: none;
+    }
+  }
+}

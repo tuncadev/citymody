@@ -1,0 +1,79 @@
+.civi-team-member-carousel .social-networks a, .civi-team-member-carousel .social-networks, .civi-team-member-carousel .info, .civi-team-member-carousel .overlay, .civi-team-member-carousel .photo {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.civi-team-member-carousel .civi-team-member {
+  position: relative;
+}
+.civi-team-member-carousel .civi-team-member:hover .photo {
+  box-shadow: 0 55px 40px -40px rgba(51, 51, 51, 0.25);
+}
+.civi-team-member-carousel .civi-team-member:hover .overlay,
+.civi-team-member-carousel .civi-team-member:hover .info,
+.civi-team-member-carousel .civi-team-member:hover .social-networks {
+  opacity: 1;
+  visibility: visible;
+}
+.civi-team-member-carousel .photo {
+  position: relative;
+}
+.civi-team-member-carousel .photo img {
+  width: 100%;
+}
+.civi-team-member-carousel .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(17, 17, 17, 0.8);
+  z-index: 0;
+}
+.civi-team-member-carousel .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 30px 27px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+.civi-team-member-carousel .name {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.civi-team-member-carousel .position {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.38px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.civi-team-member-carousel .description {
+  color: #fff;
+  margin-top: 10px;
+}
+.civi-team-member-carousel .social-networks {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  text-align: right;
+  opacity: 0;
+  visibility: hidden;
+}
+.civi-team-member-carousel .social-networks a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 0;
+  color: #fff;
+  padding: 10px 8px;
+}
+
+/*# sourceMappingURL=team-member-carousel.css.map */

@@ -1,0 +1,31 @@
+.civi-light-gallery .civi-overlay {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.civi-light-gallery .civi-box:hover .civi-overlay {
+  visibility: visible;
+  opacity: 0.9;
+}
+.civi-light-gallery .civi-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.civi-light-gallery .civi-overlay > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=image-gallery.css.map */

@@ -1,0 +1,157 @@
+Version 1.2.1
+====================
+
+== Removed un used elementor kaya page widget.
+
+Version 1.2.0
+====================
+
+-- Added "Upload Media" custom field in "Ultimate Member > Forms"
+-- Minor css fixes.
+-- Modified Member Directory pages
+
+After update check this help file:
+
+http://kayapati.com/help/knowledgebase/empty-directory-pages-issues-fixed/
+
+Version 1.1.9
+====================
+-- Updated tabs.
+
+Note: removed Pods tabs completely and add tabs from Form Rows. 
+
+Here you can find help file:
+http://kayapati.com/help/knowledgebase/how-to-create-profile-tabs/
+
+
+Version 1.1.8
+====================
+
+-- Demo data updated.
+
+Version 1.1.7
+====================
+
+-- Fixed kaya Elementor widget installation issue.
+
+Version 1.1.6
+====================
+
+-- Fixed post single page issue for any third party plugins,
+
+
+
+Version 1.1.5
+====================
+
+-- Improved Profile photo appearance.
+-- Improved search filter styles.
+-- Added Profile photo hover animation style.
+-- Improved Profile page sections style.
+-- Added Demo data styles.
+
+
+Version 1.1.4
+====================
+
+-- Demo content modified.
+
+-- Added Dummy Profile images for demo use only, you can not re use them on your site.
+
+-- Modified search filters.
+
+-- Fixed Loader issue.
+
+-- Fixed Shortlist Member Icon width.
+
+-- Removed Indipendente User role and recreated Talent role as default role.
+
+-- Added Talent Categories section where Talent can select upto 3 Categories.
+
+
+Version 1.1.3
+====================
+-- Added New Feature to customise the the colours with out page refresh.
+-- Order of Panels are re arranged to ease of use.
+-- Created Tabbed Talent Directory Page.
+-- Added Shortlist style of Plus icon, if Shortlist Member plugin activated.
+-- Added options settings in customiser for changing the text strings for Shortlist Member plugin/addon.
+
+
+Version 1.1.2
+====================
+-- Reduced Demo Content file size from 50MB to 6 MB.
+-- Fixed Default profile tab content display issue.
+-- Minor css fixes.
+
+Version 1.1.0
+
+Version 1.1.1
+====================
+-- Drastic improvement in importing demo content.
+
+Version 1.1.0
+====================
+BIG CHANGES
+—- Now theme fully support for Ultimate Member User Profiles, you can use wp users as Talent Profiles, no need to create Talent CPT posts.
+-- If you still want Talent CPT posts, you can continue it but in future we will deprecate them, so I will provide support for the CPT post type talenthunt next 6 moths.
+
+Note: in new updates, there won't be any shortlist option.
+
+Here you can see all video tutorial for new updated functionality:
+http://kayapati.com/help/knowledgebase_category/ultimate-member-based-themes/
+==================================================================================
+
+version 1.0.8
+====================
+-- Minor css changes.
+
+version 1.0.7
+====================
+-- Mobile responsive shortlist issue fixed.
+
+version 1.0.6
+====================
+-- Gutenberg Support Added.
+-- Minor Changes in customizer.
+-- Fixed Minor Issues Like Sanitization callback's etc..,
+-- Live customizer issue fixed.
+-- Header & Footer Elementor compactibility issue fixed.
+
+version 1.0.5
+====================
+-- New tag cloud widget added in single page.
+-- New Feature added in talenthunt Single Page Tabs Enable/Disable Option.
+
+version 1.0.4
+====================
+-- RTL Support Added.
+-- Added .Po file for language translation.
+
+Version 1.0.3
+====================
+Please note that theme has been done with major Updates so old buyers who bought this theme before 20-03-2017 contact us via our support forum http://support.kayapati.com/
+
+New buyers can ignore the above message can use with our any issues.
+
+Updates:
+-- Major changes has been done.
+—- Removed Kaya Roles Manager and replace with Members Plugin.
+—- Added Pods Post access Manager.
+-- Search Filter functionaly has been changed. 
+-- Elementor Header Footer Added.
+-- Registraion and Login form has changed and working with ultimate member plugin
+-- "Anywhere Elementor" Plugin Added for page shortcode.
+
+version 1.0.2
+====================
+-- One Click Demo Updated.
+
+version 1.0.1
+====================
+-- Shortlist Button in Menu Issue Fixed.
+
+version 1.0.0
+====================
+-- Initially Released.
+

@@ -1,0 +1,143 @@
+/*
+Theme Name: talenthunt
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: right;
+}
+.alignright {
+	display: inline;
+	float: left;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+}
+.page-links {
+    clear: both;
+    margin: 0px 15px;
+    display: block;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Header Section
+--------------------------------------------------------------*/
+div#main-nav{
+	float:right;
+}
+.header-section-wrapper {
+    float: left;
+}
+.header-right-section {
+    float: left;
+}
+#logo {
+    float: right;
+}
+#header-navigation {
+    float: left;
+}
+.top-nav li {
+    float: right;
+}
+.shortlist-align{
+	float: right;
+}
+.toggle_search_wrapper{
+	right: auto!important;
+	left: 0;
+}
+.sub-menu li a{
+	text-align: right;
+}
+.single_page_details .general-meta-fields-info-wrapper li{
+	width: 46.2%;
+	margin-left: 30px;
+	margin-right: 0px;
+}
+.single_page_details{
+	margin-right: 30px;
+	margin-left: 0px;
+}
+.single_page_image, .pods_cpt_single_compcard{
+	float: right;
+}
+.cpt_posts_add_remove{
+	float: right;
+	margin-left: 10px;
+}
+.single_page_details .general-meta-fields-info-wrapper strong{
+	float: right;
+}
+.gallery-item{
+	margin-right: 0%;
+	margin-left: 1.5%;
+}
+.tagcloud a{
+	float: right;
+	margin-left: 5px;
+	margin-right: 0px;
+}
+h3.widget-title{
+	text-align: right;
+}
+ul.tabs_content_wrapper li{
+	margin-right: 0px;
+	margin-left: 10px;
+}
+.single-page-meta-content-wrapper{
+	margin-top: 20px;
+}
+.single-page-meta-content-wrapper h3{
+	text-align: right;
+}
+.single-page-meta-content-wrapper h2, .single-page-meta-content-wrapper h3{
+	margin-bottom: 20px;
+}
+table.list-table-content-wrapper {
+    text-align: right;
+}
+.kaya-table th{
+	text-align: right;
+}
+.kaya-table td{
+	padding: 0 10px;
+}
+.filtertabs ul{
+	text-align: right!important;
+}
+.post-content-wrapper li{
+	margin-right: 0%;
+	margin-left: 1.5%;
+}
+a.item_button i{
+	-webkit-transform: rotate(135deg);
+}
+a.item_button{
+	right: -40px;
+	-webkit-transform: rotate(45deg);
+	left: auto;
+}
+.kaya-post-content-wrapper ul li{
+	float: right;
+}
+@media only screen and (max-width: 1025px){
+	.single_page_details .general-meta-fields-info-wrapper li{
+		width: 100%;
+	}
+}

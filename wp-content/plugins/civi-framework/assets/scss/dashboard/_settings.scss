@@ -1,0 +1,31 @@
+.settings-dashboard {
+	max-width: 700px;
+	.civi-button {
+		margin-bottom: 24px;
+	}
+	.delete-account {
+		margin-top: 32px;
+		color: red;
+		font-weight: 500;
+		display: block;
+		color: red !important;
+	}
+}
+.civi-user-avatar{
+	@include d-flex();
+	@include align-items-center();
+	margin-bottom: 32px;
+	.des-avatar{
+		margin-top: 30px;
+		margin-bottom: 0;
+		font-size: 14px;
+		max-width: 340px;
+		color: $secondary_color;
+	}
+}
+
+@media (max-width: 375px) {
+	.civi-user-avatar{
+		display: block;
+	}
+}

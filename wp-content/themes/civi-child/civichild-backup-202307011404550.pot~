@@ -1,0 +1,202 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CiviChild\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-01 13:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2\n"
+"X-Domain: civichild"
+
+#: page-post-project-en.php:160 page-post-project.php:160
+msgid "18-25"
+msgstr ""
+
+#: page-post-project-en.php:161 page-post-project.php:161
+msgid "25-30"
+msgstr ""
+
+#: page-post-project-en.php:162 page-post-project.php:162
+msgid "30-35"
+msgstr ""
+
+#: page-post-project-en.php:163 page-post-project.php:163
+msgid "35-40"
+msgstr ""
+
+#: page-post-project-en.php:164 page-post-project.php:164
+msgid "40+"
+msgstr ""
+
+#: includes/class-cookie.php:38
+msgid "Accept"
+msgstr ""
+
+#: page-post-project-en.php:157 page-post-project.php:157
+msgid "Age Range"
+msgstr ""
+
+#: page-post-project-en.php:136 page-post-project.php:136
+msgid "City"
+msgstr ""
+
+#. Name of the theme
+msgid "CiviChild"
+msgstr ""
+
+#: page-post-project-en.php:92 page-post-project.php:92
+msgid "Company E-mail"
+msgstr ""
+
+#: page-post-project-en.php:100 page-post-project.php:100
+msgid "Company Name"
+msgstr ""
+
+#: page-post-project-en.php:105 page-post-project.php:105
+msgid "Example: Looking for a female hostess for the TV program."
+msgstr ""
+
+#: page-post-project-en.php:169 page-post-project.php:169
+msgid "Expiration Date of Project"
+msgstr ""
+
+#: page-post-project-en.php:152 page-post-project.php:152
+msgid "Female"
+msgstr ""
+
+#: page-post-project-en.php:88 page-post-project.php:88
+msgid "Full Name"
+msgstr ""
+
+#: page-post-project-en.php:149 page-post-project.php:149
+msgid "Gender"
+msgstr ""
+
+#: page-new-project-submit-success.php:24
+#: page-new-project-submit-success-en.php:24
+msgid "Great! We have received your submission"
+msgstr ""
+
+#: page-registration-successful.php:24 page-registration-successful-en.php:24
+msgid "Great! You’ve registered! Thank you for registration."
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://uxper.co/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://civi.uxper.co/"
+msgstr ""
+
+#: page-post-project-en.php:153 page-post-project.php:153
+msgid "Male"
+msgstr ""
+
+#: includes/class-cookie.php:39
+msgid "Not Accept"
+msgstr ""
+
+#: page-post-project-en.php:96 page-post-project.php:96
+msgid "Phone Number"
+msgstr ""
+
+#: page-post-project-en.php:159 page-post-project.php:159
+msgid "Please Choose Age Range"
+msgstr ""
+
+#: page-registration-successful.php:28 page-registration-successful-en.php:28
+msgid "Please keep your profile filled and updated."
+msgstr ""
+
+#: page-post-project-en.php:114 page-post-project.php:114
+msgid "Please Select Category"
+msgstr ""
+
+#: page-post-project-en.php:125 page-post-project.php:125
+msgid "Please Select Category First"
+msgstr ""
+
+#: page-post-project-en.php:138 page-post-project.php:138
+msgid "Please Select City"
+msgstr ""
+
+#: page-post-project-en.php:151 page-post-project.php:151
+msgid "Please Select Gender"
+msgstr ""
+
+#: page-post-project-en.php:145 page-post-project.php:145
+msgid "Please Select Provience"
+msgstr ""
+
+#: page-post-project-en.php:81 page-post-project.php:81
+msgid "Post a project to find the best talent for your next project."
+msgstr ""
+
+#: includes/class-cookie.php:37
+msgid "Privacy Policy"
+msgstr ""
+
+#: page-post-project-en.php:112 page-post-project.php:112
+msgid "Project Category"
+msgstr ""
+
+#: page-post-project-en.php:109 page-post-project.php:109
+msgid "Project Day - Requirements - Event Details"
+msgstr ""
+
+#: page-post-project-en.php:104 page-post-project.php:104
+msgid "Project Title"
+msgstr ""
+
+#: page-post-project-en.php:143 page-post-project.php:143
+msgid "Provience"
+msgstr ""
+
+#: includes/class-templates2.php:182 includes/class-templates.php:182
+#: templates/header/header.php:17
+msgid "Register"
+msgstr ""
+
+#: page-post-project-en.php:108 page-post-project.php:108
+msgid "Short Description"
+msgstr ""
+
+#: page-post-project-en.php:123 page-post-project.php:123
+msgid "Skill Category"
+msgstr ""
+
+#. Description of the theme
+msgid "This is a child theme of Civi"
+msgstr ""
+
+#: includes/class-cookie.php:37
+#, php-format
+msgid "This site uses cookies for the best user experience. %s"
+msgstr ""
+
+#. Author of the theme
+msgid "Uxper"
+msgstr ""
+
+#: page-new-project-submit-success.php:28
+#: page-new-project-submit-success-en.php:28
+msgid "We will contact you as soon as our moderators review your submission"
+msgstr ""
+
+#: page-new-project-submit-success.php:32
+#: page-new-project-submit-success-en.php:32
+msgid "You will now be redirected to CityMody Home page in:"
+msgstr ""
+
+#: page-registration-successful.php:32 page-registration-successful-en.php:32
+msgid "You will now be redirected to your profile page in:"
+msgstr ""

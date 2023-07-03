@@ -1,0 +1,70 @@
+.company-head-details {
+	.civi-company-header-top {
+		@include d-flex();
+		@include align-items-center();
+		.logo-comnpany {
+			width: 64px;
+			height: 64px;
+			img {
+				border-radius: 50%;
+				height: 100%;
+			}
+		}
+	}
+	.title-wapper {
+		@include d-flex();
+		@include align-items-center();
+		h1 {
+			font-size: 28px;
+			font-weight: 500;
+		}
+		i {
+			font-size: 8px;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: $accent_color;
+			line-height: 15px;
+			text-align: center;
+			color: #fff;
+			margin-left: 5px;
+		}
+	}
+	.logo-comnpany {
+		margin-right: 16px;
+	}
+	.company-info {
+		@include d-flex();
+		@include align-items-center();
+		@include flex-wrap();
+	}
+	.company-warpper {
+		@include d-flex();
+		@include flex-wrap();
+		@include align-items-center();
+		.cate-warpper {
+			font-weight: 500;
+			margin-right: 8px;
+			&:not(:nth-child(2)):before {
+				content: ",";
+			}
+		}
+		i {
+			font-size: 18px;
+			color: $secondary_color;
+			margin-right: 8px;
+			font-weight: 400;
+		}
+	}
+	.civi-company-header-bottom {
+		@include d-flex();
+		@include flex-wrap();
+		margin-top: 32px;
+		a {
+			margin-right: 8px;
+		}
+		.btn-webs {
+			border-color: $primary_color;
+		}
+	}
+}

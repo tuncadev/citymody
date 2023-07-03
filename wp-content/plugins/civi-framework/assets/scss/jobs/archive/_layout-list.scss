@@ -1,0 +1,59 @@
+.civi-jobs-item.layout-list {
+	padding-bottom: 20px;
+	.jobs-archive-header {
+		@include d-flex();
+		@include justify-content-between();
+	}
+	.jobs-header-left {
+		@include d-flex();
+		@include align-items-center();
+		margin-right: 15px;
+	}
+	.jobs-header-right {
+		@include d-flex();
+		@include align-items-center();
+		height: 24px;
+	}
+	.jobs-archive-footer {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+	}
+	.jobs-footer-left {
+		margin-right: 15px;
+	}
+	.logo-comnpany {
+		margin-right: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.civi-jobs-item.layout-list {
+		.jobs-archive-header {
+			position: relative;
+		}
+		.logo-comnpany {
+			margin-bottom: 25px;
+			margin-right: 0;
+		}
+		.jobs-header-left {
+			display: block;
+			h3 {
+				margin-bottom: 12px;
+			}
+		}
+		.jobs-header-right {
+			position: absolute;
+			right: 0;
+		}
+		.jobs-left-inner {
+			margin-left: 0;
+		}
+		.jobs-archive-footer {
+			display: block;
+		}
+		.jobs-footer-right {
+			margin-top: 10px;
+		}
+	}
+}

@@ -1,0 +1,485 @@
+{
+  "enable_cookie": "0",
+  "civi-cv-type": "doc,docx,pdf",
+  "civi_image_type": "jpg,jpeg,png,gif,webp",
+  "civi_max_gallery_images": "10",
+  "civi_image_max_file_size": "1400kb",
+  "enable_rtl_mode": "0",
+  "header_script": "",
+  "footer_script": "",
+  "enable_apply_login": "0",
+  "enable_job_alerts": "1",
+  "civi_job_alerts_page_id": "7847",
+  "enable_status_urgent": "1",
+  "number_status_urgent": "221",
+  "jobs_number_days": "30",
+  "archive_jobs_layout": "layout-list",
+  "archive_jobs_items_amount": "12",
+  "jobs_pagination_type": "number",
+  "jobs_filter_sidebar_option": "filter-left",
+  "enable_jobs_filter_top": "1",
+  "enable_jobs_show_map": "0",
+  "jobs_map_postion": "map-right",
+  "enable_jobs_show_des": "0",
+  "enable_job_login_to_view": "0",
+  "enable_sticky_sidebar_type": "1",
+  "enable_single_jobs_salary": "1",
+  "enable_single_jobs_related": "1",
+  "enable_single_jobs_apply": "1",
+  "enable_toggle_show_more_apply": "1",
+  "enable_date_posted": "1",
+  "enable_closing_date": "1",
+  "single_jobs_image_size": "770x250",
+  "jobs_details_order": {
+    "enable_sp_head": "enable_sp_head",
+    "sort_order": "enable_sp_head|enable_sp_insights|enable_sp_description|enable_sp_skills|enable_sp_gallery|enable_sp_video|enable_sp_audio|enable_sp_map",
+    "enable_sp_insights": "enable_sp_insights",
+    "enable_sp_description": "enable_sp_description",
+    "enable_sp_skills": "enable_sp_skills",
+    "enable_sp_gallery": "enable_sp_gallery",
+    "enable_sp_map": "enable_sp_map"
+  },
+  "jobs_details_sidebar_order": {
+    "enable_sidebar_sp_apply": "enable_sidebar_sp_apply",
+    "sort_order": "enable_sidebar_sp_apply|enable_sidebar_sp_insights|enable_sidebar_sp_company",
+    "enable_sidebar_sp_company": "enable_sidebar_sp_company"
+  },
+  "social_sharing": [
+    "facebook",
+    "twitter",
+    "linkedin",
+    "tumblr",
+    "pinterest",
+    "whatapp"
+  ],
+  "auto_publish": "0",
+  "auto_publish_edited": "0",
+  "hide_jobs_group_fields": "",
+  "hide_jobs_fields": "",
+  "enable_jobs_search_bg": "1",
+  "jobs_search_color": "",
+  "jobs_search_image": {
+    "id": "7891",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2023/03/bg-sidebar-search.webp"
+  },
+  "jobs_search_fields": {
+    "top": {
+      "jobs-location": "Location",
+      "jobs-categories": "Categories",
+      "__no_value__": "__no_value__"
+    },
+    "sidebar": {
+      "jobs-type": "Type",
+      "jobs-salary": "Salary",
+      "jobs-career": "Career",
+      "jobs-experience": "Experience",
+      "__no_value__": "__no_value__"
+    },
+    "disable": { "jobs-skills": "Skills", "__no_value__": "__no_value__" }
+  },
+  "jobs_search_fields_jobs-categories": "<i class=\"far fa-folder\"></i>",
+  "jobs_search_fields_jobs-type": "",
+  "jobs_search_fields_jobs-career": "",
+  "jobs_search_fields_jobs-experience": "",
+  "archive_company_layout": "layout-list",
+  "archive_company_thumbnail_size": "576x327",
+  "archive_company_items_amount": "12",
+  "company_pagination_type": "number",
+  "company_filter_sidebar_option": "filter-left",
+  "enable_company_filter_top": "1",
+  "enable_company_show_map": "0",
+  "company_map_postion": "map-right",
+  "enable_company_show_des": "1",
+  "enable_company_login_to_view": "0",
+  "enable_sticky_company_sidebar_type": "0",
+  "enable_single_company_related": "1",
+  "enable_single_company_review": "1",
+  "single_company_style": "cover-img",
+  "single_company_image_size": "770x250",
+  "company_details_order": {
+    "enable_sp_head": "enable_sp_head",
+    "sort_order": "enable_sp_head|enable_sp_overview|enable_sp_gallery|enable_sp_video|enable_sp_audio",
+    "enable_sp_overview": "enable_sp_overview",
+    "enable_sp_gallery": "enable_sp_gallery",
+    "enable_sp_video": "enable_sp_video",
+    "enable_sp_audio": "enable_sp_audio"
+  },
+  "company_details_sidebar_order": {
+    "enable_sidebar_sp_info": "enable_sidebar_sp_info",
+    "sort_order": "enable_sidebar_sp_info|enable_sidebar_sp_location",
+    "enable_sidebar_sp_location": "enable_sidebar_sp_location"
+  },
+  "company_auto_publish": "0",
+  "company_auto_publish_edited": "0",
+  "value_founded_min": "2010",
+  "value_founded_max": "2023",
+  "hide_company_group_fields": "",
+  "hide_company_fields": "",
+  "enable_company_search_bg": "1",
+  "company_search_color": "",
+  "company_search_image": {
+    "id": "0",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2023/03/bg-sidebar-search.webp"
+  },
+  "company_search_fields": {
+    "top": {
+      "company-location": "Location",
+      "company-categories": "Categories",
+      "__no_value__": "__no_value__"
+    },
+    "sidebar": {
+      "company-rating": "Rating",
+      "company-size": "Size",
+      "company-founded": "Founded",
+      "__no_value__": "__no_value__"
+    },
+    "disable": { "__no_value__": "__no_value__" }
+  },
+  "company_search_fields_company-categories": "<i class=\"far fa-folder\"></i>",
+  "company_search_fields_company-rating": "",
+  "company_search_fields_company-founded": "",
+  "company_search_fields_company-size": "",
+  "archive_candidate_layout": "layout-list",
+  "archive_candidate_items_amount": "12",
+  "candidate_pagination_type": "number",
+  "candidate_filter_sidebar_option": "filter-left",
+  "enable_candidate_filter_top": "1",
+  "enable_candidate_show_map": "0",
+  "candidate_map_postion": "map-right",
+  "enable_candidate_show_des": "1",
+  "enable_candidate_login_to_view": "0",
+  "enable_sticky_candidate_sidebar_type": "0",
+  "enable_single_candidate_related": "1",
+  "enable_single_candidate_review": "1",
+  "single_candidate_style": "cover-img",
+  "single_candidate_image_size": "770x250",
+  "candidate_details_order": {
+    "enable_sp_head": "enable_sp_head",
+    "sort_order": "enable_sp_head|enable_sp_about_me|enable_sp_photos|enable_sp_skills|enable_sp_experience|enable_sp_education|enable_sp_projects|enable_sp_awards|enable_sp_video|enable_sp_audio",
+    "enable_sp_about_me": "enable_sp_about_me",
+    "enable_sp_photos": "enable_sp_photos",
+    "enable_sp_skills": "enable_sp_skills",
+    "enable_sp_experience": "enable_sp_experience",
+    "enable_sp_education": "enable_sp_education",
+    "enable_sp_projects": "enable_sp_projects",
+    "enable_sp_awards": "enable_sp_awards",
+    "enable_sp_video": "enable_sp_video",
+    "enable_sp_audio": "enable_sp_audio"
+  },
+  "candidate_details_sidebar_order": {
+    "enable_sidebar_sp_info": "enable_sidebar_sp_info",
+    "sort_order": "enable_sidebar_sp_info|enable_sidebar_sp_location",
+    "enable_sidebar_sp_location": "enable_sidebar_sp_location"
+  },
+  "hide_candidate_group_fields": "",
+  "hide_candidate_fields": "",
+  "enable_candidate_search_bg": "0",
+  "candidate_search_color": "",
+  "candidate_search_image": {
+    "id": "0",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2023/03/bg-sidebar-search.webp"
+  },
+  "candidate_search_fields": {
+    "top": {
+      "candidate_locations": "Location",
+      "candidate_categories": "Categories",
+      "__no_value__": "__no_value__"
+    },
+    "sidebar": {
+      "candidate_rating": "Rating",
+      "candidate_yoe": "Experience",
+      "candidate_qualification": "Qualification",
+      "candidate_gender": "Gender",
+      "__no_value__": "__no_value__"
+    },
+    "disable": {
+      "candidate_ages": "Ages",
+      "candidate_skills": "Skills",
+      "candidate_languages": "Languages",
+      "__no_value__": "__no_value__"
+    }
+  },
+  "candidate_search_fields_candidate_categories": "<i class=\"far fa-folder\"></i>",
+  "candidate_search_fields_candidate_rating": "",
+  "candidate_search_fields_candidate_yoe": "",
+  "candidate_search_fields_candidate_qualification": "",
+  "candidate_search_fields_candidate_ages": "",
+  "candidate_search_fields_candidate_gender": "",
+  "candidate_search_fields_candidate_skills": "",
+  "candidate_search_fields_candidate_languages": "",
+  "enable_social_twitter": "1",
+  "enable_social_linkedin": "1",
+  "enable_social_facebook": "1",
+  "enable_social_instagram": "1",
+  "civi_social_fields": [
+    {
+      "social_name": "Youtube",
+      "social_icon": "<i class=\"fab fa-youtube\"></i>"
+    }
+  ],
+  "enable_redirect_after_login": "0",
+  "redirect_for_admin": "3479",
+  "redirect_for_candidate": "3479",
+  "redirect_for_employer": "3479",
+  "enable_verify_user": "0",
+  "verify_user_time": "900",
+  "enable_social_login": "1",
+  "enable_user_role": "1",
+  "enable_captcha": "0",
+  "google_login_api": "924147350420-9b2okdv6k8etdfeutbpv7sg9qagu4g2n.apps.googleusercontent.com",
+  "facebook_app_id": "1270446883532471",
+  "linkedin_client_id": "77ckh5i6e10d4w",
+  "linkedin_client_secret": "DgvFxN7r057LNeMS",
+  "map_effects": "shine",
+  "map_type": "mapbox",
+  "map_ssl": "0",
+  "googlemap_type": "roadmap",
+  "googlemap_api_key": "AIzaSyBvPDNG6pePr9iFpeRKaOlaZF_l0oT3lWk",
+  "mapbox_api_key": "pk.eyJ1IjoidXhwZXJzdXBwb3J0IiwiYSI6ImNsN3U1cTRxNDB4cmgzdG9nNnkzOHJvaWkifQ.A1K52Z1fd4E_rx3pHeKS3g",
+  "openstreetmap_api_key": "pk.eyJ1Ijoic2F5aTc3NDciLCJhIjoiY2tpcXRmYW1tMWpjMjJzbGllbThieTFlaCJ9.eDj6zNLBZpG-veFqXiyVPw",
+  "map_pin_cluster": "0",
+  "googlemap_style": "",
+  "mapbox_style": "streets-v11",
+  "openstreetmap_style": "streets-v11",
+  "map_zoom_level": "3",
+  "map_lat_default": "59.325",
+  "map_lng_default": "18.070",
+  "currency_position": "before",
+  "thousand_separator": ",",
+  "decimal_separator": ".",
+  "currency_type_default": "USD",
+  "currency_sign_default": "$",
+  "currency_fields": [
+    {
+      "currency_type": "VND",
+      "currency_sign": "\u0111",
+      "currency_conversion": ""
+    }
+  ],
+  "paid_submission_type": "per_package",
+  "civi_paypal": "",
+  "enable_paypal": "1",
+  "paypal_api": "sandbox",
+  "paypal_client_id": "",
+  "paypal_client_secret_key": "",
+  "civi_stripe": "",
+  "enable_stripe": "1",
+  "stripe_secret_key": "sk_test_51LwNYDFXktrERIPcbXFSvyHmqTTJa8MIsQEZmKSDheyk7pQK9to9hvGjQ3NDKB9vR4Jm8jPbwjODSzoyUeoFN4dj00ay8lTtcY",
+  "stripe_publishable_key": "pk_test_51LwNYDFXktrERIPcE6Nu4d54NGUlvLQIJvdd9naZOBdf6PNNxIPrgUFIWDUn1WdMzaSmPZzpEcX1V6PZJkLiQVtw00sGjBFeFk",
+  "civi_wire_transfer": "",
+  "enable_wire_transfer": "1",
+  "wire_transfer_card_number": "12312323",
+  "wire_transfer_card_name": "Test Card",
+  "wire_transfer_bank_name": "Bank Test",
+  "civi_woocheckout": "",
+  "enable_woocheckout": "0",
+  "type_icon_employer": "image",
+  "show_employer_dashboard": "1",
+  "image_employer_dashboard": {
+    "id": "4704",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/10/dashboard.svg"
+  },
+  "show_employer_jobs_dashboard": "1",
+  "image_employer_jobs_dashboard": {
+    "id": "3014",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/job.svg"
+  },
+  "show_employer_applicants": "1",
+  "image_employer_applicants": {
+    "id": "3009",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/applicant.svg"
+  },
+  "show_employer_candidates": "1",
+  "image_employer_candidates": {
+    "id": "3010",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/candidate.svg"
+  },
+  "show_employer_user_package": "1",
+  "image_employer_user_package": {
+    "id": "3018",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/package.svg"
+  },
+  "show_employer_messages": "1",
+  "image_employer_messages": {
+    "id": "3017",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/message.svg"
+  },
+  "show_employer_meetings": "1",
+  "image_employer_meetings": {
+    "id": "3016",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/meeting.svg"
+  },
+  "show_employer_company": "1",
+  "image_employer_company": {
+    "id": "3011",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/company.svg"
+  },
+  "show_employer_teams": "1",
+  "image_employer_teams": {
+    "id": "3008",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/team.svg"
+  },
+  "show_employer_settings": "1",
+  "image_employer_settings": {
+    "id": "3021",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/setting.svg"
+  },
+  "show_employer_logout": "1",
+  "image_employer_logout": {
+    "id": "3015",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/logout.svg"
+  },
+  "type_icon_candidate": "svg",
+  "show_candidate_dashboard": "1",
+  "image_candidate_dashboard": {
+    "id": "4704",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/10/dashboard.svg"
+  },
+  "show_candidate_profile": "1",
+  "image_candidate_profile": {
+    "id": "3019",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/profile.svg"
+  },
+  "show_my_jobs": "1",
+  "image_my_jobs": {
+    "id": "3014",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/job.svg"
+  },
+  "show_candidate_reviews": "1",
+  "image_candidate_reviews": {
+    "id": "3020",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/review.svg"
+  },
+  "show_candidate_company": "1",
+  "image_candidate_company": {
+    "id": "3013",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/employer.svg"
+  },
+  "show_candidate_messages": "1",
+  "image_candidate_messages": {
+    "id": "3017",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/message.svg"
+  },
+  "show_candidate_meetings": "1",
+  "image_candidate_meetings": {
+    "id": "3016",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/meeting.svg"
+  },
+  "show_candidate_settings": "1",
+  "image_candidate_settings": {
+    "id": "3021",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/setting.svg"
+  },
+  "show_candidate_logout": "1",
+  "image_candidate_logout": {
+    "id": "3015",
+    "url": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/uploads/2022/11/logout.svg"
+  },
+  "enable_slug_categories": "1",
+  "jobs_url_slug": "jobs",
+  "jobs_type_url_slug": "jobs-type",
+  "jobs_categories_url_slug": "jobs-categories",
+  "jobs_skills_url_slug": "jobs-skills",
+  "jobs_location_url_slug": "jobs-location",
+  "jobs_career_url_slug": "jobs-career",
+  "jobs_experience_url_slug": "jobs-experience",
+  "jobs_qualification_url_slug": "jobs-qualification",
+  "company_url_slug": "companies",
+  "company_categories_url_slug": "company-categories",
+  "company_location_url_slug": "company-location",
+  "company_size_url_slug": "company-size",
+  "candidate_url_slug": "candidates",
+  "candidate_categories_url_slug": "candidate_categories",
+  "candidate_ages_url_slug": "candidate-ages",
+  "candidate_languages_url_slug": "candidate-languages",
+  "candidate_qualification_url_slug": "candidate-qualification",
+  "candidate_salary_types_url_slug": "candidate-salary-types",
+  "candidate_yoe_url_slug": "candidate-yoe",
+  "candidate_education_levels_url_slug": "candidate-education-levels",
+  "candidate_skills_url_slug": "candidate-skills",
+  "candidate_locations_url_slug": "candidate-locations",
+  "package_url_slug": "package",
+  "invoice_url_slug": "invoice",
+  "civi_package_page_id": "95",
+  "civi_payment_page_id": "106",
+  "civi_payment_completed_page_id": "113",
+  "terms_condition": "3479",
+  "privacy_policy": "3479",
+  "civi_update_profile_page_id": "1470",
+  "civi_add_jobs_page_id": "167",
+  "civi_add_jobs_not_page_id": "8357",
+  "civi_dashboard_page_id": "3029",
+  "civi_jobs_dashboard_page_id": "1189",
+  "civi_jobs_submit_page_id": "167",
+  "civi_applicants_page_id": "65",
+  "civi_candidates_page_id": "61",
+  "civi_user_package_page_id": "116",
+  "civi_company_page_id": "76",
+  "civi_submit_company_page_id": "82",
+  "civi_messages_page_id": "6170",
+  "civi_meetings_page_id": "73",
+  "civi_settings_page_id": "93",
+  "civi_candidate_dashboard_page_id": "3040",
+  "civi_candidate_profile_page_id": "1470",
+  "civi_my_jobs_page_id": "1702",
+  "civi_candidate_reviews_page_id": "2995",
+  "civi_candidate_company_page_id": "2030",
+  "civi_candidate_messages_page_id": "6172",
+  "civi_candidate_meetings_page_id": "2796",
+  "civi_candidate_settings_page_id": "3043",
+  "logo_email": "https://jgn.sai.mybluehost.me/thotestcivi/wp-content/themes/civi/assets/images/logo.png",
+  "title_email": "Welcome to",
+  "civi_user_mail_register_user": "",
+  "subject_mail_register_user": "Your username and password on %website_url",
+  "mail_register_user": "<p>You can login now using the below credentials:</p>\r\n<p>Username: %user_login_register</p>\r\n<p>Password: %user_pass_register</p> \r\n<p>If you have any problems, please contact us. Thank you!</p>",
+  "civi_admin_mail_register_user": "",
+  "subject_admin_mail_register_user": "New User Registration",
+  "admin_mail_register_user": "<p>New user registration on %website_url.</p> \r\n<p>Username: %user_login_register,</p>\r\n<p>E-mail: %user_email_register</p>",
+  "civi_user_mail_verify_user": "",
+  "subject_mail_verify_user": "Account Verification",
+  "mail_verify_user": "To verify your email address, please use the following One Time Password (OTP):\r\n\r\n%code_verify_user\r\n\r\nIf you have any problems, please contact us.",
+  "civi_user_mail_activated_package": "",
+  "subject_mail_activated_package": "Your purchase was activated",
+  "mail_activated_package": "<p>Welcome to %website_url and thank you for purchasing a plan with us. \r\nWe are excited you have chosen %website_name . %website_name is a great jobs to advertise and search properties.</p>\r\n<p>You plan on %website_url activated!</p>\r\n<p>You can now list your properties according to you plan.</p>",
+  "civi_info_mail_candidate_apply": "",
+  "subject_mail_candidate_apply": "You have successfully applied on %website_url",
+  "mail_candidate_apply": "<p>Hi %user_apply,</p> \r\n<p>You have applied for 1 job on %website_url.</p>  \r\n<p>Jobs Title: %jobs_apply</p>  \r\n<p>Jobs Url: %jobs_url</p> ",
+  "civi_info_mail_employer_apply": "",
+  "subject_mail_employer_apply": "There is 1 candidate applied for your job",
+  "mail_employer_apply": "<p>Your jobs on %website_url has been applied.</p> \r\n<p>Jobs Title: %jobs_apply</p> \r\n<p>Jobs Url: %jobs_url</p>\r\n<p>User Apply: %user_apply</p> \r\n<p>User Info: %user_url</p>",
+  "civi_info_mail_candidate_apply_nlogin": "",
+  "subject_mail_candidate_apply_nlogin": "There is 1 candidate applied for your job",
+  "mail_candidate_apply_nlogin": "<p>Your jobs on %website_url has been applied.</p>\r\n<p>Jobs Title: %jobs_apply</p>\r\n<p>Jobs Url: %jobs_url</p>\r\n<p>Message: %message</p>",
+  "civi_user_mail_activated_listing": "",
+  "subject_mail_activated_listing": "Your purchase was activated",
+  "mail_activated_listing": "<p>Your purchase on %website_url is activated!</p> \r\n<p>You should go and check it out.</p>",
+  "civi_user_mail_approved_listing": "",
+  "subject_mail_approved_listing": "Your listing approved",
+  "mail_approved_listing": "<p>Your jobs on %website_url has been approved.</p> \r\n<p>Jobs Title:%listing_title</p> \r\n<p>Jobs Url: %listing_url</p>",
+  "civi_user_mail_expired_listing": "",
+  "subject_mail_expired_listing": "Your listing expired",
+  "mail_expired_listing": "<p>Your jobs on %website_url has been expired.</p> \r\n<p>Jobs Title:%listing_title</p> \r\n<p>Jobs Url: %listing_url</p>",
+  "civi_user_mail_new_wire_transfer": "",
+  "subject_mail_new_wire_transfer": "You ordcivid a new Wire Transfer",
+  "mail_new_wire_transfer": "<p>We received your Wire Transfer payment request on %website_url !</p> \r\n<p>Please follow the instructions below in order to start submitting</p> <p>properties as soon as possible.</p> \r\n<p>The invoice number is: %invoice_no, Amount: %total_price.</p>",
+  "civi_admin_mail_new_wire_transfer": "",
+  "subject_admin_mail_new_wire_transfer": "Somebody ordcivid a new Wire Transfer",
+  "admin_mail_new_wire_transfer": "<p>We received your Wire Transfer payment request on %website_url !<p> \r\n<p>Please follow the instructions below in order to start submitting<p> <p>properties as soon as possible.<p> \r\n<p>The invoice number is: %invoice_no, Amount: %total_price.<p>",
+  "mail_footer_user": "<p>Do you need help? Contact us</p>\r\n<p>T. (00) 658 54332</p>\r\n<p>E. hello@uxper.co</p>\r\n<p>\u00a9 2023 Uxper. All Right Reserved.</p>",
+  "custom_field_jobs": [
+    { "label": "", "id": "", "field_type": "text", "select_choices": "" }
+  ],
+  "custom_field_company": [
+    { "label": "", "id": "", "field_type": "text", "select_choices": "" }
+  ],
+  "custom_field_candidate": [
+    {
+      "tabs": "new",
+      "section": "",
+      "label": "",
+      "id": "",
+      "field_type": "text",
+      "select_choices": ""
+    }
+  ]
+}

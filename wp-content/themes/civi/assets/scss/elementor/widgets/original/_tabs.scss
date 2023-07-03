@@ -1,0 +1,29 @@
+.elementor {
+	.elementor-widget-tabs {
+		.elementor-tab-title {
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+			line-height: 1.47em;
+			letter-spacing: 1.38px;
+			color: #777;
+
+			&.elementor-active {
+				color: $primary_color;
+			}
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.elementor-tab-mobile-title,
+		.elementor-tab-desktop-title.elementor-active,
+		.elementor-tab-title:before,
+		.elementor-tab-title:after,
+		.elementor-tab-content,
+		.elementor-tabs-content-wrapper {
+			border-color: $primary_color;
+		}
+	}
+}

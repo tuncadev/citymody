@@ -1,0 +1,52 @@
+@import "settings/mixins";
+
+.civi-client-logo {
+	.image {
+		transition: all 0.3s linear;
+	}
+
+	.grid-item {
+		@include d-flex();
+		@include flex-wrap();
+	}
+
+	&.hover-grayscale {
+		.image {
+			filter: grayscale(100%);
+			opacity: 0.3;
+		}
+
+		.item {
+			&:hover {
+				.image {
+					filter: none;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.hover-opacity {
+		.image {
+			opacity: 0.23;
+		}
+
+		.item {
+			&:hover {
+				.image {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.hover-faded {
+		.item {
+			&:hover {
+				.image {
+					opacity: 0.2;
+				}
+			}
+		}
+	}
+}

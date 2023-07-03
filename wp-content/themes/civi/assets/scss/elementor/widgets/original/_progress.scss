@@ -1,0 +1,30 @@
+.elementor {
+	.elementor-progress-wrapper,
+	.elementor-progress-bar {
+		border-radius: 0;
+	}
+
+	.elementor-progress-wrapper {
+		background: #f5f5f5;
+	}
+
+	.elementor-progress-percentage-outside {
+		.elementor-widget-container {
+			position: relative;
+		}
+
+		.elementor-progress-wrapper {
+			position: static;
+		}
+
+		.elementor-progress-percentage {
+			position: absolute;
+			top: 9px;
+			right: 0;
+			padding-right: 0;
+			font-size: 16px;
+			line-height: 1;
+			color: $primary_color;
+		}
+	}
+}

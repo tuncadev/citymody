@@ -1,0 +1,122 @@
+@import "settings/mixins";
+@import "settings/variables";
+
+.civi-icon-wrap {
+	line-height: 0;
+}
+
+.civi-icon-view {
+	display: inline-block;
+	font-size: 60px;
+}
+
+.civi-icon {
+	display: inline-block;
+	text-align: center;
+	font-size: 60px;
+	line-height: 1;
+	transition: all 0.3s;
+	color: #818a91;
+
+	.icon {
+		@extend %NormalTransition;
+	}
+
+	i,
+	svg {
+		width: 1em;
+		height: 1em;
+		position: relative;
+		display: block;
+	}
+
+	i {
+		background: inherit;
+
+		&:before {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	svg.svg-defs-gradient {
+		position: absolute !important;
+		width: 0 !important;
+		height: 0 !important;
+	}
+}
+
+.svg-defs-gradient {
+	.stop-a,
+	.stop-b {
+		@extend %NormalTransition;
+	}
+}
+
+.civi-solid-icon {
+	svg {
+		*[stroke^="#"],
+		*[stroke^="url(#"] {
+			stroke: currentColor;
+		}
+
+		*[fill^="#"],
+		*[fill^="url(#"] {
+			fill: currentColor;
+		}
+	}
+}
+
+.civi-icon-view.second {
+	display: none !important;
+}
+
+.civi-view-stacked {
+	.civi-icon-view {
+		padding: 0.5em;
+		background-color: $primary_color;
+	}
+}
+
+.civi-view-bubble {
+	.civi-icon-wrap {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 21px;
+	}
+
+	.civi-icon-view {
+		border-radius: 50%;
+		background-image: linear-gradient(
+			-225deg,
+			rgba(241, 212, 211, 0.17) 15%,
+			rgba(223, 169, 168, 0.17) 85%
+		);
+
+		&.first {
+			padding: 0.84em;
+		}
+
+		&.second {
+			display: inline-block !important;
+			padding: 0.28em;
+			position: relative;
+			bottom: 21px;
+			margin-left: 22px;
+		}
+
+		.icon {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+		}
+	}
+}
+
+.civi-shape-circle {
+	.civi-icon-view {
+		border-radius: 50%;
+	}
+}

@@ -1,0 +1,117 @@
+.block-archive-sidebar{
+    padding: 28px;
+    border: 1px solid $border_color;
+    border-radius: 16px;
+    background-color: #fff;
+    + .block-archive-sidebar{
+      margin-top: 16px;
+    }
+    h4{
+      font-size: 24px;
+    }
+}
+.candidate-sidebar{
+    .candidate-header{
+        @include d-flex();
+        @include align-items-center();
+        margin-bottom: 25px;
+        img{
+        width: 54px;
+        height: 54px;
+        object-fit: cover;
+        border-radius: 50%;
+        }
+    }
+    .name{
+        margin-left: 16px;
+        h2{
+        font-size: 24px;
+        a{
+            @include d-flex();
+            @include align-items-center();
+            color: $primary_color;
+        }
+        i{
+            font-size: 8px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $accent_color;
+            line-height: 15px;
+            text-align: center;
+            color: #fff;
+            margin-left: 5px;
+        }
+        }
+        p{
+        margin-bottom: 0;
+        a{
+            font-weight: 500;
+            color: $accent_color;
+        }
+        }
+    }
+    p{
+        line-height: 1.5em;
+    }
+    .title-info{
+        font-weight: 500;
+        color: $primary_color;
+        margin-bottom: 3px;
+    }
+    .list-cate{
+        padding-left: 0;
+        margin-bottom: 0;
+        .cate{
+            font-weight: 500;
+            color: $accent_color;
+        }
+    }
+
+    .content{
+        overflow: hidden;
+        display: block;
+        height: 72px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        p{
+        margin-bottom: 0;
+        }
+    }
+    .details-info{
+        margin-bottom: 0;
+        &.email a{
+            color: $accent_color;
+        }
+
+        &.salary{
+            color: $accent_color;
+            font-weight: 500;
+        }
+    }
+    .info{
+        margin-bottom: 15px;
+    }
+    .list-social{
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 0;
+        @include d-flex();
+        @include justify-content-center();
+        margin-top: 20px;
+        li{
+            + li{
+                margin-left: 16px;
+            }
+        }
+        a{
+            font-weight: 500;
+            color: $secondary_color;
+            font-size: 20px;
+            &:hover{
+                color: $accent_color;
+            }
+        }
+    }
+}
+  

@@ -1,0 +1,360 @@
+@import "settings/variables";
+
+.civi-instragram {
+	text-align: center;
+	ul.civi-instagram-list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		margin: 0 -5px;
+		margin: 0 -5px;
+		overflow: hidden;
+		li {
+			float: left;
+			width: 25%;
+			padding: 0 5px;
+			margin-bottom: 10px;
+			overflow: hidden;
+			position: relative;
+			img {
+				width: 100%;
+			}
+			a {
+				text-decoration: none;
+			}
+			> a {
+				display: block;
+				position: relative;
+			}
+			.instagram-clip {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				z-index: 3;
+				height: 100%;
+				transition: 0.4s ease-in-out;
+				opacity: 0;
+				&::before {
+					position: absolute;
+					background-color: rgba(0, 0, 0, 0.7);
+					content: "";
+					left: 10px;
+					top: 10px;
+					bottom: 10px;
+					right: 10px;
+					z-index: -1;
+				}
+				.civi-content {
+					.instagram-like-comment {
+						padding: 30px 0;
+						p {
+							color: #fff;
+							margin: 0 15px;
+						}
+					}
+					.instagram-btn {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 100%;
+						a {
+							display: inline-block;
+							i {
+								color: #fff;
+								font-size: 43px;
+							}
+						}
+					}
+					.zoom_icon {
+						display: inline-block;
+					}
+				}
+			}
+			&:hover {
+				.instagram-clip {
+					opacity: 1;
+				}
+			}
+		}
+		&:hover {
+			.slick-arrow {
+				opacity: 1;
+				left: 0;
+			}
+			.civi-carosul-next.slick-arrow {
+				opacity: 1;
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 45%;
+		left: -20px;
+		z-index: 2;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background: $accent_color;
+		border: 1px solid $accent_color;
+		color: #fff;
+		text-align: center;
+		transition: 0.4s ease-in-out;
+		opacity: 0;
+		padding: 0;
+		line-height: 1;
+	}
+	.civi-carosul-next.slick-arrow {
+		left: auto;
+		right: -20px;
+	}
+	.slick-dots {
+		position: relative;
+		bottom: 0;
+		li {
+			border-radius: 100%;
+			display: inline-block;
+			height: 15px;
+			margin: 0 3px !important;
+			width: 15px !important;
+			background: $accent_color;
+			float: none !important;
+			button {
+				padding: 0;
+				&::before {
+					display: none;
+				}
+			}
+		}
+		li.slick-active {
+			background: #000;
+		}
+	}
+}
+.civiinstagram-column-1 {
+	.civi-instragram {
+		ul.civi-instagram-list {
+			li {
+				width: 100%;
+			}
+		}
+	}
+}
+.civiinstagram-column-2 {
+	.civi-instragram {
+		ul.civi-instagram-list {
+			li {
+				width: 50%;
+			}
+		}
+	}
+}
+.civiinstagram-column-3 {
+	.civi-instragram {
+		ul.civi-instagram-list {
+			li {
+				width: 33.33%;
+			}
+		}
+	}
+}
+.civiinstagram-column-5 {
+	.civi-instragram {
+		ul.civi-instagram-list {
+			li {
+				width: 20%;
+			}
+		}
+	}
+}
+.civiinstagram-column-6 {
+	.civi-instragram {
+		ul.civi-instagram-list {
+			li {
+				width: 16.66%;
+			}
+		}
+	}
+}
+a.instagram_follow_btn {
+	background: #f75876 none repeat scroll 0 0;
+	border: 0 none;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 70px;
+	text-decoration: none;
+	transition: all 0.4s ease-in-out 0s;
+	&:hover {
+		opacity: 0.7;
+		color: #ffffff;
+	}
+	i {
+		background: #e4405f;
+		width: 42px;
+		height: 43px;
+		line-height: 42px;
+		font-size: 16px;
+		text-align: center;
+	}
+	span {
+		padding: 0 16px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 600;
+		height: 42px;
+		line-height: 42px;
+	}
+}
+a.instagram_follow_btn.possition-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	left: 50%;
+	background: #ffffff;
+	border-radius: 6px;
+	color: #000000;
+	span {
+		padding: 0 24px;
+	}
+}
+.civi-instragram-style-2 {
+	ul.civi-instagram-list {
+		li {
+			padding: 0;
+			margin: 0;
+			margin: 0;
+			margin-bottom: 0;
+			overflow: hidden;
+			a {
+				img {
+					transition: 0.3s ease-out;
+					transition-property: opacity, transform, filter;
+					width: 100%;
+				}
+			}
+			&:hover {
+				a {
+					img {
+						transform: scale3d(1.1, 1.1, 1);
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+		margin: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	a.instagram_follow_btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		left: 50%;
+		background: #ffffff;
+		border-radius: 6px;
+		color: #000000;
+		margin-top: 0;
+		i {
+			display: none;
+		}
+	}
+}
+.civi-instragram-style-3 {
+	ul {
+		li {
+			position: relative;
+			a {
+				img {
+					transition: all 0.15s ease-in-out;
+				}
+			}
+			.instagram-clip {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 50px;
+				background: rgba(255, 64, 95, 0.9);
+				display: flex;
+				justify-content: space-around;
+				-webkit-transform: translateY(-100%);
+				transform: translateY(-100%);
+				transition: all 0.15s ease-in-out;
+				color: #fff;
+				height: 50px !important;
+				line-height: 50px;
+				&::before {
+					display: none;
+				}
+				.instagram-like-comment {
+					display: flex;
+					align-items: center;
+					padding: 0 !important;
+					p {
+						margin: 0 15px;
+					}
+				}
+			}
+			&:hover {
+				.instagram-clip {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+				}
+				a {
+					img {
+						opacity: 0.7;
+						-webkit-transform: scale(1.15) translate3d(0, 0, 0);
+						transform: scale(1.15) translate3d(0, 0, 0);
+					}
+				}
+			}
+		}
+	}
+	ul.civi-instagram-list {
+		li {
+			.instagram-clip {
+				.civi-content {
+					display: flex;
+					align-items: center;
+					.instagram-btn {
+						position: static;
+						transform: translateY(0);
+						display: flex;
+					}
+					.zoom_icon {
+						display: flex;
+					}
+				}
+			}
+		}
+	}
+}
+.civi-instragram-style-4 {
+	ul.civi-instagram-list {
+		li {
+			margin: 0;
+			margin-bottom: 0;
+			overflow: hidden;
+			width: 25%;
+			a {
+				img {
+					transition: 0.3s ease-out;
+					transition-property: opacity, transform, filter;
+					width: 100%;
+				}
+			}
+			&:hover {
+				a {
+					img {
+						transform: scale3d(1.2, 1.2, 1);
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+}

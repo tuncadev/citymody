@@ -1,0 +1,28 @@
+.civi-jobs-apply .jobs-archive-header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+.civi-jobs-apply .civi-jobs-item {
+  padding: 32px; }
+  .civi-jobs-apply .civi-jobs-item + .civi-jobs-item {
+    margin-top: 24px; }
+  .civi-jobs-apply .civi-jobs-item .jobs-header-left {
+    display: block; }
+  .civi-jobs-apply .civi-jobs-item .jobs-header-right {
+    height: auto; }
+.civi-jobs-apply .jobs-title {
+  margin-bottom: 12px; }
+.civi-jobs-apply .cate-wapprer {
+  color: var(--civi-color-secondary); }
+.civi-jobs-apply .civi-button-apply:after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 12px;
+  padding-left: 12px; }
+
+@media (max-width: 767px) {
+  .civi-jobs-apply .civi-jobs-item.layout-list .jobs-archive-header {
+    display: block; }
+  .civi-jobs-apply .civi-jobs-item.layout-list .jobs-header-right {
+    position: static;
+    margin-top: 20px; } }

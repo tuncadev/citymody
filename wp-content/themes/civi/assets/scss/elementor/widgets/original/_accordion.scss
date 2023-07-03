@@ -1,0 +1,74 @@
+// Override default style from Elementor.
+.elementor-widget-accordion {
+	.elementor-accordion {
+		.elementor-accordion-item {
+			border-color: #eee;
+		}
+
+		.elementor-tab-title {
+			font-size: 18px;
+
+			a {
+				color: inherit;
+			}
+		}
+
+		.elementor-accordion-icon {
+			position: relative;
+			top: 3px;
+			font-size: 16px;
+		}
+
+		.elementor-tab-content {
+			border-color: #eee;
+			font-size: 16px;
+			line-height: 1.75;
+		}
+	}
+}
+
+// New style for theme.
+.elementor-accordion-style-02 {
+	.elementor-accordion {
+		.elementor-accordion-item {
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+		}
+
+		.elementor-tab-title {
+			padding: 17px 0 21px;
+		}
+
+		.elementor-tab-content {
+			padding: 22px 0 33px;
+		}
+	}
+}
+
+.elementor-accordion-style-03 {
+	.elementor-accordion {
+		.elementor-accordion-item {
+			border: 0 !important;
+		}
+
+		.elementor-tab-content {
+			border: 0 !important;
+			padding: 16px 0 33px;
+		}
+
+		.elementor-tab-title {
+			padding: 15px 0;
+			font-size: 24px;
+
+			a {
+				border-bottom: 2px solid currentColor;
+				padding-bottom: 4px;
+			}
+		}
+
+		.elementor-accordion-icon {
+			top: 9px;
+		}
+	}
+}

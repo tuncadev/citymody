@@ -1,0 +1,21 @@
+.civi-submit-header{
+  &.scroll{
+    position: sticky;
+    width: 100%;
+    padding: 15px !important;
+    background-color: #fff;
+    top: 0;
+    border: 1px solid $border_color;
+    z-index: 9;
+    @include box-shadow(0 4px 10px rgba(0,0,0,0.05));
+  }
+}
+
+@media (max-width: 1199px) {
+  .civi-submit-header{
+    @include justify-content-center(important);
+    .entry-title{
+      display: none;
+    }
+  }
+}

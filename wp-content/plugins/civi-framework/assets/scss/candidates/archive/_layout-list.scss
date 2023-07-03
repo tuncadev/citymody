@@ -1,0 +1,29 @@
+.civi-candidates-item.layout-list {
+	padding-bottom: 20px;
+	.candidates-header-right {
+		@include d-flex();
+		@include align-items-center();
+	}
+}
+
+@media (max-width: 767px) {
+	.civi-candidates-item.layout-list {
+		.candidates-header-right {
+			display: block;
+		}
+		.candidates-title {
+			margin-top: 14px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.civi-candidates-item.layout-list {
+		.candidate-bottom {
+			display: block;
+		}
+		.candidate-salary {
+			margin-top: 15px;
+		}
+	}
+}

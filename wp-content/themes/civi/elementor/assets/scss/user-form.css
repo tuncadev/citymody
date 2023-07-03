@@ -1,0 +1,22 @@
+.form-account .form-group {
+  margin-bottom: 24px;
+}
+.form-account label span.require {
+  color: red;
+  margin-left: 5px;
+}
+
+.elementor-widget-civi-user-form .civi-reset-password-wrap {
+  display: none;
+}
+.elementor-widget-civi-user-form .form-account {
+  display: none;
+}
+.elementor-widget-civi-user-form .civi-reset-password-wrap.active {
+  display: block;
+}
+.elementor-widget-civi-user-form .form-account.active {
+  display: block;
+}
+
+/*# sourceMappingURL=user-form.css.map */

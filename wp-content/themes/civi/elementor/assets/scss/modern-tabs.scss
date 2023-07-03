@@ -1,0 +1,38 @@
+@import "settings/variables";
+@import "settings/mixins";
+
+.nav-modern-tabs {
+	list-style: none;
+	padding-left: 0;
+	@include d-flex();
+	margin-bottom: 25px;
+	li + li {
+		margin-top: 0;
+		margin-left: 32px;
+	}
+	.nav-item {
+		font-size: 18px;
+		font-weight: 600;
+		a {
+			color: $text_color;
+			position: relative;
+			padding-bottom: 8px;
+			&:before {
+				content: "";
+				position: absolute;
+				height: 2px;
+				bottom: 0;
+				width: 0;
+				@include transition(width 0.3s);
+				background-color: currentColor;
+			}
+		}
+		a:hover,
+		&.active a {
+			color: $accent_color;
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+}

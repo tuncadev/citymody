@@ -1,0 +1,295 @@
+.candidate-review-details {
+	border: 1px solid $border_color;
+	border-radius: 16px;
+	margin-top: 16px;
+	.entry-heading {
+		@include align-items-center();
+		@include d-flex();
+		padding-bottom: 24px;
+	}
+	.rating-count {
+		font-size: 20px;
+		color: #fff;
+		background-color: $accent_color;
+		padding: 5px 16px;
+		border-radius: 8px;
+	}
+	.review-count {
+		color: $secondary_color;
+		margin-left: 12px;
+	}
+	.entry-overview {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.reviews-list {
+	padding-left: 0;
+	list-style: none;
+	.entry-avatar img {
+		width: 54px;
+		height: 54px;
+		object-fit: cover;
+		border-radius: 50%;
+		max-width: max-content;
+	}
+	.entry-head {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+	}
+	.entry-info {
+		@include d-flex();
+		@include justify-content-between();
+		width: 100%;
+		margin-left: 16px;
+	}
+	.author-name {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.review-date {
+		color: $secondary_color;
+	}
+	.review-content {
+		line-height: 1.5;
+		margin-top: 11px;
+		margin-bottom: 11px;
+	}
+	.review-title {
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	.entry-comment {
+		ul {
+			padding-left: 0;
+			margin-bottom: 10px;
+		}
+		li {
+			list-style: none;
+		}
+		img {
+			width: 70px;
+			height: 70px;
+			object-fit: cover;
+		}
+	}
+	ol {
+		list-style: none;
+	}
+	.author-review {
+		margin-top: 24px;
+		padding-top: 24px;
+		border-top: 1px solid $border_color;
+	}
+}
+
+.add-new-review {
+	padding-top: 24px;
+	border-top: 1px solid $border_color;
+	.form-group + .form-group {
+		margin-top: 20px;
+	}
+	.form-media input {
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.civi-submit-candidate-rating {
+		margin-top: 24px;
+	}
+	.login-for-review {
+		font-weight: 500;
+		a {
+			color: $accent_color;
+		}
+	}
+	label span.name {
+		height: 36px;
+		line-height: 36px;
+		padding: 0 14px;
+		border-radius: 20px;
+		background-color: #ededed;
+		display: inline-block;
+		font-weight: 500;
+		cursor: pointer;
+		font-size: 14px;
+		&:before {
+			content: "\f03e";
+			font-size: 18px;
+			font-family: "Font Awesome 5 Pro";
+			margin-right: 10px;
+			vertical-align: -2px;
+		}
+	}
+	.form-media {
+		display: none;
+	}
+	.review-title {
+		font-size: 24px;
+	}
+	.custom-area {
+		.current-user-avatar {
+			position: absolute;
+			top: 35px;
+			left: 35px;
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 30px;
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				@include transform(translate3d(0, 0, 0));
+				object-fit: cover;
+			}
+		}
+		textarea {
+			border-color: #ccc;
+			border-radius: 3px;
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			@include transform(translate3d(0, 0, 0));
+			padding: 35px 35px 35px 105px;
+			max-height: 150px;
+			resize: none;
+		}
+	}
+	.star-rating {
+		@include d-inline-flex();
+		@include align-items-center();
+		@include flex-wrap();
+		width: 49%;
+	}
+	.rate-title {
+		display: block;
+		width: 100%;
+		margin-bottom: 3px;
+		font-weight: 500;
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.add-new-review,
+.rating-bars {
+	.tip {
+		background-color: $secondary_color;
+		height: 15px;
+		width: 15px;
+		display: inline-block;
+		font-size: 11px;
+		border-radius: 50%;
+		cursor: help;
+		text-align: center;
+		position: relative;
+		vertical-align: -1px;
+		margin-left: 3px;
+		line-height: 20px;
+		&:hover {
+			.tip-content {
+				opacity: 1;
+				visibility: visible;
+				@include transform(translate(-50%, calc(-100% - 13px)));
+			}
+		}
+		&:after {
+			font-family: "Font Awesome 5 Pro";
+			font-weight: 900;
+			content: "\f12a";
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			font-size: 7px;
+			line-height: normal;
+			vertical-align: 3px;
+			font-style: normal;
+			color: #fff;
+		}
+		.tip-content {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			@include transform(translate(-50%, calc(-100% - 20px)));
+			background: #333;
+			color: #fff;
+			padding: 13px 15px;
+			min-width: 200px;
+			max-width: 200px;
+			font-size: 13px;
+			border-radius: 4px;
+			line-height: 19px;
+			pointer-events: none;
+			z-index: 999;
+			text-align: center;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s;
+			&:after {
+				font-family: "Font Awesome 5 Pro";
+				font-weight: 900;
+				content: "\f0dd";
+				position: absolute;
+				bottom: 3px;
+				left: 50%;
+				font-size: 22px;
+				color: #333;
+				transform: translate(-50%, 50%);
+			}
+		}
+	}
+}
+
+.rating-bars {
+	@include d-flex();
+	@include flex-wrap();
+	margin-left: -30px;
+	margin-right: -30px;
+	.rating-bars-item {
+		@include flex(0 0 50%);
+		max-width: 50%;
+		padding: 15px 30px;
+		.value-rating {
+			color: $secondary_color;
+			font-weight: 500;
+		}
+	}
+	.rating-bars-name {
+		font-weight: 500;
+		display: block;
+	}
+	.rating-bars-inner {
+		@include d-flex();
+	}
+	.rating-bars-rating {
+		display: inline-block;
+		vertical-align: baseline;
+		background: #efefef;
+		width: 100%;
+		height: 6px;
+		margin-right: 10px;
+		border-radius: 3px;
+		overflow: hidden;
+		background-color: $border_color;
+		align-self: center;
+	}
+	.rating-bars-rating.high .rating-bars-rating-inner {
+		background-color: $accent_color;
+	}
+	.rating-bars-rating-inner {
+		height: 6px;
+		display: block;
+		background-color: $accent_color;
+		position: relative;
+		width: 0;
+		transition: width 0.5s;
+	}
+}
+.repreviewForm {
+	margin-bottom: 15px;
+	.civi-button i {
+		margin-left: 8px;
+	}
+}

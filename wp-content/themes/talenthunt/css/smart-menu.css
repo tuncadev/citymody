@@ -1,0 +1,287 @@
+/* Mobile first layout SmartMenus Core CSS (it's not recommended editing these rules)
+   You need this once per page no matter how many menu trees or different themes you use.
+-------------------------------------------------------------------------------------------*/
+.top-nav {
+    position: relative;
+    z-index: 99;
+}
+.top-nav,
+.top-nav ul,
+.top-nav li {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    direction: ltr;
+    float: right;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.top-nav-rtl,
+.top-nav-rtl ul,
+.top-nav-rtl li {
+    direction: rtl;
+    text-align: right;
+}
+.top-nav>li>h1,
+.top-nav>li>h2,
+.top-nav>li>h3,
+.top-nav>li>h4,
+.top-nav>li>h5,
+.top-nav>li>h6 {
+    margin: 0;
+    padding: 0;
+}
+.top-nav ul {
+    display: none;
+    margin-top: 23px !important;
+}
+.top-nav li,
+.top-nav a {
+    position: relative;
+}
+.top-nav a {
+    display: block;
+}
+.top-nav a.disabled {
+    cursor: not-allowed;
+}
+.top-nav:after {
+    content: "\00a0";
+    display: block;
+    height: 0;
+    font: 0px/0 serif;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+.top-nav,
+.top-nav *,
+.top-nav *:before,
+.top-nav *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.top-nav a,
+.top-nav a:hover,
+.top-nav a:focus,
+.top-nav a:active {
+    padding: 8px 20px;
+}
+.top-nav a.disabled {
+    color: #a1d1e8;
+}
+.top-nav a span.sub-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: auto;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    font: bold 16px/34px monospace !important;
+    text-align: center;
+    text-shadow: none;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.top-nav a.highlighted span.sub-arrow:before {
+    display: block;
+    content: '-';
+}
+.top-nav ul a,
+.top-nav ul a:hover,
+.top-nav ul a:focus,
+.top-nav ul a:active {
+    background: transparent;
+    color: #2b82ac;
+    text-shadow: none;
+}
+.top-nav ul li {
+    width: 100%;
+}
+.main-menu-btn {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-indent: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/* hamburger icon */
+.main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    height: 2px;
+    width: 28px;
+    background: #fff;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.main-menu-btn-icon:before {
+  content: '';
+  top: -7px;
+  left: 0;
+}
+.main-menu-btn-icon:after {
+  content: '';
+  top: 7px;
+  left: 0;
+}
+/* x icon */
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+  height: 0;
+  background: transparent;
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*  User fevcon size */
+img.gravatar.avatar.avatar-40.um-avatar.um-avatar-default {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+
+
+/* hide menu state checkbox (keep it visible to screen readers) */
+#main-menu-state {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+}
+/* hide the menu in mobile view */
+#main-menu-state:not(:checked) ~ #main-menu {
+  display: none;
+}
+#main-menu-state:checked ~ #main-menu {
+  display: block;
+}
+@media (min-width: 1025px) {
+  /* hide the button in desktop view */
+  .main-menu-btn {
+    position: absolute;
+    top: -99999px;
+  }
+  /* always show the menu in desktop view */
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: block;
+  }
+  .add-mobile-menu{
+    display: block!important;
+  }
+}
+@media (min-width: 1025px) {
+  
+    .top-nav ul {
+        position: absolute;
+        width: 12em;
+    }
+    .top-nav li {
+        float: left;
+    }
+    
+    .top-nav a span.sub-arrow {
+        top: 50%;
+        margin-top: -3px;
+        bottom: 2px;
+        right: 0px;
+        margin-left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-width: 5px;
+        border-style: solid dashed dashed dashed;
+        border-color: rgba(127, 127, 127, .6) transparent transparent transparent;
+        background: transparent;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+    }
+    .top-nav a.highlighted span.sub-arrow:before {
+        display: none;
+    }
+    .top-nav ul a.disabled {
+        background: white;
+        color: #b3b3b3;
+    }
+    .top-nav ul a span.sub-arrow {
+        top: 50%;
+        margin-top: -5px;
+        bottom: auto;
+        left: auto;
+        margin-left: 0;
+        right: 10px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent rgba(127, 127, 127, .6);
+    }
+    .top-nav ul li {
+        border: 0;
+    }
+    .top-nav span.scroll-up,
+    .top-nav span.scroll-down {
+        position: absolute;
+        display: none;
+        visibility: hidden;
+        overflow: hidden;
+        background: white;
+        height: 20px;
+    }
+    .top-nav span.scroll-up-arrow,
+    .top-nav span.scroll-down-arrow {
+        position: absolute;
+        top: -2px;
+        left: 50%;
+        margin-left: -8px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        border-width: 8px;
+        border-style: dashed dashed solid dashed;
+        border-color: transparent transparent #2b82ac transparent;
+    }
+    .top-nav span.scroll-down-arrow {
+        top: 6px;
+        border-style: solid dashed dashed dashed;
+        border-color: #2b82ac transparent transparent transparent;
+    }
+    .top-nav.top-nav-vertical a span.sub-arrow {
+        top: 50%;
+        margin-top: -5px;
+        bottom: auto;
+        left: auto;
+        margin-left: 0;
+        right: 10px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #a1d1e8;
+    }
+    .top-nav.top-nav-vertical ul a {
+        padding: 9px 23px;
+    }
+}

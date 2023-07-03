@@ -1,0 +1,95 @@
+@import "settings/mixins";
+
+.civi-team-member-carousel {
+	.civi-team-member {
+		position: relative;
+
+		&:hover {
+			.photo {
+				box-shadow: 0 55px 40px -40px rgba(51, 51, 51, 0.25);
+			}
+
+			.overlay,
+			.info,
+			.social-networks {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.photo {
+		@extend %NormalTransition;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.overlay {
+		@extend %NormalTransition;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(17, 17, 17, 0.8);
+		z-index: 0;
+	}
+
+	.info {
+		@extend %NormalTransition;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px 30px 27px;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.name {
+		font-size: 20px;
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	.position {
+		margin-top: 8px;
+		font-size: 12px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1.38px;
+		color: rgba(255, 255, 255, 0.4);
+	}
+
+	.description {
+		color: #fff;
+		margin-top: 10px;
+	}
+
+	.social-networks {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		text-align: right;
+		opacity: 0;
+		visibility: hidden;
+
+		a {
+			@extend %NormalTransition;
+			display: inline-block;
+			font-size: 18px;
+			line-height: 0;
+			color: #fff;
+			padding: 10px 8px;
+		}
+	}
+}

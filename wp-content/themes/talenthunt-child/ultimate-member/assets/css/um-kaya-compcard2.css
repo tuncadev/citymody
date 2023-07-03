@@ -1,0 +1,145 @@
+/*--------------------------------------------------------------
+#  Model Compcard Style 2
+--------------------------------------------------------------*/
+body, html, *{
+  margin: 0!important;
+  padding: 0px!important;
+}
+@media print {
+@page :first {
+  margin: 8mm!important;
+  padding: 0px!important;
+  overflow: hidden!important;
+}
+.header-wrap,
+    footer,
+    .profile_head_sidebar,
+    .um-profile-nav, 
+    .um-profile-note,
+    .um-profile-body > div:not(.compcard),
+    .footer-width-fixer,
+    a.scrolltop,
+    a.cc_print_button,
+    .kaya-page-titlebar-wrapper,
+    #kaya-header-content-wrapper,
+    .kaya_profile_header,
+    .three_fourth
+  {
+
+    display: none!important;
+    width: 100%!important;
+  }
+
+.one_fifth, .four_fifth_last{
+    width: 100%!important;
+    padding: 0px;
+    margin: 0px;
+  }
+.um-profile .um-profile-body{
+      border:none!important;
+      background-color: transparent!important;
+      margin: 0px;
+      padding: 0px;
+    }
+/*
+.um-profile div:not(.um-viewing .compcard){
+  display: none;
+}
+*/
+ .compcard{
+        display: block!important;
+    }
+
+.um-viewing .compcard div.um-photo img {
+  max-height: inherit!important;
+}
+.um-viewing .compcard .um-field, div.um-photo{
+  margin: 0px;
+  padding: 0px;
+}
+div.um-photo img,
+.um-profile.um-viewing .um-field, div.um-photo a, div.um-photo
+ {
+   border:none!important;
+    padding:0px!important;
+    margin: 0px!important;
+    border-radius:0px!important;
+  box-shadow:none!important;
+}
+.kaya_um_user_meta::after{
+  content: "-";
+}
+.kaya_um_user_meta:last-child::after { 
+  content: " "; }
+  
+.um-viewing .compcard .um-field-image .um-field-label{
+  display: none!important;
+  width: 0px;
+  height: 0px;
+}
+div.um-photo, div.um-photo a, div.um-photo a img {
+   border:none!important;
+    padding:0px!important;
+    margin: 0px!important;
+    border-radius:0px!important;
+  box-shadow:none!important;
+}
+
+.um-viewing .compcard .um-field-label{
+  float: left;
+  margin-right: 10px;
+  border:none!important;
+  margin-bottom: 0px!important;
+}
+.um-viewing .compcard {
+  margin:0px auto!important;
+  overflow: hidden!important;
+  height:190mm!important;
+  width: 277mm!important;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+} 
+.um-viewing .compcard > div:nth-child(1) {
+height:190mm!important;
+
+}
+.um-viewing .compcard > div:nth-child(1) > div:nth-child(1) {
+  width: 100%!important;
+ height:190mm!important;
+  overflow: hidden!important;
+}
+
+.um-viewing .compcard > div:nth-child(1) > div:nth-child(2) {
+  font-size: 50px;
+  font-weight: bold;
+  bottom: 30px;
+  padding: 0px 5px!important;
+  position: absolute;
+  background-color: #fff;
+
+}
+
+
+.um-viewing .compcard > div:nth-child(2){
+  column-count: 2!important;
+  column-gap: 5mm;
+}
+ .um-viewing .compcard > div:nth-child(2) > div{
+  width: 100%!important;
+  margin-bottom:3mm!important; 
+  display: inline-block;
+}
+ .um-viewing .compcard > div:nth-child(2) > div:last-child{
+  width: 100%!important;
+}
+
+.um-viewing .compcard > div:nth-child(2) > div .um-photo img{
+    object-fit: cover!important;
+   max-height:70mm!important;
+   width: 98%!important;
+    object-position: 0 0;
+
+}
+
+}

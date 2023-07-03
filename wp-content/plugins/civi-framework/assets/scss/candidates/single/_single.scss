@@ -1,0 +1,140 @@
+@import "thumbnail";
+@import "head";
+@import "about-me";
+@import "skills";
+@import "experiences";
+@import "educations";
+@import "awards";
+@import "project";
+@import "sidebar";
+@import "cover";
+@import "review";
+@import "photo";
+@import "invite";
+
+.title-candidate {
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+.candidate-sidebar {
+	.list-social {
+		@include justify-content-start();
+	}
+	.civi-location {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		margin-bottom: 24px;
+		h3 {
+			font-size: 24px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.candidate-single-field {
+	border: 1px solid $border_color;
+	border-radius: 16px;
+	margin-top: 16px;
+	.additional-warpper:first-child{
+		padding-top: 0 !important;
+		margin-top: 0 !important;
+		border-top: 0 !important;
+	}
+}
+
+.block-candidate-warrper{
+	.block-archive-top,
+	.candidate-single-field,
+	.block-archive-inner{
+		.additional-warpper{
+			padding-top: 24px;
+			margin-top: 24px;
+			border-top: 1px solid $border_color;
+		}
+	}
+}
+
+.candidate-rating-warpper {
+	.rating-count {
+		position: relative;
+		padding-left: 15px;
+		&:before {
+			content: "";
+			width: 6px;
+			height: 6px;
+			display: block;
+			position: absolute;
+			@include transform(translateY(-50%));
+			top: 50%;
+			background-color: #d9d9d9;
+			border-radius: 50%;
+			left: 2px;
+		}
+		i {
+			color: $accent_color;
+			font-weight: bold;
+			margin-right: 0;
+		}
+		span {
+			font-weight: 500;
+			color: $accent_color;
+			margin-right: 3px;
+		}
+	}
+	.review-count {
+		color: $secondary_color;
+		font-weight: 500;
+	}
+}
+
+.time-dot {
+	&::before {
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		border: 2px solid $accent_color;
+		border-radius: 50%;
+	}
+}
+
+.time-line {
+	&::before {
+		content: "";
+		position: absolute;
+		width: 1px;
+		top: 0px;
+		bottom: 0;
+		margin: auto 0;
+		border: 1px dashed $accent_color;
+	}
+}
+
+.slick-align-left {
+	.slick-track {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.candidate-info {
+		display: block;
+	}
+	.candidate-rating-warpper {
+		margin-top: 10px;
+	}
+	.candidate-head-details .civi-candidate-header-bottom a {
+		margin-bottom: 8px;
+	}
+	.rating-bars .rating-bars-item {
+		@include flex(0 0 100%);
+		max-width: 100%;
+	}
+	.add-new-review .star-rating {
+		width: 100%;
+	}
+}

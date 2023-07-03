@@ -1,0 +1,1 @@
+<?php echo "Profile Silence is golden"; ?>

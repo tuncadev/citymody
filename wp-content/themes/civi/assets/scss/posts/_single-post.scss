@@ -1,0 +1,237 @@
+.single {
+	.site-layout.has-thumbnail #primary #main {
+		padding-right: 30px;
+		background: #fff;
+	}
+
+	.post-thumbnail {
+		figure {
+			margin-bottom: 0;
+		}
+		img {
+			width: 100%;
+			min-height: 400px;
+			max-height: 450px;
+			object-fit: cover;
+		}
+	}
+
+	.post .inner-post-wrap {
+		.post-categories {
+			display: table;
+			margin-bottom: 15px;
+			li {
+				display: inline-block;
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			a {
+				font-size: 14px;
+				line-height: 19px;
+				text-transform: uppercase;
+				border-bottom: 1px solid $accent_color;
+			}
+		}
+		.post-title {
+			margin-bottom: 20px;
+		}
+		.post-title .entry-title {
+			font-size: 36px;
+			font-weight: 500;
+			margin-bottom: 0;
+			-ms-word-wrap: break-word;
+			word-wrap: break-word;
+		}
+		.post-meta {
+			font-size: 15px;
+			line-height: 23px;
+			font-style: italic;
+			margin-bottom: 30px;
+			display: flex;
+			flex-wrap: wrap;
+			color: #8d8d8d;
+			> div {
+				margin-right: 24px;
+				position: relative;
+				&:last-child {
+					margin-right: 0;
+					&:after {
+						display: none;
+					}
+				}
+				&:after {
+					content: "";
+					width: 4px;
+					height: 4px;
+					background-color: #d8d8d8;
+					@include border-radius(30px);
+					display: block;
+					position: absolute;
+					right: -14px;
+					top: 50%;
+					margin-top: -2px;
+				}
+			}
+			.post-author {
+				span {
+					margin-right: 5px;
+				}
+				a {
+					font-weight: 600;
+					color: #2d2d2d;
+				}
+				a:hover {
+					color: $accent_color;
+				}
+			}
+		}
+		.post-content {
+			padding-bottom: 40px;
+			line-height: 1.625;
+			p:last-child {
+				margin-bottom: 0;
+			}
+			&:after {
+				content: "";
+				clear: both;
+				display: block;
+			}
+		}
+		.post-tags {
+			display: flex;
+			padding-bottom: 30px;
+			i {
+				font-size: 18px;
+				position: relative;
+				bottom: -4px;
+			}
+			.entry-tag {
+				display: table;
+				padding-left: 10px;
+				line-height: 1.8;
+				a {
+					margin-right: 6px;
+				}
+			}
+		}
+		.post-author {
+			display: flex;
+
+			.entry-avatar {
+				display: inline-block;
+				overflow: hidden;
+			}
+			.entry-avatar img {
+				@include border-radius(50%);
+				width: 100px;
+				height: 100px;
+				object-fit: cover;
+			}
+			.inner-left {
+				display: inline-flex;
+				flex: 0 0 100px;
+			}
+			.inner-left + .inner-right {
+				padding-left: 20px;
+			}
+			.head-author {
+				display: flex;
+				align-items: center;
+				.entry-title {
+					font-size: 15px;
+					font-weight: 500;
+					margin-bottom: 0;
+				}
+				.entry-title a {
+					color: $primary_color;
+					&:hover {
+						color: $accent_color;
+					}
+				}
+			}
+			.author-socials-profile {
+				margin-left: 20px;
+			}
+			.author-socials-profile ul {
+				display: flex;
+				line-height: 28px;
+				padding-left: 0;
+				margin-bottom: 0;
+			}
+			.author-socials-profile li {
+				display: inline-block;
+				margin-right: 20px;
+				font-size: 24px;
+				line-height: 1;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			.entry-bio {
+				margin-bottom: 0;
+			}
+			.head-author + .entry-bio {
+				margin-top: 15px;
+			}
+		}
+
+		.related-post {
+			.entry-post-thumbnail img {
+				@include border-radius(8px);
+			}
+			.entry-post-thumbnail + .entry-post-detail {
+				margin-top: 20px;
+			}
+			.post-title {
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.block-line {
+		border-top: 1px solid #eeeeee;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.single .post .inner-post-wrap {
+		.post-author {
+			align-items: inherit;
+
+			.inner-left {
+				flex: 0 0 50px;
+				position: absolute;
+			}
+
+			.inner-left + .inner-right {
+				padding-left: 0;
+			}
+
+			.entry-avatar img {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		.post-author .head-author {
+			display: block;
+			padding-left: 70px;
+		}
+
+		.post-author .author-socials-profile {
+			margin-left: 0;
+			margin-top: 10px;
+		}
+
+		.related-post .post-title {
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+}

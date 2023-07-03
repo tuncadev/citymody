@@ -1,0 +1,116 @@
+.elementor-element {
+	.elementor-form-fields-wrapper {
+		position: relative;
+	}
+
+	.elementor-field.elementor-field {
+		&::-webkit-input-placeholder {
+			opacity: 1;
+		}
+
+		&:-moz-placeholder { /* Firefox 18- */
+			opacity: 1;
+		}
+
+		&::-moz-placeholder { /* Firefox 19+ */
+			opacity: 1;
+		}
+
+		&:-ms-input-placeholder {
+			opacity: 1;
+		}
+	}
+
+	.elementor-field-group .elementor-field-textual {
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+
+/* Helper class */
+.elementor-form-no-wrap {
+	.elementor-form-fields-wrapper {
+		flex-wrap: nowrap;
+	}
+}
+
+.elementor-field-group {
+	&.elementor-col-fit {
+		flex-grow: 1;
+	}
+
+	&.elementor-col-custom {
+		flex-shrink: 0;
+	}
+}
+
+.elementor-form {
+	.elementor-button {
+		&.elementor-size-xs {
+			min-height: 40px;
+		}
+
+		&.elementor-size-sm {
+			min-height: 48px;
+		}
+
+		&.elementor-size-md {
+			min-height: 52px;
+		}
+
+		&.elementor-size-lg {
+			min-height: 56px;
+		}
+
+		&.elementor-size-xl {
+			min-height: 60px;
+		}
+	}
+
+	.elementor-field-textual {
+		&.elementor-size-xs,
+		&.elementor-size-sm,
+		&.elementor-size-md,
+		&.elementor-size-lg,
+		&.elementor-size-xl {
+			border-radius: 5px;
+		}
+
+		&.elementor-size-xs {
+			min-height: 40px;
+		}
+
+		&.elementor-size-sm {
+			min-height: 48px;
+			font-size: 16px;
+		}
+
+		&.elementor-size-md {
+			min-height: 52px;
+			padding: 3px 20px;
+		}
+
+		&.elementor-size-lg {
+			min-height: 56px;
+		}
+
+		&.elementor-size-xl {
+			min-height: 60px;
+		}
+	}
+
+	/**
+	 * Use Font Awesome instead of eicons.
+	 */
+	.elementor-message-success {
+		&:before {
+			@extend %FontAwesomeRegular;
+			content: '\f00c';
+		}
+	}
+}
+
+.elementor-field-group .elementor-select-wrapper:before {
+	display: none;
+}

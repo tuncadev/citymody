@@ -1,0 +1,260 @@
+@import "settings/mixins";
+
+.civi-team-member {
+	.name {
+		a {
+			color: inherit;
+		}
+	}
+}
+
+.civi-team-member-style-01 {
+	.civi-team-member {
+		&:hover {
+			.overlay,
+			.social-networks {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.photo {
+		@extend %NormalTransition;
+		position: relative;
+		border-radius: 5px;
+
+		img {
+			width: 100%;
+			border-radius: inherit;
+		}
+	}
+
+	.overlay {
+		@extend %NormalTransition;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 0;
+	}
+
+	.info {
+		text-align: center;
+		padding: 24px 0 0;
+	}
+
+	.name {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 0;
+	}
+
+	.position {
+		margin-top: 10px;
+		font-size: 18px;
+	}
+
+	.description {
+		margin-top: 10px;
+	}
+
+	.social-networks {
+		margin-top: 23px;
+		a {
+			font-size: 20px;
+			+ a {
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+.civi-team-member-style-02 {
+	.civi-team-member {
+		position: relative;
+
+		&:hover {
+			.photo {
+				box-shadow: 0 55px 40px -40px rgba(51, 51, 51, 0.25);
+			}
+
+			.overlay,
+			.info,
+			.social-networks {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.photo {
+		@extend %NormalTransition;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.overlay {
+		@extend %NormalTransition;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(17, 17, 17, 0.8);
+		z-index: 0;
+	}
+
+	.info {
+		@extend %NormalTransition;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 30px 30px 27px;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.name {
+		font-size: 20px;
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	.position {
+		margin-top: 8px;
+		font-size: 12px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1.38px;
+		color: rgba(255, 255, 255, 0.4);
+	}
+
+	.description {
+		color: #fff;
+		margin-top: 10px;
+	}
+
+	.social-networks {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		text-align: right;
+		opacity: 0;
+		visibility: hidden;
+
+		a {
+			@extend %NormalTransition;
+			display: inline-block;
+			font-size: 18px;
+			line-height: 0;
+			color: #fff;
+			padding: 10px 8px;
+		}
+	}
+}
+
+.civi-team-member-style-03 {
+	.civi-team-member {
+		position: relative;
+
+		&:hover {
+			.overlay,
+			.info,
+			.social-networks {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	.photo {
+		@extend %NormalTransition;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.overlay {
+		@extend %NormalTransition;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 0;
+	}
+
+	.info {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		transform: translateY(-50%);
+		padding: 30px 30px 27px;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		text-align: center;
+	}
+
+	.name {
+		font-size: 24px;
+		color: #fff;
+		margin-bottom: 0;
+	}
+
+	.position {
+		margin: 0 0 8px;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 1.38px;
+		color: #fff;
+	}
+
+	.description {
+		color: #fff;
+		margin-top: 10px;
+	}
+
+	.social-networks {
+		@extend %NormalTransition;
+		position: absolute;
+		bottom: 33px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+
+		a {
+			@extend %NormalTransition;
+			display: inline-block;
+			font-size: 20px;
+			line-height: 0;
+			color: #fff;
+			padding: 10px 8px;
+		}
+	}
+}

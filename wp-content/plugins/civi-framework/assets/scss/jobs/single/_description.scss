@@ -1,0 +1,56 @@
+.jobs-description-details {
+	h4,
+	h5,
+	h6 {
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
+	p {
+		margin-bottom: 24px;
+		line-height: 1.5;
+	}
+	li + li {
+		margin-top: 16px;
+	}
+	ul {
+		list-style: disc;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.civi-description-details{
+	.toggle-description {
+		margin-top: 15px;
+		i {
+			margin-left: 8px;
+		}
+		a {
+			font-size: 16px;
+			color: $accent_color;
+			font-weight: 500;
+		}
+	}
+}
+
+
+@media (min-width: 576px) {
+	.civi-description-details .toggle-description {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.civi-description-details {
+		&.on {
+			.civi-description {
+				overflow: hidden;
+				max-height: 330px;
+			}
+			.hide-all-description {
+				display: none;
+			}
+		}
+	}
+}

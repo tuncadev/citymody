@@ -1,0 +1,17 @@
+<svg width="198px" height="400px" viewBox="0 0 198 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0,0 L26.2945309,0 C18.4769913,82.8373178 27.6126461,152.561479 53.7014953,210.169989 C79.7903445,267.7785 127.889846,331.05517 198,400 L0,400 L0,0.956 Z" id="path-1"></path>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-606.000000, -80.000000)">
+            <g transform="translate(0.000000, 80.000000)">
+                <g transform="translate(606.000000, 0.000000)">
+                    <mask fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use fill="#23D3D3" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

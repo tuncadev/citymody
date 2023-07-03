@@ -1,0 +1,63 @@
+#elementor-notice-bar {
+	display: none !important;
+}
+
+.elementor-control.elementor-control-title.elementor-control-type-text {
+	margin-right: 0;
+}
+
+.elementor-control-type-repeater {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.elementor-control-type-heading .elementor-control-title {
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.control-heading-in-tabs.elementor-control-separator-before:before {
+	left: 20px;
+	right: 20px;
+	width: auto;
+}
+
+.elementor-element {
+	position: relative;
+}
+
+.elementor-element .civi-badge:after {
+	content: "Civi";
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	padding: 3px 4px;
+	border: 1px solid currentColor;
+	font-family: "Open Sans", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 9px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	background: #23d3d3;
+}
+
+.elementor-editor-active .page-header {
+	pointer-events: none;
+}
+
+.civi-control-media-auto .elementor-control-media__preview {
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.civi-control-repeater-title-capitalize .elementor-repeater-row-item-title {
+	text-transform: capitalize;
+}
+
+.fa,
+.fas,
+.fal,
+.far {
+	font-family: "Font Awesome 5 Pro" !important;
+}

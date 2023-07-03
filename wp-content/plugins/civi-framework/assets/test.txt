@@ -1,0 +1,2 @@
+This file for test wp_remote_get function.
+DON'T REMOVE!

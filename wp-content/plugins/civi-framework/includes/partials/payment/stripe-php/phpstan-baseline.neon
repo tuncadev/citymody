@@ -1,0 +1,12 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Access to undefined constant MyStripe\\\\ApiResource\\:\\:OBJECT_NAME\\.$#"
+			count: 1
+			path: lib/ApiResource.php
+
+		-
+			message: "#^Access to undefined constant MyStripe\\\\SingletonApiResource\\:\\:OBJECT_NAME\\.$#"
+			count: 1
+			path: lib/SingletonApiResource.php
+

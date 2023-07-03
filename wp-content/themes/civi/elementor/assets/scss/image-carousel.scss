@@ -1,0 +1,9 @@
+@import "settings/mixins";
+
+.elementor-widget-civi-image-carousel {
+	.image {
+		img {
+			@extend %NormalTransition;
+		}
+	}
+}

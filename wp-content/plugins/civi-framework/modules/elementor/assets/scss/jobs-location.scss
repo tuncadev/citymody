@@ -1,0 +1,58 @@
+@import "mixins";
+@import "variables";
+
+.elementor-widget-civi-jobs-location{
+  &.elementor-position-right{
+    .cate-inner{
+      @include flex-row-reverse();
+    }
+  }
+  &.elementor-position-right,
+  &.elementor-position-left{
+    .cate-inner{
+      @include d-flex();
+      @include align-items-center();
+      @include justify-content-between();
+    }
+    .image-cate img{
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .cate-title{
+      margin-top: 0;
+    }
+  }
+  .hover-box{
+    position: relative;
+    .link-box{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+  .cate-title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0;
+    a{
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .cate-count{
+    margin-top: 4px;
+  }
+  .image-cate img{
+    border-radius: 16px;
+  }
+  .civi-image{
+    display: block;
+    border-radius: 16px;
+  }
+}

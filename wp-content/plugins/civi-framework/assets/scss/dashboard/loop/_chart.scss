@@ -1,0 +1,42 @@
+.civi-chart-warpper {
+	padding: 32px;
+	border: 1px solid $border_color;
+	background-color: #fff;
+	border-radius: 8px;
+	position: relative;
+	.chart-header {
+		@include d-flex();
+		@include justify-content-between();
+		@include align-items-center();
+		margin-bottom: 25px;
+		.title-chart {
+			font-size: 24px;
+		}
+		.form-chart {
+			position: relative;
+			&:before {
+				content: "\f107";
+				font-family: "Font Awesome 5 Pro";
+				position: absolute;
+				top: 50%;
+				@include transform(translateY(-50%));
+				right: 25px;
+			}
+			select {
+				font-weight: 500;
+				padding: 11px 42px 11px 20px;
+				border-radius: 8px;
+				border-color: $border_color;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				appearance: none;
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+	.civi-loading-effect {
+		display: none;
+	}
+}

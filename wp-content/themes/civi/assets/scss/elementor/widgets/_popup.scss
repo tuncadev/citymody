@@ -1,0 +1,24 @@
+.dialog-widget {
+	&.elementor-popup-modal {
+		.dialog-message {
+			max-width: 90vw;
+		}
+
+		.dialog-close-button {
+			top: 14px;
+		}
+	}
+
+	.dialog-close-button {
+		font-size: 32px;
+
+		i {
+			@extend %FontAwesomeLight;
+			@extend %NormalTransition;
+
+			&:before {
+				content: '\f00d';
+			}
+		}
+	}
+}

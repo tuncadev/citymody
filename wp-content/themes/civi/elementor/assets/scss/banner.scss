@@ -1,0 +1,57 @@
+@import "settings/mixins";
+@import "settings/variables";
+
+.civi-banner {
+	position: relative;
+	width: 100%;
+	&.style-02 .content {
+		top: 50%;
+		@include transform(translateY(-50%));
+	}
+	&.style-03 .content {
+		bottom: 0;
+		top: auto;
+	}
+	&.style-04 .content {
+		@include d-flex();
+		@include flex-column();
+		height: 100%;
+		.civi-button-wrapper {
+			margin-top: auto !important;
+		}
+	}
+	.civi-banner-bg {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		border-radius: 16px;
+	}
+	.content {
+		position: absolute;
+		top: 0;
+		padding: 48px;
+		width: 100%;
+	}
+	.title {
+		font-size: 24px;
+		margin-bottom: 0;
+		a {
+			color: inherit;
+		}
+	}
+	.sub-title {
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: $primary_color;
+		margin-bottom: 13px;
+	}
+	.description {
+		color: #000;
+		margin-top: 10px;
+	}
+	.civi-button-wrapper {
+		margin-top: 32px;
+	}
+}

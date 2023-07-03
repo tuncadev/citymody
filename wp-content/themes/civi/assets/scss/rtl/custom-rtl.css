@@ -1,0 +1,16 @@
+.civi_breadcrumb li:not(:first-child)::before {
+	content: none;
+}
+.civi_breadcrumb li:not(:first-child)::after {
+	content: "\f104";
+	font-family: "Font Awesome 5 Pro";
+	padding-right: 10px;
+	padding-left: 10px;
+	color: var(--civi-color-secondary);
+}
+i.fa-chevron-right:before {
+	content: "\f053";
+}
+i.fa-chevron-left:before {
+	content: "\f054";
+}

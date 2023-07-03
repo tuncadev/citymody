@@ -1,0 +1,23 @@
+.pakages-dashboard{
+  .limit,.days,.remaining{
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .package-id{
+    color: $accent_color;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pakages-dashboard{
+    .col-name{
+      min-width: 380px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .pakages-dashboard tbody td:first-child {
+    min-width: 120px !important;
+  }
+}

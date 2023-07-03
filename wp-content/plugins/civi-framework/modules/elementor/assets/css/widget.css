@@ -1,0 +1,131 @@
+/*Reset*/
+#elementor-notice-bar {
+	display: none !important;
+}
+
+.elementor-page .main-content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.elementor-element p {
+	margin-bottom: 0;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container {
+	max-width: 1170px;
+}
+
+.elementor-item {
+	outline: 0;
+}
+
+.elementor-nav-menu .sub-arrow {
+	padding-left: 5px;
+}
+
+.elementor-slick-slider ul.slick-dots {
+	bottom: -50px;
+}
+
+.elementor-slick-slider .slick-arrow {
+	width: 46px;
+	height: 46px;
+	line-height: 1;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+
+.elementor-slick-slider .slick-arrow:hover,
+.elementor-slick-slider .slick-arrow:focus {
+	border-color: var(--civi-color-accent);
+	background-color: var(--civi-color-accent);
+	opacity: 1;
+}
+
+.elementor-slick-slider .slick-arrow:hover:before,
+.elementor-slick-slider .slick-arrow:focus:before{
+	color: #fff;
+}
+
+.elementor-slick-slider .slick-arrow:before {
+	font-family: "Font Awesome 5 Pro";
+	font-size: 18px;
+	color: #111;
+	opacity: 1;
+}
+.elementor-slick-slider .slick-prev:before {
+	content: "\f053";
+}
+.elementor-slick-slider .slick-next:before {
+	content: "\f054";
+}
+.elementor-slick-slider ul.slick-dots li {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.elementor-slick-slider ul.slick-dots li button:before {
+	font-size: 8px;
+	opacity: 1;
+	color: var(--civi-color-border);
+}
+
+
+.elementor-slick-slider ul.slick-dots li.slick-active button:before {
+	color: var(--civi-color-accent);
+}
+
+.elementor-posts-container.elementor-has-item-ratio.elementor-posts--skin-civi-posts-categories
+	.elementor-post__thumbnail
+	img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.uxper-float {
+	z-index: 20;
+	background: transparent !important;
+	position: absolute !important;
+	width: 100%;
+}
+
+.uxper-sticky.on {
+	position: sticky !important;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.2);
+}
+
+.admin-bar .uxper-sticky.on {
+	top: 32px;
+}
+
+.uxper-sticky.on.black {
+	background: #000 !important;
+}
+
+.uxper-sticky.on.white {
+	background: #fff !important;
+}
+
+.uxper-sticky.uxper-float.on {
+	position: fixed !important;
+}
+
+.uxper-sticky.on.has-wpadminbar {
+	top: 32px;
+}
+
+.elementor-button-content-wrapper {
+	align-items: center;
+}
+
+@media(max-width: 767px){
+	.elementor-slick-slider .slick-arrow {
+		display: none !important;
+	}
+}

@@ -1,0 +1,96 @@
+.civi-gradation .count {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes gradationSignal {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.civi-gradation .count-wrap {
+  position: relative;
+  width: 46px;
+  height: 46px;
+}
+.civi-gradation .count-wrap:before, .civi-gradation .count-wrap:after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  pointer-events: none;
+  border: 1px solid var(--civi-color-accent);
+  transform-origin: 50% 50%;
+  animation-timing-function: cubic-bezier(0, 0.55, 0.55, 1);
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+.civi-gradation .count-wrap:after {
+  animation-delay: 0.75s;
+}
+.civi-gradation .content-wrap {
+  margin-left: 60px;
+}
+.civi-gradation .count {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  transform: translate(0, -50%);
+  z-index: 3;
+  background: #f2f8f7;
+  border: 1px solid #f2f8f7;
+  color: var(--civi-color-accent);
+  font-size: 24px;
+  font-weight: 600;
+}
+.civi-gradation .item {
+  display: -ms-flexbox;
+  display: flex;
+}
+.civi-gradation .item:last-child .line:before {
+  display: none;
+}
+.civi-gradation .item:hover .count {
+  border-color: transparent;
+}
+.civi-gradation .item:hover .count-wrap:before, .civi-gradation .item:hover .count-wrap:after {
+  animation-name: gradationSignal;
+}
+.civi-gradation .item + .item {
+  margin-top: 38px;
+}
+.civi-gradation .line:before {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 23px;
+  border-left: 2px solid #ffd75e;
+  width: 2px;
+  height: 60px;
+  display: inline-block;
+}
+.civi-gradation .title {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.civi-gradation .title mark {
+  color: var(--civi-color-accent);
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=gradation.css.map */

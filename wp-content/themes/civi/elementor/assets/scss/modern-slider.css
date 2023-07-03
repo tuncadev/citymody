@@ -1,0 +1,109 @@
+.civi-modern-slider .slide-bg-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.civi-modern-slider .slide-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--civi-color-primary);
+}
+.civi-modern-slider .container,
+.civi-modern-slider .row {
+  height: 100%;
+}
+.civi-modern-slider .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.civi-modern-slider .slide-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.civi-modern-slider .slide-layers {
+  max-width: 600px;
+  padding: 30px 0;
+}
+.civi-modern-slider .sub-title-wrap {
+  margin: 0 0 15px;
+}
+.civi-modern-slider .sub-title {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.civi-modern-slider .title {
+  font-size: 50px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 0;
+}
+.civi-modern-slider .description-wrap {
+  margin-top: 30px;
+}
+.civi-modern-slider .description {
+  font-size: 20px;
+  color: #fff;
+}
+.civi-modern-slider .button-wrap {
+  margin-top: 34px;
+}
+.civi-modern-slider .civi-button {
+  display: inline-flex;
+  min-width: 160px;
+}
+
+.civi-slide-bg-animation-ken-burns .slide-bg-wrap {
+  -webkit-transform: scale(1.35);
+  transform: scale(1.35);
+  backface-visibility: hidden;
+}
+.civi-slide-bg-animation-ken-burns.swiper-slide-active .slide-bg-wrap {
+  transform: scale(1);
+  transition: transform 11s cubic-bezier(0.1, 0.2, 0.7, 1);
+}
+
+.slide-layer-transition .animated .slide-layer {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s cubic-bezier(0.1, 0.2, 0.7, 1);
+}
+.slide-layer-transition .animated .slide-layer-wrap + .slide-layer-wrap .slide-layer {
+  transition-delay: 0.2s;
+}
+.slide-layer-transition .animated .slide-layer-wrap + .slide-layer-wrap + .slide-layer-wrap .slide-layer {
+  transition-delay: 0.4s;
+}
+.slide-layer-transition .slide-layer {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: all 0.1s;
+}
+
+@media (max-width: 1024px) {
+  .civi-modern-slider .title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .civi-modern-slider .title {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=modern-slider.css.map */

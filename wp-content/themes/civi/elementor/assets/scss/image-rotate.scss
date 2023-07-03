@@ -1,0 +1,166 @@
+@import "settings/mixins";
+@import "settings/variables";
+
+.civi-image-rotate {
+	width: 100%;
+	.layer {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		@include transition(all 0.6s ease-in-out);
+		text-align: center;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+	}
+	.content-wrap {
+		height: 230px;
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	.civi-image {
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		z-index: 1;
+		animation-duration: 15s;
+		animation-delay: 4s;
+		animation-duration: 12s;
+		animation-delay: 1s;
+
+		animation-iteration-count: infinite;
+		img {
+			height: 230px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.content {
+		animation-duration: 15s;
+		animation-delay: 4s;
+		animation-duration: 12s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+		background: $accent_color;
+		color: #fff;
+		padding: 16px;
+		.title {
+			color: #fff;
+		}
+	}
+	&.postion-top {
+		.civi-image {
+			animation-name: rotateUp;
+		}
+		.content {
+			animation-name: rotateDown;
+		}
+	}
+
+	&.postion-left {
+		.civi-image {
+			animation-name: rotateLeft;
+		}
+		.content {
+			animation-name: rotateRight;
+		}
+	}
+}
+
+@keyframes rotateLeft {
+	0% {
+		@include transform(rotateY(0));
+	}
+	30% {
+		@include transform(rotateY(0));
+	}
+	50% {
+		@include transform(rotateY(-180deg));
+	}
+	65% {
+		@include transform(rotateY(-190deg));
+	}
+	80% {
+		@include transform(rotateY(-180deg));
+	}
+	100% {
+		@include transform(rotateY(0));
+	}
+}
+
+@keyframes rotateRight {
+	0% {
+		@include transform(rotateY(190deg));
+	}
+	15% {
+		@include transform(rotateY(180deg));
+	}
+	30% {
+		@include transform(rotateY(180deg));
+	}
+	50% {
+		@include transform(rotateY(-10deg));
+	}
+	65% {
+		@include transform(rotateY(0));
+	}
+	80% {
+		@include transform(rotateY(0));
+	}
+	100% {
+		@include transform(rotateY(180deg));
+	}
+}
+
+@keyframes rotateUp {
+	0% {
+		@include transform(rotateX(0));
+	}
+	30% {
+		@include transform(rotateX(0));
+	}
+	50% {
+		@include transform(rotateX(180deg));
+	}
+	65% {
+		@include transform(rotateX(170deg));
+	}
+	80% {
+		@include transform(rotateX(180deg));
+	}
+	100% {
+		@include transform(rotateX(0));
+	}
+}
+
+@keyframes rotateDown {
+	0% {
+		@include transform(rotateX(-190deg));
+	}
+	15% {
+		@include transform(rotateX(-180deg));
+	}
+	30% {
+		@include transform(rotateX(-180deg));
+	}
+	50% {
+		@include transform(rotateX(10deg));
+	}
+	65% {
+		@include transform(rotateX(0));
+	}
+	80% {
+		@include transform(rotateX(0));
+	}
+	100% {
+		@include transform(rotateX(-180deg));
+	}
+}

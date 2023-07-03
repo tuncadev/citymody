@@ -1,0 +1,39 @@
+// Bootstrap Required
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+//
+// Bootstrap Optional
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/print";
+
+// Settings
+@import "settings/_mixins";
+@import "settings/_variables";
+
+// Elements
+@import "elements/_formatting";
+@import "elements/_loading";
+@import "elements/_general";
+@import "elements/_editor-style";
+@import "elements/_widget";
+@import "elements/_swiper";
+
+//Header
+@import "header/_header";
+@import "header/_menu";
+@import "header/_top-bar";
+
+// Posts
+@import "posts/_content-post";
+@import "posts/_archive-post";
+@import "posts/_single-post";
+
+// Elementor
+@import "elementor/_all";

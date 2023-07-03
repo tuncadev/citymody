@@ -1,0 +1,7 @@
+#elementor-notice-bar {
+	display: none !important;
+}
+
+.elementor-panel .elementor-element .title {
+	line-height: 1.5;
+}

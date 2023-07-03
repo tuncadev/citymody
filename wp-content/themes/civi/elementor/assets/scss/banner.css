@@ -1,0 +1,62 @@
+.civi-banner {
+  position: relative;
+  width: 100%;
+}
+.civi-banner.style-02 .content {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.civi-banner.style-03 .content {
+  bottom: 0;
+  top: auto;
+}
+.civi-banner.style-04 .content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+.civi-banner.style-04 .content .civi-button-wrapper {
+  margin-top: auto !important;
+}
+.civi-banner .civi-banner-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 16px;
+}
+.civi-banner .content {
+  position: absolute;
+  top: 0;
+  padding: 48px;
+  width: 100%;
+}
+.civi-banner .title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.civi-banner .title a {
+  color: inherit;
+}
+.civi-banner .sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--civi-color-primary);
+  margin-bottom: 13px;
+}
+.civi-banner .description {
+  color: #000;
+  margin-top: 10px;
+}
+.civi-banner .civi-button-wrapper {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=banner.css.map */

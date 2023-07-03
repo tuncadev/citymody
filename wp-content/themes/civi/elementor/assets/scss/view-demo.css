@@ -1,0 +1,57 @@
+.civi-view-demo {
+  text-align: center;
+}
+.civi-view-demo .civi-box {
+  position: relative;
+  display: block;
+}
+.civi-view-demo .image {
+  box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+  border-radius: 5px;
+}
+.civi-view-demo .image > img {
+  width: 100%;
+  border-radius: inherit;
+}
+.civi-view-demo .heading {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 29px 0 0;
+}
+.civi-view-demo .badge {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+  top: 30px;
+  right: 0;
+  border-radius: 30px;
+  z-index: 2;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+.civi-view-demo .badge.hot {
+  background-color: #ef2107;
+}
+.civi-view-demo .badge.new {
+  background-color: #294afb;
+}
+.civi-view-demo .badge.coming {
+  background-color: var(--civi-color-accent);
+}
+
+/*# sourceMappingURL=view-demo.css.map */

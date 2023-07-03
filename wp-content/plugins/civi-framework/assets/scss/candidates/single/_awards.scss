@@ -1,0 +1,41 @@
+.single.candidate-award{
+    margin-top: 21px;
+
+    .award-title{
+        position: relative;
+        color: $primary_color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-left: 34px;
+        &.time-dot::before {
+            left: -34px;
+        }
+    }
+
+    .award-details{
+        position: relative;
+        height: 100%;
+        margin-top: 4px;
+        margin-left: 34px;
+
+        span:not(:first-child){
+            color: $text_color;
+            font-weight: 400;
+        }
+
+        span:last-child{
+            display: block;
+            margin-top: 16px;
+        }
+        &.time-line:before {
+            left: -30px;
+        }
+    }
+
+    .description{
+        margin-top: 16px;
+        color: $text_color;
+        font-weight: 400;
+    }
+}

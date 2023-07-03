@@ -1,0 +1,740 @@
+// Mixin for display flex
+//========================================================
+@mixin d-flex($important: '') {
+	@if ($important == important) {
+		display: -ms-flexbox !important;
+		display: flex !important;
+	} @else {
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+@mixin d-inline-flex($important: '') {
+	@if ($important == important) {
+		display: -webkit-inline-box !important;
+		display: -ms-inline-flexbox !important;
+		display: inline-flex !important;
+	}
+	@else {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+	}
+}
+
+@mixin flex-row($important: '') {
+	@if ($important == important) {
+		-ms-flex-direction: row !important;
+		flex-direction: row !important;
+	} @else {
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+}
+
+@mixin flex-row-reverse($important: '') {
+	@if ($important == important) {
+		-ms-flex-direction: row-reverse !important;
+		flex-direction: row-reverse !important;
+	} @else {
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+}
+
+@mixin flex-column($important: '') {
+	@if ($important == important) {
+		-ms-flex-direction: column !important;
+		flex-direction: column !important;
+	} @else {
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+@mixin flex-column-reverse($important: '') {
+	@if ($important == important) {
+		-ms-flex-direction: column-reverse !important;
+		flex-direction: column-reverse !important;
+	} @else {
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+}
+
+@mixin flex-wrap($important: '') {
+	@if ($important == important) {
+		-ms-flex-wrap: wrap !important;
+		flex-wrap: wrap !important;
+	} @else {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+}
+
+@mixin flex-nowrap($important: '') {
+	@if ($important == important) {
+		-ms-flex-wrap: nowrap !important;
+		flex-wrap: nowrap !important;
+	} @else {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+	}
+}
+
+@mixin flex-wrap-reverse($important: '') {
+	@if ($important == important) {
+		-ms-flex-wrap: wrap-reverse !important;
+		flex-wrap: wrap-reverse !important;
+	} @else {
+		-ms-flex-wrap: wrap-reverse;
+		flex-wrap: wrap-reverse;
+	}
+}
+
+@mixin flex-fill($important: '') {
+	@if ($important == important) {
+		-ms-flex: 1 1 auto !important;
+		flex: 1 1 auto !important;
+	} @else {
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+	}
+}
+
+@mixin flex($pro, $important: '') {
+	@if ($important == important) {
+		-ms-flex: $pro !important;
+		flex: $pro !important;
+	} @else {
+		-ms-flex: $pro;
+		flex: $pro;
+	}
+}
+
+@mixin flex-grow-0($important: '') {
+	@if ($important == important) {
+		-ms-flex-positive: 0 !important;
+		flex-grow: 0 !important;
+	} @else {
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+	}
+}
+
+@mixin flex-grow-1($important: '') {
+	@if ($important == important) {
+		-ms-flex-positive: 1 !important;
+		flex-grow: 1 !important;
+	} @else {
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+}
+
+@mixin flex-shrink-0($important: '') {
+	@if ($important == important) {
+		-ms-flex-negative: 0 !important;
+		flex-shrink: 0 !important;
+	} @else {
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+}
+
+@mixin flex-shrink-1($important: '') {
+	@if ($important == important) {
+		-ms-flex-negative: 1 !important;
+		flex-shrink: 1 !important;
+	} @else {
+		-ms-flex-negative: 1;
+		flex-shrink: 1;
+	}
+}
+
+@mixin justify-content-start($important: '') {
+	@if ($important == important) {
+		-ms-flex-pack: start !important;
+		justify-content: flex-start !important;
+	} @else {
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+}
+
+@mixin justify-content-end($important: '') {
+	@if ($important == important) {
+		-ms-flex-pack: end !important;
+		justify-content: flex-end !important;
+	} @else {
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+	}
+}
+
+@mixin justify-content-center($important: '') {
+	@if ($important == important) {
+		-ms-flex-pack: center !important;
+		justify-content: center !important;
+	} @else {
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+}
+
+@mixin justify-content-between($important: '') {
+	@if ($important == important) {
+		-ms-flex-pack: justify !important;
+		justify-content: space-between !important;
+	} @else {
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+}
+
+@mixin justify-content-around($important: '') {
+	@if ($important == important) {
+		-ms-flex-pack: distribute !important;
+		justify-content: space-around !important;
+	} @else {
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+	}
+}
+
+@mixin align-items-start($important: '') {
+	@if ($important == important) {
+		-ms-flex-align: start !important;
+		align-items: flex-start !important;
+	} @else {
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+}
+
+@mixin align-items-end($important: '') {
+	@if ($important == important) {
+		-ms-flex-align: end !important;
+		align-items: flex-end !important;
+	} @else {
+		-ms-flex-align: end;
+		align-items: flex-end;
+	}
+}
+
+@mixin align-items-center($important: '') {
+	@if ($important == important) {
+		-ms-flex-align: center !important;
+		align-items: center !important;
+	} @else {
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+@mixin align-items-baseline($important: '') {
+	@if ($important == important) {
+		-ms-flex-align: baseline !important;
+		align-items: baseline !important;
+	} @else {
+		-ms-flex-align: baseline;
+		align-items: baseline;
+	}
+}
+
+@mixin align-items-stretch($important: '') {
+	@if ($important == important) {
+		-ms-flex-align: stretch !important;
+		align-items: stretch !important;
+	} @else {
+		-ms-flex-align: stretch;
+		align-items: stretch;
+	}
+}
+
+@mixin align-content-start($important: '') {
+	@if ($important == important) {
+		-ms-flex-line-pack: start !important;
+		align-content: flex-start !important;
+	} @else {
+		-ms-flex-line-pack: start;
+		align-content: flex-start;
+	}
+}
+
+@mixin align-content-end($important: '') {
+	@if ($important == important) {
+		-ms-flex-line-pack: end !important;
+		align-content: flex-end !important;
+	} @else {
+		-ms-flex-line-pack: end;
+		align-content: flex-end;
+	}
+}
+
+@mixin align-content-center($important: '') {
+	@if ($important == important) {
+		-ms-flex-line-pack: center !important;
+		align-content: center !important;
+	} @else {
+		-ms-flex-line-pack: center;
+		align-content: center;
+	}
+}
+
+@mixin align-content-between($important: '') {
+	@if ($important == important) {
+		-ms-flex-line-pack: justify !important;
+		align-content: space-between !important;
+	} @else {
+		-ms-flex-line-pack: justify;
+		align-content: space-between;
+	}
+}
+
+@mixin align-content-around($important: '') {
+	@if ($important == important) {
+		-ms-flex-line-pack: distribute !important;
+		align-content: space-around !important;
+	} @else {
+		-ms-flex-line-pack: distribute;
+		align-content: space-around;
+	}
+}
+
+@mixin align-content-stretch($important: '') {
+	@if ($important == important) {
+		-ms-flex-line-pack: stretch !important;
+		align-content: stretch !important;
+	} @else {
+		-ms-flex-line-pack: stretch;
+		align-content: stretch;
+	}
+}
+
+@mixin align-self-auto($important: '') {
+	@if ($important == important) {
+		-ms-flex-item-align: auto !important;
+		align-self: auto !important;
+	} @else {
+		-ms-flex-item-align: auto;
+		align-self: auto;
+	}
+}
+
+@mixin align-self-start($important: '') {
+	@if ($important == important) {
+		-ms-flex-item-align: start !important;
+		align-self: flex-start !important;
+	} @else {
+		-ms-flex-item-align: start;
+		align-self: flex-start;
+	}
+}
+
+@mixin align-self-end($important: '') {
+	@if ($important == important) {
+		-ms-flex-item-align: end !important;
+		align-self: flex-end !important;
+	} @else {
+		-ms-flex-item-align: end;
+		align-self: flex-end;
+	}
+}
+
+@mixin align-self-center($important: '') {
+	@if ($important == important) {
+		-ms-flex-item-align: center !important;
+		align-self: center !important;
+	} @else {
+		-ms-flex-item-align: center;
+		align-self: center;
+	}
+}
+
+@mixin align-self-baseline($important: '') {
+	@if ($important == important) {
+		-ms-flex-item-align: baseline !important;
+		align-self: baseline !important;
+	} @else {
+		-ms-flex-item-align: baseline;
+		align-self: baseline;
+	}
+}
+
+@mixin align-self-stretch($important: '') {
+	@if ($important == important) {
+		-ms-flex-item-align: stretch !important;
+		align-self: stretch !important;
+	} @else {
+		-ms-flex-item-align: stretch;
+		align-self: stretch;
+	}
+}
+
+@mixin flex-flow-wrap-reverse($important: '') {
+	@if ($important == important) {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: reverse !important;
+		-ms-flex-flow: wrap-reverse !important;
+		flex-flow: wrap-reverse !important;
+	} @else {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-flow: wrap-reverse;
+		flex-flow: wrap-reverse;
+	}
+}
+
+@mixin flex-flow-wrap($important: '') {
+	@if ($important == important) {
+		-ms-flex-flow: wrap !important;
+		flex-flow: wrap !important;
+	} @else {
+		-ms-flex-flow: wrap;
+		flex-flow: wrap;
+	}
+}
+
+@mixin flex-flow-column($important: '') {
+	@if ($important == important) {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		-ms-flex-flow: column !important;
+		flex-flow: column !important;
+	} @else {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+		flex-flow: column;
+	}
+}
+
+@mixin flex-flow-column-reverse($important: '') {
+	@if ($important == important) {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: reverse !important;
+		-ms-flex-flow: column-reverse !important;
+		flex-flow: column-reverse !important;
+	} @else {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-flow: column-reverse;
+		flex-flow: column-reverse;
+	}
+}
+
+@mixin flex-flow-row($important: '') {
+	@if ($important == important) {
+		-webkit-box-orient: horizontal !important;
+		-webkit-box-direction: normal !important;
+		-ms-flex-flow: row !important;
+		flex-flow: row !important;
+	} @else {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row;
+		flex-flow: row;
+	}
+}
+
+@mixin flex-flow-row-reverse($important: '') {
+	@if ($important == important) {
+		-webkit-box-orient: horizontal !important;
+		-webkit-box-direction: reverse !important;
+		-ms-flex-flow: row-reverse !important;
+		flex-flow: row-reverse !important;
+	} @else {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: reverse;
+		-ms-flex-flow: row-reverse;
+		flex-flow: row-reverse;
+	}
+}
+
+// Transform
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -o-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+@mixin transform-origin($value) {
+    -webkit-transform-origin: $value;
+    -moz-transform-origin: $value;
+    -o-transform-origin: $value;
+    -ms-transform-origin: $value;
+    transform-origin: $value;
+}
+
+// Transition
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+    -ms-transition: $value;
+    transition: $value;
+}
+
+//Box Shadow
+@mixin box-shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+@mixin transition($value...) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+// Transition 0.3s
+@mixin transition-03 {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+// Transition 0.5s
+@mixin transition-05 {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+// User select
+@mixin user-select($value) {
+    -webkit-user-select: $value;
+    -khtml-user-select: $value;
+    -moz-user-select: -moz-$value;
+    -o-user-select: $value;
+    user-select: $value;
+}
+
+@mixin input-checkbox {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    margin-right: 10px;
+    text-align: center;
+}
+
+@mixin input-checked {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 12px;
+    line-height: 18px;
+    color: $accent_color;
+    border-color: $accent_color;
+}
+
+@mixin NormalTransition {
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+%NormalTransition {
+    @include NormalTransition();
+}
+
+@mixin FastTransition {
+    transition: all 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+%FastTransition {
+    @include FastTransition();
+}
+
+@mixin clearfix() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+%clearfix {
+    @include clearfix;
+}
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+%Absolute {
+    @include absolute();
+}
+
+%ContentAbsolute {
+    content: "";
+    @include absolute();
+}
+
+// Mixin for link transition
+
+@mixin LinkTransition {
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+        background: currentColor;
+    }
+
+    &:hover {
+
+        &:after {
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+    }
+}
+
+%LinkTransition {
+    @include LinkTransition();
+}
+
+@mixin LinkTransition02 {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    padding: 5px 0;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #e7e7e7;
+        transform-origin: right;
+        transform: scaleX(1) translateZ(0);
+        transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s,
+            -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+    }
+
+    &:after {
+        transform-origin: left;
+        transform: scaleX(0) translateZ(0);
+        transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &:hover {
+        &:before {
+            transform: scaleX(0) translateZ(0);
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        &:after {
+            transform: scaleX(1) translateZ(0);
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s,
+                -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+        }
+    }
+}
+
+%LinkTransition02 {
+    @include LinkTransition02();
+}
+
+
+// Mixin for font awesome version 5.x
+
+@mixin FontAwesome {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+%FontAwesomeSolid {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+%FontAwesomeLight {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 300;
+}
+
+%FontAwesomeRegular {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+}
+
+%FontAwesomeBrands {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+}
+
+%FontAwesomeSolidImportant {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 900;
+}
+
+%FontAwesomeLightImportant {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 300;
+}
+
+%FontAwesomeRegularImportant {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 400;
+}
+
+%FontAwesomeBrandsImportant {
+    @include FontAwesome();
+    font-family: "Font Awesome 5 Brands" !important;
+    font-weight: 400;
+}
+
+@mixin LightCloseCursor {
+    cursor: url("assets/images/cursor/light-close.png") 16 16, pointer;
+}
+
+%LightCloseCursor {
+    @include LightCloseCursor();
+}

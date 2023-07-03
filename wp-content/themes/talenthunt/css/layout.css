@@ -1,0 +1,119 @@
+/*---------------------------
+## Page Alignment
+----------------------------*/
+#kaya-page-content-wrapper{
+    margin: 0px auto;
+}
+
+#mid-content, .container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.container {
+    margin: 0px auto;
+    display: block;  
+    width: 100%;
+}
+#kaya-mid-content-wrapper a{
+    text-decoration: none;
+}
+div#kaya-mid-content-wrapper {
+
+}
+.mid-content, .one_third_last #sidebar, .one_fourth_last #sidebar{
+    padding: 50px 15px;
+}
+/*-----------------------
+## Columns
+-------------------------*/
+.fullwidth {
+    width: 100%;
+    float: left;
+}
+.one_half {
+    width: 48.10%;
+    float: left;
+    margin-right: 3.80%;
+}
+.one_half_last {
+    width: 48.10%;
+    float: right;
+}
+.one_third {
+    width: 30.70%;
+    float: left;
+    margin-right: 3.80%;
+}
+.one_third_last {
+    width: 30.70%;
+    float: right;
+}
+.one_third_last:after {
+    clear: both;
+}
+.two_third {
+    width: 65.40%;
+    float: left;
+    margin-right: 3.80%;
+}
+.two_third_last {
+    width: 65.20%;
+    float: right;
+    display: table-cell;
+}
+.one_fourth {
+    width: 22.15%;
+    float: left;
+    margin-right: 3.80%;
+}
+.one_fourth_last {
+    width: 22.15%;
+    float: right;
+}
+.two_fourth {
+    width: 48.10%;
+    float: left;
+    margin-right: 3.80%;
+}
+.three_fourth {
+    width: 74.05%;
+    float: left;
+    margin-right: 3.80%;
+}
+.three_fourth_last {
+    width: 74.05%;
+    float: right;
+}
+.one_fifth {
+    width: 16.96%;
+    float: left;
+    margin-right: 3.80%;
+}
+.one_fifth_last {
+    width: 16.96%;
+    float: right;
+}
+.two_fifth {
+    width: 33.92%;
+    float: left;
+    margin-right: 3.80%;
+}
+.three_fifth {
+    width: 58.48%;
+    float: left;
+    margin-right: 3.80%;
+}
+.four_fifth {
+    width: 79.240%;
+    float: left;
+    margin-right: 3.80%;
+}
+.four_fifth_last {
+    width: 79.240%;
+    float: right;
+}
+.last {
+    margin-right: 0px !important;
+    float: right !important;
+}

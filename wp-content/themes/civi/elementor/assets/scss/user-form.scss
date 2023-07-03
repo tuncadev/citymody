@@ -1,0 +1,25 @@
+.form-account {
+	.form-group {
+		margin-bottom: 24px;
+	}
+	label {
+		span.require {
+			color: red;
+			margin-left: 5px;
+		}
+	}
+}
+.elementor-widget-civi-user-form {
+	.civi-reset-password-wrap {
+		display: none;
+	}
+	.form-account {
+		display: none;
+	}
+	.civi-reset-password-wrap.active {
+		display: block;
+	}
+	.form-account.active {
+		display: block;
+	}
+}

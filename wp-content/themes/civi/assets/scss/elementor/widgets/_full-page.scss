@@ -1,0 +1,134 @@
+.has-admin-bar {
+	&.fp-enabled {
+		height: calc(100% - 32px) !important;
+	}
+}
+
+.civi-full-page {
+	.fp-section {
+		&:not(.page-footer-wrapper) {
+			.elementor-section-stretched {
+				left: 0 !important;
+			}
+		}
+	}
+}
+
+.full-page-share-list {
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 60px;
+	padding-top: 110px;
+
+	.stalk {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		left: 7px;
+		padding-left: 63px;
+		font-size: 15px;
+		line-height: 17px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $primary_color;
+		transform: translateX(-50%) translateY(100%) rotate(-90deg);
+
+		&:before {
+			@extend %NormalTransition;
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 50px;
+			height: 1px;
+			background: #ddd;
+		}
+	}
+
+	a {
+		display: block;
+		font-size: 17px;
+
+		+ a {
+			margin-top: 22px;
+		}
+	}
+}
+
+.full-page-numbers {
+	@extend %NormalTransition;
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 48px;
+	color: $primary_color;
+
+	.numbers {
+		display: flex;
+		align-items: flex-end;
+
+		.current {
+			font-size: 70px;
+			font-weight: 300;
+			line-height: 0.6;
+		}
+
+		.total {
+			position: relative;
+			padding-left: 28px;
+
+			&:before {
+				@extend %NormalTransition;
+				position: absolute;
+				content: "";
+				width: 1px;
+				left: 12px;
+				bottom: 0;
+				height: 64px;
+				background: #ccc;
+			}
+
+			font-size: 27px;
+			line-height: 1;
+		}
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: 500;
+		text-align: center;
+		margin-top: 12px;
+	}
+}
+
+[data-fp-section-skin="light"] {
+	#fp-nav ul li a span,
+	.fp-slidesNav ul li a span {
+		background: #fff;
+	}
+
+	.full-page-share-list {
+		.stalk {
+			color: #fff;
+
+			&:before {
+				background: rgba(221, 221, 221, 0.27);
+			}
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+
+	.full-page-numbers {
+		color: #fff;
+
+		.total {
+			&:before {
+				background: rgba(204, 204, 204, 0.2);
+			}
+		}
+	}
+}

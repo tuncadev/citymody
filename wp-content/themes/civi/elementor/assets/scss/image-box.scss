@@ -1,0 +1,160 @@
+@import "settings/mixins";
+
+.civi-image-box {
+	@extend %NormalTransition;
+	position: relative;
+	display: block;
+	width: 100%;
+
+	&:before {
+		@extend %NormalTransition;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		visibility: hidden;
+		opacity: 0;
+		border-radius: inherit;
+	}
+
+	&:hover {
+		&:before {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	.content-wrap {
+		position: relative;
+		z-index: 1;
+	}
+
+	&.image-position-top {
+		text-align: center;
+
+		.image {
+			margin-bottom: 29px;
+		}
+	}
+
+	&.image-position-left,
+	&.image-position-right {
+		.content-wrap {
+			display: flex;
+		}
+
+		.image {
+			flex-shrink: 0;
+			max-width: 50%;
+		}
+
+		.content {
+			flex-grow: 1;
+		}
+	}
+
+	&.image-position-left {
+		text-align: left;
+
+		.image {
+			margin-right: 20px;
+		}
+	}
+
+	&.image-position-right {
+		text-align: right;
+
+		.content-wrap {
+			flex-direction: row-reverse;
+		}
+
+		.image {
+			margin-left: 20px;
+		}
+	}
+
+	&.content-alignment-middle {
+		.content-wrap {
+			align-items: center;
+		}
+	}
+
+	&.content-alignment-bottom {
+		.content-wrap {
+			align-items: flex-end;
+		}
+	}
+
+	.image {
+		@extend %NormalTransition;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.title {
+		font-size: 20px;
+		line-height: 1.5;
+		margin-bottom: 0;
+	}
+
+	.description {
+		line-height: 1.6;
+		margin-top: 14px;
+	}
+
+	.civi-button-wrapper {
+		margin: 15px 0 0;
+	}
+
+	.civi-button {
+		&.style-text {
+			color: #8c89a2;
+		}
+	}
+
+	&.style-01 {
+		padding: 38px 30px 29px;
+		border-radius: 5px;
+		background: #fff;
+
+		&:hover {
+			z-index: 1;
+
+			box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+		}
+	}
+
+	&.style-02 {
+		padding: 39px 30px 30px;
+		border-radius: 10px;
+		background: #f8f8f8;
+
+		&:before {
+			background: #fff;
+		}
+
+		&:hover {
+			z-index: 1;
+			box-shadow: 0 14px 40px rgba(51, 51, 51, 0.1);
+		}
+
+		.title {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.625;
+		}
+
+		&.image-position-top {
+			.image {
+				margin-bottom: 17px;
+			}
+		}
+	}
+}

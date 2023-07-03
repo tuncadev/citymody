@@ -1,0 +1,198 @@
+.meetings-dashboard {
+	.meetings-warpper {
+		background-color: #fff;
+		border: 1px solid $border_color;
+		border-radius: 8px;
+		padding: 20px;
+	}
+	.tabs-header {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		margin-bottom: 24px;
+	}
+	.tab-list {
+		margin-bottom: 0;
+	}
+	#tab-upcoming {
+		.row {
+			margin-left: -4px;
+			margin-right: -4px;
+		}
+		.col-md-4 {
+			padding-left: 4px;
+			padding-right: 4px;
+			padding-bottom: 8px;
+		}
+	}
+	.calendar {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 18px;
+		&.is-active {
+			color: red;
+		}
+		.dot {
+			top: -3px;
+			position: relative;
+			font-size: 20px;
+			color: #ddd;
+		}
+		i {
+			margin-right: 10px;
+			font-size: 20px;
+			color: $secondary_color;
+		}
+	}
+	h6 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.meeting-width {
+		font-weight: 500;
+		color: $secondary_color;
+		.athour {
+			color: $accent_color;
+		}
+	}
+	.meetings-bottom {
+		@include d-flex();
+		i {
+			margin-right: 11px;
+		}
+		.social {
+			@include d-flex();
+			@include align-items-center();
+			background-color: transparent;
+			color: $secondary_color;
+			font-weight: 500;
+			+ .social {
+				margin-left: 18px;
+			}
+		}
+	}
+	.pagination-dashboard {
+		background-color: transparent;
+		border: none;
+		padding-left: 0;
+		.civi-pagination {
+			@include justify-content-center();
+		}
+	}
+	.action-setting {
+		margin-left: auto;
+		position: relative;
+		.icon-setting {
+			padding-left: 10px;
+			font-size: 24px;
+			cursor: pointer;
+		}
+		i {
+			margin-right: 0;
+		}
+	}
+	.action-dropdown {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		@include box-shadow(0 0 10px 0 rgba(0, 0, 0, 0.05));
+		list-style: none;
+		right: 100%;
+		bottom: -20px;
+		width: 110px;
+		text-align: right;
+		padding: 15px;
+		z-index: 2;
+		border: 1px solid $border_color;
+		a {
+			font-size: 14px;
+		}
+	}
+	.tab-info {
+		position: relative;
+		.civi-loading-effect {
+			display: none;
+		}
+	}
+	.meeting-info-settings {
+		font-weight: 500;
+		color: $secondary_color;
+		padding-top: 20px;
+		border-top: 1px solid $border_color;
+		margin-top: 20px;
+		.meeting-zoom-link {
+			margin-bottom: 10px;
+			a {
+				color: red;
+			}
+		}
+		.meeting-zoom-pw {
+			color: red;
+			span {
+				color: $secondary_color;
+			}
+		}
+	}
+	.label-close {
+		color: $secondary_color;
+		background-color: $border_color;
+		position: absolute;
+		right: 20px;
+	}
+}
+
+.meetings-dashboard-candidate {
+	position: relative;
+	.col-md-4 {
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-bottom: 8px;
+	}
+	.civi-loading-effect {
+		display: none;
+	}
+}
+
+#civi-form-setting-meetings {
+	.civi-button {
+		@include d-flex();
+		@include justify-content-center();
+		padding-left: 20px;
+		padding-right: 20px;
+		i {
+			padding-left: 3px;
+		}
+	}
+}
+
+#tab-completed {
+	.not-meetings {
+		margin-left: 15px;
+	}
+}
+
+#btn-meetings-reschedule {
+	@include d-flex();
+	@include justify-content-center();
+	padding-left: 20px;
+	padding-right: 20px;
+	.btn-loading {
+		display: none;
+		padding-left: 5px;
+	}
+}
+
+
+@media (max-width: 576px) {
+	.meetings-dashboard {
+		.meetings-warpper {
+			padding: 35px;
+		}
+		.tabs-header {
+			display: block;
+		}
+		.tab-list {
+			margin-bottom: 20px;
+		}
+	}
+}

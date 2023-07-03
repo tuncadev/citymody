@@ -1,0 +1,45 @@
+.alert-form{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 1000;
+	background: #FFFFFF;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+	max-width: 370px;
+	padding: 24px;
+	display: none;
+	.close{
+		position: absolute;
+		top: 24px;
+		right: 24px;
+	}
+	.head{
+		display: flex;
+		align-items: center;
+		margin-bottom: 16px;
+		svg{
+			margin-right: 12px;
+		}
+		span{
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
+	.desc{
+		margin-bottom: 20px;
+	}
+	.civi-button{
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.alert-form{
+		right: 15px;
+		left: 15px;
+		bottom: 20px;
+	}
+}

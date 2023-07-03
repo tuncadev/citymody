@@ -1,0 +1,46 @@
+@import "settings/variables";
+
+.civi-circle-progress-chart {
+	.chart-number {
+		margin-bottom: 0;
+	}
+
+	.civi-svg {
+		line-height: 0;
+
+		* {
+			stroke: currentColor;
+		}
+	}
+
+	.chart-wrap {
+		line-height: 0;
+	}
+
+	.chart {
+		position: relative;
+		display: inline-block;
+		width: 214px;
+		height: 214px;
+
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.inner-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.chart-number {
+		font-size: 24px;
+		font-weight: 500;
+		color: $primary_color;
+		margin-bottom: 0;
+	}
+}

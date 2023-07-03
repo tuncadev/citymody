@@ -1,0 +1,67 @@
+.civi-fields-avatar{
+  button {
+    background-color: transparent;
+    border: 0;
+    color: $accent_color;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #civi_avatar_container {
+    border-radius: 6px;
+    border: 1px dashed #ddd;
+    background-color: #f9f9f9;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-right: 16px;
+    overflow: hidden;
+  }
+  #civi_drop_avatar {
+    margin-bottom: 0;
+  }
+  #civi_avatar_view{
+    width: 100%;
+    height: 100%;
+  }
+  .media-thumb {
+    height: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  #civi_add_avatar{
+    position: absolute;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+    left: 50%;
+    text-align: center;
+    cursor: pointer;
+    #civi_drop_avatar {
+      margin-bottom: 0;
+    }
+  }
+  .media-item-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  i.la-upload {
+    color: $secondary_color;
+  }
+  .field-note {
+    max-width: 90px;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 25px;
+    color: $secondary_color;
+  }
+  #civi_avatar_errors{
+    font-size: 10px;
+    color: red;
+    margin-bottom: 5px;
+  }
+}

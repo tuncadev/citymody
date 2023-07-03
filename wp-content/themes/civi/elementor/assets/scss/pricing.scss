@@ -1,0 +1,187 @@
+@import "settings/variables";
+
+.civi-pricing {
+	.civi-pricing-features {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.civi-pricing-ribbon {
+		position: absolute;
+		top: -10px;
+		right: 23px;
+		padding: 3px 10px;
+		font-size: 11px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background: #33ac2e;
+		color: #fff;
+	}
+}
+
+.civi-pricing-style-01 {
+	text-align: center;
+
+	.inner {
+		position: relative;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 75px 30px 61px;
+	}
+
+	.civi-pricing-header {
+		z-index: 1;
+		position: relative;
+		margin-bottom: 39px;
+	}
+
+	.civi-button {
+		width: 180px;
+		max-width: 100%;
+	}
+
+	.price-wrap-inner {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.civi-pricing-price {
+		font-size: 60px;
+		font-weight: 500;
+		line-height: 0.8;
+		margin: 0;
+	}
+
+	.civi-pricing-currency {
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 0;
+		align-self: flex-start;
+		margin-right: 3px;
+	}
+
+	.civi-pricing-period {
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 0;
+		color: #ababab;
+		align-self: flex-end;
+	}
+
+	.title {
+		font-size: 24px;
+		line-height: 0.8;
+	}
+
+	.civi-pricing-features {
+		font-size: 15px;
+		max-width: 270px;
+		margin: 29px auto 0;
+
+		li {
+			position: relative;
+			display: block;
+			padding: 7px 0;
+
+			i {
+				font-size: 16px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.civi-pricing-footer {
+		padding-top: 42px;
+	}
+}
+
+.civi-pricing-style-02 {
+	.civi-pricing {
+		.inner {
+			position: relative;
+			height: 100%;
+			margin: 0 auto;
+			background-color: #fff;
+			box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+			padding: 25px 30px 37px;
+		}
+
+		.civi-pricing-header {
+			z-index: 1;
+			position: relative;
+			margin-bottom: 26px;
+		}
+
+		.civi-pricing-body {
+			margin-top: 33px;
+			padding-top: 22px;
+			border-top: 1px solid #eee;
+		}
+
+		.civi-button {
+			width: 100%;
+		}
+
+		.price-wrap {
+			color: $primary_color;
+		}
+
+		.price-wrap-inner {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.civi-pricing-price {
+			font-size: 40px;
+			line-height: 1;
+			font-weight: 600;
+			margin: 0;
+		}
+
+		.civi-pricing-currency {
+			font-size: 40px;
+			line-height: 1;
+			font-weight: 600;
+		}
+
+		.civi-pricing-period {
+			display: block;
+			font-size: 15px;
+			margin: 15px 0 0;
+			color: #777;
+		}
+
+		.title {
+			font-size: 18px;
+			line-height: 0.8;
+		}
+
+		.civi-pricing-features {
+			font-size: 15px;
+
+			li {
+				position: relative;
+				display: block;
+				padding: 6px 0;
+
+				i {
+					font-size: 12px;
+					margin-right: 14px;
+				}
+			}
+		}
+
+		.civi-pricing-footer {
+			padding-top: 30px;
+		}
+	}
+}

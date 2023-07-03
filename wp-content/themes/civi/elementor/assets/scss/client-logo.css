@@ -1,0 +1,28 @@
+.civi-client-logo .image {
+  transition: all 0.3s linear;
+}
+.civi-client-logo .grid-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.civi-client-logo.hover-grayscale .image {
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+.civi-client-logo.hover-grayscale .item:hover .image {
+  filter: none;
+  opacity: 1;
+}
+.civi-client-logo.hover-opacity .image {
+  opacity: 0.23;
+}
+.civi-client-logo.hover-opacity .item:hover .image {
+  opacity: 1;
+}
+.civi-client-logo.hover-faded .item:hover .image {
+  opacity: 0.2;
+}
+
+/*# sourceMappingURL=client-logo.css.map */

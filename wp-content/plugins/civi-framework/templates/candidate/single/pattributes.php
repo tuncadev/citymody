@@ -1,0 +1,1 @@
+<?php echo "Physical Attributes Single ia Golden"; ?>

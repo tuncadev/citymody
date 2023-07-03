@@ -1,0 +1,42 @@
+@import "mixins";
+
+.civi-jobs{
+	.civi-jobs-item.layout-list{
+    .jobs-archive-footer{
+      display: block;
+    }
+    .jobs-footer-right{
+      margin-top: 24px;
+    }
+  }
+  .jobs-status-inner {
+    @include d-flex();
+    @include align-items-start();
+    .logged-out {
+      display: grid;
+    }
+  }
+  .civi-jobs-featured {
+    border-color: #ffd75e;
+  }
+  .civi-jobs-item{
+    &:hover {
+      @include box-shadow(0 5px 12px 2px rgba(0, 0, 0, 0.05));
+    }
+  }
+}
+
+.elementor-widget-civi-jobs{
+  .elementor-carousel{
+    .civi-jobs-item{
+      margin-bottom: 15px;
+    }
+    .slick-dots{
+      position: relative;
+      top: 15px;
+    }
+    .slick-arrow{
+      top: calc(50% - 20px);
+    }
+  }
+}

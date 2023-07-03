@@ -1,0 +1,55 @@
+.elementor-widget-civi-modern-menu .mb-menu {
+  display: none;
+  margin-right: 0;
+}
+
+.elementor-widget-civi-modern-menu .desktop-menu {
+  display: flex;
+}
+
+.elementor-widget-civi-modern-menu .site-menu.main-menu .sub-menu li {
+  padding: 0;
+}
+
+.elementor-widget-civi-modern-menu .elementor-nav-menu--layout-dropdown.desktop-menu {
+  display: none;
+}
+
+.elementor-widget-civi-modern-menu .elementor-nav-menu--layout-dropdown.mb-menu {
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+  .civi-modern-menu-tablet .desktop-menu {
+    display: none;
+  }
+  .civi-modern-menu-tablet .mb-menu {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .civi-modern-menu-tablet_small .desktop-menu {
+    display: none;
+  }
+  .civi-modern-menu-tablet_small .mb-menu {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .civi-modern-menu-mobile .desktop-menu {
+    display: none;
+  }
+  .civi-modern-menu-mobile .mb-menu {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .civi-modern-menu-mobile_small .desktop-menu {
+    display: none;
+  }
+  .civi-modern-menu-mobile_small .mb-menu {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=modern-menu.css.map */

@@ -1,0 +1,4862 @@
+[
+  {
+    "YerID": 82,
+    "YerAdi": "Abana",
+    "SehirID": 37
+  },
+  {
+    "YerID": 83,
+    "YerAdi": "Acıgöl",
+    "SehirID": 50
+  },
+  {
+    "YerID": 84,
+    "YerAdi": "Acıpayam",
+    "SehirID": 20
+  },
+  {
+    "YerID": 85,
+    "YerAdi": "Adaklı",
+    "SehirID": 12
+  },
+  {
+    "YerID": 86,
+    "YerAdi": "Adalar",
+    "SehirID": 34
+  },
+  {
+    "YerID": 87,
+    "YerAdi": "Adapazarı",
+    "SehirID": 54
+  },
+  {
+    "YerID": 88,
+    "YerAdi": "Adıyaman",
+    "SehirID": 2
+  },
+  {
+    "YerID": 89,
+    "YerAdi": "Adilcevaz",
+    "SehirID": 13
+  },
+  {
+    "YerID": 90,
+    "YerAdi": "Afşin",
+    "SehirID": 46
+  },
+  {
+    "YerID": 91,
+    "YerAdi": "Afyonkarahisar",
+    "SehirID": 3
+  },
+  {
+    "YerID": 92,
+    "YerAdi": "Ağaçören",
+    "SehirID": 68
+  },
+  {
+    "YerID": 93,
+    "YerAdi": "Ağın",
+    "SehirID": 23
+  },
+  {
+    "YerID": 94,
+    "YerAdi": "Ağlasun",
+    "SehirID": 15
+  },
+  {
+    "YerID": 95,
+    "YerAdi": "Ağlı",
+    "SehirID": 37
+  },
+  {
+    "YerID": 96,
+    "YerAdi": "Ağrı",
+    "SehirID": 4
+  },
+  {
+    "YerID": 97,
+    "YerAdi": "Ahırlı",
+    "SehirID": 42
+  },
+  {
+    "YerID": 98,
+    "YerAdi": "Ahlat",
+    "SehirID": 13
+  },
+  {
+    "YerID": 99,
+    "YerAdi": "Ahmetli",
+    "SehirID": 45
+  },
+  {
+    "YerID": 100,
+    "YerAdi": "Akçaabat",
+    "SehirID": 61
+  },
+  {
+    "YerID": 101,
+    "YerAdi": "Akçadağ",
+    "SehirID": 44
+  },
+  {
+    "YerID": 102,
+    "YerAdi": "Akçakale",
+    "SehirID": 63
+  },
+  {
+    "YerID": 103,
+    "YerAdi": "Akçakent",
+    "SehirID": 40
+  },
+  {
+    "YerID": 104,
+    "YerAdi": "Akçakoca",
+    "SehirID": 81
+  },
+  {
+    "YerID": 105,
+    "YerAdi": "Akdağmadeni",
+    "SehirID": 66
+  },
+  {
+    "YerID": 106,
+    "YerAdi": "Akdeniz",
+    "SehirID": 33
+  },
+  {
+    "YerID": 107,
+    "YerAdi": "Akhisar",
+    "SehirID": 45
+  },
+  {
+    "YerID": 108,
+    "YerAdi": "Akıncılar",
+    "SehirID": 58
+  },
+  {
+    "YerID": 109,
+    "YerAdi": "Akkışla",
+    "SehirID": 38
+  },
+  {
+    "YerID": 110,
+    "YerAdi": "Akkuş",
+    "SehirID": 52
+  },
+  {
+    "YerID": 111,
+    "YerAdi": "Akören",
+    "SehirID": 42
+  },
+  {
+    "YerID": 112,
+    "YerAdi": "Akpınar",
+    "SehirID": 40
+  },
+  {
+    "YerID": 113,
+    "YerAdi": "Aksaray",
+    "SehirID": 68
+  },
+  {
+    "YerID": 114,
+    "YerAdi": "Akseki",
+    "SehirID": 7
+  },
+  {
+    "YerID": 115,
+    "YerAdi": "Aksu",
+    "SehirID": 7
+  },
+  {
+    "YerID": 116,
+    "YerAdi": "Aksu",
+    "SehirID": 32
+  },
+  {
+    "YerID": 117,
+    "YerAdi": "Akşehir",
+    "SehirID": 42
+  },
+  {
+    "YerID": 118,
+    "YerAdi": "Akyaka",
+    "SehirID": 36
+  },
+  {
+    "YerID": 119,
+    "YerAdi": "Akyazı",
+    "SehirID": 54
+  },
+  {
+    "YerID": 120,
+    "YerAdi": "Akyurt",
+    "SehirID": 6
+  },
+  {
+    "YerID": 121,
+    "YerAdi": "Alaca",
+    "SehirID": 19
+  },
+  {
+    "YerID": 122,
+    "YerAdi": "Alacakaya",
+    "SehirID": 23
+  },
+  {
+    "YerID": 123,
+    "YerAdi": "Alaçam",
+    "SehirID": 55
+  },
+  {
+    "YerID": 124,
+    "YerAdi": "Aladağ",
+    "SehirID": 1
+  },
+  {
+    "YerID": 125,
+    "YerAdi": "Alanya",
+    "SehirID": 7
+  },
+  {
+    "YerID": 126,
+    "YerAdi": "Alaplı",
+    "SehirID": 67
+  },
+  {
+    "YerID": 127,
+    "YerAdi": "Alaşehir",
+    "SehirID": 45
+  },
+  {
+    "YerID": 128,
+    "YerAdi": "Aliağa",
+    "SehirID": 35
+  },
+  {
+    "YerID": 129,
+    "YerAdi": "Almus",
+    "SehirID": 60
+  },
+  {
+    "YerID": 130,
+    "YerAdi": "Alpu",
+    "SehirID": 26
+  },
+  {
+    "YerID": 131,
+    "YerAdi": "Altıeylül",
+    "SehirID": 10
+  },
+  {
+    "YerID": 132,
+    "YerAdi": "Altındağ",
+    "SehirID": 6
+  },
+  {
+    "YerID": 133,
+    "YerAdi": "Altınekin",
+    "SehirID": 42
+  },
+  {
+    "YerID": 134,
+    "YerAdi": "Altınordu",
+    "SehirID": 52
+  },
+  {
+    "YerID": 135,
+    "YerAdi": "Altınova",
+    "SehirID": 77
+  },
+  {
+    "YerID": 136,
+    "YerAdi": "Altınözü",
+    "SehirID": 31
+  },
+  {
+    "YerID": 137,
+    "YerAdi": "Altıntaş",
+    "SehirID": 43
+  },
+  {
+    "YerID": 138,
+    "YerAdi": "Altınyayla",
+    "SehirID": 15
+  },
+  {
+    "YerID": 139,
+    "YerAdi": "Altınyayla",
+    "SehirID": 58
+  },
+  {
+    "YerID": 140,
+    "YerAdi": "Altunhisar",
+    "SehirID": 51
+  },
+  {
+    "YerID": 141,
+    "YerAdi": "Alucra",
+    "SehirID": 28
+  },
+  {
+    "YerID": 142,
+    "YerAdi": "Amasra",
+    "SehirID": 74
+  },
+  {
+    "YerID": 143,
+    "YerAdi": "Amasya",
+    "SehirID": 5
+  },
+  {
+    "YerID": 144,
+    "YerAdi": "Anamur",
+    "SehirID": 33
+  },
+  {
+    "YerID": 145,
+    "YerAdi": "Andırın",
+    "SehirID": 46
+  },
+  {
+    "YerID": 146,
+    "YerAdi": "Antakya",
+    "SehirID": 31
+  },
+  {
+    "YerID": 147,
+    "YerAdi": "Araban",
+    "SehirID": 27
+  },
+  {
+    "YerID": 148,
+    "YerAdi": "Araç",
+    "SehirID": 37
+  },
+  {
+    "YerID": 149,
+    "YerAdi": "Araklı",
+    "SehirID": 61
+  },
+  {
+    "YerID": 150,
+    "YerAdi": "Aralık",
+    "SehirID": 76
+  },
+  {
+    "YerID": 151,
+    "YerAdi": "Arapgir",
+    "SehirID": 44
+  },
+  {
+    "YerID": 152,
+    "YerAdi": "Ardahan",
+    "SehirID": 75
+  },
+  {
+    "YerID": 153,
+    "YerAdi": "Ardanuç",
+    "SehirID": 8
+  },
+  {
+    "YerID": 154,
+    "YerAdi": "Ardeşen",
+    "SehirID": 53
+  },
+  {
+    "YerID": 155,
+    "YerAdi": "Arguvan",
+    "SehirID": 44
+  },
+  {
+    "YerID": 156,
+    "YerAdi": "Arhavi",
+    "SehirID": 8
+  },
+  {
+    "YerID": 157,
+    "YerAdi": "Arıcak",
+    "SehirID": 23
+  },
+  {
+    "YerID": 158,
+    "YerAdi": "Arifiye",
+    "SehirID": 54
+  },
+  {
+    "YerID": 159,
+    "YerAdi": "Armutlu",
+    "SehirID": 77
+  },
+  {
+    "YerID": 160,
+    "YerAdi": "Arnavutköy",
+    "SehirID": 34
+  },
+  {
+    "YerID": 161,
+    "YerAdi": "Arpaçay",
+    "SehirID": 36
+  },
+  {
+    "YerID": 162,
+    "YerAdi": "Arsin",
+    "SehirID": 61
+  },
+  {
+    "YerID": 163,
+    "YerAdi": "Arsuz",
+    "SehirID": 31
+  },
+  {
+    "YerID": 164,
+    "YerAdi": "Artova",
+    "SehirID": 60
+  },
+  {
+    "YerID": 165,
+    "YerAdi": "Artuklu",
+    "SehirID": 47
+  },
+  {
+    "YerID": 166,
+    "YerAdi": "Artvin",
+    "SehirID": 8
+  },
+  {
+    "YerID": 167,
+    "YerAdi": "Asarcık",
+    "SehirID": 55
+  },
+  {
+    "YerID": 168,
+    "YerAdi": "Aslanapa",
+    "SehirID": 43
+  },
+  {
+    "YerID": 169,
+    "YerAdi": "Aşkale",
+    "SehirID": 25
+  },
+  {
+    "YerID": 170,
+    "YerAdi": "Atabey",
+    "SehirID": 32
+  },
+  {
+    "YerID": 171,
+    "YerAdi": "Atakum",
+    "SehirID": 55
+  },
+  {
+    "YerID": 172,
+    "YerAdi": "Ataşehir",
+    "SehirID": 34
+  },
+  {
+    "YerID": 173,
+    "YerAdi": "Atkaracalar",
+    "SehirID": 18
+  },
+  {
+    "YerID": 174,
+    "YerAdi": "Avanos",
+    "SehirID": 50
+  },
+  {
+    "YerID": 175,
+    "YerAdi": "Avcılar",
+    "SehirID": 34
+  },
+  {
+    "YerID": 176,
+    "YerAdi": "Ayancık",
+    "SehirID": 57
+  },
+  {
+    "YerID": 177,
+    "YerAdi": "Ayaş",
+    "SehirID": 6
+  },
+  {
+    "YerID": 178,
+    "YerAdi": "Aybastı",
+    "SehirID": 52
+  },
+  {
+    "YerID": 179,
+    "YerAdi": "Aydıncık",
+    "SehirID": 33
+  },
+  {
+    "YerID": 180,
+    "YerAdi": "Aydıncık",
+    "SehirID": 66
+  },
+  {
+    "YerID": 181,
+    "YerAdi": "Aydıntepe",
+    "SehirID": 69
+  },
+  {
+    "YerID": 182,
+    "YerAdi": "Ayrancı",
+    "SehirID": 70
+  },
+  {
+    "YerID": 183,
+    "YerAdi": "Ayvacık",
+    "SehirID": 17
+  },
+  {
+    "YerID": 184,
+    "YerAdi": "Ayvacık",
+    "SehirID": 55
+  },
+  {
+    "YerID": 185,
+    "YerAdi": "Ayvalık",
+    "SehirID": 10
+  },
+  {
+    "YerID": 186,
+    "YerAdi": "Azdavay",
+    "SehirID": 37
+  },
+  {
+    "YerID": 187,
+    "YerAdi": "Aziziye",
+    "SehirID": 25
+  },
+  {
+    "YerID": 188,
+    "YerAdi": "Babadağ",
+    "SehirID": 20
+  },
+  {
+    "YerID": 189,
+    "YerAdi": "Babaeski",
+    "SehirID": 39
+  },
+  {
+    "YerID": 190,
+    "YerAdi": "Bafra",
+    "SehirID": 55
+  },
+  {
+    "YerID": 191,
+    "YerAdi": "Bağcılar",
+    "SehirID": 34
+  },
+  {
+    "YerID": 192,
+    "YerAdi": "Bağlar",
+    "SehirID": 21
+  },
+  {
+    "YerID": 193,
+    "YerAdi": "Bahçe",
+    "SehirID": 80
+  },
+  {
+    "YerID": 194,
+    "YerAdi": "Bahçelievler",
+    "SehirID": 34
+  },
+  {
+    "YerID": 195,
+    "YerAdi": "Bahçesaray",
+    "SehirID": 65
+  },
+  {
+    "YerID": 196,
+    "YerAdi": "Bahşili",
+    "SehirID": 71
+  },
+  {
+    "YerID": 197,
+    "YerAdi": "Bakırköy",
+    "SehirID": 34
+  },
+  {
+    "YerID": 198,
+    "YerAdi": "Baklan",
+    "SehirID": 20
+  },
+  {
+    "YerID": 199,
+    "YerAdi": "Bala",
+    "SehirID": 6
+  },
+  {
+    "YerID": 200,
+    "YerAdi": "Balçova",
+    "SehirID": 35
+  },
+  {
+    "YerID": 201,
+    "YerAdi": "Balışeyh",
+    "SehirID": 71
+  },
+  {
+    "YerID": 202,
+    "YerAdi": "Balya",
+    "SehirID": 10
+  },
+  {
+    "YerID": 203,
+    "YerAdi": "Banaz",
+    "SehirID": 64
+  },
+  {
+    "YerID": 204,
+    "YerAdi": "Bandırma",
+    "SehirID": 10
+  },
+  {
+    "YerID": 205,
+    "YerAdi": "Bartın",
+    "SehirID": 74
+  },
+  {
+    "YerID": 206,
+    "YerAdi": "Baskil",
+    "SehirID": 23
+  },
+  {
+    "YerID": 207,
+    "YerAdi": "Başakşehir",
+    "SehirID": 34
+  },
+  {
+    "YerID": 208,
+    "YerAdi": "Başçiftlik",
+    "SehirID": 60
+  },
+  {
+    "YerID": 209,
+    "YerAdi": "Başiskele",
+    "SehirID": 41
+  },
+  {
+    "YerID": 210,
+    "YerAdi": "Başkale",
+    "SehirID": 65
+  },
+  {
+    "YerID": 211,
+    "YerAdi": "Başmakçı",
+    "SehirID": 3
+  },
+  {
+    "YerID": 212,
+    "YerAdi": "Başyayla",
+    "SehirID": 70
+  },
+  {
+    "YerID": 213,
+    "YerAdi": "Batman",
+    "SehirID": 72
+  },
+  {
+    "YerID": 214,
+    "YerAdi": "Battalgazi",
+    "SehirID": 44
+  },
+  {
+    "YerID": 215,
+    "YerAdi": "Bayat",
+    "SehirID": 3
+  },
+  {
+    "YerID": 216,
+    "YerAdi": "Bayat",
+    "SehirID": 19
+  },
+  {
+    "YerID": 217,
+    "YerAdi": "Bayburt",
+    "SehirID": 69
+  },
+  {
+    "YerID": 218,
+    "YerAdi": "Bayındır",
+    "SehirID": 35
+  },
+  {
+    "YerID": 219,
+    "YerAdi": "Baykan",
+    "SehirID": 56
+  },
+  {
+    "YerID": 220,
+    "YerAdi": "Bayraklı",
+    "SehirID": 35
+  },
+  {
+    "YerID": 221,
+    "YerAdi": "Bayramiç",
+    "SehirID": 17
+  },
+  {
+    "YerID": 222,
+    "YerAdi": "Bayramören",
+    "SehirID": 18
+  },
+  {
+    "YerID": 223,
+    "YerAdi": "Bayrampaşa",
+    "SehirID": 34
+  },
+  {
+    "YerID": 224,
+    "YerAdi": "Bekilli",
+    "SehirID": 20
+  },
+  {
+    "YerID": 225,
+    "YerAdi": "Belen",
+    "SehirID": 31
+  },
+  {
+    "YerID": 226,
+    "YerAdi": "Bergama",
+    "SehirID": 35
+  },
+  {
+    "YerID": 227,
+    "YerAdi": "Besni",
+    "SehirID": 2
+  },
+  {
+    "YerID": 228,
+    "YerAdi": "Beşikdüzü",
+    "SehirID": 61
+  },
+  {
+    "YerID": 229,
+    "YerAdi": "Beşiktaş",
+    "SehirID": 34
+  },
+  {
+    "YerID": 230,
+    "YerAdi": "Beşiri",
+    "SehirID": 72
+  },
+  {
+    "YerID": 231,
+    "YerAdi": "Beyağaç",
+    "SehirID": 20
+  },
+  {
+    "YerID": 232,
+    "YerAdi": "Beydağ",
+    "SehirID": 35
+  },
+  {
+    "YerID": 233,
+    "YerAdi": "Beykoz",
+    "SehirID": 34
+  },
+  {
+    "YerID": 234,
+    "YerAdi": "Beylikdüzü",
+    "SehirID": 34
+  },
+  {
+    "YerID": 235,
+    "YerAdi": "Beylikova",
+    "SehirID": 26
+  },
+  {
+    "YerID": 236,
+    "YerAdi": "Beyoğlu",
+    "SehirID": 34
+  },
+  {
+    "YerID": 237,
+    "YerAdi": "Beypazarı",
+    "SehirID": 6
+  },
+  {
+    "YerID": 238,
+    "YerAdi": "Beyşehir",
+    "SehirID": 42
+  },
+  {
+    "YerID": 239,
+    "YerAdi": "Beytüşşebap",
+    "SehirID": 73
+  },
+  {
+    "YerID": 240,
+    "YerAdi": "Biga",
+    "SehirID": 17
+  },
+  {
+    "YerID": 241,
+    "YerAdi": "Bigadiç",
+    "SehirID": 10
+  },
+  {
+    "YerID": 242,
+    "YerAdi": "Bilecik",
+    "SehirID": 11
+  },
+  {
+    "YerID": 243,
+    "YerAdi": "Bingöl",
+    "SehirID": 12
+  },
+  {
+    "YerID": 244,
+    "YerAdi": "Birecik",
+    "SehirID": 63
+  },
+  {
+    "YerID": 245,
+    "YerAdi": "Bismil",
+    "SehirID": 21
+  },
+  {
+    "YerID": 246,
+    "YerAdi": "Bitlis",
+    "SehirID": 13
+  },
+  {
+    "YerID": 247,
+    "YerAdi": "Bodrum",
+    "SehirID": 48
+  },
+  {
+    "YerID": 248,
+    "YerAdi": "Boğazkale",
+    "SehirID": 19
+  },
+  {
+    "YerID": 249,
+    "YerAdi": "Boğazlıyan",
+    "SehirID": 66
+  },
+  {
+    "YerID": 250,
+    "YerAdi": "Bolu",
+    "SehirID": 14
+  },
+  {
+    "YerID": 251,
+    "YerAdi": "Bolvadin",
+    "SehirID": 3
+  },
+  {
+    "YerID": 252,
+    "YerAdi": "Bor",
+    "SehirID": 51
+  },
+  {
+    "YerID": 253,
+    "YerAdi": "Borçka",
+    "SehirID": 8
+  },
+  {
+    "YerID": 254,
+    "YerAdi": "Bornova",
+    "SehirID": 35
+  },
+  {
+    "YerID": 255,
+    "YerAdi": "Boyabat",
+    "SehirID": 57
+  },
+  {
+    "YerID": 256,
+    "YerAdi": "Bozcaada",
+    "SehirID": 17
+  },
+  {
+    "YerID": 257,
+    "YerAdi": "Bozdoğan",
+    "SehirID": 9
+  },
+  {
+    "YerID": 258,
+    "YerAdi": "Bozkır",
+    "SehirID": 42
+  },
+  {
+    "YerID": 259,
+    "YerAdi": "Bozkurt",
+    "SehirID": 20
+  },
+  {
+    "YerID": 260,
+    "YerAdi": "Bozkurt",
+    "SehirID": 37
+  },
+  {
+    "YerID": 261,
+    "YerAdi": "Bozova",
+    "SehirID": 63
+  },
+  {
+    "YerID": 262,
+    "YerAdi": "Boztepe",
+    "SehirID": 40
+  },
+  {
+    "YerID": 263,
+    "YerAdi": "Bozüyük",
+    "SehirID": 11
+  },
+  {
+    "YerID": 264,
+    "YerAdi": "Bozyazı",
+    "SehirID": 33
+  },
+  {
+    "YerID": 265,
+    "YerAdi": "Buca",
+    "SehirID": 35
+  },
+  {
+    "YerID": 266,
+    "YerAdi": "Bucak",
+    "SehirID": 15
+  },
+  {
+    "YerID": 267,
+    "YerAdi": "Buharkent",
+    "SehirID": 9
+  },
+  {
+    "YerID": 268,
+    "YerAdi": "Bulancak",
+    "SehirID": 28
+  },
+  {
+    "YerID": 269,
+    "YerAdi": "Bulanık",
+    "SehirID": 49
+  },
+  {
+    "YerID": 270,
+    "YerAdi": "Buldan",
+    "SehirID": 20
+  },
+  {
+    "YerID": 271,
+    "YerAdi": "Burdur",
+    "SehirID": 15
+  },
+  {
+    "YerID": 272,
+    "YerAdi": "Burhaniye",
+    "SehirID": 10
+  },
+  {
+    "YerID": 273,
+    "YerAdi": "Bünyan",
+    "SehirID": 38
+  },
+  {
+    "YerID": 274,
+    "YerAdi": "Büyükçekmece",
+    "SehirID": 34
+  },
+  {
+    "YerID": 275,
+    "YerAdi": "Büyükorhan",
+    "SehirID": 16
+  },
+  {
+    "YerID": 276,
+    "YerAdi": "Canik",
+    "SehirID": 55
+  },
+  {
+    "YerID": 277,
+    "YerAdi": "Ceyhan",
+    "SehirID": 1
+  },
+  {
+    "YerID": 278,
+    "YerAdi": "Ceylanpınar",
+    "SehirID": 63
+  },
+  {
+    "YerID": 279,
+    "YerAdi": "Cide",
+    "SehirID": 37
+  },
+  {
+    "YerID": 280,
+    "YerAdi": "Cihanbeyli",
+    "SehirID": 42
+  },
+  {
+    "YerID": 281,
+    "YerAdi": "Cizre",
+    "SehirID": 73
+  },
+  {
+    "YerID": 282,
+    "YerAdi": "Cumayeri",
+    "SehirID": 81
+  },
+  {
+    "YerID": 283,
+    "YerAdi": "Çağlayancerit",
+    "SehirID": 46
+  },
+  {
+    "YerID": 284,
+    "YerAdi": "Çal",
+    "SehirID": 20
+  },
+  {
+    "YerID": 285,
+    "YerAdi": "Çaldıran",
+    "SehirID": 65
+  },
+  {
+    "YerID": 286,
+    "YerAdi": "Çamardı",
+    "SehirID": 51
+  },
+  {
+    "YerID": 287,
+    "YerAdi": "Çamaş",
+    "SehirID": 52
+  },
+  {
+    "YerID": 288,
+    "YerAdi": "Çameli",
+    "SehirID": 20
+  },
+  {
+    "YerID": 289,
+    "YerAdi": "Çamlıdere",
+    "SehirID": 6
+  },
+  {
+    "YerID": 290,
+    "YerAdi": "Çamlıhemşin",
+    "SehirID": 53
+  },
+  {
+    "YerID": 291,
+    "YerAdi": "Çamlıyayla",
+    "SehirID": 33
+  },
+  {
+    "YerID": 292,
+    "YerAdi": "Çamoluk",
+    "SehirID": 28
+  },
+  {
+    "YerID": 293,
+    "YerAdi": "Çan",
+    "SehirID": 17
+  },
+  {
+    "YerID": 294,
+    "YerAdi": "Çanakçı",
+    "SehirID": 28
+  },
+  {
+    "YerID": 295,
+    "YerAdi": "Çanakkale",
+    "SehirID": 17
+  },
+  {
+    "YerID": 296,
+    "YerAdi": "Çandır",
+    "SehirID": 66
+  },
+  {
+    "YerID": 297,
+    "YerAdi": "Çankaya",
+    "SehirID": 6
+  },
+  {
+    "YerID": 298,
+    "YerAdi": "Çankırı",
+    "SehirID": 18
+  },
+  {
+    "YerID": 299,
+    "YerAdi": "Çardak",
+    "SehirID": 20
+  },
+  {
+    "YerID": 300,
+    "YerAdi": "Çarşamba",
+    "SehirID": 55
+  },
+  {
+    "YerID": 301,
+    "YerAdi": "Çarşıbaşı",
+    "SehirID": 61
+  },
+  {
+    "YerID": 302,
+    "YerAdi": "Çat",
+    "SehirID": 25
+  },
+  {
+    "YerID": 303,
+    "YerAdi": "Çatak",
+    "SehirID": 65
+  },
+  {
+    "YerID": 304,
+    "YerAdi": "Çatalca",
+    "SehirID": 34
+  },
+  {
+    "YerID": 305,
+    "YerAdi": "Çatalpınar",
+    "SehirID": 52
+  },
+  {
+    "YerID": 306,
+    "YerAdi": "Çatalzeytin",
+    "SehirID": 37
+  },
+  {
+    "YerID": 307,
+    "YerAdi": "Çavdarhisar",
+    "SehirID": 43
+  },
+  {
+    "YerID": 308,
+    "YerAdi": "Çavdır",
+    "SehirID": 15
+  },
+  {
+    "YerID": 309,
+    "YerAdi": "Çay",
+    "SehirID": 3
+  },
+  {
+    "YerID": 310,
+    "YerAdi": "Çaybaşı",
+    "SehirID": 52
+  },
+  {
+    "YerID": 311,
+    "YerAdi": "Çaycuma",
+    "SehirID": 67
+  },
+  {
+    "YerID": 312,
+    "YerAdi": "Çayeli",
+    "SehirID": 53
+  },
+  {
+    "YerID": 313,
+    "YerAdi": "Çayıralan",
+    "SehirID": 66
+  },
+  {
+    "YerID": 314,
+    "YerAdi": "Çayırlı",
+    "SehirID": 24
+  },
+  {
+    "YerID": 315,
+    "YerAdi": "Çayırova",
+    "SehirID": 41
+  },
+  {
+    "YerID": 316,
+    "YerAdi": "Çaykara",
+    "SehirID": 61
+  },
+  {
+    "YerID": 317,
+    "YerAdi": "Çekerek",
+    "SehirID": 66
+  },
+  {
+    "YerID": 318,
+    "YerAdi": "Çekmeköy",
+    "SehirID": 34
+  },
+  {
+    "YerID": 319,
+    "YerAdi": "Çelebi",
+    "SehirID": 71
+  },
+  {
+    "YerID": 320,
+    "YerAdi": "Çelikhan",
+    "SehirID": 2
+  },
+  {
+    "YerID": 321,
+    "YerAdi": "Çeltik",
+    "SehirID": 42
+  },
+  {
+    "YerID": 322,
+    "YerAdi": "Çeltikçi",
+    "SehirID": 15
+  },
+  {
+    "YerID": 323,
+    "YerAdi": "Çemişgezek",
+    "SehirID": 62
+  },
+  {
+    "YerID": 324,
+    "YerAdi": "Çerkeş",
+    "SehirID": 18
+  },
+  {
+    "YerID": 325,
+    "YerAdi": "Çerkezköy",
+    "SehirID": 59
+  },
+  {
+    "YerID": 326,
+    "YerAdi": "Çermik",
+    "SehirID": 21
+  },
+  {
+    "YerID": 327,
+    "YerAdi": "Çeşme",
+    "SehirID": 35
+  },
+  {
+    "YerID": 328,
+    "YerAdi": "Çıldır",
+    "SehirID": 75
+  },
+  {
+    "YerID": 329,
+    "YerAdi": "Çınar",
+    "SehirID": 21
+  },
+  {
+    "YerID": 330,
+    "YerAdi": "Çınarcık",
+    "SehirID": 77
+  },
+  {
+    "YerID": 331,
+    "YerAdi": "Çiçekdağı",
+    "SehirID": 40
+  },
+  {
+    "YerID": 332,
+    "YerAdi": "Çifteler",
+    "SehirID": 26
+  },
+  {
+    "YerID": 333,
+    "YerAdi": "Çiftlik",
+    "SehirID": 51
+  },
+  {
+    "YerID": 334,
+    "YerAdi": "Çiftlikköy",
+    "SehirID": 77
+  },
+  {
+    "YerID": 335,
+    "YerAdi": "Çiğli",
+    "SehirID": 35
+  },
+  {
+    "YerID": 336,
+    "YerAdi": "Çilimli",
+    "SehirID": 81
+  },
+  {
+    "YerID": 337,
+    "YerAdi": "Çine",
+    "SehirID": 9
+  },
+  {
+    "YerID": 338,
+    "YerAdi": "Çivril",
+    "SehirID": 20
+  },
+  {
+    "YerID": 339,
+    "YerAdi": "Çobanlar",
+    "SehirID": 3
+  },
+  {
+    "YerID": 340,
+    "YerAdi": "Çorlu",
+    "SehirID": 59
+  },
+  {
+    "YerID": 341,
+    "YerAdi": "Çorum",
+    "SehirID": 19
+  },
+  {
+    "YerID": 342,
+    "YerAdi": "Çubuk",
+    "SehirID": 6
+  },
+  {
+    "YerID": 343,
+    "YerAdi": "Çukurca",
+    "SehirID": 30
+  },
+  {
+    "YerID": 344,
+    "YerAdi": "Çukurova",
+    "SehirID": 1
+  },
+  {
+    "YerID": 345,
+    "YerAdi": "Çumra",
+    "SehirID": 42
+  },
+  {
+    "YerID": 346,
+    "YerAdi": "Çüngüş",
+    "SehirID": 21
+  },
+  {
+    "YerID": 347,
+    "YerAdi": "Daday",
+    "SehirID": 37
+  },
+  {
+    "YerID": 348,
+    "YerAdi": "Dalaman",
+    "SehirID": 48
+  },
+  {
+    "YerID": 349,
+    "YerAdi": "Damal",
+    "SehirID": 75
+  },
+  {
+    "YerID": 350,
+    "YerAdi": "Darende",
+    "SehirID": 44
+  },
+  {
+    "YerID": 351,
+    "YerAdi": "Dargeçit",
+    "SehirID": 47
+  },
+  {
+    "YerID": 352,
+    "YerAdi": "Darıca",
+    "SehirID": 41
+  },
+  {
+    "YerID": 353,
+    "YerAdi": "Datça",
+    "SehirID": 48
+  },
+  {
+    "YerID": 354,
+    "YerAdi": "Dazkırı",
+    "SehirID": 3
+  },
+  {
+    "YerID": 355,
+    "YerAdi": "Defne",
+    "SehirID": 31
+  },
+  {
+    "YerID": 356,
+    "YerAdi": "Delice",
+    "SehirID": 71
+  },
+  {
+    "YerID": 357,
+    "YerAdi": "Demirci",
+    "SehirID": 45
+  },
+  {
+    "YerID": 358,
+    "YerAdi": "Demirköy",
+    "SehirID": 39
+  },
+  {
+    "YerID": 359,
+    "YerAdi": "Demirözü",
+    "SehirID": 69
+  },
+  {
+    "YerID": 360,
+    "YerAdi": "Demre",
+    "SehirID": 7
+  },
+  {
+    "YerID": 361,
+    "YerAdi": "Derbent",
+    "SehirID": 42
+  },
+  {
+    "YerID": 362,
+    "YerAdi": "Derebucak",
+    "SehirID": 42
+  },
+  {
+    "YerID": 363,
+    "YerAdi": "Dereli",
+    "SehirID": 28
+  },
+  {
+    "YerID": 364,
+    "YerAdi": "Derepazarı",
+    "SehirID": 53
+  },
+  {
+    "YerID": 365,
+    "YerAdi": "Derik",
+    "SehirID": 47
+  },
+  {
+    "YerID": 366,
+    "YerAdi": "Derince",
+    "SehirID": 41
+  },
+  {
+    "YerID": 367,
+    "YerAdi": "Derinkuyu",
+    "SehirID": 50
+  },
+  {
+    "YerID": 368,
+    "YerAdi": "Dernekpazarı",
+    "SehirID": 61
+  },
+  {
+    "YerID": 369,
+    "YerAdi": "Develi",
+    "SehirID": 38
+  },
+  {
+    "YerID": 370,
+    "YerAdi": "Devrek",
+    "SehirID": 67
+  },
+  {
+    "YerID": 371,
+    "YerAdi": "Devrekani",
+    "SehirID": 37
+  },
+  {
+    "YerID": 372,
+    "YerAdi": "Dicle",
+    "SehirID": 21
+  },
+  {
+    "YerID": 373,
+    "YerAdi": "Didim",
+    "SehirID": 9
+  },
+  {
+    "YerID": 374,
+    "YerAdi": "Digor",
+    "SehirID": 36
+  },
+  {
+    "YerID": 375,
+    "YerAdi": "Dikili",
+    "SehirID": 35
+  },
+  {
+    "YerID": 376,
+    "YerAdi": "Dikmen",
+    "SehirID": 57
+  },
+  {
+    "YerID": 377,
+    "YerAdi": "Dilovası",
+    "SehirID": 41
+  },
+  {
+    "YerID": 378,
+    "YerAdi": "Dinar",
+    "SehirID": 3
+  },
+  {
+    "YerID": 379,
+    "YerAdi": "Divriği",
+    "SehirID": 58
+  },
+  {
+    "YerID": 380,
+    "YerAdi": "Diyadin",
+    "SehirID": 4
+  },
+  {
+    "YerID": 381,
+    "YerAdi": "Dodurga",
+    "SehirID": 19
+  },
+  {
+    "YerID": 382,
+    "YerAdi": "Doğanhisar",
+    "SehirID": 42
+  },
+  {
+    "YerID": 383,
+    "YerAdi": "Doğankent",
+    "SehirID": 28
+  },
+  {
+    "YerID": 384,
+    "YerAdi": "Doğanşar",
+    "SehirID": 58
+  },
+  {
+    "YerID": 385,
+    "YerAdi": "Doğanşehir",
+    "SehirID": 44
+  },
+  {
+    "YerID": 386,
+    "YerAdi": "Doğanyol",
+    "SehirID": 44
+  },
+  {
+    "YerID": 387,
+    "YerAdi": "Doğanyurt",
+    "SehirID": 37
+  },
+  {
+    "YerID": 388,
+    "YerAdi": "Doğubayazıt",
+    "SehirID": 4
+  },
+  {
+    "YerID": 389,
+    "YerAdi": "Domaniç",
+    "SehirID": 43
+  },
+  {
+    "YerID": 390,
+    "YerAdi": "Dörtdivan",
+    "SehirID": 14
+  },
+  {
+    "YerID": 391,
+    "YerAdi": "Dörtyol",
+    "SehirID": 31
+  },
+  {
+    "YerID": 392,
+    "YerAdi": "Döşemealtı",
+    "SehirID": 7
+  },
+  {
+    "YerID": 393,
+    "YerAdi": "Dulkadiroğlu",
+    "SehirID": 46
+  },
+  {
+    "YerID": 394,
+    "YerAdi": "Dumlupınar",
+    "SehirID": 43
+  },
+  {
+    "YerID": 395,
+    "YerAdi": "Durağan",
+    "SehirID": 57
+  },
+  {
+    "YerID": 396,
+    "YerAdi": "Dursunbey",
+    "SehirID": 10
+  },
+  {
+    "YerID": 397,
+    "YerAdi": "Düzce",
+    "SehirID": 81
+  },
+  {
+    "YerID": 398,
+    "YerAdi": "Düziçi",
+    "SehirID": 80
+  },
+  {
+    "YerID": 399,
+    "YerAdi": "Düzköy",
+    "SehirID": 61
+  },
+  {
+    "YerID": 400,
+    "YerAdi": "Eceabat",
+    "SehirID": 17
+  },
+  {
+    "YerID": 401,
+    "YerAdi": "Edirne",
+    "SehirID": 22
+  },
+  {
+    "YerID": 402,
+    "YerAdi": "Edremit",
+    "SehirID": 10
+  },
+  {
+    "YerID": 403,
+    "YerAdi": "Edremit",
+    "SehirID": 65
+  },
+  {
+    "YerID": 404,
+    "YerAdi": "Efeler",
+    "SehirID": 9
+  },
+  {
+    "YerID": 405,
+    "YerAdi": "Eflani",
+    "SehirID": 78
+  },
+  {
+    "YerID": 406,
+    "YerAdi": "Eğil",
+    "SehirID": 21
+  },
+  {
+    "YerID": 407,
+    "YerAdi": "Eğirdir",
+    "SehirID": 32
+  },
+  {
+    "YerID": 408,
+    "YerAdi": "Ekinözü",
+    "SehirID": 46
+  },
+  {
+    "YerID": 409,
+    "YerAdi": "Elazığ",
+    "SehirID": 23
+  },
+  {
+    "YerID": 410,
+    "YerAdi": "Elbeyli",
+    "SehirID": 79
+  },
+  {
+    "YerID": 411,
+    "YerAdi": "Elbistan",
+    "SehirID": 46
+  },
+  {
+    "YerID": 412,
+    "YerAdi": "Eldivan",
+    "SehirID": 18
+  },
+  {
+    "YerID": 413,
+    "YerAdi": "Eleşkirt",
+    "SehirID": 4
+  },
+  {
+    "YerID": 414,
+    "YerAdi": "Elmadağ",
+    "SehirID": 6
+  },
+  {
+    "YerID": 415,
+    "YerAdi": "Elmalı",
+    "SehirID": 7
+  },
+  {
+    "YerID": 416,
+    "YerAdi": "Emet",
+    "SehirID": 43
+  },
+  {
+    "YerID": 417,
+    "YerAdi": "Emirdağ",
+    "SehirID": 3
+  },
+  {
+    "YerID": 418,
+    "YerAdi": "Emirgazi",
+    "SehirID": 42
+  },
+  {
+    "YerID": 419,
+    "YerAdi": "Enez",
+    "SehirID": 22
+  },
+  {
+    "YerID": 420,
+    "YerAdi": "Erbaa",
+    "SehirID": 60
+  },
+  {
+    "YerID": 421,
+    "YerAdi": "Erciş",
+    "SehirID": 65
+  },
+  {
+    "YerID": 422,
+    "YerAdi": "Erdek",
+    "SehirID": 10
+  },
+  {
+    "YerID": 423,
+    "YerAdi": "Erdemli",
+    "SehirID": 33
+  },
+  {
+    "YerID": 424,
+    "YerAdi": "Ereğli",
+    "SehirID": 42
+  },
+  {
+    "YerID": 425,
+    "YerAdi": "Ereğli",
+    "SehirID": 67
+  },
+  {
+    "YerID": 426,
+    "YerAdi": "Erenler",
+    "SehirID": 54
+  },
+  {
+    "YerID": 427,
+    "YerAdi": "Erfelek",
+    "SehirID": 57
+  },
+  {
+    "YerID": 428,
+    "YerAdi": "Ergani",
+    "SehirID": 21
+  },
+  {
+    "YerID": 429,
+    "YerAdi": "Ergene",
+    "SehirID": 59
+  },
+  {
+    "YerID": 430,
+    "YerAdi": "Ermenek",
+    "SehirID": 70
+  },
+  {
+    "YerID": 431,
+    "YerAdi": "Eruh",
+    "SehirID": 56
+  },
+  {
+    "YerID": 432,
+    "YerAdi": "Erzin",
+    "SehirID": 31
+  },
+  {
+    "YerID": 433,
+    "YerAdi": "Erzincan",
+    "SehirID": 24
+  },
+  {
+    "YerID": 434,
+    "YerAdi": "Esenler",
+    "SehirID": 34
+  },
+  {
+    "YerID": 435,
+    "YerAdi": "Esenyurt",
+    "SehirID": 34
+  },
+  {
+    "YerID": 436,
+    "YerAdi": "Eskil",
+    "SehirID": 68
+  },
+  {
+    "YerID": 437,
+    "YerAdi": "Eskipazar",
+    "SehirID": 78
+  },
+  {
+    "YerID": 438,
+    "YerAdi": "Espiye",
+    "SehirID": 28
+  },
+  {
+    "YerID": 439,
+    "YerAdi": "Eşme",
+    "SehirID": 64
+  },
+  {
+    "YerID": 440,
+    "YerAdi": "Etimesgut",
+    "SehirID": 6
+  },
+  {
+    "YerID": 441,
+    "YerAdi": "Evciler",
+    "SehirID": 3
+  },
+  {
+    "YerID": 442,
+    "YerAdi": "Evren",
+    "SehirID": 6
+  },
+  {
+    "YerID": 443,
+    "YerAdi": "Eynesil",
+    "SehirID": 28
+  },
+  {
+    "YerID": 444,
+    "YerAdi": "Eyüp",
+    "SehirID": 34
+  },
+  {
+    "YerID": 445,
+    "YerAdi": "Eyyübiye",
+    "SehirID": 63
+  },
+  {
+    "YerID": 446,
+    "YerAdi": "Ezine",
+    "SehirID": 17
+  },
+  {
+    "YerID": 447,
+    "YerAdi": "Fatih",
+    "SehirID": 34
+  },
+  {
+    "YerID": 448,
+    "YerAdi": "Fatsa",
+    "SehirID": 52
+  },
+  {
+    "YerID": 449,
+    "YerAdi": "Feke",
+    "SehirID": 1
+  },
+  {
+    "YerID": 450,
+    "YerAdi": "Felahiye",
+    "SehirID": 38
+  },
+  {
+    "YerID": 451,
+    "YerAdi": "Ferizli",
+    "SehirID": 54
+  },
+  {
+    "YerID": 452,
+    "YerAdi": "Fethiye",
+    "SehirID": 48
+  },
+  {
+    "YerID": 453,
+    "YerAdi": "Fındıklı",
+    "SehirID": 53
+  },
+  {
+    "YerID": 454,
+    "YerAdi": "Finike",
+    "SehirID": 7
+  },
+  {
+    "YerID": 455,
+    "YerAdi": "Foça",
+    "SehirID": 35
+  },
+  {
+    "YerID": 456,
+    "YerAdi": "Gaziemir",
+    "SehirID": 35
+  },
+  {
+    "YerID": 457,
+    "YerAdi": "Gaziosmanpaşa",
+    "SehirID": 34
+  },
+  {
+    "YerID": 458,
+    "YerAdi": "Gazipaşa",
+    "SehirID": 7
+  },
+  {
+    "YerID": 459,
+    "YerAdi": "Gebze",
+    "SehirID": 41
+  },
+  {
+    "YerID": 460,
+    "YerAdi": "Gediz",
+    "SehirID": 43
+  },
+  {
+    "YerID": 461,
+    "YerAdi": "Gelendost",
+    "SehirID": 32
+  },
+  {
+    "YerID": 462,
+    "YerAdi": "Gelibolu",
+    "SehirID": 17
+  },
+  {
+    "YerID": 463,
+    "YerAdi": "Gemerek",
+    "SehirID": 58
+  },
+  {
+    "YerID": 464,
+    "YerAdi": "Gemlik",
+    "SehirID": 16
+  },
+  {
+    "YerID": 465,
+    "YerAdi": "Genç",
+    "SehirID": 12
+  },
+  {
+    "YerID": 466,
+    "YerAdi": "Gercüş",
+    "SehirID": 72
+  },
+  {
+    "YerID": 467,
+    "YerAdi": "Gerede",
+    "SehirID": 14
+  },
+  {
+    "YerID": 468,
+    "YerAdi": "Gerger",
+    "SehirID": 2
+  },
+  {
+    "YerID": 469,
+    "YerAdi": "Germencik",
+    "SehirID": 9
+  },
+  {
+    "YerID": 470,
+    "YerAdi": "Gerze",
+    "SehirID": 57
+  },
+  {
+    "YerID": 471,
+    "YerAdi": "Gevaş",
+    "SehirID": 65
+  },
+  {
+    "YerID": 472,
+    "YerAdi": "Geyve",
+    "SehirID": 54
+  },
+  {
+    "YerID": 473,
+    "YerAdi": "Giresun",
+    "SehirID": 28
+  },
+  {
+    "YerID": 474,
+    "YerAdi": "Gökçeada",
+    "SehirID": 17
+  },
+  {
+    "YerID": 475,
+    "YerAdi": "Gökçebey",
+    "SehirID": 67
+  },
+  {
+    "YerID": 476,
+    "YerAdi": "Göksun",
+    "SehirID": 46
+  },
+  {
+    "YerID": 477,
+    "YerAdi": "Gölbaşı",
+    "SehirID": 2
+  },
+  {
+    "YerID": 478,
+    "YerAdi": "Gölbaşı",
+    "SehirID": 6
+  },
+  {
+    "YerID": 479,
+    "YerAdi": "Gölcük",
+    "SehirID": 41
+  },
+  {
+    "YerID": 480,
+    "YerAdi": "Göle",
+    "SehirID": 75
+  },
+  {
+    "YerID": 481,
+    "YerAdi": "Gölhisar",
+    "SehirID": 15
+  },
+  {
+    "YerID": 482,
+    "YerAdi": "Gölköy",
+    "SehirID": 52
+  },
+  {
+    "YerID": 483,
+    "YerAdi": "Gölmarmara",
+    "SehirID": 45
+  },
+  {
+    "YerID": 484,
+    "YerAdi": "Gölova",
+    "SehirID": 58
+  },
+  {
+    "YerID": 485,
+    "YerAdi": "Gölpazarı",
+    "SehirID": 11
+  },
+  {
+    "YerID": 486,
+    "YerAdi": "Gölyaka",
+    "SehirID": 81
+  },
+  {
+    "YerID": 487,
+    "YerAdi": "Gömeç",
+    "SehirID": 10
+  },
+  {
+    "YerID": 488,
+    "YerAdi": "Gönen",
+    "SehirID": 10
+  },
+  {
+    "YerID": 489,
+    "YerAdi": "Gönen",
+    "SehirID": 32
+  },
+  {
+    "YerID": 490,
+    "YerAdi": "Gördes",
+    "SehirID": 45
+  },
+  {
+    "YerID": 491,
+    "YerAdi": "Görele",
+    "SehirID": 28
+  },
+  {
+    "YerID": 492,
+    "YerAdi": "Göynücek",
+    "SehirID": 5
+  },
+  {
+    "YerID": 493,
+    "YerAdi": "Göynük",
+    "SehirID": 14
+  },
+  {
+    "YerID": 494,
+    "YerAdi": "Güce",
+    "SehirID": 28
+  },
+  {
+    "YerID": 495,
+    "YerAdi": "Güçlükonak",
+    "SehirID": 73
+  },
+  {
+    "YerID": 496,
+    "YerAdi": "Güdül",
+    "SehirID": 6
+  },
+  {
+    "YerID": 497,
+    "YerAdi": "Gülağaç",
+    "SehirID": 68
+  },
+  {
+    "YerID": 498,
+    "YerAdi": "Gülnar",
+    "SehirID": 33
+  },
+  {
+    "YerID": 499,
+    "YerAdi": "Gülşehir",
+    "SehirID": 50
+  },
+  {
+    "YerID": 500,
+    "YerAdi": "Gülyalı",
+    "SehirID": 52
+  },
+  {
+    "YerID": 501,
+    "YerAdi": "Gümüşhacıköy",
+    "SehirID": 5
+  },
+  {
+    "YerID": 502,
+    "YerAdi": "Gümüşhane",
+    "SehirID": 29
+  },
+  {
+    "YerID": 503,
+    "YerAdi": "Gümüşova",
+    "SehirID": 81
+  },
+  {
+    "YerID": 504,
+    "YerAdi": "Gündoğmuş",
+    "SehirID": 7
+  },
+  {
+    "YerID": 505,
+    "YerAdi": "Güney",
+    "SehirID": 20
+  },
+  {
+    "YerID": 506,
+    "YerAdi": "Güneysınır",
+    "SehirID": 42
+  },
+  {
+    "YerID": 507,
+    "YerAdi": "Güneysu",
+    "SehirID": 53
+  },
+  {
+    "YerID": 508,
+    "YerAdi": "Güngören",
+    "SehirID": 34
+  },
+  {
+    "YerID": 509,
+    "YerAdi": "Günyüzü",
+    "SehirID": 26
+  },
+  {
+    "YerID": 510,
+    "YerAdi": "Gürgentepe",
+    "SehirID": 52
+  },
+  {
+    "YerID": 511,
+    "YerAdi": "Güroymak",
+    "SehirID": 13
+  },
+  {
+    "YerID": 512,
+    "YerAdi": "Gürpınar",
+    "SehirID": 65
+  },
+  {
+    "YerID": 513,
+    "YerAdi": "Gürsu",
+    "SehirID": 16
+  },
+  {
+    "YerID": 514,
+    "YerAdi": "Gürün",
+    "SehirID": 58
+  },
+  {
+    "YerID": 515,
+    "YerAdi": "Güzelbahçe",
+    "SehirID": 35
+  },
+  {
+    "YerID": 516,
+    "YerAdi": "Güzelyurt",
+    "SehirID": 68
+  },
+  {
+    "YerID": 517,
+    "YerAdi": "Hacıbektaş",
+    "SehirID": 50
+  },
+  {
+    "YerID": 518,
+    "YerAdi": "Hacılar",
+    "SehirID": 38
+  },
+  {
+    "YerID": 519,
+    "YerAdi": "Hadim",
+    "SehirID": 42
+  },
+  {
+    "YerID": 520,
+    "YerAdi": "Hafik",
+    "SehirID": 58
+  },
+  {
+    "YerID": 521,
+    "YerAdi": "Hakkâri",
+    "SehirID": 30
+  },
+  {
+    "YerID": 522,
+    "YerAdi": "Halfeti",
+    "SehirID": 63
+  },
+  {
+    "YerID": 523,
+    "YerAdi": "Haliliye",
+    "SehirID": 63
+  },
+  {
+    "YerID": 524,
+    "YerAdi": "Halkapınar",
+    "SehirID": 42
+  },
+  {
+    "YerID": 525,
+    "YerAdi": "Hamamözü",
+    "SehirID": 5
+  },
+  {
+    "YerID": 526,
+    "YerAdi": "Hamur",
+    "SehirID": 4
+  },
+  {
+    "YerID": 527,
+    "YerAdi": "Han",
+    "SehirID": 26
+  },
+  {
+    "YerID": 528,
+    "YerAdi": "Hanak",
+    "SehirID": 75
+  },
+  {
+    "YerID": 529,
+    "YerAdi": "Hani",
+    "SehirID": 21
+  },
+  {
+    "YerID": 530,
+    "YerAdi": "Hanönü",
+    "SehirID": 37
+  },
+  {
+    "YerID": 531,
+    "YerAdi": "Harmancık",
+    "SehirID": 16
+  },
+  {
+    "YerID": 532,
+    "YerAdi": "Harran",
+    "SehirID": 63
+  },
+  {
+    "YerID": 533,
+    "YerAdi": "Hasanbeyli",
+    "SehirID": 80
+  },
+  {
+    "YerID": 534,
+    "YerAdi": "Hasankeyf",
+    "SehirID": 72
+  },
+  {
+    "YerID": 535,
+    "YerAdi": "Hasköy",
+    "SehirID": 49
+  },
+  {
+    "YerID": 536,
+    "YerAdi": "Hassa",
+    "SehirID": 31
+  },
+  {
+    "YerID": 537,
+    "YerAdi": "Havran",
+    "SehirID": 10
+  },
+  {
+    "YerID": 538,
+    "YerAdi": "Havsa",
+    "SehirID": 22
+  },
+  {
+    "YerID": 539,
+    "YerAdi": "Havza",
+    "SehirID": 55
+  },
+  {
+    "YerID": 540,
+    "YerAdi": "Haymana",
+    "SehirID": 6
+  },
+  {
+    "YerID": 541,
+    "YerAdi": "Hayrabolu",
+    "SehirID": 59
+  },
+  {
+    "YerID": 542,
+    "YerAdi": "Hayrat",
+    "SehirID": 61
+  },
+  {
+    "YerID": 543,
+    "YerAdi": "Hazro",
+    "SehirID": 21
+  },
+  {
+    "YerID": 544,
+    "YerAdi": "Hekimhan",
+    "SehirID": 44
+  },
+  {
+    "YerID": 545,
+    "YerAdi": "Hemşin",
+    "SehirID": 53
+  },
+  {
+    "YerID": 546,
+    "YerAdi": "Hendek",
+    "SehirID": 54
+  },
+  {
+    "YerID": 547,
+    "YerAdi": "Hınıs",
+    "SehirID": 25
+  },
+  {
+    "YerID": 548,
+    "YerAdi": "Hilvan",
+    "SehirID": 63
+  },
+  {
+    "YerID": 549,
+    "YerAdi": "Hisarcık",
+    "SehirID": 43
+  },
+  {
+    "YerID": 550,
+    "YerAdi": "Hizan",
+    "SehirID": 13
+  },
+  {
+    "YerID": 551,
+    "YerAdi": "Hocalar",
+    "SehirID": 3
+  },
+  {
+    "YerID": 552,
+    "YerAdi": "Honaz",
+    "SehirID": 20
+  },
+  {
+    "YerID": 553,
+    "YerAdi": "Hopa",
+    "SehirID": 8
+  },
+  {
+    "YerID": 554,
+    "YerAdi": "Horasan",
+    "SehirID": 25
+  },
+  {
+    "YerID": 555,
+    "YerAdi": "Hozat",
+    "SehirID": 62
+  },
+  {
+    "YerID": 556,
+    "YerAdi": "Hüyük",
+    "SehirID": 42
+  },
+  {
+    "YerID": 557,
+    "YerAdi": "Iğdır",
+    "SehirID": 76
+  },
+  {
+    "YerID": 558,
+    "YerAdi": "Ilgaz",
+    "SehirID": 18
+  },
+  {
+    "YerID": 559,
+    "YerAdi": "Ilgın",
+    "SehirID": 42
+  },
+  {
+    "YerID": 560,
+    "YerAdi": "Isparta",
+    "SehirID": 32
+  },
+  {
+    "YerID": 561,
+    "YerAdi": "İbradı",
+    "SehirID": 7
+  },
+  {
+    "YerID": 562,
+    "YerAdi": "İdil",
+    "SehirID": 73
+  },
+  {
+    "YerID": 563,
+    "YerAdi": "İhsangazi",
+    "SehirID": 37
+  },
+  {
+    "YerID": 564,
+    "YerAdi": "İhsaniye",
+    "SehirID": 3
+  },
+  {
+    "YerID": 565,
+    "YerAdi": "İkizce",
+    "SehirID": 52
+  },
+  {
+    "YerID": 566,
+    "YerAdi": "İkizdere",
+    "SehirID": 53
+  },
+  {
+    "YerID": 567,
+    "YerAdi": "İliç",
+    "SehirID": 24
+  },
+  {
+    "YerID": 568,
+    "YerAdi": "İlkadım",
+    "SehirID": 55
+  },
+  {
+    "YerID": 569,
+    "YerAdi": "İmamoğlu",
+    "SehirID": 1
+  },
+  {
+    "YerID": 570,
+    "YerAdi": "İmranlı",
+    "SehirID": 58
+  },
+  {
+    "YerID": 571,
+    "YerAdi": "İncesu",
+    "SehirID": 38
+  },
+  {
+    "YerID": 572,
+    "YerAdi": "İncirliova",
+    "SehirID": 9
+  },
+  {
+    "YerID": 573,
+    "YerAdi": "İnebolu",
+    "SehirID": 37
+  },
+  {
+    "YerID": 574,
+    "YerAdi": "İnegöl",
+    "SehirID": 16
+  },
+  {
+    "YerID": 575,
+    "YerAdi": "İnhisar",
+    "SehirID": 11
+  },
+  {
+    "YerID": 576,
+    "YerAdi": "İnönü",
+    "SehirID": 26
+  },
+  {
+    "YerID": 577,
+    "YerAdi": "İpekyolu",
+    "SehirID": 65
+  },
+  {
+    "YerID": 578,
+    "YerAdi": "İpsala",
+    "SehirID": 22
+  },
+  {
+    "YerID": 579,
+    "YerAdi": "İscehisar",
+    "SehirID": 3
+  },
+  {
+    "YerID": 580,
+    "YerAdi": "İskenderun",
+    "SehirID": 31
+  },
+  {
+    "YerID": 581,
+    "YerAdi": "İskilip",
+    "SehirID": 19
+  },
+  {
+    "YerID": 582,
+    "YerAdi": "İslahiye",
+    "SehirID": 27
+  },
+  {
+    "YerID": 583,
+    "YerAdi": "İspir",
+    "SehirID": 25
+  },
+  {
+    "YerID": 584,
+    "YerAdi": "İvrindi",
+    "SehirID": 10
+  },
+  {
+    "YerID": 585,
+    "YerAdi": "İyidere",
+    "SehirID": 53
+  },
+  {
+    "YerID": 586,
+    "YerAdi": "İzmit",
+    "SehirID": 41
+  },
+  {
+    "YerID": 587,
+    "YerAdi": "İznik",
+    "SehirID": 16
+  },
+  {
+    "YerID": 588,
+    "YerAdi": "Kabadüz",
+    "SehirID": 52
+  },
+  {
+    "YerID": 589,
+    "YerAdi": "Kabataş",
+    "SehirID": 52
+  },
+  {
+    "YerID": 590,
+    "YerAdi": "Kadıköy",
+    "SehirID": 34
+  },
+  {
+    "YerID": 591,
+    "YerAdi": "Kadınhanı",
+    "SehirID": 42
+  },
+  {
+    "YerID": 592,
+    "YerAdi": "Kadışehri",
+    "SehirID": 66
+  },
+  {
+    "YerID": 593,
+    "YerAdi": "Kadirli",
+    "SehirID": 80
+  },
+  {
+    "YerID": 594,
+    "YerAdi": "Kağıthane",
+    "SehirID": 34
+  },
+  {
+    "YerID": 595,
+    "YerAdi": "Kağızman",
+    "SehirID": 36
+  },
+  {
+    "YerID": 596,
+    "YerAdi": "Kahta",
+    "SehirID": 2
+  },
+  {
+    "YerID": 597,
+    "YerAdi": "Kale",
+    "SehirID": 20
+  },
+  {
+    "YerID": 598,
+    "YerAdi": "Kale",
+    "SehirID": 44
+  },
+  {
+    "YerID": 599,
+    "YerAdi": "Kalecik",
+    "SehirID": 6
+  },
+  {
+    "YerID": 600,
+    "YerAdi": "Kalkandere",
+    "SehirID": 53
+  },
+  {
+    "YerID": 601,
+    "YerAdi": "Kaman",
+    "SehirID": 40
+  },
+  {
+    "YerID": 602,
+    "YerAdi": "Kandıra",
+    "SehirID": 41
+  },
+  {
+    "YerID": 603,
+    "YerAdi": "Kangal",
+    "SehirID": 58
+  },
+  {
+    "YerID": 604,
+    "YerAdi": "Kapaklı",
+    "SehirID": 59
+  },
+  {
+    "YerID": 605,
+    "YerAdi": "Karabağlar",
+    "SehirID": 35
+  },
+  {
+    "YerID": 606,
+    "YerAdi": "Karaburun",
+    "SehirID": 35
+  },
+  {
+    "YerID": 607,
+    "YerAdi": "Karabük",
+    "SehirID": 78
+  },
+  {
+    "YerID": 608,
+    "YerAdi": "Karacabey",
+    "SehirID": 16
+  },
+  {
+    "YerID": 609,
+    "YerAdi": "Karacasu",
+    "SehirID": 9
+  },
+  {
+    "YerID": 610,
+    "YerAdi": "Karaçoban",
+    "SehirID": 25
+  },
+  {
+    "YerID": 611,
+    "YerAdi": "Karahallı",
+    "SehirID": 64
+  },
+  {
+    "YerID": 612,
+    "YerAdi": "Karaisalı",
+    "SehirID": 1
+  },
+  {
+    "YerID": 613,
+    "YerAdi": "Karakeçili",
+    "SehirID": 71
+  },
+  {
+    "YerID": 614,
+    "YerAdi": "Karakoçan",
+    "SehirID": 23
+  },
+  {
+    "YerID": 615,
+    "YerAdi": "Karakoyunlu",
+    "SehirID": 76
+  },
+  {
+    "YerID": 616,
+    "YerAdi": "Karaköprü",
+    "SehirID": 63
+  },
+  {
+    "YerID": 617,
+    "YerAdi": "Karaman",
+    "SehirID": 70
+  },
+  {
+    "YerID": 618,
+    "YerAdi": "Karamanlı",
+    "SehirID": 15
+  },
+  {
+    "YerID": 619,
+    "YerAdi": "Karamürsel",
+    "SehirID": 41
+  },
+  {
+    "YerID": 620,
+    "YerAdi": "Karapınar",
+    "SehirID": 42
+  },
+  {
+    "YerID": 621,
+    "YerAdi": "Karapürçek",
+    "SehirID": 54
+  },
+  {
+    "YerID": 622,
+    "YerAdi": "Karasu",
+    "SehirID": 54
+  },
+  {
+    "YerID": 623,
+    "YerAdi": "Karataş",
+    "SehirID": 1
+  },
+  {
+    "YerID": 624,
+    "YerAdi": "Karatay",
+    "SehirID": 42
+  },
+  {
+    "YerID": 625,
+    "YerAdi": "Karayazı",
+    "SehirID": 25
+  },
+  {
+    "YerID": 626,
+    "YerAdi": "Karesi",
+    "SehirID": 10
+  },
+  {
+    "YerID": 627,
+    "YerAdi": "Kargı",
+    "SehirID": 19
+  },
+  {
+    "YerID": 628,
+    "YerAdi": "Karkamış",
+    "SehirID": 27
+  },
+  {
+    "YerID": 629,
+    "YerAdi": "Karlıova",
+    "SehirID": 12
+  },
+  {
+    "YerID": 630,
+    "YerAdi": "Karpuzlu",
+    "SehirID": 9
+  },
+  {
+    "YerID": 631,
+    "YerAdi": "Kars",
+    "SehirID": 36
+  },
+  {
+    "YerID": 632,
+    "YerAdi": "Karşıyaka",
+    "SehirID": 35
+  },
+  {
+    "YerID": 633,
+    "YerAdi": "Kartal",
+    "SehirID": 34
+  },
+  {
+    "YerID": 634,
+    "YerAdi": "Kartepe",
+    "SehirID": 41
+  },
+  {
+    "YerID": 635,
+    "YerAdi": "Kastamonu",
+    "SehirID": 37
+  },
+  {
+    "YerID": 636,
+    "YerAdi": "Kaş",
+    "SehirID": 7
+  },
+  {
+    "YerID": 637,
+    "YerAdi": "Kavak",
+    "SehirID": 55
+  },
+  {
+    "YerID": 638,
+    "YerAdi": "Kavaklıdere",
+    "SehirID": 48
+  },
+  {
+    "YerID": 639,
+    "YerAdi": "Kayapınar",
+    "SehirID": 21
+  },
+  {
+    "YerID": 640,
+    "YerAdi": "Kaynarca",
+    "SehirID": 54
+  },
+  {
+    "YerID": 641,
+    "YerAdi": "Kaynaşlı",
+    "SehirID": 81
+  },
+  {
+    "YerID": 642,
+    "YerAdi": "Kazan",
+    "SehirID": 6
+  },
+  {
+    "YerID": 643,
+    "YerAdi": "Kazımkarabekir",
+    "SehirID": 70
+  },
+  {
+    "YerID": 644,
+    "YerAdi": "Keban",
+    "SehirID": 23
+  },
+  {
+    "YerID": 645,
+    "YerAdi": "Keçiborlu",
+    "SehirID": 32
+  },
+  {
+    "YerID": 646,
+    "YerAdi": "Keçiören",
+    "SehirID": 6
+  },
+  {
+    "YerID": 647,
+    "YerAdi": "Keles",
+    "SehirID": 16
+  },
+  {
+    "YerID": 648,
+    "YerAdi": "Kelkit",
+    "SehirID": 29
+  },
+  {
+    "YerID": 649,
+    "YerAdi": "Kemah",
+    "SehirID": 24
+  },
+  {
+    "YerID": 650,
+    "YerAdi": "Kemaliye",
+    "SehirID": 24
+  },
+  {
+    "YerID": 651,
+    "YerAdi": "Kemalpaşa",
+    "SehirID": 35
+  },
+  {
+    "YerID": 652,
+    "YerAdi": "Kemer",
+    "SehirID": 7
+  },
+  {
+    "YerID": 653,
+    "YerAdi": "Kemer",
+    "SehirID": 15
+  },
+  {
+    "YerID": 654,
+    "YerAdi": "Kepez",
+    "SehirID": 7
+  },
+  {
+    "YerID": 655,
+    "YerAdi": "Kepsut",
+    "SehirID": 10
+  },
+  {
+    "YerID": 656,
+    "YerAdi": "Keskin",
+    "SehirID": 71
+  },
+  {
+    "YerID": 657,
+    "YerAdi": "Kestel",
+    "SehirID": 16
+  },
+  {
+    "YerID": 658,
+    "YerAdi": "Keşan",
+    "SehirID": 22
+  },
+  {
+    "YerID": 659,
+    "YerAdi": "Keşap",
+    "SehirID": 28
+  },
+  {
+    "YerID": 660,
+    "YerAdi": "Kıbrıscık",
+    "SehirID": 14
+  },
+  {
+    "YerID": 661,
+    "YerAdi": "Kınık",
+    "SehirID": 35
+  },
+  {
+    "YerID": 662,
+    "YerAdi": "Kırıkhan",
+    "SehirID": 31
+  },
+  {
+    "YerID": 663,
+    "YerAdi": "Kırıkkale",
+    "SehirID": 71
+  },
+  {
+    "YerID": 664,
+    "YerAdi": "Kırkağaç",
+    "SehirID": 45
+  },
+  {
+    "YerID": 665,
+    "YerAdi": "Kırklareli",
+    "SehirID": 39
+  },
+  {
+    "YerID": 666,
+    "YerAdi": "Kırşehir",
+    "SehirID": 40
+  },
+  {
+    "YerID": 667,
+    "YerAdi": "Kızılcahamam",
+    "SehirID": 6
+  },
+  {
+    "YerID": 668,
+    "YerAdi": "Kızılırmak",
+    "SehirID": 18
+  },
+  {
+    "YerID": 669,
+    "YerAdi": "Kızılören",
+    "SehirID": 3
+  },
+  {
+    "YerID": 670,
+    "YerAdi": "Kızıltepe",
+    "SehirID": 47
+  },
+  {
+    "YerID": 671,
+    "YerAdi": "Kiğı",
+    "SehirID": 12
+  },
+  {
+    "YerID": 672,
+    "YerAdi": "Kilimli",
+    "SehirID": 67
+  },
+  {
+    "YerID": 673,
+    "YerAdi": "Kilis",
+    "SehirID": 79
+  },
+  {
+    "YerID": 674,
+    "YerAdi": "Kiraz",
+    "SehirID": 35
+  },
+  {
+    "YerID": 675,
+    "YerAdi": "Kocaali",
+    "SehirID": 54
+  },
+  {
+    "YerID": 676,
+    "YerAdi": "Kocaköy",
+    "SehirID": 21
+  },
+  {
+    "YerID": 677,
+    "YerAdi": "Kocasinan",
+    "SehirID": 38
+  },
+  {
+    "YerID": 678,
+    "YerAdi": "Koçarlı",
+    "SehirID": 9
+  },
+  {
+    "YerID": 679,
+    "YerAdi": "Kofçaz",
+    "SehirID": 39
+  },
+  {
+    "YerID": 680,
+    "YerAdi": "Konak",
+    "SehirID": 35
+  },
+  {
+    "YerID": 681,
+    "YerAdi": "Konyaaltı",
+    "SehirID": 7
+  },
+  {
+    "YerID": 682,
+    "YerAdi": "Korgan",
+    "SehirID": 52
+  },
+  {
+    "YerID": 683,
+    "YerAdi": "Korgun",
+    "SehirID": 18
+  },
+  {
+    "YerID": 684,
+    "YerAdi": "Korkut",
+    "SehirID": 49
+  },
+  {
+    "YerID": 685,
+    "YerAdi": "Korkuteli",
+    "SehirID": 7
+  },
+  {
+    "YerID": 686,
+    "YerAdi": "Kovancılar",
+    "SehirID": 23
+  },
+  {
+    "YerID": 687,
+    "YerAdi": "Koyulhisar",
+    "SehirID": 58
+  },
+  {
+    "YerID": 688,
+    "YerAdi": "Kozaklı",
+    "SehirID": 50
+  },
+  {
+    "YerID": 689,
+    "YerAdi": "Kozan",
+    "SehirID": 1
+  },
+  {
+    "YerID": 690,
+    "YerAdi": "Kozlu",
+    "SehirID": 67
+  },
+  {
+    "YerID": 691,
+    "YerAdi": "Kozluk",
+    "SehirID": 72
+  },
+  {
+    "YerID": 692,
+    "YerAdi": "Köprübaşı",
+    "SehirID": 45
+  },
+  {
+    "YerID": 693,
+    "YerAdi": "Köprübaşı",
+    "SehirID": 61
+  },
+  {
+    "YerID": 694,
+    "YerAdi": "Köprüköy",
+    "SehirID": 25
+  },
+  {
+    "YerID": 695,
+    "YerAdi": "Körfez",
+    "SehirID": 41
+  },
+  {
+    "YerID": 696,
+    "YerAdi": "Köse",
+    "SehirID": 29
+  },
+  {
+    "YerID": 697,
+    "YerAdi": "Köşk",
+    "SehirID": 9
+  },
+  {
+    "YerID": 698,
+    "YerAdi": "Köyceğiz",
+    "SehirID": 48
+  },
+  {
+    "YerID": 699,
+    "YerAdi": "Kula",
+    "SehirID": 45
+  },
+  {
+    "YerID": 700,
+    "YerAdi": "Kulp",
+    "SehirID": 21
+  },
+  {
+    "YerID": 701,
+    "YerAdi": "Kulu",
+    "SehirID": 42
+  },
+  {
+    "YerID": 702,
+    "YerAdi": "Kuluncak",
+    "SehirID": 44
+  },
+  {
+    "YerID": 703,
+    "YerAdi": "Kumlu",
+    "SehirID": 31
+  },
+  {
+    "YerID": 704,
+    "YerAdi": "Kumluca",
+    "SehirID": 7
+  },
+  {
+    "YerID": 705,
+    "YerAdi": "Kumru",
+    "SehirID": 52
+  },
+  {
+    "YerID": 706,
+    "YerAdi": "Kurşunlu",
+    "SehirID": 18
+  },
+  {
+    "YerID": 707,
+    "YerAdi": "Kurtalan",
+    "SehirID": 56
+  },
+  {
+    "YerID": 708,
+    "YerAdi": "Kurucaşile",
+    "SehirID": 74
+  },
+  {
+    "YerID": 709,
+    "YerAdi": "Kuşadası",
+    "SehirID": 9
+  },
+  {
+    "YerID": 710,
+    "YerAdi": "Kuyucak",
+    "SehirID": 9
+  },
+  {
+    "YerID": 711,
+    "YerAdi": "Küçükçekmece",
+    "SehirID": 34
+  },
+  {
+    "YerID": 712,
+    "YerAdi": "Küre",
+    "SehirID": 37
+  },
+  {
+    "YerID": 713,
+    "YerAdi": "Kürtün",
+    "SehirID": 29
+  },
+  {
+    "YerID": 714,
+    "YerAdi": "Kütahya",
+    "SehirID": 43
+  },
+  {
+    "YerID": 715,
+    "YerAdi": "Laçin",
+    "SehirID": 19
+  },
+  {
+    "YerID": 716,
+    "YerAdi": "Ladik",
+    "SehirID": 55
+  },
+  {
+    "YerID": 717,
+    "YerAdi": "Lalapaşa",
+    "SehirID": 22
+  },
+  {
+    "YerID": 718,
+    "YerAdi": "Lapseki",
+    "SehirID": 17
+  },
+  {
+    "YerID": 719,
+    "YerAdi": "Lice",
+    "SehirID": 21
+  },
+  {
+    "YerID": 720,
+    "YerAdi": "Lüleburgaz",
+    "SehirID": 39
+  },
+  {
+    "YerID": 721,
+    "YerAdi": "Maçka",
+    "SehirID": 61
+  },
+  {
+    "YerID": 722,
+    "YerAdi": "Maden",
+    "SehirID": 23
+  },
+  {
+    "YerID": 723,
+    "YerAdi": "Mahmudiye",
+    "SehirID": 26
+  },
+  {
+    "YerID": 724,
+    "YerAdi": "Malazgirt",
+    "SehirID": 49
+  },
+  {
+    "YerID": 725,
+    "YerAdi": "Malkara",
+    "SehirID": 59
+  },
+  {
+    "YerID": 726,
+    "YerAdi": "Maltepe",
+    "SehirID": 34
+  },
+  {
+    "YerID": 727,
+    "YerAdi": "Mamak",
+    "SehirID": 6
+  },
+  {
+    "YerID": 728,
+    "YerAdi": "Manavgat",
+    "SehirID": 7
+  },
+  {
+    "YerID": 729,
+    "YerAdi": "Manyas",
+    "SehirID": 10
+  },
+  {
+    "YerID": 730,
+    "YerAdi": "Marmara",
+    "SehirID": 10
+  },
+  {
+    "YerID": 731,
+    "YerAdi": "Marmaraereğlisi",
+    "SehirID": 59
+  },
+  {
+    "YerID": 732,
+    "YerAdi": "Marmaris",
+    "SehirID": 48
+  },
+  {
+    "YerID": 733,
+    "YerAdi": "Mazgirt",
+    "SehirID": 62
+  },
+  {
+    "YerID": 734,
+    "YerAdi": "Mazıdağı",
+    "SehirID": 47
+  },
+  {
+    "YerID": 735,
+    "YerAdi": "Mecitözü",
+    "SehirID": 19
+  },
+  {
+    "YerID": 736,
+    "YerAdi": "Melikgazi",
+    "SehirID": 38
+  },
+  {
+    "YerID": 737,
+    "YerAdi": "Menderes",
+    "SehirID": 35
+  },
+  {
+    "YerID": 738,
+    "YerAdi": "Menemen",
+    "SehirID": 35
+  },
+  {
+    "YerID": 739,
+    "YerAdi": "Mengen",
+    "SehirID": 14
+  },
+  {
+    "YerID": 740,
+    "YerAdi": "Menteşe",
+    "SehirID": 48
+  },
+  {
+    "YerID": 741,
+    "YerAdi": "Meram",
+    "SehirID": 42
+  },
+  {
+    "YerID": 742,
+    "YerAdi": "Meriç",
+    "SehirID": 22
+  },
+  {
+    "YerID": 743,
+    "YerAdi": "Merkezefendi",
+    "SehirID": 20
+  },
+  {
+    "YerID": 744,
+    "YerAdi": "Merzifon",
+    "SehirID": 5
+  },
+  {
+    "YerID": 745,
+    "YerAdi": "Mesudiye",
+    "SehirID": 52
+  },
+  {
+    "YerID": 746,
+    "YerAdi": "Mezitli",
+    "SehirID": 33
+  },
+  {
+    "YerID": 747,
+    "YerAdi": "Midyat",
+    "SehirID": 47
+  },
+  {
+    "YerID": 748,
+    "YerAdi": "Mihalgazi",
+    "SehirID": 26
+  },
+  {
+    "YerID": 749,
+    "YerAdi": "Mihalıççık",
+    "SehirID": 26
+  },
+  {
+    "YerID": 750,
+    "YerAdi": "Milas",
+    "SehirID": 48
+  },
+  {
+    "YerID": 751,
+    "YerAdi": "Mucur",
+    "SehirID": 40
+  },
+  {
+    "YerID": 752,
+    "YerAdi": "Mudanya",
+    "SehirID": 16
+  },
+  {
+    "YerID": 753,
+    "YerAdi": "Mudurnu",
+    "SehirID": 14
+  },
+  {
+    "YerID": 754,
+    "YerAdi": "Muradiye",
+    "SehirID": 65
+  },
+  {
+    "YerID": 755,
+    "YerAdi": "Muratlı",
+    "SehirID": 59
+  },
+  {
+    "YerID": 756,
+    "YerAdi": "Muratpaşa",
+    "SehirID": 7
+  },
+  {
+    "YerID": 757,
+    "YerAdi": "Murgul",
+    "SehirID": 8
+  },
+  {
+    "YerID": 758,
+    "YerAdi": "Musabeyli",
+    "SehirID": 79
+  },
+  {
+    "YerID": 759,
+    "YerAdi": "Mustafakemalpaşa",
+    "SehirID": 16
+  },
+  {
+    "YerID": 760,
+    "YerAdi": "Muş",
+    "SehirID": 49
+  },
+  {
+    "YerID": 761,
+    "YerAdi": "Mut",
+    "SehirID": 33
+  },
+  {
+    "YerID": 762,
+    "YerAdi": "Mutki",
+    "SehirID": 13
+  },
+  {
+    "YerID": 763,
+    "YerAdi": "Nallıhan",
+    "SehirID": 6
+  },
+  {
+    "YerID": 764,
+    "YerAdi": "Narlıdere",
+    "SehirID": 35
+  },
+  {
+    "YerID": 765,
+    "YerAdi": "Narman",
+    "SehirID": 25
+  },
+  {
+    "YerID": 766,
+    "YerAdi": "Nazımiye",
+    "SehirID": 62
+  },
+  {
+    "YerID": 767,
+    "YerAdi": "Nazilli",
+    "SehirID": 9
+  },
+  {
+    "YerID": 768,
+    "YerAdi": "Nevşehir",
+    "SehirID": 50
+  },
+  {
+    "YerID": 769,
+    "YerAdi": "Niğde",
+    "SehirID": 51
+  },
+  {
+    "YerID": 770,
+    "YerAdi": "Niksar",
+    "SehirID": 60
+  },
+  {
+    "YerID": 771,
+    "YerAdi": "Nilüfer",
+    "SehirID": 16
+  },
+  {
+    "YerID": 772,
+    "YerAdi": "Nizip",
+    "SehirID": 27
+  },
+  {
+    "YerID": 773,
+    "YerAdi": "Nurdağı",
+    "SehirID": 27
+  },
+  {
+    "YerID": 774,
+    "YerAdi": "Nurhak",
+    "SehirID": 46
+  },
+  {
+    "YerID": 775,
+    "YerAdi": "Nusaybin",
+    "SehirID": 47
+  },
+  {
+    "YerID": 776,
+    "YerAdi": "Odunpazarı",
+    "SehirID": 26
+  },
+  {
+    "YerID": 777,
+    "YerAdi": "Of",
+    "SehirID": 61
+  },
+  {
+    "YerID": 778,
+    "YerAdi": "Oğuzeli",
+    "SehirID": 27
+  },
+  {
+    "YerID": 779,
+    "YerAdi": "Oğuzlar",
+    "SehirID": 19
+  },
+  {
+    "YerID": 780,
+    "YerAdi": "Oltu",
+    "SehirID": 25
+  },
+  {
+    "YerID": 781,
+    "YerAdi": "Olur",
+    "SehirID": 25
+  },
+  {
+    "YerID": 782,
+    "YerAdi": "Ondokuzmayıs",
+    "SehirID": 55
+  },
+  {
+    "YerID": 783,
+    "YerAdi": "Onikişubat",
+    "SehirID": 46
+  },
+  {
+    "YerID": 784,
+    "YerAdi": "Orhaneli",
+    "SehirID": 16
+  },
+  {
+    "YerID": 785,
+    "YerAdi": "Orhangazi",
+    "SehirID": 16
+  },
+  {
+    "YerID": 786,
+    "YerAdi": "Orta",
+    "SehirID": 18
+  },
+  {
+    "YerID": 787,
+    "YerAdi": "Ortaca",
+    "SehirID": 48
+  },
+  {
+    "YerID": 788,
+    "YerAdi": "Ortahisar",
+    "SehirID": 61
+  },
+  {
+    "YerID": 789,
+    "YerAdi": "Ortaköy",
+    "SehirID": 68
+  },
+  {
+    "YerID": 790,
+    "YerAdi": "Ortaköy",
+    "SehirID": 19
+  },
+  {
+    "YerID": 791,
+    "YerAdi": "Osmancık",
+    "SehirID": 19
+  },
+  {
+    "YerID": 792,
+    "YerAdi": "Osmaneli",
+    "SehirID": 11
+  },
+  {
+    "YerID": 793,
+    "YerAdi": "Osmangazi",
+    "SehirID": 16
+  },
+  {
+    "YerID": 794,
+    "YerAdi": "Osmaniye",
+    "SehirID": 80
+  },
+  {
+    "YerID": 795,
+    "YerAdi": "Otlukbeli",
+    "SehirID": 24
+  },
+  {
+    "YerID": 796,
+    "YerAdi": "Ovacık",
+    "SehirID": 78
+  },
+  {
+    "YerID": 797,
+    "YerAdi": "Ovacık",
+    "SehirID": 62
+  },
+  {
+    "YerID": 798,
+    "YerAdi": "Ödemiş",
+    "SehirID": 35
+  },
+  {
+    "YerID": 799,
+    "YerAdi": "Ömerli",
+    "SehirID": 47
+  },
+  {
+    "YerID": 800,
+    "YerAdi": "Özalp",
+    "SehirID": 65
+  },
+  {
+    "YerID": 801,
+    "YerAdi": "Özvatan",
+    "SehirID": 38
+  },
+  {
+    "YerID": 802,
+    "YerAdi": "Palandöken",
+    "SehirID": 25
+  },
+  {
+    "YerID": 803,
+    "YerAdi": "Palu",
+    "SehirID": 23
+  },
+  {
+    "YerID": 804,
+    "YerAdi": "Pamukkale",
+    "SehirID": 20
+  },
+  {
+    "YerID": 805,
+    "YerAdi": "Pamukova",
+    "SehirID": 54
+  },
+  {
+    "YerID": 806,
+    "YerAdi": "Pasinler",
+    "SehirID": 25
+  },
+  {
+    "YerID": 807,
+    "YerAdi": "Patnos",
+    "SehirID": 4
+  },
+  {
+    "YerID": 808,
+    "YerAdi": "Payas",
+    "SehirID": 31
+  },
+  {
+    "YerID": 809,
+    "YerAdi": "Pazar",
+    "SehirID": 53
+  },
+  {
+    "YerID": 810,
+    "YerAdi": "Pazar",
+    "SehirID": 60
+  },
+  {
+    "YerID": 811,
+    "YerAdi": "Pazarcık",
+    "SehirID": 46
+  },
+  {
+    "YerID": 812,
+    "YerAdi": "Pazarlar",
+    "SehirID": 43
+  },
+  {
+    "YerID": 813,
+    "YerAdi": "Pazaryeri",
+    "SehirID": 11
+  },
+  {
+    "YerID": 814,
+    "YerAdi": "Pazaryolu",
+    "SehirID": 25
+  },
+  {
+    "YerID": 815,
+    "YerAdi": "Pehlivanköy",
+    "SehirID": 39
+  },
+  {
+    "YerID": 816,
+    "YerAdi": "Pendik",
+    "SehirID": 34
+  },
+  {
+    "YerID": 817,
+    "YerAdi": "Perşembe",
+    "SehirID": 52
+  },
+  {
+    "YerID": 818,
+    "YerAdi": "Pertek",
+    "SehirID": 62
+  },
+  {
+    "YerID": 819,
+    "YerAdi": "Pervari",
+    "SehirID": 56
+  },
+  {
+    "YerID": 820,
+    "YerAdi": "Pınarbaşı",
+    "SehirID": 37
+  },
+  {
+    "YerID": 821,
+    "YerAdi": "Pınarbaşı",
+    "SehirID": 38
+  },
+  {
+    "YerID": 822,
+    "YerAdi": "Pınarhisar",
+    "SehirID": 39
+  },
+  {
+    "YerID": 823,
+    "YerAdi": "Piraziz",
+    "SehirID": 28
+  },
+  {
+    "YerID": 824,
+    "YerAdi": "Polateli",
+    "SehirID": 79
+  },
+  {
+    "YerID": 825,
+    "YerAdi": "Polatlı",
+    "SehirID": 6
+  },
+  {
+    "YerID": 826,
+    "YerAdi": "Posof",
+    "SehirID": 75
+  },
+  {
+    "YerID": 827,
+    "YerAdi": "Pozantı",
+    "SehirID": 1
+  },
+  {
+    "YerID": 828,
+    "YerAdi": "Pursaklar",
+    "SehirID": 6
+  },
+  {
+    "YerID": 829,
+    "YerAdi": "Pülümür",
+    "SehirID": 62
+  },
+  {
+    "YerID": 830,
+    "YerAdi": "Pütürge",
+    "SehirID": 44
+  },
+  {
+    "YerID": 831,
+    "YerAdi": "Refahiye",
+    "SehirID": 24
+  },
+  {
+    "YerID": 832,
+    "YerAdi": "Reşadiye",
+    "SehirID": 60
+  },
+  {
+    "YerID": 833,
+    "YerAdi": "Reyhanlı",
+    "SehirID": 31
+  },
+  {
+    "YerID": 834,
+    "YerAdi": "Rize",
+    "SehirID": 53
+  },
+  {
+    "YerID": 835,
+    "YerAdi": "Safranbolu",
+    "SehirID": 78
+  },
+  {
+    "YerID": 836,
+    "YerAdi": "Saimbeyli",
+    "SehirID": 1
+  },
+  {
+    "YerID": 837,
+    "YerAdi": "Salıpazarı",
+    "SehirID": 55
+  },
+  {
+    "YerID": 838,
+    "YerAdi": "Salihli",
+    "SehirID": 45
+  },
+  {
+    "YerID": 839,
+    "YerAdi": "Samandağ",
+    "SehirID": 31
+  },
+  {
+    "YerID": 840,
+    "YerAdi": "Samsat",
+    "SehirID": 2
+  },
+  {
+    "YerID": 841,
+    "YerAdi": "Sancaktepe",
+    "SehirID": 34
+  },
+  {
+    "YerID": 842,
+    "YerAdi": "Sandıklı",
+    "SehirID": 3
+  },
+  {
+    "YerID": 843,
+    "YerAdi": "Sapanca",
+    "SehirID": 54
+  },
+  {
+    "YerID": 844,
+    "YerAdi": "Saray",
+    "SehirID": 59
+  },
+  {
+    "YerID": 845,
+    "YerAdi": "Saray",
+    "SehirID": 65
+  },
+  {
+    "YerID": 846,
+    "YerAdi": "Saraydüzü",
+    "SehirID": 57
+  },
+  {
+    "YerID": 847,
+    "YerAdi": "Saraykent",
+    "SehirID": 66
+  },
+  {
+    "YerID": 848,
+    "YerAdi": "Sarayköy",
+    "SehirID": 20
+  },
+  {
+    "YerID": 849,
+    "YerAdi": "Sarayönü",
+    "SehirID": 42
+  },
+  {
+    "YerID": 850,
+    "YerAdi": "Sarıcakaya",
+    "SehirID": 26
+  },
+  {
+    "YerID": 851,
+    "YerAdi": "Sarıçam",
+    "SehirID": 1
+  },
+  {
+    "YerID": 852,
+    "YerAdi": "Sarıgöl",
+    "SehirID": 45
+  },
+  {
+    "YerID": 853,
+    "YerAdi": "Sarıkamış",
+    "SehirID": 36
+  },
+  {
+    "YerID": 854,
+    "YerAdi": "Sarıkaya",
+    "SehirID": 66
+  },
+  {
+    "YerID": 855,
+    "YerAdi": "Sarıoğlan",
+    "SehirID": 38
+  },
+  {
+    "YerID": 856,
+    "YerAdi": "Sarıveliler",
+    "SehirID": 70
+  },
+  {
+    "YerID": 857,
+    "YerAdi": "Sarıyahşi",
+    "SehirID": 68
+  },
+  {
+    "YerID": 858,
+    "YerAdi": "Sarıyer",
+    "SehirID": 34
+  },
+  {
+    "YerID": 859,
+    "YerAdi": "Sarız",
+    "SehirID": 38
+  },
+  {
+    "YerID": 860,
+    "YerAdi": "Saruhanlı",
+    "SehirID": 45
+  },
+  {
+    "YerID": 861,
+    "YerAdi": "Sason",
+    "SehirID": 72
+  },
+  {
+    "YerID": 862,
+    "YerAdi": "Savaştepe",
+    "SehirID": 10
+  },
+  {
+    "YerID": 863,
+    "YerAdi": "Savur",
+    "SehirID": 47
+  },
+  {
+    "YerID": 864,
+    "YerAdi": "Seben",
+    "SehirID": 14
+  },
+  {
+    "YerID": 865,
+    "YerAdi": "Seferihisar",
+    "SehirID": 35
+  },
+  {
+    "YerID": 866,
+    "YerAdi": "Selçuk",
+    "SehirID": 35
+  },
+  {
+    "YerID": 867,
+    "YerAdi": "Selçuklu",
+    "SehirID": 42
+  },
+  {
+    "YerID": 868,
+    "YerAdi": "Selendi",
+    "SehirID": 45
+  },
+  {
+    "YerID": 869,
+    "YerAdi": "Selim",
+    "SehirID": 36
+  },
+  {
+    "YerID": 870,
+    "YerAdi": "Senirkent",
+    "SehirID": 32
+  },
+  {
+    "YerID": 871,
+    "YerAdi": "Serdivan",
+    "SehirID": 54
+  },
+  {
+    "YerID": 872,
+    "YerAdi": "Serik",
+    "SehirID": 7
+  },
+  {
+    "YerID": 873,
+    "YerAdi": "Serinhisar",
+    "SehirID": 20
+  },
+  {
+    "YerID": 874,
+    "YerAdi": "Seydikemer",
+    "SehirID": 48
+  },
+  {
+    "YerID": 875,
+    "YerAdi": "Seydiler",
+    "SehirID": 37
+  },
+  {
+    "YerID": 876,
+    "YerAdi": "Seydişehir",
+    "SehirID": 42
+  },
+  {
+    "YerID": 877,
+    "YerAdi": "Seyhan",
+    "SehirID": 1
+  },
+  {
+    "YerID": 878,
+    "YerAdi": "Seyitgazi",
+    "SehirID": 26
+  },
+  {
+    "YerID": 879,
+    "YerAdi": "Sındırgı",
+    "SehirID": 10
+  },
+  {
+    "YerID": 880,
+    "YerAdi": "Siirt",
+    "SehirID": 56
+  },
+  {
+    "YerID": 881,
+    "YerAdi": "Silifke",
+    "SehirID": 33
+  },
+  {
+    "YerID": 882,
+    "YerAdi": "Silivri",
+    "SehirID": 34
+  },
+  {
+    "YerID": 883,
+    "YerAdi": "Silopi",
+    "SehirID": 73
+  },
+  {
+    "YerID": 884,
+    "YerAdi": "Silvan",
+    "SehirID": 21
+  },
+  {
+    "YerID": 885,
+    "YerAdi": "Simav",
+    "SehirID": 43
+  },
+  {
+    "YerID": 886,
+    "YerAdi": "Sinanpaşa",
+    "SehirID": 3
+  },
+  {
+    "YerID": 887,
+    "YerAdi": "Sincan",
+    "SehirID": 6
+  },
+  {
+    "YerID": 888,
+    "YerAdi": "Sincik",
+    "SehirID": 2
+  },
+  {
+    "YerID": 889,
+    "YerAdi": "Sinop",
+    "SehirID": 57
+  },
+  {
+    "YerID": 890,
+    "YerAdi": "Sivas",
+    "SehirID": 58
+  },
+  {
+    "YerID": 891,
+    "YerAdi": "Sivaslı",
+    "SehirID": 64
+  },
+  {
+    "YerID": 892,
+    "YerAdi": "Siverek",
+    "SehirID": 63
+  },
+  {
+    "YerID": 893,
+    "YerAdi": "Sivrice",
+    "SehirID": 23
+  },
+  {
+    "YerID": 894,
+    "YerAdi": "Sivrihisar",
+    "SehirID": 26
+  },
+  {
+    "YerID": 895,
+    "YerAdi": "Solhan",
+    "SehirID": 12
+  },
+  {
+    "YerID": 896,
+    "YerAdi": "Soma",
+    "SehirID": 45
+  },
+  {
+    "YerID": 897,
+    "YerAdi": "Sorgun",
+    "SehirID": 66
+  },
+  {
+    "YerID": 898,
+    "YerAdi": "Söğüt",
+    "SehirID": 11
+  },
+  {
+    "YerID": 899,
+    "YerAdi": "Söğütlü",
+    "SehirID": 54
+  },
+  {
+    "YerID": 900,
+    "YerAdi": "Söke",
+    "SehirID": 9
+  },
+  {
+    "YerID": 901,
+    "YerAdi": "Sulakyurt",
+    "SehirID": 71
+  },
+  {
+    "YerID": 902,
+    "YerAdi": "Sultanbeyli",
+    "SehirID": 34
+  },
+  {
+    "YerID": 903,
+    "YerAdi": "Sultandağı",
+    "SehirID": 3
+  },
+  {
+    "YerID": 904,
+    "YerAdi": "Sultangazi",
+    "SehirID": 34
+  },
+  {
+    "YerID": 905,
+    "YerAdi": "Sultanhisar",
+    "SehirID": 9
+  },
+  {
+    "YerID": 906,
+    "YerAdi": "Suluova",
+    "SehirID": 5
+  },
+  {
+    "YerID": 907,
+    "YerAdi": "Sulusaray",
+    "SehirID": 60
+  },
+  {
+    "YerID": 908,
+    "YerAdi": "Sumbas",
+    "SehirID": 80
+  },
+  {
+    "YerID": 909,
+    "YerAdi": "Sungurlu",
+    "SehirID": 19
+  },
+  {
+    "YerID": 910,
+    "YerAdi": "Sur",
+    "SehirID": 21
+  },
+  {
+    "YerID": 911,
+    "YerAdi": "Suruç",
+    "SehirID": 63
+  },
+  {
+    "YerID": 912,
+    "YerAdi": "Susurluk",
+    "SehirID": 10
+  },
+  {
+    "YerID": 913,
+    "YerAdi": "Susuz",
+    "SehirID": 36
+  },
+  {
+    "YerID": 914,
+    "YerAdi": "Suşehri",
+    "SehirID": 58
+  },
+  {
+    "YerID": 915,
+    "YerAdi": "Süleymanpaşa",
+    "SehirID": 59
+  },
+  {
+    "YerID": 916,
+    "YerAdi": "Süloğlu",
+    "SehirID": 22
+  },
+  {
+    "YerID": 917,
+    "YerAdi": "Sürmene",
+    "SehirID": 61
+  },
+  {
+    "YerID": 918,
+    "YerAdi": "Sütçüler",
+    "SehirID": 32
+  },
+  {
+    "YerID": 919,
+    "YerAdi": "Şabanözü",
+    "SehirID": 18
+  },
+  {
+    "YerID": 920,
+    "YerAdi": "Şahinbey",
+    "SehirID": 27
+  },
+  {
+    "YerID": 921,
+    "YerAdi": "Şalpazarı",
+    "SehirID": 61
+  },
+  {
+    "YerID": 922,
+    "YerAdi": "Şaphane",
+    "SehirID": 43
+  },
+  {
+    "YerID": 923,
+    "YerAdi": "Şarkışla",
+    "SehirID": 58
+  },
+  {
+    "YerID": 924,
+    "YerAdi": "Şarkikaraağaç",
+    "SehirID": 32
+  },
+  {
+    "YerID": 925,
+    "YerAdi": "Şarköy",
+    "SehirID": 59
+  },
+  {
+    "YerID": 926,
+    "YerAdi": "Şavşat",
+    "SehirID": 8
+  },
+  {
+    "YerID": 927,
+    "YerAdi": "Şebinkarahisar",
+    "SehirID": 28
+  },
+  {
+    "YerID": 928,
+    "YerAdi": "Şefaatli",
+    "SehirID": 66
+  },
+  {
+    "YerID": 929,
+    "YerAdi": "Şehitkamil",
+    "SehirID": 27
+  },
+  {
+    "YerID": 930,
+    "YerAdi": "Şehzadeler",
+    "SehirID": 45
+  },
+  {
+    "YerID": 931,
+    "YerAdi": "Şemdinli",
+    "SehirID": 30
+  },
+  {
+    "YerID": 932,
+    "YerAdi": "Şenkaya",
+    "SehirID": 25
+  },
+  {
+    "YerID": 933,
+    "YerAdi": "Şenpazar",
+    "SehirID": 37
+  },
+  {
+    "YerID": 934,
+    "YerAdi": "Şereflikoçhisar",
+    "SehirID": 6
+  },
+  {
+    "YerID": 935,
+    "YerAdi": "Şırnak",
+    "SehirID": 73
+  },
+  {
+    "YerID": 936,
+    "YerAdi": "Şile",
+    "SehirID": 34
+  },
+  {
+    "YerID": 937,
+    "YerAdi": "Şiran",
+    "SehirID": 29
+  },
+  {
+    "YerID": 938,
+    "YerAdi": "Şirvan",
+    "SehirID": 56
+  },
+  {
+    "YerID": 939,
+    "YerAdi": "Şişli",
+    "SehirID": 34
+  },
+  {
+    "YerID": 940,
+    "YerAdi": "Şuhut",
+    "SehirID": 3
+  },
+  {
+    "YerID": 941,
+    "YerAdi": "Talas",
+    "SehirID": 38
+  },
+  {
+    "YerID": 942,
+    "YerAdi": "Taraklı",
+    "SehirID": 54
+  },
+  {
+    "YerID": 943,
+    "YerAdi": "Tarsus",
+    "SehirID": 33
+  },
+  {
+    "YerID": 944,
+    "YerAdi": "Taşkent",
+    "SehirID": 42
+  },
+  {
+    "YerID": 945,
+    "YerAdi": "Taşköprü",
+    "SehirID": 37
+  },
+  {
+    "YerID": 946,
+    "YerAdi": "Taşlıçay",
+    "SehirID": 4
+  },
+  {
+    "YerID": 947,
+    "YerAdi": "Taşova",
+    "SehirID": 5
+  },
+  {
+    "YerID": 948,
+    "YerAdi": "Tatvan",
+    "SehirID": 13
+  },
+  {
+    "YerID": 949,
+    "YerAdi": "Tavas",
+    "SehirID": 20
+  },
+  {
+    "YerID": 950,
+    "YerAdi": "Tavşanlı",
+    "SehirID": 43
+  },
+  {
+    "YerID": 951,
+    "YerAdi": "Tefenni",
+    "SehirID": 15
+  },
+  {
+    "YerID": 952,
+    "YerAdi": "Tekkeköy",
+    "SehirID": 55
+  },
+  {
+    "YerID": 953,
+    "YerAdi": "Tekman",
+    "SehirID": 25
+  },
+  {
+    "YerID": 954,
+    "YerAdi": "Tepebaşı",
+    "SehirID": 26
+  },
+  {
+    "YerID": 955,
+    "YerAdi": "Tercan",
+    "SehirID": 24
+  },
+  {
+    "YerID": 956,
+    "YerAdi": "Termal",
+    "SehirID": 77
+  },
+  {
+    "YerID": 957,
+    "YerAdi": "Terme",
+    "SehirID": 55
+  },
+  {
+    "YerID": 958,
+    "YerAdi": "Tillo",
+    "SehirID": 56
+  },
+  {
+    "YerID": 959,
+    "YerAdi": "Tire",
+    "SehirID": 35
+  },
+  {
+    "YerID": 960,
+    "YerAdi": "Tirebolu",
+    "SehirID": 28
+  },
+  {
+    "YerID": 961,
+    "YerAdi": "Tokat",
+    "SehirID": 60
+  },
+  {
+    "YerID": 962,
+    "YerAdi": "Tomarza",
+    "SehirID": 38
+  },
+  {
+    "YerID": 963,
+    "YerAdi": "Tonya",
+    "SehirID": 61
+  },
+  {
+    "YerID": 964,
+    "YerAdi": "Toprakkale",
+    "SehirID": 80
+  },
+  {
+    "YerID": 965,
+    "YerAdi": "Torbalı",
+    "SehirID": 35
+  },
+  {
+    "YerID": 966,
+    "YerAdi": "Toroslar",
+    "SehirID": 33
+  },
+  {
+    "YerID": 967,
+    "YerAdi": "Tortum",
+    "SehirID": 25
+  },
+  {
+    "YerID": 968,
+    "YerAdi": "Torul",
+    "SehirID": 29
+  },
+  {
+    "YerID": 969,
+    "YerAdi": "Tosya",
+    "SehirID": 37
+  },
+  {
+    "YerID": 970,
+    "YerAdi": "Tufanbeyli",
+    "SehirID": 1
+  },
+  {
+    "YerID": 971,
+    "YerAdi": "Tunceli",
+    "SehirID": 62
+  },
+  {
+    "YerID": 972,
+    "YerAdi": "Turgutlu",
+    "SehirID": 45
+  },
+  {
+    "YerID": 973,
+    "YerAdi": "Turhal",
+    "SehirID": 60
+  },
+  {
+    "YerID": 974,
+    "YerAdi": "Tuşba",
+    "SehirID": 65
+  },
+  {
+    "YerID": 975,
+    "YerAdi": "Tut",
+    "SehirID": 2
+  },
+  {
+    "YerID": 976,
+    "YerAdi": "Tutak",
+    "SehirID": 4
+  },
+  {
+    "YerID": 977,
+    "YerAdi": "Tuzla",
+    "SehirID": 34
+  },
+  {
+    "YerID": 978,
+    "YerAdi": "Tuzluca",
+    "SehirID": 76
+  },
+  {
+    "YerID": 979,
+    "YerAdi": "Tuzlukçu",
+    "SehirID": 42
+  },
+  {
+    "YerID": 980,
+    "YerAdi": "Türkeli",
+    "SehirID": 57
+  },
+  {
+    "YerID": 981,
+    "YerAdi": "Türkoğlu",
+    "SehirID": 46
+  },
+  {
+    "YerID": 982,
+    "YerAdi": "Uğurludağ",
+    "SehirID": 19
+  },
+  {
+    "YerID": 983,
+    "YerAdi": "Ula",
+    "SehirID": 48
+  },
+  {
+    "YerID": 984,
+    "YerAdi": "Ulaş",
+    "SehirID": 58
+  },
+  {
+    "YerID": 985,
+    "YerAdi": "Ulubey",
+    "SehirID": 52
+  },
+  {
+    "YerID": 986,
+    "YerAdi": "Ulubey",
+    "SehirID": 64
+  },
+  {
+    "YerID": 987,
+    "YerAdi": "Uluborlu",
+    "SehirID": 32
+  },
+  {
+    "YerID": 988,
+    "YerAdi": "Uludere",
+    "SehirID": 73
+  },
+  {
+    "YerID": 989,
+    "YerAdi": "Ulukışla",
+    "SehirID": 51
+  },
+  {
+    "YerID": 990,
+    "YerAdi": "Ulus",
+    "SehirID": 74
+  },
+  {
+    "YerID": 991,
+    "YerAdi": "Urla",
+    "SehirID": 35
+  },
+  {
+    "YerID": 992,
+    "YerAdi": "Uşak",
+    "SehirID": 64
+  },
+  {
+    "YerID": 993,
+    "YerAdi": "Uzundere",
+    "SehirID": 25
+  },
+  {
+    "YerID": 994,
+    "YerAdi": "Uzunköprü",
+    "SehirID": 22
+  },
+  {
+    "YerID": 995,
+    "YerAdi": "Ümraniye",
+    "SehirID": 34
+  },
+  {
+    "YerID": 996,
+    "YerAdi": "Ünye",
+    "SehirID": 52
+  },
+  {
+    "YerID": 997,
+    "YerAdi": "Ürgüp",
+    "SehirID": 50
+  },
+  {
+    "YerID": 998,
+    "YerAdi": "Üsküdar",
+    "SehirID": 34
+  },
+  {
+    "YerID": 999,
+    "YerAdi": "Üzümlü",
+    "SehirID": 24
+  },
+  {
+    "YerID": 1000,
+    "YerAdi": "Vakfıkebir",
+    "SehirID": 61
+  },
+  {
+    "YerID": 1001,
+    "YerAdi": "Varto",
+    "SehirID": 49
+  },
+  {
+    "YerID": 1002,
+    "YerAdi": "Vezirköprü",
+    "SehirID": 55
+  },
+  {
+    "YerID": 1003,
+    "YerAdi": "Viranşehir",
+    "SehirID": 63
+  },
+  {
+    "YerID": 1004,
+    "YerAdi": "Vize",
+    "SehirID": 39
+  },
+  {
+    "YerID": 1005,
+    "YerAdi": "Yağlıdere",
+    "SehirID": 28
+  },
+  {
+    "YerID": 1006,
+    "YerAdi": "Yahşihan",
+    "SehirID": 71
+  },
+  {
+    "YerID": 1007,
+    "YerAdi": "Yahyalı",
+    "SehirID": 38
+  },
+  {
+    "YerID": 1008,
+    "YerAdi": "Yakakent",
+    "SehirID": 55
+  },
+  {
+    "YerID": 1009,
+    "YerAdi": "Yakutiye",
+    "SehirID": 25
+  },
+  {
+    "YerID": 1010,
+    "YerAdi": "Yalıhüyük",
+    "SehirID": 42
+  },
+  {
+    "YerID": 1011,
+    "YerAdi": "Yalova",
+    "SehirID": 77
+  },
+  {
+    "YerID": 1012,
+    "YerAdi": "Yalvaç",
+    "SehirID": 32
+  },
+  {
+    "YerID": 1013,
+    "YerAdi": "Yapraklı",
+    "SehirID": 18
+  },
+  {
+    "YerID": 1014,
+    "YerAdi": "Yatağan",
+    "SehirID": 48
+  },
+  {
+    "YerID": 1015,
+    "YerAdi": "Yavuzeli",
+    "SehirID": 27
+  },
+  {
+    "YerID": 1016,
+    "YerAdi": "Yayladağı",
+    "SehirID": 31
+  },
+  {
+    "YerID": 1017,
+    "YerAdi": "Yayladere",
+    "SehirID": 12
+  },
+  {
+    "YerID": 1018,
+    "YerAdi": "Yazıhan",
+    "SehirID": 44
+  },
+  {
+    "YerID": 1019,
+    "YerAdi": "Yedisu",
+    "SehirID": 12
+  },
+  {
+    "YerID": 1020,
+    "YerAdi": "Yenice",
+    "SehirID": 17
+  },
+  {
+    "YerID": 1021,
+    "YerAdi": "Yenice",
+    "SehirID": 78
+  },
+  {
+    "YerID": 1022,
+    "YerAdi": "Yeniçağa",
+    "SehirID": 14
+  },
+  {
+    "YerID": 1023,
+    "YerAdi": "Yenifakılı",
+    "SehirID": 66
+  },
+  {
+    "YerID": 1024,
+    "YerAdi": "Yenimahalle",
+    "SehirID": 6
+  },
+  {
+    "YerID": 1025,
+    "YerAdi": "Yenipazar",
+    "SehirID": 9
+  },
+  {
+    "YerID": 1026,
+    "YerAdi": "Yenipazar",
+    "SehirID": 11
+  },
+  {
+    "YerID": 1027,
+    "YerAdi": "Yenişarbademli",
+    "SehirID": 32
+  },
+  {
+    "YerID": 1028,
+    "YerAdi": "Yenişehir",
+    "SehirID": 16
+  },
+  {
+    "YerID": 1029,
+    "YerAdi": "Yenişehir",
+    "SehirID": 21
+  },
+  {
+    "YerID": 1030,
+    "YerAdi": "Yenişehir",
+    "SehirID": 33
+  },
+  {
+    "YerID": 1031,
+    "YerAdi": "Yerköy",
+    "SehirID": 66
+  },
+  {
+    "YerID": 1032,
+    "YerAdi": "Yeşilhisar",
+    "SehirID": 38
+  },
+  {
+    "YerID": 1033,
+    "YerAdi": "Yeşilli",
+    "SehirID": 47
+  },
+  {
+    "YerID": 1034,
+    "YerAdi": "Yeşilova",
+    "SehirID": 15
+  },
+  {
+    "YerID": 1035,
+    "YerAdi": "Yeşilyurt",
+    "SehirID": 44
+  },
+  {
+    "YerID": 1036,
+    "YerAdi": "Yeşilyurt",
+    "SehirID": 60
+  },
+  {
+    "YerID": 1037,
+    "YerAdi": "Yığılca",
+    "SehirID": 81
+  },
+  {
+    "YerID": 1038,
+    "YerAdi": "Yıldırım",
+    "SehirID": 16
+  },
+  {
+    "YerID": 1039,
+    "YerAdi": "Yıldızeli",
+    "SehirID": 58
+  },
+  {
+    "YerID": 1040,
+    "YerAdi": "Yomra",
+    "SehirID": 61
+  },
+  {
+    "YerID": 1041,
+    "YerAdi": "Yozgat",
+    "SehirID": 66
+  },
+  {
+    "YerID": 1042,
+    "YerAdi": "Yumurtalık",
+    "SehirID": 1
+  },
+  {
+    "YerID": 1043,
+    "YerAdi": "Yunak",
+    "SehirID": 42
+  },
+  {
+    "YerID": 1044,
+    "YerAdi": "Yunusemre",
+    "SehirID": 45
+  },
+  {
+    "YerID": 1045,
+    "YerAdi": "Yusufeli",
+    "SehirID": 8
+  },
+  {
+    "YerID": 1046,
+    "YerAdi": "Yüksekova",
+    "SehirID": 30
+  },
+  {
+    "YerID": 1047,
+    "YerAdi": "Yüreğir",
+    "SehirID": 1
+  },
+  {
+    "YerID": 1048,
+    "YerAdi": "Zara",
+    "SehirID": 58
+  },
+  {
+    "YerID": 1049,
+    "YerAdi": "Zeytinburnu",
+    "SehirID": 34
+  },
+  {
+    "YerID": 1050,
+    "YerAdi": "Zile",
+    "SehirID": 60
+  },
+  {
+    "YerID": 1051,
+    "YerAdi": "Zonguldak",
+    "SehirID": 67
+  },
+  {
+    "YerID": 1052,
+    "YerAdi": "Kemalpaşa",
+    "SehirID": 8
+  },
+  {
+    "YerID": 1053,
+    "YerAdi": "Sultanhanı",
+    "SehirID": 6
+  }
+]

@@ -1,0 +1,37 @@
+.civi-circle-progress-chart .chart-number {
+  margin-bottom: 0;
+}
+.civi-circle-progress-chart .civi-svg {
+  line-height: 0;
+}
+.civi-circle-progress-chart .civi-svg * {
+  stroke: currentColor;
+}
+.civi-circle-progress-chart .chart-wrap {
+  line-height: 0;
+}
+.civi-circle-progress-chart .chart {
+  position: relative;
+  display: inline-block;
+  width: 214px;
+  height: 214px;
+}
+.civi-circle-progress-chart .chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.civi-circle-progress-chart .inner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.civi-circle-progress-chart .chart-number {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--civi-color-primary);
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=circle-progress-chart.css.map */

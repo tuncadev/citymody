@@ -1,0 +1,79 @@
+.elementor-editor-active {
+	.page-header {
+		pointer-events: none;
+
+		* {
+			pointer-events: none !important;
+		}
+	}
+}
+
+.elementor-element-editable {
+	&.civi-heading-wrapper-editing {
+		.civi-modern-heading {
+			outline: 1px dashed #eee;
+		}
+	}
+
+	&.elementor-widget-civi-image-layers {
+		.artboard {
+			outline: 2px dashed #d5dadf;
+		}
+	}
+
+	// Force showing swiper arrows on edit in editor.
+	&.civi-swiper-arrows-editing {
+		.civi-swiper {
+			.swiper-nav-button {
+				transition-delay: 0s !important;
+				opacity: 1 !important;
+				visibility: visible !important;
+			}
+		}
+	}
+
+	&.civi-map-marker-overlay-editing {
+		.civi-map-overlay-content {
+			display: block !important;
+		}
+	}
+}
+
+.elementor-widget-civi-flip-box {
+	&.civi-flip-box--flipped {
+		.elementor-widget-container {
+			.front-side {
+				display: none;
+			}
+
+			.back-side {
+				-webkit-transform: none;
+				-ms-transform: none;
+				transform: none;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.fal, .far {
+	font-family: "Font Awesome 5 Pro" !important;
+}
+
+.elementor-widget-heading .elementor-heading-title {
+	margin-bottom: 0;
+}
+
+body.home {overflow-x: hidden;}
+
+.hover-svg-white .elementor-widget-icon{
+	svg{
+		transition: all 0.3s;
+	}
+	&:hover svg,
+	&:hover svg path{
+		fill: #fff;
+	}
+}
+
+

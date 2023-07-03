@@ -1,0 +1,96 @@
+.candidate-project-details{
+  margin-top: 16px;
+  border: 1px solid $border_color;
+  border-radius: 16px;
+  figure{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    &:after{
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,.5);
+      -webkit-transition: all .6s;
+      transition: all .6s;
+      -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,-45deg) translate3d(0,-150%,0);
+      transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,-45deg) translate3d(0,-150%,0);
+      z-index: 3;
+    }
+    &:hover{
+      .content-project {
+        @include transition(transform .5s);
+        @include transform(translateY(0));
+      }
+      .project-inner{
+        opacity: 1;
+      }
+      img{
+        @include transform(scale(1.2));
+      }
+      &:before{
+        opacity: 1;
+        -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,-45deg) translate3d(0,150%,0);
+        transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,-45deg) translate3d(0,150%,0);
+      }
+      &:after{
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+      }
+    }
+    img{
+      border-radius: 8px;
+      height: 280px;
+      object-fit: cover;
+      width: 100%;
+      @include transition(opacity .5s,transform .5s)
+    }
+  }
+  .civi-slick-carousel{
+    margin-left: -12px;
+    margin-right: -12px;
+    .slick-slide{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  .content-project {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 32px;
+    z-index: 2;
+    @include transition(transform .5s);
+    @include transform(translateY(115px));
+    * {
+      color: #fff !important;
+    }
+    h4{
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    p{
+      margin-bottom: 16px;
+    }
+    .civi-button.button-border-bottom:after {
+      background-color: #fff;
+    }
+  }
+  .project-inner{
+    opacity: 0;
+    @include transition(opacity .3s);
+  }
+}

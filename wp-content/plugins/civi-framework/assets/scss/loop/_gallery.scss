@@ -1,0 +1,56 @@
+.civi-fields-gallery {
+  .civi-gallery-inner {
+    width: 150px;
+    height: 150px;
+  }
+  #civi_gallery_container {
+    border: dashed 1px #ddd;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+  }
+  #civi_select_gallery {
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    color: $accent_color;
+    font-weight: 500;
+    i {
+      display: block;
+      margin-bottom: 10px;
+      color: $secondary_color;
+    }
+  }
+  .field-note {
+    max-width: 90px;
+    margin: 8px 25px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: $secondary_color;
+    line-height: 1.5;
+  }
+  #civi_gallery_thumbs{
+    @include d-flex();
+    @include flex-wrap();
+  }
+  .media-thumb {
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    .media-item-actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

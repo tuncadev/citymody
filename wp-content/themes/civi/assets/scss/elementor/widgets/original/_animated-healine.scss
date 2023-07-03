@@ -1,0 +1,19 @@
+.elementor-widget-animated-headline {
+	.elementor-headline {
+		margin-bottom: 0;
+	}
+
+	.elementor-headline-plain-text {
+		display: inline !important;
+	}
+
+	.elementor-headline-text-wrapper {
+		display: inline-block !important;
+	}
+
+	.elementor-headline-animation-type-clip{
+		.elementor-headline-text-wrapper {
+			padding: 0;
+		}
+	}
+}

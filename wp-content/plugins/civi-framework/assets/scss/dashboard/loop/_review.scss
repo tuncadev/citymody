@@ -1,0 +1,16 @@
+.civi-my-review{
+  .info-company p {
+    color: $secondary_color;
+    font-weight: 500;
+  }
+  .rating-count{
+    font-weight: 500;
+    color: $accent_color;
+  }
+}
+
+.author-rating{
+  .star{
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,139 @@
+.civi-modern-heading {
+  max-width: 100%;
+}
+.civi-modern-heading .elementor-heading-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.civi-modern-heading .heading-secondary {
+  font-size: 16px;
+}
+.civi-modern-heading .heading-description {
+  font-size: 18px;
+  line-height: 1.44;
+}
+.civi-modern-heading .heading-primary-wrap,
+.civi-modern-heading .heading-secondary-wrap {
+  line-height: 1;
+}
+.civi-modern-heading .heading-primary,
+.civi-modern-heading .heading-secondary,
+.civi-modern-heading .heading-description,
+.civi-modern-heading .heading-divider {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.civi-modern-heading a {
+  display: block;
+  color: inherit;
+  font-size: inherit;
+}
+.civi-modern-heading a:hover {
+  color: inherit;
+  font-size: inherit;
+}
+.civi-modern-heading mark {
+  background-color: transparent;
+  padding: 0;
+}
+.civi-modern-heading mark span {
+  margin-left: 5px;
+}
+.civi-modern-heading .heading-description-wrap {
+  margin-top: 12px;
+}
+.civi-modern-heading .heading-description-wrap:first-child {
+  margin-top: 0;
+}
+.civi-modern-heading .heading-secondary-wrap {
+  margin-bottom: 10px;
+}
+.civi-modern-heading .heading-divider-wrap {
+  line-height: 0;
+  margin-top: 10px;
+}
+.civi-modern-heading .heading-divider {
+  height: 2px;
+  width: 100px;
+  background: var(--civi-color-primary);
+}
+
+.custom-mark .civi-modern-heading mark {
+  position: relative;
+  z-index: 2;
+  font-style: italic;
+}
+.custom-mark .civi-modern-heading mark::before {
+  background-image: url("mark-heading.webp");
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 70%;
+  height: 100%;
+  z-index: -1;
+}
+.custom-mark.top90 .civi-modern-heading mark::before {
+  top: 90%;
+}
+
+.civi-link-animate-border .heading-primary a:hover mark:before {
+  transform: scaleX(0) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.civi-link-animate-border .heading-primary a:hover mark:after {
+  transform: scaleX(1) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s, -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+.civi-link-animate-border .heading-primary a mark {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  padding: 3px 0;
+}
+.civi-link-animate-border .heading-primary a mark:before, .civi-link-animate-border .heading-primary a mark:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  transform-origin: right;
+  transform: scaleX(1) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s, -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+.civi-link-animate-border .heading-primary a mark:after {
+  transform-origin: left;
+}
+.civi-link-animate-border .heading-primary a mark:after {
+  transform: scaleX(0) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.civi-link-animate-border-02 .heading-primary a:hover mark:before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.civi-link-animate-border-02 .heading-primary a mark {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  padding: 3px 0;
+}
+.civi-link-animate-border-02 .heading-primary a mark:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  background: #e0e0e0;
+}
+
+/*# sourceMappingURL=heading.css.map */

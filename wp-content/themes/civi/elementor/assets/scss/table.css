@@ -1,0 +1,27 @@
+.civi-table {
+  overflow-x: auto;
+}
+.civi-table table {
+  margin: 0;
+  border-collapse: separate;
+}
+.civi-table.style-01 th {
+  font-size: 20px;
+  font-weight: 600;
+  color: #b2b2b2;
+}
+.civi-table.style-01 td,
+.civi-table.style-01 th {
+  text-align: left;
+  border: 0;
+  padding: 36px 10px 36px;
+}
+.civi-table.style-01 tr th,
+.civi-table.style-01 tr td {
+  border-bottom: 1px solid var(--civi-color-border);
+}
+.civi-table.style-01 tr:nth-child(2n) td {
+  background: none;
+}
+
+/*# sourceMappingURL=table.css.map */

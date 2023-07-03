@@ -1,0 +1,13 @@
+.elementor-element {
+	.elementor-widget-heading {
+		&.elementor-widget-heading {
+			.elementor-heading-title {
+				> a {
+					&:hover {
+						color: inherit;
+					}
+				}
+			}
+		}
+	}
+}

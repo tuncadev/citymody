@@ -1,0 +1,32 @@
+.civi-slick-carousel {
+	margin-left: -4px;
+	margin-right: -4px;
+	.slick-slide {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+	cursor: pointer;
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+	svg {
+		vertical-align: middle;
+	}
+	&.slick-disabled {
+		opacity: 0;
+		visibility: hidden;
+	}
+	&.gl-prev {
+		left: 15px;
+		@include transform(translate(-50%, -50%));
+	}
+	&.gl-next {
+		right: 15px;
+		@include transform(translate(-50%, -50%));
+	}
+}

@@ -1,0 +1,210 @@
+@import "mixins";
+@import "variables";
+
+.elementor-widget-civi-jobs-category {
+	&.elementor-position-left {
+		.icon-cate {
+			margin-right: 18px;
+		}
+	}
+	&.elementor-position-right {
+		.cate-inner {
+			@include flex-row-reverse();
+		}
+		.icon-cate {
+			margin-left: 18px;
+		}
+		.cate-content {
+			text-align: right;
+		}
+	}
+	&.elementor-position-right,
+	&.elementor-position-left {
+		.cate-inner {
+			@include d-flex();
+			@include align-items-center();
+		}
+		.icon-cate {
+			margin-bottom: 0;
+		}
+		.cate-title {
+			margin-bottom: 2px;
+		}
+		.cate-count {
+			margin-bottom: 0;
+		}
+	}
+	.icon-cate {
+		display: block;
+		svg * {
+			fill: currentColor;
+		}
+	}
+	.cate-inner {
+		background: rgba(0, 116, 86, 0.05);
+		padding: 24px;
+		border: 1px solid $border_color;
+		border-radius: 16px;
+		position: relative;
+		@include transition(box-shadow 0.3s);
+		background-size: cover;
+		background-repeat: no-repeat;
+		&:hover {
+			@include box-shadow(0 5px 12px 2px rgba(0, 0, 0, 0.05));
+			.icon-arrow{
+				width: 90%;
+				@include transition(width .3s);
+				span{
+					@include transition(opacity .3s);
+					opacity: 1;
+					font-size: 14px;
+					padding-left: 15px;
+				}
+			}
+		}
+		&.view-cate {
+			height: 100%;
+			@include d-flex();
+			@include justify-content-center();
+			@include align-items-center();
+			text-align: center;
+		}
+	}
+	.cate-title {
+		font-size: 18px;
+		margin-bottom: 8px;
+		line-height: 1.6;
+	}
+	.cate-count {
+		font-weight: 500;
+	}
+	.cate-des {
+		margin-top: 10px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+	}
+	.has-image {
+		.cate-inner:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: $accent_color;
+			opacity: 0.8;
+			border-radius: inherit;
+		}
+		.icon-cate,
+		.cate-content {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	.list-cate-item.text-style{
+		.cate-inner{
+			background-color: transparent !important;
+			border: 0;
+			padding: 0;
+			margin-top: 40px;
+			&:hover{
+				box-shadow: none;
+			}
+		}
+	}
+	.icon-arrow {
+		height: 42px;
+		line-height: 42px;
+		color: #fff;
+		background-color: $accent_color;
+		margin-top: 50px;
+		text-align: center;
+		margin-top: 50px;
+		border-radius: 100px;
+		@include transition(width .3s);
+		@include d-inline-flex();
+		overflow: hidden;
+		width: 42px;
+		span{
+			opacity: 0;
+			font-size: 0;
+			@include transition(opacity .3s);
+			display: inline-block;
+		}
+		i{
+			font-size: 14px;
+			font-weight: 500;
+			display: inline-block;
+			line-height: 42px;
+			width: 42px;
+		}
+	}
+	&.civi-layout-01 {
+		.icon-cate {
+			width: 54px;
+			height: 54px;
+			background-color: $accent_color;
+			font-size: 20px;
+			border-radius: 50%;
+			margin-bottom: 16px;
+			color: #fff;
+			@include d-inline-flex();
+			@include align-items-center();
+			@include justify-content-center();
+			flex-shrink: 0;
+		}
+	}
+	&.civi-layout-02 {
+		.cate-inner {
+			border-radius: 150px;
+			padding: 50px 45px 32px;
+			position: static;
+		}
+		.civi-image {
+			border-radius: 150px;
+			position: relative;
+			.image {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				border-radius: 150px;
+				img{
+					height: 100%;
+				}
+			}
+		}
+		.cate-title {
+			line-height: 1.45;
+		}
+		.icon-cate {
+			background-color: transparent;
+			font-size: 18px;
+			margin-bottom: 24px;
+		}
+		.civi-link-item {
+			z-index: 3;
+		}
+		.slick-list {
+			padding-top: 30px;
+		}
+	}
+}
+
+.elementor-widget-civi-jobs-category {
+	&.civi-layout-01 {
+		.elementor-carousel {
+			.slick-dots {
+				position: relative;
+				top: 15px;
+			}
+			.slick-arrow {
+				top: calc(50% - 20px);
+			}
+		}
+	}
+}

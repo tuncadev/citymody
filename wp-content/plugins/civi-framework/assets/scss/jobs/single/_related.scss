@@ -1,0 +1,13 @@
+.jobs-related-details{
+  .header-related{
+    padding-top: 32px;
+    padding-bottom: 24px;
+    @include d-flex();
+    @include justify-content-between();
+    @include align-items-center();
+  }
+  .title-jobs{
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+}

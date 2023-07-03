@@ -1,0 +1,63 @@
+.civi-dashboard {
+	.total-action {
+		.entry-title {
+			font-size: 14px;
+			font-weight: 500;
+			color: $secondary_color;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+		.entry-number {
+			position: relative;
+			display: block;
+			font-size: 46px;
+			font-weight: 500;
+			line-height: 1.26;
+			color: $primary_color;
+		}
+		.icon-total {
+			margin-left: auto;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 50%;
+			text-align: center;
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 6px;
+			margin-left: -6px;
+			margin-right: -6px;
+		}
+		li {
+			padding: 6px;
+			> div {
+				@include d-flex();
+				@include align-items-center();
+				border-radius: 8px;
+				border: solid 1px $border_color;
+				background-color: #ffffff;
+				padding: 24px 24px 24px 32px;
+			}
+		}
+		.jobs .icon-total {
+			background-color: #b3e5fb;
+			img {
+				margin-left: 3px;
+			}
+		}
+		.applications .icon-total {
+			background-color: #cabffd;
+		}
+		.interviews .icon-total {
+			background-color: #febc9c;
+		}
+		.candidates .icon-total {
+			background-color: #b7e4cb;
+		}
+	}
+	.recent-action {
+		margin-top: 40px;
+	}
+}
