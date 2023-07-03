@@ -14,7 +14,6 @@ License URI: https://choosealicense.com/licenses/gpl-2.0/
 Text Domain:civichild
 Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
-/* Body / Html */
 body,
 html {
   font-family: "Source Sans Pro", sans-serif; }
@@ -31,92 +30,24 @@ p {
   line-height: 30px;
   letter-spacing: 0; }
 
-span.red_star {
-  color: red !important;
-  font-weight: bold; }
+/* Dashboard Skill Select box */
+.skills-info .select2.select2-container, .skills-info select.civi-select2 {
+  width: 80% !important; }
 
-.profile_message {
-  font-weight: bold;
-  font-size: 14px; }
+.skills-info .select2.select2-container .select2-selection {
+  border: 1px solid #dddddd; }
 
-span.soundcloud {
-  color: #ff4d00; }
+/* Footer */
+.footer-new-top-section {
+  border: none;
+  display: none; }
 
-/* Mobile */
-@media only screen and (max-width: 415px) {
-  .howitworks_tab .elementor-tab-desktop-title {
-    padding: 12px 13px !important; }
-  .cat_container {
-    max-width: 90% !important;
-    margin: auto !important; }
-  .cat_container ul {
-    padding-left: 0px !important; }
-  .cat_container ul li {
-    width: 100%; }
-  .premium-lnk {
-    text-align: left; }
-  .pattributes {
-    max-width: 50%; } }
+/*  Socials */
+.footer_socials .civi-social-networks.style-flat-rounded-icon li, .footer_socials .civi-social-networks.style-solid-rounded-icon li {
+  margin: 10px 0px !important; }
 
-@media only screen and (max-width: 890px) {
-  .plan-container {
-    flex-wrap: wrap;
-    flex-direction: column-reverse; }
-  .plan-right {
-    width: 100% !important; }
-  .plan-left {
-    width: 100% !important; }
-  .plan-left i.fa-2x {
-    font-size: 14px; }
-  .plan-left .table td,
-  .plan-left .table th {
-    vertical-align: top;
-    font-size: 14px;
-    line-height: 15px;
-    font-weight: 400; }
-  .plan-left {
-    padding: 10px 5px 10px 5px !important; } }
-
-@media only screen and (max-width: 600px) {
-  .home_category_section img {
-    max-width: 75%; }
-  .home_header-btns .elementor-widget-wrap {
-    column-gap: 50px;
-    margin: auto;
-    justify-content: space-around; }
-  .elementor-tab-mobile-title {
-    display: none; }
-  .elementor-tabs .elementor-tabs-wrapper {
-    display: flex !important; }
-  .hiw_tab_container {
-    flex-wrap: wrap; } }
-
-@media only screen and (max-width: 780px) {
-  .ilan_ver_container {
-    flex-direction: column;
-    align-items: center; }
-  .ilan_ver_container .ilan_content {
-    text-align: center;
-    margin-top: 30px; }
-  .ilan_ver_container .ilan_content a {
-    margin-top: 30px; }
-  .pattributes {
-    max-width: 50%; } }
-
-@media only screen and (max-width: 1199px) {
-  #reg-btn {
-    display: none; } }
-
-/* Candidate Main */
-/* Search box */
-input#candidate_filter_search {
-  border-radius: 4px 0px 0px 4px; }
-
-input#candidate_filter_search {
-  border-radius: 4px 0px 0px 4px; }
-
-input#jobs_filter_search {
-  border-radius: 4px 0px 0px 4px; }
+.footer_socials ul li a i.link-icon {
+  font-size: 31px !important; }
 
 /* Top Header Menu */
 .account a.btn-login {
@@ -167,6 +98,31 @@ input#jobs_filter_search {
 
 .top-mb-menu .account {
   width: 100%; }
+
+/* About Us Captıon */
+.aboutus_caption .wp-caption img:hover + figcaption {
+  background-color: #47B0FB !important;
+  cursor: pointer !important;
+  color: #ffffff !important; }
+
+.aboutus_caption .widget-image-caption:hover {
+  background-color: #47B0FB !important;
+  cursor: pointer !important;
+  color: #ffffff !important; }
+
+.aboutus_caption .wp-caption img:hover {
+  cursor: pointer !important; }
+
+/* Candidate Main */
+/* Search box */
+input#candidate_filter_search {
+  border-radius: 4px 0px 0px 4px; }
+
+input#candidate_filter_search {
+  border-radius: 4px 0px 0px 4px; }
+
+input#jobs_filter_search {
+  border-radius: 4px 0px 0px 4px; }
 
 /* Home  */
 /* Home Tabs */
@@ -334,10 +290,134 @@ input#jobs_filter_search {
   column-gap: 14px;
   margin-bottom: 50px; }
 
-/* Footer */
-.footer-new-top-section {
-  border: none;
+/* Login page */
+.city-login .ihc-login-template-11 form#ihc_login_form input[type="text"], .city-login .ihc-login-template-11 form#ihc_login_form input[type="password"] {
+  padding-left: 60px !important;
+  border: 1px solid #23b0e673 !important;
+  border-radius: 30px !important; }
+
+.city-login .ihc-login-template-11 form#ihc_login_form input[type="submit"] {
+  width: 100%;
+  background: #23b0e6;
+  color: #fff;
+  margin-top: 0;
+  border: 1px solid #23b0e673;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px; }
+
+.city-login .fa-username-ihc {
+  top: 7px;
+  color: #23b0e6; }
+
+.city-login .fa-pass-ihc {
+  top: 2px;
+  color: #23b0e6; }
+
+.city-login .dashicons-visibility {
+  color: #23b0e6; }
+
+.city-login .ihc-login-template-11 {
+  border-radius: 30px;
+  border: 1px solid #23b0e673 !important;
+  box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
+  padding: 50px 30px; }
+
+.city-login span.ihc-sm-item-label {
   display: none; }
+
+.city-login .ihc-goo, .city-login .ihc-sm-item.ihc-goo {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 7px 10px; }
+
+.city-login .ihc-top-social-login {
+  font-size: 15px !important; }
+
+.city-login .g-recaptcha-wrapper {
+  padding: 10px 5px;
+  display: flex;
+  margin: 10px auto; }
+
+.city-login .g-recaptcha {
+  margin: auto; }
+
+span.red_star {
+  color: red !important;
+  font-weight: bold; }
+
+.profile_message {
+  font-weight: bold;
+  font-size: 14px; }
+
+span.soundcloud {
+  color: #ff4d00; }
+
+/* Mobile */
+@media only screen and (max-width: 415px) {
+  .howitworks_tab .elementor-tab-desktop-title {
+    padding: 12px 13px !important; }
+  .cat_container {
+    max-width: 90% !important;
+    margin: auto !important; }
+  .cat_container ul {
+    padding-left: 0px !important; }
+  .cat_container ul li {
+    width: 100%; }
+  .premium-lnk {
+    text-align: left; }
+  .pattributes {
+    max-width: 50%; } }
+
+@media only screen and (max-width: 890px) {
+  .plan-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse; }
+  .plan-right {
+    width: 100% !important; }
+  .plan-left {
+    width: 100% !important; }
+  .plan-left i.fa-2x {
+    font-size: 14px; }
+  .plan-left .table td,
+  .plan-left .table th {
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400; }
+  .plan-left {
+    padding: 10px 5px 10px 5px !important; } }
+
+@media only screen and (max-width: 600px) {
+  .home_category_section img {
+    max-width: 75%; }
+  .home_header-btns .elementor-widget-wrap {
+    column-gap: 50px;
+    margin: auto;
+    justify-content: space-around; }
+  .elementor-tab-mobile-title {
+    display: none; }
+  .elementor-tabs .elementor-tabs-wrapper {
+    display: flex !important; }
+  .hiw_tab_container {
+    flex-wrap: wrap; } }
+
+@media only screen and (max-width: 780px) {
+  .ilan_ver_container {
+    flex-direction: column;
+    align-items: center; }
+  .ilan_ver_container .ilan_content {
+    text-align: center;
+    margin-top: 30px; }
+  .ilan_ver_container .ilan_content a {
+    margin-top: 30px; }
+  .pattributes {
+    max-width: 50%; } }
+
+@media only screen and (max-width: 1199px) {
+  #reg-btn {
+    display: none; } }
 
 .ilan_ver_container {
   max-width: 530px;
@@ -410,34 +490,6 @@ input#jobs_filter_search {
   border-color: #fbbf1a; }
 
 /* Footer */
-/*  Socials */
-.footer_socials .civi-social-networks.style-flat-rounded-icon li, .footer_socials .civi-social-networks.style-solid-rounded-icon li {
-  margin: 10px 0px !important; }
-
-.footer_socials ul li a i.link-icon {
-  font-size: 31px !important; }
-
-/* About Us Captıon */
-.aboutus_caption .wp-caption img:hover + figcaption {
-  background-color: #47B0FB !important;
-  cursor: pointer !important;
-  color: #ffffff !important; }
-
-.aboutus_caption .widget-image-caption:hover {
-  background-color: #47B0FB !important;
-  cursor: pointer !important;
-  color: #ffffff !important; }
-
-.aboutus_caption .wp-caption img:hover {
-  cursor: pointer !important; }
-
-/* Dashboard Skill Select box */
-.skills-info .select2.select2-container, .skills-info select.civi-select2 {
-  width: 80% !important; }
-
-.skills-info .select2.select2-container .select2-selection {
-  border: 1px solid #dddddd; }
-
 /* Price Plan */
 .plan-left i.fa-check:before {
   content: "\f00c"; }
@@ -571,59 +623,6 @@ input#jobs_filter_search {
 .crown_menu_fsize {
   font-size: 19px !important;
   margin-right: 0px !important; }
-
-/* Login page */
-.city-login .ihc-login-template-11 form#ihc_login_form input[type="text"], .city-login .ihc-login-template-11 form#ihc_login_form input[type="password"] {
-  padding-left: 60px !important;
-  border: 1px solid #23b0e673 !important;
-  border-radius: 30px !important; }
-
-.city-login .ihc-login-template-11 form#ihc_login_form input[type="submit"] {
-  width: 100%;
-  background: #23b0e6;
-  color: #fff;
-  margin-top: 0;
-  border: 1px solid #23b0e673;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px; }
-
-.city-login .fa-username-ihc {
-  top: 7px;
-  color: #23b0e6; }
-
-.city-login .fa-pass-ihc {
-  top: 2px;
-  color: #23b0e6; }
-
-.city-login .dashicons-visibility {
-  color: #23b0e6; }
-
-.city-login .ihc-login-template-11 {
-  border-radius: 30px;
-  border: 1px solid #23b0e673 !important;
-  box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
-  padding: 50px 30px; }
-
-.city-login span.ihc-sm-item-label {
-  display: none; }
-
-.city-login .ihc-goo, .city-login .ihc-sm-item.ihc-goo {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 7px 10px; }
-
-.city-login .ihc-top-social-login {
-  font-size: 15px !important; }
-
-.city-login .g-recaptcha-wrapper {
-  padding: 10px 5px;
-  display: flex;
-  margin: 10px auto; }
-
-.city-login .g-recaptcha {
-  margin: auto; }
 
 /* Membership Page */
 .member_profile-header h2 {
