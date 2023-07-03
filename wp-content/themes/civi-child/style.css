@@ -109,7 +109,8 @@ header.site-header .left-header .d-none.d-xl-block {
   width: 100%; }
 
 ul#menu-citymody-home-tr li:last-child {
-  float: right; }
+  float: right;
+  font-weight: 700; }
 
 .area-menu .menu li:last-child {
   font-weight: 700; }
