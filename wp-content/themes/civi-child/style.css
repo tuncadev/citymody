@@ -111,6 +111,9 @@ header.site-header .left-header .d-none.d-xl-block {
 ul#menu-citymody-home-tr li:last-child {
   float: right; }
 
+.area-menu .menu li:last-child {
+  font-weight: 700; }
+
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
   background-color: #47B0FB !important;
