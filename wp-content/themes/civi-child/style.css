@@ -144,11 +144,6 @@ input#jobs_filter_search {
 
 /* Home  */
 /* Home Tabs */
-#elementor-tab-title-2151, #elementor-tab-title-2152, #elementor-tab-title-6141, #elementor-tab-title-6142 {
-  display: block;
-  width: 280px;
-  margin: auto; }
-
 .howitworks_tab .elementor-tabs-wrapper {
   border-radius: 45px;
   max-width: fit-content;
@@ -411,6 +406,10 @@ span.soundcloud {
     padding: 10px 5px 10px 5px !important; } }
 
 @media only screen and (max-width: 600px) {
+  #elementor-tab-title-2151, #elementor-tab-title-2152, #elementor-tab-title-6141, #elementor-tab-title-6142 {
+    display: block;
+    width: 100%;
+    margin: auto; }
   .home_category_section img {
     max-width: 75%; }
   .home_header-btns .elementor-widget-wrap {
