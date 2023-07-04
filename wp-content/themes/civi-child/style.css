@@ -422,7 +422,8 @@ span.soundcloud {
   .elementor-tabs .elementor-tabs-wrapper {
     display: block !important;
     border-radius: 0px;
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
   .howitworks_tab .elementor-tab-title.elementor-active {
     border-radius: 0px !important; }
   .hiw_tab_container {
