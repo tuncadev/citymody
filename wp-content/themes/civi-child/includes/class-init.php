@@ -203,18 +203,18 @@ class Civi_Init
 	function register_menus()
 	{
 		register_nav_menus([
-			"primary" => esc_html__("Primary Menu", "civi"),
+			"primary" => esc_html__("Primary Menu", "civichild"),
 		]);
 
 		register_nav_menus([
-			"main_menu" => esc_html__("Main Menu", "civi"),
+			"main_menu" => esc_html__("Main Menu", "civichild"),
 		]);
 
 		register_nav_menus([
-			"mobile_menu" => esc_html__("Mobile Menu", "civi"),
+			"mobile_menu" => esc_html__("Mobile Menu", "civichild"),
 		]);
 		register_nav_menus([
-			"footer_menu" => esc_html__("Footer Menu", "civi"),
+			"footer_menu" => esc_html__("Footer Menu", "civichild"),
 		]);
 	}
 
