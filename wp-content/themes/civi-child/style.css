@@ -409,7 +409,8 @@ span.soundcloud {
   #elementor-tab-title-2151, #elementor-tab-title-2152, #elementor-tab-title-6141, #elementor-tab-title-6142 {
     display: block;
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    text-align: center; }
   .home_category_section img {
     max-width: 75%; }
   .home_header-btns .elementor-widget-wrap {
