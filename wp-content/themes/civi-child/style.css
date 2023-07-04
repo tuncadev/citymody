@@ -262,6 +262,9 @@ input#jobs_filter_search {
 .home_header-btns .elementor-widget-wrap {
   column-gap: 50px; }
 
+.howitworks_tab .elementor-widget-tabs .elementor-tab-title {
+  text-transform: inherit !important; }
+
 .howitworks_tab .elementor-tabs-wrapper .elementor-tab-title.elementor-active {
   background-color: #39afdc !important;
   border-radius: 45px;
