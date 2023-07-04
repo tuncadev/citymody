@@ -108,10 +108,10 @@ header.site-header .left-header {
 header.site-header .left-header .d-none.d-xl-block {
   width: 100%; }
 
-ul#menu-citymody-home-tr li:last-child {
+ul#menu-citymody-home-tr li:last-child, ul#menu-citymody-menu li:last-child {
   float: right; }
 
-ul#menu-citymody-home-tr li:last-child a {
+ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a {
   font-weight: 700; }
 
 .area-menu .menu li:last-child {
