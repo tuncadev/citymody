@@ -262,13 +262,16 @@ input#jobs_filter_search {
 .home_header-btns .elementor-widget-wrap {
   column-gap: 50px; }
 
-.howitworks_tab .elementor-tab-title.elementor-active {
+.howitworks_tab .elementor-tabs-wrapper .elementor-tab-title.elementor-active {
   background-color: #39afdc !important;
   border-radius: 45px;
   color: #fff !important; }
 
-.howitworks_tab .elementor-tab-title.elementor-active:last-child {
+.howitworks_tab .elementor-tabs-wrapper.elementor-tab-title.elementor-active:last-child {
   background-color: #fbbf1a !important; }
+
+.howitworks_tab .elementor-tabs-wrapper.elementor-tab-title.elementor-active:first-child {
+  background-color: #39afdc !important; }
 
 .elementor-tabs-wrapper {
   display: flex;
