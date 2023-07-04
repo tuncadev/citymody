@@ -213,6 +213,9 @@ class Civi_Init
 		register_nav_menus([
 			"mobile_menu" => esc_html__("Mobile Menu", "civi"),
 		]);
+		register_nav_menus([
+			"footer_menu" => esc_html__("Footer Menu", "civi"),
+		]);
 	}
 
 	/**
