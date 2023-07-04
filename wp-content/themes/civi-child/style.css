@@ -172,10 +172,10 @@ input#jobs_filter_search {
   background-size: auto; }
 
 .home_section-1 h1 {
-  font-size: 45px !important;
+  font-size: 45px;
   color: #222d39;
   font-weight: 500;
-  line-height: 1.2 !important; }
+  line-height: 1.2; }
 
 .home_section-1 p {
   font-size: 20px;
