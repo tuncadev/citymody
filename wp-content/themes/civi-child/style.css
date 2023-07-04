@@ -270,9 +270,6 @@ input#jobs_filter_search {
 .howitworks_tab .elementor-tab-title.elementor-active:last-child {
   background-color: #fbbf1a !important; }
 
-.howitworks_tab .elementor-tab-title.elementor-active:first-child {
-  background-color: #39afdc !important; }
-
 .elementor-tabs-wrapper {
   display: flex;
   justify-content: center; }
