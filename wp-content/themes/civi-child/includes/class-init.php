@@ -216,6 +216,9 @@ class Civi_Init
 		register_nav_menus([
 			"footer_menu" => esc_html__("Footer Menu", "civichild"),
 		]);
+		register_nav_menus([
+			"sidebar_menu" => esc_html__("Sidebar Menu", "civichild"),
+		]);
 	}
 
 	/**
