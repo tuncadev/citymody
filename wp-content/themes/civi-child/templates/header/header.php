@@ -13,8 +13,8 @@
 		<div class="right-header">
 			<?php if (is_user_logged_in()) { ?>
 				<?php echo Civi_Templates::notification(); ?>
-			<?php } else {  ?>
-				<div class="account logged-out" id="reg-btn"><a id="reg-clck" href="#popup-form" class="btn-login-register" data-form="ux-register"><?php echo __( "Register" , "civichild" ); ?></a></div>
+			<?php } else { ?>
+				<div class="account logged-out" id="reg-btn"><a id="reg-clck" href="#popup-form" class="btn-login-register" data-form="ux-register">Register</a></div>
 			<?php } ?>
 			
 			<div class="d-none d-xl-block">
