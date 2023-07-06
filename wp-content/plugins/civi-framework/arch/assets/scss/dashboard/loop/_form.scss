@@ -1,0 +1,93 @@
+.form-dashboard {
+	.block-from {
+		padding: 24px 32px 8px;
+		border-radius: 8px;
+		border: 1px solid $border_color;
+		background-color: #fff;
+		~ .block-from {
+			margin-top: 12px;
+		}
+	}
+	.row {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+	.col-md-6,
+	.form-group {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.col-md-6,
+	.form-group {
+		margin-bottom: 24px;
+	}
+	h6 {
+		font-size: 20px;
+		margin-bottom: 28px;
+	}
+	label {
+		font-weight: 500;
+		color: $primary_color;
+		margin-bottom: 10px;
+		sup {
+			color: red;
+			font-size: 12px;
+			top: -0.2em;
+		}
+	}
+	.company-url-warp {
+		@include d-flex();
+		.input-slug {
+			width: 80%;
+			border-left: 0;
+			border-radius: 0 8px 8px 0;
+		}
+		.input-url {
+			border-radius: 8px 0 0 8px;
+			background-color: rgba(196, 196, 196, 0.1);
+			cursor: no-drop;
+		}
+	}
+	.label-about-company {
+		margin-bottom: 0;
+	}
+	.media-company {
+		.civi-button {
+			margin-bottom: 24px;
+			margin-left: 8px;
+			i {
+				margin-right: 7px;
+				font-size: 18px;
+			}
+		}
+	}
+	.maps-location-inner {
+		position: relative;
+		input {
+			padding-right: 50px;
+		}
+		i {
+			font-weight: 300;
+			font-size: 18px;
+			position: absolute;
+			top: 50%;
+			@include transform(translateY(-50%));
+			right: 20px;
+		}
+	}
+	.button-warpper {
+		margin-top: 24px;
+		text-align: right;
+	}
+	.form-select {
+		position: relative;
+	}
+}
+
+@media(max-width: 767px){
+	.form-dashboard {
+		.block-from {
+			padding: 16px;
+		}
+	}
+}

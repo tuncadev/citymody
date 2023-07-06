@@ -1,0 +1,76 @@
+@import "head";
+@import "overview";
+@import "related";
+@import "review";
+@import "thumbnail";
+
+.title-company {
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+.company-sidebar {
+	.list-social {
+		@include justify-content-start();
+	}
+	.civi-location {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		margin-bottom: 24px;
+		h3 {
+			font-size: 24px;
+			margin-bottom: 0;
+		}
+	}
+}
+.civi-rating-warpper {
+	.rating-count {
+		position: relative;
+		padding-left: 15px;
+		&:before {
+			content: "";
+			width: 6px;
+			height: 6px;
+			display: block;
+			position: absolute;
+			@include transform(translateY(-50%));
+			top: 50%;
+			background-color: #d9d9d9;
+			border-radius: 50%;
+			left: 2px;
+		}
+		i {
+			color: $accent_color;
+			font-weight: bold;
+			margin-right: 0;
+		}
+		span {
+			font-weight: 500;
+			color: $accent_color;
+			margin-right: 3px;
+		}
+	}
+	.review-count {
+		color: $secondary_color;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 576px) {
+	.company-info {
+		display: block;
+	}
+	.civi-rating-warpper {
+		margin-top: 10px;
+	}
+	.company-head-details .civi-company-header-bottom a {
+		margin-bottom: 8px;
+	}
+	.rating-bars .rating-bars-item {
+		@include flex(0 0 100%);
+		max-width: 100%;
+	}
+	.add-new-review .star-rating {
+		width: 100%;
+	}
+}

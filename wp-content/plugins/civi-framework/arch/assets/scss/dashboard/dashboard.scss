@@ -1,0 +1,128 @@
+@import "settings/_mixins";
+@import "settings/_variables";
+
+@import "total-action";
+@import "notification";
+@import "applicants";
+@import "candidates";
+@import "user-packages";
+@import "meetings";
+@import "company";
+@import "submit-company";
+@import "jobs-performance";
+@import "jobs";
+@import "settings";
+@import "loop/loop";
+@import "candidate-profile";
+@import "nav-candidate";
+@import "messages";
+
+.page-dashboard {
+	@include d-flex();
+	@include flex-column();
+	overflow: inherit !important;
+	min-height: 100vh;
+	.mobile-menu .top-mb-menu {
+		.account{
+			&.active .user-control,
+			.user-show i.fa-chevron-down{
+				display: none;
+			}
+		}
+	}
+	.widget-area-init.has-sticky {
+		position: sticky;
+		top: 30px;
+		z-index: 1;
+	}
+	.entry-my-page > .entry-title {
+		margin-top: 34px;
+		margin-bottom: 24px;
+		font-size: 28px;
+		h4 {
+			font-size: 28px;
+		}
+	}
+	#civi-content-dashboard {
+		padding-left: 290px;
+		padding-right: 30px;
+		@include d-flex();
+		@include flex-column();
+		min-height: 100vh;
+	}
+	#wrapper {
+		@include d-flex();
+		@include flex-column();
+		min-height: 100vh;
+	}
+	.copyright {
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 100%;
+		}
+		.area-copyright {
+			border-top: 0;
+		}
+	}
+	.site-footer {
+		margin-top: auto;
+	}
+	header.site-header .container-fluid {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.btn-loading {
+		display: none;
+	}
+	#comments {
+		display: none;
+	}
+}
+
+body.admin-bar {
+	.page-dashboard {
+		#civi-content-dashboard {
+			min-height: calc(100vh - 32px);
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.page-dashboard {
+		.left-header .site-logo {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.page-dashboard {
+		header.site-header {
+			margin-left: -30px;
+			margin-right: -30px;
+			.container {
+				max-width: 100%;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.page-dashboard {
+		#civi-content-dashboard {
+			padding-left: 0;
+			padding-right: 0;
+			#main {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		header.site-header .container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

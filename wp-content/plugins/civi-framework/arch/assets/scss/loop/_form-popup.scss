@@ -1,0 +1,203 @@
+.civi-form-popup{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all 0.3s);
+  .bg-overlay {
+    opacity: 1;
+    visibility: unset;
+  }
+  .inner-popup {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 450px;
+    z-index: 9;
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+  }
+  .btn-close {
+    font-size: 20px;
+    position: absolute;
+    right: 35px;
+  }
+  .message_error {
+    color: red;
+    margin-top: 15px;
+    &.true {
+      color: lawngreen;
+    }
+  }
+  .form-group {
+    margin-top: 24px;
+  }
+  h5 {
+    font-size: 24px;
+    margin-bottom: 0;
+    span{
+      color: $accent_color;
+    }
+  }
+  p {
+    color: $secondary_color;
+    margin-bottom: 35px;
+  }
+  label {
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: $primary_color;
+    sup {
+      color: red;
+      font-size: 12px;
+      top: -0.2em;
+    }
+  }
+  input + input {
+    margin-top: 24px;
+  }
+  .button-warpper {
+    @include d-flex();
+    @include align-items-center();
+    margin-top: 15px;
+    .civi-button {
+      text-align: center;
+      padding-left: 12px;
+      padding-right: 12px;
+      + .civi-button {
+        margin-left: 16px;
+      }
+    }
+    .btn-loading{
+      display: none;
+    }
+  }
+  .civi-message-error{
+    color: red;
+    margin-top: 15px;
+    &.true {
+      color: lawngreen;
+    }
+  }
+}
+
+
+.form-group {
+  select {
+    display: block;
+    width: 100%;
+  }
+  label.error{
+
+  }
+}
+
+.civi-form-meetings {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: 8;
+  opacity: 1;
+  visibility: hidden;
+  @include transition(all 0.3s);
+  label sup {
+    color: red;
+    font-size: 12px;
+    top: -0.2em;
+  }
+  .bg-overlay {
+    opacity: 1;
+    visibility: unset;
+  }
+  .meetings-popup {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 450px;
+    z-index: 9;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+    span[toggle="#zoompw"] {
+      position: absolute;
+      right: 30px;
+      bottom: 15px;
+      cursor: pointer;
+    }
+    span.btn-loading{
+      display: none;
+      padding-left: 3px !important;
+      i{
+        padding-left: 0 !important;
+      }
+    }
+  }
+  .btn-close {
+    font-size: 20px;
+    position: absolute;
+    right: 35px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  p {
+    color: $secondary_color;
+    margin-bottom: 35px;
+  }
+  label {
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: $primary_color;
+  }
+  .form-group {
+    margin-top: 24px;
+  }
+  .civi-button.button-link {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .button-warpper {
+    margin-top: 20px;
+    @include d-flex();
+    .civi-button {
+      text-align: center;
+      + .civi-button {
+        margin-left: 16px;
+      }
+    }
+  }
+  .tab-popup:not(:first-child) {
+    display: none;
+  }
+  .message_error {
+    color: red;
+    margin-top: 15px;
+    &.true {
+      color: lawngreen;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .civi-form-meetings{
+    .button-warpper{
+      display: block;
+    }
+    #btn-meetings-reschedule,
+    #btn-saved-meetings{
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+}

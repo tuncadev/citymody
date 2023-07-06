@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="class-civi-admin-applicants.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055614552876" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-candidate.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055615263466" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-company.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055617658697" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-invoice.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055618360176" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-job-alerts.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055625419735" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-meetings.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055626659573" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-jobs.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055627765908" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-messages.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055628011977" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-notification.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055629102850" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-package.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055629272678" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-setup.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055630455212" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-user-package.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055630667887" remote="133292279400000000" Dst="2" />
+<file name="class-civi-location.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055632180377" remote="133292279400000000" Dst="2" />
+<file name="class-civi-import.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055632959237" remote="133292279400000000" Dst="2" />
+<file name="class-civi-metaboxes.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055634321656" remote="133292279400000000" Dst="2" />
+<file name="class-civi-parsers.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055634652357" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055635391088" remote="133292279400000000" Dst="2" />
+<file name="class-civi-plugins.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055636529916" remote="133292279400000000" Dst="2" />
+<file name="class-civi-profile.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055636540212" remote="133292279400000000" Dst="2" />
+<file name="class-civi-rest-api.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055637241215" remote="133292279400000000" Dst="2" />
+<file name="class-civi-updater.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055637671384" remote="133292279400000000" Dst="2" />
+<file name="class-civi-schedule.php" server="citymody.ftp.tools//citymody.com/www/" local="133288055637847755" remote="133292279400000000" Dst="2" />
+<file name="class-civi-admin-applicants.php" server="citymody.ftp.tools//citymody.com/" local="133288055614552876" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-candidate.php" server="citymody.ftp.tools//citymody.com/" local="133288055615263466" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-company.php" server="citymody.ftp.tools//citymody.com/" local="133288055617658697" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-invoice.php" server="citymody.ftp.tools//citymody.com/" local="133288055618360176" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-jobs.php" server="citymody.ftp.tools//citymody.com/" local="133288055627765908" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-job-alerts.php" server="citymody.ftp.tools//citymody.com/" local="133288055625419735" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-meetings.php" server="citymody.ftp.tools//citymody.com/" local="133288055626659573" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-messages.php" server="citymody.ftp.tools//citymody.com/" local="133288055628011977" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-notification.php" server="citymody.ftp.tools//citymody.com/" local="133288055629102850" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-package.php" server="citymody.ftp.tools//citymody.com/" local="133288055629272678" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-setup.php" server="citymody.ftp.tools//citymody.com/" local="133288055630455212" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin-user-package.php" server="citymody.ftp.tools//citymody.com/" local="133288055630667887" remote="133306371600000000" Dst="2" />
+<file name="class-civi-import.php" server="citymody.ftp.tools//citymody.com/" local="133288055632959237" remote="133306371600000000" Dst="2" />
+<file name="class-civi-location.php" server="citymody.ftp.tools//citymody.com/" local="133288055632180377" remote="133306371600000000" Dst="2" />
+<file name="class-civi-admin.php" server="citymody.ftp.tools//citymody.com/" local="133300887743838067" remote="133306371600000000" Dst="2" />
+<file name="class-civi-metaboxes.php" server="citymody.ftp.tools//citymody.com/" local="133288055634321656" remote="133306371600000000" Dst="2" />
+<file name="class-civi-parsers.php" server="citymody.ftp.tools//citymody.com/" local="133288055634652357" remote="133306371600000000" Dst="2" />
+<file name="class-civi-plugins.php" server="citymody.ftp.tools//citymody.com/" local="133288055636529916" remote="133306371600000000" Dst="2" />
+<file name="class-civi-profile.php" server="citymody.ftp.tools//citymody.com/" local="133288055636540212" remote="133306371600000000" Dst="2" />
+<file name="class-civi-rest-api.php" server="citymody.ftp.tools//citymody.com/" local="133288055637241215" remote="133306371600000000" Dst="2" />
+<file name="class-civi-schedule.php" server="citymody.ftp.tools//citymody.com/" local="133288055637847755" remote="133306371600000000" Dst="2" />
+<file name="class-civi-updater.php" server="citymody.ftp.tools//citymody.com/" local="133288055637671384" remote="133306371600000000" Dst="2" />
+</dwsync>

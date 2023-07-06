@@ -1,0 +1,296 @@
+.block-archive-sidebar {
+	padding: 28px;
+	border: 1px solid $border_color;
+	border-radius: 16px;
+	background-color: #fff;
+	+ .block-archive-sidebar {
+		margin-top: 16px;
+	}
+	h4 {
+		font-size: 24px;
+	}
+}
+div.jobs-apply-sidebar {
+	background: rgba(0, 116, 86, 0.05);
+	border: 1px solid rgba(0, 116, 86, 0.07);
+	padding: 28px;
+	border-radius: 16px;
+	text-align: center;
+	.days {
+		font-weight: 500;
+		margin-bottom: 18px;
+		span {
+			color: red;
+		}
+	}
+	.civi-button {
+		width: 100%;
+	}
+	.account a:hover{
+		color: #fff !important;
+	}
+}
+
+.jobs-insights-sidebar {
+	border: 1px solid $border_color;
+	padding: 28px 28px 8px;
+	border-radius: 16px;
+	.title-jobs {
+		margin-bottom: 24px;
+	}
+}
+.jobs-company-sidebar {
+	.company-header {
+		@include d-flex();
+		@include align-items-center();
+		margin-bottom: 25px;
+		img {
+			width: 54px;
+			height: 54px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+		.civi-check-company:after{
+			top: -3px;
+		}
+	}
+	.company-phone i{
+		margin-left: 7px;
+		cursor: pointer;
+	}
+	.name {
+		margin-left: 16px;
+		h2 {
+			font-size: 18px;
+			margin-bottom: 3px;
+			display: inline-block;
+			a {
+				color: $primary_color;
+				&:hover{
+					color: $accent_color;
+				}
+			}
+			i {
+				font-size: 8px;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: $accent_color;
+				line-height: 15px;
+				text-align: center;
+				color: #fff;
+				margin-left: 5px;
+			}
+		}
+		p {
+			margin-bottom: 0;
+			a {
+				font-weight: 500;
+				color: $accent_color;
+			}
+		}
+	}
+	p {
+		line-height: 1.5em;
+	}
+	.tab-company {
+		list-style: none;
+		padding-left: 0;
+		@include d-flex();
+		margin-bottom: 20px;
+		li {
+			+ li {
+				margin-left: 24px;
+			}
+			span {
+				width: 28px;
+				height: 28px;
+				border-radius: 8px;
+				background-color: rgba(0, 116, 86, 0.05);
+				color: $accent_color;
+				margin-left: 2px;
+				font-size: 16px;
+				display: inline-block;
+				text-align: center;
+			}
+			&:after {
+				content: "";
+				bottom: 0;
+				height: 2px;
+				width: 100%;
+				display: block;
+				background-color: transparent;
+				width: 0;
+				@include transition(all 0.3s);
+			}
+			&:hover,
+			&.active {
+				&:after {
+					background-color: $primary_color;
+					width: 100%;
+				}
+				a {
+					color: $primary_color;
+				}
+			}
+		}
+		a {
+			font-size: 18px;
+			font-weight: 500;
+			color: $secondary_color;
+		}
+	}
+	.title-info {
+		font-weight: 500;
+		color: $primary_color;
+		margin-bottom: 3px;
+	}
+	.list-cate {
+		padding-left: 0;
+		margin-bottom: 0;
+		.cate {
+			font-weight: 500;
+			color: $accent_color;
+		}
+	}
+	.details-info span,
+	.list-cate .cate {
+		&:not(:first-child):before {
+			content: ",";
+		}
+	}
+
+	.content {
+		margin-bottom: 20px;
+		p {
+			margin-bottom: 0;
+			display: none;
+			&:first-child{
+				display: inline-block;
+			}
+		}
+		&.is-active{
+			p{
+				display: inline-block;
+				margin-bottom: 12px;
+			}
+		}
+		a{
+			color: #007456;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.details-info {
+		margin-bottom: 0;
+		&.email a {
+			color: $accent_color;
+		}
+	}
+	.info {
+		margin-bottom: 15px;
+	}
+	.civi-button {
+		i {
+			font-size: 14px;
+			font-weight: 500;
+			padding-left: 10px;
+		}
+	}
+	.button-visit {
+		margin-top: 20px;
+	}
+	.button-send {
+		margin-top: 10px;
+		&.button-outline {
+			border-color: $accent_color;
+			color: $accent_color;
+		}
+	}
+	.list-social {
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
+		@include d-flex();
+		@include justify-content-center();
+		margin-top: 20px;
+		li {
+			+ li {
+				margin-left: 16px;
+			}
+		}
+		a {
+			font-weight: 500;
+			color: $secondary_color;
+			font-size: 20px;
+			&:hover {
+				color: $accent_color;
+			}
+		}
+	}
+	.list-jobs {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		li:not(:first-child) {
+			margin-top: 16px;
+			padding-top: 16px;
+			border-top: 1px solid $border_color;
+		}
+		.title {
+			line-height: 0.8;
+			a {
+				color: $primary_color;
+				font-size: 18px;
+			}
+		}
+		.info-company {
+			> span {
+				+ span:before {
+					content: "/";
+				}
+			}
+		}
+		.categories span {
+			color: $accent_color;
+			font-weight: 500;
+		}
+		.categories,
+		.cate-skills {
+			span + span:before {
+				content: ",";
+			}
+		}
+	}
+	.civi-send-mess{
+		margin-top: 10px;
+		width: 100%;
+		background-color: transparent;
+		text-align: center;
+		color: $accent_color;
+		&:hover{
+			background-color: $accent_color;
+			color: #fff;
+		}
+		&:after {
+			content: "\f1d8";
+			font-family: 'Font Awesome 5 Pro';
+			margin-left: 5px;
+		}
+	}
+}
+#tab-sidebar-jobs {
+	.civi-button {
+		border-color: $accent_color;
+		color: $accent_color;
+		margin-top: 32px;
+		&:hover {
+			color: #fff;
+		}
+	}
+	.cate-warpper a {
+		color: $accent_color;
+		font-weight: 500;
+	}
+}

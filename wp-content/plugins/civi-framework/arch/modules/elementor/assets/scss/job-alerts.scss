@@ -1,0 +1,87 @@
+.job-alerts-wrapper {
+	background: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	border-radius: 16px;
+	max-width: 435px;
+	margin: 0 auto;
+	padding: 32px;
+	.form-heading {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 30px;
+		svg {
+			margin-right: 16px;
+		}
+	}
+}
+.job-alerts-form {
+	.field-input {
+		margin-bottom: 24px;
+		position: relative;
+		label {
+			color: #111111;
+			font-weight: 500;
+			span {
+				color: red;
+			}
+		}
+	}
+	.field-select {
+		margin-bottom: 24px;
+		position: relative;
+		label {
+			color: #111111;
+			font-weight: 500;
+		}
+	}
+	.form-select {
+		position: relative;
+		z-index: 1;
+		.select2.select2-container {
+			width: 100% !important;
+			.select2-selection {
+				border: 1px solid #ddd;
+				padding: 10.5px 16px;
+				border-radius: 4px;
+			}
+			.select2-selection.select2-selection--multiple {
+				padding: 4px 16px 8px;
+			}
+		}
+		.selection {
+			width: 100% !important;
+		}
+		.select2-selection {
+			width: 100% !important;
+		}
+		.select2-selection--multiple {
+			.select2-selection__rendered {
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: flex-start;
+				width: 100%;
+			}
+		}
+		i.fa-angle-down {
+			right: 19px;
+			z-index: 0;
+			color: var(--civi-color-secondary);
+		}
+	}
+	.notice {
+		margin-bottom: 20px;
+	}
+	.notice.warning {
+		color: #eab925;
+	}
+	.notice.success {
+		color: green;
+	}
+	.field-submit {
+		.btn-loading {
+			display: none;
+		}
+	}
+}

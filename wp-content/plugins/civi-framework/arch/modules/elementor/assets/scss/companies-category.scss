@@ -1,0 +1,71 @@
+@import "mixins";
+@import "variables";
+
+.elementor-widget-civi-companies-category{
+  &.civi-layout-02{
+    .cate-content{
+      @include d-flex();
+    }
+    .list-company{
+      order: 1;
+      .company-img:not(:first-child){
+        display: none;
+      }
+    }
+    .cate-inner-content{
+      order: 2;
+    }
+    .button-warpper{
+      order: 3;
+      margin-left: 16px;
+    }
+    .list-company{
+      margin-top: 0;
+      margin-right: 16px;
+    }
+  }
+  .cate-content{
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+  .cate-title{
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .cate-count{
+    font-weight: 500;
+  }
+  .list-company{
+    @include d-inline-flex();
+    @include align-items-center();
+    margin-top: 16px;
+  }
+  .logo-comnpany{
+    height: 54px;
+    width: 54px;
+    object-fit: cover;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 54px;
+    max-width: none;
+    display: inline-block;
+    border: 2px solid $border_color;
+  }
+  .company-img{
+    position: relative;
+    &:hover{
+      z-index: 2;
+    }
+    + .company-img{
+      margin-left: -12px;
+    }
+  }
+  .civi-button{
+    margin-top: 16px;
+    i{
+      font-size: 14px;
+    }
+  }
+}

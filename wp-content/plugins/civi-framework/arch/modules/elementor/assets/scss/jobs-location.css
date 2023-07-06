@@ -1,0 +1,41 @@
+.elementor-widget-civi-jobs-location.elementor-position-right .cate-inner {
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+.elementor-widget-civi-jobs-location.elementor-position-right .cate-inner, .elementor-widget-civi-jobs-location.elementor-position-left .cate-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+.elementor-widget-civi-jobs-location.elementor-position-right .image-cate img, .elementor-widget-civi-jobs-location.elementor-position-left .image-cate img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover; }
+.elementor-widget-civi-jobs-location.elementor-position-right .cate-title, .elementor-widget-civi-jobs-location.elementor-position-left .cate-title {
+  margin-top: 0; }
+.elementor-widget-civi-jobs-location .hover-box {
+  position: relative; }
+  .elementor-widget-civi-jobs-location .hover-box .link-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer; }
+.elementor-widget-civi-jobs-location .cate-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 0; }
+  .elementor-widget-civi-jobs-location .cate-title a {
+    position: relative;
+    z-index: 2; }
+.elementor-widget-civi-jobs-location .cate-count {
+  margin-top: 4px; }
+.elementor-widget-civi-jobs-location .image-cate img {
+  border-radius: 16px; }
+.elementor-widget-civi-jobs-location .civi-image {
+  display: block;
+  border-radius: 16px; }

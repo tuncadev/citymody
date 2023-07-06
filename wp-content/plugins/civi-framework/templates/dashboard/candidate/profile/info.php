@@ -26,7 +26,8 @@ $layout_info = array('resume', 'social', 'location', 'gallery', 'video', 'audio'
                 break;
 			case 'audio':
                 break;
-        }
+        		}
+						
         if (!in_array('fields_candidate_' . $value, $hide_candidate_fields)) : ?>
             <?php civi_get_template('dashboard/candidate/profile/info/'. $value .'.php') ?>
         <?php endif;

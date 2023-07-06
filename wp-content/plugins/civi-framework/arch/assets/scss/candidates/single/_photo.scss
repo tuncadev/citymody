@@ -1,0 +1,10 @@
+.candidate-gallery-details{
+  figure img{
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .slick-nav .slick-arrow{
+    top: calc(50% - 15px);
+  }
+}

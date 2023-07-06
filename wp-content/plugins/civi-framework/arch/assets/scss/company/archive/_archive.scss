@@ -1,0 +1,167 @@
+@import "layout-list";
+@import "layout-grid";
+@import "layout-thumbnail";
+@import "layout-follow-bottom";
+@import "layout-button-jobs";
+
+.civi-company-item {
+	padding: 28px;
+	border-radius: 16px;
+	border: 1px solid $border_color;
+	background-color: #fff;
+	position: relative;
+	@include transition(box-shadow 0.3s);
+	@include box-shadow(0 0 0 0 rgba(0, 0, 0, 0.01));
+	cursor: pointer;
+	&:hover {
+		@include box-shadow(0 18px 22px -5px rgba(0, 0, 0, 0.05));
+	}
+	a:not(.civi-link-item) {
+		position: relative;
+		z-index: 2;
+	}
+	.company-header,
+	.company-bottom {
+		@include d-flex();
+		@include justify-content-between();
+	}
+	.company-status-inner .civi-button {
+		min-width: 135px;
+	}
+	.company-inner {
+		@include d-flex();
+		@include align-items-center();
+		@include flex-wrap();
+	}
+	.company-bottom {
+		margin-top: 24px;
+	}
+	.company-available {
+		font-weight: 500;
+		span {
+			color: $accent_color;
+		}
+	}
+	.logo-comnpany {
+		height: 54px;
+		width: 54px;
+		object-fit: cover;
+		background-color: #f9f9f9;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 54px;
+		max-width: none;
+	}
+	.company-img {
+		margin-right: 16px;
+		display: block;
+	}
+	.company-size,
+	.company-location {
+		margin-right: 15px;
+		a {
+			color: $secondary_color;
+			font-weight: 500;
+		}
+		i {
+			font-size: 18px;
+			font-weight: 400;
+			margin-right: 7px;
+		}
+	}
+	.civi-rating-warpper .rating-count {
+		padding-left: 0;
+		&:before {
+			content: none;
+		}
+	}
+	.company-title {
+		font-size: 18px;
+		display: inline-block;
+		margin-bottom: 5px;
+		a {
+			color: $primary_color;
+			&:hover {
+				color: $accent_color;
+			}
+		}
+		i {
+			font-size: 8px;
+			width: 15px;
+			height: 15px;
+			background-color: #3ab446;
+			line-height: 15px;
+			text-align: center;
+			border-radius: 50%;
+			margin-left: 5px;
+			color: #fff;
+		}
+	}
+	.label-categories {
+		color: $accent_color;
+		background-color: rgba(0, 116, 86, 0.05);
+		i {
+			padding-right: 5px;
+			font-weight: normal;
+		}
+	}
+	.des-company {
+		margin-top: 22px;
+		line-height: 1.5;
+	}
+	.civi-check-company:after {
+		top: -3px;
+	}
+}
+
+.company-status-inner,
+.civi-company-header-bottom,
+.candidate-status-inner,
+.civi-candidate-header-bottom {
+	.civi-dual-ring {
+		width: 16px;
+		height: 16px;
+		position: static;
+		transform: none;
+		margin-bottom: -2px;
+		margin-right: 10px;
+		&:after {
+			width: 16px;
+			height: 16px;
+			border-width: 2px;
+		}
+	}
+}
+
+.civi-add-to-follow,
+.civi-add-to-follow-candidate {
+	&:hover {
+		.civi-dual-ring:after {
+			border-color: #fff transparent #fff transparent;
+		}
+	}
+	&.added .fa-plus:before {
+		content: "\f00c";
+	}
+	&.removed .fa-check:before {
+		content: "\f067";
+	}
+}
+
+@media (max-width: 576px) {
+	.civi-company-item {
+		.company-header {
+			position: relative;
+		}
+		.company-status-inner {
+			position: absolute;
+			right: 0;
+		}
+		.review-count {
+			display: none;
+		}
+		.civi-rating-warpper {
+			margin-top: 0;
+		}
+	}
+}

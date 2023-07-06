@@ -1,0 +1,111 @@
+#jobs_type-error,
+#jobs_skills-error {
+  position: absolute;
+  z-index: 2;
+  bottom: -23px;
+}
+
+.submit-company-header {
+  h4 {
+    font-size: 28px;
+  }
+  .button-warpper {
+    margin-top: 0;
+  }
+}
+
+#company-submit-video {
+  .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.about-company-dashboard {
+  .title-company-about {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .img-company {
+    width: 64px;
+    height: 64px;
+    background-color: #f9f9f9;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 50%;
+    i {
+      font-size: 20px;
+      color: $secondary_color;
+    }
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+    }
+  }
+  .title-about {
+    font-size: 16px;
+  }
+  .company-right {
+    margin-left: 15px;
+    i {
+      color: $secondary_color;
+      font-weight: 400;
+      margin-right: 5px;
+    }
+    .title-about {
+      display: inline-block;
+    }
+  }
+  .info-company {
+    @include d-flex();
+    @include align-items-center();
+  }
+  .des-about {
+    margin-bottom: 0;
+    margin-top: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    max-height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.submit-company-dashboard {
+  .widget-area-init {
+    margin-top: 100px;
+  }
+  .button-warpper {
+    @include d-flex();
+    @include justify-content-end();
+    margin-top: 0;
+    .civi-button + .civi-button {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .submit-company-dashboard {
+    .submit-company-header {
+      display: block;
+      .entry-title {
+        margin-bottom: 20px;
+      }
+    }
+    .button-warpper {
+      @include justify-content-start();
+    }
+  }
+  #company-submit-media {
+    .company-fields-warpper {
+      display: block;
+    }
+    .company-fields-thumbnail {
+      margin-top: 30px;
+    }
+  }
+}

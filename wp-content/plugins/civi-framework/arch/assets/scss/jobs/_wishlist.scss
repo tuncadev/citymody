@@ -1,0 +1,23 @@
+.civi_alert_message {
+	position: fixed;
+	right: 10px;
+	top: 45%;
+	@include transition(all 0.3s);
+	z-index: 999;
+	background-color: crimson;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #fff;
+	-webkit-animation-duration: 1.25s;
+	animation-duration: 1.25s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	opacity: 0;
+	&.show {
+		-webkit-animation-delay: 2s;
+		animation-delay: 2s;
+	}
+}

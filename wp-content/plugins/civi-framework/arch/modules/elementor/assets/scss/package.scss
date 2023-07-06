@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+.civi-package-layout-02{
+  .civi-package-item{
+    &.active,.current{
+      background-color: $accent_color;
+      .civi-package-title .entry-title,
+      ul.list-group li i{
+        color: #FFD75E;
+      }
+      .civi-package-price,
+      ul.list-group{
+        color: #fff;
+      }
+      .civi-package-choose .civi-button{
+        color: $accent_color !important;
+        background-color: #FFD75E !important;
+      }
+    }
+    .civi-package-price{
+      border-bottom: 0;
+      padding-bottom: 20px;
+    }
+    .civi-package-choose{
+      margin-top: 0;
+      border-bottom: 1px solid $border_color;
+      padding-bottom: 32px;
+    }
+  }
+}

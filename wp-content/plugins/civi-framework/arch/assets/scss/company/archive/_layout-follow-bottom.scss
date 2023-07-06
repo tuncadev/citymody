@@ -1,0 +1,37 @@
+.civi-company-item.layout-follow-bottom{
+  .company-header-right{
+    @include d-flex();
+    .review-count{
+      display: none;
+    }
+  }
+  .des-company {
+    margin-top: 16px;
+  }
+  .company-cate{
+    margin-top: 15px;
+  }
+  .company-bottom{
+    margin-top: 16px;
+    @include align-items-center();
+  }
+}
+
+@media (max-width:767px) {
+  .civi-company-item.layout-follow-bottom{
+    .company-status-inner{
+      position: static;
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .civi-company-item.layout-follow-bottom{
+    .company-bottom{
+      display: block;
+    }
+    .company-status-inner{
+      margin-top: 16px;
+    }
+  }
+}

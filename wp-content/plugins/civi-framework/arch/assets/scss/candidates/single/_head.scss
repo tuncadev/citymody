@@ -1,0 +1,100 @@
+.candidate-head-details {
+	.civi-candidate-header-top {
+		@include d-flex();
+		.image-candidates {
+			width: 64px;
+			height: 64px;
+			object-fit: cover;
+			background-color: #f9f9f9;
+			text-align: center;
+			line-height: 60px;
+			border-radius: 50%;
+			margin-right: 16px;
+			i {
+				font-size: 18px;
+				color: $secondary_color;
+			}
+		}
+	}
+	.title-wapper {
+		@include d-flex();
+		@include align-items-center();
+		h1 {
+			font-size: 28px;
+			font-weight: 500;
+			line-height: 1.2;
+		}
+		i {
+			font-size: 8px;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: $accent_color;
+			line-height: 15px;
+			text-align: center;
+			color: #fff;
+			margin-left: 5px;
+		}
+		.tooltip{
+			@include d-inline-flex();
+		}
+	}
+	.logo-comnpany {
+		margin-right: 16px;
+	}
+	.candidate-info {
+		@include d-flex();
+		@include align-items-center();
+		@include flex-wrap();
+
+		column-gap: 8px;
+	}
+
+	.candidate-category {
+		a {
+			color: $accent_color;
+			font-weight: 500;
+		}
+	}
+
+	.candidate-warpper {
+		@include d-flex();
+		@include flex-wrap();
+		@include align-items-center();
+		.cate-warpper {
+			font-weight: 500;
+			margin-right: 8px;
+		}
+		i {
+			font-size: 18px;
+			color: $secondary_color;
+			margin-right: 8px;
+			font-weight: 400;
+		}
+
+		&:before {
+			content: "";
+			width: 6px;
+			height: 6px;
+			top: 50%;
+			background-color: #d9d9d9;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+	}
+	.civi-candidate-header-bottom {
+		@include d-flex();
+		@include flex-wrap();
+		margin-top: 32px;
+		a {
+			margin-right: 8px;
+		}
+		.btn-webs {
+			border-color: $primary_color;
+		}
+	}
+	.candidate-current-position{
+		color: $accent_color;
+		font-weight: 500;
+	}
+}

@@ -1,0 +1,166 @@
+.submit-jobs-dashboard {
+	.widget-area-init {
+		margin-top: 108px;
+	}
+	.submit-jobs-header {
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		padding: 32px 0;
+		.entry-title h4 {
+			font-size: 24px;
+		}
+		.button-warpper {
+			margin-top: 0;
+		}
+	}
+	.button-warpper {
+		.civi-button + .civi-button {
+			margin-left: 12px;
+		}
+		.button-link {
+			margin-right: 12px;
+		}
+	}
+	.civi-section-salary-select {
+		width: 100%;
+	}
+	#range {
+		@include d-flex();
+	}
+	#jobs_gallery_thumbs_container {
+		@include d-flex();
+		@include flex-wrap();
+	}
+	#jobs-submit-company {
+		.civi-button {
+			margin-top: 24px;
+		}
+	}
+	.header-about{
+		@include d-flex();
+		@include align-items-center();
+		@include justify-content-between();
+		@include flex-wrap();
+		.civi-button{
+			margin-bottom: 24px;
+			i{
+				margin-left: 5px;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.about-jobs-dashboard {
+	border: 1px solid $border_color;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 28px;
+	.info-jobs-warpper {
+		line-height: 1.5;
+	}
+	.img-company {
+		width: 54px;
+		height: 54px;
+		background-color: #f9f9f9;
+		line-height: 54px;
+		text-align: center;
+		color: $secondary_color;
+		border-radius: 50%;
+		margin-bottom: 16px;
+		img {
+			border-radius: inherit;
+			object-fit: cover;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	h4 {
+		font-size: 18px;
+		margin-bottom: 7px;
+	}
+	.name-company {
+		font-weight: 500;
+		color: $primary_color;
+	}
+	.cate-about {
+		font-weight: 500;
+		color: $accent_color;
+	}
+	.label-warpper {
+		margin-top: 18px;
+	}
+}
+
+.label-price {
+	background: rgba(0, 116, 86, 0.05);
+	color: $accent_color;
+	i {
+		padding-right: 7px;
+		font-weight: normal;
+	}
+}
+
+.title-jobs-about {
+	font-size: 24px;
+	margin-bottom: 20px;
+	&.edit-jobs {
+		margin-top: 106px;
+	}
+}
+
+.my-location {
+	position: absolute;
+	right: 20px;
+	bottom: 14px;
+}
+
+input#search-location {
+	padding-right: 40px;
+	height: 45px;
+	background-color: #fff;
+}
+
+.jobs-fields-map {
+	.jobs-fields-title {
+		@include d-flex();
+		@include justify-content-center();
+		@include justify-content-between();
+		margin-bottom: 10px;
+		h3 {
+			font-size: 16px;
+		}
+	}
+	.control-marker {
+		a {
+			color: $accent_color;
+			font-weight: 500;
+		}
+		#unlock-pin {
+			display: none;
+		}
+		&.lock-marker {
+			#unlock-pin {
+				display: block;
+			}
+			#lock-pin {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.submit-jobs-dashboard .widget-area-init{
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 480px) {
+	.submit-jobs-dashboard .button-warpper  {
+		.btn-submit-draft{
+			display: none;
+		}
+	}
+}

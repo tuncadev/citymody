@@ -1,0 +1,20 @@
+.jobs-dashboard{
+  tbody td:not(.action-setting){
+    min-width: 120px;
+  }
+  &.expired{
+    .table-dashboard,.pagination,.action-search{
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        background-color: rgba(255,255,255,0.5);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 9;
+      }
+    }
+  }
+}

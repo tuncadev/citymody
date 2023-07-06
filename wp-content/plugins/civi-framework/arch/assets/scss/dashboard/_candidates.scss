@@ -1,0 +1,80 @@
+.my-candidate{
+	.info-details {
+		i {
+			background-color: #3ab446;
+			color: #fff;
+			border-radius: 50%;
+			width: 15px;
+			height: 15px;
+			line-height: 15px;
+			text-align: center;
+			font-size: 8px;
+			position: relative;
+			top: -3px;
+			margin-left: 5px;
+		}
+		p {
+			color: $secondary_color;
+			font-weight: 500;
+		}
+	}
+	.cate-info {
+		font-weight: 500;
+		color: $secondary_color;
+		@include d-flex();
+		@include flex-wrap();
+	}
+	.action-search input {
+		width: 380px;
+	}
+	.table-dashboard tbody {
+		.list-action {
+			@include justify-content-end();
+		}
+		td:last-child {
+			padding-right: 35px;
+			width: 70px;
+		}
+	}
+	.image-candidates {
+		min-width: 60px;
+		height: 60px;
+		background-color: #f9f9f9;
+		text-align: center;
+		line-height: 60px;
+		border-radius: 50%;
+		i {
+			font-size: 18px;
+			color: $secondary_color;
+		}
+	}
+	.civi-loading-effect {
+		display: none;
+	}
+}
+
+.civi-avatar-candidate{
+	@include d-flex();
+	margin-bottom: 30px;
+	.candidate-fields-thumbnail #civi_thumbnail_container{
+		height: 150px;
+	}
+	.candidate-fields-thumbnail,
+	#civi_add_thumbnail{
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.my-candidate{
+		.action-search input {
+			width: 100%;
+		}
+	}
+	.civi-avatar-candidate{
+		display: block;
+	}
+	.civi-avatar-candidate .candidate-fields-thumbnail{
+		margin-top: 30px;
+	}
+}

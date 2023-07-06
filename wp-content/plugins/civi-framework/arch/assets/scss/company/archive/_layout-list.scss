@@ -1,0 +1,29 @@
+.civi-company-item.layout-list {
+	padding-bottom: 20px;
+	.company-header-right {
+		@include d-flex();
+		@include align-items-center();
+	}
+}
+
+@media (max-width: 767px) {
+	.civi-company-item.layout-list {
+		.company-header-right {
+			display: block;
+		}
+		.company-title {
+			margin-top: 14px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.civi-company-item.layout-list {
+		.company-bottom {
+			display: block;
+		}
+		.company-available {
+			margin-top: 15px;
+		}
+	}
+}

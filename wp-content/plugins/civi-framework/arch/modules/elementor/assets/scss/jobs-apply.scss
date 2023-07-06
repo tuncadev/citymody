@@ -1,0 +1,48 @@
+@import "mixins";
+@import "variables";
+
+.civi-jobs-apply {
+  .jobs-archive-header {
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+  }
+  .civi-jobs-item {
+    padding: 32px;
+    + .civi-jobs-item {
+      margin-top: 24px;
+    }
+    .jobs-header-left {
+      display: block;
+    }
+    .jobs-header-right {
+      height: auto;
+    }
+  }
+  .jobs-title {
+    margin-bottom: 12px;
+  }
+  .cate-wapprer {
+    color: $secondary_color;
+  }
+  .civi-button-apply:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .civi-jobs-apply {
+    .civi-jobs-item.layout-list {
+      .jobs-archive-header {
+        display: block;
+      }
+      .jobs-header-right {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  }
+}

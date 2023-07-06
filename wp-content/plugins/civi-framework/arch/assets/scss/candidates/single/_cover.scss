@@ -1,0 +1,15 @@
+.cover-wrapper{
+  width: 100%;
+  margin-bottom: 24px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .cover{
+    -webkit-mask-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7));
+    mask-image: linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 1));
+  }
+
+  img{
+    border-radius: 16px;
+  }
+}

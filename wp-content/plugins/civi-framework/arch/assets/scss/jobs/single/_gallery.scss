@@ -1,0 +1,27 @@
+.jobs-gallery-details{
+  .slick-dots li button:before {
+    font-size: 8px;
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: $border_color;
+    opacity: 1;
+  }
+  .slick-dots li.slick-active{
+    button:before{
+      background-color: $accent_color;
+    }
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 15px;
+  }
+  figure img{
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .slick-nav .slick-arrow{
+    top: calc(50% - 15px);
+  }
+}

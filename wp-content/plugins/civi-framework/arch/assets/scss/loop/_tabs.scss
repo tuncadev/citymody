@@ -1,0 +1,49 @@
+.tab-dashboard,.tab-popup-warpper{
+  .tab-list,.tab-list-popup{
+    list-style: none;
+    @include d-flex();
+    @include align-items-center();
+    padding-left: 0;
+  }
+  .tab-item{
+    position: relative;
+    &:before{
+      content: '';
+      height: 2px;
+      background-color: $accent_color;
+      bottom: 0;
+      display: block;
+      position: absolute;
+      width: 0;
+      @include transition(width .3s);
+    }
+    &:hover,
+    &.active{
+      a{
+        color: $accent_color;
+      }
+      &:before{
+        width: 100%;
+      }
+    }
+    a{
+      font-size: 18px;
+      color: $secondary_color;
+      font-weight: 500;
+    }
+    + .tab-item{
+      margin-left: 32px;
+    }
+  }
+}
+
+@media (max-width: 672px) {
+
+  .candidate-profile-tab{
+    overflow: scroll;
+  
+    li{
+      white-space: nowrap;
+    }
+  }
+}

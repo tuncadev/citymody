@@ -1,0 +1,17 @@
+.civi-boxdb{
+  position: relative;
+  @include box-shadow(0 0 0 rgba(0, 0, 0, 0.03));
+  @include transition(box-shadow .3s);
+  &:hover{
+    @include transition(box-shadow .3s);
+    @include box-shadow(3px 3px 15px rgba(0, 0, 0, 0.03));
+  }
+  .civi-link-boxdb{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+}

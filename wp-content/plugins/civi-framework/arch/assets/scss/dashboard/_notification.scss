@@ -1,0 +1,155 @@
+.civi-dashboard {
+	.notification-dashboard {
+		.row {
+			margin-right: -6px;
+			margin-left: -6px;
+		}
+		.col-md-7,
+		.col-md-5 {
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+
+		.applicants-wrap {
+			padding: 32px;
+			border: 1px solid $border_color;
+			background-color: #fff;
+			border-radius: 8px;
+			.civi-button {
+				border-color: $border_color;
+				color: $primary_color;
+				padding: 12px;
+				text-align: center;
+				margin-top: 35px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				&:hover {
+					color: #fff;
+					border-color: $accent_color;
+				}
+			}
+		}
+		.image-applicants {
+			min-width: 60px;
+			height: 60px;
+			background-color: #f9f9f9;
+			text-align: center;
+			line-height: 60px;
+			margin-right: 16px;
+			border-radius: 50%;
+			i {
+				font-size: 18px;
+				color: $secondary_color;
+			}
+			img {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+		}
+		.title-applicants {
+			font-size: 24px;
+			margin-bottom: 28px;
+		}
+		.applicants-innner + .applicants-innner {
+			margin-top: 31px;
+		}
+		.applicants-heading {
+			@include d-flex();
+			@include align-items-center();
+			@include justify-content-between();
+			margin-bottom: 25px;
+			h3 {
+				font-size: 18px;
+				margin-bottom: 0;
+			}
+			span {
+				font-weight: 600;
+				color: $accent_color;
+				background-color: rgba(0,116,86,0.05);
+				width: 26px;
+				line-height: 26px;
+				height: 26px;
+				text-align: center;
+				border-radius: 8px;
+			}
+		}
+		.applicants-content {
+			@include d-flex();
+			@include align-items-center();
+			+ .applicants-content {
+				margin-top: 24px;
+			}
+			.content {
+				p {
+					margin-bottom: 0;
+					font-size: 14px;
+					color: $secondary_color;
+				}
+				h6 {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.jobs-dashboard-wrap {
+		background-color: #fff;
+		border-radius: 8px;
+		border: 1px solid $border_color;
+		padding: 32px;
+		.title-jobs {
+			font-size: 24px;
+		}
+		.not-jobs {
+			padding-top: 30px;
+		}
+		.logo-comnpany {
+			height: 60px;
+			width: 60px;
+			object-fit: cover;
+			background-color: #f9f9f9;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 60px;
+			max-width: none;
+		}
+		.company-header {
+			margin-top: 28px;
+			@include d-flex();
+			@include align-items-center();
+			.img-comnpany {
+				margin-right: 12px;
+			}
+		}
+		.title-jobs-dashboard {
+			margin-bottom: 0;
+			font-size: 16px;
+			a {
+				@include d-inline-flex();
+				margin-bottom: 10px;
+				i {
+					font-size: 14px;
+					margin-left: 3px;
+				}
+			}
+		}
+		.civi-button {
+			margin-top: 35px;
+		}
+	}
+}
+
+.jobs-dashboard-wrap{
+	.info-jobs .title-jobs-dashboard a{
+		display: block;
+		margin-bottom: 3px;
+	}
+}
+
+@media (max-width: 767px) {
+	.notification-dashboard .applicants-wrap {
+		margin-top: 12px;
+	}
+}

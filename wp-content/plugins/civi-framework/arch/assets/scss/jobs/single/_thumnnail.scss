@@ -1,0 +1,20 @@
+.jobs-thumbnail-details {
+  background-color: #fff;
+  img{
+    border-radius: 6px 6px 0 0;
+  }
+  .logo-comnpany {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin-top: -37px;
+    margin-left: 32px;
+    margin-bottom: -16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobs-thumbnail-details img{
+    height: 150px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,13 @@
+.civi-jobs-item.layout-grid {
+	.jobs-logo-company {
+		@include d-flex();
+		@include justify-content-between();
+		margin-bottom: 16px;
+	}
+	.info-jobs-cate {
+		margin-top: 24px;
+	}
+	.days {
+		margin-top: 32px;
+	}
+}

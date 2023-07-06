@@ -1,0 +1,66 @@
+.single.candidate-education{
+    margin-top: 21px;
+
+    .education-title{
+        position: relative;
+        margin-left: 34px;
+        color: $primary_color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+
+        &.time-dot::before{
+            left: -34px;
+        }
+    }
+
+    .time-dot:before{
+        border-color: #FFD75E;
+    }
+
+    .education-details{
+        position: relative;
+        height: 100%;
+        margin-top: 4px;
+        margin-left: 34px;
+
+        &.time-line{
+            &:before{
+                left: -30px;
+                border-color: #FFD75E;
+            }
+        }
+        span:first-child{
+            color: $accent_color;
+            font-weight: 500;
+        }
+
+        span:not(:first-child){
+            color: $text_color;
+            font-weight: 400;
+        }
+
+        span:nth-child(2)::before{
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            top: 50%;
+            background-color: #D9D9D9;
+            border-radius: 50%;
+            margin-right: 8px;
+            margin-left: 8px;
+            margin-bottom: 4px;
+        }
+
+        span:last-child{
+            display: block;
+            margin-top: 16px;
+        }
+    }
+    .description{
+        margin-top: 16px;
+        color: $text_color;
+        font-weight: 400;
+    }
+}

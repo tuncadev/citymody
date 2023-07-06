@@ -1,0 +1,35 @@
+.company-dashboard {
+	.table-dashboard .info-details p {
+		color: $secondary_color;
+		font-weight: 500;
+	}
+	.active-jobs {
+		height: 28px;
+		width: 29px;
+		text-align: center;
+		line-height: 28px;
+		background-color: #f4f8ff;
+		display: block;
+		border-radius: 8px;
+		font-weight: 600;
+		color: $accent_color;
+	}
+	.civi-button {
+		margin-top: 32px;
+	}
+	.table-dashboard tbody .action-dropdown {
+		width: 80px;
+	}
+	.img-company {
+		width: 60px;
+		height: 60px;
+		background-color: #f9f9f9;
+		text-align: center;
+		line-height: 60px;
+		border-radius: 50%;
+		i {
+			font-size: 18px;
+			color: $secondary_color;
+		}
+	}
+}

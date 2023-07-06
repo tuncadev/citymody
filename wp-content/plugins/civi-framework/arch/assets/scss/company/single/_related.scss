@@ -1,0 +1,11 @@
+.company-related-details {
+	border: 1px solid $border_color;
+	border-radius: 16px;
+	margin-top: 16px;
+	.related-inner {
+		position: relative;
+	}
+	.civi-loading-effect {
+		display: none;
+	}
+}

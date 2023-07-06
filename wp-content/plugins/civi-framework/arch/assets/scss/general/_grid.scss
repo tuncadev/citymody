@@ -1,0 +1,103 @@
+.grid.columns-6 {
+	grid-template-columns: repeat(6,1fr);
+}
+.grid.columns-5 {
+	grid-template-columns: repeat(5,1fr);
+}
+.grid.columns-4 {
+	grid-template-columns: repeat(4,1fr);
+}
+.grid.columns-3 {
+	grid-template-columns: repeat(3,1fr);
+}
+.grid.columns-2 {
+	grid-template-columns: repeat(2,1fr);
+}
+.grid.columns-1 {
+	grid-template-columns: repeat(1,1fr);
+}
+
+@media only screen and (max-width: 1199px) {
+	.grid.columns-lg-6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+	.grid.columns-lg-5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	.grid.columns-lg-4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.grid.columns-lg-3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	.grid.columns-lg-2 {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.grid.columns-lg-1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+	.grid.columns-md-6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+	.grid.columns-md-5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	.grid.columns-md-4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.grid.columns-md-3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	.grid.columns-md-2 {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.grid.columns-md-1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.grid.columns-sm-6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+	.grid.columns-sm-5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	.grid.columns-sm-4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.grid.columns-sm-3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	.grid.columns-sm-2 {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.grid.columns-sm-1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.grid.columns-xs-6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+	.grid.columns-xs-5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	.grid.columns-xs-4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.grid.columns-xs-3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	.grid.columns-xs-2 {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.grid.columns-xs-1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+}

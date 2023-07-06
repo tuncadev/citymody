@@ -1,0 +1,108 @@
+@import "layout-list";
+@import "layout-grid";
+
+.civi-jobs-item {
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid $border_color;
+  background-color: #fff;
+  @include transition(box-shadow 0.3s);
+  @include box-shadow(0 0 0 0 rgba(0, 0, 0, 0.01));
+  cursor: pointer;
+  position: relative;
+  &.active{
+    border-color: $accent_color !important;
+  }
+  &:hover {
+    @include box-shadow(0 18px 22px -5px rgba(0, 0, 0, 0.05));
+  }
+  a:not(.civi-link-item){
+    position: relative;
+    z-index: 2;
+  }
+  h4 {
+    margin-bottom: 5px;
+    a {
+      font-size: 18px;
+      color: $primary_color;
+      &:hover {
+        color: $accent_color;
+      }
+    }
+  }
+  .authour {
+    color: $primary_color;
+    font-weight: 500;
+  }
+  .categories-warpper {
+    @include d-inline-flex();
+    @include flex-wrap();
+    a {
+      font-weight: 500;
+      color: $accent_color;
+    }
+    .cate-warpper:not(:first-child):before {
+      content: ",";
+    }
+  }
+  .jobs-archive-footer {
+    margin-top: 24px;
+  }
+  .logo-comnpany {
+    height: 54px;
+    width: 54px;
+    object-fit: cover;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 54px;
+  }
+  .btn-add-to-wishlist {
+    top: 3px;
+    position: relative;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  .label-type {
+    color: #6c4cbe;
+    background-color: #f5ecff;
+  }
+  .label-price {
+    background-color: rgba(0, 116, 86, 0.05);
+    color: $accent_color;
+  }
+  .days {
+    margin-bottom: 8px;
+    font-weight: 500;
+    white-space: nowrap;
+    span {
+      color: $accent_color;
+    }
+  }
+  .jobs-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    a {
+      color: $primary_color;
+      &:hover{
+        color: $accent_color;
+      }
+    }
+  }
+  .jobs-des{
+    margin-top: 24px;
+  }
+  .jobs-status{
+    @include d-flex();
+    .tooltip{
+      margin-right: 15px;
+      display: block;
+      width: max-content;
+    }
+  }
+}
