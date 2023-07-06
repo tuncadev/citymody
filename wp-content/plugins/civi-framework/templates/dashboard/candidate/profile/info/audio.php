@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-echo "TESTING AUDIO " ;
+
 global $hide_candidate_fields, $candidate_data, $candidate_meta_data, $current_user;
 $user_id = $current_user->ID;
 $candidate_audio_list = get_post_meta($candidate_data->ID, CIVI_METABOX_PREFIX . 'candidate_audio_list', false);
@@ -12,7 +12,6 @@ $candidate_audio_quantity = !empty($candidate_audio_list) ? count($candidate_aud
 $candidate_id = civi_get_post_id_candidate();
 
 $terms = get_the_terms( $candidate_id , 'candidate_categories' );
-echo "TERM : " .  $terms[0]->name;
 if($terms) {
 $candidate_category = $terms[0]->name;
 

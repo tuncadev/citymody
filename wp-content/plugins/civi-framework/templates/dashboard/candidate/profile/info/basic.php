@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-echo "TESTING BASIC " ;
+
 global $hide_candidate_fields, $candidate_data, $candidate_meta_data, $current_user;
 $user_id = $current_user->ID;
 
