@@ -47,7 +47,7 @@ p {
 
 input#jobs_filter_search {
   border: none;
-  border-radius: inherit; }
+  border-radius: inherit !important; }
 
 /* Footer */
 .footer-new-top-section {
