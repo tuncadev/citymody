@@ -61,7 +61,7 @@ if ($enable_sticky_sidebar_type) {
     <?php endif; ?>
     <?php if (is_array($candidate_languages)) : ?>
         <div class="info">
-            <p class="title-info"><?php esc_html_e('Native Language', 'civi-framework'); ?></p>
+            <p class="title-info"><?php esc_html_e('Native Langıage', 'civi-framework'); ?></p>
             <div class="list-cate">
                 <?php foreach ($candidate_languages as $language) {
                     esc_attr_e($language->name);

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Civi Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 10:59+0000\n"
+"POT-Creation-Date: 2023-06-27 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -12020,4 +12020,8 @@ msgstr ""
 #: arch/templates/dashboard/employer/meetings.php:68
 #: arch2/templates/dashboard/employer/meetings.php:68
 msgid "Zoom Settings"
+msgstr ""
+
+msgctxt "Kayıt Ol"
+msgid "Regıster"
 msgstr ""

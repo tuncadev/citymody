@@ -2,6 +2,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
+
 ?>
 
 <div class="entry-my-page my-jobs">

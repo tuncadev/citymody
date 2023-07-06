@@ -4,6 +4,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+
 wp_enqueue_script('plupload');
 wp_enqueue_script('jquery-validate');
 wp_enqueue_script(CIVI_PLUGIN_PREFIX . 'candidate-submit');

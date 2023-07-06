@@ -12021,3 +12021,10 @@ msgstr ""
 #: arch2/templates/dashboard/employer/meetings.php:68
 msgid "Zoom Settings"
 msgstr ""
+
+msgctxt "Kayıt Ol"
+msgid "Regıster"
+msgstr ""
+
+msgid "Register"
+msgstr ""

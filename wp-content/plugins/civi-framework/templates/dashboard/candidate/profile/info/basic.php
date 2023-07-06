@@ -7,8 +7,6 @@ if (!defined('ABSPATH')) {
 global $hide_candidate_fields, $candidate_data, $candidate_meta_data, $current_user;
 $user_id = $current_user->ID;
 
-
-
 $current_user = wp_get_current_user();
 $package_id = get_the_author_meta(CIVI_METABOX_PREFIX . 'package_id', $user_id);
 $package_unlimited_job = get_post_meta($package_id, CIVI_METABOX_PREFIX . 'package_unlimited_job', true);
@@ -296,7 +294,7 @@ if (!empty($google_gmail)) {
 					  <label for="candidate_weight"><?php esc_html_e('Weight (kg)', 'civi-framework') ?></label>
 				<div class="select2-field">
 					<select class="point-mark civi-select2" name="candidate_weight" id="candidate_weight">
-							<?php civi_get_taxonomy_by_post_id($candidate_id, 'candidate_weight', true); ?>
+						<?php civi_get_taxonomy_by_post_id($candidate_id, 'candidate_weight', true); ?>
 					</select>
 				</div>
 			</div>
@@ -437,5 +435,5 @@ if (!empty($google_gmail)) {
 				</div>
             </div>
         <?php endif; ?>
-    </div>	
+    </div>
 </div>

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Civi Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 10:59+0000\n"
+"POT-Creation-Date: 2023-06-21 23:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -1588,7 +1588,7 @@ msgstr ""
 #: templates/jobs/edit.php:145 templates/jobs/submit.php:179
 #: arch/templates/jobs/edit.php:145 arch/templates/jobs/submit.php:179
 #: arch2/templates/jobs/edit.php:145 arch2/templates/jobs/submit.php:179
-#: templates/jobs/single/head.php:70 templates/jobs/content/layout-grid.php:65
+#: templates/jobs/single/head.php:91 templates/jobs/content/layout-grid.php:65
 #: templates/jobs/content/layout-full.php:56
 #: templates/jobs/content/layout-list.php:54
 #: arch/templates/jobs/single/head.php:41
@@ -4013,7 +4013,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-package.php:69
 #: modules/widgets/includes/popular-posts.php:133
 #: modules/widgets/includes/products.php:31
-#: modules/elementor/includes/jobs.php:266 templates/jobs/single/head.php:61
+#: modules/elementor/includes/jobs.php:266 templates/jobs/single/head.php:82
 #: templates/dashboard/employer/jobs.php:119
 #: arch/modules/widgets/includes/popular-posts.php:133
 #: arch/modules/widgets/includes/products.php:31
@@ -4460,7 +4460,7 @@ msgstr ""
 msgid "Google Reviews"
 msgstr ""
 
-#: templates/jobs/single/head.php:32
+#: templates/jobs/single/head.php:53
 msgid "Great! We have recieved your application"
 msgstr ""
 
@@ -4877,7 +4877,7 @@ msgstr ""
 #: templates/jobs/edit.php:147 templates/jobs/submit.php:181
 #: arch/templates/jobs/edit.php:147 arch/templates/jobs/submit.php:181
 #: arch2/templates/jobs/edit.php:147 arch2/templates/jobs/submit.php:181
-#: templates/jobs/single/head.php:72 templates/jobs/content/layout-grid.php:67
+#: templates/jobs/single/head.php:93 templates/jobs/content/layout-grid.php:67
 #: templates/jobs/content/layout-full.php:58
 #: templates/jobs/content/layout-list.php:56
 #: arch/templates/jobs/single/head.php:43
@@ -9145,7 +9145,7 @@ msgctxt "Shapes"
 msgid "Oval"
 msgstr ""
 
-#: templates/jobs/single/head.php:94 arch/templates/jobs/single/head.php:65
+#: templates/jobs/single/head.php:115 arch/templates/jobs/single/head.php:65
 #: arch2/templates/jobs/single/head.php:65
 msgid "Share"
 msgstr ""
@@ -10453,7 +10453,7 @@ msgstr ""
 msgid "This theme doesn't require any plugins."
 msgstr ""
 
-#: templates/jobs/single/head.php:40
+#: templates/jobs/single/head.php:61
 msgid "This windows will close in:"
 msgstr ""
 
@@ -11422,7 +11422,7 @@ msgstr ""
 msgid "We recommend at least one video entry"
 msgstr ""
 
-#: templates/jobs/single/head.php:36
+#: templates/jobs/single/head.php:57
 msgid "We will contact you if your application will be accepted"
 msgstr ""
 

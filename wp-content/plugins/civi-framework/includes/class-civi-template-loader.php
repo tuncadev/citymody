@@ -1085,7 +1085,7 @@ if (!class_exists('Civi_Template_Loader')) {
 
 			$candidate_details_order = civi_get_option('candidate_details_order', $candidate_details_order_default);
 
-			$head_nb_order = $photos_nb_order = $about_me_nb_order = $video_nb_order = $audio_nb_order= $skills_nb_order = $experience_nb_order = $education_nb_order = $projects_nb_order = $awards_nb_order = 0;
+			$head_nb_order = $photos_nb_order = $about_me_nb_order = $video_nb_order = $audio_nb_order = $skills_nb_order = $experience_nb_order = $education_nb_order = $projects_nb_order = $awards_nb_order = 0;
 
 			if (!empty($candidate_details_order)) {
 				$candidate_details_sort_order = explode('|', $candidate_details_order['sort_order']);
@@ -1191,6 +1191,9 @@ if (!class_exists('Civi_Template_Loader')) {
 					}
 					if (in_array('enable_sp_video', $candidate_details_order)) {
 						add_action('civi_single_candidate_summary', 'single_candidate_video', $video_nb_order);
+					}
+					if (in_array('enable_sp_audio', $candidate_details_order)) {
+						add_action('civi_single_candidate_summary', 'single_candidate_audio', $audio_nb_order);
 					}
 					if (in_array('enable_sp_audio', $candidate_details_order)) {
 						add_action('civi_single_candidate_summary', 'single_candidate_audio', $audio_nb_order);

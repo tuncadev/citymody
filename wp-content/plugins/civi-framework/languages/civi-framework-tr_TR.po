@@ -1,14 +1,13 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Civi Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 10:59+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: 2023-06-21 23:12+0000\n"
+"PO-Revision-Date: 2023-07-01 16:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: Türkçe\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,7 +55,7 @@ msgstr ""
 #: arch2/includes/import/class-importer.php:1314
 #: arch2/includes/import/class-importer.php:1416
 msgid " - Skipped"
-msgstr ""
+msgstr "- Atlandı"
 
 #: templates/company/submit/media.php:40 templates/company/edit/media.php:47
 #: templates/jobs/submit/thumbnail.php:25 templates/jobs/edit/thumbnail.php:22
@@ -73,6 +72,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:88
 msgid " or drop files to upload"
 msgstr ""
+"veya yüklemek için dosyaları bırakın\n"
 
 #: includes/google-review/class-google-review.php:104
 #: arch/includes/google-review/class-google-review.php:104
@@ -120,7 +120,7 @@ msgstr ""
 #: arch2/templates/candidate/archive/layout/layout-default.php:176
 #, php-format
 msgid "%1$s candidates"
-msgstr ""
+msgstr "%1$s yetenek"
 
 #: includes/civi-template-hooks.php:1014
 #: arch/includes/civi-template-hooks.php:1012
@@ -139,7 +139,7 @@ msgstr ""
 #: arch2/templates/candidate/archive/layout/layout-default.php:174
 #, php-format
 msgid "%1$s candidates for \"%2$s\""
-msgstr ""
+msgstr "%1$s yetenek için \"%2$s\""
 
 #: includes/civi-template-hooks.php:650
 #: arch/includes/civi-template-hooks.php:649
@@ -184,7 +184,7 @@ msgstr ""
 #: arch2/templates/jobs/archive/layout/layout-default.php:250
 #, php-format
 msgid "%1$s jobs"
-msgstr ""
+msgstr "%1$s proje"
 
 #: includes/civi-template-hooks.php:369
 #: arch/includes/civi-template-hooks.php:368
@@ -203,7 +203,7 @@ msgstr ""
 #: arch2/templates/jobs/archive/layout/layout-default.php:248
 #, php-format
 msgid "%1$s jobs for \"%2$s\""
-msgstr ""
+msgstr "%1$s proje için\"%2$s\""
 
 #: templates/dashboard/notification/content.php:56
 #: arch/templates/dashboard/notification/content.php:56
@@ -252,6 +252,8 @@ msgid ""
 "%s - We recommend setting memory to at least 128MB. See: <a href=\"%s\" "
 "target=\"_blank\">Increasing memory allocated to PHP</a>"
 msgstr ""
+"%s - Belleği en az 128 MB olarak ayarlamanızı öneririz. Bakınız: PHP'ye "
+"ayrılan belleği artırma\n"
 
 #: templates/dashboard/notification/content.php:63
 #: templates/dashboard/messages/list-user.php:42
@@ -283,6 +285,7 @@ msgstr ""
 #, php-format
 msgid "%s has enough information"
 msgstr ""
+"%s yeterli bilgiye sahip\n"
 
 #. %s: Media package path.
 #: includes/import/class-importer.php:528
@@ -300,7 +303,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/jobs-category.php:893
 #, php-format
 msgid "%s jobs"
-msgstr ""
+msgstr "%1$s proje"
 
 #: includes/base/controls/post-type.php:64
 #: includes/base/controls/taxonomy.php:56
@@ -331,6 +334,7 @@ msgstr ""
 #, php-format
 msgid "%s not enough information"
 msgstr ""
+"%s yeterli bilgi yok\n"
 
 #: includes/partials/payment/class-civi-payment.php:66
 #: arch/includes/partials/payment/class-civi-payment.php:66
@@ -367,13 +371,14 @@ msgstr ""
 #: arch/includes/base/fields/file/file.class.php:52
 #: arch2/includes/base/fields/file/file.class.php:52
 msgid "+ Add File"
-msgstr ""
+msgstr "+ Dosya Ekle"
 
 #: includes/base/fields/gallery/gallery.class.php:41
 #: arch/includes/base/fields/gallery/gallery.class.php:41
 #: arch2/includes/base/fields/gallery/gallery.class.php:41
 msgid "+ Add Images"
 msgstr ""
+"+ Resim Ekle\n"
 
 #: includes/admin/templates/additional-details-field.php:59
 #: includes/base/fields/field.php:62
@@ -383,6 +388,7 @@ msgstr ""
 #: arch2/includes/base/fields/field.php:62
 msgid "+ Add more"
 msgstr ""
+"+ Daha fazla ekle\n"
 
 #: templates/company/submit/general.php:71
 #: templates/company/edit/general.php:76
@@ -458,7 +464,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/dashboard.php:107
 #: arch2/templates/dashboard/employer/jobs-performance.php:76
 msgid "15 days"
-msgstr ""
+msgstr "15 Gün"
 
 #: includes/admin/class-civi-admin-setup.php:1007
 #: arch/includes/admin/class-civi-admin-setup.php:1006
@@ -482,7 +488,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/dashboard.php:108
 #: arch2/templates/dashboard/employer/jobs-performance.php:77
 msgid "30 days"
-msgstr ""
+msgstr "30 Gün"
 
 #: templates/dashboard/candidate/dashboard.php:102
 #: templates/dashboard/employer/dashboard.php:106
@@ -494,7 +500,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/dashboard.php:106
 #: arch2/templates/dashboard/employer/jobs-performance.php:75
 msgid "7 days"
-msgstr ""
+msgstr "7 Gün"
 
 #: includes/admin/class-civi-admin-setup.php:405
 #: arch/includes/admin/class-civi-admin-setup.php:405
@@ -547,6 +553,10 @@ msgid ""
 "For more information on the civi-framework shortcodes view the %4$sshortcode "
 "documentation%2$s."
 msgstr ""
+"civi-framework, içeriğin çıktısını almak için %3$spages%2$s içinde "
+"kullanılabilen %1$sshortcodes%2$s içerir. Bunlar aşağıda sizin için "
+"oluşturulabilir. Sivil çerçeve kısa kodları hakkında daha fazla bilgi için "
+"%4$skısa kod belgelerine%2$s bakın."
 
 #: templates/global/pagination.php:83 arch/templates/global/pagination.php:83
 #: arch2/templates/global/pagination.php:83
@@ -583,12 +593,13 @@ msgid ""
 "<span class=\"num-first\">1</span> - <span class=\"num-last\">10</span> of "
 "<span class=\"num-total\">%s</span> items"
 msgstr ""
+"%s öğeden 1 - 10 arası\n"
 
 #: includes/import/views/box-import-notes.php:39
 #: arch/includes/import/views/box-import-notes.php:39
 #: arch2/includes/import/views/box-import-notes.php:39
 msgid "<strong>All required plugins</strong> should be installed."
-msgstr ""
+msgstr "Gerekli tüm eklentiler kurulu olmalıdır."
 
 #: includes/partials/payment/class-civi-payment.php:453
 #: includes/partials/payment/class-civi-payment.php:518
@@ -642,23 +653,23 @@ msgstr[1] ""
 #: arch2/templates/company/submit/general.php:39
 #: arch2/templates/company/edit/general.php:44
 msgid "About company"
-msgstr ""
+msgstr "Şirket hakkında"
 
 #: templates/candidate/single/about-me.php:9
 #: arch/templates/candidate/single/about-me.php:9
 #: arch2/templates/candidate/single/about-me.php:9
 msgid "About me"
-msgstr ""
+msgstr "Hakkımda"
 
 #: templates/jobs/edit.php:135 templates/jobs/submit.php:174
 #: arch/templates/jobs/edit.php:135 arch/templates/jobs/submit.php:174
 #: arch2/templates/jobs/edit.php:135 arch2/templates/jobs/submit.php:174
 msgid "About this job"
-msgstr ""
+msgstr "Bu proje hakkında"
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:48
 msgid "Account Type"
-msgstr ""
+msgstr "Hesap Türü"
 
 #: includes/admin/class-civi-admin-notification.php:22
 #: arch/includes/admin/class-civi-admin-notification.php:22
@@ -706,7 +717,7 @@ msgstr ""
 #: arch/templates/dashboard/employer/company.php:46
 #: arch2/templates/dashboard/employer/company.php:46
 msgid "Active Jobs"
-msgstr ""
+msgstr "Aktif Projeler"
 
 #: templates/dashboard/employer/user-package.php:121
 #: arch/templates/dashboard/employer/user-package.php:121
@@ -722,12 +733,14 @@ msgstr ""
 #: arch2/templates/candidate/single/review.php:639
 msgid "Add a comment..."
 msgstr ""
+"Yorum ekle...\n"
 
 #: includes/admin/class-civi-admin-setup.php:1244
 #: arch/includes/admin/class-civi-admin-setup.php:1233
 #: arch2/includes/admin/class-civi-admin-setup.php:1244
 msgid "Add a jobs the back-end"
 msgstr ""
+"Arka uçta bir iş ekleyin\n"
 
 #: includes/admin/class-civi-admin-setup.php:1253
 #: arch/includes/admin/class-civi-admin-setup.php:1242
@@ -739,35 +752,41 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/audio.php:70
 msgid "Add another Audio"
 msgstr ""
+"Başka bir ses ekle\n"
 
 #: templates/dashboard/candidate/profile/awards.php:48
 #: arch/templates/dashboard/candidate/profile/awards.php:48
 #: arch2/templates/dashboard/candidate/profile/awards.php:48
 msgid "Add another award"
 msgstr ""
+"Başka bir ödül ekle\n"
 
 #: templates/dashboard/candidate/profile/education.php:57
 #: arch/templates/dashboard/candidate/profile/education.php:56
 #: arch2/templates/dashboard/candidate/profile/education.php:57
 msgid "Add another education"
 msgstr ""
+"Başka bir eğitim ekle\n"
 
 #: templates/dashboard/candidate/profile/experience.php:56
 #: arch/templates/dashboard/candidate/profile/experience.php:56
 #: arch2/templates/dashboard/candidate/profile/experience.php:56
 msgid "Add another experience"
 msgstr ""
+"Başka bir deneyim ekle\n"
 
 #: templates/dashboard/candidate/profile/projects.php:95
 #: arch/templates/dashboard/candidate/profile/projects.php:95
 #: arch2/templates/dashboard/candidate/profile/projects.php:95
 msgid "Add another project"
 msgstr ""
+"Başka bir proje ekle\n"
 
 #: templates/dashboard/candidate/profile/info/video.php:60
 #: arch2/templates/dashboard/candidate/profile/info/video.php:60
 msgid "Add another Video"
 msgstr ""
+"Başka bir Video ekle\n"
 
 #: templates/global/access-denied.php:72 templates/payment/payment.php:44
 #: arch/templates/global/access-denied.php:72
@@ -778,7 +797,7 @@ msgstr ""
 #: arch/templates/dashboard/employer/user-package.php:37
 #: arch2/templates/dashboard/employer/user-package.php:37
 msgid "Add Jobs"
-msgstr ""
+msgstr "Proje Ekle"
 
 #: templates/company/submit/social.php:66 templates/company/edit/social.php:112
 #: arch/templates/company/submit/social.php:66
@@ -789,7 +808,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/social.php:120
 #: arch2/templates/dashboard/candidate/profile/info/social.php:120
 msgid "Add more"
-msgstr ""
+msgstr "Daha ekle"
 
 #: includes/class-civi-footer.php:34 includes/class-civi-footer.php:35
 #: arch/includes/class-civi-footer.php:34
@@ -804,6 +823,7 @@ msgstr ""
 #: arch2/includes/base/fields/selectize/selectize.class.php:72
 msgid "Add New"
 msgstr ""
+"Yeni ekle\n"
 
 #: includes/base/controls/post-type.php:51
 #: includes/base/controls/taxonomy.php:48
@@ -813,13 +833,13 @@ msgstr ""
 #: arch2/includes/base/controls/taxonomy.php:48
 #, php-format
 msgid "Add New %s"
-msgstr ""
+msgstr "Yeni %s Ekle"
 
 #: templates/dashboard/employer/company.php:130
 #: arch/templates/dashboard/employer/company.php:130
 #: arch2/templates/dashboard/employer/company.php:130
 msgid "Add new company"
-msgstr ""
+msgstr "Yeni şirket ekle"
 
 #: includes/class-civi-footer.php:37 arch/includes/class-civi-footer.php:37
 #: arch2/includes/class-civi-footer.php:37
@@ -838,6 +858,7 @@ msgstr ""
 #, php-format
 msgid "Add or remove %s"
 msgstr ""
+"%s ekle veya kaldır\n"
 
 #: templates/dashboard/employer/jobs.php:85
 #: arch/templates/dashboard/employer/jobs.php:85
@@ -859,12 +880,13 @@ msgstr ""
 #: arch2/templates/candidate/single/review.php:595
 msgid "Add Photos"
 msgstr ""
+"Fotoğraf Ekle\n"
 
 #: includes/google-review/class-google-review.php:111
 #: arch/includes/google-review/class-google-review.php:111
 #: arch2/includes/google-review/class-google-review.php:111
 msgid "Add Review"
-msgstr ""
+msgstr "Yorum Ekle"
 
 #: includes/admin/class-civi-rest-api.php:354
 #: includes/admin/class-civi-rest-api.php:412
@@ -873,7 +895,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-rest-api.php:354
 #: arch2/includes/admin/class-civi-rest-api.php:412
 msgid "Added"
-msgstr ""
+msgstr "Eklendi"
 
 #: templates/company/edit.php:99 templates/company/submit.php:87
 #: templates/jobs/edit.php:115 templates/jobs/submit.php:161
@@ -882,7 +904,7 @@ msgstr ""
 #: arch2/templates/company/edit.php:99 arch2/templates/company/submit.php:87
 #: arch2/templates/jobs/edit.php:115 arch2/templates/jobs/submit.php:161
 msgid "Additional"
-msgstr ""
+msgstr "Ek"
 
 #: templates/candidate/single/sidebar/info.php:90
 #: arch/templates/candidate/single/sidebar/info.php:90
@@ -891,7 +913,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:173
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:173
 msgid "Age"
-msgstr ""
+msgstr "Yaş"
 
 #: includes/civi-template-hooks.php:949
 #: arch/includes/civi-template-hooks.php:958
@@ -903,7 +925,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-vertical.php:410
 #: arch2/modules/elementor/includes/search-horizontal.php:350
 msgid "Ages"
-msgstr ""
+msgstr "Yaş"
 
 #: modules/elementor/includes/jobs-location.php:67
 #: modules/elementor/includes/search-vertical.php:254
@@ -946,7 +968,7 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:805
 #: arch2/includes/civi-template-hooks.php:805
 msgid "All Ages"
-msgstr ""
+msgstr "Tüm Yaşlar"
 
 #: templates/dashboard/employer/dashboard.php:291
 #: templates/dashboard/employer/applicants.php:88
@@ -961,7 +983,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/dashboard.php:171
 #: arch2/templates/dashboard/candidate/dashboard.php:177
 msgid "All Applied"
-msgstr ""
+msgstr "Tüm Başvurulanlar"
 
 #: includes/civi-template-hooks.php:497 includes/civi-template-hooks.php:773
 #: arch/includes/civi-template-hooks.php:496
@@ -969,7 +991,7 @@ msgstr ""
 #: arch2/includes/civi-template-hooks.php:496
 #: arch2/includes/civi-template-hooks.php:772
 msgid "All Categories"
-msgstr ""
+msgstr "Tüm Kategoriler"
 
 #: includes/admin/class-civi-admin-setup.php:1235
 #: arch/includes/admin/class-civi-admin-setup.php:1224
@@ -994,6 +1016,7 @@ msgstr ""
 #: arch2/includes/civi-template-hooks.php:783
 msgid "All Experience"
 msgstr ""
+"Tüm Deneyim\n"
 
 #: includes/civi-template-hooks.php:508
 #: arch/includes/civi-template-hooks.php:507
@@ -1005,23 +1028,23 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:736
 #: arch2/includes/civi-template-hooks.php:736
 msgid "All Gender"
-msgstr ""
+msgstr "Tüm Cinsiyetler"
 
 #: templates/dashboard/employer/applicants.php:94
 #: arch/templates/dashboard/employer/applicants.php:94
 #: arch2/templates/dashboard/employer/applicants.php:94
 msgid "All Jobs"
-msgstr ""
+msgstr "Tüm Projeler"
 
 #: templates/dashboard/employer/jobs.php:99
 #: arch/templates/dashboard/employer/jobs.php:99
 #: arch2/templates/dashboard/employer/jobs.php:99
 msgid "All jobs"
-msgstr ""
+msgstr "tüm projeler"
 
 #: arch/includes/civi-template-hooks.php:828
 msgid "All Languages"
-msgstr ""
+msgstr "Tüm Diller"
 
 #: includes/civi-template-hooks.php:223 includes/civi-template-hooks.php:471
 #: includes/civi-template-hooks.php:747
@@ -1054,13 +1077,13 @@ msgstr ""
 
 #: arch2/includes/civi-template-hooks.php:830
 msgid "All Physical Attributes"
-msgstr ""
+msgstr "Tüm Fiziksel Nitelikler"
 
 #: includes/civi-template-hooks.php:795
 #: arch/includes/civi-template-hooks.php:794
 #: arch2/includes/civi-template-hooks.php:794
 msgid "All Qualification"
-msgstr ""
+msgstr "Tüm Nitelikler"
 
 #: includes/civi-template-hooks.php:447 includes/civi-template-hooks.php:723
 #: arch/includes/civi-template-hooks.php:446
@@ -1068,7 +1091,7 @@ msgstr ""
 #: arch2/includes/civi-template-hooks.php:446
 #: arch2/includes/civi-template-hooks.php:722
 msgid "All Rating"
-msgstr ""
+msgstr "Tüm Puanlamalar"
 
 #: includes/civi-template-hooks.php:462
 #: arch/includes/civi-template-hooks.php:461
@@ -1080,7 +1103,7 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:817
 #: arch2/includes/civi-template-hooks.php:817
 msgid "All Skills"
-msgstr ""
+msgstr "Tüm Yetenekler"
 
 #: includes/admin/class-civi-admin-applicants.php:141
 #: includes/admin/class-civi-admin-meetings.php:131
@@ -1149,7 +1172,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/my-jobs.php:13
 #: arch2/templates/dashboard/candidate/my-jobs.php:13
 msgid "Applied"
-msgstr ""
+msgstr "Başvurulanlar"
 
 #: templates/dashboard/employer/dashboard.php:193
 #: templates/dashboard/employer/dashboard.php:283
@@ -1159,12 +1182,13 @@ msgstr ""
 #: arch2/templates/dashboard/employer/dashboard.php:283
 msgid "Applied date :"
 msgstr ""
+"Başvuru tarihi :\n"
 
 #: templates/dashboard/candidate/dashboard.php:40
 #: arch/templates/dashboard/candidate/dashboard.php:40
 #: arch2/templates/dashboard/candidate/dashboard.php:40
 msgid "Applied Jobs"
-msgstr ""
+msgstr "Başvurulan Projeler"
 
 #: templates/dashboard/employer/applicants.php:170
 #: templates/dashboard/employer/applicants.php:182
@@ -1179,7 +1203,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/jobs-performance.php:145
 #: arch2/templates/dashboard/employer/jobs-performance.php:157
 msgid "Applied:"
-msgstr ""
+msgstr "Başvurulan Projeler:"
 
 #: templates/dashboard/employer/jobs-performance.php:82
 #: arch/templates/dashboard/employer/jobs-performance.php:82
@@ -1193,7 +1217,7 @@ msgstr ""
 #: arch2/templates/jobs/apply/gmail.php:60
 #: arch2/templates/jobs/apply/internal.php:53
 msgid "Apply for this job"
-msgstr ""
+msgstr "Bu proje için başvur"
 
 #: templates/jobs/apply/gmail.php:60 templates/jobs/apply/internal.php:88
 #: arch/templates/jobs/apply/gmail.php:103
@@ -1201,19 +1225,19 @@ msgstr ""
 #: arch2/templates/jobs/apply/gmail.php:103
 #: arch2/templates/jobs/apply/internal.php:88
 msgid "Apply Jobs"
-msgstr ""
+msgstr "Projeye Başvur"
 
 #: templates/dashboard/candidate/my-jobs/my-invite.php:128
 #: arch/templates/dashboard/candidate/my-jobs/my-invite.php:128
 #: arch2/templates/dashboard/candidate/my-jobs/my-invite.php:128
 msgid "Apply Now"
-msgstr ""
+msgstr "Şimdi Başvurun"
 
 #: modules/elementor/includes/jobs-apply.php:130
 #: arch/modules/elementor/includes/jobs-apply.php:130
 #: arch2/modules/elementor/includes/jobs-apply.php:130
 msgid "Apply now"
-msgstr ""
+msgstr "Şimdi Başvurun"
 
 #: includes/admin/class-civi-admin-jobs.php:83
 #: includes/admin/class-civi-admin-company.php:112
@@ -1423,7 +1447,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/companies-category.php:407
 #: arch2/modules/elementor/includes/jobs.php:470
 msgid "Background"
-msgstr ""
+msgstr "Arka plan"
 
 #: modules/elementor/includes/jobs-category.php:176
 #: modules/elementor/includes/jobs-category.php:735
@@ -1436,16 +1460,19 @@ msgstr ""
 #: arch2/modules/elementor/includes/jobs-animation.php:84
 msgid "Background Color"
 msgstr ""
+"Arka plan rengi\n"
 
 #: templates/dashboard/candidate/profile.php:82
 #: templates/dashboard/candidate/profile.php:192
 #: templates/dashboard/candidate/profile/paymentinfo.php:23
 msgid "Bank and Payment Information"
 msgstr ""
+"Banka ve Ödeme Bilgileri\n"
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:44
 msgid "Bank Information"
 msgstr ""
+"Banka Bilgisi\n"
 
 #: templates/payment/payment-completed.php:44
 #: arch/templates/payment/payment-completed.php:44
@@ -1472,7 +1499,7 @@ msgstr[1] ""
 #: arch2/templates/dashboard/candidate/profile.php:64
 #: arch2/templates/dashboard/candidate/profile.php:179
 msgid "Basic Info"
-msgstr ""
+msgstr "Temel bilgiler"
 
 #: templates/company/edit.php:81 templates/company/submit.php:58
 #: templates/jobs/edit.php:91 templates/jobs/submit.php:126
@@ -1482,12 +1509,13 @@ msgstr ""
 #: arch2/templates/jobs/edit.php:91 arch2/templates/jobs/submit.php:126
 msgid "Basic info"
 msgstr ""
+"Temel bilgiler\n"
 
 #: templates/dashboard/candidate/profile/info/basic.php:94
 #: arch/templates/dashboard/candidate/profile/info/basic.php:46
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:46
 msgid "Basic Information"
-msgstr ""
+msgstr "Genel Bilgiler"
 
 #: modules/widgets/includes/products.php:33
 #: arch/modules/widgets/includes/products.php:33
@@ -1498,11 +1526,12 @@ msgstr ""
 #: templates/dashboard/candidate/profile/paymentinfo.php:62
 msgid "Billing Address"
 msgstr ""
+"Fatura Adresi\n"
 
 #: templates/candidate/single/about-me.php:142
 #: templates/dashboard/candidate/profile/info/basic.php:388
 msgid "Body Type"
-msgstr ""
+msgstr "Vücut Tipi"
 
 #: modules/elementor/includes/jobs-location.php:489
 #: modules/elementor/includes/jobs-category.php:585
@@ -1622,6 +1651,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/apply.php:27
 msgid "Call To Apply"
 msgstr ""
+"Başvurmak İçin Arayın\n"
 
 #: templates/jobs/submit/apply.php:45 templates/jobs/edit/apply.php:44
 #: arch/templates/jobs/submit/apply.php:45
@@ -1630,6 +1660,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/apply.php:44
 msgid "Call to apply"
 msgstr ""
+"Başvurmak İçin Arayın\n"
 
 #: includes/class-civi-template-loader.php:1302
 #: includes/class-civi-template-loader.php:1341
@@ -1681,7 +1712,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/social.php:70
 #: arch2/templates/dashboard/candidate/profile/info/social.php:102
 msgid "Candidate"
-msgstr ""
+msgstr "Yetenek"
 
 #: includes/civi-template-hooks.php:713
 #: arch/includes/civi-template-hooks.php:712
@@ -1693,7 +1724,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-vertical.php:406
 #: arch2/modules/elementor/includes/search-horizontal.php:346
 msgid "Candidate title or keywords"
-msgstr ""
+msgstr "Yetenek İsmi veya Anahtar Kelime"
 
 #: modules/elementor/includes/search-vertical.php:188
 #: modules/elementor/includes/search-horizontal.php:79
@@ -1708,7 +1739,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-horizontal.php:198
 #: arch2/templates/dashboard/employer/nav.php:6
 msgid "Candidates"
-msgstr ""
+msgstr "Yetenekler"
 
 #: templates/dashboard/candidate/dashboard.php:85
 #: templates/dashboard/employer/dashboard.php:90
@@ -1717,7 +1748,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/dashboard.php:85
 #: arch2/templates/dashboard/employer/dashboard.php:90
 msgid "candidates"
-msgstr ""
+msgstr "yetenek"
 
 #: includes/import/wp-importer/WXRImporter.php:681
 #: arch/includes/import/wp-importer/WXRImporter.php:681
@@ -1758,7 +1789,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/insights.php:110
 #: arch2/templates/jobs/single/sidebar/insights.php:110
 msgid "Career level"
-msgstr ""
+msgstr "Deneyim Seviyesi"
 
 #: includes/civi-template-hooks.php:621 includes/civi-template-hooks.php:934
 #: arch/includes/civi-template-hooks.php:620
@@ -1817,7 +1848,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:134
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:134
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriler"
 
 #: modules/elementor/includes/search-horizontal.php:300
 #: arch/modules/elementor/includes/search-horizontal.php:300
@@ -1916,7 +1947,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/settings.php:41
 #: arch2/templates/dashboard/employer/settings.php:91
 msgid "Change password"
-msgstr ""
+msgstr "Şifreyi Değiştir"
 
 #: includes/admin/class-civi-admin-setup.php:500
 #: arch/includes/admin/class-civi-admin-setup.php:500
@@ -1933,7 +1964,7 @@ msgstr ""
 #: templates/candidate/single/about-me.php:118
 #: templates/dashboard/candidate/profile/info/basic.php:358
 msgid "Chest Size (cm)"
-msgstr ""
+msgstr "Göğüs Ölçüsü (cm)"
 
 #: includes/base/controls/taxonomy.php:52
 #: arch/includes/base/controls/taxonomy.php:52
@@ -1953,6 +1984,7 @@ msgstr ""
 #: arch2/includes/base/fields/image/image.class.php:56
 msgid "Choose Image"
 msgstr ""
+"Resim Seç\n"
 
 #: templates/package/package.php:19 arch/templates/package/package.php:19
 #: arch2/templates/package/package.php:19
@@ -2003,6 +2035,7 @@ msgstr ""
 #: arch2/modules/widgets/includes/products.php:13
 msgid "Civi - Products"
 msgstr ""
+"Civi - Ürünler\n"
 
 #: includes/admin/class-civi-admin-setup.php:196
 #: includes/admin/class-civi-admin-setup.php:197
@@ -2020,7 +2053,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:152
 #: arch2/includes/admin/class-civi-admin-setup.php:153
 msgid "Civi Candidates"
-msgstr ""
+msgstr "Civi Yetenekler"
 
 #: includes/admin/class-civi-admin-setup.php:110
 #: includes/admin/class-civi-admin-setup.php:111
@@ -2092,7 +2125,7 @@ msgstr ""
 #: arch/modules/elementor/includes/search-horizontal.php:425
 #: arch2/modules/elementor/includes/search-horizontal.php:425
 msgid "Clear"
-msgstr ""
+msgstr "Temizle"
 
 #: includes/civi-template-hooks.php:295 includes/civi-template-hooks.php:556
 #: includes/civi-template-hooks.php:866
@@ -2124,7 +2157,7 @@ msgstr ""
 #: arch2/templates/candidate/archive/layout/layout-default.php:143
 #: arch2/templates/candidate/archive/layout/layout-default.php:181
 msgid "Clear All"
-msgstr ""
+msgstr "Tümünü Temizler"
 
 #: templates/company/submit/media.php:39 templates/company/edit/media.php:46
 #: templates/jobs/submit/thumbnail.php:24 templates/jobs/edit/thumbnail.php:21
@@ -2203,6 +2236,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/general.php:154
 msgid "Closing days"
 msgstr ""
+"Kapanış günleri\n"
 
 #: modules/widgets/includes/listing-taxonomy.php:28
 #: arch/modules/widgets/includes/listing-taxonomy.php:28
@@ -2316,7 +2350,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:36
 #: arch2/templates/dashboard/candidate/profile/experience.php:74
 msgid "Company"
-msgstr ""
+msgstr "Şirket"
 
 #: templates/company/single/review.php:158
 #: templates/company/single/review.php:423
@@ -2337,7 +2371,7 @@ msgstr ""
 #: arch2/templates/jobs/edit.php:146 arch2/templates/jobs/submit.php:180
 #: arch2/templates/jobs/submit.php:180
 msgid "Company Name"
-msgstr ""
+msgstr "Şirket İsmi"
 
 #: templates/company/edit.php:136 templates/company/submit.php:107
 #: templates/company/submit.php:107 arch/templates/company/edit.php:136
@@ -2352,7 +2386,7 @@ msgstr ""
 #: arch2/templates/company/submit/general.php:11
 #: arch2/templates/company/edit/general.php:14
 msgid "Company name"
-msgstr ""
+msgstr "Şirket İsmi"
 
 #: templates/company/submit/general.php:93
 #: templates/company/edit/general.php:98
@@ -2403,7 +2437,7 @@ msgstr ""
 #: arch2/templates/company/single/review.php:519
 #: arch2/templates/company/single/review.php:520
 msgid "Company trip once a year and Team building once a month"
-msgstr ""
+msgstr "Yılda bir kez şirket gezisi ve ayda bir Ekip oluşturma"
 
 #: templates/company/submit/general.php:28
 #: templates/company/edit/general.php:32
@@ -2455,6 +2489,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/settings.php:104
 msgid "Confirm new password"
 msgstr ""
+"Yeni şifreyi onaylayın\n"
 
 #: includes/class-civi-template-loader.php:1335
 #: arch/includes/class-civi-template-loader.php:1321
@@ -2825,7 +2860,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/settings.php:44
 #: arch2/templates/dashboard/employer/settings.php:94
 msgid "Current password"
-msgstr ""
+msgstr "Mevcut Şifre"
 
 #: templates/dashboard/candidate/profile/info/basic.php:176
 #: arch/templates/dashboard/candidate/profile/info/basic.php:128
@@ -2872,7 +2907,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/nav.php:8
 #: arch2/templates/dashboard/employer/nav.php:3
 msgid "Dashboard"
-msgstr ""
+msgstr "Kontrol Paneli"
 
 #: templates/payment/payment-completed.php:60
 #: includes/admin/class-civi-admin-messages.php:24
@@ -2911,7 +2946,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/my-jobs/my-apply.php:63
 #: arch2/templates/dashboard/candidate/my-jobs/my-apply.php:63
 msgid "Date Applied"
-msgstr ""
+msgstr "Başvurulan Tarih"
 
 #: templates/dashboard/candidate/profile/awards.php:36
 #: templates/dashboard/candidate/profile/awards.php:65
@@ -2926,7 +2961,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:167
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:167
 msgid "Date of Birth"
-msgstr ""
+msgstr "Doğum Tarihi"
 
 #: templates/jobs/single/insights.php:58
 #: arch/templates/jobs/single/insights.php:58
@@ -2947,13 +2982,13 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:317
 #: arch2/includes/civi-template-hooks.php:317
 msgid "Days"
-msgstr ""
+msgstr "Gün"
 
 #: includes/partials/package/class-civi-package.php:21
 #: arch/includes/partials/package/class-civi-package.php:21
 #: arch2/includes/partials/package/class-civi-package.php:21
 msgid "days"
-msgstr ""
+msgstr "gün"
 
 #: templates/jobs/content/layout-grid.php:123
 #: templates/jobs/content/layout-full.php:116
@@ -2969,7 +3004,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/apply.php:18
 #: arch2/templates/jobs/single/sidebar/apply.php:18
 msgid "days left to apply"
-msgstr ""
+msgstr "başvuru için kalan gün"
 
 #: templates/dashboard/candidate/settings.php:73
 #: templates/dashboard/candidate/settings.php:76
@@ -3031,55 +3066,55 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:1180
 msgctxt "Default page title (wizard)"
 msgid "Candidate Company"
-msgstr ""
+msgstr "Yetenek Şirketi"
 
 #: includes/admin/class-civi-admin-setup.php:1204
 #: arch/includes/admin/class-civi-admin-setup.php:1203
 #: arch2/includes/admin/class-civi-admin-setup.php:1204
 msgctxt "Default page title (wizard)"
 msgid "Candidate Meetings"
-msgstr ""
+msgstr "Yetenek Toplantıları"
 
 #: includes/admin/class-civi-admin-setup.php:1212
 #: arch2/includes/admin/class-civi-admin-setup.php:1212
 msgctxt "Default page title (wizard)"
 msgid "Candidate Membership"
-msgstr ""
+msgstr "Yetenek Üyeliği"
 
 #: includes/admin/class-civi-admin-setup.php:1188
 #: arch/includes/admin/class-civi-admin-setup.php:1187
 #: arch2/includes/admin/class-civi-admin-setup.php:1188
 msgctxt "Default page title (wizard)"
 msgid "Candidate Profile"
-msgstr ""
+msgstr "Yetenek Profili"
 
 #: includes/admin/class-civi-admin-setup.php:1172
 #: arch/includes/admin/class-civi-admin-setup.php:1171
 #: arch2/includes/admin/class-civi-admin-setup.php:1172
 msgctxt "Default page title (wizard)"
 msgid "Candidate Settings"
-msgstr ""
+msgstr "Yetenek Ayarları"
 
 #: includes/admin/class-civi-admin-setup.php:1084
 #: arch/includes/admin/class-civi-admin-setup.php:1083
 #: arch2/includes/admin/class-civi-admin-setup.php:1084
 msgctxt "Default page title (wizard)"
 msgid "Candidates For Employer"
-msgstr ""
+msgstr "İş Veren İçin Yetenekler"
 
 #: includes/admin/class-civi-admin-setup.php:1108
 #: arch/includes/admin/class-civi-admin-setup.php:1107
 #: arch2/includes/admin/class-civi-admin-setup.php:1108
 msgctxt "Default page title (wizard)"
 msgid "Company"
-msgstr ""
+msgstr "Şirket"
 
 #: includes/admin/class-civi-admin-setup.php:1164
 #: arch/includes/admin/class-civi-admin-setup.php:1163
 #: arch2/includes/admin/class-civi-admin-setup.php:1164
 msgctxt "Default page title (wizard)"
 msgid "Dashboard Candidate"
-msgstr ""
+msgstr "Yetenek Kontrol Paneli"
 
 #: includes/admin/class-civi-admin-setup.php:1043
 #: arch/includes/admin/class-civi-admin-setup.php:1042
@@ -3093,14 +3128,14 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:1059
 msgctxt "Default page title (wizard)"
 msgid "Jobs"
-msgstr ""
+msgstr "Projeler"
 
 #: includes/admin/class-civi-admin-setup.php:1051
 #: arch/includes/admin/class-civi-admin-setup.php:1050
 #: arch2/includes/admin/class-civi-admin-setup.php:1051
 msgctxt "Default page title (wizard)"
 msgid "Jobs Performance"
-msgstr ""
+msgstr "Proje Performansı"
 
 #: includes/admin/class-civi-admin-setup.php:1132
 #: arch/includes/admin/class-civi-admin-setup.php:1131
@@ -3128,14 +3163,14 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:1116
 msgctxt "Default page title (wizard)"
 msgid "New Company"
-msgstr ""
+msgstr "Yeni Şirker"
 
 #: includes/admin/class-civi-admin-setup.php:1067
 #: arch/includes/admin/class-civi-admin-setup.php:1066
 #: arch2/includes/admin/class-civi-admin-setup.php:1067
 msgctxt "Default page title (wizard)"
 msgid "New Jobs"
-msgstr ""
+msgstr "Yeni Proje"
 
 #: includes/admin/class-civi-admin-setup.php:1140
 #: arch/includes/admin/class-civi-admin-setup.php:1139
@@ -3305,7 +3340,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:144
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:144
 msgid "Description"
-msgstr ""
+msgstr "Hakkında"
 
 #: includes/admin/class-civi-parsers.php:43
 #: arch/includes/admin/class-civi-parsers.php:43
@@ -3478,7 +3513,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:116
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:116
 msgid "Email address"
-msgstr ""
+msgstr "E-Posta"
 
 #: includes/class-civi-user.php:40 arch/includes/class-civi-user.php:40
 #: arch2/includes/class-civi-user.php:40
@@ -3504,7 +3539,7 @@ msgstr ""
 #: arch/includes/base/fields/map/map.class.php:67
 #: arch2/includes/base/fields/map/map.class.php:67
 msgid "Enter an address..."
-msgstr ""
+msgstr "Bir adres girin..."
 
 #: templates/dashboard/candidate/profile/experience.php:37
 #: templates/dashboard/candidate/profile/experience.php:75
@@ -3513,7 +3548,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:37
 #: arch2/templates/dashboard/candidate/profile/experience.php:75
 msgid "Enter Company"
-msgstr ""
+msgstr "Şirket Girin"
 
 #: templates/dashboard/candidate/settings.php:55
 #: templates/dashboard/employer/settings.php:105
@@ -3523,6 +3558,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/settings.php:105
 msgid "Enter confirm password"
 msgstr ""
+"Onay şifresini girin\n"
 
 #: includes/class-civi-template-loader.php:1336
 #: arch/includes/class-civi-template-loader.php:1322
@@ -3537,7 +3573,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/settings.php:45
 #: arch2/templates/dashboard/employer/settings.php:95
 msgid "Enter current password"
-msgstr ""
+msgstr "Mevcut Şifreyi Giriniz"
 
 #: templates/jobs/submit/apply.php:36 templates/jobs/edit/apply.php:35
 #: arch/templates/jobs/submit/apply.php:36
@@ -3554,7 +3590,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:33
 #: arch2/templates/dashboard/candidate/profile/experience.php:71
 msgid "Enter Job Title"
-msgstr ""
+msgstr "Proje Başlığını Giriniz"
 
 #: templates/dashboard/candidate/profile/education.php:38
 #: templates/dashboard/candidate/profile/education.php:74
@@ -3572,13 +3608,13 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/settings.php:50
 #: arch2/templates/dashboard/employer/settings.php:100
 msgid "Enter new password"
-msgstr ""
+msgstr "Yeni Şifre Giriniz"
 
 #: includes/class-civi-template-loader.php:1297
 #: arch/includes/class-civi-template-loader.php:1283
 #: arch2/includes/class-civi-template-loader.php:1304
 msgid "Enter password"
-msgstr ""
+msgstr "Şifre Giriniz"
 
 #: templates/jobs/submit/apply.php:48 templates/jobs/edit/apply.php:47
 #: arch/templates/jobs/submit/apply.php:48
@@ -3613,6 +3649,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/video.php:17
 msgid "Enter url video"
 msgstr ""
+"URL videosunu girin\n"
 
 #. %1$s: Error code, %3$s: Error message, %2$s: Direct link of the media package.
 #: includes/import/class-importer.php:466
@@ -3763,7 +3800,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:26
 #: arch2/templates/dashboard/candidate/profile/experience.php:64
 msgid "Experience"
-msgstr ""
+msgstr "Deneyim"
 
 #: includes/civi-template-hooks.php:924 includes/civi-template-hooks.php:939
 #: arch/includes/civi-template-hooks.php:933
@@ -3772,12 +3809,14 @@ msgstr ""
 #: arch2/includes/civi-template-hooks.php:964
 msgid "Experience Level"
 msgstr ""
+"Deneyim Seviyesi\n"
 
 #: templates/candidate/single/sidebar/info.php:51
 #: arch/templates/candidate/single/sidebar/info.php:51
 #: arch2/templates/candidate/single/sidebar/info.php:51
 msgid "Experience time"
 msgstr ""
+"Deneyim Zamanı\n"
 
 #: includes/admin/class-civi-admin-jobs.php:86
 #: arch/includes/admin/class-civi-admin-jobs.php:86
@@ -3853,7 +3892,7 @@ msgstr ""
 #: templates/candidate/single/about-me.php:102
 #: templates/dashboard/candidate/profile/info/basic.php:337
 msgid "Eye Color"
-msgstr ""
+msgstr "Göz Rengi"
 
 #: templates/company/submit/social.php:28 templates/company/edit/social.php:35
 #: arch/templates/company/submit/social.php:28
@@ -3871,6 +3910,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/social.php:46
 msgid "facebook.com/candidate"
 msgstr ""
+"facebook.com/yetenek\n"
 
 #: templates/company/submit/social.php:30 templates/company/edit/social.php:38
 #: arch/templates/company/submit/social.php:30
@@ -4029,7 +4069,7 @@ msgstr ""
 #: arch/templates/jobs/archive/layout/layout-default.php:229
 #: arch2/templates/jobs/archive/layout/layout-default.php:229
 msgid "Featured"
-msgstr ""
+msgstr "Öne Çıkanlar"
 
 #: templates/payment/per-package.php:181 templates/package/package.php:143
 #: arch/templates/payment/per-package.php:181
@@ -4040,7 +4080,7 @@ msgstr ""
 #: arch/modules/elementor/includes/package.php:235
 #: arch2/modules/elementor/includes/package.php:235
 msgid "featured job"
-msgstr ""
+msgstr "Öne Çıkanlar Projeler"
 
 #: includes/admin/class-civi-admin-jobs.php:24
 #: includes/admin/class-civi-admin-package.php:35
@@ -4049,7 +4089,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-jobs.php:24
 #: arch2/includes/admin/class-civi-admin-package.php:35
 msgid "Featured?"
-msgstr ""
+msgstr "Öne Çıkanlar?"
 
 #: includes/civi-template-hooks.php:738 includes/civi-template-hooks.php:976
 #: arch/includes/civi-template-hooks.php:737
@@ -4068,7 +4108,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:194
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:191
 msgid "Female"
-msgstr ""
+msgstr "Kadın"
 
 #: includes/admin/class-civi-import.php:837
 #: arch/includes/admin/class-civi-import.php:837
@@ -4103,7 +4143,7 @@ msgstr ""
 #: arch2/templates/jobs/archive/layout/layout-default.php:195
 #: arch2/templates/candidate/archive/layout/layout-default.php:127
 msgid "Filter"
-msgstr ""
+msgstr "Filtreler"
 
 #: includes/base/controls/post-type.php:62
 #: arch/includes/base/controls/post-type.php:62
@@ -4124,6 +4164,7 @@ msgstr ""
 #: arch2/includes/base/fields/map/map.class.php:76
 msgid "Find Address"
 msgstr ""
+"Adresi bul\n"
 
 #: templates/dashboard/employer/applicants.php:105
 #: arch/templates/dashboard/employer/applicants.php:105
@@ -4153,7 +4194,7 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:191
 #: arch2/includes/civi-template-hooks.php:191
 msgid "Find Your Dream Jobs"
-msgstr ""
+msgstr "Hayalindeki Projeyi Bul"
 
 #: templates/dashboard/employer/settings.php:68
 #: arch/templates/dashboard/employer/settings.php:68
@@ -4165,7 +4206,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:104
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:105
 msgid "First name"
-msgstr ""
+msgstr "Adınız"
 
 #: includes/civi-template-hooks.php:448 includes/civi-template-hooks.php:724
 #: arch/includes/civi-template-hooks.php:447
@@ -4239,7 +4280,7 @@ msgstr ""
 #: arch/modules/elementor/includes/search-vertical.php:429
 #: arch2/modules/elementor/includes/search-vertical.php:429
 msgid "For Candidates"
-msgstr ""
+msgstr "Yetenekler İçin"
 
 #: modules/elementor/includes/search-vertical.php:426
 #: arch/modules/elementor/includes/search-vertical.php:426
@@ -4251,7 +4292,7 @@ msgstr ""
 #: arch/modules/elementor/includes/search-vertical.php:423
 #: arch2/modules/elementor/includes/search-vertical.php:423
 msgid "For Jobs"
-msgstr ""
+msgstr "Projeler İçin"
 
 #: includes/civi-template-hooks.php:628
 #: arch/includes/civi-template-hooks.php:627
@@ -4336,7 +4377,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:40
 #: arch2/templates/dashboard/candidate/profile/experience.php:78
 msgid "From"
-msgstr ""
+msgstr "Başlama Tarihi"
 
 #: templates/company/submit/location.php:42
 #: templates/company/edit/location.php:45 templates/jobs/submit/location.php:48
@@ -4353,11 +4394,11 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/location.php:44
 #: arch2/templates/dashboard/candidate/profile/info/location.php:44
 msgid "Full Address"
-msgstr ""
+msgstr "Açık adres"
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:29
 msgid "Full Name"
-msgstr ""
+msgstr "İsim Soyisim"
 
 #: templates/company/edit.php:93 templates/company/submit.php:70
 #: templates/jobs/edit.php:109 templates/jobs/submit.php:144
@@ -4369,7 +4410,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/gallery.php:12
 #: arch2/templates/dashboard/candidate/profile/info/gallery.php:12
 msgid "Gallery"
-msgstr ""
+msgstr "Galeri"
 
 #: includes/civi-template-hooks.php:995
 #: arch/includes/civi-template-hooks.php:993
@@ -4392,7 +4433,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:183
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:183
 msgid "Gender"
-msgstr ""
+msgstr "Cinsiyet"
 
 #: templates/company/single/sidebar/location.php:29
 #: templates/candidate/single/sidebar/location.php:30
@@ -4467,12 +4508,12 @@ msgstr ""
 #: templates/candidate/single/about-me.php:86
 #: templates/dashboard/candidate/profile/info/basic.php:317
 msgid "Hair Color"
-msgstr ""
+msgstr "Saç Rengi"
 
 #: templates/candidate/single/about-me.php:94
 #: templates/dashboard/candidate/profile/info/basic.php:327
 msgid "Hair Type"
-msgstr ""
+msgstr "Saç Tipi"
 
 #: modules/elementor/classes/posts-categories.php:13
 #: arch/modules/elementor/classes/posts-categories.php:13
@@ -4488,15 +4529,15 @@ msgstr ""
 
 #: templates/candidate/single/about-me.php:62
 msgid "Height"
-msgstr ""
+msgstr "Boy"
 
 #: templates/dashboard/candidate/profile/info/basic.php:286
 msgid "Height (m)"
-msgstr ""
+msgstr "Boy"
 
 #: includes/civi-template-hooks.php:961
 msgid "Heights"
-msgstr ""
+msgstr "Boy"
 
 #: templates/company/submit/general.php:78
 #: templates/company/edit/general.php:83
@@ -4562,12 +4603,13 @@ msgstr ""
 #: templates/candidate/single/about-me.php:134
 msgid "Hip Size(cm)"
 msgstr ""
+"Kalça Ölçüsü(cm)\n"
 
 #: includes/civi-template-hooks.php:692
 #: arch/includes/civi-template-hooks.php:691
 #: arch2/includes/civi-template-hooks.php:691
 msgid "Hire people for your business"
-msgstr ""
+msgstr "Projeniz İçin Yetenekleri Bulun"
 
 #: templates/jobs/single/insights.php:84
 #: arch/templates/jobs/single/insights.php:84
@@ -4576,7 +4618,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/insights.php:75
 #: arch2/templates/jobs/single/sidebar/insights.php:75
 msgid "Hiring location"
-msgstr ""
+msgstr "Konum"
 
 #: includes/admin/class-civi-admin-setup.php:557
 #: arch/includes/admin/class-civi-admin-setup.php:557
@@ -4645,7 +4687,7 @@ msgstr ""
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:57
 msgid "IBAN Number"
-msgstr ""
+msgstr "IBAN Numarası"
 
 #: modules/elementor/includes/jobs-category.php:147
 #: modules/elementor/includes/jobs-category.php:660
@@ -4674,6 +4716,8 @@ msgid ""
 "manually, the process is still relatively simple. Refer to the "
 "%sdocumentation%s for help."
 msgstr ""
+"Sihirbazı atlamak ve sayfaları ve kısa kodları kendiniz manuel olarak "
+"ayarlamak istiyorsanız, süreç hala basittir. Yardım için %sbelgelere%s bakın."
 
 #: includes/admin/class-civi-admin-meetings.php:19
 #: arch/includes/admin/class-civi-admin-meetings.php:19
@@ -4693,7 +4737,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/gallery.php:14
 #: arch2/templates/dashboard/candidate/profile/info/gallery.php:14
 msgid "Image"
-msgstr ""
+msgstr "Resim"
 
 #: modules/elementor/includes/jobs-location.php:461
 #: arch/modules/elementor/includes/jobs-location.php:461
@@ -4706,6 +4750,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/jobs-location.php:443
 msgid "Image Size"
 msgstr ""
+"Görüntü Boyutu\n"
 
 #: includes/partials/company/class-civi-company.php:314
 #: includes/partials/company/class-civi-company.php:396
@@ -4724,6 +4769,7 @@ msgstr ""
 #: arch2/includes/partials/candidate/class-civi-candidate.php:710
 msgid "Image upload failed!"
 msgstr ""
+"Resim yükleme başarısız oldu!\n"
 
 #: includes/admin/class-civi-admin-setup.php:43
 #: includes/admin/class-civi-admin-setup.php:44
@@ -4893,7 +4939,7 @@ msgstr ""
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:51
 msgid "Individual account"
-msgstr ""
+msgstr "Bireysel Hesap"
 
 #: modules/elementor/includes/jobs-location.php:399
 #: modules/elementor/includes/jobs-category.php:489
@@ -4926,13 +4972,13 @@ msgstr ""
 #: arch2/templates/company/single/sidebar/info.php:34
 #: arch2/templates/candidate/single/sidebar/info.php:40
 msgid "Information"
-msgstr ""
+msgstr "Bilgi"
 
 #: includes/admin/class-civi-admin-setup.php:654
 #: arch/includes/admin/class-civi-admin-setup.php:654
 #: arch2/includes/admin/class-civi-admin-setup.php:654
 msgid "Information about the web server that is currently hosting your site."
-msgstr ""
+msgstr "Şu anda sitenizi barındıran web sunucusu hakkında bilgi."
 
 #: includes/import/views/popup-download-form.php:18
 #: arch/includes/import/views/popup-download-form.php:18
@@ -4963,6 +5009,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/social.php:55
 msgid "instagram.com/candidate"
 msgstr ""
+"facebook.com/yetenek\n"
 
 #: templates/company/submit/social.php:37 templates/company/edit/social.php:46
 #: arch/templates/company/submit/social.php:37
@@ -4996,7 +5043,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/apply.php:16
 #: arch2/templates/jobs/single/sidebar/apply.php:16
 msgid "Interested in this job?"
-msgstr ""
+msgstr "Bu proje ile ilgileniyor musunuz?"
 
 #: templates/jobs/submit/apply.php:25 templates/jobs/edit/apply.php:24
 #: arch/templates/jobs/submit/apply.php:25
@@ -5005,6 +5052,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/apply.php:24
 msgid "Internal Apply"
 msgstr ""
+"Dahili Başvuru\n"
 
 #: templates/dashboard/candidate/dashboard.php:71
 #: arch/templates/dashboard/candidate/dashboard.php:68
@@ -5023,6 +5071,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/video.php:8
 msgid "Introduction video Url"
 msgstr ""
+"Tanıtım videosu URL'si\n"
 
 #: includes/import/wp-importer/WXRImporter.php:578
 #: arch/includes/import/wp-importer/WXRImporter.php:578
@@ -5097,6 +5146,7 @@ msgstr ""
 #: arch2/templates/jobs/invite.php:31
 msgid "Invite to apply job"
 msgstr ""
+"İş başvurusu için davet\n"
 
 #: includes/admin/class-civi-admin-setup.php:145
 #: includes/admin/class-civi-admin-setup.php:146
@@ -5137,7 +5187,7 @@ msgstr ""
 #: includes/class-civi-user.php:152 arch/includes/class-civi-user.php:152
 #: arch2/includes/class-civi-user.php:152
 msgid "Job Alert"
-msgstr ""
+msgstr "Proje Uyarısı"
 
 #: includes/admin/class-civi-admin-setup.php:103
 #: includes/admin/class-civi-admin-setup.php:104
@@ -5149,7 +5199,7 @@ msgstr ""
 #: arch/modules/elementor/includes/job-alerts.php:30
 #: arch2/modules/elementor/includes/job-alerts.php:30
 msgid "Job Alerts"
-msgstr ""
+msgstr "Proje Uyarıları"
 
 #: templates/jobs/submit/apply.php:33 templates/jobs/edit/apply.php:32
 #: arch/templates/jobs/submit/apply.php:33
@@ -5157,7 +5207,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/apply.php:33
 #: arch2/templates/jobs/edit/apply.php:32
 msgid "Job apply email"
-msgstr ""
+msgstr "Proje başvurusu e-postası"
 
 #: templates/jobs/submit/apply.php:39 templates/jobs/edit/apply.php:38
 #: arch/templates/jobs/submit/apply.php:39
@@ -5214,7 +5264,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/insights.php:39
 #: arch2/templates/jobs/single/sidebar/insights.php:39
 msgid "Job role insights"
-msgstr ""
+msgstr "Proje Detayları"
 
 #: templates/dashboard/candidate/profile/experience.php:32
 #: templates/dashboard/candidate/profile/experience.php:70
@@ -5232,7 +5282,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/my-jobs/my-invite.php:65
 #: arch2/templates/dashboard/candidate/my-jobs/my-wishlist.php:64
 msgid "Job Title"
-msgstr ""
+msgstr "Proje Başlığı"
 
 #: templates/jobs/submit/general.php:19 templates/jobs/edit/general.php:12
 #: arch/templates/jobs/submit/general.php:18
@@ -5240,7 +5290,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/general.php:18
 #: arch2/templates/jobs/edit/general.php:11
 msgid "Job title"
-msgstr ""
+msgstr "Proje Başlığı"
 
 #: templates/jobs/submit/general.php:37 templates/jobs/edit/general.php:30
 #: arch/templates/jobs/submit/general.php:36
@@ -5255,6 +5305,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/jobs-performance.php:71
 msgid "Job views"
 msgstr ""
+"Proje görünümleri\n"
 
 #: includes/admin/class-civi-admin-setup.php:89
 #: includes/admin/class-civi-admin-setup.php:90
@@ -5281,7 +5332,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/company.php:57
 #: arch2/templates/jobs/single/sidebar/company.php:57
 msgid "Jobs"
-msgstr ""
+msgstr "Projeler"
 
 #: templates/dashboard/candidate/dashboard.php:44
 #: templates/dashboard/employer/dashboard.php:51
@@ -5290,7 +5341,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/dashboard.php:44
 #: arch2/templates/dashboard/employer/dashboard.php:51
 msgid "jobs"
-msgstr ""
+msgstr "projeler"
 
 #: modules/elementor/includes/jobs-animation.php:23
 #: arch/modules/elementor/includes/jobs-animation.php:23
@@ -5303,6 +5354,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/dashboard.php:116
 msgid "Jobs Applied Recently"
 msgstr ""
+"Son Başvurulan İşler\n"
 
 #: modules/elementor/includes/jobs-apply.php:23
 #: arch/modules/elementor/includes/jobs-apply.php:23
@@ -5346,7 +5398,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/general.php:26
 #: arch2/templates/jobs/edit/general.php:19
 msgid "Jobs Categories"
-msgstr ""
+msgstr "Proje Kategorileri"
 
 #: modules/elementor/includes/jobs-category.php:32
 #: arch/modules/elementor/includes/jobs-category.php:32
@@ -5358,7 +5410,7 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:349
 #: arch2/includes/civi-template-hooks.php:349
 msgid "Jobs Experience"
-msgstr ""
+msgstr "İş Deneyimi"
 
 #: includes/civi-template-hooks.php:329
 #: arch/includes/civi-template-hooks.php:329
@@ -5367,7 +5419,7 @@ msgstr ""
 #: arch/modules/elementor/includes/jobs-location.php:32
 #: arch2/modules/elementor/includes/jobs-location.php:32
 msgid "Jobs Location"
-msgstr ""
+msgstr "Proje Konumu"
 
 #: templates/jobs/archive/layout/layout-default.php:448
 #: arch/templates/jobs/archive/layout/layout-default.php:448
@@ -5379,7 +5431,7 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:339
 #: arch2/includes/civi-template-hooks.php:339
 msgid "Jobs Skills"
-msgstr ""
+msgstr "Yetenek Kategorileri"
 
 #: includes/admin/class-civi-admin-applicants.php:21
 #: includes/admin/class-civi-admin-jobs.php:21
@@ -5391,7 +5443,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-jobs.php:21
 #: arch2/includes/admin/class-civi-admin-meetings.php:21
 msgid "Jobs Title"
-msgstr ""
+msgstr "İş Başlığı"
 
 #: includes/civi-template-hooks.php:213
 #: arch/includes/civi-template-hooks.php:213
@@ -5403,13 +5455,13 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-vertical.php:385
 #: arch2/modules/elementor/includes/search-horizontal.php:325
 msgid "Jobs title or keywords"
-msgstr ""
+msgstr "Proje başlığı veya anahtar kelime"
 
 #: includes/civi-template-hooks.php:345
 #: arch/includes/civi-template-hooks.php:344
 #: arch2/includes/civi-template-hooks.php:344
 msgid "Jobs Type"
-msgstr ""
+msgstr "Çalışma Şekli"
 
 #: includes/admin/class-civi-admin-setup.php:614
 #: arch/includes/admin/class-civi-admin-setup.php:614
@@ -5427,7 +5479,7 @@ msgstr ""
 #: arch/templates/candidate/single/sidebar/info.php:64
 #: arch/templates/dashboard/candidate/profile/info/basic.php:204
 msgid "Languages"
-msgstr ""
+msgstr "Diller"
 
 #: templates/dashboard/employer/settings.php:72
 #: arch/templates/dashboard/employer/settings.php:72
@@ -5439,7 +5491,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:110
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:111
 msgid "Last name"
-msgstr ""
+msgstr "Soyadınız"
 
 #: includes/admin/class-civi-admin-setup.php:400
 #: arch/includes/admin/class-civi-admin-setup.php:400
@@ -5674,6 +5726,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/social.php:37
 msgid "linkedin.com/candidate"
 msgstr ""
+"linkedin.com/yetenek\n"
 
 #: templates/company/submit/social.php:23 templates/company/edit/social.php:30
 #: arch/templates/company/submit/social.php:23
@@ -5711,18 +5764,18 @@ msgstr ""
 #: arch2/includes/partials/company/class-civi-company.php:167
 #: arch2/includes/partials/invoice/class-civi-invoice.php:156
 msgid "Listing with Featured"
-msgstr ""
+msgstr "Öne Çıkan Listeleme"
 
 #: templates/global/pagination.php:121 arch/templates/global/pagination.php:121
 #: arch2/templates/global/pagination.php:121
 msgid "Load More"
-msgstr ""
+msgstr "Daha Fazla Yükle"
 
 #: modules/elementor/includes/jobs.php:201
 #: arch/modules/elementor/includes/jobs.php:201
 #: arch2/modules/elementor/includes/jobs.php:201
 msgid "Loadmore"
-msgstr ""
+msgstr "Daha Fazla Yükle"
 
 #: includes/civi-template-hooks.php:617
 #: arch/includes/civi-template-hooks.php:616
@@ -5779,19 +5832,19 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/location.php:30
 #: arch2/templates/dashboard/candidate/profile/info/location.php:33
 msgid "Location"
-msgstr ""
+msgstr "Konum"
 
 #: modules/elementor/includes/jobs-location.php:170
 #: arch/modules/elementor/includes/jobs-location.php:170
 #: arch2/modules/elementor/includes/jobs-location.php:170
 msgid "Location #1"
-msgstr ""
+msgstr "Konum #1"
 
 #: modules/elementor/includes/jobs-location.php:173
 #: arch/modules/elementor/includes/jobs-location.php:173
 #: arch2/modules/elementor/includes/jobs-location.php:173
 msgid "Location #2"
-msgstr ""
+msgstr "Konum #2"
 
 #: modules/elementor/includes/jobs-location.php:176
 #: modules/elementor/includes/jobs-location.php:179
@@ -5800,13 +5853,13 @@ msgstr ""
 #: arch2/modules/elementor/includes/jobs-location.php:176
 #: arch2/modules/elementor/includes/jobs-location.php:179
 msgid "Location #3"
-msgstr ""
+msgstr "Konum #3"
 
 #: templates/company/edit.php:158 templates/company/submit.php:129
 #: arch/templates/company/edit.php:158 arch/templates/company/submit.php:129
 #: arch2/templates/company/edit.php:158 arch2/templates/company/submit.php:129
 msgid "Location has been verified"
-msgstr ""
+msgstr "Konum doğrulandı"
 
 #: templates/company/edit.php:158 templates/company/edit.php:160
 #: templates/company/submit.php:129 templates/company/submit.php:131
@@ -5816,7 +5869,7 @@ msgstr ""
 #: arch2/templates/company/submit.php:129
 #: arch2/templates/company/submit.php:131
 msgid "Location not been verified"
-msgstr ""
+msgstr "Konum doğrulanmadı"
 
 #: includes/civi-template-hooks.php:929
 #: arch/includes/civi-template-hooks.php:938
@@ -5840,7 +5893,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-horizontal.php:339
 #: arch2/modules/elementor/includes/search-horizontal.php:348
 msgid "Locations"
-msgstr ""
+msgstr "Konum"
 
 #: templates/company/single/review.php:387
 #: templates/candidate/single/review.php:388
@@ -5849,25 +5902,25 @@ msgstr ""
 #: arch2/templates/company/single/review.php:387
 #: arch2/templates/candidate/single/review.php:388
 msgid "Login"
-msgstr ""
+msgstr "Giriş"
 
 #: includes/admin/class-civi-rest-api.php:438
 #: arch/includes/admin/class-civi-rest-api.php:438
 #: arch2/includes/admin/class-civi-rest-api.php:438
 msgid "Login failed"
-msgstr ""
+msgstr "Giriş Başarısız"
 
 #: templates/global/access-denied.php:25
 #: arch/templates/global/access-denied.php:25
 #: arch2/templates/global/access-denied.php:25
 msgid "Login Here"
-msgstr ""
+msgstr "Buradan Girin"
 
 #: includes/admin/class-civi-rest-api.php:452
 #: arch/includes/admin/class-civi-rest-api.php:452
 #: arch2/includes/admin/class-civi-rest-api.php:452
 msgid "Login successful"
-msgstr ""
+msgstr "Giriş Başarılı"
 
 #: includes/admin/class-civi-admin-jobs.php:20
 #: includes/admin/class-civi-admin-company.php:19
@@ -5881,7 +5934,7 @@ msgstr ""
 #: arch2/templates/company/submit/media.php:13
 #: arch2/templates/company/edit/media.php:20
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: templates/dashboard/candidate/nav.php:16
 #: templates/dashboard/employer/nav.php:12
@@ -5890,7 +5943,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/nav.php:16
 #: arch2/templates/dashboard/employer/nav.php:12
 msgid "Logout"
-msgstr ""
+msgstr "Çıkış"
 
 #: templates/company/submit/location.php:59
 #: templates/company/edit/location.php:63 templates/jobs/submit/location.php:66
@@ -5907,7 +5960,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/location.php:61
 #: arch2/templates/dashboard/candidate/profile/info/location.php:62
 msgid "Longtitude"
-msgstr ""
+msgstr "Boylam"
 
 #: includes/admin/class-civi-admin-setup.php:1237
 #: arch/includes/admin/class-civi-admin-setup.php:1226
@@ -5916,6 +5969,8 @@ msgid ""
 "Looks like you're all set to start using the plugin. In case you're "
 "wondering where to go next:"
 msgstr ""
+"Görünüşe göre eklentiyi kullanmaya başlamaya hazırsınız. Bundan sonra nereye "
+"gideceğinizi merak ediyorsanız:"
 
 #: includes/civi-template-hooks.php:739 includes/civi-template-hooks.php:977
 #: arch/includes/civi-template-hooks.php:738
@@ -5934,13 +5989,13 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:197
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:194
 msgid "Male"
-msgstr ""
+msgstr "Erkek"
 
 #: templates/dashboard/employer/jobs.php:93
 #: arch/templates/dashboard/employer/jobs.php:93
 #: arch2/templates/dashboard/employer/jobs.php:93
 msgid "Manage jobs"
-msgstr ""
+msgstr "Projeleri Yönet"
 
 #: templates/company/archive/layout/layout-default.php:164
 #: templates/jobs/archive/layout/layout-default.php:233
@@ -5952,12 +6007,12 @@ msgstr ""
 #: arch2/templates/jobs/archive/layout/layout-default.php:233
 #: arch2/templates/candidate/archive/layout/layout-default.php:159
 msgid "Map"
-msgstr ""
+msgstr "Harita"
 
 #: templates/jobs/single/map.php:19 arch/templates/jobs/single/map.php:19
 #: arch2/templates/jobs/single/map.php:19
 msgid "Maps"
-msgstr ""
+msgstr "Haritalar"
 
 #: templates/company/submit/location.php:40
 #: templates/company/edit/location.php:42 templates/jobs/submit/location.php:44
@@ -5974,7 +6029,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/location.php:41
 #: arch2/templates/dashboard/candidate/profile/info/location.php:41
 msgid "Maps location"
-msgstr ""
+msgstr "Harita Konumu"
 
 #: templates/dashboard/employer/jobs.php:252
 #: templates/dashboard/employer/jobs.php:263
@@ -5989,7 +6044,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/jobs.php:281
 #: arch2/templates/dashboard/employer/jobs.php:287
 msgid "Mark featured"
-msgstr ""
+msgstr "Öne çıkan olarak işaretle"
 
 #: templates/dashboard/employer/jobs.php:254
 #: templates/dashboard/employer/jobs.php:267
@@ -6004,13 +6059,13 @@ msgstr ""
 #: arch2/templates/dashboard/employer/jobs.php:283
 #: arch2/templates/dashboard/employer/jobs.php:289
 msgid "Mark Filled"
-msgstr ""
+msgstr "Dolu Olarak İşaretle"
 
 #: includes/admin/class-civi-admin-setup.php:717
 #: arch/includes/admin/class-civi-admin-setup.php:717
 #: arch2/includes/admin/class-civi-admin-setup.php:717
 msgid "Max Upload Size"
-msgstr ""
+msgstr "Maksimum Yükleme Boyutu"
 
 #: modules/elementor/includes/jobs-animation.php:163
 #: modules/elementor/includes/search-vertical.php:239
@@ -6022,7 +6077,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-vertical.php:239
 #: arch2/modules/elementor/includes/search-horizontal.php:249
 msgid "Max Width"
-msgstr ""
+msgstr "Maksimum Genişlik"
 
 #: templates/jobs/submit/salary.php:50 templates/jobs/submit/salary.php:61
 #: templates/jobs/edit/salary.php:52 templates/jobs/edit/salary.php:67
@@ -6037,7 +6092,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/salary.php:67
 #: arch2/templates/jobs/edit/salary.php:107
 msgid "Maximum"
-msgstr ""
+msgstr "Maksimum"
 
 #: templates/jobs/submit/salary.php:27 templates/jobs/edit/salary.php:26
 #: arch/templates/jobs/submit/salary.php:27
@@ -6045,7 +6100,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/salary.php:27
 #: arch2/templates/jobs/edit/salary.php:26
 msgid "Maximum amount"
-msgstr ""
+msgstr "En yüksek miktar"
 
 #: templates/company/submit/gallery.php:26
 #: templates/company/submit/media.php:28 templates/company/edit/gallery.php:53
@@ -6071,49 +6126,53 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/gallery.php:56
 #, php-format
 msgid "Maximum file size: %s."
-msgstr ""
+msgstr "Maximum dosya boyutu: %s."
 
 #: templates/jobs/edit.php:155 templates/jobs/submit.php:189
 #: arch/templates/jobs/edit.php:155 arch/templates/jobs/submit.php:189
 #: arch2/templates/jobs/edit.php:155 arch2/templates/jobs/submit.php:189
 msgid "Maximum:"
-msgstr ""
+msgstr "Maksimum:"
 
 #: templates/company/edit.php:84 templates/company/submit.php:61
 #: arch/templates/company/edit.php:84 arch/templates/company/submit.php:61
 #: arch2/templates/company/edit.php:84 arch2/templates/company/submit.php:61
 msgid "Media"
-msgstr ""
+msgstr "Medya"
 
 #: includes/import/class-exporter.php:128
 #: arch/includes/import/class-exporter.php:128
 #: arch2/includes/import/class-exporter.php:128
 msgid "Media Package"
 msgstr ""
+"Medya Paketi\n"
 
 #: includes/import/class-importer.php:271
 #: arch/includes/import/class-importer.php:271
 #: arch2/includes/import/class-importer.php:271
 msgid "Media Package (on cloud)"
 msgstr ""
+"Medya Paketi (bulutta)\n"
 
 #: includes/import/class-importer.php:269
 #: arch/includes/import/class-importer.php:269
 #: arch2/includes/import/class-importer.php:269
 msgid "Media Package (on local)"
 msgstr ""
+"Medya Paketi (yerelde)\n"
 
 #: includes/admin/class-civi-admin-meetings.php:24
 #: arch/includes/admin/class-civi-admin-meetings.php:24
 #: arch2/includes/admin/class-civi-admin-meetings.php:24
 msgid "Meeting Date"
 msgstr ""
+"Buluşma Tarihi\n"
 
 #: includes/admin/class-civi-admin-meetings.php:23
 #: arch/includes/admin/class-civi-admin-meetings.php:23
 #: arch2/includes/admin/class-civi-admin-meetings.php:23
 msgid "Meeting with"
-msgstr ""
+msgstr "ile buluşmak"
 
 #: templates/dashboard/candidate/meetings.php:102
 #: templates/dashboard/employer/meetings.php:110
@@ -6134,13 +6193,13 @@ msgstr ""
 #: arch2/includes/partials/meetings/class-civi-meetings.php:429
 #: arch2/includes/partials/meetings/class-civi-meetings.php:591
 msgid "Meeting with:"
-msgstr ""
+msgstr "ile buluşmak:"
 
 #: templates/dashboard/employer/dashboard.php:72
 #: arch/templates/dashboard/employer/dashboard.php:72
 #: arch2/templates/dashboard/employer/dashboard.php:72
 msgid "MEETINGS"
-msgstr ""
+msgstr "TOPLANTILAR"
 
 #: includes/admin/class-civi-admin-setup.php:189
 #: includes/admin/class-civi-admin-setup.php:190
@@ -6171,12 +6230,14 @@ msgstr ""
 #: arch2/templates/dashboard/employer/nav.php:9
 msgid "Meetings"
 msgstr ""
+"Toplantılar\n"
 
 #: templates/dashboard/employer/dashboard.php:77
 #: arch/templates/dashboard/employer/dashboard.php:77
 #: arch2/templates/dashboard/employer/dashboard.php:77
 msgid "meetings"
 msgstr ""
+"toplantılar\n"
 
 #: includes/admin/class-civi-admin-setup.php:207
 #: includes/admin/class-civi-admin-setup.php:208
@@ -6185,31 +6246,32 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:207
 #: arch2/includes/admin/class-civi-admin-setup.php:208
 msgid "Mega Menu"
-msgstr ""
+msgstr "Mega Menü"
 
 #: templates/dashboard/candidate/membership.php:8
 #: arch2/templates/dashboard/candidate/membership.php:8
 msgid "Membership Details"
-msgstr ""
+msgstr "Üyelik Detayları"
 
 #: includes/partials/payment/class-civi-payment.php:161
 #: arch/includes/partials/payment/class-civi-payment.php:161
 #: arch2/includes/partials/payment/class-civi-payment.php:161
 msgid "Membership payment on "
 msgstr ""
+"Üyelik ödemesi\n"
 
 #: includes/admin/class-civi-import.php:772
 #: arch/includes/admin/class-civi-import.php:772
 #: arch2/includes/admin/class-civi-import.php:772
 #, php-format
 msgid "Menu item skipped due to invalid menu slug: %s"
-msgstr ""
+msgstr "Geçersiz menü bilgisi nedeniyle menü öğesi atlandı: %s"
 
 #: includes/admin/class-civi-import.php:765
 #: arch/includes/admin/class-civi-import.php:765
 #: arch2/includes/admin/class-civi-import.php:765
 msgid "Menu item skipped due to missing menu slug"
-msgstr ""
+msgstr "Eksik menü bilgisi nedeniyle menü öğesi atlandı"
 
 #: includes/import/class-exporter.php:113
 #: includes/import/class-importer.php:294
@@ -6218,14 +6280,14 @@ msgstr ""
 #: arch2/includes/import/class-exporter.php:113
 #: arch2/includes/import/class-importer.php:294
 msgid "Menus"
-msgstr ""
+msgstr "Menüler"
 
 #: templates/jobs/apply/internal.php:56 arch/templates/jobs/apply/gmail.php:71
 #: arch/templates/jobs/apply/internal.php:56
 #: arch2/templates/jobs/apply/gmail.php:71
 #: arch2/templates/jobs/apply/internal.php:56
 msgid "Message"
-msgstr ""
+msgstr "İleti"
 
 #: includes/admin/class-civi-admin-setup.php:173
 #: includes/admin/class-civi-admin-setup.php:174
@@ -6246,14 +6308,14 @@ msgstr ""
 #: arch2/templates/dashboard/employer/nav.php:8
 #: arch2/templates/dashboard/messages/messages.php:19
 msgid "Messages"
-msgstr ""
+msgstr "İletiler"
 
 #: includes/import/wp-importer/WXRImporter.php:1883
 #: arch/includes/import/wp-importer/WXRImporter.php:1883
 #: arch2/includes/import/wp-importer/WXRImporter.php:1883
 #, php-format
 msgid "Meta for term_id %d : %s => %s ; successfully added!"
-msgstr ""
+msgstr "term_id %d için Meta: %s => %s ; Başarıyla Eklendi!"
 
 #: templates/jobs/submit/salary.php:45 templates/jobs/submit/salary.php:56
 #: templates/jobs/edit/salary.php:45 templates/jobs/edit/salary.php:60
@@ -6266,19 +6328,19 @@ msgstr ""
 #: arch2/templates/jobs/edit/salary.php:45
 #: arch2/templates/jobs/edit/salary.php:60
 msgid "Minimum"
-msgstr ""
+msgstr "Asgari"
 
 #: templates/jobs/edit.php:155 templates/jobs/submit.php:189
 #: arch/templates/jobs/edit.php:155 arch/templates/jobs/submit.php:189
 #: arch2/templates/jobs/edit.php:155 arch2/templates/jobs/submit.php:189
 msgid "Minimum:"
-msgstr ""
+msgstr "Asgari:"
 
 #: templates/jobs/meeting/reschedule.php:39
 #: arch/templates/jobs/meeting/reschedule.php:39
 #: arch2/templates/jobs/meeting/reschedule.php:39
 msgid "Minute"
-msgstr ""
+msgstr "Dakika"
 
 #: templates/dashboard/candidate/meetings.php:115
 #: templates/dashboard/employer/meetings.php:122
@@ -6299,13 +6361,13 @@ msgstr ""
 #: arch2/includes/partials/meetings/class-civi-meetings.php:439
 #: arch2/includes/partials/meetings/class-civi-meetings.php:604
 msgid "Minutes"
-msgstr ""
+msgstr "Dakikalar"
 
 #: includes/admin/class-civi-admin-invoice.php:37
 #: arch/includes/admin/class-civi-admin-invoice.php:37
 #: arch2/includes/admin/class-civi-admin-invoice.php:37
 msgid "Money"
-msgstr ""
+msgstr "Para"
 
 #: includes/civi-template-hooks.php:319
 #: arch/includes/civi-template-hooks.php:319
@@ -6365,13 +6427,13 @@ msgstr ""
 #: arch/templates/dashboard/candidate/my-jobs.php:9
 #: arch2/templates/dashboard/candidate/my-jobs.php:9
 msgid "My Jobs"
-msgstr ""
+msgstr "Başvurularım"
 
 #: templates/dashboard/candidate/nav.php:10
 #: arch/templates/dashboard/candidate/nav.php:9
 #: arch2/templates/dashboard/candidate/nav.php:10
 msgid "My jobs"
-msgstr ""
+msgstr "Başvurularım"
 
 #: templates/dashboard/employer/user-package.php:48
 #: arch/templates/dashboard/employer/user-package.php:48
@@ -6504,12 +6566,12 @@ msgstr ""
 #: templates/dashboard/candidate/profile/info/basic.php:249
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:201
 msgid "Native Language"
-msgstr ""
+msgstr "Ana Dil"
 
 #: templates/candidate/single/sidebar/info.php:64
 #: arch2/templates/candidate/single/sidebar/info.php:64
 msgid "Native Langıage"
-msgstr ""
+msgstr "Ana Dil"
 
 #: modules/elementor/includes/search-vertical.php:304
 #: arch/modules/elementor/includes/search-vertical.php:304
@@ -6610,7 +6672,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/settings.php:49
 #: arch2/templates/dashboard/employer/settings.php:99
 msgid "New password"
-msgstr ""
+msgstr "Yeni Şifre"
 
 #: modules/widgets/includes/products.php:30
 #: modules/elementor/includes/companies.php:234
@@ -6664,7 +6726,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/candidates/candidates-invite.php:76
 #: arch2/templates/dashboard/employer/candidates/my-follow.php:54
 msgid "Newest"
-msgstr ""
+msgstr "En yeni"
 
 #: includes/admin/class-civi-profile.php:38
 #: arch/includes/admin/class-civi-profile.php:38
@@ -6716,12 +6778,13 @@ msgstr ""
 #: arch2/templates/dashboard/employer/candidates/my-follow.php:17
 msgid "No candidate found"
 msgstr ""
+"Yetenek bulunamadı\n"
 
 #: templates/dashboard/employer/candidates/candidates-follow.php:16
 #: arch/templates/dashboard/employer/candidates/candidates-follow.php:16
 #: arch2/templates/dashboard/employer/candidates/candidates-follow.php:16
 msgid "No candidates found"
-msgstr ""
+msgstr "Yetenek bulunamadı"
 
 #: templates/company/edit.php:34 templates/company/submit.php:16
 #: arch/templates/company/edit.php:34 arch/templates/company/submit.php:16
@@ -6737,6 +6800,7 @@ msgstr ""
 #: arch2/templates/company/archive/layout/layout-default.php:15
 msgid "No company found"
 msgstr ""
+"Şirket bulunamadı\n"
 
 #: includes/import/wp-importer/WXRImporter.php:2250
 #: arch/includes/import/wp-importer/WXRImporter.php:2250
@@ -6762,7 +6826,7 @@ msgstr ""
 #: arch/includes/base/fields/image/image.class.php:55
 #: arch2/includes/base/fields/image/image.class.php:55
 msgid "No image"
-msgstr ""
+msgstr "Görüntü Yok"
 
 #: includes/import/class-importer.php:371
 #: arch/includes/import/class-importer.php:371
@@ -6846,16 +6910,19 @@ msgstr ""
 #: arch2/templates/dashboard/employer/candidates/my-follow.php:131
 msgid "No item found"
 msgstr ""
+"Öğe bulunamadı\n"
 
 #: includes/class-civi-footer.php:40 arch/includes/class-civi-footer.php:40
 #: arch2/includes/class-civi-footer.php:40
 msgid "No items found"
 msgstr ""
+"Öğeler bulunamadı\n"
 
 #: includes/class-civi-footer.php:41 arch/includes/class-civi-footer.php:41
 #: arch2/includes/class-civi-footer.php:41
 msgid "No items found in trash"
 msgstr ""
+"Çöp kutusunda öğe bulunamadı\n"
 
 #: includes/class-civi-template-loader.php:261
 #: arch/includes/class-civi-template-loader.php:255
@@ -6878,7 +6945,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/my-jobs/my-invite.php:16
 #: arch2/templates/dashboard/candidate/my-jobs/my-wishlist.php:16
 msgid "No jobs found"
-msgstr ""
+msgstr "Proje Bulunamadı"
 
 #: templates/dashboard/candidate/meetings.php:11
 #: templates/dashboard/employer/meetings.php:11
@@ -6978,7 +7045,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-jobs.php:64
 #: arch2/includes/admin/class-civi-admin-package.php:71
 msgid "Not Featured"
-msgstr ""
+msgstr "Öne Çıkmayan"
 
 #: includes/admin/class-civi-admin-setup.php:255
 #: arch/includes/admin/class-civi-admin-setup.php:255
@@ -7023,13 +7090,13 @@ msgstr ""
 #: arch/templates/dashboard/employer/user-package.php:59
 #: arch2/templates/dashboard/employer/user-package.php:59
 msgid "Number Featured"
-msgstr ""
+msgstr "Öne Çıkan Sayı"
 
 #: includes/admin/class-civi-metaboxes.php:85
 #: arch/includes/admin/class-civi-metaboxes.php:85
 #: arch2/includes/admin/class-civi-metaboxes.php:85
 msgid "Number Featured Listings:"
-msgstr ""
+msgstr "Öne Çıkan Listeleme Sayısı:"
 
 #: includes/admin/class-civi-admin-user-package.php:22
 #: arch/includes/admin/class-civi-admin-user-package.php:22
@@ -7038,7 +7105,7 @@ msgstr ""
 #: arch/templates/dashboard/employer/user-package.php:58
 #: arch2/templates/dashboard/employer/user-package.php:58
 msgid "Number Jobs"
-msgstr ""
+msgstr "Proje Sayısı"
 
 #: includes/admin/class-civi-metaboxes.php:78
 #: arch/includes/admin/class-civi-metaboxes.php:78
@@ -7056,7 +7123,7 @@ msgstr ""
 #: arch/modules/widgets/includes/products.php:23
 #: arch2/modules/widgets/includes/products.php:23
 msgid "Number of products to show"
-msgstr ""
+msgstr "Gösterilecek ürün sayısı"
 
 #: modules/elementor/includes/jobs-category.php:421
 #: modules/elementor/includes/jobs.php:357
@@ -7071,7 +7138,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:234
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:231
 msgid "Offer Salary"
-msgstr ""
+msgstr "Ücret Öner"
 
 #: templates/candidate/single/review.php:185
 #: templates/candidate/single/review.php:455
@@ -7086,7 +7153,7 @@ msgstr ""
 #: arch/templates/candidate/single/sidebar/info.php:43
 #: arch2/templates/candidate/single/sidebar/info.php:43
 msgid "Offered Salary"
-msgstr ""
+msgstr "Önerilmiş Ücret"
 
 #: templates/jobs/single/insights.php:104
 #: arch/templates/jobs/single/insights.php:104
@@ -7095,7 +7162,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/insights.php:95
 #: arch2/templates/jobs/single/sidebar/insights.php:95
 msgid "Offered salary"
-msgstr ""
+msgstr "Önerilmiş Ücret"
 
 #: modules/elementor/includes/companies.php:233
 #: modules/elementor/includes/jobs.php:267
@@ -7146,7 +7213,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/candidates/candidates-invite.php:77
 #: arch2/templates/dashboard/employer/candidates/my-follow.php:55
 msgid "Oldest"
-msgstr ""
+msgstr "En Eski"
 
 #: includes/civi-template-hooks.php:452 includes/civi-template-hooks.php:728
 #: arch/includes/civi-template-hooks.php:451
@@ -7246,6 +7313,8 @@ msgid ""
 "Our office is located with creative, open workspaces and a high-quality "
 "engaging environment."
 msgstr ""
+"Ofisimiz yaratıcı, açık çalışma alanları ve yüksek kaliteli ilgi çekici bir "
+"ortama sahiptir."
 
 #: modules/elementor/includes/jobs-category.php:556
 #: arch/modules/elementor/includes/jobs-category.php:556
@@ -7401,6 +7470,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/dashboard.php:102
 msgid "Page views"
 msgstr ""
+"Sayfa görünümleri\n"
 
 #: includes/base/controls/taxonomy.php:43
 #: arch/includes/base/controls/taxonomy.php:43
@@ -7420,7 +7490,7 @@ msgstr ""
 #: arch/includes/class-civi-template-loader.php:1281
 #: arch2/includes/class-civi-template-loader.php:1302
 msgid "Password"
-msgstr ""
+msgstr "Şifre"
 
 #: templates/dashboard/candidate/meetings.php:131
 #: templates/dashboard/employer/meetings.php:145
@@ -7435,7 +7505,7 @@ msgstr ""
 #: arch2/includes/partials/meetings/class-civi-meetings.php:319
 #: arch2/includes/partials/meetings/class-civi-meetings.php:620
 msgid "Password:"
-msgstr ""
+msgstr "Şifre"
 
 #: templates/dashboard/employer/jobs.php:212
 #: arch/templates/dashboard/employer/jobs.php:212
@@ -7617,7 +7687,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/salary.php:75
 #: arch2/templates/jobs/edit/salary.php:87
 msgid "Per Days"
-msgstr ""
+msgstr "Günlük"
 
 #: templates/jobs/submit/salary.php:72 templates/jobs/edit/salary.php:82
 #: arch/templates/jobs/submit/salary.php:72
@@ -7649,7 +7719,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/salary.php:84
 #: arch2/templates/jobs/edit/salary.php:102
 msgid "Per Year"
-msgstr ""
+msgstr "Yıl başına"
 
 #: templates/jobs/single/insights.php:171
 #: arch/templates/jobs/single/insights.php:171
@@ -7665,6 +7735,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/settings.php:43
 msgid "Personal info"
 msgstr ""
+"Kişisel bilgi\n"
 
 #: includes/class-civi-template-loader.php:1290
 #: arch/includes/class-civi-template-loader.php:1276
@@ -7722,7 +7793,7 @@ msgstr ""
 #: arch2/templates/company/edit/general.php:74
 #: templates/dashboard/candidate/profile/paymentinfo.php:39
 msgid "Phone Number"
-msgstr ""
+msgstr "Telefon Numarası"
 
 #: templates/dashboard/employer/settings.php:80
 #: templates/dashboard/employer/settings.php:81
@@ -7734,7 +7805,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:122
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:122
 msgid "Phone number"
-msgstr ""
+msgstr "Telefon Numarası"
 
 #: templates/company/single/gallery.php:15 templates/jobs/single/gallery.php:16
 #: templates/candidate/single/photos.php:15
@@ -7745,7 +7816,7 @@ msgstr ""
 #: arch2/templates/jobs/single/gallery.php:16
 #: arch2/templates/candidate/single/photos.php:15
 msgid "Photos"
-msgstr ""
+msgstr "Fotoğraflar"
 
 #: includes/admin/class-civi-admin-setup.php:693
 #: arch/includes/admin/class-civi-admin-setup.php:693
@@ -7780,6 +7851,7 @@ msgstr ""
 #: templates/dashboard/candidate/profile/info/basic.php:282
 msgid "Physical Attributes"
 msgstr ""
+"Fiziksel Özellikler\n"
 
 #: includes/admin/class-civi-metaboxes.php:212
 #: arch/includes/admin/class-civi-metaboxes.php:212
@@ -7817,6 +7889,7 @@ msgstr ""
 #: arch2/includes/class-civi-shortcodes.php:540
 msgid "Please access the role Candidate to view"
 msgstr ""
+"Lütfen görüntülemek için yetenek olarak giriş yapın\n"
 
 #: includes/class-civi-shortcodes.php:79 includes/class-civi-shortcodes.php:120
 #: includes/class-civi-shortcodes.php:141
@@ -7863,7 +7936,7 @@ msgstr ""
 #: arch/includes/class-civi-shortcodes.php:246
 #: arch2/includes/class-civi-shortcodes.php:246
 msgid "Please access the role Employer,Candidate to view"
-msgstr ""
+msgstr "Lütfen görüntülemek için İşveren,Yetenek girişi yapın"
 
 #: templates/company/submit.php:37 templates/jobs/submit.php:97
 #: arch/templates/company/submit.php:37 arch/templates/jobs/submit.php:97
@@ -7878,6 +7951,8 @@ msgid ""
 "Please Choose Country ( If no country is selected. will automatically take "
 "all the country )."
 msgstr ""
+"Lütfen Ülke Seçiniz ( Herhangi bir ülke seçilmezse, otomatik olarak tüm "
+"ülkeleri alacaktır )."
 
 #: templates/company/submit.php:37 arch/templates/company/submit.php:37
 #: arch2/templates/company/submit.php:37
@@ -7897,6 +7972,7 @@ msgstr ""
 #: arch2/templates/jobs/submit.php:97
 msgid "Please choose skills"
 msgstr ""
+"Lütfen yetenek seçin\n"
 
 #: templates/jobs/submit.php:97 arch/templates/jobs/submit.php:97
 #: arch2/templates/jobs/submit.php:97
@@ -7938,12 +8014,12 @@ msgstr ""
 #: templates/jobs/submit.php:97 arch/templates/jobs/submit.php:97
 #: arch2/templates/jobs/submit.php:97
 msgid "Please enter jobs description"
-msgstr ""
+msgstr "Lütfen proje açıklaması giriniz"
 
 #: templates/jobs/submit.php:97 arch/templates/jobs/submit.php:97
 #: arch2/templates/jobs/submit.php:97
 msgid "Please enter jobs name"
-msgstr ""
+msgstr "Lütfen proje ismini giriniz"
 
 #: includes/partials/messages/class-civi-messages.php:66
 #: arch/includes/partials/messages/class-civi-messages.php:66
@@ -7964,6 +8040,8 @@ msgstr ""
 msgid ""
 "Please fill in this form carefully in order to recieve paments from projects."
 msgstr ""
+"Proje ödemelerini alabilmek için lütfen bu formu dikkatli bir şekilde "
+"doldurunuz."
 
 #: includes/admin/class-civi-admin-setup.php:447
 #: arch/includes/admin/class-civi-admin-setup.php:447
@@ -7975,7 +8053,7 @@ msgstr ""
 #: arch/templates/dashboard/notification/count.php:26
 #: arch2/templates/dashboard/notification/count.php:26
 msgid "Please login Employer or Candidate"
-msgstr ""
+msgstr "Lütfen Yetenek Olarak Giriş Yapın"
 
 #: templates/candidate/messages.php:19 templates/candidate/follow.php:45
 #: arch/templates/candidate/messages.php:19
@@ -8012,10 +8090,11 @@ msgstr ""
 #: arch2/includes/import/class-importer.php:374
 msgid "Please select at least 1 item to continue."
 msgstr ""
+"Devam etmek için lütfen en az 1 öğe seçin.\n"
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:50
 msgid "Please select option"
-msgstr ""
+msgstr "Lütfen bir seçenek girin"
 
 #: includes/import/views/box-import-issues.php:44
 #: arch/includes/import/views/box-import-issues.php:44
@@ -8078,7 +8157,7 @@ msgstr ""
 #: arch/modules/elementor/includes/search-horizontal.php:437
 #: arch2/modules/elementor/includes/search-horizontal.php:437
 msgid "Popular Searches: "
-msgstr ""
+msgstr "Popüler Aramalar:"
 
 #: modules/elementor/includes/jobs-location.php:90
 #: modules/elementor/includes/jobs-category.php:98
@@ -8147,6 +8226,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/nav.php:69
 msgid "Post your first job!"
 msgstr ""
+"İlk projenizi yayınlayın!\n"
 
 #: templates/dashboard/employer/jobs.php:132
 #: arch/templates/dashboard/employer/jobs.php:132
@@ -8167,7 +8247,7 @@ msgstr ""
 #: arch/templates/dashboard/employer/dashboard.php:46
 #: arch2/templates/dashboard/employer/dashboard.php:46
 msgid "Posted Jobs"
-msgstr ""
+msgstr "Yayınlanan Projeler"
 
 #: modules/elementor/includes/companies.php:118
 #: modules/elementor/includes/jobs.php:120
@@ -8216,19 +8296,20 @@ msgstr ""
 #: arch2/modules/widgets/includes/products.php:11
 #: arch2/modules/widgets/includes/products.php:17
 msgid "Products"
-msgstr ""
+msgstr "Ürünler"
 
 #: templates/dashboard/candidate/nav.php:9
 #: arch/templates/dashboard/candidate/nav.php:8
 #: arch2/templates/dashboard/candidate/nav.php:9
 msgid "Profile"
-msgstr ""
+msgstr "Profilim"
 
 #: includes/admin/class-civi-profile.php:17
 #: arch/includes/admin/class-civi-profile.php:17
 #: arch2/includes/admin/class-civi-profile.php:17
 msgid "Profile Info"
 msgstr ""
+"Profil Bilgisi\n"
 
 #: templates/dashboard/candidate/profile.php:56
 #: templates/dashboard/employer/settings.php:39
@@ -8237,19 +8318,19 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile.php:56
 #: arch2/templates/dashboard/employer/settings.php:39
 msgid "Profile Settings"
-msgstr ""
+msgstr "Profil Ayarları"
 
 #: templates/dashboard/candidate/profile.php:174
 #: arch/templates/dashboard/candidate/profile.php:165
 #: arch2/templates/dashboard/candidate/profile.php:173
 msgid "Profile Strength"
-msgstr ""
+msgstr "Profil Gücü"
 
 #: templates/dashboard/candidate/nav.php:114
 #: arch/templates/dashboard/candidate/nav.php:113
 #: arch2/templates/dashboard/candidate/nav.php:114
 msgid "Profile Strength:"
-msgstr ""
+msgstr "Profil Gücü:"
 
 #: templates/candidate/single/review.php:144
 #: templates/candidate/single/review.php:145
@@ -8294,7 +8375,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/projects.php:24
 #: arch2/templates/dashboard/candidate/profile/projects.php:24
 msgid "Projects"
-msgstr ""
+msgstr "Projeler"
 
 #: includes/admin/class-civi-location.php:78
 #: includes/admin/class-civi-location.php:155
@@ -8358,7 +8439,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:214
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:211
 msgid "Qualification"
-msgstr ""
+msgstr "Nitelik"
 
 #: templates/jobs/single/insights.php:170
 #: arch/templates/jobs/single/insights.php:170
@@ -8367,7 +8448,7 @@ msgstr ""
 #: arch/templates/jobs/single/sidebar/insights.php:161
 #: arch2/templates/jobs/single/sidebar/insights.php:161
 msgid "Quantity"
-msgstr ""
+msgstr "Miktar"
 
 #: templates/jobs/submit/general.php:127 templates/jobs/edit/general.php:115
 #: arch/templates/jobs/submit/general.php:124
@@ -8375,7 +8456,7 @@ msgstr ""
 #: arch2/templates/jobs/submit/general.php:124
 #: arch2/templates/jobs/edit/general.php:113
 msgid "Quantity to be recruited"
-msgstr ""
+msgstr "İşe alınacak miktar"
 
 #: modules/elementor/includes/companies.php:176
 #: modules/elementor/includes/jobs.php:177
@@ -8527,6 +8608,8 @@ msgstr ""
 #: arch2/includes/admin/class-civi-import.php:128
 msgid "Remember to update the passwords and roles of imported users."
 msgstr ""
+"İçe aktarılan kullanıcıların parolalarını ve rollerini güncellemeyi "
+"unutmayın."
 
 #: includes/admin/class-civi-import.php:917
 #: arch/includes/admin/class-civi-import.php:917
@@ -8584,6 +8667,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-location.php:40
 msgid "Remove All"
 msgstr ""
+"Hepsini kaldır\n"
 
 #: includes/admin/class-civi-rest-api.php:361
 #: includes/admin/class-civi-rest-api.php:419
@@ -8721,7 +8805,7 @@ msgstr ""
 #: arch/templates/jobs/submit.php:129 arch2/templates/jobs/edit.php:94
 #: arch2/templates/jobs/submit.php:129
 msgid "Salary"
-msgstr ""
+msgstr "Ücret"
 
 #: templates/company/single/review.php:144
 #: templates/company/single/review.php:408
@@ -8733,7 +8817,7 @@ msgstr ""
 #: arch2/templates/company/single/review.php:408
 #: arch2/templates/company/single/review.php:493
 msgid "Salary & Benefits"
-msgstr ""
+msgstr "Ücret ve Yan Haklar"
 
 #: templates/company/single/review.php:145
 #: templates/company/single/review.php:146
@@ -8754,13 +8838,13 @@ msgstr ""
 #: arch2/templates/company/single/review.php:494
 #: arch2/templates/company/single/review.php:495
 msgid "Salary review every 6 months based on the work performance"
-msgstr ""
+msgstr "İş performansına göre 6 ayda bir ücret gözden geçirmesi"
 
 #: templates/dashboard/candidate/profile/info/basic.php:408
 #: arch/templates/dashboard/candidate/profile/info/basic.php:240
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:237
 msgid "Salary type"
-msgstr ""
+msgstr "Ücret Tipi"
 
 #: modules/widgets/includes/products.php:32
 #: arch/modules/widgets/includes/products.php:32
@@ -8822,7 +8906,7 @@ msgstr ""
 #: arch/includes/class-civi-template-loader.php:1290
 #: arch2/includes/class-civi-template-loader.php:1311
 msgid "Saved settings"
-msgstr ""
+msgstr "Kaydedilmiş ayarlar"
 
 #: includes/civi-template-hooks.php:259 includes/civi-template-hooks.php:522
 #: includes/civi-template-hooks.php:832
@@ -8839,7 +8923,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/search-vertical.php:517
 #: arch2/modules/elementor/includes/search-horizontal.php:428
 msgid "Search"
-msgstr ""
+msgstr "Ara"
 
 #: includes/base/controls/post-type.php:55
 #: includes/base/controls/taxonomy.php:40
@@ -8849,7 +8933,7 @@ msgstr ""
 #: arch2/includes/base/controls/taxonomy.php:40
 #, php-format
 msgid "Search %s"
-msgstr ""
+msgstr "Ara %s"
 
 #: modules/elementor/includes/companies.php:261
 #: modules/elementor/includes/jobs.php:302
@@ -8858,13 +8942,13 @@ msgstr ""
 #: arch2/modules/elementor/includes/companies.php:261
 #: arch2/modules/elementor/includes/jobs.php:302
 msgid "Search & Select"
-msgstr ""
+msgstr "Ara & Seç"
 
 #: templates/dashboard/candidate/company.php:47
 #: arch/templates/dashboard/candidate/company.php:47
 #: arch2/templates/dashboard/candidate/company.php:47
 msgid "Search company title"
-msgstr ""
+msgstr "Şirket başlığını ara"
 
 #: includes/class-civi-footer.php:39 arch/includes/class-civi-footer.php:39
 #: arch2/includes/class-civi-footer.php:39
@@ -8887,13 +8971,13 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/my-jobs/my-invite.php:44
 #: arch2/templates/dashboard/candidate/my-jobs/my-wishlist.php:43
 msgid "Search jobs title"
-msgstr ""
+msgstr "Proje başlığını ara"
 
 #: templates/dashboard/candidate/my-jobs/my-apply.php:40
 #: arch/templates/dashboard/candidate/my-jobs/my-apply.php:40
 #: arch2/templates/dashboard/candidate/my-jobs/my-apply.php:40
 msgid "Search title,description"
-msgstr ""
+msgstr "Başlığı,tanımı ara"
 
 #: modules/elementor/includes/search-vertical.php:23
 #: arch/modules/elementor/includes/search-vertical.php:23
@@ -8905,7 +8989,7 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:132
 #: arch2/includes/civi-template-hooks.php:132
 msgid "Search..."
-msgstr ""
+msgstr "Ara..."
 
 #: includes/partials/candidate/class-civi-candidate.php:52
 #: arch/includes/partials/candidate/class-civi-candidate.php:52
@@ -8957,7 +9041,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:188
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:188
 msgid "Select an option"
-msgstr ""
+msgstr "Birini Seçiniz"
 
 #: templates/jobs/submit/company.php:8 templates/jobs/edit/company.php:8
 #: arch/templates/jobs/submit/company.php:8
@@ -8984,7 +9068,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/pattributes.php:22
 #: arch2/templates/dashboard/candidate/profile/skills.php:17
 msgid "Select Skills"
-msgstr ""
+msgstr "Yetenek Seçin"
 
 #: modules/elementor/includes/job-alerts.php:222
 #: templates/jobs/submit/general.php:55 templates/jobs/edit/general.php:47
@@ -8996,6 +9080,7 @@ msgstr ""
 #: arch2/templates/jobs/edit/general.php:46
 msgid "Select skills"
 msgstr ""
+"Yetenek seçin\n"
 
 #: modules/widgets/includes/listing-taxonomy.php:23
 #: arch/modules/widgets/includes/listing-taxonomy.php:23
@@ -9081,6 +9166,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:655
 msgid "Server Info"
 msgstr ""
+"Sunucu Bilgisi\n"
 
 #: modules/elementor/includes/jobs-location.php:331
 #: modules/elementor/includes/jobs-category.php:410
@@ -9116,13 +9202,14 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/nav.php:15
 #: arch2/templates/dashboard/employer/nav.php:11
 msgid "Settings"
-msgstr ""
+msgstr "Ayarlar"
 
 #: includes/base/controls/theme-options.php:275
 #: arch/includes/base/controls/theme-options.php:275
 #: arch2/includes/base/controls/theme-options.php:275
 msgid "Settings saved"
 msgstr ""
+"Ayarlar kaydedildi\n"
 
 #: includes/admin/class-civi-admin-setup.php:70
 #: includes/admin/class-civi-admin-setup.php:71
@@ -9148,7 +9235,7 @@ msgstr ""
 #: templates/jobs/single/head.php:94 arch/templates/jobs/single/head.php:65
 #: arch2/templates/jobs/single/head.php:65
 msgid "Share"
-msgstr ""
+msgstr "Paylaş"
 
 #: templates/dashboard/candidate/profile/awards.php:41
 #: templates/dashboard/candidate/profile/awards.php:70
@@ -9175,7 +9262,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:49
 #: arch2/templates/dashboard/candidate/profile/experience.php:87
 msgid "Short description"
-msgstr ""
+msgstr "Kısa Tanım"
 
 #: includes/civi-template-hooks.php:366 includes/civi-template-hooks.php:645
 #: includes/civi-template-hooks.php:1011
@@ -9195,7 +9282,7 @@ msgstr ""
 #: arch/includes/admin/class-civi-admin-setup.php:1237
 #: arch2/includes/admin/class-civi-admin-setup.php:1248
 msgid "Show all jobs"
-msgstr ""
+msgstr "Bütün projeleri göster"
 
 #: modules/elementor/includes/jobs-category.php:217
 #: modules/elementor/includes/search-horizontal.php:96
@@ -9216,7 +9303,7 @@ msgstr ""
 #: arch/modules/elementor/includes/search-vertical.php:95
 #: arch2/modules/elementor/includes/search-vertical.php:95
 msgid "Show Candidate"
-msgstr ""
+msgstr "Yetenekleri Göster"
 
 #: modules/elementor/includes/search-horizontal.php:105
 #: arch/modules/elementor/includes/search-horizontal.php:105
@@ -9259,6 +9346,7 @@ msgstr ""
 #: arch2/modules/elementor/includes/job-alerts.php:75
 msgid "Show Job Alert Name"
 msgstr ""
+"Proje Uyarısının Adını Göster\n"
 
 #: modules/elementor/includes/job-alerts.php:102
 #: arch/modules/elementor/includes/job-alerts.php:102
@@ -9271,12 +9359,13 @@ msgstr ""
 #: arch2/modules/elementor/includes/job-alerts.php:111
 msgid "Show Job Experience"
 msgstr ""
+"İş Deneyimini Göster\n"
 
 #: modules/elementor/includes/job-alerts.php:84
 #: arch/modules/elementor/includes/job-alerts.php:84
 #: arch2/modules/elementor/includes/job-alerts.php:84
 msgid "Show Job Skills"
-msgstr ""
+msgstr "Yetenekleri Göster"
 
 #: modules/elementor/includes/job-alerts.php:120
 #: arch/modules/elementor/includes/job-alerts.php:120
@@ -9288,7 +9377,7 @@ msgstr ""
 #: arch/modules/elementor/includes/search-vertical.php:77
 #: arch2/modules/elementor/includes/search-vertical.php:77
 msgid "Show Jobs"
-msgstr ""
+msgstr "Projeleri Göster"
 
 #: modules/elementor/includes/jobs-category.php:259
 #: arch/modules/elementor/includes/jobs-category.php:259
@@ -9404,7 +9493,7 @@ msgstr ""
 #: arch/templates/jobs/single/related.php:53
 #: arch2/templates/jobs/single/related.php:53
 msgid "Similar jobs"
-msgstr ""
+msgstr "Benzer projeler"
 
 #: includes/import/class-widgets-importer.php:134
 #: arch/includes/import/class-widgets-importer.php:134
@@ -9446,7 +9535,7 @@ msgstr ""
 #: arch2/templates/candidate/single/review.php:440
 #: arch2/templates/candidate/single/review.php:544
 msgid "Skill & Experience"
-msgstr ""
+msgstr "Yetenek & Deneyim"
 
 #: templates/company/single/review.php:172
 #: templates/company/single/review.php:438
@@ -9458,7 +9547,7 @@ msgstr ""
 #: arch2/templates/company/single/review.php:438
 #: arch2/templates/company/single/review.php:543
 msgid "Skill Development"
-msgstr ""
+msgstr "Yetenek Gelişimi"
 
 #: includes/civi-template-hooks.php:954
 #: arch/includes/civi-template-hooks.php:963
@@ -9503,7 +9592,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/pattributes.php:18
 #: arch2/templates/dashboard/candidate/profile/skills.php:13
 msgid "Skills"
-msgstr ""
+msgstr "Yetenekler"
 
 #: templates/candidate/single/review.php:172
 #: templates/candidate/single/review.php:173
@@ -9525,23 +9614,25 @@ msgstr ""
 #: arch2/templates/candidate/single/review.php:546
 msgid "Skills and experience meet well"
 msgstr ""
+"Yetenek ve deneyim iyi uyuşuyor\n"
 
 #: templates/candidate/single/about-me.php:110
 #: templates/dashboard/candidate/profile/info/basic.php:347
 msgid "Skin Color"
-msgstr ""
+msgstr "Ten Rengi"
 
 #: includes/admin/class-civi-admin-setup.php:1020
 #: arch/includes/admin/class-civi-admin-setup.php:1019
 #: arch2/includes/admin/class-civi-admin-setup.php:1020
 msgid "Skip setup. I will setup the plugin manually (Not Recommended)"
-msgstr ""
+msgstr "Kurulumu atla. Eklentiyi manuel olarak kuracağım (Önerilmez)"
 
 #: includes/admin/class-civi-admin-setup.php:1225
 #: arch/includes/admin/class-civi-admin-setup.php:1214
 #: arch2/includes/admin/class-civi-admin-setup.php:1225
 msgid "Skip this step"
 msgstr ""
+"Bu adımı atla\n"
 
 #: includes/import/wp-importer/WXRImporter.php:858
 #: arch/includes/import/wp-importer/WXRImporter.php:858
@@ -9549,6 +9640,7 @@ msgstr ""
 #, php-format
 msgid "Skipping attachment \"%s\", fetching attachments disabled"
 msgstr ""
+"\"%s\" eki atlanıyor, eklerin getirilmesi devre dışı\n"
 
 #: modules/elementor/includes/jobs-location.php:412
 #: modules/elementor/includes/jobs-category.php:502
@@ -9632,17 +9724,17 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/social.php:20
 #: arch2/templates/dashboard/candidate/profile/info/social.php:20
 msgid "Social Network"
-msgstr ""
+msgstr "Sosyal Medya"
 
 #: templates/company/edit.php:87 templates/company/submit.php:64
 #: arch/templates/company/edit.php:87 arch/templates/company/submit.php:64
 #: arch2/templates/company/edit.php:87 arch2/templates/company/submit.php:64
 msgid "Social network"
-msgstr ""
+msgstr "Sosyal Medya"
 
 #: templates/dashboard/candidate/profile/paymentinfo.php:52
 msgid "Sole Proprietorship Account (Business)"
-msgstr ""
+msgstr "Şahıs Şirketi Hesabı (Ticari)"
 
 #: includes/admin/class-civi-import.php:144
 #: includes/admin/class-civi-import.php:148
@@ -9663,6 +9755,8 @@ msgid ""
 "Sorry, you can't view this page as Candidate, register Employer account to "
 "get access."
 msgstr ""
+"Üzgünüz, bu sayfayı yetenek olarak görüntüleyemezsiniz, erişim elde etmek "
+"için İşveren hesabına kaydolun."
 
 #: modules/widgets/includes/popular-posts.php:24
 #: modules/widgets/includes/products.php:38
@@ -9671,7 +9765,7 @@ msgstr ""
 #: arch2/modules/widgets/includes/popular-posts.php:24
 #: arch2/modules/widgets/includes/products.php:38
 msgid "Sort By"
-msgstr ""
+msgstr "Göre Sırala"
 
 #: templates/dashboard/candidate/my-review.php:53
 #: templates/dashboard/candidate/company.php:54
@@ -9716,7 +9810,7 @@ msgstr ""
 #: arch2/templates/dashboard/employer/candidates/candidates-invite.php:73
 #: arch2/templates/dashboard/employer/candidates/my-follow.php:51
 msgid "Sort by"
-msgstr ""
+msgstr "Göre Sırala"
 
 #: modules/elementor/includes/jobs-location.php:521
 #: modules/elementor/includes/jobs-location.php:574
@@ -9834,7 +9928,7 @@ msgstr ""
 #: includes/class-civi-user.php:154 arch/includes/class-civi-user.php:154
 #: arch2/includes/class-civi-user.php:154
 msgid "Subcrible"
-msgstr ""
+msgstr "Abone Ol"
 
 #: templates/company/submit.php:43 arch/templates/company/submit.php:43
 #: arch2/templates/company/submit.php:43
@@ -9856,6 +9950,8 @@ msgid ""
 "Subscribe to receive instant alerts of new relevant jobs directly to your "
 "email inbox."
 msgstr ""
+"Yeni işlerle ilgili anlık uyarıları doğrudan e-posta gelen kutunuza gelmesi "
+"için abone olun."
 
 #: includes/admin/class-civi-admin-setup.php:358
 #: arch/includes/admin/class-civi-admin-setup.php:358
@@ -9882,7 +9978,7 @@ msgstr ""
 #: arch2/templates/candidate/single/review.php:570
 #: arch2/templates/candidate/single/review.php:571
 msgid "Suitable salary"
-msgstr ""
+msgstr "Uygun Ücret"
 
 #: includes/admin/class-civi-admin-setup.php:35
 #: includes/admin/class-civi-admin-setup.php:36
@@ -10046,13 +10142,13 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:95
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:95
 msgid "The cover image size should be max 1920 x 400px"
-msgstr ""
+msgstr "Kapak görseli boyutu max 1920 x 400px olmalıdır."
 
 #: includes/admin/class-civi-admin-setup.php:613
 #: arch/includes/admin/class-civi-admin-setup.php:613
 #: arch2/includes/admin/class-civi-admin-setup.php:613
 msgid "The current language used by WordPress. Default = English"
-msgstr ""
+msgstr "WordPress tarafından kullanılan mevcut dil. Varsayılan = İngilizce"
 
 #: includes/admin/class-civi-admin-setup.php:618
 #: arch/includes/admin/class-civi-admin-setup.php:618
@@ -10150,6 +10246,8 @@ msgid ""
 "The package you selected has reached its allowable limit. Please come back "
 "later!"
 msgstr ""
+"Seçtiğiniz paket izin verilen limitine ulaştı. Lütfen daha sonra tekrar "
+"gelin!"
 
 #: includes/admin/class-civi-updater.php:280
 #: arch/includes/admin/class-civi-updater.php:280
@@ -10289,6 +10387,8 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:1069
 msgid "This page allows users to add jobs to your website via the front-end."
 msgstr ""
+"Bu sayfa, kullanıcıların ön uç aracılığıyla web sitenize iş eklemesine "
+"olanak tanır."
 
 #: includes/admin/class-civi-admin-setup.php:1078
 #: arch/includes/admin/class-civi-admin-setup.php:1077
@@ -10383,6 +10483,8 @@ msgstr ""
 msgid ""
 "This page allows users to view their own \"My Review\" via the front-end."
 msgstr ""
+"Bu sayfa, kullanıcıların ön uç aracılığıyla kendi \"İncelemelerimi\" "
+"görüntülemelerine olanak tanır.\n"
 
 #: includes/admin/class-civi-admin-setup.php:1142
 #: arch/includes/admin/class-civi-admin-setup.php:1141
@@ -10424,7 +10526,7 @@ msgstr ""
 #: arch/includes/admin/class-civi-admin-setup.php:1060
 #: arch2/includes/admin/class-civi-admin-setup.php:1061
 msgid "This page show all jobs."
-msgstr ""
+msgstr "Bu sayfa bütün projeleri gösteriyor"
 
 #: includes/admin/class-civi-admin-setup.php:1045
 #: arch/includes/admin/class-civi-admin-setup.php:1044
@@ -10436,7 +10538,7 @@ msgstr ""
 #: arch/includes/admin/class-civi-admin-setup.php:1052
 #: arch2/includes/admin/class-civi-admin-setup.php:1053
 msgid "This page show jobs performance."
-msgstr ""
+msgstr "Bu sayfa proje performansını gösteriyor"
 
 #: includes/admin/class-civi-admin-setup.php:1015
 #: arch/includes/admin/class-civi-admin-setup.php:1014
@@ -10628,6 +10730,7 @@ msgstr ""
 #: arch2/templates/jobs/submit.php:177
 msgid "Title of job"
 msgstr ""
+"Proje unvanı\n"
 
 #: templates/dashboard/candidate/profile/education.php:45
 #: templates/dashboard/candidate/profile/education.php:81
@@ -10642,7 +10745,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:44
 #: arch2/templates/dashboard/candidate/profile/experience.php:82
 msgid "To"
-msgstr ""
+msgstr " Bitiş Tarihi"
 
 #: templates/company/single/review.php:388
 #: templates/candidate/single/review.php:389
@@ -10746,7 +10849,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/social.php:28
 #: arch2/templates/dashboard/candidate/profile/info/social.php:28
 msgid "twitter.com/candidate"
-msgstr ""
+msgstr "twitter.com/yetenek"
 
 #: templates/company/submit/social.php:16 templates/company/edit/social.php:22
 #: arch/templates/company/submit/social.php:16
@@ -10904,6 +11007,8 @@ msgid ""
 "Update your photo manually, if the photo is not set the default Avatar will "
 "be the same as your login email account."
 msgstr ""
+"Fotoğrafınızı manuel olarak güncelleyin, eğer fotoğraf ayarlanmazsa, "
+"varsayılan Avatar oturum açma e-posta hesabınızla aynı olacaktır."
 
 #: templates/jobs/submit.php:119 arch/templates/jobs/submit.php:119
 #: arch2/templates/jobs/submit.php:119
@@ -10943,7 +11048,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:64
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:64
 msgid "Upload"
-msgstr ""
+msgstr "Yükle "
 
 #: templates/company/submit/gallery.php:22
 #: templates/company/edit/gallery.php:49 templates/jobs/submit/gallery.php:50
@@ -10960,7 +11065,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/gallery.php:52
 #: arch2/templates/dashboard/candidate/profile/info/gallery.php:52
 msgid "Upload "
-msgstr ""
+msgstr "Yükle"
 
 #: templates/dashboard/candidate/profile/projects.php:17
 #: arch/templates/dashboard/candidate/profile/projects.php:17
@@ -10997,14 +11102,14 @@ msgstr ""
 #: arch/modules/widgets/widget-config.php:235
 #: arch2/modules/widgets/widget-config.php:235
 msgid "Upload image"
-msgstr ""
+msgstr "Görüntü Yükle"
 
 #: includes/base/controls/post-type.php:61
 #: arch/includes/base/controls/post-type.php:61
 #: arch2/includes/base/controls/post-type.php:61
 #, php-format
 msgid "Uploaded to this %s"
-msgstr ""
+msgstr "Bu %s'ye yüklendi"
 
 #: templates/company/submit/social.php:55 templates/company/edit/social.php:64
 #: templates/company/edit/social.php:97
@@ -11030,7 +11135,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/social.php:75
 #: arch2/templates/dashboard/candidate/profile/info/social.php:108
 msgid "url.com/candidate"
-msgstr ""
+msgstr "url.com/yetenek"
 
 #: templates/company/submit/social.php:57 templates/company/edit/social.php:66
 #: templates/company/edit/social.php:100
@@ -11085,6 +11190,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-rest-api.php:489
 msgid "Username/Email address is existing"
 msgstr ""
+"Kullanıcı adı veya e-posta adresi mevcut\n"
 
 #. Author of the plugin
 msgid "Uxper"
@@ -11167,7 +11273,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/video.php:15
 #: arch2/templates/dashboard/candidate/profile/info/video.php:67
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: templates/dashboard/candidate/profile/info/video.php:31
 #: templates/dashboard/candidate/profile/info/video.php:52
@@ -11178,7 +11284,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/video.php:73
 #: arch2/templates/dashboard/candidate/profile/info/video.php:74
 msgid "Video Title"
-msgstr ""
+msgstr "Video Başlığı"
 
 #: templates/dashboard/candidate/profile/info/video.php:34
 #: templates/dashboard/candidate/profile/info/video.php:35
@@ -11194,6 +11300,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/video.php:78
 msgid "Video URL"
 msgstr ""
+"Video linki\n"
 
 #: templates/dashboard/candidate/profile/info/video.php:13
 #: templates/dashboard/candidate/profile/info/video.php:24
@@ -11202,13 +11309,13 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/info/video.php:24
 #: arch2/templates/dashboard/candidate/profile/info/video.php:45
 msgid "Videos"
-msgstr ""
+msgstr "Videolar"
 
 #: templates/company/edit.php:122 templates/jobs/edit.php:137
 #: arch/templates/company/edit.php:122 arch/templates/jobs/edit.php:137
 #: arch2/templates/company/edit.php:122 arch2/templates/jobs/edit.php:137
 msgid "View"
-msgstr ""
+msgstr "Görüntüle"
 
 #: includes/base/controls/post-type.php:54
 #: includes/base/controls/taxonomy.php:46
@@ -11219,18 +11326,21 @@ msgstr ""
 #, php-format
 msgid "View %s"
 msgstr ""
+"Görüntülenme %s\n"
 
 #: modules/elementor/includes/companies-category.php:640
 #: arch/modules/elementor/includes/companies-category.php:640
 #: arch2/modules/elementor/includes/companies-category.php:640
 msgid "View all"
 msgstr ""
+"Hepsini gör\n"
 
 #: modules/elementor/includes/jobs-category.php:272
 #: arch/modules/elementor/includes/jobs-category.php:272
 #: arch2/modules/elementor/includes/jobs-category.php:272
 msgid "View all categories"
 msgstr ""
+"Tüm kategoriler görüntüle\n"
 
 #: templates/jobs/single/related.php:55
 #: arch/templates/jobs/single/related.php:55
@@ -11242,13 +11352,13 @@ msgstr ""
 #: arch2/templates/jobs/single/sidebar/company.php:169
 #: arch2/templates/jobs/archive/layout/layout-default.php:474
 msgid "View all jobs"
-msgstr ""
+msgstr "Bütün projeleri göster"
 
 #: templates/jobs/single/sidebar/company.php:50
 #: arch/templates/jobs/single/sidebar/company.php:50
 #: arch2/templates/jobs/single/sidebar/company.php:50
 msgid "View company profile"
-msgstr ""
+msgstr "Şirket profilini görüntüle"
 
 #: includes/admin/class-civi-admin-setup.php:1288
 #: arch/includes/admin/class-civi-admin-setup.php:1277
@@ -11274,7 +11384,7 @@ msgstr ""
 #: arch/templates/company/content/layout-button-jobs.php:65
 #: arch2/templates/company/content/layout-button-jobs.php:65
 msgid "View jobs"
-msgstr ""
+msgstr "Projeleri göster"
 
 #: includes/admin/class-civi-admin-setup.php:1268
 #: arch/includes/admin/class-civi-admin-setup.php:1257
@@ -11310,13 +11420,14 @@ msgstr ""
 #: arch/includes/admin/class-civi-admin-setup.php:1247
 #: arch2/includes/admin/class-civi-admin-setup.php:1258
 msgid "View user jobs"
-msgstr ""
+msgstr "Kullanıcı projelerini göster"
 
 #: includes/admin/class-civi-admin-setup.php:1263
 #: arch/includes/admin/class-civi-admin-setup.php:1252
 #: arch2/includes/admin/class-civi-admin-setup.php:1263
 msgid "View user profile"
 msgstr ""
+"Kullanıcı profilini görüntüle\n"
 
 #: includes/import/views/popup-refresh.php:21
 #: includes/import/views/popup-success.php:19
@@ -11345,7 +11456,7 @@ msgstr ""
 #: templates/candidate/single/about-me.php:126
 #: templates/dashboard/candidate/profile/info/basic.php:368
 msgid "Waist Size (cm)"
-msgstr ""
+msgstr "Bel Ölçüsü (cm)"
 
 #: templates/company/single/review.php:297
 #: templates/company/single/review.php:363
@@ -11402,6 +11513,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/experience.php:16
 msgid "We recommend at least one experience entry."
 msgstr ""
+"En az bir deneyim girmenizi öneririz.\n"
 
 #: templates/dashboard/candidate/profile/projects.php:26
 #: arch/templates/dashboard/candidate/profile/projects.php:26
@@ -11416,21 +11528,24 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/profile/skills.php:14
 msgid "We recommend at least one skill entry"
 msgstr ""
+"En az bir yetenek girmenizi öneririz ve birden fazla yetenek seçebilirsiniz."
+"\n"
 
 #: templates/dashboard/candidate/profile/info/video.php:15
 #: arch2/templates/dashboard/candidate/profile/info/video.php:15
 msgid "We recommend at least one video entry"
 msgstr ""
+"En az bir video yüklemenizi öneririz\n"
 
 #: templates/jobs/single/head.php:36
 msgid "We will contact you if your application will be accepted"
-msgstr ""
+msgstr "Başvurunuz kabul edilirse sizinle iletişime geçeceğiz"
 
 #: includes/admin/class-civi-admin-setup.php:380
 #: arch/includes/admin/class-civi-admin-setup.php:380
 #: arch2/includes/admin/class-civi-admin-setup.php:380
 msgid "We've assembled some links to get you started"
-msgstr ""
+msgstr "Başlamanız için bazı bağlantılar bir araya getirdik."
 
 #: templates/company/edit.php:146 templates/company/submit.php:117
 #: arch/templates/company/edit.php:146 arch/templates/company/submit.php:117
@@ -11468,11 +11583,12 @@ msgstr ""
 
 #: templates/candidate/single/about-me.php:70
 msgid "Weight"
-msgstr ""
+msgstr "Kilo"
 
 #: templates/dashboard/candidate/profile/info/basic.php:296
 msgid "Weight (kg)"
 msgstr ""
+"Kilo (kg)\n"
 
 #: includes/admin/class-civi-admin-setup.php:27
 #: includes/admin/class-civi-admin-setup.php:28
@@ -11481,7 +11597,7 @@ msgstr ""
 #: arch2/includes/admin/class-civi-admin-setup.php:27
 #: arch2/includes/admin/class-civi-admin-setup.php:28
 msgid "Welcome"
-msgstr ""
+msgstr "Merhaba"
 
 #: templates/dashboard/candidate/dashboard.php:34
 #: templates/dashboard/employer/dashboard.php:40
@@ -11492,6 +11608,7 @@ msgstr ""
 #, php-format
 msgid "Welcome back! %s"
 msgstr ""
+"Tekrar hoşgeldiniz! %s\n"
 
 #: includes/admin/class-civi-admin-setup.php:379
 #: arch/includes/admin/class-civi-admin-setup.php:379
@@ -11581,7 +11698,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/my-jobs.php:14
 #: arch2/templates/dashboard/candidate/my-jobs.php:14
 msgid "Wishlist"
-msgstr ""
+msgstr "Dilek listesi"
 
 #: templates/payment/per-package.php:105
 #: arch/templates/payment/per-package.php:105
@@ -11612,6 +11729,7 @@ msgstr ""
 #: arch2/templates/candidate/single/experience.php:14
 msgid "Work Experience"
 msgstr ""
+"İş Deneyimi\n"
 
 #: templates/company/single/review.php:186
 #: templates/company/single/review.php:453
@@ -11683,31 +11801,31 @@ msgstr ""
 #: arch/includes/civi-template-hooks.php:320
 #: arch2/includes/civi-template-hooks.php:320
 msgid "Year"
-msgstr ""
+msgstr "Yıl"
 
 #: includes/partials/package/class-civi-package.php:31
 #: arch/includes/partials/package/class-civi-package.php:31
 #: arch2/includes/partials/package/class-civi-package.php:31
 msgid "year"
-msgstr ""
+msgstr "Yıl"
 
 #: templates/dashboard/candidate/profile/info/basic.php:425
 #: arch/templates/dashboard/candidate/profile/info/basic.php:257
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:254
 msgid "Yearly"
-msgstr ""
+msgstr "Yıllık"
 
 #: includes/partials/package/class-civi-package.php:33
 #: arch/includes/partials/package/class-civi-package.php:33
 #: arch2/includes/partials/package/class-civi-package.php:33
 msgid "years"
-msgstr ""
+msgstr "yıl"
 
 #: templates/dashboard/candidate/profile/info/basic.php:269
 #: arch/templates/dashboard/candidate/profile/info/basic.php:224
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:221
 msgid "Years of Experience"
-msgstr ""
+msgstr "Deneyim Yılı"
 
 #: includes/admin/class-civi-profile.php:39
 #: arch/includes/admin/class-civi-profile.php:39
@@ -11767,7 +11885,7 @@ msgstr ""
 
 #: templates/dashboard/candidate/profile/info/audio.php:25
 msgid "You can add here a shake link to your audo track from"
-msgstr ""
+msgstr "Buradan sesli parçanıza bir bağlantısı ekleyebilirsiniz."
 
 #: templates/payment/per-package.php:69
 #: arch/templates/payment/per-package.php:69
@@ -11782,7 +11900,7 @@ msgstr ""
 #: arch/templates/dashboard/notification/content.php:77
 #: arch2/templates/dashboard/notification/content.php:77
 msgid "You do not have any notifications."
-msgstr ""
+msgstr "Herhangi bir bildiriminiz yok."
 
 #: templates/payment/per-package.php:136
 #: arch/templates/payment/per-package.php:136
@@ -11843,7 +11961,7 @@ msgstr ""
 #: arch/templates/dashboard/candidate/profile/info/basic.php:54
 #: arch2/templates/dashboard/candidate/profile/info/basic.php:54
 msgid "Your photo"
-msgstr ""
+msgstr "Profil Fotoğrafı"
 
 #: templates/dashboard/candidate/dashboard.php:98
 #: templates/dashboard/candidate/dashboard.php:109
@@ -11852,7 +11970,7 @@ msgstr ""
 #: arch2/templates/dashboard/candidate/dashboard.php:98
 #: arch2/templates/dashboard/candidate/dashboard.php:109
 msgid "Your Profile Views"
-msgstr ""
+msgstr "Profil Görünümleriniz"
 
 #: templates/company/single/review.php:474
 #: templates/company/single/review.php:599

@@ -3,6 +3,9 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
+
+
+
 if (!is_user_logged_in()) {
     civi_get_template('global/access-denied.php', array('type' => 'not_login'));
     return;
