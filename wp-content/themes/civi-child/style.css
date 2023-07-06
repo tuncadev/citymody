@@ -37,6 +37,18 @@ p {
 .skills-info .select2.select2-container .select2-selection {
   border: 1px solid #dddddd; }
 
+.archive-layout .archive-filter-top .form-group:last-child {
+  border: none;
+  border-radius: inherit; }
+
+.archive-layout .archive-filter-top .form-group {
+  border: none;
+  border-radius: inherit; }
+
+input#jobs_filter_search {
+  border: none;
+  border-radius: inherit; }
+
 /* Footer */
 .footer-new-top-section {
   border: none;
