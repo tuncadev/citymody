@@ -151,6 +151,17 @@ ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a 
     font-size: 16px !important; } }
 
 /* Project post page */
+form#new_project input[type="submit"] {
+  background-color: #065090;
+  border: 1px solid #065090;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px 17px !important;
+  margin-top: 30px;
+  width: 100%; }
+
 .post_projects > .row {
   margin-left: 0px;
   margin-right: 0px;
