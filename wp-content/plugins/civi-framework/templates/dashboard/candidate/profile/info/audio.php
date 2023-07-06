@@ -98,6 +98,7 @@ $candidate_category = $terms[0]->name;
  function ShowAudioDiv() {
          var selectBox = document.getElementById("candidate_categories");
          var audioDiv = document.getElementById("audio_track");
+				 console.log("VAL : " + selectBox.value);
          audioDiv.style.display = selectBox.value == "212" ? "block" : "none";
       }
 </script>
