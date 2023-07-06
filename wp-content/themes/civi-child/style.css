@@ -139,7 +139,8 @@ ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a 
   .post_projects-header h1.p_header {
     text-align: center !important;
     font-size: 28px !important;
-    line-height: 32px !important; } }
+    line-height: 32px !important;
+    padding: 10px; } }
 
 @media only screen and (max-width: 567px) {
   .container.post_projects {
