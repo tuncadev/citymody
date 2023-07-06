@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-
+echo "TESTING AUDIO " ;
 global $hide_candidate_fields, $candidate_data, $candidate_meta_data, $current_user;
 $user_id = $current_user->ID;
 $candidate_audio_list = get_post_meta($candidate_data->ID, CIVI_METABOX_PREFIX . 'candidate_audio_list', false);
