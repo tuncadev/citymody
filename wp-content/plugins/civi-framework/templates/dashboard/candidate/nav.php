@@ -14,8 +14,20 @@ $key_dashboard = [
     "candidate_meetings" => esc_html__('Meetings', 'civi-framework'),
     "candidate_settings" => esc_html__('Settings', 'civi-framework'),
     "candidate_logout" => esc_html__('Logout', 'civi-framework'),
+    ];
+$en_IDS = [
+    "candidate_dashboard" => 15370,
+    "candidate_profile" => 15375,
+    "my_jobs" => 15381,
+    "candidate_reviews" => '',
+    "candidate_company" => '',
+    "candidate_messages" => '',
+    "candidate_meetings" => '',
+    "candidate_settings" => 15379,
+    "candidate_logout" => '',
+    ];
 
-];
+$language = pll_current_language( 'slug' );
 
 $current_user = wp_get_current_user();
 $user_id = $current_user->ID;
@@ -47,9 +59,9 @@ if (empty($profile_strength_percent)) {
 
                 <ul class="list-nav-dashboard">
                     <?php foreach ($key_dashboard as $key => $value):
-
+                        
                         $show_candidate = civi_get_option("show_" . $key, "1");
-
+                        $nID = $en_IDS[$key];
                         if (!$show_candidate) {
                             continue;
                         }
@@ -62,6 +74,9 @@ if (empty($profile_strength_percent)) {
                         $class_active =
                             is_page($id) && $key !== "candidate_logout" ? "active" : "";
 
+                        if($language != "tr") { 
+                            if($nID != '') { $id = $nID; }
+                        } 
                         $link_url = "";
                         $link_url =
                             $key === "candidate_logout"
