@@ -17,7 +17,7 @@ if($terms) {
 $candidate_category = $terms[0]->name;
 
 ?>
-<? if($candidate_category === "Music") : ?>
+<? if($candidate_category === "Müzik") : ?>
 
     <div class="awards-info block-from" id="audio_track">
         <h5><?php esc_html_e('Audio', 'civi-framework') ?></h5>
