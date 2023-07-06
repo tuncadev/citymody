@@ -48,6 +48,9 @@ p {
     border: none;
     border-radius: inherit !important; } }
 
+.archive-layout .archive-filter-top .btn-top-filter {
+  margin-top: 10px; }
+
 /* Footer */
 .footer-new-top-section {
   border: none;
