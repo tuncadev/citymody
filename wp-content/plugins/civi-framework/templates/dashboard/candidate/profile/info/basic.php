@@ -7,9 +7,6 @@ if (!defined('ABSPATH')) {
 global $hide_candidate_fields, $candidate_data, $candidate_meta_data, $current_user;
 $user_id = $current_user->ID;
 
-
-echo "Language is: " . pll_current_language( 'slug' );
-
 $current_user = wp_get_current_user();
 $package_id = get_the_author_meta(CIVI_METABOX_PREFIX . 'package_id', $user_id);
 $package_unlimited_job = get_post_meta($package_id, CIVI_METABOX_PREFIX . 'package_unlimited_job', true);

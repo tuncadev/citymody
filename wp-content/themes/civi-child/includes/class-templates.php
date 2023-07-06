@@ -270,7 +270,7 @@ if (!class_exists("Civi_Templates")) {
 										echo esc_attr("active");
 									endif; ?>">
 							<a href="<?php echo get_post_type_archive_link("post"); ?>">
-								<span class="entry-name"><?php esc_html_e("All", "civichild"); ?></span>
+								<span class="entry-name"><?php esc_html_e("All", "civi"); ?></span>
 							</a>
 						</li>
 						<?php foreach ($categories as $category) {
@@ -293,19 +293,6 @@ if (!class_exists("Civi_Templates")) {
 
 		public static function account()
 		{
-			$en_IDS = [
-				"candidate_dashboard" => 15370,
-				"candidate_profile" => 15375,
-				"my_jobs" => 15381,
-				"candidate_reviews" => '',
-				"candidate_company" => '',
-				"candidate_messages" => '',
-				"candidate_meetings" => '',
-				"candidate_settings" => 15379,
-				"candidate_logout" => '',
-				];
-		
-			$language = pll_current_language( 'slug' );
 			$show_login = Civi_Helper::get_setting("show_login");
 
 			if (
@@ -433,15 +420,12 @@ if (!class_exists("Civi_Templates")) {
 											if (!$show_candidate) {
 												continue;
 											}
-											$nID = '';
+
 											$id = civi_get_option("civi_" . $key . "_page_id");
 											$image_candidate = civi_get_option("image_" . $key, "");
 
 											$class_active = (is_page($id) && $key !== "candidate_logout") ? 'active' : '';
-											if($language != "tr") { 
-												$nID = $en_IDS[$key];
-												if($nID === '') { $id = $id; } else { $id = $nID ; }
-											} 
+
 											$link_url = '';
 											$link_url = $key === "candidate_logout" ? wp_logout_url(home_url()) : get_permalink($id);
 
@@ -461,11 +445,9 @@ if (!class_exists("Civi_Templates")) {
 														'"/>';
 												}
 											}
-											$language = pll_current_language( 'slug' );
-										
 										?>
 											<li class="nav-item <?php echo $span_premium; ?> <?php esc_html_e($class_active) ?>">
-												<a href="<?php echo esc_url($link_url); ?>">
+												<a href="<?php echo esc_url($link_url) ?>">
 													<?php if (!empty($image_candidate["url"])) { ?>
 														<span class="image">
 															<?php echo $html_icon; ?>
@@ -494,7 +476,7 @@ if (!class_exists("Civi_Templates")) {
 				<div class="account logged-out">
 					<?php if ($show_login) : ?>
 						<a href="#popup-form" class="btn-login">
-							<?php esc_html_e("Login", "civichild"); ?></a>
+							<?php esc_html_e("Login", "civi"); ?></a>
 					<?php endif; ?>
 				</div>
 			<?php
@@ -549,16 +531,16 @@ if (!class_exists("Civi_Templates")) {
 		?>
 			<?php if ($enable_login_to_submit == "1" && !is_user_logged_in()) { ?>
 				<a href="<?php echo esc_url($add_jobs_not); ?>" class="civi-button add-job">
-					<?php esc_html_e("Post a job", "civichild"); ?>
+					<?php esc_html_e("Post a job", "civi"); ?>
 				</a>
 			<?php } else { ?>
 				<?php if (in_array('civi_user_candidate', (array)$current_user->roles)) { ?>
 					<a href="<?php echo esc_url($update_profile); ?>" class="add-job civi-button">
-						<?php esc_html_e("Update Profile", "civichild"); ?>
+						<?php esc_html_e("Update Profile", "civi"); ?>
 					</a>
 				<?php } else { ?>
 					<a href="<?php echo esc_url($add_jobs); ?>" class="add-job civi-button">
-						<?php esc_html_e("Post a job", "civichild"); ?>
+						<?php esc_html_e("Post a job", "civi"); ?>
 					</a>
 				<?php } ?>
 			<?php } ?>
