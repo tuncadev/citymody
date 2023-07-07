@@ -4240,7 +4240,8 @@ if (!class_exists('Civi_Admin')) {
 							'type' => 'text',
 							'title' => esc_html__('Google Login API', 'civi-framework'),
 							'subtitle' => esc_html__('Enter your google login api key'),
-							'default' => '128596758374-b8gac0mc9rjn5gnb96q0ma30naojdrcg.apps.googleusercontent.com'
+							'default' => '912412937100-rbi096jb7j0c9e8ee2ge8mm1hjda24fb.apps.googleusercontent.com'
+							
 						),
 						array(
 							'id' => 'facebook_app_id',
