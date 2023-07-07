@@ -1062,7 +1062,8 @@ var CIVI = CIVI || {};
 									$(".popup-account p.msg").text(data.messages);
 									$(".popup-account p.msg").addClass(data.class);
 									if (data.success == true) {
-										location.reload();
+										// location.reload();
+										location.href = 'https://www.citymody.com/candidate-profile/';
 									}
 									$(".popup-account .loading-effect").fadeOut();
 								},
