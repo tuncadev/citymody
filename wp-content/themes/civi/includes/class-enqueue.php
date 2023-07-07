@@ -257,7 +257,7 @@ if (!class_exists("Civi_Enqueue")) {
 
 			$google_id = Civi_Helper::civi_get_option(
 				"google_login_api",
-				"406259942299-s0m5o0ecdf8khdiittl1r6cd3pdjqsum.apps.googleusercontent.com"
+				"912412937100-rbi096jb7j0c9e8ee2ge8mm1hjda24fb.apps.googleusercontent.com"
 			);
 			$sticky_header = Civi_Helper::get_setting("sticky_header");
 			$float_header = Civi_Helper::get_setting("float_header");
