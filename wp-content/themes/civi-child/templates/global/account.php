@@ -22,13 +22,13 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 		</a>
 		<div class="head-popup">
 			<div class="tabs-form">
-				<a class="btn-login active" href="#ux-login" data-form="ux-login"><?php esc_html_e('Log in', 'civi'); ?></a>
-				<a class="btn-register" href="#ux-register" data-form="ux-register"><?php esc_html_e('Sign Up', 'civi'); ?></a>
+				<a class="btn-login active" href="#ux-login" data-form="ux-login"><?php esc_html_e('Log in', 'civichild'); ?></a>
+				<a class="btn-register" href="#ux-register" data-form="ux-register"><?php esc_html_e('Sign Up', 'civichild'); ?></a>
 				<div class="loading-effect"><span class="civi-dual-ring"></span></div>
 			</div>
 
 			<?php if (is_user_logged_in()) { ?>
-				<p class="notice"><i class="fal fa-exclamation-circle"></i><?php esc_html_e('Please login role Candidate to view', 'civi'); ?></p>
+				<p class="notice"><i class="fal fa-exclamation-circle"></i><?php esc_html_e('Please login role Candidate to view', 'civichild'); ?></p>
 			<?php } ?>
 		</div>
 
@@ -41,14 +41,14 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 				<div class="civi-new-password-wrap">
 					<form action="#" method="post">
 						<div class="form-group control-password">
-							<input name="new_password" type="text" id="new-password" class="form-control control-icon" placeholder="<?php esc_attr_e('Enter new password', 'civi'); ?>">
+							<input name="new_password" type="text" id="new-password" class="form-control control-icon" placeholder="<?php esc_attr_e('Enter new password', 'civichild'); ?>">
 							<span><i class="fas fa-eye"></i></span>
 						</div>
 						<div class="button-wrap">
-							<a href="#" class="generate-password"><?php esc_html_e('Generate Password', 'civi'); ?></a>
-							<button type="submit" id="civi_newpass" class="btn gl-button"><?php esc_html_e('Save password', 'civi'); ?></button>
+							<a href="#" class="generate-password"><?php esc_html_e('Generate Password', 'civichild'); ?></a>
+							<button type="submit" id="civi_newpass" class="btn gl-button"><?php esc_html_e('Save password', 'civichild'); ?></button>
 							<input type="hidden" name="login" id="login" value="<?php esc_html_e($_GET['login']) ?>">
-							<p class="msg"><?php esc_html_e('Sending info,please wait...', 'civi'); ?></p>
+							<p class="msg"><?php esc_html_e('Sending info,please wait...', 'civichild'); ?></p>
 						</div>
 					</form>
 				</div>
@@ -60,12 +60,12 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 					<?php do_action('civi_user_demo_sign_in'); ?>
 
 					<div class="form-group">
-						<label for="ip_email" class="label-field"><?php esc_html_e('Account or Email', 'civi'); ?></label>
-						<input type="text" id="ip_email" class="form-control input-field" name="email" placeholder="<?php esc_attr_e('Enter Account or Email', 'civi') ?>">
+						<label for="ip_email" class="label-field"><?php esc_html_e('Account or Email', 'civichild'); ?></label>
+						<input type="text" id="ip_email" class="form-control input-field" name="email" placeholder="<?php esc_attr_e('Enter Account or Email', 'civichild') ?>">
 					</div>
 					<div class="form-group">
-						<label for="ip_password" class="label-field"><?php esc_html_e('Password', 'civi'); ?></label>
-						<input type="password" id="ip_password" class="form-control input-field" name="password" autocomplete="on" placeholder="<?php esc_attr_e('Enter Password', 'civi') ?>">
+						<label for="ip_password" class="label-field"><?php esc_html_e('Password', 'civichild'); ?></label>
+						<input type="password" id="ip_password" class="form-control input-field" name="password" autocomplete="on" placeholder="<?php esc_attr_e('Enter Password', 'civichild') ?>">
 					</div>
 
 					<?php
@@ -79,17 +79,17 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 						</div>
 					<?php endif; ?>
 
-					<p class="msg"><?php esc_html_e('Sending login info,please wait...', 'civi'); ?></p>
+					<p class="msg"><?php esc_html_e('Sending login info,please wait...', 'civichild'); ?></p>
 
 					<div class="form-group">
 						<div class="forgot-password">
-							<span><?php esc_html_e('Forgot your password? ', 'civi'); ?></span>
-							<a class="btn-reset-password" href="#"><?php esc_html_e('Reset password.', 'civi'); ?></a>
+							<span><?php esc_html_e('Forgot your password? ', 'civichild'); ?></span>
+							<a class="btn-reset-password" href="#"><?php esc_html_e('Reset password.', 'civichild'); ?></a>
 						</div>
 					</div>
 
 					<div class="form-group">
-						<button type="submit" class="gl-button btn button" value="<?php esc_attr_e('Sign in', 'civi'); ?>"><?php esc_html_e('Sign in', 'civi'); ?></button>
+						<button type="submit" class="gl-button btn button" value="<?php esc_attr_e('Sign in', 'civichild'); ?>"><?php esc_html_e('Sign in', 'civichild'); ?></button>
 					</div>
 				</form>
 
@@ -97,14 +97,14 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 					<div id="civi_messages_reset_password" class="civi_messages message"></div>
 					<form method="post" enctype="multipart/form-data">
 						<div class="form-group control-username">
-							<input name="user_login" id="user_login" class="form-control control-icon" placeholder="<?php esc_attr_e('Enter your username or email', 'civi'); ?>">
+							<input name="user_login" id="user_login" class="form-control control-icon" placeholder="<?php esc_attr_e('Enter your username or email', 'civichild'); ?>">
 							<?php wp_nonce_field('civi_reset_password_ajax_nonce', 'civi_security_reset_password'); ?>
 							<input type="hidden" name="action" id="reset_password_action" value="civi_reset_password_ajax">
-							<p class="msg"><?php esc_html_e('Sending info,please wait...', 'civi'); ?></p>
-							<button type="submit" id="civi_forgetpass" class="btn gl-button"><?php esc_html_e('Get new password', 'civi'); ?></button>
+							<p class="msg"><?php esc_html_e('Sending info,please wait...', 'civichild'); ?></p>
+							<button type="submit" id="civi_forgetpass" class="btn gl-button"><?php esc_html_e('Get new password', 'civichild'); ?></button>
 						</div>
 					</form>
-					<a class="back-to-login" href="#"><i class="fas fa-arrow-left"></i><?php esc_html_e('Back to login', 'civi'); ?></a>
+					<a class="back-to-login" href="#"><i class="fas fa-arrow-left"></i><?php esc_html_e('Back to login', 'civichild'); ?></a>
 				</div>
 
 				<form action="#" id="ux-register" class="form-account ux-register" method="post">
@@ -118,7 +118,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 									<div class="col-group">
 										<label for="civi_user_candidate" class="label-field radio-field">
 											<input type="radio" value="civi_user_candidate" id="civi_user_candidate" name="account_type">
-											<span><i class="fal fa-user"></i><?php esc_html_e('Candidate', 'civi'); ?></span>
+											<span><i class="fal fa-user"></i><?php esc_html_e('Candidate', 'civichild'); ?></span>
 										</label>
 									</div>
 								</div>
@@ -126,7 +126,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 									<div class="col-group">
 										<label for="civi_user_employer" class="label-field radio-field">
 											<input type="radio" value="civi_user_employer" id="civi_user_employer" name="account_type" checked>
-											<span><i class="fal fa-briefcase"></i><?php esc_html_e('Employer', 'civi'); ?></span>
+											<span><i class="fal fa-briefcase"></i><?php esc_html_e('Employer', 'civichild'); ?></span>
 										</label>
 									</div>
 								</div>
@@ -139,29 +139,29 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 						<div class="row">
 							<div class="col-6">
 								<div class="col-group">
-									<label for="ip_reg_firstname" class="label-field"><?php esc_html_e('First Name', 'civi'); ?></label>
-									<input type="text" id="ip_reg_firstname" class="form-control input-field" name="reg_firstname" placeholder="<?php esc_attr_e('Name', 'civi') ?>">
+									<label for="ip_reg_firstname" class="label-field"><?php esc_html_e('First Name', 'civichild'); ?></label>
+									<input type="text" id="ip_reg_firstname" class="form-control input-field" name="reg_firstname" placeholder="<?php esc_attr_e('Name', 'civichild') ?>">
 								</div>
 							</div>
 							<div class="col-6">
 								<div class="col-group">
-									<label for="ip_reg_lastname" class="label-field"><?php esc_html_e('Last Name', 'civi'); ?></label>
-									<input type="text" id="ip_reg_lastname" class="form-control input-field" name="reg_lastname" placeholder="<?php esc_attr_e('Name', 'civi') ?>">
+									<label for="ip_reg_lastname" class="label-field"><?php esc_html_e('Last Name', 'civichild'); ?></label>
+									<input type="text" id="ip_reg_lastname" class="form-control input-field" name="reg_lastname" placeholder="<?php esc_attr_e('Last Name', 'civichild') ?>">
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="ip_reg_company_name" class="label-field"><?php esc_html_e('Username', 'civi'); ?></label>
-						<input type="text" id="ip_reg_company_name" class="form-control input-field" name="reg_company_name" placeholder="<?php esc_attr_e('Enter Username', 'civi') ?>">
+						<label for="ip_reg_company_name" class="label-field"><?php esc_html_e('Username', 'civichild'); ?></label>
+						<input type="text" id="ip_reg_company_name" class="form-control input-field" name="reg_company_name" placeholder="<?php esc_attr_e('Enter Username', 'civichild') ?>">
 					</div>
 					<div class="form-group">
-						<label for="ip_reg_email" class="label-field"><?php esc_html_e('Email', 'civi'); ?></label>
-						<input type="email" id="ip_reg_email" class="form-control input-field" name="reg_email" placeholder="<?php esc_attr_e('Enter Email', 'civi') ?>">
+						<label for="ip_reg_email" class="label-field"><?php esc_html_e('Email', 'civichild'); ?></label>
+						<input type="email" id="ip_reg_email" class="form-control input-field" name="reg_email" placeholder="<?php esc_attr_e('Enter Email', 'civichild') ?>">
 					</div>
 					<div class="form-group">
-						<label for="ip_reg_password" class="label-field"><?php esc_html_e('Password', 'civi'); ?></label>
-						<input type="password" id="ip_reg_password" class="form-control input-field" name="reg_password" autocomplete="on" placeholder="<?php esc_attr_e('Enter Password', 'civi') ?>">
+						<label for="ip_reg_password" class="label-field"><?php esc_html_e('Password', 'civichild'); ?></label>
+						<input type="password" id="ip_reg_password" class="form-control input-field" name="reg_password" autocomplete="on" placeholder="<?php esc_attr_e('Enter Password', 'civichild') ?>">
 					</div>
 					<?php
 					$enable_captcha = Civi_Helper::civi_get_option('enable_captcha');
@@ -180,25 +180,25 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 						$privacy_policy = Civi_Helper::civi_get_option('privacy_policy');
 						?>
 						<input type="checkbox" id="ip_accept_account" class="form-control custom-checkbox" name="accept_account">
-						<label for="ip_accept_account"><?php printf(esc_html__('Accept the %1$s and %2$s', 'civi'), '<a href="' . get_permalink($terms_condition) . '">' . esc_html__('Terms', 'civi') . '</a>', '<a href="' . get_permalink($privacy_policy) . '">' . esc_html__('Privacy Policy', 'civi') . '</a>'); ?></label>
+						<label for="ip_accept_account"><?php printf(esc_html__('Accept the %1$s and %2$s', 'civichild'), '<a href="' . get_permalink($terms_condition) . '">' . esc_html__('Terms', 'civichild') . '</a>', '<a href="' . get_permalink($privacy_policy) . '">' . esc_html__('Privacy Policy', 'civichild') . '</a>'); ?></label>
 					</div>
 
-					<p class="msg"><?php esc_html_e('Sending register info,please wait...', 'civi'); ?></p>
+					<p class="msg"><?php esc_html_e('Sending register info,please wait...', 'civichild'); ?></p>
 
 					<div class="form-group">
-						<button type="submit" class="gl-button btn button" value="<?php esc_attr_e('Sign in', 'civi'); ?>"><?php esc_html_e('Sign up', 'civi'); ?></button>
+						<button type="submit" class="gl-button btn button" value="<?php esc_attr_e('Sign in', 'civichild'); ?>"><?php esc_html_e('Sign up', 'civichild'); ?></button>
 					</div>
 				</form>
 
 				<form action="#" id="ux-verify" class="form-account ux-verify" method="post">
 					<div class="form-group">
-						<label for="verify-code" class="label-field"><?php esc_html_e('Verify Code', 'civi'); ?></label>
-						<input type="text" id="verify-code" class="form-control input-field" name="verify_code" placeholder="<?php esc_attr_e('Enter Code', 'civi') ?>">
+						<label for="verify-code" class="label-field"><?php esc_html_e('Verify Code', 'civichild'); ?></label>
+						<input type="text" id="verify-code" class="form-control input-field" name="verify_code" placeholder="<?php esc_attr_e('Enter Code', 'civichild') ?>">
 					</div>
-					<p class="msg"><?php esc_html_e('Sending register info,please wait...', 'civi'); ?></p>
-					<p><?php esc_html_e('Please check your email and enter the verification code to activate your account.', 'civi'); ?></p>
+					<p class="msg"><?php esc_html_e('Sending register info,please wait...', 'civichild'); ?></p>
+					<p><?php esc_html_e('Please check your email and enter the verification code to activate your account.', 'civichild'); ?></p>
 					<div class="form-group">
-						<button type="submit" class="gl-button btn button" value="<?php esc_attr_e('Verify', 'civi'); ?>"><?php esc_html_e('Verify', 'civi'); ?></button>
+						<button type="submit" class="gl-button btn button" value="<?php esc_attr_e('Verify', 'civichild'); ?>"><?php esc_html_e('Verify', 'civichild'); ?></button>
 					</div>
 				</form>
 
@@ -212,7 +212,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 			?>
 
 				<div class="addon-login">
-					<?php esc_html_e('Or Continue with', 'civi'); ?>
+					<?php esc_html_e('Or Continue with', 'civichild'); ?>
 				</div>
 
 				<ul>
