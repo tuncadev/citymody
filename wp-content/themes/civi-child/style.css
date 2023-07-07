@@ -51,6 +51,9 @@ p {
 .archive-layout .archive-filter-top .btn-top-filter {
   margin-top: 10px; }
 
+.popup-account .accept-account label {
+  font-size: 11px !important; }
+
 /* Footer */
 .footer-new-top-section {
   border: none;
