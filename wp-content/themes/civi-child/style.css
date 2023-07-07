@@ -54,6 +54,9 @@ p {
 .popup-account .accept-account label {
   font-size: 11px !important; }
 
+.addon-login-wrap ul .linkedin-login {
+  display: none; }
+
 /* Footer */
 .footer-new-top-section {
   border: none;
