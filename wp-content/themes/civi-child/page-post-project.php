@@ -191,26 +191,4 @@ jQuery("[name=cat]").change(function() {
   skills.filter("." + val).clone().appendTo("[name=skills]")}).change();	
 </script>
 <script src="<?php echo trailingslashit( get_stylesheet_directory_uri() ) . "/js/getCitiesAjax.js"; ?>"></script>
-
-<div class="bg-overlay-success" id="thank_you"  style="display: none;">
-	<div class="container post_projects"> 
-		<div class="row">
-			<div class="cntr-msg">
-				<h2>
-					<?php echo _e("Great!  !@# We have received your submission", "civichild"); ?>
-				</h2>
-				<a class="close" href="https://www.citymody.com/">×</a>
-				<span><strong>
-					<?php echo _e("We will contact you as soon as our moderators review your submission", "civichild"); ?>
-					</strong>
-				</span>
-				<p>
-					<?php echo _e("You will now be redirected to CityMody Home page in:", "civichild"); ?>
-					<br />
-					<span id="seconds"></span>
-				</p>
-			</div>		
-		</div>
-	</div>
-</div>
 <?php get_footer(); ?>
