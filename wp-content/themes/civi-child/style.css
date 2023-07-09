@@ -30,7 +30,7 @@ p {
   line-height: 30px;
   letter-spacing: 0; }
 
-.cntr-msg a {
+.cntr-msg a.closeme {
   padding: 12px 20px;
   background-color: #2876bb;
   border-radius: 8px;
@@ -928,6 +928,7 @@ span.premium_menu_txt {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   position: absolute;
   align-items: center;
   align-content: center;
