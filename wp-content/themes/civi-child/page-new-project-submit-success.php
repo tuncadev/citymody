@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
 		<div class="row">
 			<div class="cntr-msg">
 				<h2>
-					<?php echo _e("Great! We have received your submission", "civichild"); ?>
+					<?php echo _e("Great! !@# We have received your submission", "civichild"); ?>
 				</h2>
 				<a class="close" href="https://www.citymody.com/">×</a>
 				<span><strong>
