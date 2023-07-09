@@ -46,8 +46,8 @@ var foo; // variable for clearInterval() function
 
 function redirect() {
 	console.log("fuuncton redirect");
-		window.location.href = 'https://www.citymody.com/';
-		exit;
+		window.location.replace("http://www.w3schools.com");
+
 }
 
 function updateSecs() {
