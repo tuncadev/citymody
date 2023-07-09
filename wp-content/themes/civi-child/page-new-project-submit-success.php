@@ -10,6 +10,12 @@ if (!defined('ABSPATH')) {
 }
 	
 </style>
+<?php 
+$id=9480; 
+$post = get_post($id); 
+$content = apply_filters('the_content', $post->post_content); 
+echo $content;  
+?>
 <div class="bg-overlay-success">
 	<div class="container post_projects"> 
 		<div class="row">
@@ -23,9 +29,7 @@ if (!defined('ABSPATH')) {
 					</strong>
 				</span>
 				<p>
-					<?php echo _e("You will now be redirected to CityMody Home page in:", "civichild"); ?>
-					<br />
-					<span id="seconds"></span>
+					<a class="closeme" href="https://www.citymody.com/" ><?php echo _e("Close", "civichild"); ?></a>
 				</p>
 			</div>		
 		</div>
@@ -35,32 +39,7 @@ if (!defined('ABSPATH')) {
 
 <script>
 
-var seconds = 5; // seconds for HTML
-var foo; // variable for clearInterval() function
 
-function redirect() {
-	console.log("fuuncton redirect");
-		window.location.replace("http://www.w3schools.com");
-
-}
-
-function updateSecs() {
-    document.getElementById("seconds").innerHTML = seconds;
-    seconds--;
-    if (seconds == -1) {
-        clearInterval(foo);
-				console.log("updateSecs");
-        redirect();
-    }
-}
-
-function countdownTimer() {
-    foo = setInterval(function () {
-        updateSecs()
-    }, 1000);
-}
-
-countdownTimer();
 </script>
 
 <?php get_footer(); ?>
