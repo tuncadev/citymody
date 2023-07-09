@@ -152,12 +152,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 						<option value=""><?php echo __("Please Select Gender", "civichild"); ?></option>
 						<option value="female"><?php echo __("Female", "civichild"); ?></option>
 						<option value="male"><?php echo __("Male", "civichild"); ?></option>
+						<option value="male"><?php echo __("Does not matter", "civichild"); ?></option>
 					</select>
 				</div>
 				<div class="form-group col-md-3">
 					<label for="age_range"><?php echo __("Age Range", "civichild"); ?></label>
 					<select name="age_range" id="age_range" class="form-control" required>
-						<option value=""><?php echo __("Please Age Range", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Select Age Range", "civichild"); ?></option>
 						<option value="18-25"><?php echo __("18-25", "civichild"); ?></option>
 						<option value="25-30"><?php echo __("25-30", "civichild"); ?></option>
 						<option value="30-35"><?php echo __("30-35", "civichild"); ?></option>
