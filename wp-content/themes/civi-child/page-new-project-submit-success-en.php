@@ -10,12 +10,6 @@ if (!defined('ABSPATH')) {
 }
 	
 </style>
-<?php 
-$id=9480; 
-$post = get_post($id); 
-$content = apply_filters('the_content', $post->post_content); 
-echo $content;  
-?>
 <div class="bg-overlay-success">
 	<div class="container post_projects"> 
 		<div class="row">
