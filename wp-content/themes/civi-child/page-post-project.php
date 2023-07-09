@@ -192,16 +192,11 @@ jQuery("[name=cat]").change(function() {
 </script>
 <script src="<?php echo trailingslashit( get_stylesheet_directory_uri() ) . "/js/getCitiesAjax.js"; ?>"></script>
 <script>
-  var nextStep = document.querySelector('#nextStep');
-
-  nextStep.addEventListener('click', function (e) {
-    e.preventDefault();
-    // Hide first view
-    document.getElementById('new_project').style.display = 'none';
-
-    // Show thank you message element
-    document.getElementById('thank_you').style.display = 'block';
-  });
+	jQuery(document).ready(function() {
+    jQuery('#new_project').submit(function() {
+			document.getElementById('thank_you').style.display = 'block';
+    });
+});
 </script>
 <div class="bg-overlay-success" id="thank_you"  style="display: none;">
 	<div class="container post_projects"> 
