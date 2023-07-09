@@ -59,7 +59,7 @@ $copyright_text   = Civi_Helper::get_setting('footer_copyright_text');
 <div class="copyright">
 	<div class="container">
 		<div class="area-copyright">
-			<div class="copyright-text" style="text-align:center"><?php esc_html_e($copyright_text); ?></div>
+			<div class="copyright-text" style="text-align:center"><?php __("$copyright_text", "civichild"); ?></div>
 		</div>
 	</div>
 </div>
