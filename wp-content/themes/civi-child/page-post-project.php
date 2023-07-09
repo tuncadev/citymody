@@ -69,7 +69,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		update_field( "gender", $gender, $post_id );
 		update_field( "age_range", $age_range, $post_id );
 		update_field( "expiration", $expiration, $post_id );	
-				header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}
@@ -86,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<form action="" class="new_project" id="new_project" name="new_project" method="post">
 			<div class="row">
 				<div class="form-group col-md-6">
-					 <label for="namelast"><?php echo __("Full Name", "civichild"); ?></label>
+					 <label for="namelast"><?php echo __("Full Name 1", "civichild"); ?></label>
 					<input type="text" name="namelast" id="namelast" class="point-mark point-active valid" required>
 				</div>
 				<div class="form-group col-md-6">
