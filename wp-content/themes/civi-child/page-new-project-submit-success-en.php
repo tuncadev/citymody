@@ -28,11 +28,7 @@ echo $content;
 					<?php echo _e("We will contact you as soon as our moderators review your submission", "civichild"); ?>
 					</strong>
 				</span>
-				<p>
-					<?php echo _e("You will now be redirected to CityMody Home page in:", "civichild"); ?>
-					<br />
-					<span id="seconds"></span>
-				</p>
+					<a class="closeme" href="https://www.citymody.com/" ><?php echo _e("Close", "civichild"); ?></a>
 			</div>		
 		</div>
 	</div>
@@ -41,31 +37,7 @@ echo $content;
 
 <script>
 
-var seconds = 5; // seconds for HTML
-var foo; // variable for clearInterval() function
 
-function redirect() {
-	console.log("fuuncton redirect");
-window.location.replace("http://www.w3schools.com");
-}
-
-function updateSecs() {
-    document.getElementById("seconds").innerHTML = seconds;
-    seconds--;
-    if (seconds == -1) {
-        clearInterval(foo);
-				console.log("updateSecs");
-        redirect();
-    }
-}
-
-function countdownTimer() {
-    foo = setInterval(function () {
-        updateSecs()
-    }, 1000);
-}
-
-countdownTimer();
 </script>
 
 <?php get_footer(); ?>
