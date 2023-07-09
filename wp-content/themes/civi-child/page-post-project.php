@@ -175,9 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				<div class="form-group col-md-3 civi-mailchimp-form-style-01">
 					<input type="submit" value="Send">
 				</div>
-			</div>
-
-			
+			</div>	
 		</form>
 	</div>
 </div>
