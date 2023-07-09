@@ -19,4 +19,3 @@ $copyright_text   = Civi_Helper::get_setting('footer_copyright_text');
 		</div>
 	</div>
 </div>
-<script src="//code.jivosite.com/widget/iSxMprrQJF" async></script>
