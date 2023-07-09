@@ -68,7 +68,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		update_field( "ilce", $ilce, $post_id );
 		update_field( "gender", $gender, $post_id );
 		update_field( "age_range", $age_range, $post_id );
-		update_field( "expiration", $expiration, $post_id );		
+		update_field( "expiration", $expiration, $post_id );	
+		header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}
@@ -78,40 +79,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	<div class="row">
 		<div class="post_projects-header">
 			<img src="https://www.citymody.com/wp-content/uploads/2023/06/free.svg" alt="Free Project Post">
-			<h1 class="p_header"><?php echo __("Post a project to find the best talent for your next project.", "civichild"); ?></h1>
+			<h1 class="p_header"><?php echo __("Post a project to find the best talent for your next project.", "civi-framework"); ?></h1>
 		</div>
 	</div>`
 	<div class="project_form_row">
 		<form action="" class="new_project" id="new_project" name="new_project" method="post">
 			<div class="row">
 				<div class="form-group col-md-6">
-					 <label for="namelast"><?php echo __("Full Name", "civichild"); ?></label>
+					 <label for="namelast"><?php echo __("Full Name", "civi-framework"); ?></label>
 					<input type="text" name="namelast" id="namelast" class="point-mark point-active valid" required>
 				</div>
 				<div class="form-group col-md-6">
-					 <label for="email"><?php echo __("Company E-mail", "civichild"); ?></label>
+					 <label for="email"><?php echo __("Company E-mail", "civi-framework"); ?></label>
 					<input type="email" name="email" id="user_email" class="point-mark point-active valid" required>
 				</div>	
 				<div class="form-group col-md-6">
-					 <label for="telephone"><?php echo __("Phone Number", "civichild"); ?></label>
+					 <label for="telephone"><?php echo __("Phone Number", "civi-framework"); ?></label>
 					<input type="tel" name="telephone" id="input-telephone" class="form-control point-mark point-active valid" value="" data-mask="(0999) 999 99 99" required placeholder="Örn: (0232) 555 55 55">
 				</div>	
 				<div class="form-group col-md-6">
-					 <label for="company_name"><?php echo __("Company Name", "civichild"); ?></label>
+					 <label for="company_name"><?php echo __("Company Name", "civi-framework"); ?></label>
 					<input type="text" name="company_name" id="company_name" class="point-mark point-active valid" required>
 				</div>	
 				<div class="form-group col-md-12">
-					 <label for="project_title"><?php echo __("Project Title", "civichild"); ?></label>
-					<input name="project_title" type="text" id="project_title" class="point-mark point-active valid" placeholder="<?php echo __("Example: Looking for a female hostess for the TV program.", "civichild"); ?>" required>
+					 <label for="project_title"><?php echo __("Project Title", "civi-framework"); ?></label>
+					<input name="project_title" type="text" id="project_title" class="point-mark point-active valid" placeholder="<?php echo __("Example: Looking for a female hostess for the TV program.", "civi-framework"); ?>" required>
 				</div>
 				<div class="form-group col-md-12">
-					 <label for="short_desc"><?php echo __("Short Description", "civichild"); ?></label>
-					<textarea name="short_desc" id="short_desc" class="short_desc" style="height: 260px; line-height: 27px; padding: 12px 20px;" type="text" placeholder="<?php echo __("Project Day - Requirements - Event Details","civichild"); ?>" required></textarea>
+					 <label for="short_desc"><?php echo __("Short Description", "civi-framework"); ?></label>
+					<textarea name="short_desc" id="short_desc" class="short_desc" style="height: 260px; line-height: 27px; padding: 12px 20px;" type="text" placeholder="<?php echo __("Project Day - Requirements - Event Details","civi-framework"); ?>" required></textarea>
 				</div>
 				<div class="form-group col-md-6">
-			 		<label for="cat"><?php echo __("Project Category", "civichild"); ?></label>
+			 		<label for="cat"><?php echo __("Project Category", "civi-framework"); ?></label>
 					<select name="cat" id="cat" required>
-						<option value=""><?php echo __("Please Select Category", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Select Category", "civi-framework"); ?></option>
 						<?php
 							foreach ($taxonomy_terms as $term) {			
 								echo '<option id="' . $term->term_id . '"  value="' . $term->name . '">' .  $term->name . '</option>';				
@@ -120,9 +121,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					</select>
 				</div>
 				<div class="form-group col-md-6">
-					<label for="skills"><?php echo __("Skill Category", "civichild"); ?></label>
+					<label for="skills"><?php echo __("Skill Category", "civi-framework"); ?></label>
 					<select name="skills" id="skills" required style="display:none;">			
-						<option value=""><?php echo __("Please Select Category First", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Select Category First", "civi-framework"); ?></option>
 					<?php
 						$terms = get_terms( $taxonomyName, array( 'orderby' => 'slug', 'hide_empty' => false ) );
 						foreach ($terms as $child_term) {			
@@ -133,40 +134,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				</div>
 	
 				<div class="form-group col-md-6">
-					<label for="il"><?php echo __("City", "civichild"); ?></label>
+					<label for="il"><?php echo __("City", "civi-framework"); ?></label>
 					<select name="il" id="il" class="form-control" required>
-						<option value=""><?php echo __("Please Select City", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Select City", "civi-framework"); ?></option>
 					</select>
             	</div>
 
 				<div class="form-group col-md-6">
-					<label for="ilce"><?php echo __("Provience", "civichild"); ?></label>
+					<label for="ilce"><?php echo __("Provience", "civi-framework"); ?></label>
 					<select name="ilce" id="ilce" class="form-control" disabled="disabled" required>
-						<option value=""><?php echo __("Please Select Provience", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Select Provience", "civi-framework"); ?></option>
 					</select>
 				</div>
 				<div class="form-group col-md-6">
-					<label for="gender"><?php echo __("Gender", "civichild"); ?></label>
+					<label for="gender"><?php echo __("Gender", "civi-framework"); ?></label>
 					<select name="gender" id="gender" class="form-control" required>
-						<option value=""><?php echo __("Please Select Gender", "civichild"); ?></option>
-						<option value="female"><?php echo __("Female", "civichild"); ?></option>
-						<option value="male"><?php echo __("Male", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Select Gender", "civi-framework"); ?></option>
+						<option value="female"><?php echo __("Female", "civi-framework"); ?></option>
+						<option value="male"><?php echo __("Male", "civi-framework"); ?></option>
 					</select>
 				</div>
 				<div class="form-group col-md-3">
-					<label for="age_range"><?php echo __("Age Range", "civichild"); ?></label>
+					<label for="age_range"><?php echo __("Age Range", "civi-framework"); ?></label>
 					<select name="age_range" id="age_range" class="form-control" required>
-						<option value=""><?php echo __("Please Choose Age Range", "civichild"); ?></option>
-						<option value="18-25"><?php echo __("18-25", "civichild"); ?></option>
-						<option value="25-30"><?php echo __("25-30", "civichild"); ?></option>
-						<option value="30-35"><?php echo __("30-35", "civichild"); ?></option>
-						<option value="35-40"><?php echo __("35-40", "civichild"); ?></option>
-						<option value="40plus"><?php echo __("40+", "civichild"); ?></option>
+						<option value=""><?php echo __("Please Age Range", "civi-framework"); ?></option>
+						<option value="18-25"><?php echo __("18-25", "civi-framework"); ?></option>
+						<option value="25-30"><?php echo __("25-30", "civi-framework"); ?></option>
+						<option value="30-35"><?php echo __("30-35", "civi-framework"); ?></option>
+						<option value="35-40"><?php echo __("35-40", "civi-framework"); ?></option>
+						<option value="40plus"><?php echo __("40+", "civi-framework"); ?></option>
 					</select>
 				</div>
 				<div class="form-group col-md-3"></div>
 				<div class="form-group col-md-6">
-					<label for="expiration"><?php echo __("Expiration Date of Project", "civichild"); ?></label>
+					<label for="expiration"><?php echo __("Expiration Date of Project", "civi-framework"); ?></label>
 					<input type="date" name="expiration" id="expiration">
 				</div>	
 			
@@ -174,9 +175,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				<div class="form-group col-md-3 civi-mailchimp-form-style-01">
 					<input type="submit" value="Send">
 				</div>
-			</div>
-
-			
+			</div>	
 		</form>
 	</div>
 </div>
