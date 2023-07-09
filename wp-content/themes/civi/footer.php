@@ -53,9 +53,9 @@ if (!empty($id)) {
 				}
 			} ?>
 		</div>
-	</footer>
-<?php } ?>
-</div><!-- End #wrapper -->
+		<?php
+$copyright_text   = Civi_Helper::get_setting('footer_copyright_text');
+?>
 <div class="copyright">
 	<div class="container">
 		<div class="area-copyright">sdfsf
@@ -63,6 +63,10 @@ if (!empty($id)) {
 		</div>
 	</div>
 </div>
+	</footer>
+<?php } ?>
+</div><!-- End #wrapper -->
+
 
 <?php wp_footer(); ?>
 
