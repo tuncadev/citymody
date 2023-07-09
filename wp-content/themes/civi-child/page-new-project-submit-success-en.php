@@ -10,12 +10,18 @@ if (!defined('ABSPATH')) {
 }
 	
 </style>
+<?php 
+$id=9480; 
+$post = get_post($id); 
+$content = apply_filters('the_content', $post->post_content); 
+echo $content;  
+?>
 <div class="bg-overlay-success">
 	<div class="container post_projects"> 
 		<div class="row">
 			<div class="cntr-msg">
 				<h2>
-					<?php echo _e("Great!  !@# We have received your submission", "civichild"); ?>
+					<?php echo _e("Great! We have received your submission", "civichild"); ?>
 				</h2>
 				<a class="close" href="https://www.citymody.com/">×</a>
 				<span><strong>
@@ -40,7 +46,7 @@ var foo; // variable for clearInterval() function
 
 function redirect() {
 	console.log("fuuncton redirect");
-	window.location.replace("http://www.w3schools.com");
+window.location.replace("http://www.w3schools.com");
 }
 
 function updateSecs() {
