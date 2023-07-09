@@ -45,6 +45,7 @@ var seconds = 5; // seconds for HTML
 var foo; // variable for clearInterval() function
 
 function redirect() {
+	console.log("fuuncton redirect");
     document.location.href = 'https://www.citymody.com/';
 }
 
@@ -53,6 +54,7 @@ function updateSecs() {
     seconds--;
     if (seconds == -1) {
         clearInterval(foo);
+				console.log("updateSecs");
         redirect();
     }
 }
