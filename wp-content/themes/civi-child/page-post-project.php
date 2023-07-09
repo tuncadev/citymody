@@ -69,7 +69,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		update_field( "gender", $gender, $post_id );
 		update_field( "age_range", $age_range, $post_id );
 		update_field( "expiration", $expiration, $post_id );	
-		header("Location:https://www.citymody.com/new-project-submit-success/");
+		?>
+		<script>
+			document.getElementById('thank_you').style.display = 'block';
+</script>
+		<?php
+//		header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}
@@ -191,13 +196,7 @@ jQuery("[name=cat]").change(function() {
   skills.filter("." + val).clone().appendTo("[name=skills]")}).change();	
 </script>
 <script src="<?php echo trailingslashit( get_stylesheet_directory_uri() ) . "/js/getCitiesAjax.js"; ?>"></script>
-<script>
-	jQuery(document).ready(function() {
-    jQuery('#new_project').submit(function() {
-			document.getElementById('thank_you').style.display = 'block';
-    });
-});
-</script>
+
 <div class="bg-overlay-success" id="thank_you"  style="display: none;">
 	<div class="container post_projects"> 
 		<div class="row">
