@@ -28,9 +28,7 @@ echo $content;
 					<?php echo _e("We will contact you as soon as our moderators review your submission", "civichild"); ?>
 					</strong>
 				</span>
-				<p>
 					<a class="closeme" href="https://www.citymody.com/" ><?php echo _e("Close", "civichild"); ?></a>
-				</p>
 			</div>		
 		</div>
 	</div>

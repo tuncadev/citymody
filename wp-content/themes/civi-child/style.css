@@ -30,6 +30,13 @@ p {
   line-height: 30px;
   letter-spacing: 0; }
 
+.cntr-msg a {
+  padding: 12px 20px;
+  background-color: #2876bb;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none; }
+
 /* Dashboard Skill Select box */
 .skills-info .select2.select2-container, .skills-info select.civi-select2 {
   width: 80% !important; }
