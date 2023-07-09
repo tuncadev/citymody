@@ -56,6 +56,13 @@ if (!empty($id)) {
 	</footer>
 <?php } ?>
 </div><!-- End #wrapper -->
+<div class="copyright">
+	<div class="container">
+		<div class="area-copyright">sdfsf
+			<div class="copyright-text"><?php esc_html_e($copyright_text); ?></div>
+		</div>
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 
