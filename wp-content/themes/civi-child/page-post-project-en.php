@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		update_field( "gender", $gender, $post_id );
 		update_field( "age_range", $age_range, $post_id );
 		update_field( "expiration", $expiration, $post_id );	
-		header("Location:https://www.citymody.com/new-project-submit-success/");
+				header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}

@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		update_field( "gender", $gender, $post_id );
 		update_field( "age_range", $age_range, $post_id );
 		update_field( "expiration", $expiration, $post_id );	
-		header("Location:https://www.citymody.com/new-project-submit-success/");
+				header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}
@@ -173,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
 				<div class="form-group col-md-9"></div>
 				<div class="form-group col-md-3 civi-mailchimp-form-style-01">
-					<input type="submit" value="<?php echo __("Send", "civichild"); ?>">
+					<input type="submit" value="Send">
 				</div>
 			</div>
 
