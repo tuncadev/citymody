@@ -47,6 +47,7 @@ var foo; // variable for clearInterval() function
 function redirect() {
 	console.log("fuuncton redirect");
 		window.location.href = 'https://www.citymody.com/';
+		exit;
 }
 
 function updateSecs() {
