@@ -23,7 +23,7 @@ echo $content;
 				<h2>
 					<?php echo _e("Great! We have received your submission", "civichild"); ?>
 				</h2>
-				<a class="close" href="https://www.citymody.com/candidate-profile/">×</a>
+				<a class="close" href="https://www.citymody.com/">×</a>
 				<span><strong>
 					<?php echo _e("We will contact you as soon as our moderators review your submission", "civichild"); ?>
 					</strong>
