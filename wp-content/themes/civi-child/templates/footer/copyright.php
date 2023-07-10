@@ -8,14 +8,10 @@
  */
 
 ?>
-
-<?php
-$copyright_text   = Civi_Helper::get_setting('footer_copyright_text');
-?>
 <div class="copyright">
 	<div class="container">
-		<div class="area-copyright">sdfsf
-			<div class="copyright-text"><?php esc_html_e($copyright_text); ?></div>
+		<div class="area-copyright">
+			<div class="copyright-text"><?php esc_html_e("@2023 Citymody. All rights reserved.", "civichild"); ?></div>
 		</div>
 	</div>
 </div>
