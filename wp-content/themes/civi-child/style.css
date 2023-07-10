@@ -145,6 +145,10 @@ ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a 
 .area-menu .menu li:last-child {
   font-weight: 700; }
 
+/* Mobile dashboard menu */
+.nav-dashboard-inner .icon-nav-mobie {
+  top: 60% !important; }
+
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
   background-color: #47B0FB !important;
