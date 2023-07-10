@@ -147,9 +147,10 @@ ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a 
 
 /* Mobile dashboard menu */
 .nav-dashboard-inner .icon-nav-mobie {
-  top: 60% !important;
-  width: 40px;
-  height: 50px; }
+  top: auto;
+  bottom: 0px;
+  width: 50px;
+  height: 60px; }
 
 .nav-dashboard-inner .icon-nav-mobie span {
   font-size: 10px;
