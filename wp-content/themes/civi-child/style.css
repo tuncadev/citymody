@@ -253,6 +253,13 @@ form#new_project label {
   padding: 50px;
   margin-bottom: 100px; }
 
+.post_projects > .row p {
+  font-size: 26px;
+  font-weight: 500;
+  max-width: 800px;
+  text-align: center;
+  padding: 19px; }
+
 /* Candidate Main */
 /* Search box */
 input#candidate_filter_search {
