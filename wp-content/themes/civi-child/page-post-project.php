@@ -80,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<div class="post_projects-header">
 			<img src="https://www.citymody.com/wp-content/uploads/2023/06/free.svg" alt="Free Project Post">
 			<h1 class="p_header"><?php echo __("Post a project to find the best talent for your next project.", "civichild"); ?></h1>
+			<p><?php echo __("Posting a project announcement is absolutely free. We do not charge any commissions or fees.", "civichild"); ?></p>
 		</div>
 	</div>`
 	<div class="project_form_row">
