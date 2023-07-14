@@ -38,8 +38,7 @@ if (is_rtl() || $enable_rtl_mode) {
 ?>
 
 <body <?php body_class() ?> <?php echo esc_attr($dir); ?>>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="OB5RHgtq"></script>
+
 	<?php wp_body_open(); ?>
 
 	<?php
