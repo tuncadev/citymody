@@ -207,7 +207,22 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 
 		<div class="footer-popup addon-login-wrap">
 		<div class="fb-login-button" data-width="280" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div>
-		
+			<?php
+			$enable_social_login = Civi_Helper::civi_get_option('enable_social_login', '1');
+			if (class_exists('Civi_Framework') && $enable_social_login) {
+			?>
+
+				<div class="addon-login">
+					<?php esc_html_e('Or Continue with', 'civichild'); ?>
+				</div>
+
+				<ul>
+					<li><a class="facebook-login" href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a class="google-login" href="#"><i class="fab fa-google"></i></a></li>
+					<li><a class="linkedin-login" href="<?php echo esc_url(Civi_LinkedIn::getAuthUrl()); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+				</ul>
+
+			<?php } ?>
 		</div>
 	</div>
 </div>
