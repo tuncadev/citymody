@@ -37,7 +37,7 @@ $candidate_adres = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_a
 				</div>
 				<div class="form-group col-md-6">
 					<label for="telephone"><?php echo __("Phone Number", "civi-framework"); ?></label>
-					<input type="tel" name="candidate_telefonu" id="input-telephone" class="form-control point-mark point-active valid" value="<?php echo esc_attr_e($candidate_telefonu); ?>" data-mask="(0999) 999 99 99" required placeholder="Örn: (0232) 555 55 55">
+					<input type="tel" name="candidate_telefonu" id="input-telephone" class="form-control point-mark point-active valid" value="<?php echo esc_attr_e($candidate_telefonu); ?>" data-mask="(0999) 999 99 99" placeholder="Örn: (0232) 555 55 55">
 				</div>	
 			</div>
 		</div>
