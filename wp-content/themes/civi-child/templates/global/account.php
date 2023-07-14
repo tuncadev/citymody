@@ -206,7 +206,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 		</div>
 
 		<div class="footer-popup addon-login-wrap">
-		<div class="fb-login-button" data-width="280" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div>
 			<?php
 			$enable_social_login = Civi_Helper::civi_get_option('enable_social_login', '1');
 			if (class_exists('Civi_Framework') && $enable_social_login) {
