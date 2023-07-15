@@ -496,6 +496,9 @@ input#jobs_filter_search {
 .city-login .g-recaptcha {
   margin: auto; }
 
+.job-alerts-wrapper {
+  max-width: 800px; }
+
 .error404 .main-content {
   padding-top: 40px; }
 
