@@ -27,15 +27,17 @@ var ISF = ISF || {};
 	};
 
 	var Widget_Job_Alerts = function ($scope, $) {
-		var form = $scope.find(".candidate-profile-form");
+		var form = $scope.find(".job-alerts-form");
 		form.on( 'submit', function(e) {
 			e.preventDefault();
-			var name = $( this ).find('input[name="candidate_first_name"]').val() + " " + $( this ).find('input[name="candidate_last_name"]').val();
-			var email = $( this ).find('input[name="candidate_email"]').val();
-			var skills = $( this ).find('select[name="candidate_skills"]').val();
-			var location = $( this ).find('select[name="candidate_location"]').val();
-			var category = $( this ).find('select[name="candidate_categories"]').val();
-			
+			var name = $( this ).find('input[name="name"]').val();
+			var email = $( this ).find('input[name="email"]').val();
+			var skills = $( this ).find('select[name="skills"]').val();
+			var location = $( this ).find('select[name="location"]').val();
+			var category = $( this ).find('select[name="category"]').val();
+			var experience = $( this ).find('select[name="experience"]').val();
+			var types = $( this ).find('select[name="types"]').val();
+			var frequency = $( this ).find('select[name="frequency"]').val();
 
 			$.ajax({
 				type: "post",
@@ -47,6 +49,9 @@ var ISF = ISF || {};
 					skills: skills,
 					location: location,
 					category: category,
+					experience: experience,
+					types: types,
+					frequency: frequency,
 					action: "civi_job_alerts_action",
 				},
 				beforeSend: function () {
