@@ -497,7 +497,7 @@ input#jobs_filter_search {
   margin: auto; }
 
 .job-alerts-wrapper {
-  max-width: 800px; }
+  max-width: 800px !important; }
 
 .error404 .main-content {
   padding-top: 40px; }
