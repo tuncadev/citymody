@@ -14,8 +14,8 @@ get_header();
 		<div class="site-layout">
 			<div class="area-404 align-center">
 				<h2><?php esc_html_e('Hmm, that didn’t work', 'civi'); ?></h2>
-				<p><?php esc_html_e("The page you're looking for cannot be found", 'civi'); ?></p>
-				<img src="<?php echo esc_attr(CIVI_IMAGES . 'img-404.png'); ?>" alt="<?php esc_attr_e('404', 'civi'); ?>">
+				<p><?php esc_html_e("Sorry, we couldn't find the page you were looking for. The page you are looking for may be moved, removed, renamed or never found.", 'civi'); ?></p>
+				<img src="https://www.citymody.com/wp-content/uploads/2023/07/404.png" alt="<?php esc_attr_e('404', 'civi'); ?>">
 				<a class="civi-button button-outline-accent button-icon-right" href="<?php echo esc_url(home_url()); ?>">
 					<?php esc_html_e('Go to home page', 'civi') ?>
 					<i class="fas fa-chevron-right"></i>
