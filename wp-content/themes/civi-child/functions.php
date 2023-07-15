@@ -256,6 +256,7 @@ function themed_wp_die_handler( $message, $title = '', $args = array() ) {
 		$message = strip_tags( $message );
 	}
 	$language = pll_current_language( 'slug' );
+	echo "LANG IS :" . $language;
 	if($language === "tr") {
 		require_once get_stylesheet_directory() . '/wp-die.php';
 	} else {
