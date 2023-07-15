@@ -6234,7 +6234,7 @@ if (!class_exists('Civi_Admin')) {
 											'id' => 'subject_mail_register_user',
 											'type' => 'text',
 											'title' => esc_html__('Subject', 'civi-framework'),
-											'default' => esc_html__('Your username and password on %website_url', 'civi-framework'),
+											'default' => esc_html__('You have succesfully registered on %website_url', 'civi-framework'),
 										),
 										array(
 											'id' => 'mail_register_user',
@@ -6245,12 +6245,9 @@ if (!class_exists('Civi_Admin')) {
 											),
 											'title' => esc_html__('Content', 'civi-framework'),
 											'default' => esc_html__(
-												'Hi %your_name,
-                                        You can login now using the below credentials:
-                                        Username: %user_login_register
-                                        Password: %user_pass_register
-                                        If you have any problems, please contact us.
-                                        Thank you!',
+												'Welcome to CityMody Family !
+												You can now apply to the projects that suit your abilities.
+												If you have any questions, you can always contact us.',
 												'civi-framework'
 											),
 										),
@@ -6373,7 +6370,7 @@ if (!class_exists('Civi_Admin')) {
 											'id' => 'subject_mail_candidate_apply',
 											'type' => 'text',
 											'title' => esc_html__('Subject', 'civi-framework'),
-											'default' => esc_html__('You have successfully applied on %website_url', 'civi-framework'),
+											'default' => esc_html__('You have successfully applied for a project on %website_url', 'civi-framework'),
 										),
 										array(
 											'id' => 'mail_candidate_apply',
@@ -6384,10 +6381,11 @@ if (!class_exists('Civi_Admin')) {
 											),
 											'title' => esc_html__('Content', 'civi-framework'),
 											'default' => esc_html__(
-												'Hi %user_apply,
-                                        You have applied for 1 job on %website_url.
-                                        Jobs Title: %jobs_apply
-                                        Jobs Url: %jobs_url',
+												'Congratulations %user_apply!
+													We Received Your Project Application.
+															Jobs Title: %jobs_apply
+                              Jobs Url: %jobs_url
+												We will contact you if approved by the project owner.',
 												'civi-framework'
 											),
 										),
