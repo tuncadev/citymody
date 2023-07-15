@@ -26,16 +26,12 @@
 	<?php endif; ?>
 
 	<?php wp_head(); ?>
+	<?php $language = pll_current_language( 'slug' ); ?>
 	<script>
-		const userLocale =
-  navigator.languages && navigator.languages.length
-    ? navigator.languages[0]
-    : navigator.language;
+		const userLocale = <?php echo $language; ?>;
 
 console.log(userLocale); // 👉️ "en-US"
 
-// 👇️ ["en-US", "en", "de"]
-console.log(navigator.languages);
 	</script>
 </head>
 
