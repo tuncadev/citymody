@@ -206,8 +206,8 @@ if (!class_exists("Civi_Enqueue")) {
 			);
 
 			$civi_swiper_js = [
-				"prevText" => esc_html__("Prev", "civi"),
-				"nextText" => esc_html__("Next", "civi"),
+				"prevText" => esc_html__("Prev", "civichild"),
+				"nextText" => esc_html__("Next", "civichild"),
 			];
 			wp_localize_script(
 				"civi-swiper-wrapper",
@@ -267,15 +267,15 @@ if (!class_exists("Civi_Enqueue")) {
 				"google_id" => $google_id,
 				"send_user_info" => esc_html__(
 					"Sending user info,please wait...",
-					"civi"
+					"civichild"
 				),
 				"forget_password" => esc_html__(
 					"Checking your email,please wait...",
-					"civi"
+					"civichild"
 				),
 				"change_password" => esc_html__(
 					"Checking your password,please wait...",
-					"civi"
+					"civichild"
 				),
 				"notice_cookie_enable" => Civi_Helper::civi_get_option('enable_cookie'),
 				"enable_search_box_dropdown" => Civi_Helper::civi_get_option('enable_search_box_dropdown'),
