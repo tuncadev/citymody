@@ -819,7 +819,7 @@ var CIVI = CIVI || {};
 					},
 				});
 			});
-			if (userLocale === "en-US") {
+			if (userLocale === "en") {
 				jQuery.extend(jQuery.validator.messages, {
 				
 					required: "This field is required",
