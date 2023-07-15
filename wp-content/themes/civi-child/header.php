@@ -26,15 +26,19 @@
 	<?php endif; ?>
 
 	<?php wp_head(); ?>
-	<?php $language = pll_current_language( 'slug' ); ?>
-	<script>
-		var userLocale = "<?php echo $language; ?>";
-
- 
-
-	</script>
+	
+	
 </head>
-
+<?php $language = pll_current_language( 'slug' );
+	if($language != "") { ?>
+	<script>
+		var userLocale = "tr";
+	</script>
+	<?php } else { ?>
+		<script>
+			var userLocale = "<?php echo $language; ?>";
+		</script>
+	<?php } ?>
 <?php
 $dir = '';
 $enable_rtl_mode  = Civi_Helper::civi_get_option('enable_rtl_mode', 0);
