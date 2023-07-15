@@ -266,7 +266,7 @@ if (!class_exists("Civi_Enqueue")) {
 				"ajax_url" => esc_url($ajax_url),
 				"google_id" => $google_id,
 				"send_user_info" => esc_html__(
-					"333Sending user info,please wait...",
+					"Sending user info,please wait...",
 					"civi"
 				),
 				"forget_password" => esc_html__(
