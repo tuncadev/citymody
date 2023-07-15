@@ -819,7 +819,8 @@ var CIVI = CIVI || {};
 					},
 				});
 			});
-			if (userLocale === "en") {
+			if (userLocale == "en") {
+				console.log("this is en");
 				jQuery.extend(jQuery.validator.messages, {
 				
 					required: "This field is required",
@@ -854,7 +855,7 @@ var CIVI = CIVI || {};
 				});
 			} else {
 				jQuery.extend(jQuery.validator.messages, {
-				
+					console.log("this is not en");
 					required: "Bu alan gereklidir",
 					remote: "Bu alanı düzeltin lütfen",
 					email: "Geçerli bir e-posta adresi gerekli",
