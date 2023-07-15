@@ -6245,9 +6245,9 @@ if (!class_exists('Civi_Admin')) {
 											),
 											'title' => esc_html__('Content', 'civi-framework'),
 											'default' => esc_html__(
-												'Welcome to CityMody Family !
-												You can now apply to the projects that suit your abilities.
-												If you have any questions, you can always contact us.',
+												'Welcome to CityMody Family !												
+													You can now apply to the projects that suit your abilities.
+													If you have any questions, you can always contact us.',
 												'civi-framework'
 											),
 										),
@@ -6272,9 +6272,9 @@ if (!class_exists('Civi_Admin')) {
 											),
 											'title' => esc_html__('Content', 'civi-framework'),
 											'default' => esc_html__(
-												'New user registration on %website_url.
-                                                Username: %user_login_register,
-                                                E-mail: %user_email_register',
+												'New CityMody user registration on %website_url.
+													Username: %user_login_register,
+                          E-mail: %user_email_register',
 												'civi-framework'
 											),
 										)
