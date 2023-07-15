@@ -256,7 +256,7 @@ function themed_wp_die_handler( $message, $title = '', $args = array() ) {
 		$message = strip_tags( $message );
 	}
 	$language = pll_current_language( 'slug' );
-		require_once get_stylesheet_directory() . '/wp-die.php?lang=' . $language;
+		require_once get_stylesheet_directory() . '/wp-die.php;
 
 	
 
