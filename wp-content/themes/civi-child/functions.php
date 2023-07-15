@@ -258,9 +258,7 @@ function themed_wp_die_handler( $message, $title = '', $args = array() ) {
 
 		require_once get_stylesheet_directory() . '/wp-die.php';
 
-	
 
-	die();
 }
 
 
