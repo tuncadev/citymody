@@ -255,10 +255,13 @@ function themed_wp_die_handler( $message, $title = '', $args = array() ) {
 	} else {
 		$message = strip_tags( $message );
 	}
-
+	$currentLocale = setlocale(LC_ALL, 0);
+	echo "LOCAL IS : " . $currentLocale;
 		require_once get_stylesheet_directory() . '/wp-die.php';
 
+	
 
+	die();
 }
 
 
