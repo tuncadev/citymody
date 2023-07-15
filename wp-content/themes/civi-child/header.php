@@ -30,7 +30,7 @@
 	<script>
 		const userLocale = "<?php echo $language; ?>";
 
-console.log(userLocale); // 👉️ "en-US"
+ 
 
 	</script>
 </head>
