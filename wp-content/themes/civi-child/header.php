@@ -28,7 +28,7 @@
 	<?php wp_head(); ?>
 	<?php $language = pll_current_language( 'slug' ); ?>
 	<script>
-		const userLocale = <?php echo $language; ?>;
+		const userLocale = "<?php echo $language; ?>";
 
 console.log(userLocale); // 👉️ "en-US"
 
