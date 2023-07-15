@@ -255,8 +255,13 @@ function themed_wp_die_handler( $message, $title = '', $args = array() ) {
 	} else {
 		$message = strip_tags( $message );
 	}
-
-	require_once get_stylesheet_directory() . '/wp-die.php';
+	$language = pll_current_language( 'slug' );
+	if($language === "tr") {
+		require_once get_stylesheet_directory() . '/wp-die.php';
+	} else {
+		require_once get_stylesheet_directory() . '/wp-die-en.php';
+	}
+	
 
 	die();
 }
