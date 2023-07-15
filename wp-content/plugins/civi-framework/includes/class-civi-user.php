@@ -161,7 +161,7 @@ if (!class_exists('Civi_User')) {
                 <a href="#" class="close"><i class="far fa-times"></i></a>
                 <div class="inner">
                     <div class="head">
-                        <img src="https://www.citymody.com/wp-content/uploads/2023/07/bell-icon.png" />
+                        <img src="https://www.citymody.com/wp-content/uploads/2023/07/bell-icon.png" style="margin-right: 30px;"/>
                         <span><?php echo $alerts_title; ?></span>
                     </div>
                     <div class="content">
