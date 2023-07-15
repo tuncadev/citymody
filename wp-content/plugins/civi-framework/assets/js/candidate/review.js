@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
 		debug: true,
 		success: "valid",
 	});
-
+	if (userLocale == "en") {	var nrequired = "This field is required" } else { var nrequired = "This field is required" }
 	$(".reviewForm").validate({
 		rules: {
 			message: {
@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
 		},
 		messages: {
 			message: {
-				required: "This field is required",
+				required: nrequired,
 			},
 		},
 		errorPlacement: function (error, element) {
