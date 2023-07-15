@@ -494,7 +494,7 @@ input#jobs_filter_search {
   margin: auto; }
 
 .error404 .main-content {
-  padding-top: 0px !important; }
+  padding-top: 40px; }
 
 span.red_star {
   color: red !important;
