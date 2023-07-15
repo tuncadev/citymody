@@ -4,8 +4,8 @@ if ( !headers_sent() ) {
 	nocache_headers();
 	header( 'Content-Type: text/html; charset=utf-8' );
 }
-$currentLocale = setlocale(LC_ALL, 0);
-echo "LOCAL IS : " . $currentLocale;
+ 
+echo "LOCAL IS : " . $language;
 $text_direction = 'ltr';
 if ( ( isset($r['text_direction']) && 'rtl' == $r['text_direction'] ) || ( function_exists( 'is_rtl' ) && is_rtl() ) ) :
 	$text_direction = 'rtl';
