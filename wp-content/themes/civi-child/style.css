@@ -493,6 +493,9 @@ input#jobs_filter_search {
 .city-login .g-recaptcha {
   margin: auto; }
 
+.error404 .main-content {
+  padding-top: 0px !important; }
+
 span.red_star {
   color: red !important;
   font-weight: bold; }
