@@ -263,9 +263,9 @@ form#new_project label {
   text-align: center;
   padding: 19px; }
 
-.toggle-insights, .toggle-insights-sidebar {
-  margin-bottom: 1px;
-  display: none; }
+@media (max-width: 576px) {
+  .jobs-insights-details.on.active .list-jobs-insights {
+    height: auto !important; } }
 
 /* Candidate Main */
 /* Search box */
