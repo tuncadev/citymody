@@ -25,17 +25,23 @@ if (!empty($candidate_id)) {
 	$candidate_phone = !empty(get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_phone')) ? get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_phone')[0] : '';
 }
 ?>
+<?php $user = wp_get_current_user();
+if ( in_array( 'candidate', (array) $user->roles ) ) {
+	$showhide = "visibility: hidden;";
+?>
 <script>
 	var $btn_submit = jQuery("#" + jQuery(".btn-submit-apply-jobs").attr("id"));
 	function clickMe(){
 		console.log("cliked");
 jQuery('#btn-apply-jobs-<?php echo $jobs_id ?>').trigger('click');
 	}
-
 </script>
+<?php } else {
+$showhide = "visibility: visible;";
+} ?>
 <form action="#" method="post" class="form-popup form-popup-apply" id="civi_form_apply_jobs" name="civi_form_apply_jobs" enctype="multipart/form-data">
-	<div class="bg-overlay" style="visibility: hidden;"></div>
-	<div class="apply-popup custom-scrollbar"  style="visibility: hidden;">
+	<div class="bg-overlay" style="<?php echo $showhide; ?>"></div>
+	<div class="apply-popup custom-scrollbar"  style="<?php echo $showhide; ?>">
 		<a href="#" class="btn-close"><i class="far fa-times"></i></a>
 		<h5><?php esc_html_e('Apply for this job', 'civi-framework') ?></h5>
 		<div class="row">
