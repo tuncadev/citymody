@@ -25,17 +25,17 @@ if (!empty($candidate_id)) {
 	$candidate_phone = !empty(get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_phone')) ? get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_phone')[0] : '';
 }
 ?>
+<script>
+	var $btn_submit = jQuery("#" + jQuery(".btn-submit-apply-jobs").attr("id"));
+	function clickMe(){
+jQuery('#btn-apply-jobs-<?php echo $jobs_id ?>').trigger('click');
+	}
+</script>
 <?php $user = wp_get_current_user();
 if ( in_array( 'candidate', (array) $user->roles ) ) {
 	$showhide = "visibility: hidden;";
 ?>
-<script>
-	var $btn_submit = jQuery("#" + jQuery(".btn-submit-apply-jobs").attr("id"));
-	function clickMe(){
-		console.log("cliked");
-jQuery('#btn-apply-jobs-<?php echo $jobs_id ?>').trigger('click');
-	}
-</script>
+
 <?php } else {
 $showhide = "visibility: visible;";
 } ?>

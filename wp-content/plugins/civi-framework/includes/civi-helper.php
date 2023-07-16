@@ -1887,7 +1887,12 @@ if (!function_exists('civi_get_status_apply')) {
                         <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                            class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                     <?php } else { ?>
-                        <a href="#civi_form_apply_jobs" onClick="clickMe()"
+											<?php if ( in_array( 'candidate', (array) $user->roles ) ) { 
+												$func = "clickMe()";
+											} else { $func = ""; }
+												?>
+												
+                        <a href="#civi_form_apply_jobs" onClick="<?php echo $func; ?>"
                            class="civi-button civi-button-apply civi_form_apply_jobs"
                            data-jobs_id="<?php echo $jobs_id ?>"
                            data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
@@ -1916,9 +1921,13 @@ if (!function_exists('civi_get_status_apply')) {
                             <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                                class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } else { ?>
+													<?php if ( in_array( 'candidate', (array) $user->roles ) ) { 
+												$func = "clickMe()";
+											} else { $func = ""; }
+												?>
                             <a href="#civi_form_apply_jobs"
                                class="civi-button civi-button-apply civi_form_apply_jobs" 
-							   onClick="clickMe()"
+							   onClick="<?php echo $func; ?>"
                                data-jobs_id="<?php echo $jobs_id ?>"
                                data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } ?>
