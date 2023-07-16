@@ -1888,8 +1888,8 @@ if (!function_exists('civi_get_status_apply')) {
                            class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                     <?php } else { ?>
 											<?php 
-											$myuser = wp_get_current_user();
-											if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
+											
+											if ( is_user_logged_in() ) { 
 												$func = "onClick=clickMe() ";
 											} else { $func = ""; }
 												?>
@@ -1924,8 +1924,8 @@ if (!function_exists('civi_get_status_apply')) {
                                class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } else { ?>
 													<?php 
-											$myuser = wp_get_current_user();
-											if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
+											
+											if ( is_user_logged_in() ) { 
 												$func = "onClick=clickMe() ";
 											} else { $func = ""; }
 												?>
