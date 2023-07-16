@@ -1890,11 +1890,11 @@ if (!function_exists('civi_get_status_apply')) {
 											<?php 
 											$myuser = wp_get_current_user();
 											if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
-												$func = "clickMe()";
+												$func = "onClick=clickMe() ";
 											} else { $func = ""; }
 												?>
 												
-                        <a href="#civi_form_apply_jobs" onClick="<?php echo $func; ?>"
+                        <a href="#civi_form_apply_jobs" <?php echo $func; ?>
                            class="civi-button civi-button-apply civi_form_apply_jobs"
                            data-jobs_id="<?php echo $jobs_id ?>"
                            data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
@@ -1923,14 +1923,15 @@ if (!function_exists('civi_get_status_apply')) {
                             <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                                class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } else { ?>
-													<?php $myuser = wp_get_current_user();
-													if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
-												$func = "clickMe()";
+													<?php 
+											$myuser = wp_get_current_user();
+											if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
+												$func = "onClick=clickMe() ";
 											} else { $func = ""; }
 												?>
                             <a href="#civi_form_apply_jobs"
                                class="civi-button civi-button-apply civi_form_apply_jobs" 
-							   onClick="<?php echo $func; ?>"
+															<?php echo $func; ?>	
                                data-jobs_id="<?php echo $jobs_id ?>"
                                data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } ?>
