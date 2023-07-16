@@ -263,6 +263,10 @@ form#new_project label {
   text-align: center;
   padding: 19px; }
 
+.toggle-insights, .toggle-insights-sidebar {
+  margin-bottom: 1px;
+  display: none; }
+
 /* Candidate Main */
 /* Search box */
 input#candidate_filter_search {
