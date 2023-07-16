@@ -40,7 +40,7 @@ jQuery('#btn-apply-jobs-<?php echo $jobs_id ?>').trigger('click');
 $showhide = "visibility: visible;";
 } ?>
 <form action="#" method="post" class="form-popup form-popup-apply" id="civi_form_apply_jobs" name="civi_form_apply_jobs" enctype="multipart/form-data">
-	<div class="bg-overlay" style="<?php echo $showhide; ?>"></div>
+	<div class="bg-overlay"></div>
 	<div class="apply-popup custom-scrollbar"  style="<?php echo $showhide; ?>">
 		<a href="#" class="btn-close"><i class="far fa-times"></i></a>
 		<h5><?php esc_html_e('Apply for this job', 'civi-framework') ?></h5>
