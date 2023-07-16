@@ -1887,7 +1887,9 @@ if (!function_exists('civi_get_status_apply')) {
                         <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                            class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                     <?php } else { ?>
-											<?php if ( in_array( 'candidate', (array) $user->roles ) ) { 
+											<?php 
+											$myuser = wp_get_current_user();
+											if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
 												$func = "clickMe()";
 											} else { $func = ""; }
 												?>
@@ -1921,7 +1923,8 @@ if (!function_exists('civi_get_status_apply')) {
                             <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                                class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } else { ?>
-													<?php if ( in_array( 'candidate', (array) $user->roles ) ) { 
+													<?php $myuser = wp_get_current_user();
+													if ( in_array( 'candidate', (array) $myuser->roles ) ) { 
 												$func = "clickMe()";
 											} else { $func = ""; }
 												?>

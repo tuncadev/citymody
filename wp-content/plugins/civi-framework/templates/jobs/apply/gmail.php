@@ -31,8 +31,8 @@ if (!empty($candidate_id)) {
 jQuery('#btn-apply-jobs-<?php echo $jobs_id ?>').trigger('click');
 	}
 </script>
-<?php $user = wp_get_current_user();
-if ( in_array( 'candidate', (array) $user->roles ) ) {
+<?php $myuser = wp_get_current_user();
+if ( in_array( 'candidate', (array) $myuser->roles ) ) {
 	$showhide = "visibility: hidden;";
 ?>
 
