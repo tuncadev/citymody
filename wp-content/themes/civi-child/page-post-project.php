@@ -73,23 +73,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$to = 'projects@citymody.com, bugrahan.kitapci@citymody.com, tunca.development@gmail.com';
 		$subject = 'New Project Request';
 		$body = '
-		From: ' . $namelast . '
-		E-Mail: ' .  $email . '
-		Phone: ' .  $telephone . '
-		Company Name: ' .  $company_name . '
-		
-		Project Title: ' .  $project_title . '
-		Short Description: ' .  $short_desc . '
-
-		Category: ' .  $cat . '
-		Skill: ' .  $skills . '
-		City: ' .  $il . '
-		Provience: ' .  $ilce . '
-		Gender: ' .  $gender . '
-		Age Range: ' .  $age_range . '
-		Expiration: ' .  $expiration . '
-		
-		<b>This is bold</b>
+		<p>
+		<b>From:</b> ' . $namelast . ' <br />
+		<b>E-Mail:</b>' .  $email . ' <br />
+		<b>Phone:</b> ' .  $telephone . ' <br />
+		<b>Company Name:</b> ' .  $company_name . ' <br />
+		</p>
+		<p>
+		<b>Project Title:</b> ' .  $project_title . ' <br />
+		<b>Short Description:</b> ' .  $short_desc . ' <br />
+		</p>
+		<p>
+		<b>Category:</b> ' .  $cat . ' <br />
+		<b>Skill:</b> ' .  $skills . ' <br />
+		<b>City:</b> ' .  $il . ' <br />
+		<b>Provience:</b> ' .  $ilce . ' <br />
+		<b>Gender:</b> ' .  $gender . ' <br />
+		<b>Age Range:</b> ' .  $age_range . ' <br />
+		<b>Expiration:</b> ' .  $expiration . ' <br />
+		</p>
 		';
 		$headers = array('Content-Type: text/html; charset=UTF-8');
 
