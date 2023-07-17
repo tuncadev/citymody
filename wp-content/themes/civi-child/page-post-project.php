@@ -69,6 +69,31 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		update_field( "gender", $gender, $post_id );
 		update_field( "age_range", $age_range, $post_id );
 		update_field( "expiration", $expiration, $post_id );	
+		/*send admin mail */
+		$to = 'projects@citymody.com, bugrahan.kitapci@citymody.com, tunca.development@gmail.com';
+		$subject = 'New Project Request';
+		$body = '
+		From: ' . $namelast . '
+		E-Mail: ' .  $email . '
+		Phone: ' .  $telephone . '
+		Company Name: ' .  $company_name . '
+		
+		Project Title: ' .  $project_title . '
+		Short Description: ' .  $short_desc . '
+
+		Category: ' .  $cat . '
+		Skill: ' .  $skills . '
+		City: ' .  $il . '
+		Provience: ' .  $ilce . '
+		Gender: ' .  $gender . '
+		Age Range: ' .  $age_range . '
+		Expiration: ' .  $expiration . '
+		
+		<b>This is bold</b>
+		';
+		$headers = array('Content-Type: text/html; charset=UTF-8');
+
+		wp_mail( $to, $subject, $body, $headers );
 		header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";

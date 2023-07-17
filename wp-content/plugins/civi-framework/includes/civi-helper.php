@@ -1887,17 +1887,17 @@ if (!function_exists('civi_get_status_apply')) {
                         <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                            class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                     <?php } else { ?>
-											<?php 
-											
-											if ( is_user_logged_in() ) { 
-												$func = "onClick=clickMe() ";
-											} else { $func = ""; }
-												?>
-												
-                        <a href="#civi_form_apply_jobs" <?php echo $func; ?>
+											<?php 											
+											if ( is_user_logged_in() ) { ?>
+											<a href="#civi_form_apply_jobs" onClick=clickMe() 
                            class="civi-button civi-button-apply civi_form_apply_jobs"
                            data-jobs_id="<?php echo $jobs_id ?>"
                            data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
+											<?php } else { ?>
+											<div class="account logged-out">
+												<a href="#popup-form" class="btn-login"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
+											</div>
+											<?php }	?>                     
                     <?php } ?>
                 <?php } ?>
             <?php } else { ?>
@@ -1923,17 +1923,17 @@ if (!function_exists('civi_get_status_apply')) {
                             <a href="<?php echo esc_url($jobs_apply_external) ?>" target="_blank"
                                class="civi-button"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
                         <?php } else { ?>
-													<?php 
-											
-											if ( is_user_logged_in() ) { 
-												$func = "onClick=clickMe() ";
-											} else { $func = ""; }
-												?>
-                            <a href="#civi_form_apply_jobs"
-                               class="civi-button civi-button-apply civi_form_apply_jobs" 
-															<?php echo $func; ?>	
-                               data-jobs_id="<?php echo $jobs_id ?>"
-                               data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
+													<?php 											
+											if ( is_user_logged_in() ) { ?>
+											<a href="#civi_form_apply_jobs" onClick=clickMe() 
+                           class="civi-button civi-button-apply civi_form_apply_jobs"
+                           data-jobs_id="<?php echo $jobs_id ?>"
+                           data-candidate_id="<?php echo $candidate_id ?>"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
+											<?php } else { ?>
+											<div class="account logged-out">
+												<a href="#popup-form" class="btn-login"><?php esc_html_e('Apply now', 'civi-framework') ?></a>
+											</div>
+											<?php }	?>  
                         <?php } ?>
                     <?php } ?>
                 <?php } else { ?>
