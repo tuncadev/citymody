@@ -15,10 +15,10 @@ $taxonomyName = "candidate_skills";
         <div class="sub-head"><?php esc_html_e('We recommend at least one skill entry', 'civi-framework') ?></div>
         <div class="row">
             <div class="form-group col-md-12">
-                <label for="candidate_skills"><?php esc_html_e('Select Skills', 'civi-framework') ?></label>
-                <select class="civi-select2 point-mark" name="candidate_skills" id="candidate_skills" multiple required>
-					<?php list_skill_options($candidate_id, $taxonomyName); ?>
-                </select>
+							<label for="candidate_skills"><?php esc_html_e('Select Skills', 'civi-framework') ?></label>
+							<select class="civi-select2 point-mark" name="candidate_skills" id="candidate_skills" multiple>
+								<?php list_skill_options($candidate_id, $taxonomyName); ?>
+							</select>
             </div>
         </div>
     </div>

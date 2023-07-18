@@ -69,7 +69,13 @@ $candidate_yoe = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_yoe
 $candidate_salary_type = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_salary_type']) ? $candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_salary_type'][0] : '';
 $candidate_offer_salary = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_offer_salary']) ? $candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_offer_salary'][0] : '';
 $candidate_show_my_profile = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_show_my_profile']) ? $candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_show_my_profile'][0] : '';
+/****************** */
+$candidate_id = civi_get_post_id_candidate();
+$candidate_skills = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_skills', false);
+$candidate_skills = !empty($candidate_skills) ?  $candidate_skills[0] : '';
+$taxonomyName = "candidate_skills";
 
+/************************** */
 $candidate_avatar_id = $user_id;
 $candidate_avatar_url = get_the_author_meta('author_avatar_image_url', $user_id);
 $candidate_cover_image_id = get_post_thumbnail_id($candidate_data->ID);
@@ -177,12 +183,18 @@ if (!empty($google_gmail)) {
         <?php endif; ?>
         <?php if (!in_array('fields_candidate_categories', $hide_candidate_fields)) : ?>
             <div class="form-group col-md-6">
-                <label for="candidate_categories"><?php esc_html_e('Categories', 'civi-framework') ?></label>
-                <div class="select2-field">
-					<select class="point-mark civi-select2" name="candidate_categories" id="candidate_categories" required onChange="ShowAudioDiv()">
-						<?php civi_get_taxonomy_by_post_id($candidate_id, 'candidate_categories', true); ?>
-					</select>
-				</div>
+							<label for="candidate_categories"><?php esc_html_e('Categories', 'civi-framework') ?></label>
+							<div class="select2-field">
+								<select class="point-mark civi-select2" name="candidate_categories" id="candidate_categories" required onChange="ShowAudioDiv()">
+									<?php civi_get_taxonomy_by_post_id($candidate_id, 'candidate_categories', true); ?>
+								</select>
+							</div>
+            </div>
+						<div class="form-group col-md-6">
+							<label for="candidate_skills"><?php esc_html_e('Select Skills', 'civi-framework') ?></label>
+							<select class="civi-select2 point-mark" name="candidate_skills" id="candidate_skills" multiple required>
+								<?php list_skill_options($candidate_id, $taxonomyName); ?>
+							</select>
             </div>
         <?php endif; ?>
         <?php if (!in_array('fields_candidate_description', $hide_candidate_fields)) : ?>
