@@ -73,10 +73,6 @@ $layout = array('info', 'education', 'experience', 'skills', 'paymentinfo', 'pro
                             $name = esc_html__('Experience', 'civi-framework');
                             $class = 'repeater';
                             break;
-                        case 'skills':
-                            $name = esc_html__('Skills', 'civi-framework');
-                            $class = '';
-                            break;
 												
 												/* Bank Info */
 												case 'paymentinfo':
