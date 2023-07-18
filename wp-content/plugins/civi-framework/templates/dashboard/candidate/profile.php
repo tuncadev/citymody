@@ -46,7 +46,7 @@ $hide_candidate_group_fields = civi_get_option('hide_candidate_group_fields', ar
 if (!is_array($hide_candidate_group_fields)) {
     $hide_candidate_group_fields = array();
 }
-$layout = array('info', 'education', 'experience', 'skills', 'paymentinfo', 'projects', 'awards');
+$layout = array('info', 'education', 'experience', 'paymentinfo', 'projects', 'awards');
 ?>
 
 <div id="candidate-profile" class="candidate-profile">
@@ -121,8 +121,6 @@ $layout = array('info', 'education', 'experience', 'skills', 'paymentinfo', 'pro
                                 break;
                             case 'experience':
                                 break;
-                            case 'skills':
-                                break;
 														case 'paymentinfo':
 															break;
                             case 'projects':
@@ -182,9 +180,7 @@ $layout = array('info', 'education', 'experience', 'skills', 'paymentinfo', 'pro
                                             case 'experience':
                                                 $name = esc_html__('Experience', 'civi-framework');
                                                 break;
-                                            case 'skills':
-                                                $name = esc_html__('Skills', 'civi-framework');
-                                                break;
+
 																						case 'paymentinfo':
 																							$name = esc_html__('Bank and Payment Information', 'civi-framework');
 																							break;
