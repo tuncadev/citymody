@@ -190,7 +190,7 @@ if (!empty($google_gmail)) {
 							</div>
             </div>
 						<div class="form-group col-md-6">
-							<div id="tab-skills" class="tab-info">
+
 								<div class="skills-info block-from">
 									<h5><?php esc_html_e('Skills', 'civi-framework') ?></h5>
 									<div class="sub-head"><?php esc_html_e('We recommend at least one skill entry', 'civi-framework') ?></div>
@@ -201,7 +201,7 @@ if (!empty($google_gmail)) {
 											</select>
 									</div>
 								</div>
-							</div>
+
             </div>
         <?php endif; ?>
         <?php if (!in_array('fields_candidate_description', $hide_candidate_fields)) : ?>
