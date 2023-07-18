@@ -8,7 +8,7 @@ global $candidate_data, $candidate_meta_data;
 switch ($field['type']) {
     case 'text': ?>
         <div class="form-group col-lg-6">
-            <label><?php esc_html_e($field['title']); ?></label>
+            <label><?php esc_html_e($field['title'], "civi-framework"); ?></label>
             <input type="text" id="<?php echo esc_attr($field['id']); ?>" class="form-control"
                    name="<?php echo esc_attr($field['id']); ?>"
                    value="<?php if (isset($candidate_meta_data[$field['id']])) {
@@ -20,7 +20,7 @@ switch ($field['type']) {
     case 'url':
         ?>
         <div class="form-group col-lg-6">
-            <label><?php esc_html_e($field['title']); ?></label>
+            <label><?php esc_html_e($field['title'], "civi-framework"); ?></label>
             <input type="url" id="<?php echo esc_attr($field['id']); ?>" class="form-control"
                    name="<?php echo esc_attr($field['id']); ?>"
                    value="<?php if (isset($candidate_meta_data[$field['id']])) {
@@ -32,7 +32,7 @@ switch ($field['type']) {
     case 'textarea':
         ?>
         <div class="form-group col-lg-6">
-            <label><?php esc_html_e($field['title']); ?></label>
+            <label><?php esc_html_e($field['title'], "civi-framework"); ?></label>
             <textarea name="<?php echo esc_attr($field['id']); ?>" rows="3"
                       id="<?php echo esc_attr($field['id']); ?>" class="form-control">
                                         <?php if (isset($candidate_meta_data[$field['id']])) {
@@ -45,7 +45,7 @@ switch ($field['type']) {
     case 'select':
         ?>
         <div class="form-group col-lg-6">
-            <label class="d-block"><?php esc_html_e($field['title']); ?></label>
+            <label class="d-block"><?php esc_html_e($field['title'], "civi-framework"); ?></label>
             <div class="select2-field">
 				<select name="<?php echo esc_attr($field['id']); ?>"
 						id="<?php echo esc_attr($field['id']); ?>" class="form-control civi-select2">
@@ -63,7 +63,7 @@ switch ($field['type']) {
     case 'checkbox_list':
         ?>
         <div class="form-group col-lg-6">
-            <label><?php esc_html_e($field['title']); ?></label>
+            <label><?php esc_html_e($field['title'], "civi-framework"); ?></label>
             <div class="civi-field-<?php echo esc_attr($field['id']); ?>">
                 <?php
                 $candidate_field = get_post_meta($candidate_data->ID, $field['id'], true);
