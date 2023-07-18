@@ -70,7 +70,6 @@ $candidate_salary_type = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candi
 $candidate_offer_salary = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_offer_salary']) ? $candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_offer_salary'][0] : '';
 $candidate_show_my_profile = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_show_my_profile']) ? $candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_show_my_profile'][0] : '';
 /****************** */
-$candidate_id = civi_get_post_id_candidate();
 $candidate_skills = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_skills', false);
 $candidate_skills = !empty($candidate_skills) ?  $candidate_skills[0] : '';
 $taxonomyName = "candidate_skills";
@@ -191,10 +190,18 @@ if (!empty($google_gmail)) {
 							</div>
             </div>
 						<div class="form-group col-md-6">
-							<label for="candidate_skills"><?php esc_html_e('Select Skills', 'civi-framework') ?></label>
-							<select class="civi-select2 point-mark" name="candidate_skills" id="candidate_skills" multiple required>
-								<?php list_skill_options($candidate_id, $taxonomyName); ?>
-							</select>
+							<div id="tab-skills" class="tab-info">
+								<div class="skills-info block-from">
+									<h5><?php esc_html_e('Skills', 'civi-framework') ?></h5>
+									<div class="sub-head"><?php esc_html_e('We recommend at least one skill entry', 'civi-framework') ?></div>
+									<div class="row">
+											<label for="candidate_skills"><?php esc_html_e('Select Skills', 'civi-framework') ?></label>
+											<select class="civi-select2 point-mark" name="candidate_skills" id="candidate_skills" multiple>
+												<?php list_skill_options($candidate_id, $taxonomyName); ?>
+											</select>
+									</div>
+								</div>
+							</div>
             </div>
         <?php endif; ?>
         <?php if (!in_array('fields_candidate_description', $hide_candidate_fields)) : ?>
