@@ -189,7 +189,7 @@ if (!empty($google_gmail)) {
 								</select>
 							</div>
             </div>
-						<div class="form-group col-md-6">
+						<div class="form-group col-md-12">
 
 								<div class="skills-info block-from">
 									<h5><?php esc_html_e('Skills', 'civi-framework') ?></h5>
