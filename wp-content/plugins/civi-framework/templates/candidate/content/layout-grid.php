@@ -33,7 +33,7 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
                 <?php if (!empty($candidate_avatar)) : ?>
                     <img class="candidate-avatar" src="<?php echo esc_attr($candidate_avatar) ?>" alt="" />
                 <?php else : /* <i class="far fa-camera"></i> */ ?>
-                    <div class="candidate-avatar"><img src="https://www.citymody.com/wp-content/uploads/2023/07/avatar.svg" alt="" class="candidate-avatar"></div>
+                    <div class="candidate-avatar"><img src="https://www.citymody.com/wp-content/uploads/2023/07/no_avatar.svg" alt="" class="candidate-avatar"></div>
                 <?php endif; ?>
             </a>
             <div class="candidate-status-inner">
