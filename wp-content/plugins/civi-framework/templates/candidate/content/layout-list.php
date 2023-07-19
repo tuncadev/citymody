@@ -26,6 +26,7 @@ if (!empty($layout)) {
 $candidate_item_class[] = 'candidate-' . $id;
 $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 ?>
+<?php if (!empty($candidate_avatar)) : ?>
 <div class="<?php echo join(' ', $candidate_item_class); ?>">
     <div class="candidate-header">
     <?php if (!empty($data['levels'])):?>
@@ -122,3 +123,4 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
     </div>
     <a class="civi-link-item" href="<?php echo get_post_permalink($candidate_id) ?>"></a>
 </div>
+<?php endif; ?>
