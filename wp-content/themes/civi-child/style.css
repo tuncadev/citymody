@@ -507,6 +507,9 @@ input#jobs_filter_search {
   line-height: 19px;
   text-align: center; }
 
+.reg_warn label {
+  margin-left: 0px !important; }
+
 .job-alerts-wrapper {
   max-width: 800px !important; }
 
