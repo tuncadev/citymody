@@ -500,6 +500,13 @@ input#jobs_filter_search {
 .city-login .g-recaptcha {
   margin: auto; }
 
+.reg_warn {
+  font-size: 10px !important;
+  width: 100%;
+  color: red;
+  line-height: 19px;
+  text-align: center; }
+
 .job-alerts-wrapper {
   max-width: 800px !important; }
 
