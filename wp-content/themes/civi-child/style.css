@@ -165,6 +165,14 @@ ul#menu-citymody-home-tr ul.sub-menu li:last-child a, ul#menu-citymody-menu ul.s
   font-size: 10px;
   font-weight: 400; }
 
+.site-menu .menu li i {
+  font-size: 14px;
+  color: #065090; }
+
+.site-menu.desktop-menu.main-menu .menu > li > a i {
+  left: 3px;
+  top: 1px; }
+
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
   background-color: #47B0FB !important;
