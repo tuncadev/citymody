@@ -145,10 +145,10 @@ ul#menu-citymody-home-tr li:last-child, ul#menu-citymody-menu li:last-child {
 ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a {
   font-weight: 700; }
 
-ul#menu-citymody-home-tr ul.sub-menu li:last-child, ul#menu-citymody-menu ul.sub-menu li:last-child {
+ul#menu-citymody-home-tr ul.sub-menu li:last-child, ul#menu-citymody-menu ul.sub-menu li:last-child, ul#menu-city-mody-mobile-tr ul.sub-menu li:last-child, ul#menu-citymody-mobile-menu ul.sub-menu li:last-child {
   float: left; }
 
-ul#menu-citymody-home-tr ul.sub-menu li:last-child a, ul#menu-citymody-menu ul.sub-menu li:last-child a {
+ul#menu-citymody-home-tr ul.sub-menu li:last-child a, ul#menu-citymody-menu ul.sub-menu li:last-child a, ul#menu-city-mody-mobile-tr ul.sub-menu li:last-child a, ul#menu-citymody-mobile-menu ul.sub-menu li:last-child a {
   font-weight: 400; }
 
 .area-menu .menu li:last-child {
@@ -175,6 +175,9 @@ ul#menu-citymody-home-tr ul.sub-menu li:last-child a, ul#menu-citymody-menu ul.s
 
 ul#menu-city-mody-mobile-tr li i, ul#menu-citymody-mobile-menu li i {
   margin-left: 5px; }
+
+ul#menu-city-mody-mobile-tr li ul.sub-menu li, ul#menu-citymody-mobile-menu li ul.sub-menu li {
+  margin-bottom: 0px; }
 
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
