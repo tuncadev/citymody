@@ -145,10 +145,10 @@ ul#menu-citymody-home-tr li:last-child, ul#menu-citymody-menu li:last-child {
 ul#menu-citymody-home-tr li:last-child a, ul#menu-citymody-menu li:last-child a {
   font-weight: 700; }
 
-ul#menu-citymody-home-tr ul.sub-menu li:last-child {
+ul#menu-citymody-home-tr ul.sub-menu li:last-child, ul#menu-citymody-menu ul.sub-menu li:last-child {
   float: left; }
 
-ul#menu-citymody-home-tr ul.sub-menu li:last-child a {
+ul#menu-citymody-home-tr ul.sub-menu li:last-child a, ul#menu-citymody-menu ul.sub-menu li:last-child a {
   font-weight: 400; }
 
 .area-menu .menu li:last-child {
