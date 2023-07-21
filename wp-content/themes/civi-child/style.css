@@ -179,6 +179,9 @@ ul#menu-city-mody-mobile-tr li i, ul#menu-citymody-mobile-menu li i {
 ul#menu-city-mody-mobile-tr li ul.sub-menu li, ul#menu-citymody-mobile-menu li ul.sub-menu li {
   margin-bottom: 0px; }
 
+ul#menu-citymody-mobile-menu li ul.sub-menu li:last-child, ul#menu-city-mody-mobile-tr li ul.sub-menu li:last-child {
+  font-weight: 400; }
+
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
   background-color: #47B0FB !important;
