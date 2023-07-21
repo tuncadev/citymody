@@ -173,6 +173,12 @@ ul#menu-citymody-home-tr ul.sub-menu li:last-child a, ul#menu-citymody-menu ul.s
   left: 3px;
   top: 1px; }
 
+ul#menu-city-mody-mobile-tr li i, ul#menu-citymody-mobile-menu li i {
+  margin-left: 5px; }
+
+ul#menu-city-mody-mobile-tr li ul.sub-menu li, ul#menu-citymody-mobile-menu li ul.sub-menu li {
+  margin-bottom: 0px; }
+
 /* About Us Captıon */
 .aboutus_caption .wp-caption img:hover + figcaption {
   background-color: #47B0FB !important;
