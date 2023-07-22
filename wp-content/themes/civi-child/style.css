@@ -311,12 +311,6 @@ form#new_project label {
   padding-top: 20px;
   padding-bottom: 30px; }
 
-.archive-layout .archive-filter-top .archive-search-control {
-  height: 55px; }
-
-.archive-layout .archive-filter-top .form-group i:not(.fa-spin) {
-  top: 42%; }
-
 /* Candidate Main */
 /* Search box */
 input#candidate_filter_search {
