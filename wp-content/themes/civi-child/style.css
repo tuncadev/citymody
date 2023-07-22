@@ -290,6 +290,23 @@ form#new_project label {
   .jobs-insights-details.on.active .list-jobs-insights {
     height: auto !important; } }
 
+@media (max-width: 767px) {
+  .archive-layout .archive-filter-top.has-bg {
+    padding-top: 12px;
+    padding-bottom: 20px; }
+  .archive-layout .archive-filter-top h2 {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 13px;
+    font-weight: 500; }
+  .archive-layout .archive-filter-top.has-bg {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .archive-layout .archive-filter-top .archive-search-control {
+    height: 52px; }
+  .civi-clear-top-filter .civi-button {
+    padding: 6px 15px; } }
+
 /* Candidate Main */
 /* Search box */
 input#candidate_filter_search {
