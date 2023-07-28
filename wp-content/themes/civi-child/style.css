@@ -357,6 +357,12 @@ input#jobs_filter_search {
   margin-left: 5px;
   border: 0; }
 
+.showme {
+  display: block; }
+
+.hideme {
+  display: none; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
