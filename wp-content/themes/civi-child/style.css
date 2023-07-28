@@ -326,7 +326,16 @@ input#jobs_filter_search {
   display: none; }
 
 .acc-more {
-  cursor: pointer; }
+  cursor: pointer;
+  color: chartreuse;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px; }
+
+.acc-more:after {
+  content: "<";
+  transform: rotate(90deg); }
 
 /* Home  */
 /* Home Tabs */
