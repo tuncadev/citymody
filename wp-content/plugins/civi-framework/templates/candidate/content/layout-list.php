@@ -144,7 +144,7 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
                     </a>
                 <?php } ?>
 								<br><?php if($i > 4) { ?>
-								<a class="acc-more down" onclick='showMore(<?php echo $moreTxt; ?>)' ><?php echo __("Show " . $i - 4 . " more" , "civi-framework"); ?></a>
+								<a class="acc-more down"><?php echo __("Show " . $i - 4 . " more" , "civi-framework"); ?></a>
 								<?php } ?>
             </div>
         <?php } ?>
