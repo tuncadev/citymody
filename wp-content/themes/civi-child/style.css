@@ -334,11 +334,8 @@ input#jobs_filter_search {
   letter-spacing: 1px; }
 
 .acc-more:after {
-  content: "";
-  -webkit-transform: rotate(45deg);
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block; }
+  content: ">";
+  -webkit-transform: rotate(90deg); }
 
 /* Home  */
 /* Home Tabs */
