@@ -28,7 +28,7 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 ?>
 <script>
 
-		var showless = getElementsByClassName(acc-less);
+		var showless = getElementsByClassName("acc-less");
 		document.querySelectorAll(".acc-more").forEach(el=>{
 	const hidden= el.parentElement.querySelectorAll(".hidden");
 	el.addEventListener("click", ()=>{
