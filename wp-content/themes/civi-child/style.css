@@ -333,7 +333,20 @@ input#jobs_filter_search {
   line-height: 24px;
   letter-spacing: 1px; }
 
-.acc-more:after {
+.up:after {
+  content: "";
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Font Awesome 5 Pro";
+  color: var(--civi-color-secondary);
+  font-style: normal;
+  margin-top: 0;
+  margin-left: 5px;
+  border: 0;
+  display: inline-block;
+  transform: rotate(180deg); }
+
+.down:after {
   content: "";
   font-size: 12px;
   font-weight: 700;
