@@ -322,6 +322,12 @@ input#candidate_filter_search {
 input#jobs_filter_search {
   border-radius: 4px 0px 0px 4px; }
 
+.acc-sec .hidden {
+  display: none; }
+
+#acc-more {
+  cursor: pointer; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
