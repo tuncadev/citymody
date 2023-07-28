@@ -27,32 +27,24 @@ $candidate_item_class[] = 'candidate-' . $id;
 $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 ?>
 <script>
-
-		var showless = document.getElementsByClassName("acc-less");
+	function showMore(txt) {
 		document.querySelectorAll(".acc-more").forEach(el=>{
 	const hidden= el.parentElement.querySelectorAll(".hidden");
 	el.addEventListener("click", ()=>{
 	 hidden.forEach(h=> h.classList.toggle("hidden")) 
 	 if (hidden[0].classList.contains("hidden")) {
-			el.classList.add("hideme");
-			el.classList.remove("showme");
-			showless.classList.remove("hideme");
-			showless.classList.add("showme");
 	 		el.classList.remove("up");
 	 		el.classList.add("down");
+			el.innerHTML = txt;
 		}
 		else { 
-			showless.classList.remove("showme");
-			showless.classList.add("hideme");
-			el.classList.add("showme");
-			el.classList.remove("hideme");
 			el.classList.remove("down");
 			el.classList.add("up");
 			el.innerHTML = "<?php echo __("Show less" , "civi-framework"); ?>"; 
 		}
 	});
  });
-
+	}
 	
 </script>
 <?php if (!empty($candidate_avatar)) : ?>
@@ -153,8 +145,8 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
                     </a>
                 <?php } ?>
 								<br><?php if($i > 4) { ?>
-								<a class="acc-more down showme" ><?php echo __("Show " . $i - 4 . " more" , "civi-framework"); ?></a>
-								<a class="acc-less up hideme" ><?php echo __("Show less" , "civi-framework"); ?></a>
+									<?php $moreTxt = __("Show " . $i - 4 . " more" , "civi-framework"); ?>
+								<a class="acc-more down" onclick='newwin(showMore(<?php echo $moreTxt; ?>))' ><?php echo __("Show " . $i - 4 . " more" , "civi-framework"); ?></a>
 								<?php } ?>
             </div>
         <?php } ?>
