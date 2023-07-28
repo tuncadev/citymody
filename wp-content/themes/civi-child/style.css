@@ -325,7 +325,7 @@ input#jobs_filter_search {
 .acc-sec .hidden {
   display: none; }
 
-#acc-more {
+.acc-more {
   cursor: pointer; }
 
 /* Home  */
