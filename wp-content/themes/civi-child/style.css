@@ -340,10 +340,8 @@ input#jobs_filter_search {
   font-family: "Font Awesome 5 Pro";
   color: var(--civi-color-secondary);
   font-style: normal;
-  right: 18px;
-  width: auto;
-  height: auto;
   margin-top: 0;
+  margin-left: 5px;
   border: 0; }
 
 /* Home  */
