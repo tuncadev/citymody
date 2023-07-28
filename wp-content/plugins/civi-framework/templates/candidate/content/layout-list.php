@@ -144,7 +144,14 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
                     </a>
                 <?php } ?>
 								<br><?php if($i > 4) { ?>
-								<a class="acc-more down"><?php echo __("Show " . $i - 4 . " more" , "civi-framework"); ?></a>
+								<?php $myNum = $i - 4; ?>
+								<?php $text = sprintf(
+										/* translators: %s: Name of a city */
+										esc_html__( 'Show %s more', 'civi-framework' ),
+										esc_html( $myNum )
+								); 
+								?>
+								<a class="acc-more down"><?php echo $text; ?></a>
 								<?php } ?>
             </div>
         <?php } ?>
