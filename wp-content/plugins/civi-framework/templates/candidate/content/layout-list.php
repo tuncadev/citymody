@@ -34,7 +34,7 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 	 if (hidden[0].classList.contains("hidden")) {
 	 		el.classList.remove("up");
 	 		el.classList.add("down");
-			el.innerHTML = = "<?php echo __("Show more" , "civi-framework"); ?>"; 
+			el.innerHTML = "<?php echo __("Show more" , "civi-framework"); ?>"; 
 		}
 		else { 
 			el.classList.remove("down");
