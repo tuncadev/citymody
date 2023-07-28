@@ -22,12 +22,3 @@ function runCountDown() {
 	countdownTimer();
 }
 	
-document.querySelectorAll(".acc-more").forEach(el=>{
-	const hidden= el.parentElement.querySelectorAll(".hidden");
-	el.addEventListener("click", ()=>{
-	 hidden.forEach(h=> h.classList.toggle("hidden")) 
-	 if (hidden[0].classList.contains("hidden"))
-			 el.innerHTML = "Show more";
-		 else el.innerHTML = "Show less";
-	});
- });

@@ -26,6 +26,17 @@ if (!empty($layout)) {
 $candidate_item_class[] = 'candidate-' . $id;
 $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 ?>
+<script>
+	document.querySelectorAll(".acc-more").forEach(el=>{
+	const hidden= el.parentElement.querySelectorAll(".hidden");
+	el.addEventListener("click", ()=>{
+	 hidden.forEach(h=> h.classList.toggle("hidden")) 
+	 if (hidden[0].classList.contains("hidden"))
+			 el.innerHTML = "<?php echo __("Show more" , "civi-framework"); ?>";
+		 else el.innerHTML = "<?php echo __("Show less" , "civi-framework"); ?>";
+	});
+ });
+</script>
 <?php if (!empty($candidate_avatar)) : ?>
 <div class="<?php echo join(' ', $candidate_item_class); ?>">
     <div class="candidate-header">
@@ -108,15 +119,23 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
             <?php echo wp_trim_words(get_the_content($candidate_id), 25); ?>
         </div>
     <?php endif; ?>
-    <div class="candidate-bottom">
+    <div class="candidate-bottom acc-sec">
         <?php if (is_array($candidate_skills)) { ?>
             <div class="candidate-skills">
-                <?php foreach ($candidate_skills as $skill) {
-                    $skill_link = get_term_link($skill, 'candidate_skills'); ?>
-                    <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills">
+                <?php 
+										$i = 0;
+										$moreclass = "";
+										foreach ($candidate_skills as $skill) {
+										$i = $i + 1;
+                    $skill_link = get_term_link($skill, 'candidate_skills'); 
+										if ($i > 4) { $moreclass = "hidden"; } 
+										?>
+                    <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills <?php echo $moreclass; ?>">
                         <?php esc_html_e($skill->name); ?>
                     </a>
                 <?php } ?>
+								<br>
+								<a class="acc-more" ><?php echo __("Show more" , "civi-framework"); ?></a>
             </div>
         <?php } ?>
         <?php civi_get_salary_candidate($candidate_id); ?>
