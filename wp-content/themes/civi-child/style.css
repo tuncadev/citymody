@@ -334,8 +334,17 @@ input#jobs_filter_search {
   letter-spacing: 1px; }
 
 .acc-more:after {
-  content: ">";
-  -webkit-transform: rotate(90deg); }
+  content: "";
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Font Awesome 5 Pro";
+  color: var(--civi-color-secondary);
+  font-style: normal;
+  right: 18px;
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  border: 0; }
 
 /* Home  */
 /* Home Tabs */
