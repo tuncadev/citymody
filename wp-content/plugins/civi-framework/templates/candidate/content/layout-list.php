@@ -134,8 +134,9 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
                         <?php esc_html_e($skill->name); ?>
                     </a>
                 <?php } ?>
-								<br><?php echo $i; ?>
+								<br><?php if($i > 4) { ?>
 								<a class="acc-more" ><?php echo __("Show more" , "civi-framework"); ?></a>
+								<?php } ?>
             </div>
         <?php } ?>
         <?php civi_get_salary_candidate($candidate_id); ?>
