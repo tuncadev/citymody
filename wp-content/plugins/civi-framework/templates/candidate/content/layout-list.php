@@ -27,7 +27,7 @@ $candidate_item_class[] = 'candidate-' . $id;
 $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 ?>
 <script>
-	function 
+
 		var showless = getElementsByClassName(acc-less);
 		document.querySelectorAll(".acc-more").forEach(el=>{
 	const hidden= el.parentElement.querySelectorAll(".hidden");
