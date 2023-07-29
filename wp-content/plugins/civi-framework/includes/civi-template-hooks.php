@@ -688,7 +688,7 @@ function layout_wrapper_start()
                 $search_image = "background-image : url({$candidate_search_image['url']})";
             }
 ?>
-	<?php if (!is_tax("candidate_skills") OR !is_tax("candidate_categories")) { ?>
+	<?php if (!is_tax("candidate_skills")) { ?>
     <div class="archive-candidate-top archive-filter-top <?php echo $class_inner; ?>" <?php if ($enable_candidate_search_bg == 1) { ?> style="<?php echo $search_color . $search_image ?>" <?php } ?>>
         <div class="container">
 				
