@@ -690,7 +690,7 @@ function layout_wrapper_start()
 ?>
     <div class="archive-candidate-top archive-filter-top <?php echo $class_inner; ?>" <?php if ($enable_candidate_search_bg == 1) { ?> style="<?php echo $search_color . $search_image ?>" <?php } ?>>
         <div class="container">
-				<?php if (is_tax("candidate-skills")) { echo "Y"; } else { echo "N"; } ?>
+				<?php if (is_tax("candidate_skills")) { echo "Y"; } else { echo "N"; } ?>
             <h2><?php esc_html_e('Hire people for your business', 'civi-framework'); ?></h2>
             <form method="post" class="form-candidate-top-filter form-archive-top-filter">
                 <div class="row">
