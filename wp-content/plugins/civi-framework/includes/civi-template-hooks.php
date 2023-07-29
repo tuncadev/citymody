@@ -186,6 +186,7 @@ function layout_wrapper_start()
                 $search_image = "background-image : url({$jobs_search_image['url']})";
             }
 ?>
+		<?php if (is_tax("candidate-skills")) { echo "Y"; } else { echo "N"; } ?>
     <div class="archive-jobs-top archive-filter-top <?php echo $class_inner; ?>" <?php if ($enable_jobs_search_bg == 1) { ?> style="<?php echo $search_color . $search_image ?>" <?php } ?>>
         <div class="container">
             <h2><?php esc_html_e('Find Your Dream Jobs', 'civi-framework'); ?></h2>
