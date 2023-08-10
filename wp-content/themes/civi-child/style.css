@@ -70,11 +70,11 @@ a.facebook-login {
 
 .applicants-inner {
   border-bottom: solid 1px #cccccc;
-  border-top: 1px solid #cccccc;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  padding-top: 15px; }
 
 .applicants-inner:first-child {
-  padding-top: 15px; }
+  border-top: 1px solid #cccccc; }
 
 /* Footer */
 .footer-new-top-section {
