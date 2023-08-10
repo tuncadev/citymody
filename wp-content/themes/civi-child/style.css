@@ -71,7 +71,9 @@ a.facebook-login {
 .applicants-innner {
   border-bottom: solid 1px #cccccc;
   border-top: 1px solid #cccccc;
-  padding-bottom: 15px;
+  padding-bottom: 15px; }
+
+.applicants-innner:first-child {
   padding-top: 15px; }
 
 /* Footer */
