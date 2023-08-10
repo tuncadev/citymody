@@ -68,12 +68,12 @@ a.facebook-login {
 .addon-login-wrap ul .linkedin-login {
   display: none; }
 
-.applicants-inner {
+.applicants-innner {
   border-bottom: solid 1px #cccccc;
   padding-bottom: 15px;
   padding-top: 15px; }
 
-.applicants-inner:first-child {
+.applicants-innner:first-child {
   border-top: 1px solid #cccccc; }
 
 /* Footer */
