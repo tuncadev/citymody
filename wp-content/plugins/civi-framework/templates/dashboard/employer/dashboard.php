@@ -66,6 +66,7 @@ if ($data_jobs->have_posts()) {
                         <a href="<?php echo civi_get_permalink('applicants'); ?>" target="_blank" class="civi-link-boxdb"></a>
                     </div>
                 </li>
+								<?php if(civi_total_meeting('candidate') > 0 ) { ?>
                 <li class="col-xl-3 col-sm-6">
                     <div class="interviews civi-boxdb">
                         <div class="entry-detai ">
@@ -79,6 +80,7 @@ if ($data_jobs->have_posts()) {
                         <a href="<?php echo civi_get_permalink('meetings'); ?>" target="_blank" class="civi-link-boxdb"></a>
                     </div>
                 </li>
+								<?php } ?>
                 <li class="col-xl-3 col-sm-6">
                     <div class="candidates civi-boxdb">
                         <div class="entry-detail">
