@@ -371,6 +371,9 @@ input#jobs_filter_search {
 .hideme {
   display: none; }
 
+.candidate-head-details .title-wapper h1 {
+  text-transform: capitalize; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
