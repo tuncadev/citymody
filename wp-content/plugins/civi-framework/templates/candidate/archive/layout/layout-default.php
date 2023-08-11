@@ -136,7 +136,7 @@ if ($enable_candidate_show_map == 1) {
                     <?php } ?>
                 </span>
             </div>
-            <div class="entry-right">
+            <div class="entry-right" style="width:120px">
                 <div class="entry-filter">
                     <div class="civi-clear-filter hidden-lg-up">
                         <i class="far fa-sync fa-spin"></i>
