@@ -385,6 +385,9 @@ input#jobs_filter_search {
 .select2-dropdown .select2-dropdown--above, .select2-dropdown .select2-dropdown--below {
   width: 120px !important; }
 
+ç.candidate-header .candidate-status-inner .logged-out .civi-button {
+  padding: 0px 12px; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
