@@ -142,13 +142,13 @@ if ($enable_candidate_show_map == 1) {
                         <i class="far fa-sync fa-spin"></i>
                         <span><?php esc_html_e('Clear All', 'civi-framework'); ?></span>
                     </div>
-                    <div class="candidate-layout switch-layout">
+                    <div class="candidate-layout switch-layout" style="display:none">
                         <a class="<?php if ($content_candidate == 'layout-grid') : echo 'active';
                                     endif; ?>" href="#" data-layout="layout-grid"><i class="far far fa-th-large icon-large"></i></a>
                         <a class="<?php if ($content_candidate == 'layout-list') : echo 'active';
                                     endif; ?>" href="#" data-layout="layout-list"><i class="far fa-list icon-large"></i></a>
                     </div>
-                    <span class="text-sort-by"><?php esc_html_e('Sort by', 'civi-framework'); ?></span>
+                    <span class="text-sort-by" style="display:none"><?php esc_html_e('Sort by', 'civi-framework'); ?></span>
                     <select name="sort_by" class="sort-by filter-control civi-select2">
                         <option value="newest"><?php esc_html_e('Newest', 'civi-framework'); ?></option>
                         <option value="oldest"><?php esc_html_e('Oldest', 'civi-framework'); ?></option>

@@ -374,6 +374,11 @@ input#jobs_filter_search {
 .candidate-head-details .title-wapper h1, .civi-candidates-item .candidates-title {
   text-transform: capitalize; }
 
+.select2.select2-container .select2-selection {
+  justify-content: space-evenly;
+  padding-right: 0;
+  align-items: baseline; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
