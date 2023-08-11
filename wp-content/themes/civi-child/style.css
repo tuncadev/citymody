@@ -967,10 +967,12 @@ span.premium_menu_txt {
   width: 120px;
   height: 120px; }
 
-/* Remove Follow */
-.add-follow-candidate {
-  display: none; }
+/* Remove Follow 
 
+.add-follow-candidate {
+	display: none;
+}
+*/
 .civi-candidate-header-bottom {
   display: none !important; }
 
