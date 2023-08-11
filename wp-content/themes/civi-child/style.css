@@ -371,7 +371,7 @@ input#jobs_filter_search {
 .hideme {
   display: none; }
 
-.candidate-head-details .title-wapper h1 {
+.candidate-head-details .title-wapper h1, .civi-candidates-item .candidates-title {
   text-transform: capitalize; }
 
 /* Home  */
