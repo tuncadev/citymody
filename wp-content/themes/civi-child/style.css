@@ -379,6 +379,9 @@ input#jobs_filter_search {
   padding-right: 0;
   align-items: baseline; }
 
+.select2.select2-container, select.civi-select2 {
+  width: 100% !important; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
