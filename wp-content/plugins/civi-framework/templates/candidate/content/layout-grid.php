@@ -80,15 +80,31 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
             <?php echo wp_trim_words(get_the_content($candidate_id), 25); ?>
         </div>
     <?php endif; ?>
-    <div class="candidate-bottom">
+    <div class="candidate-bottom acc-sec">
         <?php if (is_array($candidate_skills)) { ?>
             <div class="candidate-skills">
-                <?php foreach ($candidate_skills as $skill) {
-                    $skill_link = get_term_link($skill, 'candidate_skills'); ?>
-                    <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills">
+						<?php 
+										$i = 0;
+										$moreclass = "";
+										foreach ($candidate_skills as $skill) {
+										$i = $i + 1;
+                    $skill_link = get_term_link($skill, 'candidate_skills'); 
+										if ($i > 4) { $moreclass = "hidden"; } 
+										?>
+                    <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills <?php echo $moreclass; ?>">
                         <?php esc_html_e($skill->name); ?>
                     </a>
                 <?php } ?>
+								<br><?php if($i > 4) { ?>
+								<?php $myNum = $i - 4; ?>
+								<?php $text = sprintf(
+										/* translators: %s: Name of a city */
+										esc_html__( 'Show %s more', 'civi-framework' ),
+										esc_html( $myNum )
+								); 
+								?>
+								<a class="acc-more down"><?php echo $text; ?></a>
+								<?php } ?>
             </div>
         <?php } ?>
     </div>

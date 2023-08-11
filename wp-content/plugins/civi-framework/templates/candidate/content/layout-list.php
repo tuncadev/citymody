@@ -129,33 +129,34 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
         </div>
     <?php endif; ?>
     <div class="candidate-bottom acc-sec">
-        <?php if (is_array($candidate_skills)) { ?>
-            <div class="candidate-skills">
-                <?php 
-										$i = 0;
-										$moreclass = "";
-										foreach ($candidate_skills as $skill) {
-										$i = $i + 1;
-                    $skill_link = get_term_link($skill, 'candidate_skills'); 
-										if ($i > 4) { $moreclass = "hidden"; } 
-										?>
-                    <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills <?php echo $moreclass; ?>">
-                        <?php esc_html_e($skill->name); ?>
-                    </a>
-                <?php } ?>
-								<br><?php if($i > 4) { ?>
-								<?php $myNum = $i - 4; ?>
-								<?php $text = sprintf(
-										/* translators: %s: Name of a city */
-										esc_html__( 'Show %s more', 'civi-framework' ),
-										esc_html( $myNum )
-								); 
-								?>
-								<a class="acc-more down"><?php echo $text; ?></a>
-								<?php } ?>
-            </div>
-        <?php } ?>
-        <?php civi_get_salary_candidate($candidate_id); ?>
+			<?php if (is_array($candidate_skills)) { ?>
+				<div class="candidate-skills">
+					<?php 
+					$i = 0;
+					$moreclass = "";
+					foreach ($candidate_skills as $skill) {
+						$i = $i + 1;
+						$skill_link = get_term_link($skill, 'candidate_skills'); 
+						if ($i > 4) { $moreclass = "hidden"; } 
+						?>
+						<a href="<?php echo esc_url($skill_link); ?>" class="label label-skills <?php echo $moreclass; ?>">
+							<?php esc_html_e($skill->name); ?>
+						</a>
+					<?php } ?>
+					<br>
+					<?php if($i > 4) { ?>
+						<?php $myNum = $i - 4; ?>
+						<?php $text = sprintf(
+							/* translators: %s: Name of a city */
+							esc_html__( 'Show %s more', 'civi-framework' ),
+							esc_html( $myNum )
+						); 
+						?>
+						<a class="acc-more down"><?php echo $text; ?></a>
+					<?php } ?>
+				</div>
+			<?php } ?>
+			<?php civi_get_salary_candidate($candidate_id); ?>
     </div>
     <a class="civi-link-item" href="<?php echo get_post_permalink($candidate_id) ?>"></a>
 </div>
