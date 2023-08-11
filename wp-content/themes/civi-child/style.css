@@ -382,6 +382,9 @@ input#jobs_filter_search {
 .select2.select2-container, select.civi-select2 {
   width: 100% !important; }
 
+.select2-dropdown .select2-dropdown--above, .select2-dropdown .select2-dropdown--below {
+  width: 120px !important; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
