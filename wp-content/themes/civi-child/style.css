@@ -14,6 +14,9 @@ License URI: https://choosealicense.com/licenses/gpl-2.0/
 Text Domain:civichild
 Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
+body.post-type-archive-jobs #wrapper, body.post-type-archive-candidate #wrapper {
+  overflow: hidden; }
+
 body,
 html {
   font-family: "Source Sans Pro", sans-serif; }
