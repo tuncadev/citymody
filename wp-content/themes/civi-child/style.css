@@ -1047,13 +1047,14 @@ span.premium_menu_txt {
 .account .user-control {
   min-width: 247px !important; }
 
-/*Jobs remove header */
+/*Jobs remove header
 .jobs-archive-header .jobs-logo-company {
-  display: none !important; }
-
+    display: none !important;
+}
 .jobs-archive-header .jobs-header-right {
-  display: none !important; }
-
+    display: none !important;
+} 
+*/
 /* Remove days left */
 .civi-jobs-item .days {
   display: none; }
