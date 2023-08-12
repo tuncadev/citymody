@@ -9,7 +9,9 @@ $id = get_the_ID();
 if (!empty($candidate_id)) {
     $id = $candidate_id;
 }
+?>
 
+<?php
 $author_id = get_post_field('post_author', $candidate_id);
 $candidate_avatar = get_the_author_meta('author_avatar_image_url', $author_id);
 $candidate_featured = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_featured', true);
@@ -26,26 +28,7 @@ if (!empty($layout)) {
 $candidate_item_class[] = 'candidate-' . $id;
 $enable_candidate_des = civi_get_option('enable_candidate_show_des');
 ?>
-<script>
-		document.querySelectorAll(".acc-more").forEach(el=>{
-	const hidden= el.parentElement.querySelectorAll(".hidden");
-	el.addEventListener("click", ()=>{
-	 hidden.forEach(h=> h.classList.toggle("hidden")) 
-	 if (hidden[0].classList.contains("hidden")) {
-	 		el.classList.remove("up");
-	 		el.classList.add("down");
-			el.innerHTML = "<?php echo __("Show more" , "civi-framework"); ?>"; 
-		}
-		else { 
-			el.classList.remove("down");
-			el.classList.add("up");
-			el.innerHTML = "<?php echo __("Show less" , "civi-framework"); ?>"; 
-		}
-	});
- });
 
-	
-</script>
 <?php if (!empty($candidate_avatar)) : ?>
 <div class="<?php echo join(' ', $candidate_item_class); ?>">
     <div class="candidate-top">
@@ -103,32 +86,64 @@ $enable_candidate_des = civi_get_option('enable_candidate_show_des');
     <div class="candidate-bottom acc-sec">
         <?php if (is_array($candidate_skills)) { ?>
             <div class="candidate-skills">
+				<?php  ?>
+					<div id="<?php echo $id;?>" class="showmorediv">
 						<?php 
-										$i = 0;
-										$moreclass = "";
-										foreach ($candidate_skills as $skill) {
-										$i = $i + 1;
-                    $skill_link = get_term_link($skill, 'candidate_skills'); 
-										if ($i > 4) { $moreclass = "hidden"; } 
-										?>
-                    <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills <?php echo $moreclass; ?>">
-                        <?php esc_html_e($skill->name); ?>
-                    </a>
-                <?php } ?>
-								<br><?php if($i > 4) { ?>
-								<?php $myNum = $i - 4; ?>
-								<?php $text = sprintf(
-										/* translators: %s: Name of a city */
-										esc_html__( 'Show %s more', 'civi-framework' ),
-										esc_html( $myNum )
-								); 
-								?>
-								<a class="acc-more down"><?php echo $text; ?></a>
-								<?php } ?>
+							$i = 0;
+							foreach ($candidate_skills as $skill) {
+							$i = $i + 1;
+                    		$skill_link = get_term_link($skill, 'candidate_skills'); ?>
+							<a href="<?php echo esc_url($skill_link); ?>" class="label label-skills">
+                        		<?php esc_html_e($skill->name); ?>
+                    		</a>
+						<?php } ?>
+					</div>	
+				<?php $myNum = $i - 4; ?>
+						<?php 
+						$moretext = sprintf(
+							
+							esc_html__( 'Show %s more', 'civi-framework' ),
+							esc_html( $myNum )
+						); 
+						$lesstext = sprintf(
+							
+							esc_html__( 'Show less', 'civi-framework' ),
+							esc_html( $myNum )
+						);					
+						?>
+				
+					
+					<a id="showmore<?php echo $id; ?>" style="display:none" class="showmore" onClick="moreless('<?php echo $id;?>', 'more')"><?php echo $moretext; ?></a>
+				<a id="showless<?php echo $id; ?>" style="display:none" class="showless" onClick="moreless('<?php echo $id;?>', 'less')"><?php echo $lesstext; ?></a>
+				<script>
+	var showmorediv = document.getElementById("<?php echo $id; ?>");
+	var shoemorelink = document.getElementById("showmore<?php echo $id ?>");
+	var showlesslink = document.getElementById("showless<?php echo $id ?>");
+	var showmoreheight = showmorediv.getBoundingClientRect();
+	var divHeight = showmoreheight.height;
+		if(divHeight > 88) { 
+						showmorediv.style.maxHeight = "88px";
+						shoemorelink.style.display = "block";
+					}
+	function moreless(id, action) {
+		if(action == "more") {
+			document.getElementById(id).style.maxHeight = "fit-content";
+			document.getElementById("showmore"+id).style.display = "none";
+			document.getElementById("showless"+id).style.display = "block";
+		}
+		if(action == "less") {
+			document.getElementById(id).style.maxHeight = "88px";
+			document.getElementById("showmore"+id).style.display = "block";
+			document.getElementById("showless"+id).style.display = "none";
+		}
+	}
+</script>
             </div>
+
         <?php } ?>
     </div>
     <?php civi_get_salary_candidate($candidate_id); ?>
     <a class="civi-link-item" href="<?php echo get_post_permalink($candidate_id) ?>"></a>
 </div>
+
 <?php endif; ?>
