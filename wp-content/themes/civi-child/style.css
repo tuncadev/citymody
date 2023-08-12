@@ -388,6 +388,39 @@ input#jobs_filter_search {
 .candidate-header .candidate-status-inner .logged-out a.civi-button {
   padding: 0px 12px; }
 
+.showmorediv {
+  overflow: hidden; }
+
+.showmore, .showless {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px; }
+
+.showmore:after {
+  content: "";
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Font Awesome 5 Pro";
+  color: var(--civi-color-secondary);
+  font-style: normal;
+  margin-top: 0;
+  margin-left: 5px;
+  border: 0; }
+
+.showless:after {
+  content: "";
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Font Awesome 5 Pro";
+  color: var(--civi-color-secondary);
+  font-style: normal;
+  margin-top: 0;
+  margin-left: 5px;
+  border: 0;
+  display: inline-block;
+  transform: rotate(180deg); }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
