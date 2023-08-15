@@ -153,7 +153,7 @@ if ($enable_company_show_map == 1) {
                         <a class="<?php if ($content_company == 'layout-list') : echo 'active';
                                     endif; ?>" href="#" data-layout="layout-list"><i class="far fa-list icon-large"></i></a>
                     </div>
-                    <span class="text-sort-by"><?php esc_html_e('Sort by', 'civi-framework'); ?></span>
+                    <span class="text-sort-by"  style="display:none;"><?php esc_html_e('Sort by', 'civi-framework'); ?></span>
                     <select name="sort_by" class="sort-by filter-control civi-select2">
                         <option value="newest"><?php esc_html_e('Newest', 'civi-framework'); ?></option>
                         <option value="oldest"><?php esc_html_e('Oldest', 'civi-framework'); ?></option>
