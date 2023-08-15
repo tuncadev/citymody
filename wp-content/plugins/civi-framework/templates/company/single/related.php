@@ -40,7 +40,7 @@ $language = pll_current_language( 'slug' );
 	<h4 class="title-company"><?php esc_html_e('Job at ', 'civi-framework') ?><?php the_title(); ?></h4>
 	<?php  } else { ?>
 	<h4 class="title-company"><?php the_title(); ?> -
-		<?php esc_html_e('Job at ', 'civi-framework') ?><?php the_title(); ?></h4>
+		<?php esc_html_e('Job at ', 'civi-framework') ?></h4>
 	<?php } ?>
 
 	<div class="related-inner">
