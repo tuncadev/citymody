@@ -662,6 +662,10 @@ input#jobs_filter_search {
 .error404 .main-content {
   padding-top: 40px; }
 
+a.authour.civi-link-bottom {
+  font-weight: 500;
+  color: var(--civi-color-accent); }
+
 span.red_star {
   color: red !important;
   font-weight: bold; }
