@@ -77,10 +77,10 @@ $enable_jobs_des = civi_get_option('enable_jobs_show_des');
 						<?php if (!empty($company_id)) : ?>
 							<?php esc_html_e('from company', 'civi-framework') ?>
 							<a class="authour civi-link-bottom" href="<?php echo get_post_permalink($company_id) ?>"><?php echo get_the_title($company_id); ?></a> ,
-							<?php esc_html_e('from category', 'civi-framework') ?>
 						<?php endif; ?>
 						<?php if (is_array($jobs_categories) || is_object($jobs_categories)) { ?>
 						<div class="categories-warpper">
+						<?php esc_html_e('from category', 'civi-framework') ?>
 							<?php foreach ($jobs_categories as $categories) {
 											$cate_link = get_term_link($categories, 'jobs-categories');
 											if ($categories->term_id !== '') {
