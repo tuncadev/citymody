@@ -669,6 +669,9 @@ a.authour.civi-link-bottom {
 body.post-type-archive-company #wrapper {
   overflow: hidden; }
 
+.company-layout.switch-layout {
+  display: none; }
+
 span.red_star {
   color: red !important;
   font-weight: bold; }
