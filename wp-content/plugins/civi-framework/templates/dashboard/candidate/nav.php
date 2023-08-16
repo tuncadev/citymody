@@ -2,7 +2,7 @@
 if (!defined("ABSPATH")) {
     exit(); // Exit if accessed directly
 }
-$getset = isset($_GET["wishlist"]) ? "wishlist" : "";
+$getset = $_GET["wishlist"] ? $_GET["wishlist"] : "";
 $favActive = isset($_GET["wishlist"]) ? "active" : "";
 $key_dashboard = [
 		/*"candidate_membership" => esc_html__('Premium', 'civi-framework'),*/
@@ -75,7 +75,7 @@ if (empty($profile_strength_percent)) {
 												$span_premium = $key === "candidate_membership" ? "premium_menu" : "";
 												$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
                         $class_active =
-                            is_page($id) && $key !== "candidate_logout" && $key !== "my_favorites" ? "active" : "";
+                            is_page($id) && $key !== "candidate_logout" && !isset($_GET["wishlist"]) ? "active" : "";
 
                         if($language != "tr") { 
                             if($nID != '') { $id = $nID; }
