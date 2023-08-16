@@ -123,7 +123,7 @@ if (empty($profile_strength_percent)) {
 						<li class="nav-item <?php esc_html_e($favActive); ?>">
                             <a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>">
 							   <span class="image">
-								 <img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="24" />
+								 <img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.5" />
                                 </span>
                                 <span><?php echo $value; ?></span>
 							</a>
