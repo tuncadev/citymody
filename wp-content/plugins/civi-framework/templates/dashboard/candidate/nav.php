@@ -60,81 +60,77 @@ if (empty($profile_strength_percent)) {
 
             <?php if (in_array("civi_user_candidate", (array)$current_user->roles)): ?>
 
-                <ul class="list-nav-dashboard">
-                    <?php foreach ($key_dashboard as $key => $value):
-                        
-                        $show_candidate = civi_get_option("show_" . $key, "1");
-                        $nID = $en_IDS[$key];
-                        if (!$show_candidate) {
-                            continue;
-                        }
+							<ul class="list-nav-dashboard">
+								<?php foreach ($key_dashboard as $key => $value):
+										
+										$show_candidate = civi_get_option("show_" . $key, "1");
+										$nID = $en_IDS[$key];
+										if (!$show_candidate) {
+												continue;
+										}
 
-                        $id = civi_get_option("civi_" . $key . "_page_id");
-                        $image_candidate = civi_get_option("image_" . $key, "");
-                        $type_candidate = civi_get_option("type_" . $key);
-												$span_premium = $key === "candidate_membership" ? "premium_menu" : "";
-												$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
-                        $class_active =
-                            is_page($id) && $key !== "candidate_logout" && !isset($_GET["wishlist"]) ? "active" : "";
+										$id = civi_get_option("civi_" . $key . "_page_id");
+										$image_candidate = civi_get_option("image_" . $key, "");
+										$type_candidate = civi_get_option("type_" . $key);
+										$span_premium = $key === "candidate_membership" ? "premium_menu" : "";
+										$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
+										$class_active =
+												is_page($id) && $key !== "candidate_logout" && !isset($_GET["wishlist"]) ? "active" : "";
 
-                        if($language != "tr") { 
-                            if($nID != '') { $id = $nID; }
-                        } 
-                        $link_url = "";
-                        $link_url =
-                            $key === "candidate_logout"
-                                ? wp_logout_url(home_url())
-                                : get_permalink($id);
+										if($language != "tr") { 
+												if($nID != '') { $id = $nID; }
+										} 
+										$link_url = "";
+										$link_url =
+												$key === "candidate_logout"
+														? wp_logout_url(home_url())
+														: get_permalink($id);
 
-                        $html_icon = "";
-                        if (!empty($image_candidate["url"])) {
-                            if (civi_get_option("type_icon_candidate") === "svg") {
-                                $html_icon =
-                                    '<object class="civi-svg" type="image/svg+xml" data="' .
-                                    esc_url($image_candidate["url"]) .
-                                    '"></object>';
-                            } else {
-                                $html_icon =
-                                    '<img src="' .
-                                    esc_url($image_candidate["url"]) .
-                                    '" alt="' .
-                                    $value .
-                                    '"/>';
-                            }
-                        }
-                        ?>
-												
-												<?php if($key != "my_favorites") { ?>
-                        <li class="nav-item <?php esc_html_e($class_active); ?> <?php echo $span_premium; ?>">
-                            <a href="<?php echo esc_url($link_url); ?>" data-title="<?php echo $value; ?>">
-                                <?php if (!empty($image_candidate["url"])) { ?>
-                                    <span class="image">
-                                     <?php echo $html_icon; ?>
-                                </span>
-                                <?php } ?>
-                                <span><?php echo $value; ?></span>
-                                <?php if ($key === "candidate_messages") { ?>
-                                    <?php civi_get_total_unread_message();?>
-                                <?php } ?>
-                            </a>
-                        </li>
-					<?php } else { ?>
-						
-						<li class="nav-item <?php esc_html_e($favActive); ?>">
-                            <a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>">
-							   <span class="image">
-								 <img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
-                                </span>
-                                <span><?php echo $value; ?></span>
-							</a>
-                        </li>
-					<?php } ?>
-                    <?php
-                    endforeach; ?>
-                </ul>
-
+										$html_icon = "";
+										if (!empty($image_candidate["url"])) {
+												if (civi_get_option("type_icon_candidate") === "svg") {
+														$html_icon =
+																'<object class="civi-svg" type="image/svg+xml" data="' .
+																esc_url($image_candidate["url"]) .
+																'"></object>';
+												} else {
+														$html_icon =
+																'<img src="' .
+																esc_url($image_candidate["url"]) .
+																'" alt="' .
+																$value .
+																'"/>';
+												}
+										}
+										?>
+										
+										<?php if($key != "my_favorites") { ?>
+											<li class="nav-item <?php esc_html_e($class_active); ?> <?php echo $span_premium; ?>">
+													<a href="<?php echo esc_url($link_url); ?>" data-title="<?php echo $value; ?>">
+															<?php if (!empty($image_candidate["url"])) { ?>
+																	<span class="image">
+																		<?php echo $html_icon; ?>
+															</span>
+															<?php } ?>
+															<span><?php echo $value; ?></span>
+															<?php if ($key === "candidate_messages") { ?>
+																	<?php civi_get_total_unread_message();?>
+															<?php } ?>
+													</a>
+											</li>
+										<?php } else { ?>
+											<li class="nav-item <?php esc_html_e($favActive); ?>">
+												<a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>">
+													<span class="image">
+														<img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
+													</span>
+													<span><?php echo $value; ?></span>
+												</a>
+											</li>
+										<?php } ?>
+								<?php endforeach; ?>
+							</ul>
             <?php endif; ?>
-
             <div class="nav-profile-strength">
                 <div class="profile-strength left-sidebar" style="--pct: <?php esc_attr_e(
                     $profile_strength_percent

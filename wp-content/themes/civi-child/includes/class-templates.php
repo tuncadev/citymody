@@ -293,6 +293,8 @@ if (!class_exists("Civi_Templates")) {
 
 		public static function account()
 		{
+			$getset = isset($_GET["wishlist"]) ? "wishlist" : "";
+			$favActive = isset($_GET["wishlist"]) ? "active" : "";
 			$en_IDS = [
 				"candidate_dashboard" => 15370,
 				"candidate_profile" => 15375,
@@ -358,6 +360,7 @@ if (!class_exists("Civi_Templates")) {
 					"candidate_dashboard" => esc_html__('Dashboard', 'civi-framework'),
 					"candidate_profile" => esc_html__('Profile', 'civi-framework'),
 					"my_jobs" => esc_html__('My jobs', 'civi-framework'),
+					"my_favorites" => esc_html__('My Favorites', 'civi-framework'),
 					"candidate_reviews" => esc_html__('My Reviews', 'civi-framework'),
 					"candidate_company" => esc_html__('My Following', 'civi-framework'),
 					"candidate_messages" => esc_html__('Messages', 'civi-framework'),
