@@ -467,7 +467,7 @@ if (!class_exists("Civi_Templates")) {
 											$language = pll_current_language( 'slug' );
 										
 										?>
-											<<?php if($key != "my_favorites") { ?>
+											<?php if($key != "my_favorites") { ?>
 											<li class="nav-item <?php esc_html_e($class_active); ?> <?php echo $span_premium; ?>">
 													<a href="<?php echo esc_url($link_url); ?>" data-title="<?php echo $value; ?>">
 															<?php if (!empty($image_candidate["url"])) { ?>
