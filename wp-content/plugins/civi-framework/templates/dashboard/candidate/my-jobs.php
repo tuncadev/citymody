@@ -2,9 +2,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-
 ?>
-
 <div class="entry-my-page my-jobs">
     <div class="entry-title">
         <h4><?php esc_html_e('My Jobs', 'civi-framework'); ?></h4>
@@ -28,3 +26,15 @@ if (!defined('ABSPATH')) {
         </div>
     </div>
 </div>
+<script type="text/javascript">
+window.onload = function(){
+	var result = window.location.search;
+    if (result != "") {
+		jQuery(".tab-apply-item").removeClass("active");
+		jQuery('.tab-apply').css('display','none');
+		jQuery("#tab-apply").css('display','none');
+		jQuery("#tab-wishlist").css('display','block');
+		jQuery(".tab-wishlist-item").addClass("active");
+	} 
+}
+</script>
