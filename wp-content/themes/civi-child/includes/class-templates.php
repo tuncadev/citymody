@@ -467,23 +467,30 @@ if (!class_exists("Civi_Templates")) {
 											$language = pll_current_language( 'slug' );
 										
 										?>
-											<li class="nav-item <?php echo $span_premium; ?> <?php esc_html_e($class_active) ?>">
-												<a href="<?php echo esc_url($link_url); ?>">
-													<?php if (!empty($image_candidate["url"])) { ?>
-														<span class="image">
-															<?php echo $html_icon; ?>
-														</span>
-													<?php } ?>
-													<?php if ( $key === "candidate_membership" ) { ?>
-													<span style="color:#ffb229"><?php esc_html_e($value); ?></span>&nbsp;<?php echo " " . __(" Upgrade", "civi-framework"); ?>
-													<?php } else { ?>
-													<span><?php esc_html_e($value); ?></span>
-													<?php } ?>
-													<?php if ($key === "candidate_messages") { ?>
-														<?php civi_get_total_unread_message(); ?>
-													<?php } ?>
+											<<?php if($key != "my_favorites") { ?>
+											<li class="nav-item <?php esc_html_e($class_active); ?> <?php echo $span_premium; ?>">
+													<a href="<?php echo esc_url($link_url); ?>" data-title="<?php echo $value; ?>">
+															<?php if (!empty($image_candidate["url"])) { ?>
+																	<span class="image">
+																		<?php echo $html_icon; ?>
+															</span>
+															<?php } ?>
+															<span><?php echo $value; ?></span>
+															<?php if ($key === "candidate_messages") { ?>
+																	<?php civi_get_total_unread_message();?>
+															<?php } ?>
+													</a>
+											</li>
+										<?php } else { ?>
+											<li class="nav-item <?php esc_html_e($favActive); ?>">
+												<a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>">
+													<span class="image">
+														<img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
+													</span>
+													<span><?php echo $value; ?></span>
 												</a>
 											</li>
+										<?php } ?>
 										<?php endforeach; ?>
 									<?php endif; ?>
 								</ul>
