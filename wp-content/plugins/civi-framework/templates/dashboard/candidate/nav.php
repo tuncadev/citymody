@@ -2,7 +2,7 @@
 if (!defined("ABSPATH")) {
     exit(); // Exit if accessed directly
 }
-$getset = $_GET["wishlist"] ? $_GET["wishlist"] : "";
+$getset = $_GET["wishlist"] ? "wishlist" : "";
 $favActive = isset($_GET["wishlist"]) ? "active" : "";
 $key_dashboard = [
 		/*"candidate_membership" => esc_html__('Premium', 'civi-framework'),*/
