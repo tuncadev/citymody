@@ -75,7 +75,7 @@ if (empty($profile_strength_percent)) {
 												$span_premium = $key === "candidate_membership" ? "premium_menu" : "";
 												$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
                         $class_active =
-                            is_page($id) && $key !== "candidate_logout" && $getset !== "" ? "active" : "";
+                            is_page($id) && $key !== "candidate_logout" && $key !== "my_favorites" ? "active" : "";
 
                         if($language != "tr") { 
                             if($nID != '') { $id = $nID; }
