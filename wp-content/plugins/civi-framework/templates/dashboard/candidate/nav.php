@@ -2,7 +2,8 @@
 if (!defined("ABSPATH")) {
     exit(); // Exit if accessed directly
 }
-
+$getset = $_GET["wishlist"];
+$favActive = isset($_GET["wishlist"]) ? "active" : "";
 $key_dashboard = [
 		/*"candidate_membership" => esc_html__('Premium', 'civi-framework'),*/
     "candidate_dashboard" => esc_html__('Dashboard', 'civi-framework'),
@@ -69,10 +70,10 @@ if (empty($profile_strength_percent)) {
                         $id = civi_get_option("civi_" . $key . "_page_id");
                         $image_candidate = civi_get_option("image_" . $key, "");
                         $type_candidate = civi_get_option("type_" . $key);
-						$span_premium = $key === "candidate_membership" ? "premium_menu" : "";
-						$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
+												$span_premium = $key === "candidate_membership" ? "premium_menu" : "";
+												$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
                         $class_active =
-                            is_page($id) && $key !== "candidate_logout" ? "active" : "";
+                            is_page($id) && $key !== "candidate_logout" && $getset !== "" ? "active" : "";
 
                         if($language != "tr") { 
                             if($nID != '') { $id = $nID; }
@@ -100,7 +101,8 @@ if (empty($profile_strength_percent)) {
                             }
                         }
                         ?>
-
+												
+												<?php if($key != "my_favorites") { ?>
                         <li class="nav-item <?php esc_html_e($class_active); ?> <?php echo $span_premium; ?>">
                             <a href="<?php echo esc_url($link_url); ?>" data-title="<?php echo $value; ?>">
                                 <?php if (!empty($image_candidate["url"])) { ?>
@@ -114,7 +116,17 @@ if (empty($profile_strength_percent)) {
                                 <?php } ?>
                             </a>
                         </li>
-
+					<?php } else { ?>
+						
+						<li class="nav-item <?php esc_html_e($favActive); ?>">
+                            <a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>">
+							   <span class="image">
+								 <img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="24" />
+                                </span>
+                                <span><?php echo $value; ?></span>
+							</a>
+                        </li>
+					<?php } ?>
                     <?php
                     endforeach; ?>
                 </ul>
