@@ -120,8 +120,8 @@ if (empty($profile_strength_percent)) {
 											</li>
 										<?php } else { ?>
 											<li class="nav-item <?php esc_html_e($favActive); ?>">
-												<a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>"  style="padding:5px 14px;">
-													<span class="image" style="margin-right: 16px;">
+												<a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>"  style="padding:5px 17px;">
+													<span class="image" style="margin-right: 13px;">
 														<img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
 													</span>
 													<span><?php echo $value; ?></span>
