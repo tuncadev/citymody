@@ -440,7 +440,8 @@ if (!class_exists("Civi_Templates")) {
 											$id = civi_get_option("civi_" . $key . "_page_id");
 											$image_candidate = civi_get_option("image_" . $key, "");
 
-											$class_active = (is_page($id) && $key !== "candidate_logout") ? 'active' : '';
+											$class_active =
+												is_page($id) && $key !== "candidate_logout" && !isset($_GET["wishlist"]) ? "active" : "";
 											if($language != "tr") { 
 												$nID = $en_IDS[$key];
 												if($nID === '') { $id = $id; } else { $id = $nID ; }
