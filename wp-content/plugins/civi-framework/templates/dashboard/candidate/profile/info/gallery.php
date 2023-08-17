@@ -10,7 +10,7 @@ civi_get_gallery_enqueue();
 ?>
 <div class="civi-candidate-galleries civi-upload-gallery block-from">
     <h6><?php esc_html_e('Gallery', 'civi-framework') ?></h6>
-	<h4 class="gal_warning"><?php esc_html_e('* In order to be discovered by companies for thier projects, please upload at least', 'civi-framework'); ?></h4>
+	<h4 class="gal_warning"><?php esc_html_e('* In order to be discovered by companies for thier projects, please upload at least 4 photos', 'civi-framework'); ?></h4>
     <div class="candidate-fields-media civi-fields-gallery">
         <label><?php esc_html_e('Image', 'civi-framework'); ?></label>
         <div class="candidate-fields candidate-fields-file candidate-gallery-image">
