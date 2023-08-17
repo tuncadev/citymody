@@ -89,6 +89,7 @@ if (!empty($google_gmail)) {
 } else {
     $candidate_email = isset($candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_email']) ? $candidate_meta_data[CIVI_METABOX_PREFIX . 'candidate_email'][0] : '';
 }
+	$avatar_bg = $candidate_avatar_url == "" ? "avatar_bg" : "";
 ?>
 
 <div class="candidate basic-info block-from">
@@ -103,24 +104,36 @@ if (!empty($google_gmail)) {
         <?php if (!in_array('fields_candidate_avatar', $hide_candidate_fields)) : ?>
             <div class="candidate-fields-avatar civi-fields-avatar">
                 <label><?php esc_html_e('Your photo', 'civi-framework'); ?></label>
+							<div class="no_selfie-wrapper">
+				<div class="no_selfie">
+					<span><?php esc_html_e("Please avoid using bad quailty selfie pictures for your profile photo. This may result in being removed from Talent List", "civi-framework"); ?></span>
+				</div>
+			</div>
                 <div class="form-field">
                     <div id="civi_avatar_errors" class="errors-log"></div>
-                    <div id="civi_avatar_container" class="file-upload-block preview">
-                        <div id="civi_avatar_view" data-image-id="<?php echo $candidate_avatar_id; ?>" data-image-url="<?php if (!empty($candidate_avatar_url)) {
-                                                                                                                            echo $candidate_avatar_url;
-                                                                                                                        } ?>"></div>
-                        <div id="civi_add_avatar">
-                            <i class="far fa-arrow-from-bottom large"></i>
-                            <p id="civi_drop_avatar">
-                                <button type="button" id="civi_select_avatar"><?php esc_html_e('Upload', 'civi-framework') ?></button>
-                            </p>
-                        </div>
-                        <input type="hidden" class="avatar_url form-control" name="author_avatar_image_url" value="<?php echo $candidate_avatar_url; ?>" id="avatar_url">
-                        <input type="hidden" class="avatar_id" name="author_avatar_image_id" value="<?php echo $candidate_avatar_id; ?>" id="avatar_id" />
-                    </div>
+					<div class="avatar-container">
+						<div id="civi_avatar_container" class="file-upload-block preview">
+							<div id="civi_avatar_view" data-image-id="<?php echo $candidate_avatar_id; ?>" data-image-url="<?php if (!empty($candidate_avatar_url)) {
+																																echo $candidate_avatar_url;
+																															} ?>"></div>
+							<div id="civi_add_avatar">
+								<i class="far fa-arrow-from-bottom large"></i>
+								<p id="civi_drop_avatar">
+									<button type="button" id="civi_select_avatar"><?php esc_html_e('Upload', 'civi-framework') ?></button>
+								</p>
+							</div>
+							<input type="hidden" class="avatar_url form-control" name="author_avatar_image_url" value="<?php echo $candidate_avatar_url; ?>" id="avatar_url">
+							<input type="hidden" class="avatar_id" name="author_avatar_image_id" value="<?php echo $candidate_avatar_id; ?>" id="avatar_id" />
+						</div>
+						<div class="no_selfie-container <?php echo $avatar_bg; ?>" id="no-selfie">
+
+						</div>
+					</div>
                 </div>
                 <div class="field-note"><?php echo sprintf(__('Maximum file size: %s.', 'civi-framework'), $image_max_file_size); ?></div>
             </div>
+
+			
         <?php endif; ?>
 
         <?php if (!in_array('fields_candidate_thumbnail', $hide_candidate_fields)) : ?>

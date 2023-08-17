@@ -51,6 +51,65 @@ a.facebook-login {
 .skills-info .select2.select2-container .select2-selection {
   border: 1px solid #dddddd; }
 
+/* No Selfies */
+.no_selfie-wrapper {
+  display: flex;
+  position: relative;
+  max-width: 500px; }
+
+.no_selfie span {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #d63638;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding-left: 50px; }
+
+.gal_figure {
+  display: flex !important;
+  justify-content: center; }
+
+.avatar-container {
+  display: flex; }
+
+.no_selfie-container {
+  display: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  position: absolute;
+  opacity: 0.15;
+  background-image: url("https://www.citymody.com/wp-content/uploads/2023/08/no-selfie.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.no_selfie-container.avatar_bg-show {
+  display: block; }
+
+button#civi_select_avatar {
+  font-weight: 700; }
+
+.no_selfie-wrapper .no_selfie:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  background-image: url("https://www.citymody.com/wp-content/uploads/2023/08/no-selfie.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.gal_warning {
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d63638; }
+
 @media screen and (max-width: 490px) {
   .archive-layout .archive-filter-top .form-group:last-child {
     border: none;

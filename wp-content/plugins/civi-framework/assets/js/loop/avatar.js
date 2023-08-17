@@ -94,6 +94,7 @@
 
 		var civi_avatar_delete = function ($type) {
 			$("body").on("click", ".icon-avatar-delete", function (e) {
+				$("#no-selfie").addClass( "avatar_bg-show" );
 				e.preventDefault();
 				var $this = $(this),
 					icon_delete = $this,
