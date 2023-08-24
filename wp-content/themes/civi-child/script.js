@@ -22,3 +22,13 @@ function runCountDown() {
 	countdownTimer();
 }
 	
+jQuery('#copied_wrapper').hide();
+
+	function copy(text) {
+  		navigator.clipboard.writeText(text);
+		jQuery('#copied_wrapper').removeClass('make_absolute');
+		jQuery('#copied_wrapper').fadeIn('slow');
+		
+		jQuery('#copied_wrapper').delay(2000).fadeOut();
+		
+}
