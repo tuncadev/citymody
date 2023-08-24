@@ -80,7 +80,33 @@ $today = date("d/m/Y");
 		/*send admin mail */		
 		$to = 'projects@citymody.com, bugrahan.kitapci@citymody.com, tunca.development@gmail.com';
 		$subject = 'New Project Offer';
-		$body = 'TEST';
+		$body = '
+		<p>
+			<b>From:</b> ' . $full_name . ' <br />
+			<b>Company Name:</b>' .  $company_name . ' <br />
+			<b>Company E-Mail:</b>' .  $company_email . ' <br />
+			<b>Company Phone:</b> ' .  $company_phone_number . ' <br />
+			<b>Company Web Site:</b> ' .  $company_web_site . ' <br />
+		</p>
+		<p>
+			<b>Project Title:</b> ' .  $project_title . ' <br />
+			<b>Project City:</b> ' .  $project_city . ' <br />
+			<b>Project Link:</b> ' .  $link_to_project . ' <br />
+			<b>Description:</b> ' .  $project_description . ' <br />
+		</p>
+		<p>
+			<b>Offered Rates:</b> Hourly:  <br />
+			<b>Project Start Date:</b> ' .  $project_start_date . ' <br />
+			<b>Project End Date:</b> ' .  $project_end_date . ' <br />
+		</p>
+		<p>
+			<b>Notes:</b> ' .  $notes . ' <br />
+		</p>
+		<p>
+			<b>Candidate Name:</b> ' .  $candidate_first_name . ' ' . $candidate_last_name . '<br />
+			<b>Candidate Page:</b> ' .  $candidate_link . ' <br />
+		</p>
+		';
 		$headers = array('Content-Type: text/html; charset=UTF-8');
 
 		wp_mail( $to, $subject, $body, $headers );
