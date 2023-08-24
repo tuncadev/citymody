@@ -77,10 +77,9 @@ $today = date("d/m/Y");
 		update_field( "project_start_date", $project_start_date, $post_id );
 		update_field( "project_end_date", $project_end_date, $post_id );
 		update_field( "notes", $notes, $post_id );
-		/*send admin mail */
-		
+		/*send admin mail */		
 		$to = 'projects@citymody.com, bugrahan.kitapci@citymody.com, tunca.development@gmail.com';
-		$subject = 'New Project Offer for Candidate :' . $candidate_name;
+		$subject = 'New Project Offer';
 		$body = '
 		<p>
 			<b>From:</b> ' . $full_name . ' <br />
@@ -111,7 +110,7 @@ $today = date("d/m/Y");
 		$headers = array('Content-Type: text/html; charset=UTF-8');
 
 		wp_mail( $to, $subject, $body, $headers );
-		header("Location:https://www.citymody.com/new-project-offer-submit-success/");
+		header("Location:https://www.citymody.com/new-project-submit-success/");
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}
