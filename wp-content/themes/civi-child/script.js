@@ -26,7 +26,7 @@ jQuery('#copied_wrapper').hide();
 
 	function copy(text) {
 
-			e.preventDefault();
+			preventDefault();
 			jQuery("body").css("overflow", "inherit");
 
 		navigator.clipboard.writeText(text);
