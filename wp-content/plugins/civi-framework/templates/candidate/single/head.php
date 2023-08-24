@@ -70,6 +70,11 @@ $candidate_skills = get_the_terms($candidate_id, 'candidate_skills');
                 <?php // echo civi_get_total_rating('candidate', $candidate_id); ?>
             </div>
         </div>
+				<div class="wishlist_wrapper">
+			<?php civi_get_template('candidate/follow.php', array(
+				'candidate_id' => $candidate_id,
+			)); ?>
+	 	</div>
     </div>
     <div class="civi-candidate-header-bottom">
         <?php civi_get_template('candidate/follow.php', array(
