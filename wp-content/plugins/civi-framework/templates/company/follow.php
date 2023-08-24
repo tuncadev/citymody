@@ -36,12 +36,23 @@ if ($key !== false) {
         <?php } ?>
     </a>
 <?php } else { ?>
-    <div class="account logged-out">
-        <a href="#popup-form" class="civi-button button-outline-accent btn-login add-follow-company <?php echo esc_attr($css_class); ?>" data-company-id="<?php echo intval($id) ?>">
-            <span class="icon-plus">
-                <i class="far fa-plus"></i>
-            </span>
-            <?php esc_html_e('Follow', 'civi-framework') ?>
-        </a>
-    </div>
+	<div class="logged-out">
+	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
+        <?php if ($key !== false) { ?>
+            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
+        <?php } else { ?>
+            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
+        <?php } ?>
+    </a>
+</div>
+<div>
+	<a href="#popup-form" class="addfav btn-login notice-employer">
+		<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
+	</a>
+	</div>
+	<div>
+	<a  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')" class="addfav" >
+		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
+	</a>
+</div>
 <?php } ?>

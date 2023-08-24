@@ -25,10 +25,6 @@ function runCountDown() {
 jQuery('#copied_wrapper').hide();
 
 	function copy(text) {
-
-			preventDefault();
-			jQuery("body").css("overflow", "inherit");
-
 		navigator.clipboard.writeText(text);
 		jQuery('#copied_wrapper').removeClass('make_absolute');
 		jQuery('#copied_wrapper').fadeIn('slow');

@@ -501,7 +501,7 @@ input#jobs_filter_search {
 .candidate-status-inner a.addfav:hover i {
   color: #ffffff !important; }
 
-.candidate-status-inner a.addfav:not(:first-child) {
+.candidate-status-inner div:not(:first-child) {
   margin-left: 5px; }
 
 .copied_wrapper {
