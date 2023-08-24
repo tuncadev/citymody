@@ -95,7 +95,10 @@ $today = date("d/m/Y");
 			<b>Description:</b> ' .  $project_description . ' <br />
 		</p>
 		<p>
-			<b>Offered Rates:</b> Hourly: '  .  $hourly_budget . ' <br />
+			<b>Offered Hourly Rate:</b> '  .  $hourly_budget . ' <br />
+			<b>Offered Daily Rate:</b> '  .  $daily_budget . ' <br />
+			<b>Offered Project Rate:</b> '  .  $project_based_payment . ' <br />
+
 			<b>Project Start Date:</b> ' .  $project_start_date . ' <br />
 			<b>Project End Date:</b> ' .  $project_end_date . ' <br />
 		</p>
