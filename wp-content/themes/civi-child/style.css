@@ -484,7 +484,7 @@ input#jobs_filter_search {
   transform: rotate(180deg); }
 
 /* new ad favv */
-.candidate-status-inner a.addfav {
+.candidate-status-inner a.addfav, .wishlist_wrapper a.addfav {
   border: 1px solid #2786BB;
   border-radius: 50%;
   padding: 8px;
@@ -494,14 +494,14 @@ input#jobs_filter_search {
   justify-content: center;
   float: left; }
 
-.candidate-status-inner a.addfav:hover {
+.candidate-status-inner a.addfav:hover, .wishlist_wrapper a.addfav:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #2786BB; }
 
-.candidate-status-inner a.addfav:hover i {
+.candidate-status-inner a.addfav:hover i, .wishlist_wrapper a.addfav:hover i {
   color: #ffffff !important; }
 
-.candidate-status-inner div:not(:first-child) {
+.candidate-status-inner div:not(:first-child), .wishlist_wrapper div:not(:first-child) {
   margin-left: 5px; }
 
 .copied_wrapper {
@@ -518,6 +518,10 @@ input#jobs_filter_search {
 
 .candidate-header .candidate-status-inner, .icons_wrapper {
   display: flex; }
+
+.wishlist_wrapper {
+  display: flex;
+  margin-left: auto; }
 
 /* Home  */
 /* Home Tabs */
