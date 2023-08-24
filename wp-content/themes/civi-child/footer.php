@@ -67,7 +67,7 @@ $copyright_text   = Civi_Helper::get_setting('footer_copyright_text');
 <?php } ?>
 </div><!-- End #wrapper -->
 <div class="copied_wrapper make_absolute" id="copied_wrapper">
-	<div class="copied_txt"><?php esc_html_e('Link to profile was copied to clipboard!', 'civi-child') ?></div>
+	<div class="copied_txt"><?php esc_html_e('Link to profile was copied to clipboard!', 'civichild') ?></div>
 </div>
 
 <?php wp_footer(); ?>
