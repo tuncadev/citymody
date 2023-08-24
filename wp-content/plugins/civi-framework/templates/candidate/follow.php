@@ -51,20 +51,19 @@ $candidate_link = get_permalink($id);
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
 	</a>
 <?php } elseif ( !is_user_logged_in() ) { ?>
-<div class="logged-out">
+	<div class="logged-out">
 	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
-        <?php if ($key !== false) { ?>
-            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
-        <?php } else { ?>
-            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
-        <?php } ?>
+       <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
     </a>
-		<a href="#popup-form" class="addfav btn-login notice-employer">
+</div>
+<div class="logged-out" id="rmOverflow">
+	<a href="#popup-form" class="addfav btn-login notice-employer">
 		<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
 	</a>
+	</div>
+	<div>
 	<a  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')" class="addfav" >
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
 	</a>
-
 </div>
 <?php } ?>

@@ -37,13 +37,13 @@ if ($key !== false) {
     </a>
 <?php } else { ?>
 	<div class="logged-out">
-	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
+	<a href="#popup-form" class="addfav btn-login add-follow-company <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
         <?php if ($key !== false) { ?>
             <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
         <?php } else { ?>
             <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
         <?php } ?>
-    </a>
+    </a>	
 </div>
 <div>
 	<a href="#popup-form" class="addfav btn-login notice-employer">
