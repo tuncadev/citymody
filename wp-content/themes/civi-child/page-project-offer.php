@@ -110,7 +110,7 @@ $today = date("d/m/Y");
 		$headers = array('Content-Type: text/html; charset=UTF-8');
 
 		wp_mail( $to, $subject, $body, $headers );
-		header("Location:https://www.citymody.com/new-project-submit-success/");
+		echo "<span>Success </span>";
 	} else {
 		echo "<span>There was an error sending the form. Please try again. </span>";
 	}
