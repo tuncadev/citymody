@@ -34,7 +34,7 @@ console.log("POST");
 				( $_POST["company_web_site"] ) && 
 				( $_POST["project_title"] ) && 
 			 	( $_POST["project_description"] ) && 
-				( $_POST["il"] ) && 
+				( $_POST["project_city"] ) && 
 				( $_POST["project_start_date"] ) && 
 				( $_POST["project_end_date"] ) ) { ?>
 			<script>
