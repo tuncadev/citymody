@@ -2,6 +2,7 @@
 if (!defined("ABSPATH")) {
     exit(); // Exit if accessed directly
 }
+$loc = get_site_url();
 $getset = isset($_GET["wishlist"]) ? "wishlist" : "";
 $favActive = isset($_GET["wishlist"]) ? "active" : "";
 $key_dashboard = [
@@ -120,7 +121,7 @@ if (empty($profile_strength_percent)) {
 											</li>
 										<?php } else { ?>
 											<li class="nav-item <?php esc_html_e($favActive); ?>">
-												<a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>"  style="padding:5px 17px;">
+												<a href="<?php echo $loc; ?>/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>"  style="padding:5px 17px;">
 													<span class="image" style="margin-right: 13px;">
 														<img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
 													</span>

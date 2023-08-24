@@ -24,29 +24,47 @@ $css_class = '';
 if ($key !== false) {
     $css_class = 'added';
 }
+$candidate_link = get_permalink($id);
 ?>
-<?php if (is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles)) { ?>
-    <a href="#"
-       class="civi-button button-outline-accent civi-add-to-follow-candidate add-follow-candidate <?php echo esc_attr($css_class); ?>"
+<?php if ( is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles))  { ?>
+<div class="icons_wrapper">
+	<a href="#"
+       class="addfav civi-add-to-follow-candidate add-follow-candidate <?php echo esc_attr($css_class); ?>"
        data-candidate-id="<?php echo intval($id) ?>">
-        <span class="icon-plus">
-            <i class="far fa-plus"></i>
-        </span>
         <?php if ($key !== false) { ?>
-            <?php esc_html_e('Following', 'civi-framework') ?>
+            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
         <?php } else { ?>
-            <?php esc_html_e('Follow', 'civi-framework') ?>
+            <i class="fa-regular fa-heart" style="color:#2876BB; font-weight: 700;"></i>
         <?php } ?>
     </a>
-<?php } else { ?>
-    <div class="logged-out">
-        <a href="#popup-form"
-           class="civi-button button-outline-accent btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>"
-           data-candidate-id="<?php echo intval($id) ?>" data-notice="<?php esc_attr_e('Please login role Employer to view', 'civi-framework') ?>">
-            <span class="icon-plus">
-                <i class="far fa-plus"></i>
-            </span>
-            <?php esc_html_e('Follow', 'civi-framework') ?>
-        </a>
-    </div>
+	<a class="addfav">
+		<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
+	</a>
+	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
+		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
+	</a>
+
+</div>
+
+<?php } elseif ( is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles) ) { ?>
+	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
+		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
+	</a>
+<?php } elseif ( !is_user_logged_in() ) { ?>
+<div class="logged-out">
+	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
+        <?php if ($key !== false) { ?>
+            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
+        <?php } else { ?>
+            <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
+        <?php } ?>
+    </a>
+		<a href="#popup-form" class="addfav btn-login notice-employer">
+		<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
+	</a>
+	<a  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')" class="addfav" >
+		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
+	</a>
+
+</div>
 <?php } ?>

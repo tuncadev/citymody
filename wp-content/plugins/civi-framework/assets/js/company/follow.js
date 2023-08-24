@@ -46,11 +46,11 @@ var FOLLOW = FOLLOW || {};
 							if (data.added) {
 								$this.removeClass("removed").addClass("added");
 								$this.parents(".civi-company-item").removeClass("removed-follow");
-                                $this.html('<span class="icon-plus"><i class="far fa-check"></i></span>' + follow_saved);
+                                $this.html('<i class="fa-regular fa-heart" style="color:#2876BB; font-weight: 700;"></i>' + follow_saved);
                             } else {
 								$this.removeClass("added").addClass("removed");
 								$this.parents(".civi-company-item").addClass("removed-follow");
-                                $this.html('<span class="icon-plus"><i class="far fa-plus"></i></span>' + follow_save);
+                                $this.html('<i class="fa-regular fa-heart" style="color:#2876BB;"></i>' + follow_save);
 							}
 							if (typeof data.added == "undefined") {
 								console.log("login?");

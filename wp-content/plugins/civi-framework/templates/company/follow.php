@@ -26,14 +26,13 @@ if ($key !== false) {
 }
 ?>
 <?php if (is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles)) { ?>
-    <a href="#" class="civi-button button-outline-accent civi-add-to-follow add-follow-company <?php echo esc_attr($css_class); ?>" data-company-id="<?php echo intval($id) ?>">
-        <span class="icon-plus">
-            <i class="far fa-plus"></i>
-        </span>
+    <a href="#" class="addfav civi-button button-outline-accent civi-add-to-follow add-follow-company <?php echo esc_attr($css_class); ?>" data-company-id="<?php echo intval($id) ?>">
         <?php if ($key !== false) {?>
-            <?php esc_html_e('Following', 'civi-framework') ?>
+		  <i class="fa-regular fa-heart" style="color:#2876BB; font-weight: 700;"></i>
+		     <?php esc_html_e('Following', 'civi-framework') ?>
         <?php } else { ?>
-            <?php esc_html_e('Follow', 'civi-framework') ?>
+		  <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
+		     <?php esc_html_e('Follow', 'civi-framework') ?>
         <?php } ?>
     </a>
 <?php } else { ?>

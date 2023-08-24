@@ -6,6 +6,8 @@ var FOLLOW_CANDIDATE = FOLLOW_CANDIDATE || {};
         init: function () {
             var follow_candidate_save = civi_template_vars.follow_save,
                 follow_candidate_saved = civi_template_vars.follow_saved,
+				wishlist_save = civi_template_vars.wishlist_save,
+				wishlist_saved = civi_template_vars.wishlist_saved,
                 ajax_url = civi_template_vars.ajax_url;
 
             $("body").on("click", ".civi-add-to-follow-candidate", function (e) {
@@ -46,11 +48,11 @@ var FOLLOW_CANDIDATE = FOLLOW_CANDIDATE || {};
                             if (data.added) {
                                 $this.removeClass("removed").addClass("added");
                                 $this.parents(".civi-candidate-item").removeClass("removed-follow_candidate");
-                                $this.html('<span class="icon-plus"><i class="far fa-check"></i></span>' + follow_candidate_saved);
+                                $this.html('<i class="fa-regular fa-heart" style="color:#2876BB;"></i>');
                             } else {
                                 $this.removeClass("added").addClass("removed");
                                 $this.parents(".civi-candidate-item").addClass("removed-follow_candidate");
-                                $this.html('<span class="icon-plus"><i class="far fa-plus"></i></span>' + follow_candidate_save);
+                                $this.html('<i class="fa-regular fa-heart" style="color:#2876BB; font-weight: 700;"></i>');
                             }
                             if (typeof data.added == "undefined") {
                                 console.log("login?");

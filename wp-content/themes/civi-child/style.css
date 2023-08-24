@@ -483,6 +483,39 @@ input#jobs_filter_search {
   display: inline-block;
   transform: rotate(180deg); }
 
+/* new ad favv */
+.candidate-status-inner a.addfav {
+  border: 1px solid #2786BB;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: center;
+  float: left; }
+
+.candidate-status-inner a.addfav:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #2786BB; }
+
+.candidate-status-inner a.addfav:hover i {
+  color: #ffffff !important; }
+
+.candidate-status-inner a.addfav:not(:first-child) {
+  margin-left: 5px; }
+
+.copied_wrapper {
+  z-index: 99999;
+  color: #fff;
+  border-radius: 8px;
+  font-size: larger;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: linear-gradient(102deg, #00aff0, #007aca);
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {
