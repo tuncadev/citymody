@@ -32,6 +32,7 @@ if ($enable_sticky_sidebar_type) {
 <?php if ($company_id !== '') : ?>
     <div class="jobs-company-sidebar block-archive-sidebar company-sidebar <?php echo implode(" ", $classes); ?>">
         <h3 class="title-company"><?php esc_html_e('Information', 'civi-framework'); ?></h3>
+				<hr>
         <?php if (is_array($company_categories)) : ?>
             <div class="info">
                 <p class="title-info"><?php esc_html_e('Categories', 'civi-framework'); ?></p>

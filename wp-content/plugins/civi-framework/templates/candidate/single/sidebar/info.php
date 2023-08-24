@@ -38,6 +38,7 @@ if ($enable_sticky_sidebar_type) {
 ?>
 <div class="candidate-sidebar block-archive-sidebar candidate-sidebar <?php echo implode(" ", $classes); ?>">
     <h3 class="title-candidate"><?php esc_html_e('Information', 'civi-framework'); ?></h3>
+		<hr>
     <?php if (!empty($candidate_salary)) : ?>
         <div class="info">
             <p class="title-info"><?php esc_html_e('Offered Salary', 'civi-framework'); ?></p>
