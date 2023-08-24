@@ -25,11 +25,10 @@ function runCountDown() {
 jQuery('#copied_wrapper').hide();
 
 	function copy(text) {
-		jQuery("body").css("overflow", "visible");
+		jQuery('body').css('overflow', '');
 		navigator.clipboard.writeText(text);
 		jQuery('#copied_wrapper').removeClass('make_absolute');
 		jQuery('#copied_wrapper').fadeIn('slow');
-		
 		jQuery('#copied_wrapper').delay(2000).fadeOut();
-		
+		jQuery('body').css('overflow', '');
 }
