@@ -27,7 +27,8 @@ if ($key !== false) {
 $candidate_link = get_permalink($id);
 ?>
 <?php if ( is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles))  { ?>
-<div class="icons_wrapper">
+	<div class="icons_wrapper">
+	<div>
 	<a href="#"
        class="addfav civi-add-to-follow-candidate add-follow-candidate <?php echo esc_attr($css_class); ?>"
        data-candidate-id="<?php echo intval($id) ?>">
@@ -37,15 +38,18 @@ $candidate_link = get_permalink($id);
             <i class="fa-regular fa-heart" style="color:#2876BB; font-weight: 700;"></i>
         <?php } ?>
     </a>
+			</div>
+	<div>
 	<a class="addfav">
 		<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
 	</a>
+		</div>
+		<div>
 	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
 	</a>
-
 </div>
-
+</div>
 <?php } elseif ( is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles) ) { ?>
 	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
