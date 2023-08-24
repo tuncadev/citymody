@@ -65,7 +65,7 @@ $data = new WP_Query($args);
             <table class="table-dashboard" id="my-follow">
                 <thead>
                     <tr>
-                        <th><?php esc_html_e('Name', 'civi-framework') ?></th>
+                        <th><?php esc_html_e('Company Name', 'civi-framework') ?></th>
                         <th><?php esc_html_e('Founded Date', 'civi-framework') ?></th>
                     </tr>
                 </thead>
