@@ -22,12 +22,8 @@ $candidate_skills = get_the_terms($candidate_id, 'candidate_skills');
 $today = date("d/m/Y");
 // if ( is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles))  { 
 
-	if ($_SERVER['REQUEST_METHOD'] == 'POST') { ?>
-		
-	<script>
-console.log("POST");
-</script>
-	<?php if( ( $_POST["full_name"] ) && 
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
+		if( ( $_POST["full_name"] ) && 
 				( $_POST["company_name"] ) && 
 				( $_POST["company_email"] )  && 
 				( $_POST["company_phone_number"] ) && 
@@ -36,11 +32,9 @@ console.log("POST");
 			 	( $_POST["project_description"] ) && 
 				( $_POST["project_city"] ) && 
 				( $_POST["project_start_date"] ) && 
-				( $_POST["project_end_date"] ) ) { ?>
-			<script>
-console.log("POST SUCCESS");
-</script>
-	<?php	$candidate_name = get_the_terms($candidate_id, 'candidate_first_name');
+				( $_POST["project_end_date"] ) ) { 
+		
+		$candidate_name = get_the_terms($candidate_id, 'candidate_first_name');
 		$candidate_link = get_permalink($candidate_id);
 		
 	 	$full_name = strip_tags($_POST["full_name"]);
