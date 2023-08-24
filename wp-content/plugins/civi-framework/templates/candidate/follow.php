@@ -51,9 +51,11 @@ $candidate_link = get_permalink($id);
 </div>
 </div>
 <?php } elseif ( is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles) ) { ?>
+	<div>
 	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
 	</a>
+</div>
 <?php } elseif ( !is_user_logged_in() ) { ?>
 	<div class="logged-out">
 	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
