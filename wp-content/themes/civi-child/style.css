@@ -138,6 +138,9 @@ button#civi_select_avatar {
 .applicants-innner:first-child {
   border-top: 1px solid #cccccc; }
 
+.jobs-company-sidebar .title-info, .candidate-sidebar .title-info {
+  font-weight: 700; }
+
 /* Footer */
 .footer-new-top-section {
   border: none;
