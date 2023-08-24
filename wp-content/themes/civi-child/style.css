@@ -130,6 +130,20 @@ button#civi_select_avatar {
 .addon-login-wrap ul .linkedin-login {
   display: none; }
 
+form.new_project_offer input {
+  margin-bottom: 10px; }
+
+form#new_project_offer input[type="submit"] {
+  background-color: #065090;
+  border: 1px solid #065090;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px 17px !important;
+  margin-top: 30px;
+  width: 100%; }
+
 .applicants-innner {
   border-bottom: solid 1px #cccccc;
   padding-bottom: 15px;

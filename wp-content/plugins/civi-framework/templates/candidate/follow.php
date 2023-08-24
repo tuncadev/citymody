@@ -25,9 +25,11 @@ if ($key !== false) {
     $css_class = 'added';
 }
 $candidate_link = get_permalink($id);
+$link_URL = get_stylesheet_directory_uri() . "/project-offer?offer=" . $id;
+
 ?>
 <?php if ( is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles))  { ?>
-	<div class="icons_wrapper">
+<div class="icons_wrapper">
 	<div>
 	<a href="#"
        class="addfav civi-add-to-follow-candidate add-follow-candidate <?php echo esc_attr($css_class); ?>"
@@ -40,7 +42,7 @@ $candidate_link = get_permalink($id);
     </a>
 			</div>
 	<div>
-	<a class="addfav">
+	<a class="addfav" href="<?php echo $link_URL; ?>">
 		<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
 	</a>
 		</div>
@@ -50,14 +52,15 @@ $candidate_link = get_permalink($id);
 	</a>
 </div>
 </div>
+
 <?php } elseif ( is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles) ) { ?>
-	<div>
+<div>
 	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
 	</a>
-</div>
+	</div>
 <?php } elseif ( !is_user_logged_in() ) { ?>
-	<div class="logged-out">
+<div class="logged-out">
 	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
        <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
     </a>
