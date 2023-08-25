@@ -3,6 +3,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
+if ( is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles))  { 
 global $candidate_data, $candidate_meta_data;
 $candidate_id = isset($_GET['offer']) ? $_GET['offer'] : "";
 $candidate_location = get_the_terms($candidate_id, 'candidate_locations');
@@ -20,7 +21,7 @@ $candidate_last_name = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candi
 $candidate_link = get_permalink($candidate_id);
 $candidate_skills = get_the_terms($candidate_id, 'candidate_skills');
 $today = date("d/m/Y");
-// if ( is_user_logged_in() && in_array('civi_user_employer', (array)$current_user->roles))  { 
+
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
 		if( ( $_POST["full_name"] ) && 
@@ -321,4 +322,7 @@ $today = date("d/m/Y");
 		}
 	});
 </script>
+<?php } else { ?>
+<?php wp_redirect( home_url() ); exit; ?>
+<?php } ?>
 <?php get_footer(); ?>
