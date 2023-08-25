@@ -45,8 +45,17 @@ function pop_up(url){
 		
 		if (civi_user_candidate.checked) {
 			reg_warn_lbl.style.display = 'block';
-		} else if (civi_user_employer.checked) {
+		} else {
 			reg_warn_lbl.style.display = 'none';
+		}
+	});
+
+	civi_user_employer.addEventListener('click', function handleClick() { 
+		
+		if (civi_user_employer.checked) {
+			reg_warn_lbl.style.display = 'none';
+		} else {
+			reg_warn_lbl.style.display = 'block';
 		}
 	});
 
