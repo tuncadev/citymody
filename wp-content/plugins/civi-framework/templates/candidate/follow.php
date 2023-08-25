@@ -66,7 +66,7 @@ $link_URL = get_stylesheet_directory_uri() . "/project-offer?offer=" . $id;
 	</div>
 <?php } elseif ( !is_user_logged_in() ) { ?>
 <div class="logged-out">
-	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate tooltip data-title="<?php esc_attr_e('Add to favorites', 'civi-framework') ?>"> <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
+	<a href="#popup-form" class="addfav btn-login notice-employer add-follow-candidate tooltip"> data-title="<?php esc_attr_e('Add to favorites', 'civi-framework') ?>"  <?php echo esc_attr($css_class); ?>" data-candidate-id="<?php echo intval($id) ?>">
        <i class="fa-regular fa-heart" style="color:#2876BB;"></i>
     </a>
 </div>
