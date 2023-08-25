@@ -289,4 +289,36 @@ $today = date("d/m/Y");
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 <script src="<?php echo trailingslashit( get_stylesheet_directory_uri() ) . "/js/getCitiesAjax.js"; ?>"></script>
+<script>
+	
+	const checkbox_hourly = document.getElementById('hourly_budget');
+	const checkbox_daily = document.getElementById('daily_budget');
+	const checkbox_project = document.getElementById('project_based_payment');
+	
+	const box_hourly = document.getElementById('box_hourly');
+	const box_daily = document.getElementById('box_daily');
+	const box_project = document.getElementById('box_project');
+	
+	checkbox_hourly.addEventListener('click', function handleClick() {
+		if (checkbox_hourly.checked) {
+			box_hourly.style.display = 'block';
+		} else {
+			box_hourly.style.display = 'none';
+		}
+	});
+	checkbox_daily.addEventListener('click', function handleClick() {
+		if (checkbox_daily.checked) {
+			box_daily.style.display = 'block';
+		} else {
+			box_daily.style.display = 'none';
+		}
+	});
+	checkbox_project.addEventListener('click', function handleClick() {
+		if (checkbox_project.checked) {
+			box_project.style.display = 'block';
+		} else {
+			box_project.style.display = 'none';
+		}
+	});
+</script>
 <?php get_footer(); ?>
