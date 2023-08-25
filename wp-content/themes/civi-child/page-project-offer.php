@@ -242,7 +242,7 @@ $today = date("d/m/Y");
 					<input name="hourly_budget" style="margin-bottom: 0px;" type="checkbox" id="hourly_budget" class="point-mark point-active valid">
 					<div style="display: none" id="box_hourly">
 						<label for="hourly_budget_f" style="font-size: 12px;margin-bottom: 0px;color: #dd0000;"><?php echo __("Please Enter Your Hourly Budget", "civichild"); ?></label>
-						<input name="hourly_budget_f" style="margin-bottom: 15px;" type="number" id="hourly_budget_f" class="point-mark point-active valid" placeholder="<?php echo __("Hourly Budget","civichild"); ?>" value="0" />
+						<input name="hourly_budget_f" style="margin-bottom: 15px;" type="number" id="hourly_budget_f" class="point-mark point-active valid" placeholder="0" />
 					</div>
 				</div>
 				<div class="form-group col-md-4" style="margin-top: 15px;">
@@ -250,7 +250,7 @@ $today = date("d/m/Y");
 					<input type="checkbox" style="margin-bottom: 0px;" id="daily_budget" name="daily_budget" />
 					<div style="display: none" id="box_daily">
 						<label for="daily_budget_f" style="font-size: 12px;margin-bottom: 0px;color: #dd0000;"><?php echo __("Please Enter Your Daily Budget", "civichild"); ?></label>
-						<input type="number" style="margin-bottom: 15px;" id="daily_budget_f" name="daily_budget_f" placeholder="<?php echo __("Daily Budget","civichild"); ?>"  value="0" />
+						<input type="number" style="margin-bottom: 15px;" id="daily_budget_f" name="daily_budget_f" placeholder="0" />
 					</div> 
 				</div> 
 				<div class="form-group col-md-4" style="margin-top: 15px;">
@@ -258,7 +258,7 @@ $today = date("d/m/Y");
 					<input type="checkbox" style="margin-bottom: 0px;" id="project_based_payment" name="project_based_payment" />
 					<div style="display: none" id="box_project">
 						<label for="project_based_payment_f" style="font-size: 12px;margin-bottom: 0px;color: #dd0000;"><?php echo __("Please Enter Your Budget for the Project", "civichild"); ?></label>
-						<input type="number" style="margin-bottom: 15px;" id="project_based_payment_f" name="project_based_payment_f" placeholder="<?php echo __("Project Budget","civichild"); ?>"  value="0" />
+						<input type="number" style="margin-bottom: 15px;" id="project_based_payment_f" name="project_based_payment_f" placeholder="0" />
 					</div> 
 				</div> 
 
