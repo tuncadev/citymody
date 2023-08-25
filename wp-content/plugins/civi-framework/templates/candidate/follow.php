@@ -60,7 +60,7 @@ $link_URL = get_stylesheet_directory_uri() . "/project-offer?offer=" . $id;
 		</a>
 	</div>	
 <div>
-	<a class="addfav tooltip"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
+	<a class="addfav tooltip"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')" data-title="<?php esc_attr_e('Share Link', 'civi-framework') ?>">
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
 	</a>
 	</div>
