@@ -280,7 +280,7 @@ $today = date("d/m/Y");
 				</div>
 				<div class="form-group col-md-9"></div>
 				<div class="form-group col-md-3 civi-mailchimp-form-style-01">
-					<input type="submit" value="Send">
+					<input type="submit" value="<?php echo __("Send", "civichild"); ?>">
 				</div>
 			</div>	
 		</form>
