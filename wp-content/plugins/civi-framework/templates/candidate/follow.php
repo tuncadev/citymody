@@ -54,6 +54,11 @@ $link_URL = get_stylesheet_directory_uri() . "/project-offer?offer=" . $id;
 </div>
 
 <?php } elseif ( is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles) ) { ?>
+	<div class="logged-out">
+		<a href="#popup-form" class="addfav btn-login notice-employer" data-notice="<?php esc_attr_e('Please login role Employer to view', 'civi-framework') ?>">
+			<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
+		</a>
+	</div>	
 <div>
 	<a class="addfav"  href="javascript:void(0)"  onclick="copy('<?php echo $candidate_link; ?>')">
 		<i class="fa-regular fa-share-from-square" style="color:#2876BB; padding-left: 3px"></i>
