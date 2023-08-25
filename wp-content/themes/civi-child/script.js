@@ -67,6 +67,7 @@ function pop_up(url){
 
 	const civi_user_candidate = document.getElementById('civi_user_candidate');
 	const reg_warn_lbl = document.getElementById('reg_warn_lbl');
+	
 	civi_user_candidate.addEventListener('click', function handleClick() { 
 		
 		if (civi_user_candidate.checked) {
