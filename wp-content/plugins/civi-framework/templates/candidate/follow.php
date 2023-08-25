@@ -55,7 +55,7 @@ $link_URL = get_stylesheet_directory_uri() . "/project-offer?offer=" . $id;
 
 <?php } elseif ( is_user_logged_in() && in_array('civi_user_candidate', (array)$current_user->roles) ) { ?>
 	<div class="logged-out">
-		<a href="#popup-form" class="addfav btn-login notice-employer" data-notice="<?php esc_attr_e('Please login role Employer to view', 'civi-framework') ?>">
+	<a href="#popup-form" class="addfav btn-login notice-employer  tooltip" data-notice="<?php esc_attr_e('Please login role Employer to view', 'civi-framework') ?>" data-title="<?php esc_attr_e('Send Offer', 'civi-framework') ?>">
 			<i class="fa-regular fa-envelope" style="color:#2876BB;"></i>
 		</a>
 	</div>	
