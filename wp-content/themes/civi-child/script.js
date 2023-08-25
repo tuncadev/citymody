@@ -64,3 +64,14 @@ function pop_up(url){
 			box_project.style.display = 'none';
 		}
 	});
+
+	const civi_user_candidate = document.getElementById('civi_user_candidate');
+	const reg_warn_lbl = document.getElementById('reg_warn_lbl');
+	civi_user_candidate.addEventListener('click', function handleClick() { 
+		
+		if (civi_user_candidate.checked) {
+			reg_warn_lbl.style.display = 'block';
+		} else {
+			reg_warn_lbl.style.display = 'none';
+		}
+	});

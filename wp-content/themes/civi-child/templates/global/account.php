@@ -136,7 +136,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'rp') {
 						<input type="radio" checked value="civi_user_candidate" id="civi_user_candidate" name="account_type" class="hide">
 					<?php } ?>
 					<div class="form-group accept-account reg_warn">
-						<label><?php echo __("After registration,please complete filling your profile. Profiles with no Avatar Photo or With no Categories chosen won't appear in the search results.","civichild");?></label>
+						<label id="reg_warn_lbl"><?php echo __("After registration,please complete filling your profile. Profiles with no Avatar Photo or With no Categories chosen won't appear in the search results.","civichild");?></label>
 					</div>
 					<div class="form-group">
 						<div class="row">
