@@ -144,6 +144,7 @@ if (!is_array($hide_jobs_group_fields)) {
                             <div class="info-jobs-warpper">
                                 <?php esc_html_e('Company: ', 'civi-framework'); ?>
                                 <span class="name-company" data-name="<?php esc_attr_e('Company Name', 'civi-framework') ?>"><?php esc_html_e('Company Name', 'civi-framework'); ?></span>
+																<br />
                                 <?php esc_html_e('Category: ', 'civi-framework'); ?>
                                 <span class="cate-about" data-cate="<?php esc_attr_e('Category', 'civi-framework') ?>"><?php esc_html_e('Category', 'civi-framework'); ?></span>
                                 <div class="label-warpper">
