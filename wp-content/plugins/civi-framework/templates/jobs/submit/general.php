@@ -46,7 +46,6 @@ $taxonomy_name = "jobs-skills";
             </div>
         </div>
     <?php endif; ?>
-	<?php echo "NAME :" . $user_id; ?>
     <?php if (!in_array('fields_jobs_skills', $hide_jobs_fields)) : ?>
         <div class="form-group col-md-12">
             <label><?php esc_html_e('Skills', 'civi-framework') ?> <sup>*</sup></label>
