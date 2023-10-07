@@ -110,6 +110,60 @@ button#civi_select_avatar {
   font-weight: 600;
   color: #d63638; }
 
+.candidate-head-details.sidebaravatar .civi-candidate-header-top .image-candidates {
+  width: 200px;
+  height: 200px;
+  margin: 15px auto; }
+
+.candidate-head-details.sidebaravatar .civi-candidate-header-top {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.candidate-head-details.sidebaravatar .civi-candidate-header-top h1 {
+  text-transform: uppercase;
+  font-size: 21px;
+  padding: 3px 5px 	3px 5px;
+  font-weight: 600;
+  text-align: center; }
+
+.candidate-sidebar .candidate-single-field {
+  margin-top: 0px; }
+
+.candidate-head-details.sidebaravatar .wishlist_wrapper {
+  margin: 15px auto; }
+
+.block-archive-inner.candidate-single-field.skills-aboutme.sidebarskills {
+  padding: 32px 10px;
+  text-align: center;
+  margin-top: 16px; }
+
+.candidate-single-field .info p.title-info {
+  font-weight: 700;
+  margin-bottom: 0px; }
+
+.candidate-single-field .info .list-cate {
+  margin-bottom: 10px; }
+
+.infocontent .info {
+  max-height: 70px;
+  display: block; }
+
+.candidate-single-field .infocontent {
+  display: flex;
+  justify-content: space-between; }
+
+.candidate-head-details .candidate-warpper i {
+  color: var(--civi-color-accent); }
+
+.candidate-sidebar .candidate-single-field {
+  border: 1px solid #f9f9f9;
+  box-shadow: 1px 2px 3px #b5b5b5; }
+
+.single-candidate-area .block-candidate-warrper .block-archive-top {
+  border: 1px solid #f9f9f9;
+  box-shadow: 1px 2px 3px #b5b5b5; }
+
 @media screen and (max-width: 490px) {
   .archive-layout .archive-filter-top .form-group:last-child {
     border: none;
