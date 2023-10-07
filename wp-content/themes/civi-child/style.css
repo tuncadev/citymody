@@ -540,6 +540,9 @@ input#jobs_filter_search {
   display: flex;
   margin-left: auto; }
 
+.site-layout.has-sidebar {
+  flex-direction: row-reverse; }
+
 /* Home  */
 /* Home Tabs */
 .howitworks_tab .elementor-tabs-wrapper {

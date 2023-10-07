@@ -3,15 +3,8 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-$content = get_the_content();
-if (isset($content) && !empty($content)) : ?>
-    <div class="block-archive-inner candidate-overview-details">
-        <h4 class="title-candidate"><?php esc_html_e('About me', 'civi-framework') ?></h4>
-        <?php the_content(); ?>
-
-    </div>
-
-<?php endif;
+$content = get_the_content(); ?>
+<?php
 /* SKILLS SENCTION */
 $candidate_id = get_the_ID();
 
@@ -29,28 +22,32 @@ $candidate_chestsize = get_the_terms($candidate_id, 'candidate_chest-size');
 $candidate_waistsize = get_the_terms($candidate_id, 'candidate_waist-size'); 
 $candidate_hipsize = get_the_terms($candidate_id, 'candidate_hip-size'); 
 $candidate_bodytype = get_the_terms($candidate_id, 'candidate_body-type'); 
-
-/* ******* *//*
-if ($candidate_skills == false || is_wp_error($candidate_skills)) {
-    return;
-}
-
-
-?>
-
-<div class="block-archive-inner candidate-single-field skills-aboutme">
-    <h4 class="title-candidate"><?php esc_html_e('Skills', 'civi-framework') ?></h4>
-    <div class="candidate-skills">
-        <?php foreach ($candidate_skills as $skill) {
-            $skill_link = get_term_link($skill, 'candidate_skills'); ?>
-            <a href="<?php echo esc_url($skill_link); ?>" class="label label-skills">
-                <?php esc_html_e($skill->name); ?>
-            </a>
-        <?php } ?>
+$candidate_salary          = !empty(get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_offer_salary')) ? get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_offer_salary')[0] : '';
+$candidate_yoe             = get_the_terms($candidate_id, 'candidate_yoe');
+$candidate_languages       = get_the_terms($candidate_id, 'candidate_languages');
+$candidate_location        = get_the_terms($candidate_id, 'candidate_locations');
+$candidate_gender          = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_gender', true);
+$candidate_qualification   = get_the_terms($candidate_id, 'candidate_qualification');
+$candidate_ages            = get_the_terms($candidate_id, 'candidate_ages');
+$candidate_phone           = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_phone', true);
+$candidate_email           = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_email', true);
+$candidate_twitter         = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_twitter', true);
+$candidate_facebook        = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_facebook', true);
+$candidate_instagram       = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_instagram', true);
+$candidate_linkedin        = get_post_meta($candidate_id, CIVI_METABOX_PREFIX . 'candidate_linkedin', true);
+$option_list_gender = array(
+	'both' => esc_html__('Both', 'civi-framework'),
+	'female' => esc_html__('Female', 'civi-framework'),
+	'male' => esc_html__('Male', 'civi-framework'),
+);
+ ?>
+ <?php 
+if (isset($content) && !empty($content)) : ?>
+    <div class="block-archive-inner candidate-overview-details">
+        <h4 class="title-candidate"><?php esc_html_e('About me', 'civi-framework') ?></h4>
+        <?php the_content(); ?>
     </div>
-    <?php civi_custom_field_single_candidate('skills'); ?>
-</div>
- */ ?>
+<?php endif; ?>
 <?php if( $candidate_height || $candidate_weight || $candidate_footsize || $candidate_haircolor || $candidate_hairtype || $candidate_eyecolor || $candidate_skincolor || $candidate_chestsize || $candidate_waistsize || $candidate_hipsize || $candidate_bodytype) { ?>
 	<div class="block-archive-inner candidate-single-field skills-aboutme">
 		<h4 class="title-candidate"><?php esc_html_e('Physical Attributes', 'civi-framework') ?></h4>
@@ -146,6 +143,74 @@ if ($candidate_skills == false || is_wp_error($candidate_skills)) {
 				<?php endif; ?>
 			</div>
 		</div>
+		
 		<?php civi_custom_field_single_candidate('skills'); ?>
 	</div>
+
+	<div class="block-archive-inner candidate-single-field skills-aboutme">
+		<div class="infotop">
+			<h3 class="title-candidate"><?php esc_html_e('Information', 'civi-framework'); ?></h3>
+		</div>
+		<div class="infocontent">
+		<?php if (!empty($candidate_salary)) : ?>
+        <div class="info">
+            <p class="title-info"><?php esc_html_e('Offered Salary', 'civi-framework'); ?></p>
+            <div class="details-info salary">
+                <?php civi_get_salary_candidate($candidate_id); ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if (is_array($candidate_yoe)) : ?>
+        <div class="info">
+            <p class="title-info"><?php esc_html_e('Experience time', 'civi-framework'); ?></p>
+            <div class="list-cate">
+                <?php foreach ($candidate_yoe as $yoe) {
+                    $yoe_link = get_term_link($yoe, 'candidate_yoe'); ?>
+                    <a href="<?php echo esc_url($yoe_link); ?>">
+                        <?php esc_attr_e($yoe->name); ?>
+                    </a>
+                <?php } ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if (is_array($candidate_languages)) : ?>
+        <div class="info">
+            <p class="title-info"><?php esc_html_e('Native Language', 'civi-framework'); ?></p>
+            <div class="list-cate">
+                <?php foreach ($candidate_languages as $language) {
+                    esc_attr_e($language->name);
+                } ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if (!empty($candidate_gender)) : ?>
+        <div class="info">
+            <p class="title-info"><?php esc_html_e('Gender', 'civi-framework'); ?></p>
+            <p class="details-info"><?php esc_attr_e($option_list_gender[$candidate_gender]) ?></p>
+        </div>
+    <?php endif; ?>
+    <?php if (is_array($candidate_qualification)) : ?>
+        <div class="info">
+            <p class="title-info"><?php esc_html_e('Qualification', 'civi-framework'); ?></p>
+            <div class="list-cate">
+                <?php foreach ($candidate_qualification as $qualification) {
+                    echo esc_attr_e($qualification->name);
+                } ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if (is_array($candidate_ages)) : ?>
+        <div class="info">
+            <p class="title-info"><?php esc_html_e('Age', 'civi-framework'); ?></p>
+            <div class="list-cate">
+                <?php foreach ($candidate_ages as $ages) {
+                    echo esc_attr_e($ages->name);
+                } ?>
+            </div>
+        </div>
+    <?php endif; ?>
+
+		</div>
+   
+		</div>
 <?php } ?>
