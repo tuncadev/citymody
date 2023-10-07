@@ -398,6 +398,12 @@ form#new_project label {
   padding-top: 20px;
   padding-bottom: 30px; }
 
+/* media */
+@media only screen and (max-width: 991px) {
+  .main-content .site-layout.has-sidebar {
+    display: flex;
+    flex-direction: column-reverse; } }
+
 /* Candidate Main */
 /* Search box */
 input#candidate_filter_search {
