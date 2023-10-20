@@ -1,0 +1,600 @@
+# Translation of Formidable Pro in Japanese
+# This file is distributed under the same license as the Formidable Pro package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-02-15 18:55:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Formidable Pro\n"
+
+#: classes/models/fields/FrmProFieldFile.php:44
+#, gp-priority: high
+msgid "Choose File"
+msgstr "ファイルを選択"
+
+#: classes/models/FrmProFileField.php:61
+#: classes/views/frmpro-fields/front-end/file.php:65
+#: classes/views/frmpro-form-actions/_email_attachment_row.php:49
+#, gp-priority: high
+msgid "Remove file"
+msgstr "ファイルを削除"
+
+#: classes/views/frmpro-fields/back-end/field-file.php:11
+#: classes/views/frmpro-fields/front-end/file.php:80
+#, gp-priority: high
+msgid "Maximum upload size: %sMB"
+msgstr "最大アップロード容量：%sMB"
+
+#: classes/models/fields/FrmProFieldFile.php:43
+#, gp-priority: high
+msgid "Drop a file here or click to upload"
+msgstr "ファイルをここにドロップするか、ここをクリックしてファイルを選択してください"
+
+#: classes/models/FrmProFileField.php:493
+#, gp-priority: high
+msgid "Sorry, this file type is not permitted."
+msgstr "申し訳ありませんが、このファイルタイプは許可されていません"
+
+#: classes/models/FrmProFileField.php:56 classes/models/FrmProFileField.php:381
+#: classes/models/FrmProFileField.php:392
+#, gp-priority: high
+msgid "That file is too big. It must be less than %sMB."
+msgstr "そのファイルは容量が大きすぎます。 %sMB未満である必要があります。"
+
+#: classes/views/frmpro-forms/add_form_options.php:152
+msgid "Role required to access file"
+msgstr "ファイルにアクセスするために必要な役割"
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:15
+msgid "Add views"
+msgstr "ビューを追加"
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:13
+msgid "Need to customize post content?"
+msgstr "投稿コンテンツをカスタマイズする必要がありますか？"
+
+#: classes/models/FrmProFileField.php:1747
+msgid "file does not exist"
+msgstr "ファイルが存在しません。"
+
+#: classes/models/FrmProFileField.php:1711
+msgid "user does not fit any of the set roles, do not serve a file"
+msgstr "ユーザーは設定された役割のいずれにも適合せず、ファイルを表示することが出来ません。"
+
+#: classes/models/FrmProFileField.php:1704
+msgid "prevent downloads for other uploads. We only want to allow valid connected formidable data"
+msgstr "他のアップロードのダウンロードを防止します。有効な接続された手ごわいデータのみを許可したい"
+
+#: classes/models/FrmProFileField.php:1695
+msgid "if the filename requested does not match our filename, do not return the file"
+msgstr "要求されたファイル名がファイル名と一致しない場合は、ファイルを返さないでください"
+
+#: classes/models/FrmProFileField.php:1686
+msgid "no file found"
+msgstr "ファイルがありませんでした"
+
+#. Author of the plugin
+msgid "Strategy11"
+msgstr "Strategy11"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://formidableforms.com/"
+msgstr "https://formidableforms.com/"
+
+#: classes/views/frmpro-fields/back-end/autopopulate.php:10
+msgid "Lookup"
+msgstr "検索"
+
+#: classes/controllers/FrmProSettingsController.php:227
+msgid "Show image"
+msgstr "画像の表示"
+
+#: classes/views/displays/where_row.php:38
+msgid "IP"
+msgstr "IP"
+
+#: classes/helpers/FrmProFieldsHelper.php:2370
+msgid "Confirm"
+msgstr "確認画面へ"
+
+#: classes/views/styles/_section-fields.php:109
+msgid "Before Heading"
+msgstr "見出しの先頭"
+
+#: classes/views/styles/_section-fields.php:106
+msgid "After Heading"
+msgstr "見出しの後ろ"
+
+#: classes/views/styles/_section-fields.php:103
+msgid "Icon Position"
+msgstr "アイコンの位置"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:9
+#: classes/views/styles/_repeater-fields.php:7
+#: classes/views/styles/_section-fields.php:98
+msgid "Icons"
+msgstr "アイコン"
+
+#: classes/views/styles/_section-fields.php:80
+msgid "bottom"
+msgstr "下"
+
+#: classes/views/styles/_section-fields.php:77
+msgid "top"
+msgstr "上"
+
+#: classes/views/styles/_section-fields.php:74
+msgid "Border Position"
+msgstr "ボーターの位置"
+
+#: classes/views/styles/_section-fields.php:36
+msgid "Top Margin"
+msgstr "上余白"
+
+#: classes/views/styles/_style-dropdown.php:18
+msgid "default"
+msgstr "デフォルト"
+
+#: classes/views/styles/_style_switcher.php:8
+msgid "New Style"
+msgstr "新規スタイル"
+
+#: classes/controllers/FrmProStylesController.php:25
+msgid "Date Fields"
+msgstr "日付フィールド"
+
+#: classes/controllers/FrmProStylesController.php:23
+msgid "Section Fields"
+msgstr "セクションフィールド"
+
+#: classes/controllers/FrmProXMLController.php:64
+msgid "Styles"
+msgstr "スタイル"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:9
+msgid "Type"
+msgstr "タイプ"
+
+#: classes/controllers/FrmProFieldsController.php:367
+msgid "Other"
+msgstr "その他"
+
+#: classes/views/frmpro-fields/field-selection.php:19
+#: classes/views/lookup-fields/back-end/watch-row.php:19
+msgid "(no label)"
+msgstr "(ラベルなし)"
+
+#: classes/models/fields/FrmProFieldToggle.php:28
+msgid "Yes"
+msgstr "はい"
+
+#: classes/models/fields/FrmProFieldToggle.php:29
+msgid "No"
+msgstr "いいえ"
+
+#: classes/controllers/FrmProFormsController.php:879
+msgid "(no title)"
+msgstr "(タイトルなし)"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:46
+msgid "Description"
+msgstr "概要"
+
+#: classes/controllers/FrmProFormsController.php:1021
+msgid "Entry Count"
+msgstr "投稿件数"
+
+#: classes/views/frmpro-entries/new.php:29
+msgid "Oops!"
+msgstr "おっと。"
+
+#: classes/controllers/FrmProSimpleBlocksController.php:31
+#: classes/controllers/FrmProXMLController.php:63 js/src/view/viewselect.js:39
+msgid "Views"
+msgstr "表示数"
+
+#: classes/controllers/FrmProFormsController.php:609
+msgid "Save Draft"
+msgstr "下書きとして保存"
+
+#: classes/controllers/FrmProEntriesController.php:1707
+#: classes/views/displays/where_options.php:31
+msgid "Draft"
+msgstr "下書き"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:52
+#: classes/views/displays/mb_advanced.php:41
+#: classes/views/displays/mb_advanced.php:64
+#: classes/views/frmpro-fields/back-end/logic.php:45
+#: classes/views/styles/_sample_form.php:49
+msgid "Add"
+msgstr "追加"
+
+#: classes/models/fields/FrmProFieldBreak.php:31
+msgid "Next"
+msgstr "次の"
+
+#: classes/controllers/FrmProFormsController.php:590
+#: classes/helpers/FrmProFormsHelper.php:463
+#: classes/models/fields/FrmProFieldBreak.php:71
+msgid "Previous"
+msgstr "戻る"
+
+#: classes/controllers/FrmProFormsController.php:303
+msgid "Button Label"
+msgstr "ボタンのラベル"
+
+#: classes/views/frmpro-fields/back-end/confirmation.php:15
+#: classes/views/frmpro-forms/add_form_button_options.php:37
+msgid "Inline"
+msgstr "インライン"
+
+#: deprecated/FrmUpdatesController.php:358
+msgid "Your License Key was invalid"
+msgstr "ライセンスキーが無効です"
+
+#: classes/views/xml/import_csv.php:7 classes/views/xml/map_csv_fields.php:7
+msgid "Import/Export"
+msgstr "インポート/エクスポート"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:53
+#: classes/views/styles/_sample_form.php:45
+msgid "Remove"
+msgstr "削除"
+
+#: classes/controllers/FrmProGraphsController.php:1718
+#: classes/controllers/FrmProGraphsController.php:1750
+#: classes/controllers/FrmProSettingsController.php:220
+msgid "Creation Date"
+msgstr "作成日"
+
+#: classes/controllers/FrmProSettingsController.php:229
+msgid "Image Name"
+msgstr "画像名"
+
+#: classes/controllers/FrmProSettingsController.php:228
+#: classes/views/frmpro-fields/back-end/image-selector.php:11
+msgid "Image ID"
+msgstr "画像 ID"
+
+#: classes/controllers/FrmProFormsController.php:362
+msgid "Display Name"
+msgstr "表示名"
+
+#: classes/controllers/FrmProFormsController.php:364
+msgid "Last Name"
+msgstr "姓"
+
+#: classes/controllers/FrmProFormsController.php:363
+msgid "First Name"
+msgstr "名"
+
+#: classes/models/FrmProForm.php:238
+msgid "Status"
+msgstr "ステータス"
+
+#: classes/views/frmpro-forms/add_form_options.php:49
+msgid "hours"
+msgstr "時"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:32
+msgid "Default"
+msgstr "デフォルト"
+
+#: classes/views/xml/map_csv_fields.php:96
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+#: classes/helpers/FrmProFieldsHelper.php:2996
+msgid "Site Name"
+msgstr "サイト名"
+
+#: classes/views/frmpro-forms/add_form_options.php:100
+msgid "Redirect to URL"
+msgstr "URL へ転送"
+
+#: classes/views/frmpro-fields/back-end/logic.php:30
+#: classes/views/frmpro-form-actions/_form_action.php:33
+#: classes/views/frmpro-forms/_submit_conditional.php:29
+#: classes/views/styles/_section-fields.php:89
+msgid "all"
+msgstr "すべて"
+
+#: classes/views/displays/submitbox_actions.php:31
+msgid "Hide"
+msgstr "非表示"
+
+#: classes/views/displays/submitbox_actions.php:15
+msgid "Show"
+msgstr "表示"
+
+#: classes/controllers/FrmProEntriesController.php:1706
+msgid "Post"
+msgstr "投稿"
+
+#: classes/helpers/FrmProFieldsHelper.php:2917
+msgid "User IP"
+msgstr "ユーザー IP"
+
+#: classes/controllers/FrmProGraphsController.php:1177
+msgid "Fields"
+msgstr "フィールド"
+
+#: classes/controllers/FrmProLookupFieldsController.php:16
+#: classes/models/fields/FrmProFieldData.php:64
+#: classes/models/fields/FrmProFieldProduct.php:71
+msgid "Dropdown"
+msgstr "ドロップダウン"
+
+#: classes/controllers/FrmProLookupFieldsController.php:18
+#: classes/models/fields/FrmProFieldData.php:66
+#: classes/models/fields/FrmProFieldProduct.php:73
+msgid "Checkboxes"
+msgstr "チェックボックス"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:16
+msgid "United States"
+msgstr "アメリカ合衆国"
+
+#: classes/views/styles/_section-fields.php:41
+msgid "Bottom Margin"
+msgstr "下余白"
+
+#: classes/helpers/FrmProEntriesHelper.php:268
+msgid "Add New"
+msgstr "新規追加"
+
+#: classes/models/FrmProFileField.php:490
+msgid "is invalid"
+msgstr "は無効です"
+
+#: classes/views/frmpro-form-actions/post_options.php:75
+#: classes/views/frmpro-form-actions/post_options.php:87
+#: classes/views/frmpro-forms/add_form_style_options.php:12
+#: js/src/view/inspector.js:77
+msgid "None"
+msgstr "なし"
+
+#: classes/views/xml/map_csv_fields.php:128
+msgid "Import"
+msgstr "インポート"
+
+#: classes/views/styles/_sample_form.php:12
+msgid "Text Area"
+msgstr "テキストエリア"
+
+#: classes/views/styles/_sample_form.php:32
+msgid "Check Boxes"
+msgstr "チェックボックス"
+
+#: classes/views/styles/_sample_form.php:26
+#: classes/views/styles/_sample_form.php:38
+msgid "Option 2"
+msgstr "オプション2"
+
+#: classes/views/styles/_sample_form.php:22
+#: classes/views/styles/_sample_form.php:35
+msgid "Option 1"
+msgstr "オプション1"
+
+#: classes/controllers/FrmProLookupFieldsController.php:17
+#: classes/models/fields/FrmProFieldData.php:65
+#: classes/models/fields/FrmProFieldProduct.php:72
+#: classes/views/styles/_sample_form.php:18
+msgid "Radio Buttons"
+msgstr "ラジオボタン"
+
+#: classes/controllers/FrmProGraphsController.php:1158
+msgid "Total"
+msgstr "合計"
+
+#: classes/views/displays/mb_advanced.php:88
+msgid "Advanced"
+msgstr "上級者向け"
+
+#: classes/views/displays/submitbox_actions.php:12
+msgid "Shortcodes"
+msgstr "ショートコード"
+
+#: classes/views/styles/_progress-bars.php:7
+msgid "BG Color"
+msgstr "背景色"
+
+#: classes/controllers/FrmProFormsController.php:913
+msgid "Height"
+msgstr "高さ"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:16
+msgid "Text"
+msgstr "テキスト"
+
+#: classes/views/styles/_section-fields.php:26
+msgid "BG color"
+msgstr "背景色"
+
+#: classes/controllers/FrmProFormsController.php:914
+msgid "Width"
+msgstr "幅"
+
+#: classes/views/styles/_section-fields.php:21
+msgid "Size"
+msgstr "サイズ"
+
+#: classes/views/styles/_section-fields.php:12
+msgid "Weight"
+msgstr "重さ"
+
+#: classes/views/styles/_section-fields.php:86
+msgid "right"
+msgstr "右"
+
+#: classes/views/styles/_section-fields.php:83
+msgid "left"
+msgstr "左"
+
+#: classes/widgets/FrmListEntries.php:220
+msgid "Title"
+msgstr "タイトル"
+
+#: classes/views/styles/_section-fields.php:68
+msgid "double"
+msgstr "二重線"
+
+#: classes/views/styles/_section-fields.php:65
+msgid "dashed"
+msgstr "破線"
+
+#: classes/views/styles/_section-fields.php:62
+msgid "dotted"
+msgstr "点線"
+
+#: classes/views/styles/_section-fields.php:59
+msgid "solid"
+msgstr "直線"
+
+#: classes/views/styles/_section-fields.php:56
+msgid "Style"
+msgstr "スタイル"
+
+#: classes/views/styles/_section-fields.php:31
+msgid "Padding"
+msgstr "パディング"
+
+#: classes/views/styles/_section-fields.php:7
+#: classes/views/styles/_slider-fields.php:7
+msgid "Color"
+msgstr "色"
+
+#: classes/views/styles/_section-fields.php:46
+msgid "Border"
+msgstr "枠線"
+
+#: classes/views/settings/form.php:19
+msgid "Date Format"
+msgstr "日付形式"
+
+#: classes/controllers/FrmProFormsController.php:1019
+msgid "Detail Link"
+msgstr "詳細リンク"
+
+#: classes/views/displays/mb_dyncontent.php:41
+msgid "Content"
+msgstr "コンテント"
+
+#: classes/controllers/FrmProFormsController.php:365
+#: classes/models/FrmProForm.php:459
+msgid "User ID"
+msgstr "ユーザー ID"
+
+#: classes/helpers/FrmProFieldsHelper.php:2995
+msgid "Site URL"
+msgstr "サイト URL"
+
+#: classes/controllers/FrmProEntriesController.php:2100
+#: classes/controllers/FrmProFormsController.php:816
+#: classes/controllers/FrmProFormsController.php:852
+#: classes/helpers/FrmProEntriesListHelper.php:86
+msgid "Search"
+msgstr "検索"
+
+#: classes/controllers/FrmProFormsController.php:368
+#: classes/helpers/FrmProFieldsHelper.php:2916
+#: classes/views/displays/where_row.php:24
+#: classes/views/xml/map_csv_fields.php:95
+msgid "Post ID"
+msgstr "投稿 ID"
+
+#: classes/controllers/FrmProEntriesController.php:1745
+msgid "No Entries Found"
+msgstr "投稿は見つかりませんでした"
+
+#: classes/controllers/FrmProFormActionsController.php:46
+msgid "Create"
+msgstr "作成"
+
+#: classes/controllers/FrmProEntriesController.php:1723
+#: classes/helpers/FrmProEntriesHelper.php:288
+#: classes/helpers/FrmProEntriesHelper.php:339
+#: classes/views/styles/_style_switcher.php:13
+msgid "Duplicate"
+msgstr "複製"
+
+#: classes/controllers/FrmProAppController.php:217
+#: classes/views/frmpro-statistics/select.php:7
+#: classes/views/frmpro-statistics/show.php:10
+msgid "Reports"
+msgstr "レポート"
+
+#: classes/controllers/FrmProEntriesController.php:1945
+#: classes/controllers/FrmProEntriesController.php:2211
+#: classes/helpers/FrmProEntriesListHelper.php:11
+#: classes/views/frmpro-fields/back-end/image-selector.php:19
+msgid "Delete"
+msgstr "削除"
+
+#: classes/controllers/FrmProEntriesController.php:1931
+#: classes/controllers/FrmProEntriesController.php:2483
+#: classes/helpers/FrmProAppHelper.php:315
+#: classes/helpers/FrmProEntriesHelper.php:1107
+#: classes/models/FrmProSummaryFormatter.php:80
+msgid "Edit"
+msgstr "編集"
+
+#: js/src/view/inspector.js:87
+msgid "Shortcode"
+msgstr "ショートコード"
+
+#: classes/helpers/FrmProFieldsHelper.php:2937
+#: classes/helpers/FrmProFieldsHelper.php:2963
+#: classes/views/displays/mb_advanced.php:115
+#: classes/views/frmpro-entries/table.php:10
+#: classes/views/frmpro-entries/table.php:89
+msgid "ID"
+msgstr "ID"
+
+#: classes/controllers/FrmProEntriesController.php:2484
+#: classes/views/frmpro-form-actions/_custom_field_row.php:39
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: classes/controllers/FrmProEntriesController.php:2588
+#: classes/controllers/FrmProEntriesController.php:3188
+#: classes/models/FrmProSettings.php:25
+msgid "Update"
+msgstr "更新"
+
+#: classes/views/displays/submitbox_actions.php:11 js/src/view/viewselect.js:38
+msgid "View"
+msgstr "表示"
+
+#: classes/helpers/FrmProFieldsHelper.php:2938
+#: classes/helpers/FrmProFieldsHelper.php:2964
+#: classes/views/displays/mb_advanced.php:118
+msgid "Key"
+msgstr "キー"
+
+#: classes/helpers/FrmProFieldsHelper.php:2915
+#: classes/views/displays/order_row.php:14
+#: classes/views/xml/map_csv_fields.php:117
+#: classes/views/xml/map_csv_fields.php:118
+msgid "Entry Key"
+msgstr "投稿キー"
+
+#: classes/controllers/FrmProFormsController.php:360
+msgid "Email"
+msgstr "メール"
+
+#: classes/views/frmpro-entries/show.php:42
+msgid "Submit"
+msgstr "送信"
+
+#: classes/controllers/FrmProFormsController.php:372
+#: classes/views/frmpro-forms/add_form_options.php:37
+#: classes/views/xml/map_csv_fields.php:109
+msgid "IP Address"
+msgstr "IP アドレス"

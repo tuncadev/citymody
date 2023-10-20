@@ -1,0 +1,238 @@
+# Translation of Formidable Pro in Persian
+# This file is distributed under the same license as the Formidable Pro package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-02-15 18:44:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0\n"
+"Language: fa\n"
+"Project-Id-Version: Formidable Pro\n"
+
+#: classes/models/FrmProFileField.php:61
+#: classes/views/frmpro-fields/front-end/file.php:65
+#: classes/views/frmpro-form-actions/_email_attachment_row.php:49
+#, gp-priority: high
+msgid "Remove file"
+msgstr "حذف فایل"
+
+#: classes/models/FrmProFileField.php:493
+#, gp-priority: high
+msgid "Sorry, this file type is not permitted."
+msgstr "متاسفانه این نوع فایل مجاز نمی باشد. به پسوند فایل دقت کنید."
+
+#: classes/views/frmpro-fields/back-end/field-file.php:11
+#: classes/views/frmpro-fields/front-end/file.php:80
+#, gp-priority: high
+msgid "Maximum upload size: %sMB"
+msgstr "حداکثر حجم فایل برای بارگذاری: %sMB"
+
+#: classes/models/FrmProFileField.php:56 classes/models/FrmProFileField.php:381
+#: classes/models/FrmProFileField.php:392
+#, gp-priority: high
+msgid "That file is too big. It must be less than %sMB."
+msgstr "حجم فایل بیش از اندازه مجاز است. حداکثر حجم مجاز %sMB است."
+
+#: classes/models/fields/FrmProFieldFile.php:43
+#, gp-priority: high
+msgid "Drop a file here or click to upload"
+msgstr "یک فایل را اینجا بیاندازید یا برای آدرس دهی همینجا کلیک کنید."
+
+#: classes/models/fields/FrmProFieldFile.php:44
+#, gp-priority: high
+msgid "Choose File"
+msgstr "گزینش فایل"
+
+#: classes/controllers/FrmProFormActionsController.php:496
+#: classes/controllers/FrmProFormActionsController.php:524
+msgid "Post type is empty"
+msgstr "گونه یِ پست خالی است."
+
+#: classes/controllers/FrmProEntriesController.php:140
+msgid "Entry was Successfully Updated"
+msgstr "ورودی با موفقیت بروزرسانی شد."
+
+#: classes/models/FrmProFileField.php:541
+msgid "File is spam"
+msgstr "این فایل یک نوع هرزنامه است."
+
+#: classes/views/frmpro-fields/front-end/star.php:28
+msgid "%1$s Star"
+msgid_plural "%1$s Stars"
+msgstr[0] "%1$s ستاره"
+msgstr[1] "%1$s ستاره"
+
+#: classes/views/frmpro-form-actions/post_options.php:155
+msgid "Post Parent"
+msgstr "والد پست"
+
+#: classes/views/frmpro-form-actions/post_action.php:130
+#: classes/views/frmpro-form-actions/post_action.php:131
+msgid "Select a Post"
+msgstr "یک پست را انتخاب کنید."
+
+#: classes/views/styles/_repeater-fields.php:11
+msgid "Icon Color"
+msgstr "رنگ آیکون"
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:13
+msgid "Need to customize post content?"
+msgstr "آیا نیازی به سفارشی سازی محتوی پست دارید؟"
+
+#: classes/models/FrmProFileField.php:1747
+msgid "file does not exist"
+msgstr "فایلی موجود نیست."
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:15
+msgid "Add views"
+msgstr "دیدهای جدید اضافه کنید"
+
+#: classes/views/frmpro-forms/add_form_options.php:152
+msgid "Role required to access file"
+msgstr "نقش لازم برای دسترسی به فایل"
+
+#: classes/views/frmpro-fields/back-end/visibility.php:9
+msgid "Determines who can see this field."
+msgstr "مشخص می کند که چه کسی می تواند این فیلد را ببیند."
+
+#: classes/models/FrmProFileField.php:1711
+msgid "user does not fit any of the set roles, do not serve a file"
+msgstr "نقش کاربری با نقش های کاربری مجاز مطابقت ندارد و نمی  توان فایلی را ارایه داد."
+
+#: classes/models/FrmProFileField.php:1695
+msgid "if the filename requested does not match our filename, do not return the file"
+msgstr "اگر نام فایل درخواستی با فایل ما مطابقت نداشت، فایل را برنگردان."
+
+#: classes/models/FrmProFileField.php:1686
+msgid "no file found"
+msgstr "هیچ فایلی پیدا نشد."
+
+#: classes/models/FrmProFileField.php:1678
+msgid "url is not an exact match"
+msgstr "این url مطابقت کامل ندارد."
+
+#: classes/models/FrmProFileField.php:1652
+msgid "referer check failed"
+msgstr "ارزیابی ارجاع دهنده شکست خورد."
+
+#: classes/models/FrmProFileField.php:1631
+msgid "if sanitized data is empty, do not try to download"
+msgstr "در صورتی که داده های پاکسازی شده خالی هستند، دانلود نکن."
+
+#: classes/models/fields/FrmProFieldPassword.php:181
+msgid "Eight characters minimum"
+msgstr "از 8 کاراکتر کمتر نباشد."
+
+#: classes/models/fields/FrmProFieldPassword.php:186
+msgid "One lowercase letter"
+msgstr "حداقل یک حرف کوچک داشته باشد."
+
+#: classes/models/fields/FrmProFieldPassword.php:196
+msgid "One number"
+msgstr "یک عدد"
+
+#: classes/models/fields/FrmProFieldPassword.php:201
+msgid "One special character"
+msgstr "یک کاراکتر ویژه مانند: ! یا @ یا # یا % ...."
+
+#: classes/models/fields/FrmProFieldPassword.php:198
+msgid "Passwords must include at least one number"
+msgstr "رمز عبور باید شامل حداقل یک \"عدد\" باشد."
+
+#: classes/models/fields/FrmProFieldPassword.php:188
+msgid "Passwords must include at least one lowercase letter"
+msgstr "رمز عبور باید شامل حداقل یک \"حرف کوچک\" باشد."
+
+#: classes/controllers/FrmProCreditCardsController.php:63
+#: classes/models/fields/FrmProFieldCreditCard.php:93
+#: classes/models/fields/FrmProFieldCreditCard.php:171
+msgid "Year"
+msgstr "سال"
+
+#: classes/controllers/FrmProCreditCardsController.php:56
+#: classes/models/fields/FrmProFieldCreditCard.php:92
+#: classes/models/fields/FrmProFieldCreditCard.php:170
+msgid "Month"
+msgstr "ماه"
+
+#: classes/controllers/FrmProAddressesController.php:156
+#: classes/models/fields/FrmProFieldAddress.php:106
+msgid "State/Province"
+msgstr "استان"
+
+#: classes/controllers/FrmProAddressesController.php:155
+#: classes/models/fields/FrmProFieldAddress.php:105
+msgid "City"
+msgstr "شهر"
+
+#: classes/controllers/FrmProAddressesController.php:157
+#: classes/models/fields/FrmProFieldAddress.php:107
+msgid "Zip/Postal"
+msgstr "کدپستی"
+
+#: classes/views/displays/where_row.php:38
+msgid "IP"
+msgstr "آی‌پی"
+
+#: classes/helpers/FrmProFieldsHelper.php:2370
+msgid "Confirm"
+msgstr "تایید"
+
+#: classes/models/fields/FrmProFieldToggle.php:28
+msgid "Yes"
+msgstr "بله"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:46
+msgid "Description"
+msgstr "توصیف"
+
+#: classes/controllers/FrmProFormsController.php:363
+msgid "First Name"
+msgstr "نام"
+
+#: classes/controllers/FrmProFormsController.php:364
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#: classes/controllers/FrmProFormsController.php:362
+msgid "Display Name"
+msgstr "نام عمومی"
+
+#: classes/views/xml/map_csv_fields.php:96
+msgid "Timestamp"
+msgstr "زمان"
+
+#: classes/controllers/FrmProFormsController.php:590
+#: classes/helpers/FrmProFormsHelper.php:463
+#: classes/models/fields/FrmProFieldBreak.php:71
+msgid "Previous"
+msgstr "قبلی"
+
+#: classes/models/fields/FrmProFieldBreak.php:31
+msgid "Next"
+msgstr "گام بعدی"
+
+#: classes/views/displays/mb_dyncontent.php:41
+msgid "Content"
+msgstr "محتوی"
+
+#: classes/controllers/FrmProFormsController.php:365
+#: classes/models/FrmProForm.php:459
+msgid "User ID"
+msgstr "شناسه کاربری"
+
+#: classes/controllers/FrmProAppController.php:217
+#: classes/views/frmpro-statistics/select.php:7
+#: classes/views/frmpro-statistics/show.php:10
+msgid "Reports"
+msgstr "گزارش ها"
+
+#: js/src/view/inspector.js:87
+msgid "Shortcode"
+msgstr "کدکوتاه"
+
+#: classes/controllers/FrmProFormsController.php:360
+msgid "Email"
+msgstr "پست الکترونیک"

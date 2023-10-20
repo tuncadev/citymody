@@ -1,0 +1,88 @@
+2023-07-12T08:59:14+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php dosyasında 31 numaralı satırda Uncaught Error: Call to undefined function get_option_customize() in /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php:31
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-enqueue.php(262): Civi_Helper::get_setting('sticky_header')
+#1 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): Civi_Enqueue->enqueue_scripts('')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/citymody/citymody.com/www/wp-includes/script-loader.php(2194): do_action('wp_enqueue_scri...')
+#5 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts('')
+#6 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/general-template.php(3049): do_action('wp_head')
+#9 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(28): wp_head()
+#10 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#12 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#13 /home/citymody/citymody.com/www/wp-content/themes/civi/404.php(10): get_header()
+#14 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#16 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#17 {main}
+  thrown
+
+2023-07-12T10:09:31+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php dosyasında 31 numaralı satırda Uncaught Error: Call to undefined function get_option_customize() in /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php:31
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-enqueue.php(262): Civi_Helper::get_setting('sticky_header')
+#1 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): Civi_Enqueue->enqueue_scripts('')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/citymody/citymody.com/www/wp-includes/script-loader.php(2194): do_action('wp_enqueue_scri...')
+#5 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts('')
+#6 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/general-template.php(3049): do_action('wp_head')
+#9 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(28): wp_head()
+#10 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#12 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#13 /home/citymody/citymody.com/www/wp-content/themes/civi/404.php(10): get_header()
+#14 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#16 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#17 {main}
+  thrown
+
+2023-07-12T15:46:01+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php dosyasında 31 numaralı satırda Uncaught Error: Call to undefined function get_option_customize() in /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php:31
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-enqueue.php(262): Civi_Helper::get_setting('sticky_header')
+#1 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): Civi_Enqueue->enqueue_scripts('')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/citymody/citymody.com/www/wp-includes/script-loader.php(2194): do_action('wp_enqueue_scri...')
+#5 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts('')
+#6 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/general-template.php(3049): do_action('wp_head')
+#9 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(28): wp_head()
+#10 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#12 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#13 /home/citymody/citymody.com/www/wp-content/themes/civi/404.php(10): get_header()
+#14 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#16 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#17 {main}
+  thrown
+
+2023-07-12T16:59:59+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php dosyasında 31 numaralı satırda Uncaught Error: Call to undefined function get_option_customize() in /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-helper.php:31
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi/includes/class-enqueue.php(262): Civi_Helper::get_setting('sticky_header')
+#1 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): Civi_Enqueue->enqueue_scripts('')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/citymody/citymody.com/www/wp-includes/script-loader.php(2194): do_action('wp_enqueue_scri...')
+#5 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): wp_enqueue_scripts('')
+#6 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/general-template.php(3049): do_action('wp_head')
+#9 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(28): wp_head()
+#10 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#12 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#13 /home/citymody/citymody.com/www/wp-content/themes/civi/404.php(10): get_header()
+#14 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#16 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#17 {main}
+  thrown
+

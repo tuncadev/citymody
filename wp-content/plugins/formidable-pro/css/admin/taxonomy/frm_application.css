@@ -1,0 +1,328 @@
+.frm-relative,
+.frm-parent-of,
+.frm-embedded-in,
+.taxonomy-frm_application #frm_top_bar {
+	position: relative;
+}
+
+.frm-align-items-center {
+	align-items: center;
+}
+
+.frm-display-flex:not(.frm_hidden) {
+	display: flex;
+}
+
+.frm-flex {
+	flex: 1;
+}
+
+.frm-sync-application-button {
+	margin-right: 15px !important;
+}
+
+.frm-add-item-modal-option {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid var(--grey-300);
+	padding: 10px 20px;
+	border-radius: var(--small-radius);
+	gap: var(--gap-sm);
+}
+
+.frm-add-item-modal-option h3 {
+	flex: 1;
+	font-size: var(--text-sm);
+	font-weight: 500;
+}
+
+.frm-add-item-modal-option > div {
+	align-self: center;
+}
+
+#frm_application_add_item_modal .frm-add-item-modal-option a + a {
+	margin-left: 10px;
+}
+
+.frm-add-item-modal-option + .frm-add-item-modal-option {
+	margin-top: 10px;
+}
+
+#frm_application_add_item_modal .frm_modal_content {
+	max-height: 375px;
+	overflow-y: auto;
+}
+
+#frm_application_add_item_modal .frm_modal_content > div {
+	padding-bottom: 0;
+}
+
+#frm_application_add_item_modal .frm-search,
+#frm_application_item_search_wrapper .frm-search {
+	width: 100%;
+	float: none;
+}
+
+.frm-application-relationship-tag {
+	max-width: 50%;
+	display: inline-flex;
+}
+
+.frm-with-more-tag .frm-application-relationship-tag {
+	max-width: calc( 50% - 15px );
+}
+
+.frm-application-relationship-tag + .frm-application-relationship-tag {
+	margin-left: 5px;
+}
+
+.frm-application-relationship-tag > span:first-child {
+	background: #fff;
+	padding: 2px 4px;
+	margin-right: 8px;
+	border-radius: 4px;
+	font-size: 9px;
+	line-height: 9px;
+	align-self: center;
+}
+
+.frm-application-relationship-tag > span:last-child {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: calc( 100% - 21px );
+	font-size: 12px;
+}
+
+.frm-application-relationship-tag + .frm-dropdown-menu {
+	padding: 0;
+}
+
+#frm_edit_application_container tr > *:nth-of-type(1) {
+	/* Make the Name column smaller */
+	width: 225px;
+}
+
+#frm_edit_application_container tr > *:nth-of-type(2) {
+	/* Make the Type column smaller */
+	width: 115px;
+}
+
+#frm_edit_application_container tr > *:last-of-type {
+	/* Make the Embed column smaller */
+	width: 100px;
+}
+
+.frm-is-draft {
+	font-weight: 600;
+	margin-left: 0.25rem;
+}
+
+.frm-parent-of,
+.frm-embedded-in {
+	white-space: nowrap;
+	display: flex;
+	align-items: stretch;
+}
+
+#frm_settings_button_wrapper .frm-dropdown-menu {
+	width: 500px;
+}
+
+#frm_settings_button_wrapper h3 {
+	margin: 10px 0 20px;
+	font-weight: 400;
+}
+
+#frm_settings_button_wrapper .dropdown-item {
+	padding: var(--gap-sm);
+	display: flex;
+	flex-direction: column;
+}
+
+/* Button wrapper */
+#frm_settings_button_wrapper .dropdown-item > div:last-child {
+	margin: 15px 0 5px;
+	align-self: flex-end;
+}
+
+#frm_settings_button_wrapper button {
+	margin-left: 10px;
+}
+
+#frm_application_add_item_modal form label {
+	font-size: 14px;
+	line-height: 25px;
+	color: rgba(40, 47, 54, 0.8);
+	font-weight: 600;
+}
+
+.frm-application-relationship-tag:only-child {
+	max-width: 100%;
+}
+
+.frm-more-relationships-tag {
+	cursor: pointer;
+	max-width: 15px;
+	width: 15px;
+	min-width: 15px;
+	padding: 0;
+	text-align: center;
+}
+
+.frm-more-relationships-tag:hover,
+.show > .frm-more-relationships-tag {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.frm-more-relationships-tag span:first-child {
+	background: none;
+	max-width: 100%;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+
+.dropdown-item .frm-application-relationship-tag {
+	max-width: 100%;
+	background-color: #fff;
+}
+
+.dropdown-item .frm-application-relationship-tag span:first-child {
+	max-width: 100%;
+	background: var(--grey-border);
+}
+
+#frm_no_modal_results_placeholder:not(.frm_hidden) {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px;
+}
+
+#frm_no_modal_results_placeholder > div:not(.frm-no-results-icon-wrapper) {
+	font-size: 1.1rem;
+	font-weight: 500;
+	max-width: 300px;
+	text-align: center;
+	line-height: 1.3;
+}
+
+.frm-no-results-icon-wrapper {
+	background-color: #f89840;
+	padding: 6px;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 40px 0 20px;
+}
+
+.frm-no-results-icon-wrapper i {
+	color: #fff;
+	position: relative;
+	bottom: 1px;
+}
+
+#frm_no_modal_results_placeholder a {
+	margin-top: 30px;
+}
+
+#frm_no_application_items_placeholder {
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto 50px;
+}
+
+#frm_no_application_items_placeholder h3 {
+	font-size: 22px;
+	font-weight: 400;
+	color: var(--medium-grey);
+}
+
+#frm_no_application_items_placeholder .frm-applications-add-item-button {
+	margin-top: 20px;
+}
+
+table .frm-application-item-icon-wrapper {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.frm-application-item-icon-wrapper.frm-view-item {
+	background-color: #f89840;
+}
+
+.frm-application-item-icon-wrapper.frm-form-item {
+	background-color: #409af8;
+}
+
+.frm-application-item-icon-wrapper.frm-page-item {
+	background-color: #88be6e;
+}
+
+table .frm-application-item-icon-wrapper svg {
+	width: 12px;
+	height: 12px;
+}
+
+table .frm-application-item-icon-wrapper + a {
+	max-width: calc(100% - 30px);
+}
+
+#frm_application_add_item_modal .frm-modal-pagecounter {
+	text-align: center;
+	position: absolute;
+	line-height: 26px;
+	inset: 0;
+	pointer-events: none;
+}
+
+#frm_application_add_item_modal .frm-search {
+	margin-top: 0;
+}
+
+#frm_application_add_item_modal .frm-search input {
+	width: 100%;
+}
+
+#frm_sync_application_modal .frm_modal_content {
+	padding: 30px 40px;
+}
+
+#frm_sync_application_modal .frm_modal_content > div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.frm-application-summary-item {
+	align-self: flex-start;
+}
+
+#frm_sync_application_modal ul {
+	margin: 8px 0 0 50px;
+}
+
+#frm_sync_application_modal li {
+	margin-bottom: 0;
+}
+
+#frm_sync_application_modal li span {
+	margin-left: 5px;
+	position: relative;
+	bottom: 3px;
+	font-size: 12px;
+}
+
+#frm_sync_application_modal img {
+	min-height: 105px;
+}
+
+@media only screen and (max-width: 1050px) {
+	#frm_edit_application_container tr > *:nth-of-type(1),
+	#frm_edit_application_container tr > *:nth-of-type(2),
+	#frm_edit_application_container tr > *:last-of-type {
+		width: unset;
+	}
+}

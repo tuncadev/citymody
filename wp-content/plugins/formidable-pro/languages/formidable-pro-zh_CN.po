@@ -1,0 +1,3672 @@
+# Translation of Formidable Pro in Chinese (China)
+# This file is distributed under the same license as the Formidable Pro package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-08-24 01:51:18+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.1\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Formidable Pro\n"
+
+#: classes/models/fields/FrmProFieldFile.php:44
+msgid "Choose File"
+msgstr "选择文件"
+
+#: classes/models/FrmProFileField.php:61
+#: classes/views/frmpro-fields/front-end/file.php:65
+#: classes/views/frmpro-form-actions/_email_attachment_row.php:49
+msgid "Remove file"
+msgstr "移除文件"
+
+#: classes/views/frmpro-fields/back-end/field-file.php:11
+#: classes/views/frmpro-fields/front-end/file.php:80
+msgid "Maximum upload size: %sMB"
+msgstr "最大上传大小：%sMB"
+
+#: classes/models/fields/FrmProFieldFile.php:43
+msgid "Drop a file here or click to upload"
+msgstr "拖动文件到这里或者点击上传"
+
+#: classes/models/FrmProFileField.php:493
+msgid "Sorry, this file type is not permitted."
+msgstr "抱歉，这个文件类型不受支持。"
+
+#: classes/models/FrmProFileField.php:56 classes/models/FrmProFileField.php:381
+#: classes/models/FrmProFileField.php:392
+msgid "That file is too big. It must be less than %sMB."
+msgstr "此文件太大，文件必须小于 %sMB。"
+
+#: classes/views/styles/_repeater-fields.php:11
+msgid "Icon Color"
+msgstr "图标颜色"
+
+#: classes/views/frmpro-form-actions/post_options.php:155
+msgid "Post Parent"
+msgstr "文章父级"
+
+#: classes/views/frmpro-form-actions/post_action.php:130
+#: classes/views/frmpro-form-actions/post_action.php:131
+msgid "Select a Post"
+msgstr "选择文章"
+
+#: classes/views/frmpro-fields/front-end/star.php:28
+msgid "%1$s Star"
+msgid_plural "%1$s Stars"
+msgstr[0] "%1$s 标星"
+
+#: classes/models/FrmProFileField.php:541
+msgid "File is spam"
+msgstr "文件是垃圾信息"
+
+#: classes/controllers/FrmProFormActionsController.php:496
+#: classes/controllers/FrmProFormActionsController.php:524
+msgid "Post type is empty"
+msgstr "文章类型为空"
+
+#: classes/controllers/FrmProEntriesController.php:140
+msgid "Entry was Successfully Updated"
+msgstr "条目成功更新"
+
+#: classes/views/frmpro-forms/add_form_options.php:152
+msgid "Role required to access file"
+msgstr "访问文件需要的角色"
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:15
+msgid "Add views"
+msgstr "添加视图"
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:13
+msgid "Need to customize post content?"
+msgstr "需要自定义文章内容？"
+
+#: classes/views/frmpro-fields/back-end/visibility.php:9
+msgid "Determines who can see this field."
+msgstr "决定谁可以看到该字段。"
+
+#: classes/models/FrmProFileField.php:1747
+msgid "file does not exist"
+msgstr "文件不存在"
+
+#: classes/models/FrmProFileField.php:1711
+msgid "user does not fit any of the set roles, do not serve a file"
+msgstr "用户不符合任何用户集，不要提供文件"
+
+#: classes/models/FrmProFileField.php:1704
+msgid "prevent downloads for other uploads. We only want to allow valid connected formidable data"
+msgstr "阻止对其他上传的下载。我们只希望允许有效连接的 Formidable 数据"
+
+#: classes/models/FrmProFileField.php:1695
+msgid "if the filename requested does not match our filename, do not return the file"
+msgstr "如果请求的文件名与我们的文件名不匹配，不要返回该文件"
+
+#: classes/models/FrmProFileField.php:1686
+msgid "no file found"
+msgstr "未找到文件"
+
+#: classes/models/FrmProFileField.php:1678
+msgid "url is not an exact match"
+msgstr "链接地址未精确匹配"
+
+#: classes/models/FrmProFileField.php:1652
+msgid "referer check failed"
+msgstr "引用检查失败"
+
+#: classes/models/FrmProFileField.php:1642
+msgid "referer value either does not exist or it is unusable"
+msgstr "引用值或者不存在，或者不可用"
+
+#: classes/models/FrmProFileField.php:1631
+msgid "if sanitized data is empty, do not try to download"
+msgstr "如果格式化了的数据为空，不要尝试下载"
+
+#: classes/models/FrmProFileField.php:1622
+#: classes/models/FrmProFileField.php:1661
+msgid "payload does not match the expected format"
+msgstr "负载没有匹配期望的格式"
+
+#: classes/models/FrmProFileField.php:1618
+msgid "payload is not the right size"
+msgstr "负载的大小不对"
+
+#: classes/models/FrmProFileField.php:1370
+msgid "Oops! That file is protected"
+msgstr "哎哟！该文件被保护了"
+
+#: classes/models/FrmProFileField.php:1368
+msgid "Oops! That file no longer exists"
+msgstr "哎哟！该文件不存在了"
+
+#: classes/models/FrmProDb.php:173
+msgid "Check Add-ons"
+msgstr "检查扩展组件"
+
+#: classes/helpers/FrmProCurrencyHelper.php:345
+msgid "Sri Lankan Rupee"
+msgstr "斯里兰卡卢比"
+
+#: classes/helpers/FrmProCurrencyHelper.php:336
+msgid "South African Rand"
+msgstr "南非兰特"
+
+#: classes/helpers/FrmProCurrencyHelper.php:291
+msgid "Pakistani Rupee"
+msgstr "巴基斯坦卢比"
+
+#: classes/helpers/FrmProCurrencyHelper.php:228
+msgid "Indian Rupee"
+msgstr "印度卢比"
+
+#: classes/helpers/FrmProCurrencyHelper.php:174
+msgid "Chinese Renminbi Yuan"
+msgstr "中国人民币"
+
+#: classes/helpers/FrmProCurrencyHelper.php:147
+msgid "Bangladeshi Taka"
+msgstr "孟加拉塔卡"
+
+#: classes/controllers/FrmProEntriesController.php:1685
+msgid "No Entries Selected"
+msgstr "未选择条目"
+
+#: classes/views/frmpro-fields/back-end/image-selector.php:26
+msgid "Upload image"
+msgstr "上传图片"
+
+#: classes/views/frmpro-fields/back-end/other-option.php:9
+msgid "Add Other"
+msgstr "添加其它"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:34
+msgid "Format calculation as currency"
+msgstr "计算结果格式为货币"
+
+#: classes/views/frmpro-fields/back-end/prepend-options.php:17
+msgid "After Input"
+msgstr "在输入后"
+
+#: classes/views/frmpro-fields/back-end/prepend-options.php:9
+msgid "A value entered here will show directly before the input box in the form."
+msgstr "这里输入的值将直接显示在表单输入框的前方。"
+
+#: classes/views/frmpro-fields/back-end/prepend-options.php:8
+msgid "Before Input"
+msgstr "在输入前"
+
+#: classes/views/frmpro-fields/back-end/image-options.php:23
+msgid "Image Size"
+msgstr "图片尺寸"
+
+#: classes/views/frmpro-fields/back-end/image-options.php:14
+msgid "Replace radio buttons or checkboxes with images."
+msgstr "用图片替换单选按钮或复选框。"
+
+#: classes/views/frmpro-form-actions/_email_attachment_row.php:22
+msgid "Add attachment"
+msgstr "添加附件"
+
+#: classes/views/frmpro-form-actions/_email_attachment_row.php:10
+msgid "Attachment"
+msgstr "附件"
+
+#: classes/views/settings/inbox.php:12
+msgid "Your account has expired. Please renew to get access to inbox settings."
+msgstr "您的账户已过期。请更新账户以访问收件箱设置。"
+
+#: classes/views/settings/inbox.php:12
+msgid "a current plan or Renew"
+msgstr "一个当前的计划或更新"
+
+#: classes/views/settings/inbox.php:7
+msgid "Select the messages you would like to see in your Formidable inbox. Not all types of messages can be disabled."
+msgstr "选择您希望在您的 Formidable 收件箱中看到的信息。并非所有类型的消息都可以被禁止。"
+
+#: classes/controllers/FrmProEntriesController.php:3046
+msgid "Setup SMTP."
+msgstr "设置SMTP。"
+
+#: classes/controllers/FrmProEntriesController.php:3044
+msgid "Not receiving emails?"
+msgstr "没有收到邮件？"
+
+#: classes/controllers/FrmProFormsController.php:669
+msgid "Add or remove time from the selected date for date calculations."
+msgstr "对选定的日期增加或减少时间来做日期计算。"
+
+#: classes/controllers/FrmProFormsController.php:668
+msgid "Date Offset"
+msgstr "日期偏移"
+
+#: classes/models/FrmProImages.php:58
+msgid "Extra Large"
+msgstr "超大"
+
+#: classes/models/FrmProImages.php:55
+msgid "Small"
+msgstr "小"
+
+#: classes/models/FrmProSettings.php:102
+msgid "Requests for feedback"
+msgstr "请求反馈"
+
+#: classes/models/FrmProSettings.php:101
+msgid "New features"
+msgstr "新功能"
+
+#: classes/models/FrmProSettings.php:100
+msgid "Sales and promotions"
+msgstr "营销与推广"
+
+#: classes/models/FrmProSettings.php:99
+msgid "Show unread message count in menu"
+msgstr "在菜单中显示未读消息数"
+
+#: classes/views/frmpro-form-actions/post_options_for_views_placeholder.php:11
+msgid "Pro Tip:"
+msgstr "专业版小提示："
+
+#: classes/views/frmpro-fields/back-end/image-options.php:13
+msgid "Use images for options"
+msgstr "使用图片作选项"
+
+#: classes/views/frmpro-forms/add_form_style_options.php:17
+msgid "Slide vertically"
+msgstr "垂直滑动"
+
+#: classes/views/frmpro-forms/add_form_style_options.php:14
+msgid "Slide horizonally"
+msgstr "水平滑动"
+
+#: classes/views/frmpro-forms/add_form_style_options.php:8
+msgid "Page Turn Transitions"
+msgstr "翻页效果"
+
+#: js/src/calculator/block.js:50
+msgid "This site does not have any calculator forms."
+msgstr "该网站没有计算器表单。"
+
+#: classes/helpers/FrmProEntriesHelper.php:384
+msgid "ALL entries in this form will be permanently deleted. Want to proceed?"
+msgstr "该表单中的所有条目都将被彻底删除。想要继续吗？"
+
+#: classes/helpers/FrmProEntriesHelper.php:384
+msgid "Heads up"
+msgstr "小心"
+
+#: classes/helpers/FrmProCurrencyHelper.php:408
+msgid "Uruguayan Peso"
+msgstr "乌拉圭比索"
+
+#: classes/helpers/FrmProCurrencyHelper.php:399
+msgid "U.S. Dollar"
+msgstr "美元"
+
+#: classes/helpers/FrmProCurrencyHelper.php:390
+msgid "Turkish Liras"
+msgstr "土耳其里拉"
+
+#: classes/helpers/FrmProCurrencyHelper.php:381
+msgid "Thai Baht"
+msgstr "泰铢"
+
+#: classes/helpers/FrmProCurrencyHelper.php:372
+msgid "Taiwan New Dollar"
+msgstr "新台币"
+
+#: classes/helpers/FrmProCurrencyHelper.php:363
+msgid "Swiss Franc"
+msgstr "瑞士法郎"
+
+#: classes/helpers/FrmProCurrencyHelper.php:354
+msgid "Swedish Krona"
+msgstr "瑞典克郎"
+
+#: classes/helpers/FrmProCurrencyHelper.php:327
+msgid "Singapore Dollar"
+msgstr "新加坡元"
+
+#: classes/helpers/FrmProCurrencyHelper.php:318
+msgid "Pound Sterling"
+msgstr "英镑"
+
+#: classes/helpers/FrmProCurrencyHelper.php:309
+msgid "Polish Zloty"
+msgstr "波兰兹罗提"
+
+#: classes/helpers/FrmProCurrencyHelper.php:300
+msgid "Philippine Peso"
+msgstr "菲律宾比索"
+
+#: classes/helpers/FrmProCurrencyHelper.php:282
+msgid "New Zealand Dollar"
+msgstr "新西兰元"
+
+#: classes/helpers/FrmProCurrencyHelper.php:273
+msgid "Norwegian Krone"
+msgstr "挪威克朗"
+
+#: classes/helpers/FrmProCurrencyHelper.php:264
+msgid "Mexican Peso"
+msgstr "墨西哥比索"
+
+#: classes/helpers/FrmProCurrencyHelper.php:255
+msgid "Malaysian Ringgit"
+msgstr "马来西亚林吉特"
+
+#: classes/helpers/FrmProCurrencyHelper.php:246
+msgid "Japanese Yen"
+msgstr "日元"
+
+#: classes/helpers/FrmProCurrencyHelper.php:237
+msgid "Israeli New Sheqel"
+msgstr "以色列新谢克尔"
+
+#: classes/helpers/FrmProCurrencyHelper.php:219
+msgid "Hungarian Forint"
+msgstr "匈牙利福林"
+
+#: classes/helpers/FrmProCurrencyHelper.php:210
+msgid "Hong Kong Dollar"
+msgstr "港币"
+
+#: classes/helpers/FrmProCurrencyHelper.php:201
+msgid "Euro"
+msgstr "欧元"
+
+#: classes/helpers/FrmProCurrencyHelper.php:192
+msgid "Danish Krone"
+msgstr "丹麦克朗"
+
+#: classes/helpers/FrmProCurrencyHelper.php:183
+msgid "Czech Koruna"
+msgstr "捷克克朗"
+
+#: classes/helpers/FrmProCurrencyHelper.php:165
+msgid "Canadian Dollar"
+msgstr "加元"
+
+#: classes/helpers/FrmProCurrencyHelper.php:156
+msgid "Brazilian Real"
+msgstr "巴西雷亚尔"
+
+#: classes/helpers/FrmProCurrencyHelper.php:138
+msgid "Australian Dollar"
+msgstr "澳元"
+
+#: classes/views/frmpro-fields/back-end/calculations.php:30
+msgid "Calculate Default Value"
+msgstr "计算默认值"
+
+#: classes/views/frmpro-fields/back-end/field-summary.php:13
+msgid "Summary: This field displays a summary of values entered on previous pages."
+msgstr "小结：该字段显示前面页面中输入值的概括。"
+
+#: classes/views/frmpro-fields/back-end/checkbox-limit.php:9
+msgid "The maximum number of options in this field that the end user is allowed to select"
+msgstr "允许终端用户选择的该字段的最大选项数"
+
+#: classes/views/frmpro-fields/back-end/checkbox-limit.php:8
+msgid "Limit Selections"
+msgstr "限定所选"
+
+#. translators: %1$s: HTML open link, %2$s: HTML close link
+#: classes/views/frmpro-fields/back-end/summary-exclude-fields-settings.php:10
+msgid "Select a field from the list below to exclude it from the summary OR %1$sLearn which fields are automatically included%2$s."
+msgstr "在下表中选择要从总结中排除的字段，或者 %1$s了解哪些字段是自动包含的%2$s。"
+
+#: classes/views/frmpro-fields/back-end/product-options.php:7
+msgid "Product Type"
+msgstr "产品类型"
+
+#: classes/views/frmpro-fields/back-end/default-terms.php:14
+msgid "Search Terms"
+msgstr "搜索条件"
+
+#: classes/views/frmpro-fields/back-end/default-terms.php:7
+msgid "No options found."
+msgstr "未找到选项。"
+
+#: classes/views/frmpro-fields/back-end/field-form.php:21
+msgid "Embedded Form: "
+msgstr "内嵌表单： "
+
+#: classes/views/frmpro-fields/back-end/product-single-option.php:12
+msgid "Price"
+msgstr "价格"
+
+#: classes/views/frmpro-fields/back-end/product-single-option.php:11
+msgid "Product Name"
+msgstr "产品名称"
+
+#: classes/views/frmpro-fields/back-end/summary-options.php:34
+msgid "Show these automatically excluded field types"
+msgstr "显示这些自动排除的字段类型"
+
+#: classes/views/frmpro-fields/back-end/summary-options.php:26
+msgid "Exclude Fields"
+msgstr "排除字段"
+
+#: classes/views/frmpro-fields/back-end/summary-options.php:8
+msgid "Exclude Fields from Summary"
+msgstr "从小结中排除字段"
+
+#: classes/views/frmpro-fields/back-end/quantity-options.php:8
+msgid "Product Field"
+msgstr "产品字段"
+
+#: classes/views/settings/form.php:34
+msgid "Currency"
+msgstr "货币"
+
+#: classes/views/settings/form.php:33
+msgid "Select the currency to be used by Formidable globally."
+msgstr "选择 Formidable 在全站范围内使用的货币。"
+
+#: classes/controllers/FrmProEddController.php:258
+msgid "Click to enter a license key manually"
+msgstr "点击手动输入许可密钥"
+
+#: classes/controllers/FrmProEddController.php:187
+msgid "Disconnect this site"
+msgstr "断开本站"
+
+#: classes/models/fields/FrmProFieldProduct.php:273
+msgid "New Product"
+msgstr "新产品"
+
+#: classes/models/fields/FrmProFieldProduct.php:143
+msgid "Add Product"
+msgstr "添加产品"
+
+#: classes/models/fields/FrmProFieldProduct.php:139
+msgid "Bulk Edit Products"
+msgstr "批量编辑产品"
+
+#: classes/models/fields/FrmProFieldProduct.php:75
+msgid "User Defined"
+msgstr "由用户定义"
+
+#: classes/models/fields/FrmProFieldProduct.php:74
+msgid "Single Product"
+msgstr "单个产品"
+
+#: classes/models/fields/FrmProFieldProduct.php:33
+msgid "Product 1"
+msgstr "产品 1"
+
+#: classes/views/frmpro-fields/back-end/autopopulate-values.php:11
+msgid "Watch Lookup Fields"
+msgstr "关联查找字段"
+
+#: classes/views/lookup-fields/back-end/watch.php:7
+msgid "Filter by Lookup Fields"
+msgstr "用查找字段过滤"
+
+#: classes/views/frmpro-statistics/show.php:70
+msgid "Answered"
+msgstr "已回答的"
+
+#: classes/views/frmpro-statistics/show.php:40
+msgid "Responses Over Time"
+msgstr "一段时间的回复"
+
+#: classes/views/styles/_section-fields.php:95
+msgid "Collapse Icon"
+msgstr "折叠图标"
+
+#: classes/views/frmpro-fields/back-end/logic.php:23
+msgid "Hide this field"
+msgstr "隐藏该字段"
+
+#: classes/views/frmpro-fields/back-end/logic.php:23
+msgid "Skip next page"
+msgstr "略过下一页"
+
+#: classes/views/frmpro-fields/back-end/logic.php:22
+msgid "Show this field"
+msgstr "显示该字段"
+
+#: classes/views/frmpro-fields/back-end/logic.php:22
+msgid "Do not skip next page"
+msgstr "不要略过下一页"
+
+#: classes/views/frmpro-fields/back-end/dynamic-field.php:8
+msgid "Display Type"
+msgstr "显示类型"
+
+#: classes/views/frmpro-fields/back-end/autopopulate-values.php:39
+msgid "Dynamically retrieve the value of this field from a lookup field."
+msgstr "动态获取该字段在查找字段中的值。"
+
+#: classes/views/frmpro-fields/back-end/calendar.php:18
+msgid "End"
+msgstr "结束"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:93
+msgid "Max files per entry"
+msgstr "每条目最大文件数"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:85
+msgid "Max file size (MB)"
+msgstr "最大文件体积（MB）"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:63
+msgid "Allow all file types"
+msgstr "允许所有文件类型"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:32
+msgid "Automatically resize files before upload"
+msgstr "上传之前自动调整文件大小"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:14
+msgid "Allow multiple files to be uploaded"
+msgstr "允许上传多个文件"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:7
+msgid "File Upload Options"
+msgstr "文件上传选项"
+
+#: classes/views/frmpro-fields/back-end/multi-select.php:9
+msgid "Multiselect"
+msgstr "多选"
+
+#. translators: %s: The page number
+#: classes/views/frmpro-fields/back-end/field-break.php:20
+msgid "Page %s"
+msgstr "分页 %s"
+
+#. translators: %1$s: Form name
+#: classes/views/frmpro-fields/back-end/field-form.php:26
+msgid "Embedded Form: %1$s"
+msgstr "内嵌表单： %1$s"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:55
+msgid "Click fields from the field list above to include them in your calculation. Example: [12]+[13]"
+msgstr "点击上方字段列表中的字段，将它们包含在您的计算中。例如：[12]+[13]"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:46
+#: classes/views/frmpro-fields/back-end/summary-exclude-fields-settings.php:21
+msgid "Search Fields"
+msgstr "搜索字段"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:39
+msgid "Field List"
+msgstr "字段列表"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:19
+msgid "Math"
+msgstr "数学"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:10
+msgid "Text calculations are combined literally, as is. Math calculations only use numbers in the calculation, and any included math operations will be applied."
+msgstr "文本计算在字面上原样合并。数学计算在计算时仅使用数字，会应用任何包含的数学运算符。"
+
+#: classes/views/frmpro-fields/back-end/confirmation.php:12
+msgid "No Confirmation"
+msgstr "无确认"
+
+#: classes/views/frmpro-fields/back-end/confirmation.php:8
+msgid "Require Confirmation"
+msgstr "需要确认"
+
+#: classes/views/frmpro-fields/back-end/clock-settings.php:34
+msgid "24 hour clock"
+msgstr "24小时制"
+
+#: classes/views/frmpro-fields/back-end/clock-settings.php:31
+msgid "12 hour clock"
+msgstr "12小时制"
+
+#: classes/views/frmpro-fields/back-end/clock-settings.php:27
+msgid "Time Format"
+msgstr "时间格式"
+
+#: classes/views/frmpro-fields/back-end/clock-settings.php:7
+msgid "Time Range"
+msgstr "时间范围"
+
+#: classes/views/frmpro-fields/back-end/confirmation-placeholder.php:14
+msgid "Confirmation Description"
+msgstr "确认描述"
+
+#: classes/views/frmpro-fields/back-end/confirmation-placeholder.php:8
+msgid "Confirmation Placeholder"
+msgstr "确认占位符"
+
+#: classes/views/frmpro-fields/back-end/alignment.php:22
+msgid "Option Layout"
+msgstr "选项布局"
+
+#: classes/views/frmpro-fields/back-end/field-data.php:61
+#: classes/views/frmpro-fields/back-end/field-data.php:72
+msgid "There are no dynamic options"
+msgstr "没有动态选项"
+
+#: classes/views/frmpro-fields/back-end/field-data.php:21
+#: classes/views/lookup-fields/back-end/input.php:48
+#: classes/views/lookup-fields/back-end/input.php:77
+msgid "This field content is dynamic"
+msgstr "该字段内容是动态的"
+
+#: classes/views/frmpro-fields/back-end/field-data.php:11
+#: classes/views/frmpro-fields/back-end/field-form.php:11
+#: classes/views/lookup-fields/back-end/input.php:10
+msgid "This field is not set up yet."
+msgstr "该字段尚未设置。"
+
+#: classes/views/frmpro-fields/other-option.php:28
+msgid "\"Other\" option"
+msgstr "\"其它\"选项"
+
+#: classes/views/frmpro-fields/_logic_row.php:52
+msgid "less or equal"
+msgstr "小于等于"
+
+#: classes/views/frmpro-fields/_logic_row.php:46
+msgid "greater or equal"
+msgstr "大于等于"
+
+#: classes/views/frmpro-fields/_logic_row.php:40
+msgid "not equals"
+msgstr "不等于"
+
+#: classes/views/frmpro-fields/_logic_row.php:37
+msgid "equals"
+msgstr "等于"
+
+#: classes/views/displays/submitbox_actions.php:24
+msgid "Insert with PHP"
+msgstr "用 PHP 插入"
+
+#: classes/views/displays/mb_advanced.php:130
+msgid "Copy this View to other sites when Formidable Forms is activated. (Use only field keys in the content box(es) above.)"
+msgstr "Formidable Forms 激活时，复制该视图到其他网站。（仅使用上面内容框中的字段主键。)"
+
+#: classes/views/displays/mb_advanced.php:93
+msgid "View Key"
+msgstr "查看主键"
+
+#: classes/views/frmpro-forms/add_form_options.php:109
+msgid "Redirect URL"
+msgstr "跳转至链接"
+
+#: classes/views/frmpro-forms/add_form_options.php:14
+msgid "Limit form visibility %1$sto%2$s"
+msgstr "限制表单可见性 %1$s至%2$s"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:49
+msgid "Add conditional logic to submit button"
+msgstr "为提交按钮添加条件逻辑"
+
+#: classes/views/frmpro-fields/back-end/logic.php:33
+#: classes/views/frmpro-forms/_submit_conditional.php:33
+msgid "if %s of the following match:"
+msgstr "若 %s 下列条件满足："
+
+#: classes/views/frmpro-forms/_submit_conditional.php:19
+msgid "Disable submit button"
+msgstr "禁用提交按钮"
+
+#: classes/views/frmpro-forms/_submit_conditional.php:16
+msgid "Enable submit button"
+msgstr "启用提交按钮"
+
+#: classes/views/frmpro-forms/_submit_conditional.php:13
+msgid "Hide submit button"
+msgstr "隐藏提交按钮"
+
+#: classes/views/frmpro-forms/_submit_conditional.php:10
+msgid "Show submit button"
+msgstr "显示提交按钮"
+
+#: classes/views/frmpro-fields/back-end/default-terms.php:37
+#: classes/views/frmpro-forms/instructions.php:43
+msgid "Click smart value to dynamically populate this field. Smart values are not used when editing entries."
+msgstr "点击智能值来动态填充该字段。智能值在编辑条目时不使用。"
+
+#: classes/views/frmpro-forms/instructions.php:9
+msgid "Search Smart Tags"
+msgstr "搜索智能标签"
+
+#: classes/views/frmpro-forms/_logic_row.php:52
+#: classes/views/frmpro-forms/_submit_logic_row.php:67
+msgid "is not like"
+msgstr "不包含"
+
+#: classes/views/frmpro-fields/_logic_row.php:55
+#: classes/views/frmpro-forms/_logic_row.php:49
+#: classes/views/frmpro-forms/_submit_logic_row.php:64
+msgid "is like"
+msgstr "包含"
+
+#: classes/views/frmpro-forms/_logic_row.php:40
+#: classes/views/frmpro-forms/_submit_logic_row.php:48
+msgid "is NOT equal to"
+msgstr "不等于"
+
+#: classes/views/frmpro-forms/_logic_row.php:37
+#: classes/views/frmpro-forms/_submit_logic_row.php:45
+msgid "is equal to"
+msgstr "等于"
+
+#: classes/views/frmpro-form-actions/post_options.php:200
+msgid "Populate Field"
+msgstr "填充字段"
+
+#: classes/views/frmpro-form-actions/post_options.php:197
+msgid "Taxonomy Type"
+msgstr "分类方式"
+
+#: classes/views/settings/white-label.php:22
+msgid "Plugin Icon"
+msgstr "插件图标"
+
+#: classes/views/settings/white-label.php:10
+msgid "Plugin Label"
+msgstr "插件标签"
+
+#: classes/views/settings/white-label.php:7
+msgid "Remove references to Formidable Forms to provide an unbranded experience for your clients."
+msgstr "移除关于 Formidable Forms 的信息以向您的客户提供无牌用户体验。"
+
+#: classes/controllers/FrmProEddController.php:236
+msgid "License is active"
+msgstr "许可有效"
+
+#: classes/controllers/FrmProStylesController.php:24
+msgid "Repeater Fields"
+msgstr "中继字段"
+
+#: classes/controllers/FrmProFieldsController.php:422
+msgid "Inline Options"
+msgstr "内联选项"
+
+#: classes/controllers/FrmProFieldsController.php:421
+msgid "Four Columns"
+msgstr "四栏"
+
+#: classes/controllers/FrmProFieldsController.php:420
+msgid "Three Columns"
+msgstr "三栏"
+
+#: classes/controllers/FrmProFieldsController.php:419
+msgid "Two Columns"
+msgstr "两栏"
+
+#: classes/controllers/FrmProFieldsController.php:418
+msgid "One Column"
+msgstr "一栏"
+
+#: classes/controllers/FrmProFieldsController.php:255
+msgid "Select an option"
+msgstr "选择选项"
+
+#: classes/controllers/FrmProFieldsController.php:255
+msgid "Select options"
+msgstr "选择选项"
+
+#: classes/models/fields/FrmProFieldLookup.php:104
+msgid "Search In"
+msgstr "搜索"
+
+#: classes/views/frmpro-fields/back-end/dates-advanced.php:29
+msgid "Blackout Dates, Inline Datepicker, and Dynamic Start and End Dates"
+msgstr "不适用期、内置日期选择器，以及动态开始和结束日期"
+
+#: classes/models/fields/FrmProFieldCreditCard.php:157
+msgid "Expiration:"
+msgstr "过期日："
+
+#: classes/controllers/FrmProEddController.php:226
+msgid "Verify a different license key"
+msgstr "验证其他许可密钥"
+
+#: js/src/view/inspector.js:74
+msgid "Use only when shortcodes from other plugins are shown when Limited is selected. May cause conflicts with some plugins."
+msgstr "仅在选择受限后，当来自其他插件的短码被显示时使用。可能造成与某些插件的冲突。"
+
+#: js/src/view/inspector.js:72
+msgid "Everything"
+msgstr "每样东西"
+
+#: js/src/view/inspector.js:69
+msgid "Recommended. Adds automatic paragraphs and line breaks and filters most shortcodes."
+msgstr "推荐。添加自动分段和分行，过滤多数短码。"
+
+#: js/src/view/inspector.js:67
+msgid "Limited"
+msgstr "受限"
+
+#: js/src/view/inspector.js:59
+msgid "View Filtering"
+msgstr "视图过滤"
+
+#: js/src/view/inspector.js:54
+msgid "Go to View"
+msgstr "转至视图"
+
+#: js/src/view/inspector.js:41
+msgid "Select a View"
+msgstr "选择一个视图"
+
+#: js/src/view/block.js:41
+msgid "This site does not have any Views."
+msgstr "该网站没有视图。"
+
+#: js/src/view/block.js:28
+msgid "show entries"
+msgstr "显示条目"
+
+#: js/src/view/block.js:27
+msgid "data display"
+msgstr "数据显示"
+
+#: js/src/view/block.js:23
+msgid "Display a View"
+msgstr "显示一个视图"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:106
+msgid "The label shown when the file upload field is compacted with the frm_compact CSS layout class."
+msgstr "当使用 frm_compact CSS布局类使文件上传字段变紧凑时显示的标签。"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:105
+msgid "Compact upload text"
+msgstr "紧凑的上传文本"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:99
+msgid "Upload text"
+msgstr "上传文本"
+
+#: classes/views/frmpro-forms/add_form_status_options.php:57
+msgid "This message is shown when a form is closed for new entries."
+msgstr "在表单关闭接收新条目时显示本条信息。"
+
+#: classes/views/frmpro-forms/add_form_status_options.php:48
+msgid "Close the form after a specific number of entries have been received."
+msgstr "在已经收集到指定数量的条目后关闭表单。"
+
+#: classes/views/frmpro-forms/add_form_status_options.php:7
+msgid "Prevent the form from showing when submissions should not be accepted. Close it now, or schedule the form to open and/or close later."
+msgstr "在不接受提交时阻止表单显示。现在关闭表单，或者计划表单稍后打开和/或关闭。"
+
+#: classes/models/FrmProFileField.php:62 classes/models/FrmProFileField.php:422
+msgid "You have uploaded more than %d file(s)."
+msgstr "您上传了多于 %d 个文件。"
+
+#: classes/helpers/FrmProFormsHelper.php:474
+msgid "This form is currently closed for submissions."
+msgstr "该表单当前关闭提交。"
+
+#: classes/views/frmpro-fields/back-end/password-options.php:16
+msgid "Show password strength meter"
+msgstr "显示密码强度提示"
+
+#: classes/views/frmpro-fields/back-end/password-options.php:17
+msgid "Display a meter to the user showing the password requirements and strength of the typed password. This will only apply when the field is not within a Repeater."
+msgstr "给用户显示一个提示，以展示密码的要求和输入的密码强度。仅当字段不在中继中时应用。"
+
+#: classes/views/styles/_date-fields.php:49
+msgid "Band Color"
+msgstr "表带颜色"
+
+#: classes/views/styles/_date-fields.php:39
+msgid "Head Color"
+msgstr "头部颜色"
+
+#. translators: %1$s: Start link HTML, %2$s: End link HTML
+#: classes/views/styles/_date-fields.php:17
+msgid "Make changes to the date colors in the %1$sdefault style%2$s."
+msgstr "修改 %1$s默认样式%2$s中的日期颜色。"
+
+#: classes/models/fields/FrmProFieldPassword.php:201
+msgid "One special character"
+msgstr "一个特殊字符"
+
+#: classes/models/fields/FrmProFieldPassword.php:196
+msgid "One number"
+msgstr "一个数字"
+
+#: classes/models/fields/FrmProFieldPassword.php:191
+msgid "One uppercase letter"
+msgstr "一个大写字母"
+
+#: classes/models/fields/FrmProFieldPassword.php:186
+msgid "One lowercase letter"
+msgstr "一个小写字母"
+
+#: classes/models/fields/FrmProFieldPassword.php:181
+msgid "Eight characters minimum"
+msgstr "最小8位字符"
+
+#: classes/views/frmpro-fields/back-end/password-options.php:9
+msgid "Require a strong password"
+msgstr "需要强密码"
+
+#: classes/views/frmpro-fields/back-end/password-options.php:10
+msgid "A strong password is at least 8 characters long and includes a an uppercase letter, a lowercase letter, a number, and a character."
+msgstr "强密码至少8位字符并且包含一个大写字母、一个小写字母、一个数字和一个特殊字符。"
+
+#: classes/models/fields/FrmProFieldPassword.php:188
+msgid "Passwords must include at least one lowercase letter"
+msgstr "密码必须包含至少一个小写字母"
+
+#: classes/models/fields/FrmProFieldPassword.php:193
+msgid "Passwords must include at least one uppercase letter"
+msgstr "密码必须包含至少一个大写字母"
+
+#: classes/models/fields/FrmProFieldPassword.php:198
+msgid "Passwords must include at least one number"
+msgstr "密码必须包含至少一个数字"
+
+#: classes/models/fields/FrmProFieldPassword.php:183
+msgid "Passwords require at least 8 characters"
+msgstr "密码需要至少8位字符"
+
+#: classes/views/styles/_toggle-fields.php:12
+msgid "Off Color"
+msgstr "关闭颜色"
+
+#: classes/views/styles/_toggle-fields.php:7
+msgid "On Color"
+msgstr "打开颜色"
+
+#: classes/views/styles/_slider-fields.php:12
+msgid "Bar Color"
+msgstr "条线颜色"
+
+#: classes/views/styles/_sample_form.php:88
+msgid "Slider"
+msgstr "滑块"
+
+#: classes/views/styles/_sample_form.php:73
+msgid "Toggle"
+msgstr "开关"
+
+#: classes/controllers/FrmProStylesController.php:27
+msgid "Slider Fields"
+msgstr "滑块字段"
+
+#: classes/controllers/FrmProStylesController.php:26
+msgid "Toggle Fields"
+msgstr "开关字段"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:52
+msgid "high"
+msgstr "高度"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:49
+msgid "wide"
+msgstr "宽度"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:46
+msgid "Resize the image by width or height"
+msgstr "用宽度或高度调整图片"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:42
+msgid "px"
+msgstr "像素"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:40
+msgid "The size the image should be resized to"
+msgstr "图片要调整到的大小"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:37
+msgid "New file size"
+msgstr "新的文件大小"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:33
+msgid "When a large image is uploaded, resize it before you save it to your site."
+msgstr "当止传一个大图片时，调整之后再保存至您的网站。"
+
+#. Author of the plugin
+msgid "Strategy11"
+msgstr "Strategy11"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://formidableforms.com/"
+msgstr "https://formidableforms.com/"
+
+#. Description of the plugin
+msgid "Add more power to your forms, and bring your reports and data management to the front-end."
+msgstr "扩展您的表单能力，并将您的报表和数据管理带至前端。"
+
+#. Plugin Name of the plugin
+msgid "Formidable Forms Pro"
+msgstr "Formidable Forms 专业版"
+
+#: classes/views/frmpro-fields/back-end/toggle-labels.php:21
+msgid "Inactive Label"
+msgstr "未活标签"
+
+#: classes/views/frmpro-fields/back-end/toggle-labels.php:14
+msgid "Active Label"
+msgstr "活动标签"
+
+#: classes/views/frmpro-fields/back-end/toggle-labels.php:9
+msgid "Show Labels"
+msgstr "显示标签"
+
+#: classes/views/frmpro-fields/back-end/star-options.php:8
+msgid "Maximum Rating"
+msgstr "最高评级"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:19
+msgid "Europe"
+msgstr "欧洲"
+
+#: classes/views/xml/csv_opts.php:28
+msgid "Import files. If you would like to import files from your CSV, check this box."
+msgstr "导入文件。如果您想要从您的CSV导入文件，就勾选该处。"
+
+#: classes/views/settings/general_style.php:31
+msgid "Warning: This option will be removed. Please load accordion javascripts from your theme."
+msgstr "警告：该选项将被移除。请从您的主题载入手风琴脚本。"
+
+#: classes/views/settings/general_style.php:10
+msgid "If your form is near the top of the page, you may see a flash of the fields hidden with conditional logic. Check this box to fade in the whole form. Note: If you have javascript errors on your page, your form will remain hidden on the page."
+msgstr "如果您的表单位置靠近页面顶部，您可能会看到用条件逻辑隐藏的字段闪动。选择该选项淡入整个表单。注意：如果您在页面上有  javascript 错误，您的表单将在页面中保持隐藏。"
+
+#: classes/views/settings/general_style.php:9
+msgid "Fade in forms with conditional logic on page load"
+msgstr "页面载入时淡入有条件逻辑的表单"
+
+#: classes/models/fields/FrmProFieldDivider.php:249
+msgid "Toggle fields"
+msgstr "开关字段"
+
+#: classes/models/fields/FrmProFieldCreditCard.php:319
+msgid "Please enter a valid CVC"
+msgstr "请输入有效的安全码"
+
+#: classes/controllers/FrmProFormsController.php:1025
+msgid "Calendar Date"
+msgstr "日历日期"
+
+#: classes/controllers/FrmProFormsController.php:1022
+msgid "Entry Postion"
+msgstr "条目位置"
+
+#: classes/controllers/FrmProEntriesController.php:2598
+msgid "You are missing options in your shortcode. A field_id is required."
+msgstr "您的短码缺少选项。field_id 是必须的。"
+
+#: formidable-pro.php:101
+msgid "Formidable Forms Premium requires Formidable Forms Lite to be installed."
+msgstr "Formidable Forms Premium 需要 Formidable Forms Lite 已安装。"
+
+#: classes/views/styles/_progress-bars.php:37
+msgid "Circle Size"
+msgstr "圆圈大小"
+
+#: classes/views/styles/_progress-bars.php:32
+msgid "Border Size"
+msgstr "边框大小"
+
+#: classes/views/styles/_progress-bars.php:27
+msgid "Border Color"
+msgstr "边框颜色"
+
+#: classes/views/styles/_progress-bars.php:22
+msgid "Active Text"
+msgstr "活动文本"
+
+#: classes/views/styles/_progress-bars.php:17
+msgid "Active BG"
+msgstr "活动背景"
+
+#: classes/views/styles/_date-fields.php:44
+#: classes/views/styles/_progress-bars.php:12
+msgid "Text Color"
+msgstr "文本颜色"
+
+#: classes/views/frmpro-forms/form_page_options.php:59
+msgid "Hide lines in the rootline or progress bar"
+msgstr "隐藏齿轮线或进度条上的连线"
+
+#: classes/views/frmpro-forms/form_page_options.php:51
+msgid "Hide the page numbers"
+msgstr "隐藏页码"
+
+#: classes/views/frmpro-forms/form_page_options.php:31
+#: classes/views/frmpro-forms/form_page_options.php:33
+#: classes/views/frmpro-forms/form_page_options.php:41
+msgid "Page %d title"
+msgstr "分页 %d 标题"
+
+#: classes/views/frmpro-forms/form_page_options.php:25
+msgid "Show page titles with steps"
+msgstr "显示每步页面标题"
+
+#: classes/views/frmpro-forms/form_page_options.php:16
+msgid "Show Rootline"
+msgstr "显示齿轮线"
+
+#: classes/views/frmpro-forms/form_page_options.php:13
+msgid "Show Progress bar"
+msgstr "显示进度条"
+
+#: classes/views/frmpro-forms/form_page_options.php:11
+msgid "Hide Progress bar and Rootline"
+msgstr "隐藏进度条和齿轮线"
+
+#: classes/views/frmpro-forms/form_page_options.php:6
+msgid "Pagination"
+msgstr "分页"
+
+#: classes/views/frmpro-fields/back-end/clock-settings.php:42
+msgid "show a single time dropdown"
+msgstr "显示单个时间下拉菜单"
+
+#: classes/controllers/FrmProEntriesController.php:1389
+msgid "Save"
+msgstr "保存"
+
+#: classes/models/FrmProPageField.php:194
+#: classes/views/styles/_sample_form.php:116
+msgid "%1$d of %2$d"
+msgstr "%1$d / %2$d"
+
+#: classes/models/FrmProPageField.php:167
+#: classes/views/frmpro-forms/form_page_options.php:33
+msgid "Page %d"
+msgstr "分页 %d"
+
+#: classes/models/FrmProPageField.php:138
+#: classes/views/styles/_sample_form.php:115
+msgid "%s Complete"
+msgstr "%s 完成"
+
+#: classes/controllers/FrmProStylesController.php:28
+msgid "Progress Bars &amp; Rootline"
+msgstr "进度条与齿轮线"
+
+#: classes/models/FrmProFileField.php:58
+msgid "Server responded with %s code."
+msgstr "服务器响应码 %s。"
+
+#: classes/models/FrmProFileField.php:55
+msgid "Please use the fallback form below to upload your files like in the olden days."
+msgstr "请使用下面的替补表单，像以前那样上传您的文件。"
+
+#: classes/models/FrmProFileField.php:54
+msgid "Your browser does not support drag and drop file uploads."
+msgstr "您的浏览器不支持拖拽文件上传。"
+
+#: classes/models/FrmProFileField.php:53
+msgid "Drop files here to upload"
+msgstr "把文件拖到这里上传"
+
+#: classes/controllers/FrmProStatisticsController.php:23
+msgid "You must include a valid field id or key in your stats shortcode."
+msgstr "您必须在您的统计短码中包含一个字段ID或键。"
+
+#: classes/controllers/FrmProCreditCardsController.php:63
+#: classes/models/fields/FrmProFieldCreditCard.php:93
+#: classes/models/fields/FrmProFieldCreditCard.php:171
+msgid "Year"
+msgstr "年"
+
+#: classes/controllers/FrmProCreditCardsController.php:56
+#: classes/models/fields/FrmProFieldCreditCard.php:92
+#: classes/models/fields/FrmProFieldCreditCard.php:170
+msgid "Month"
+msgstr "月"
+
+#: classes/views/frmpro-forms/add_form_ajax_options.php:11
+msgid "Submit the form without refreshing the page."
+msgstr "提交表单而无需刷新页面。"
+
+#: classes/controllers/FrmProGraphsController.php:1934
+msgid "Q4"
+msgstr "Q4"
+
+#: classes/controllers/FrmProGraphsController.php:1932
+msgid "Q3"
+msgstr "Q3"
+
+#: classes/controllers/FrmProGraphsController.php:1930
+msgid "Q2"
+msgstr "Q2"
+
+#: classes/controllers/FrmProGraphsController.php:1928
+msgid "Q1"
+msgstr "Q1"
+
+#: classes/controllers/FrmProGraphsController.php:1724
+msgid "Invalid x-axis"
+msgstr "无效的x坐标"
+
+#: classes/controllers/FrmProGraphsController.php:1720
+msgid "Updated At"
+msgstr "更新日期"
+
+#: classes/controllers/FrmProGraphsController.php:615
+#: classes/controllers/FrmProGraphsController.php:1162
+#: classes/controllers/FrmProGraphsController.php:1751
+#: classes/views/frmpro-statistics/show.php:21
+msgid "Submissions"
+msgstr "提交"
+
+#: classes/controllers/FrmProGraphsController.php:88
+msgid "Using multiple values in the id graph parameter has been removed as of version 2.02.04"
+msgstr "在ID图表参数中使用多值的选项已经在版本2.02.04中移除"
+
+#: classes/controllers/FrmProFormsController.php:924
+msgid "Include a legend with the graph"
+msgstr "给图表加图例"
+
+#: classes/controllers/FrmProFormsController.php:923
+msgid "When using dates for the x_axis parameter, you can include dates with a zero value."
+msgstr "在把日期作为x轴坐标时，您可以为零值附日期。"
+
+#: classes/controllers/FrmProFormsController.php:902
+msgid "Geographical Map"
+msgstr "地理图"
+
+#: classes/controllers/FrmProFormsController.php:900
+msgid "Table"
+msgstr "表格图"
+
+#: classes/controllers/FrmProFormsController.php:899
+msgid "Histogram"
+msgstr "直方图"
+
+#: classes/controllers/FrmProFormsController.php:898
+msgid "Scatter"
+msgstr "散点图"
+
+#: classes/controllers/FrmProFormsController.php:894
+msgid "Horizontal Bar"
+msgstr "柱图"
+
+#: classes/controllers/FrmProFormsController.php:873
+msgid "Select a form and field:"
+msgstr "选择一个表单和字段："
+
+#: classes/models/FrmProFileField.php:60
+msgid "Are you sure you want to cancel this upload?"
+msgstr "您确定要取消此次上传吗？"
+
+#: classes/models/FrmProFileField.php:59
+msgid "Cancel upload"
+msgstr "取消上传"
+
+#: classes/views/frmpro-forms/add_form_options.php:148
+msgid "Protect all files uploaded in this form"
+msgstr "保护该表单上传的所有文件"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:86
+msgid "Set the file size limit for each file uploaded. Your server settings allow a maximum of %d MB."
+msgstr "为每个上传的文件设置文件体积限制。您的服务器设置允许的最大值为 %d MB。"
+
+#: classes/models/FrmProForm.php:158
+msgid "Unable to write to %s to protect your uploads."
+msgstr "无法写入 %s 以保护您的上传。"
+
+#: classes/models/FrmProFileField.php:698
+msgid "File upload failed"
+msgstr "文件上传失败"
+
+#: classes/controllers/FrmProFieldsController.php:1046
+msgid "Hide form uploads"
+msgstr "隐藏表单上传"
+
+#: classes/controllers/FrmProFieldsController.php:1041
+#: classes/controllers/FrmProFieldsController.php:1047
+msgid "Show form uploads"
+msgstr "显示表单上传"
+
+#: classes/views/lookup-fields/back-end/input.php:42
+msgid "No options found"
+msgstr "未找到选项"
+
+#: classes/views/combo-fields/credit-cards/back-end-field-opts.php:22
+msgid "Do not store or POST card values"
+msgstr "不保存或POST卡值"
+
+#: classes/views/frmpro-fields/back-end/multi-select.php:15
+msgid "Autocomplete"
+msgstr "自动填写"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:34
+msgid "Placeholder Text"
+msgstr "占位文本"
+
+#: classes/views/lookup-fields/back-end/order.php:19
+msgid "No order set"
+msgstr "未设定顺序"
+
+#: classes/views/lookup-fields/back-end/order.php:16
+msgid "Descending (Z-A)"
+msgstr "降序（Z-A）"
+
+#: classes/views/lookup-fields/back-end/order.php:13
+msgid "Ascending (A-Z)"
+msgstr "升序（A-Z）"
+
+#: classes/views/lookup-fields/back-end/order.php:9
+msgid "Set the order for the values in your Lookup Field."
+msgstr "设置查找字段中值的顺序。"
+
+#: classes/views/lookup-fields/back-end/order.php:8
+msgid "Option order"
+msgstr "选项顺序"
+
+#: classes/views/lookup-fields/back-end/filter.php:10
+msgid "Does not apply to administrators."
+msgstr "不应用于管理员。"
+
+#: classes/views/frmpro-fields/options-form-before.php:62
+#: classes/views/lookup-fields/back-end/filter.php:9
+msgid "Limit options to those created by the current user"
+msgstr "限定为当前用户创建的选项"
+
+#: classes/views/frmpro-fields/back-end/autopopulate-values.php:35
+msgid "Get only the most recent value"
+msgstr "仅获取最新值"
+
+#: classes/views/frmpro-fields/back-end/autopopulate-values.php:28
+#: classes/views/lookup-fields/back-end/watch.php:18
+msgid "Watch a Lookup Field"
+msgstr "关联一个查找字段"
+
+#: classes/views/displays/where_row.php:30
+msgid "Entry status"
+msgstr "条目状态"
+
+#: classes/controllers/FrmProLookupFieldsController.php:263
+msgid "No options available: please check this field's options"
+msgstr "没有选项：请勾选该字段的选项"
+
+#: classes/models/fields/FrmProFieldLookup.php:106
+msgid "Get Options From"
+msgstr "获取选项来源"
+
+#: classes/views/frmpro-fields/back-end/autopopulate.php:10
+msgid "Lookup"
+msgstr "查找"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:26
+msgid "Permanently delete old files when replaced or when the entry is deleted"
+msgstr "在文件被替换或条目被删除时，彻底删除旧文件"
+
+#: classes/views/displays/where_options.php:34
+msgid "Complete entry"
+msgstr "完成的条目"
+
+#: classes/views/displays/where_options.php:28
+msgid "Draft or complete entry"
+msgstr "草稿或完成的条目"
+
+#: classes/views/combo-fields/credit-cards/back-end-field-opts.php:19
+msgid "Store the whole card number (not recommended)"
+msgstr "保存完整卡号（不推荐）"
+
+#: classes/views/combo-fields/credit-cards/back-end-field-opts.php:16
+msgid "Do not store the card number"
+msgstr "不保存卡号"
+
+#: classes/views/combo-fields/credit-cards/back-end-field-opts.php:13
+msgid "Save only the last 4 digits"
+msgstr "仅保存后四位数字"
+
+#: classes/views/combo-fields/credit-cards/back-end-field-opts.php:9
+msgid "By default, only the last four digits of a credit card number will be saved. We recommend that you save as little credit card information on your site as possible."
+msgstr "默认情况下，仅保存信用卡卡号的后四位数字。我们建议您在您的网站上尽可能少地存储信用卡信息。"
+
+#: classes/views/combo-fields/credit-cards/back-end-field-opts.php:8
+msgid "Credit Card Security"
+msgstr "信用卡安全"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:22
+msgid "Other - exclude country field"
+msgstr "其它 - 不含国家字段"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:13
+msgid "International"
+msgstr "国际"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:8
+msgid "Address Type"
+msgstr "地址类型"
+
+#: classes/models/fields/FrmProFieldCreditCard.php:306
+msgid "That credit card is expired"
+msgstr "信用卡已过期"
+
+#: classes/models/fields/FrmProFieldCreditCard.php:242
+msgid "That credit card number is invalid"
+msgstr "信用卡卡号无效"
+
+#: classes/models/fields/FrmProFieldAddress.php:363
+msgid "This value is invalid"
+msgstr "该值无效"
+
+#: classes/controllers/FrmProFormsController.php:1024
+msgid "Draft status"
+msgstr "草稿状态"
+
+#: classes/controllers/FrmProCreditCardsController.php:113
+#: classes/models/fields/FrmProFieldCreditCard.php:50
+msgid "CVC"
+msgstr "安全码"
+
+#: classes/controllers/FrmProCreditCardsController.php:112
+#: classes/models/fields/FrmProFieldCreditCard.php:49
+msgid "Card Number"
+msgstr "卡号"
+
+#: classes/controllers/FrmProCreditCardsController.php:89
+msgid "Expiration Year"
+msgstr "过期年"
+
+#: classes/controllers/FrmProCreditCardsController.php:88
+msgid "Expiration Month"
+msgstr "过期月"
+
+#: classes/controllers/FrmProAddressesController.php:157
+#: classes/models/fields/FrmProFieldAddress.php:107
+msgid "Zip/Postal"
+msgstr "区号/邮编"
+
+#: classes/controllers/FrmProAddressesController.php:156
+#: classes/models/fields/FrmProFieldAddress.php:106
+msgid "State/Province"
+msgstr "州/省"
+
+#: classes/controllers/FrmProAddressesController.php:155
+#: classes/models/fields/FrmProFieldAddress.php:105
+msgid "City"
+msgstr "城市"
+
+#: classes/controllers/FrmProAddressesController.php:132
+#: classes/controllers/FrmProAddressesController.php:158
+#: classes/models/fields/FrmProFieldAddress.php:108
+#: classes/models/fields/FrmProFieldAddress.php:119
+msgid "Country"
+msgstr "国家/地区"
+
+#: classes/controllers/FrmProAddressesController.php:131
+#: classes/models/fields/FrmProFieldAddress.php:118
+msgid "Line 2"
+msgstr "地址行 2"
+
+#: classes/controllers/FrmProAddressesController.php:130
+#: classes/models/fields/FrmProFieldAddress.php:117
+msgid "Line 1"
+msgstr "地址行 1"
+
+#: classes/controllers/FrmProSettingsController.php:227
+msgid "Show image"
+msgstr "显示图片"
+
+#: classes/views/displays/where_row.php:27
+msgid "Parent entry ID"
+msgstr "父级条目ID"
+
+#: classes/views/frmpro-form-actions/post_options.php:113
+msgid "Date of entry submission"
+msgstr "条目提交日期"
+
+#: classes/views/displays/mb_advanced.php:80
+msgid "No Entries Message"
+msgstr "无条目信息"
+
+#: classes/controllers/FrmProFormsController.php:367
+msgid "User Role"
+msgstr "用户角色"
+
+#: classes/controllers/FrmProFieldsController.php:579
+#: classes/views/frmpro-fields/options-form-before.php:50
+msgid "Select a taxonomy on the Form Actions tab of the Form Settings page"
+msgstr "在表单设置页面的表单动作标签选择一个分类"
+
+#: classes/controllers/FrmProEntriesController.php:1763
+msgid "There are no matching fields. Please check your formresults shortcode to make sure you are using the correct form and field IDs."
+msgstr "没有匹配的字段。请检查表单的短码以确保您正在使用正确的表单和字段ID。"
+
+#: deprecated/FrmUpdatesController.php:344
+msgid "You had an HTTP error connecting to the Formidable Forms API"
+msgstr "您在连接 Formidable Forms API 时遇到 HTTP 错误"
+
+#: deprecated/FrmUpdatesController.php:338
+msgid "You had an error communicating with the Formidable Forms API. %1$sClick here%2$s for more information."
+msgstr "您在与 Formidable Forms API 通信时遇到错误。 %1$sClick 点击这里%2$s 获取更多信息。"
+
+#: classes/views/frmpro-fields/options-form-before.php:14
+msgid "Form Entries"
+msgstr "表单条目"
+
+#: classes/views/frmpro-fields/options-form-before.php:9
+msgid "Load Options From"
+msgstr "载入选项位置"
+
+#: classes/views/displays/mb_dyncontent.php:51
+msgid "It is recommended to check this box if you include a <table> tag in the Before Content box. If you are editing a view and notice the visual tab is selected and your table HTML is missing, you can switch to the HTML tab, go up to your url in your browser and hit enter to reload the page. As long as the settings have not been saved, your old HTML will be back to way it was before loading it in the visual tab."
+msgstr "如果您在’在内容前’中包含了一个 <table> 标记，建议您选中该选项。如果您在编辑一个视图，注意到可视化标签被选中，并且您的表格 HTML 不见了，您可以切换到 HTML标签，在您的浏览器中访问您的链接地址，并点击回车重载页面。只要设置没有保存，您那旧的 HTML 将回到它在可视化标签中载入之前的样子。"
+
+#: classes/views/frmpro-forms/add_form_options.php:175
+msgid "Copy this form to other blogs when Formidable Forms is activated"
+msgstr "在 Formidable Forms 激活时复制该表单到其他博客"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_select.php:17
+msgid "No taxonomies available"
+msgstr "无分类可用"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:25
+msgid "Decimal Places"
+msgstr "小数位"
+
+#: classes/views/displays/mb_advanced.php:59
+msgid "Narrow down which entries will be used. The Unique options uses SQL GROUP BY to make sure only one entry is shown for each value in the selected field(s)."
+msgstr "减少要使用的条目。这个独特的选项可以使用 SQL GROUP BY 来确保在选定的字段中每个值仅有一个条目显示。"
+
+#: classes/views/displays/where_row.php:38
+msgid "IP"
+msgstr "IP地址"
+
+#: deprecated/FrmUpdatesController.php:362
+msgid "A Formidable Forms update is available, but your license is invalid."
+msgstr "有 Formidable Forms 更新可用，但是您的许可无效。"
+
+#: classes/controllers/FrmProGraphsController.php:23
+msgid "You must include a field id or key in your graph shortcode."
+msgstr "您必须在您的图表短码中包含一个字段ID或键。"
+
+#: classes/controllers/FrmProFormsController.php:1005
+msgid "Include draft entries"
+msgstr "包含草稿条目"
+
+#: classes/controllers/FrmProFormsController.php:1004
+msgid "Label on first option in the dropdown"
+msgstr "下拉菜单首选项的标签"
+
+#: classes/controllers/FrmProFormsController.php:1003
+msgid "Add HTML classes"
+msgstr "添加HTML类"
+
+#: classes/controllers/FrmProFormsController.php:999
+#: classes/views/displays/where_row.php:21
+msgid "Entry key"
+msgstr "条目键"
+
+#: classes/controllers/FrmProFormsController.php:997
+msgid "Identify the entry by"
+msgstr "区分条目依据"
+
+#: classes/controllers/FrmProFormsController.php:994
+msgid "URL parameter (?entry=5)"
+msgstr "链接参数（?entry=5）"
+
+#: classes/controllers/FrmProFormsController.php:991
+msgid "The entry in the back-end"
+msgstr "在后端的条目"
+
+#: classes/controllers/FrmProFormsController.php:990
+msgid "An anchor on the page with id=\"[key]\""
+msgstr "用 id=\"[key]\" 在页面上标记的锚点"
+
+#: classes/controllers/FrmProFormsController.php:989
+msgid "A page"
+msgstr "一个页面"
+
+#: classes/controllers/FrmProFormsController.php:987
+msgid "Send users to"
+msgstr "发送用户到"
+
+#: classes/controllers/FrmProFormsController.php:984
+msgid "Delete confirmation message"
+msgstr "删除确认消息"
+
+#: classes/controllers/FrmProFormsController.php:983
+msgid "Delete link label"
+msgstr "删除链接标签"
+
+#: classes/controllers/FrmProFormsController.php:980
+msgid "View only"
+msgstr "仅限浏览"
+
+#: classes/controllers/FrmProFormsController.php:979
+msgid "Edit if allowed"
+msgstr "若允许编辑"
+
+#: classes/controllers/FrmProFormsController.php:977
+msgid "Link action"
+msgstr "链接动作"
+
+#: classes/controllers/FrmProFormsController.php:974
+msgid "The ID of the page to link to"
+msgstr "要链接到的页面ID"
+
+#: classes/controllers/FrmProFormsController.php:971
+msgid "Include all entries"
+msgstr "包含所有条目"
+
+#: classes/controllers/FrmProFormsController.php:970
+msgid "Only include the entries the current user created"
+msgstr "仅包含当前用户创建的条目"
+
+#: classes/controllers/FrmProFormsController.php:968
+msgid "Privacy"
+msgstr "隐私"
+
+#: classes/controllers/FrmProFormsController.php:963
+msgid "Expanding archive"
+msgstr "扩展存档"
+
+#: classes/controllers/FrmProFormsController.php:962
+msgid "Drop down"
+msgstr "下拉菜单"
+
+#: classes/controllers/FrmProFormsController.php:959
+msgid "Display format"
+msgstr "显示格式"
+
+#: classes/controllers/FrmProFormsController.php:956
+msgid "Field ID/key for labels"
+msgstr "标签字段ID/键"
+
+#: classes/controllers/FrmProFormsController.php:818
+msgid "Display a List of Entries"
+msgstr "显示条目列表"
+
+#: classes/controllers/FrmProFormsController.php:818
+msgid "List of Entries"
+msgstr "条目列表"
+
+#: classes/views/frmpro-form-actions/post_options.php:130
+msgid "Pending"
+msgstr "待发布"
+
+#: classes/controllers/FrmProFormActionsController.php:56
+msgid "this action if"
+msgstr "该动作，如果"
+
+#: classes/controllers/FrmProFormActionsController.php:55
+msgid "Don't do"
+msgstr "不执行"
+
+#: classes/controllers/FrmProFormActionsController.php:54
+msgid "Do"
+msgstr "执行"
+
+#: classes/controllers/FrmProFormActionsController.php:52
+msgid "user if"
+msgstr "用户，如果"
+
+#: classes/controllers/FrmProFormActionsController.php:51
+msgid "Don't register"
+msgstr "不注册"
+
+#: classes/controllers/FrmProFormActionsController.php:50
+msgid "Register"
+msgstr "注册"
+
+#: classes/controllers/FrmProFormActionsController.php:48
+msgid "this post if"
+msgstr "该文章，如果"
+
+#: classes/controllers/FrmProFormActionsController.php:47
+msgid "Don't create"
+msgstr "不创建"
+
+#: classes/controllers/FrmProSettingsController.php:211
+msgid "For Each"
+msgstr "每个"
+
+#: classes/models/fields/FrmProFieldCaptcha.php:58
+msgid "The captcha is missing from this form"
+msgstr "当前表单验证码丢失"
+
+#: classes/views/frmpro-statistics/show.php:28
+msgid "Users Submitted"
+msgstr "用户提交的"
+
+#: classes/views/frmpro-forms/add_form_options.php:78
+msgid "Role required to edit other users' entries"
+msgstr "可编辑他人的条目需要的角色"
+
+#: classes/views/frmpro-forms/add_form_options.php:61
+msgid "Role required to edit one's own entries"
+msgstr "可编辑自己的条目需要的角色"
+
+#: classes/views/frmpro-forms/add_form_options.php:55
+msgid "Allow front-end editing of entries"
+msgstr "允许前端编辑条目"
+
+#: classes/views/frmpro-forms/add_form_options.php:27
+msgid "Limit number of entries %1$sto one per%2$s"
+msgstr "限制条目数量 %1$sto 一个/%2$s"
+
+#: classes/views/frmpro-forms/add_form_options.php:7
+msgid "Determine who can see, submit, and edit form entries."
+msgstr "决定谁可以查看、提交和编辑表单条目。"
+
+#: classes/views/frmpro-forms/add_form_msg_options.php:17
+msgid "Saved Draft"
+msgstr "保存的草稿"
+
+#: classes/views/frmpro-forms/add_form_msg_options.php:9
+#: classes/views/frmpro-forms/add_form_options.php:91
+msgid "On Update"
+msgstr "更新时"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:34
+msgid "Center"
+msgstr "居中"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:28
+msgid "Submit Button Alignment"
+msgstr "提交按钮对齐方式"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:18
+msgid "Previous Button Text"
+msgstr "上一页按钮文本"
+
+#: classes/views/frmpro-form-actions/post_options.php:53
+msgid "Customize post content"
+msgstr "自定义文章内容"
+
+#: classes/views/frmpro-form-actions/post_options.php:50
+msgid "Use a single field"
+msgstr "使用一个字段"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:31
+msgid "&mdash; Select a Field &mdash;"
+msgstr "&Mdash; 选择字段 &mdash;"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:16
+#: classes/views/frmpro-form-actions/_post_taxonomy_select.php:7
+msgid "&mdash; Select a Taxonomy &mdash;"
+msgstr "&mdash; 选择分类 &mdash;"
+
+#: classes/views/frmpro-form-actions/post_options.php:231
+#: classes/views/frmpro-form-actions/_custom_field_row.php:45
+msgid "Value"
+msgstr "值"
+
+#: classes/views/frmpro-fields/back-end/confirmation.php:18
+msgid "Below Field"
+msgstr "字段下方"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:25
+msgid "Remove Label"
+msgstr "移除标签"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:20
+msgid "Add New Label"
+msgstr "新建标签"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:14
+msgid "Text links with icons"
+msgstr "带图标的文本链接"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:11
+msgid "Text links"
+msgstr "文本链接"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:7
+msgid "Repeat Links"
+msgstr "重复链接"
+
+#: classes/views/frmpro-fields/back-end/repeat-options.php:8
+msgid "Repeat Limit"
+msgstr "重复限制"
+
+#: classes/views/frmpro-fields/back-end/repeat-options-top.php:16
+msgid "Grid: Display labels as headings above rows of fields"
+msgstr "网格：在字段上方显示标签为标题"
+
+#: classes/views/frmpro-fields/back-end/repeat-options-top.php:13
+msgid "Inline: Display each field and label in one row"
+msgstr "内联：在一行中显示每个字段和标签"
+
+#: classes/views/frmpro-fields/back-end/repeat-options-top.php:11
+msgid "Default: No automatic formatting"
+msgstr "默认：不做自动格式化"
+
+#: classes/views/frmpro-fields/back-end/repeat-options-top.php:8
+msgid "Repeat Layout"
+msgstr "重复布局"
+
+#: classes/views/frmpro-fields/back-end/separate-values.php:10
+msgid "Add a separate value to use for calculations, email routing, saving to the database, and many other uses. The option values are saved while the option labels are shown in the form. Use [%s] to show the saved value in emails or views."
+msgstr "添加区分值用于计算、邮件路由、存入数据库以及其它用途。选项值用来保存，而选项标签则显示在表单中。用 [%s] 在邮件和视图中显示保存值。"
+
+#: classes/views/frmpro-fields/options-form-top.php:11
+msgid "Collapsible: This section will slide open and closed."
+msgstr "可折叠：该段落将滑动打开和关闭。"
+
+#: classes/views/frmpro-fields/options-form-before.php:21
+msgid "Category/Taxonomy"
+msgstr "类别/分类"
+
+#: classes/controllers/FrmProLookupFieldsController.php:149
+#: classes/views/frmpro-fields/field-selection.php:7
+#: classes/views/frmpro-form-actions/_custom_field_row.php:47
+#: classes/views/lookup-fields/back-end/watch-row.php:8
+msgid "&mdash; Select Field &mdash;"
+msgstr "&mdash;选择字段&mdash;"
+
+#: classes/views/displays/mb_dyncontent.php:26
+msgid "This is the detail page for a single entry in this form"
+msgstr "这是该表单中一个条目的详情页面"
+
+#: classes/views/displays/mb_dyncontent.php:23
+msgid "This page lists multiple entries. Link to a single entry/detail page using [detaillink]"
+msgstr "该页面列出多个条目。使用 [detaillink] 连接到单个条目/详情页面"
+
+#: classes/views/displays/mb_dyncontent.php:12
+#: classes/views/displays/mb_dyncontent.php:13
+#: classes/views/displays/mb_dyncontent.php:18
+msgid "Detail Page"
+msgstr "详情页面"
+
+#: classes/views/displays/mb_dyncontent.php:12
+#: classes/views/displays/mb_dyncontent.php:13
+msgid "Listing Page"
+msgstr "列表页面"
+
+#: classes/views/displays/mb_advanced.php:102
+msgid "Detail Page Slug"
+msgstr "详情页面别名"
+
+#: classes/views/displays/mb_advanced.php:32
+msgid "Sort & Filter"
+msgstr "排序与过滤"
+
+#: classes/helpers/FrmProFieldsHelper.php:2370
+msgid "Confirm"
+msgstr "确认"
+
+#: classes/controllers/FrmProStylesController.php:230
+msgid "Your styling settings have been deleted."
+msgstr "您的样式设置已删除。"
+
+#: classes/controllers/FrmProGraphsController.php:261
+msgid "No data"
+msgstr "无数据"
+
+#: classes/controllers/FrmProFormsController.php:947
+msgid "Alternate background color"
+msgstr "替代背景色"
+
+#: classes/controllers/FrmProFormsController.php:945
+msgid "Border color"
+msgstr "边框颜色"
+
+#: classes/controllers/FrmProFormsController.php:944
+msgid "Border width"
+msgstr "边框宽度"
+
+#: classes/controllers/FrmProFormsController.php:943
+msgid "Text color"
+msgstr "文字颜色"
+
+#: classes/controllers/FrmProFormsController.php:942
+msgid "Font size"
+msgstr "字号"
+
+#: classes/controllers/FrmProFormsController.php:941
+msgid "Use RTL format"
+msgstr "使用RTL格式"
+
+#: classes/controllers/FrmProFormsController.php:940
+msgid "Do not include any HTML"
+msgstr "不包含任何HTML"
+
+#: classes/controllers/FrmProFormsController.php:939
+msgid "Include rows for blank fields"
+msgstr "包含空字段的行"
+
+#: classes/controllers/FrmProFormsController.php:938
+msgid "Include user info like browser and IP"
+msgstr "包含用户信息，如浏览器和IP地址"
+
+#: classes/controllers/FrmProFormsController.php:931
+msgid "Insert an entry ID/key:"
+msgstr "插入条目ID/键："
+
+#: classes/controllers/FrmProFormsController.php:920
+msgid "Turn your pie graph three-dimensional"
+msgstr "将您的饼图变成三维的"
+
+#: classes/controllers/FrmProFormsController.php:918
+msgid "Title font name"
+msgstr "标题字体名称"
+
+#: classes/controllers/FrmProFormsController.php:917
+msgid "Title font size"
+msgstr "标题字体大小"
+
+#: classes/controllers/FrmProFormsController.php:916
+msgid "Graph title"
+msgstr "图表标题"
+
+#: classes/controllers/FrmProFormsController.php:915
+#: classes/controllers/FrmProFormsController.php:946
+msgid "Background color"
+msgstr "背景颜色"
+
+#: classes/controllers/FrmProFormsController.php:910
+msgid "Average the totaled field values"
+msgstr "对字段值总数取平均值"
+
+#: classes/controllers/FrmProFormsController.php:909
+msgid "Add the field values together"
+msgstr "将字段值加总"
+
+#: classes/controllers/FrmProFormsController.php:908
+msgid "The number of entries"
+msgstr "条目数量"
+
+#: classes/controllers/FrmProFormsController.php:906
+msgid "Data Type"
+msgstr "数据类型"
+
+#: classes/controllers/FrmProFormsController.php:901
+msgid "Stepped Area"
+msgstr "阶梯图"
+
+#: classes/controllers/FrmProFormsController.php:897
+msgid "Area"
+msgstr "区域图"
+
+#: classes/controllers/FrmProFormsController.php:896
+msgid "Line"
+msgstr "折线图"
+
+#: classes/controllers/FrmProFormsController.php:895
+msgid "Pie"
+msgstr "饼图"
+
+#: classes/controllers/FrmProFormsController.php:893
+msgid "Column"
+msgstr "列式"
+
+#: classes/controllers/FrmProFormsController.php:891
+msgid "Graph Type"
+msgstr "图表类型"
+
+#: classes/views/frmpro-fields/options-form-before.php:43
+#: classes/views/frmpro-form-actions/post_options.php:58
+#: classes/views/lookup-fields/back-end/get-options-from.php:24
+msgid "Select a Field"
+msgstr "选择一个字段"
+
+#: classes/controllers/FrmProFormsController.php:858
+msgid "The ID of the page with the search results"
+msgstr "搜索结果页面的ID"
+
+#: classes/controllers/FrmProFormsController.php:853
+msgid "Customize search button"
+msgstr "自定义搜索按钮"
+
+#: classes/controllers/FrmProFormsController.php:850
+msgid "Use Formidable styling"
+msgstr "使用 Formidable 样式"
+
+#: classes/controllers/FrmProFormsController.php:839
+msgid "Make read-only fields editable"
+msgstr "使只读字段可编辑"
+
+#: classes/controllers/FrmProFormsController.php:817
+msgid "Display a Single Entry"
+msgstr "显示单个条目"
+
+#: classes/controllers/FrmProFormsController.php:817
+msgid "Single Entry"
+msgstr "单个条目"
+
+#: classes/controllers/FrmProFormsController.php:816
+msgid "Add a Search Form"
+msgstr "添加一个搜索表单"
+
+#: classes/controllers/FrmProFormsController.php:815
+msgid "Insert a Graph"
+msgstr "插入一个图表"
+
+#: classes/controllers/FrmProFormsController.php:815
+msgid "Graph"
+msgstr "图表"
+
+#: classes/controllers/FrmProEntriesController.php:3023
+msgid "Resent to No one! You do not have permission"
+msgstr "不会重发给任何人！您没有权限"
+
+#: classes/controllers/FrmProEntriesController.php:3020
+msgid "Resent to %s"
+msgstr "重发至 %s"
+
+#: classes/controllers/FrmProEntriesController.php:1323
+#: classes/controllers/FrmProEntriesController.php:1399
+msgid "You are trying to access an entry that does not exist."
+msgstr "您正在访问一个并不存在的条目。"
+
+#: classes/views/styles/_section-fields.php:109
+msgid "Before Heading"
+msgstr "在标题前"
+
+#: classes/views/styles/_section-fields.php:106
+msgid "After Heading"
+msgstr "在标题后"
+
+#: classes/views/styles/_section-fields.php:103
+msgid "Icon Position"
+msgstr "图标位置"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:9
+#: classes/views/styles/_repeater-fields.php:7
+#: classes/views/styles/_section-fields.php:98
+msgid "Icons"
+msgstr "图标"
+
+#: classes/views/styles/_section-fields.php:80
+msgid "bottom"
+msgstr "底部"
+
+#: classes/views/styles/_section-fields.php:77
+msgid "top"
+msgstr "顶部"
+
+#: classes/views/styles/_section-fields.php:74
+msgid "Border Position"
+msgstr "边框位置"
+
+#: classes/views/styles/_section-fields.php:36
+msgid "Top Margin"
+msgstr "上边距"
+
+#: classes/views/styles/_sample_form.php:7
+msgid "Repeatable Section"
+msgstr "可重复段落"
+
+#: classes/views/styles/_sample_form.php:57
+msgid "Collapsible Section"
+msgstr "可折叠段落"
+
+#: classes/views/styles/_style-dropdown.php:18
+msgid "default"
+msgstr "默认"
+
+#: classes/views/frmpro-forms/add_form_options.php:103
+msgid "Show Page Content"
+msgstr "显示页面内容"
+
+#: classes/views/frmpro-forms/add_form_options.php:97
+msgid "Show Message"
+msgstr "显示信息"
+
+#: classes/views/frmpro-form-actions/post_action.php:18
+msgid "Create Post"
+msgstr "创建文章"
+
+#: classes/controllers/FrmProEntriesController.php:1708
+msgid "Parent Entry ID"
+msgstr "父级条目ID"
+
+#: classes/models/FrmProDb.php:920
+msgid "Formidable Style"
+msgstr "Formidable 样式"
+
+#: classes/views/styles/_style_switcher.php:8
+msgid "New Style"
+msgstr "新样式"
+
+#: classes/controllers/FrmProFormsController.php:961
+#: classes/controllers/FrmProLookupFieldsController.php:20
+#: classes/models/fields/FrmProFieldData.php:67
+msgid "List"
+msgstr "列表"
+
+#: classes/views/frmpro-fields/options-form-top.php:10
+msgid "Collapsible"
+msgstr "可折叠"
+
+#: classes/controllers/FrmProStylesController.php:25
+msgid "Date Fields"
+msgstr "日期字段"
+
+#: classes/controllers/FrmProStylesController.php:23
+msgid "Section Fields"
+msgstr "段落字段"
+
+#: classes/controllers/FrmProXMLController.php:64
+msgid "Styles"
+msgstr "样式"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:9
+msgid "Type"
+msgstr "类型"
+
+#: classes/views/frmpro-fields/options-form-before.php:28
+msgid "Select a Form"
+msgstr "选择一个表单"
+
+#: classes/controllers/FrmProFieldsController.php:367
+msgid "Other"
+msgstr "其它"
+
+#: classes/helpers/FrmProFieldsHelper.php:870
+msgid "The entered values do not match"
+msgstr "输入值不匹配"
+
+#: classes/views/frmpro-fields/field-selection.php:19
+#: classes/views/lookup-fields/back-end/watch-row.php:19
+msgid "(no label)"
+msgstr "（无标签）"
+
+#: classes/controllers/FrmProXMLController.php:174
+msgid "That CSV was not uploaded. Are CSV files allowed on your site?"
+msgstr "该CSV文件未上传。您的网站允许CSV文件么？"
+
+#: classes/models/FrmProFieldUserIDValueSelector.php:25
+msgid "Current User"
+msgstr "当前用户"
+
+#: classes/views/displays/_calendar_options.php:57
+msgid "Never"
+msgstr "永不"
+
+#: classes/views/displays/_calendar_options.php:55
+msgid "End Repeat"
+msgstr "结束重复"
+
+#: classes/views/displays/_calendar_options.php:46
+msgid "No repeating events"
+msgstr "无重复事件"
+
+#: classes/views/displays/_calendar_options.php:43
+msgid "Select a field from your form that contains values like 1 week, 2 weeks, 1 year, etc. This will set the repeat period for each event."
+msgstr "从您的表单中选择包含如1周、2周、1年等值的字段。这会为每个事件设置重复期间。"
+
+#: classes/views/displays/_calendar_options.php:42
+msgid "Repeat"
+msgstr "重复"
+
+#: classes/views/displays/_calendar_options.php:24
+msgid "End Date or Day Count"
+msgstr "结束日期或天数"
+
+#: classes/views/displays/_calendar_options.php:8
+msgid "Event Date"
+msgstr "事件日期"
+
+#: classes/controllers/FrmProFormsController.php:380
+msgid "Replace 'whatever' with the parameter name. To get the url of the current page, use [server param=\"REQUEST_URI\"] in your field."
+msgstr "将 'whatever' 替换为参数名称。要取得当前页面的链接，在您的字段中使用 [server param=\"REQUEST_URI\"]。"
+
+#: classes/controllers/FrmProFormsController.php:380
+msgid "A variable from the PHP SERVER array."
+msgstr "一个来自PHP服务器数组的变量。"
+
+#: classes/controllers/FrmProEntriesController.php:2739
+msgid "You are missing options in your shortcode. field_id is required."
+msgstr "您的短码缺少选项。field_id 是必须的。"
+
+#: classes/views/displays/mb_dyncontent.php:49
+msgid "Disable visual editor for this view"
+msgstr "禁用该视图的可视化编辑器"
+
+#: classes/controllers/FrmProXMLController.php:43
+msgid "Choose a Formidable XML or any CSV file"
+msgstr "选择一个 Formidable XML或任意CSV文件"
+
+#: classes/controllers/FrmProXMLController.php:39
+msgid "Upload your Formidable XML or CSV file to import forms, entries, and views into this site. Note: If your imported form/entry/view key and creation date match an item on your site, that item will be updated. You cannot undo this action."
+msgstr "上传您的 Formidable XML或CSV文件，向本站导入表单、条目和视图。注意：如果您导入的表单/条目/视图主键和创建日期与您网站的某个项目匹配，那么这个项目将被更新。您不能撤销该操作。"
+
+#: classes/views/xml/map_csv_fields.php:112
+msgid "Is Draft"
+msgstr "是草稿"
+
+#: classes/views/frmpro-fields/options-form-before.php:12
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash;选择&mdash;"
+
+#: classes/models/fields/FrmProFieldToggle.php:28
+msgid "Yes"
+msgstr "是"
+
+#: classes/models/fields/FrmProFieldToggle.php:29
+msgid "No"
+msgstr "否"
+
+#: classes/controllers/FrmProFormsController.php:879
+msgid "(no title)"
+msgstr "（无标题）"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:46
+msgid "Description"
+msgstr "描述"
+
+#: classes/views/frmpro-form-actions/post_options.php:228
+msgid "Name"
+msgstr "姓名"
+
+#: classes/widgets/FrmListEntries.php:233
+msgid "Views with a \"Both (Dynamic)\" format will show here."
+msgstr "\"两者（动态）\"格式的视图将显示在这里。"
+
+#: classes/widgets/FrmListEntries.php:223
+msgid "Use Settings from View"
+msgstr "使用视图设置"
+
+#: classes/views/xml/map_csv_fields.php:130
+msgid "Note: If you select a field for the Entry ID or Entry Key, the matching entry with that ID or key will be updated."
+msgstr "注意：如果您选择一个字段作为条目ID或条目键，那么与该ID或键匹配的条目将被更新。"
+
+#: classes/views/xml/import_csv.php:19
+msgid "%1$s entries are importing"
+msgstr "%1$s 个条目正在导入"
+
+#: classes/views/settings/messages.php:17
+msgid "The label on the submit button when editing and entry."
+msgstr "编辑条目时的提交按钮上的标签。"
+
+#: classes/views/settings/messages.php:16
+msgid "Update Button"
+msgstr "更新按钮"
+
+#: classes/views/settings/messages.php:9
+msgid "The default message seen when after an entry is updated."
+msgstr "当一个条目被更新时看到的默认消息。"
+
+#: classes/views/settings/messages.php:8
+msgid "Edit Message"
+msgstr "编辑提示信息"
+
+#: classes/views/frmpro-fields/back-end/calendar.php:9
+msgid "Use four digit years or +/- years to make it dynamic. For example, use -5 for the start year and +5 for the end year."
+msgstr "使用4位的年或者+/-年数来动态调整。例如，使用-5设置开始年，+5设置结束年。"
+
+#: classes/views/frmpro-fields/back-end/visibility.php:8
+msgid "Visibility"
+msgstr "可见性"
+
+#: classes/views/xml/map_csv_fields.php:102
+msgid "updated at"
+msgstr "更新日期"
+
+#: classes/views/xml/map_csv_fields.php:102
+msgid "last updated"
+msgstr "最后更新"
+
+#: classes/views/xml/map_csv_fields.php:15
+msgid "Map Fields"
+msgstr "地图字段"
+
+#: classes/views/xml/csv_opts.php:31
+msgid "Note: Only entries can by imported via CSV."
+msgstr "注意：只有条目可以通过CSV导入。"
+
+#: classes/views/xml/import_csv.php:15
+msgid "Importing CSV"
+msgstr "正在导入 CSV"
+
+#: classes/controllers/FrmProFormsController.php:1023
+msgid "Even/Odd"
+msgstr "偶数/奇数"
+
+#: classes/views/xml/map_csv_fields.php:105
+msgid "updated by"
+msgstr "更新者"
+
+#: classes/controllers/FrmProFormsController.php:373
+msgid "Increment"
+msgstr "增量"
+
+#: classes/controllers/FrmProFormsController.php:671
+msgid "# Format"
+msgstr "数字格式"
+
+#: classes/controllers/FrmProEddController.php:228
+msgid "Enter your license key here"
+msgstr "在这里输入您的许可密钥"
+
+#: classes/controllers/FrmProFormsController.php:1021
+msgid "Entry Count"
+msgstr "条目计数"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:95
+msgid "Check All Level %d"
+msgstr "选择全部级别 %d"
+
+#: classes/views/displays/mb_form_disp_type.php:20
+msgid "View Format"
+msgstr "视图格式"
+
+#: classes/views/displays/mb_dyncontent.php:42
+msgid "The HTML for your page. If 'All Entries' is selected above, this content will be repeated for each entry. The field ID and Key work synonymously, although there are times one choice may be better. If you are panning to copy your view settings to other blogs, use the Key since they will be copied and the ids may differ from blog to blog."
+msgstr "您页面的 HTML。如果在上面选择了'所有条目'，该内容将为每个条目重复。字段ID和主键是等价的，尽管有些情况下一个选项可能更好一些。如果您计划将视图设置复制到其他博客，那么请使用主键，因为主键可复制，而ID则每个博客都不同。"
+
+#: classes/helpers/FrmProEntriesHelper.php:411
+msgid "Download CSV"
+msgstr "下载 CSV"
+
+#: classes/controllers/FrmProXMLController.php:205
+msgid "CSV cannot be opened."
+msgstr "CSV文件无法打开。"
+
+#: classes/controllers/FrmProEntriesController.php:138
+msgid "Draft was Successfully Updated"
+msgstr "草稿成功更新"
+
+#: classes/controllers/FrmProEntriesController.php:101
+msgid "Draft was Successfully Created"
+msgstr "草稿成功创建"
+
+#: classes/views/frmpro-entries/new.php:30
+msgid "You did not add any fields to your form. %1$sGo back%2$s and add some."
+msgstr "您未向表单添加任何字段。 %1$s返回%2$s 并添加几个。"
+
+#: classes/views/frmpro-entries/new.php:29
+msgid "Oops!"
+msgstr "哎哟！"
+
+#: deprecated/FrmUpdatesController.php:354
+msgid "There was a %1$s error: %2$s"
+msgstr "出现了 %1$s 错误： %2$s"
+
+#: classes/controllers/FrmProSimpleBlocksController.php:31
+#: classes/controllers/FrmProXMLController.php:63 js/src/view/viewselect.js:39
+msgid "Views"
+msgstr "视图"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:8
+msgid "Update Button Text"
+msgstr "更新按钮文本"
+
+#: classes/views/frmpro-forms/add_form_options.php:139
+msgid "Allow logged-in users to save drafts"
+msgstr "允许已登录用户保存草稿"
+
+#: classes/helpers/FrmProFormsHelper.php:453
+#: classes/helpers/FrmProFormsHelper.php:814
+msgid "Your draft has been saved."
+msgstr "您的草稿已保存。"
+
+#: classes/controllers/FrmProFormsController.php:609
+msgid "Save Draft"
+msgstr "保存草稿"
+
+#: classes/controllers/FrmProEntriesController.php:1707
+#: classes/views/displays/where_options.php:31
+msgid "Draft"
+msgstr "草稿"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:52
+#: classes/views/displays/mb_advanced.php:41
+#: classes/views/displays/mb_advanced.php:64
+#: classes/views/frmpro-fields/back-end/logic.php:45
+#: classes/views/styles/_sample_form.php:49
+msgid "Add"
+msgstr "添加"
+
+#: classes/models/fields/FrmProFieldBreak.php:31
+msgid "Next"
+msgstr "下一个"
+
+#: classes/controllers/FrmProFormsController.php:590
+#: classes/helpers/FrmProFormsHelper.php:463
+#: classes/models/fields/FrmProFieldBreak.php:71
+msgid "Previous"
+msgstr "前一个"
+
+#: classes/views/frmpro-fields/back-end/calculations.php:8
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:27
+msgid "Default Value"
+msgstr "默认值"
+
+#: classes/controllers/FrmProFormsController.php:375
+msgid "GET/POST"
+msgstr "GET/POST"
+
+#: classes/controllers/FrmProFormsController.php:361
+msgid "Login"
+msgstr "登录"
+
+#: classes/controllers/FrmProFormsController.php:303
+msgid "Button Label"
+msgstr "按钮标签"
+
+#: classes/views/frmpro-fields/back-end/confirmation.php:15
+#: classes/views/frmpro-forms/add_form_button_options.php:37
+msgid "Inline"
+msgstr "内联"
+
+#: deprecated/FrmUpdatesController.php:358
+msgid "Your License Key was invalid"
+msgstr "您的许可密钥无效"
+
+#: deprecated/FrmUpdatesController.php:234
+msgid "An update is available, but your license is %s."
+msgstr "有更新可用，但是您的许可 %s。"
+
+#: deprecated/FrmUpdatesController.php:233
+msgid "invalid"
+msgstr "无效"
+
+#: deprecated/FrmUpdatesController.php:233
+msgid "expired"
+msgstr "已过期"
+
+#: deprecated/FrmUpdatesController.php:98
+#: deprecated/FrmUpdatesController.php:130
+msgid "Please enter a license number"
+msgstr "请输入一个许可号码"
+
+#: classes/controllers/FrmProEddController.php:242
+msgid "Save License"
+msgstr "保存许可"
+
+#: classes/controllers/FrmProEddController.php:252
+msgid "Use this license to enable Formidable Pro site-wide"
+msgstr "使用这个许可在全站范围启用 Formidable 专业版"
+
+#: deprecated/FrmUpdatesController.php:37
+msgid "Your Formidable Pro License was Invalid"
+msgstr "您的 Formidable 专业版许可无效"
+
+#: classes/views/frmpro-fields/back-end/visibility.php:27
+msgid "Logged-out Users"
+msgstr "登出用户"
+
+#: classes/views/frmpro-fields/back-end/visibility.php:21
+#: classes/views/frmpro-forms/add_form_options.php:158
+msgid "Everyone"
+msgstr "所有人"
+
+#: classes/views/frmpro-forms/add_form_ajax_options.php:10
+msgid "Submit this form with AJAX"
+msgstr "用 AJAX 提交该表单"
+
+#: classes/views/frmpro-fields/_logic_row.php:58
+msgid "not like"
+msgstr "不包含"
+
+#: classes/views/xml/import_csv.php:7 classes/views/xml/map_csv_fields.php:7
+msgid "Import/Export"
+msgstr "导入/导出"
+
+#: classes/controllers/FrmProFormsController.php:674
+msgid "Javascript from your form entries are automatically removed. Add this option only if you trust those submitting entries."
+msgstr "表单条目中的Javascript脚本会被自动移除。仅当您信任那些提交的条目时才添加该选项。"
+
+#: classes/controllers/FrmProFormsController.php:674
+msgid "Keep JS"
+msgstr "保留JS"
+
+#: classes/controllers/FrmProFormsController.php:673
+msgid "Remove all HTML added into your form before display"
+msgstr "在显示前移除添加到表单中的所有HTML"
+
+#: classes/controllers/FrmProFormsController.php:673
+msgid "Remove HTML"
+msgstr "移除HTML"
+
+#: classes/controllers/FrmProFormsController.php:655
+msgid "Removes the automatic links to category pages"
+msgstr "移除指向分类页面的自动链接"
+
+#: classes/controllers/FrmProFormsController.php:655
+msgid "Remove Links"
+msgstr "移除链接"
+
+#: classes/controllers/FrmProFormActionsController.php:44
+msgid "this notification if"
+msgstr "该通知，如果"
+
+#: classes/controllers/FrmProFormActionsController.php:43
+msgid "Stop"
+msgstr "停止"
+
+#: classes/controllers/FrmProFormActionsController.php:42
+msgid "Send"
+msgstr "发送"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:53
+#: classes/views/styles/_sample_form.php:45
+msgid "Remove"
+msgstr "移除"
+
+#: classes/models/FrmProFieldDynamicValueSelector.php:50
+msgid "Anything"
+msgstr "任何东西"
+
+#: classes/views/displays/where_row.php:15
+msgid "Entry updated date"
+msgstr "条目更新日期"
+
+#: classes/views/displays/mb_advanced.php:58
+msgid "Filter Entries"
+msgstr "过滤条目"
+
+#: classes/controllers/FrmProSettingsController.php:221
+msgid "Field From Entry"
+msgstr "条目的字段"
+
+#: classes/controllers/FrmProGraphsController.php:1718
+#: classes/controllers/FrmProGraphsController.php:1750
+#: classes/controllers/FrmProSettingsController.php:220
+msgid "Creation Date"
+msgstr "创建日期"
+
+#: classes/controllers/FrmProSettingsController.php:229
+msgid "Image Name"
+msgstr "图片名称"
+
+#: classes/controllers/FrmProSettingsController.php:228
+#: classes/views/frmpro-fields/back-end/image-selector.php:11
+msgid "Image ID"
+msgstr "图片ID"
+
+#: classes/helpers/FrmProEntriesHelper.php:349
+msgid "Resend Email Notifications"
+msgstr "重发邮件通知"
+
+#: classes/controllers/FrmProFormsController.php:362
+msgid "Display Name"
+msgstr "显示名称"
+
+#: classes/controllers/FrmProFormsController.php:364
+msgid "Last Name"
+msgstr "姓氏"
+
+#: classes/controllers/FrmProFormsController.php:363
+msgid "First Name"
+msgstr "名字"
+
+#: classes/controllers/FrmProFormsController.php:664
+msgid "Time Ago"
+msgstr "时间差"
+
+#: classes/controllers/FrmProFormsController.php:662
+msgid "More Text"
+msgstr "更多文本"
+
+#: classes/controllers/FrmProFormsController.php:661
+msgid "Truncate"
+msgstr "截断"
+
+#: classes/controllers/FrmProFormsController.php:658
+msgid "Sanitize URL"
+msgstr "格式化链接"
+
+#: classes/controllers/FrmProFormsController.php:656
+msgid "Sanitize"
+msgstr "格式化"
+
+#: classes/controllers/FrmProFormsController.php:654
+msgid "Clickable Links"
+msgstr "可点链接"
+
+#: classes/controllers/FrmProFormsController.php:645
+msgid "Less Than"
+msgstr "小于"
+
+#: classes/controllers/FrmProFormsController.php:644
+msgid "Greater Than"
+msgstr "大于"
+
+#: classes/controllers/FrmProFormsController.php:643
+msgid "Is Not Like"
+msgstr "不包含"
+
+#: classes/controllers/FrmProFormsController.php:642
+msgid "Is Like"
+msgstr "包含"
+
+#: classes/controllers/FrmProFormsController.php:641
+msgid "Does Not Equal"
+msgstr "不等于"
+
+#: classes/controllers/FrmProFormsController.php:640
+msgid "Equals"
+msgstr "等于"
+
+#: classes/controllers/FrmProFormsController.php:1020
+msgid "Edit Entry Link"
+msgstr "编辑条目链接"
+
+#: classes/views/frmpro-fields/back-end/image-options.php:37
+msgid "Hide option labels"
+msgstr "隐藏选项标签"
+
+#: classes/controllers/FrmProFormsController.php:672
+msgid "Show the saved value for fields with separate values."
+msgstr "对使用区别值的字段显示保存的值。"
+
+#: classes/views/frmpro-forms/add_form_options.php:47
+msgid "Cookie Expiration"
+msgstr "Cookie 过期时间"
+
+#: classes/views/frmpro-form-actions/post_options.php:136
+msgid "Create New Dropdown Field"
+msgstr "新建下拉菜单字段"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:33
+msgid "A New Checkbox Field"
+msgstr "一个新的复选框字段"
+
+#: classes/controllers/FrmProFormsController.php:665
+msgid "How long ago a date was in minutes, hours, days, months, or years."
+msgstr "用分钟、小时、天、月或年来度量一个日期是在多久之前。"
+
+#: classes/models/FrmProForm.php:238
+msgid "Status"
+msgstr "状态"
+
+#: classes/views/frmpro-forms/add_form_options.php:49
+msgid "hours"
+msgstr "时"
+
+#: classes/controllers/FrmProEntriesController.php:1280
+msgid "Copied from Post"
+msgstr "从文章中复制"
+
+#: classes/controllers/FrmProEntriesController.php:1237
+msgid "Create Entry in Form"
+msgstr "在表单中创建条目"
+
+#: classes/controllers/FrmProEntriesController.php:2996
+msgid "There was an error deleting that entry"
+msgstr "删除条目时遇到问题"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:32
+msgid "Default"
+msgstr "默认"
+
+#: classes/views/frmpro-fields/back-end/separate-values.php:9
+msgid "Use separate values"
+msgstr "使用区分值"
+
+#: classes/views/xml/map_csv_fields.php:96
+msgid "Timestamp"
+msgstr "时间戳"
+
+#: classes/controllers/FrmProFormsController.php:672
+#: classes/views/frmpro-fields/back-end/product-single-option.php:19
+msgid "Saved Value"
+msgstr "保存值"
+
+#: classes/controllers/FrmProEntriesController.php:3017
+msgid "no one"
+msgstr "没有人"
+
+#: classes/helpers/FrmProFieldsHelper.php:2996
+msgid "Site Name"
+msgstr "网站名称"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:69
+msgid "Specify allowed types"
+msgstr "指定允许的类型"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:59
+msgid "Allowed file types"
+msgstr "允许的文件类型"
+
+#: classes/views/displays/_calendar_options.php:26
+msgid "No multi-day events"
+msgstr "无多日事件"
+
+#: classes/controllers/FrmProEntriesController.php:2691
+#: classes/controllers/FrmProEntriesController.php:2980
+msgid "Your entry was successfully deleted"
+msgstr "您的条目成功删除"
+
+#: classes/views/settings/white-label.php:15
+msgid "Use this menu name site-wide"
+msgstr "全站范围使用该菜单名"
+
+#: classes/helpers/FrmProEntriesListHelper.php:20
+msgid "Export to CSV"
+msgstr "导出为 CSV"
+
+#: classes/controllers/FrmProEntriesController.php:303
+msgid "No form was found"
+msgstr "未找到表单"
+
+#: classes/views/frmpro-statistics/select.php:19
+msgid "Select a report to view."
+msgstr "选择要查看的报表。"
+
+#: classes/views/frmpro-entries/new-selection.php:26
+#: classes/views/frmpro-statistics/select.php:26
+msgid "Go"
+msgstr "确定"
+
+#: classes/views/frmpro-entries/new-selection.php:19
+msgid "Select a form for your new entry."
+msgstr "为您的新条目选择一个表单。"
+
+#: classes/helpers/FrmProEntriesHelper.php:385
+msgid "Delete All Entries"
+msgstr "删除所有条目"
+
+#: classes/controllers/FrmProXMLController.php:162
+msgid "All Fields are required"
+msgstr "所有字段均为必填"
+
+#: classes/views/frmpro-forms/add_form_options.php:100
+msgid "Redirect to URL"
+msgstr "跳转至链接"
+
+#: classes/views/frmpro-form-actions/post_options.php:192
+msgid "Taxonomies/Categories"
+msgstr "分类/类别"
+
+#: classes/views/frmpro-form-actions/post_options.php:133
+msgid "Automatically Publish"
+msgstr "自动发布"
+
+#: classes/views/frmpro-form-actions/post_options.php:127
+msgid "Create Draft"
+msgstr "创建草稿"
+
+#: classes/views/frmpro-form-actions/post_options.php:100
+msgid "Automatically Generate from Post Title"
+msgstr "从文章标题自动生成"
+
+#: classes/views/frmpro-form-actions/post_options.php:84
+msgid "Post Password"
+msgstr "文章密码"
+
+#: classes/views/frmpro-form-actions/post_options.php:10
+msgid "To setup a new custom post type, install and setup a plugin like 'Custom Post Type UI', then return to this page to select your new custom post type."
+msgstr "要设置一个新的自定义文章类型，请安装设置像 'Custom Post Type UI’ 这样的插件，然后返回该页面，选择您新的自定义文章类型。"
+
+#: classes/views/frmpro-fields/back-end/calendar.php:14
+msgid "Start"
+msgstr "开始"
+
+#: classes/views/settings/form.php:20
+msgid "Change the format of the date used in the date field."
+msgstr "改变日期字段中日期的格式。"
+
+#: classes/views/frmpro-fields/back-end/field-data.php:40
+#: classes/views/frmpro-fields/back-end/field-data.php:75
+msgid "This data is dynamic on change"
+msgstr "该数据随着变化而动态变化"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:85
+msgid "Check All"
+msgstr "全选"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:103
+msgid "NOTE: if the parent is excluded, child categories will be automatically excluded."
+msgstr "注意：如果父级被排除，那么子级类别会被自动排除。"
+
+#: classes/views/frmpro-form-actions/_form_action.php:36
+msgid "of the following match"
+msgstr "下列条件满足"
+
+#: classes/views/frmpro-fields/back-end/logic.php:30
+#: classes/views/frmpro-form-actions/_form_action.php:33
+#: classes/views/frmpro-forms/_submit_conditional.php:29
+#: classes/views/styles/_section-fields.php:89
+msgid "all"
+msgstr "全部"
+
+#: classes/views/frmpro-fields/back-end/logic.php:29
+#: classes/views/frmpro-form-actions/_form_action.php:30
+#: classes/views/frmpro-forms/_submit_conditional.php:26
+msgid "any"
+msgstr "任意"
+
+#: classes/views/displays/submitbox_actions.php:31
+msgid "Hide"
+msgstr "隐藏"
+
+#: classes/views/displays/submitbox_actions.php:15
+msgid "Show"
+msgstr "显示"
+
+#: classes/views/frmpro-fields/back-end/logic.php:12
+#: classes/views/frmpro-form-actions/_form_action.php:10
+msgid "Add Conditional Logic"
+msgstr "添加条件逻辑"
+
+#: classes/views/frmpro-fields/back-end/logic.php:16
+#: classes/views/frmpro-form-actions/_form_action.php:16
+msgid "Conditional Logic"
+msgstr "条件逻辑"
+
+#: classes/views/frmpro-fields/back-end/repeat-options.php:9
+msgid "The maximum number of times the end user is allowed to duplicate this section of fields in one entry"
+msgstr "允许终端用户在一个条目中复制该字段单元的最大次数"
+
+#: classes/views/frmpro-fields/back-end/insert-form.php:7
+msgid "Insert Form"
+msgstr "插入表单"
+
+#: classes/views/frmpro-fields/back-end/calendar.php:8
+msgid "Year Range"
+msgstr "年度范围"
+
+#: classes/controllers/FrmProFormsController.php:876
+#: classes/views/frmpro-fields/options-form-before.php:31
+#: classes/views/lookup-fields/back-end/get-options-from.php:14
+msgid "Select Form"
+msgstr "选择表单"
+
+#: classes/controllers/FrmProEntriesController.php:1706
+msgid "Post"
+msgstr "文章"
+
+#: classes/views/frmpro-forms/_submit_logic_row.php:61
+msgid "less than or equal to"
+msgstr "小于等于"
+
+#: classes/views/frmpro-forms/_submit_logic_row.php:55
+msgid "greater than or equal to"
+msgstr "大于等于"
+
+#: classes/helpers/FrmProFieldsHelper.php:2919
+#: classes/views/displays/order_row.php:20
+#: classes/views/displays/_calendar_options.php:14
+#: classes/views/displays/_calendar_options.php:31
+msgid "Entry update date"
+msgstr "条目更新日期"
+
+#: classes/helpers/FrmProFieldsHelper.php:2917
+msgid "User IP"
+msgstr "用户IP地址"
+
+#: classes/controllers/FrmProGraphsController.php:1177
+msgid "Fields"
+msgstr "字段"
+
+#: classes/controllers/FrmProLookupFieldsController.php:16
+#: classes/models/fields/FrmProFieldData.php:64
+#: classes/models/fields/FrmProFieldProduct.php:71
+msgid "Dropdown"
+msgstr "下拉菜单"
+
+#: classes/controllers/FrmProLookupFieldsController.php:18
+#: classes/models/fields/FrmProFieldData.php:66
+#: classes/models/fields/FrmProFieldProduct.php:73
+msgid "Checkboxes"
+msgstr "复选框"
+
+#: classes/controllers/FrmProLookupFieldsController.php:19
+msgid "Single Line Text"
+msgstr "单行文本"
+
+#: classes/views/xml/map_csv_fields.php:106
+msgid "Updated by"
+msgstr "更新者"
+
+#: classes/views/xml/map_csv_fields.php:103
+msgid "Updated at"
+msgstr "更新日期"
+
+#: classes/views/xml/map_csv_fields.php:99
+#: classes/views/xml/map_csv_fields.php:100
+msgid "Created by"
+msgstr "创建者"
+
+#: classes/views/xml/csv_opts.php:13
+msgid "Import Into Form"
+msgstr "导入到表单"
+
+#: classes/views/xml/csv_opts.php:8
+msgid "CSV Delimiter"
+msgstr "CSV分隔符"
+
+#: classes/helpers/FrmProEntryMetaHelper.php:186
+msgid "View all posts filed under %s"
+msgstr "查看所有发表于 %s的文章"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:16
+msgid "United States"
+msgstr "美国"
+
+#: classes/views/styles/_section-fields.php:41
+msgid "Bottom Margin"
+msgstr "下边距"
+
+#: classes/controllers/FrmProFormsController.php:376
+msgid "Replace 'whatever' with the parameter name. In url.com?product=form, the variable is 'product'. You would use [get param=product] in your field."
+msgstr "将 'whatever' 替换为参数名称。在 url.com?product=form 中，变量是 'product'。您在字段中要使用 [get param=product]。"
+
+#: classes/views/frmpro-form-actions/post_options.php:221
+msgid "Custom Fields"
+msgstr "自定义字段"
+
+#: classes/controllers/FrmProFormsController.php:370
+msgid "Author Email"
+msgstr "作者邮箱"
+
+#: classes/views/frmpro-form-actions/post_options.php:46
+msgid "Post Content"
+msgstr "文章内容"
+
+#: classes/views/frmpro-fields/back-end/visibility.php:24
+#: classes/views/frmpro-forms/add_form_options.php:19
+#: classes/views/frmpro-forms/add_form_options.php:66
+#: classes/views/frmpro-forms/add_form_options.php:84
+msgid "Logged-in Users"
+msgstr "登录用户"
+
+#: classes/views/frmpro-form-actions/_post_taxonomy_row.php:68
+msgid "Exclude options"
+msgstr "排除选项"
+
+#: classes/views/frmpro-form-actions/post_options.php:124
+msgid "Post Status"
+msgstr "文章状态"
+
+#: classes/views/frmpro-form-actions/post_options.php:110
+msgid "Post Date"
+msgstr "文章日期"
+
+#: classes/views/frmpro-form-actions/post_options.php:97
+msgid "Slug"
+msgstr "别名"
+
+#: classes/views/frmpro-form-actions/post_options.php:73
+msgid "Excerpt"
+msgstr "摘要"
+
+#: classes/views/frmpro-entries/show.php:39
+msgid "Comment/Note"
+msgstr "评论/备注"
+
+#: classes/views/frmpro-entries/show.php:27
+msgid "Add Note/Comment"
+msgstr "添加备注/评论"
+
+#: classes/views/frmpro-entries/show.php:7
+msgid "Comments/Notes"
+msgstr "评论/备注"
+
+#: classes/helpers/FrmProFieldsHelper.php:2992
+msgid "Default Email Message"
+msgstr "默认邮件内容"
+
+#: classes/controllers/FrmProFormsController.php:371
+msgid "Post Meta"
+msgstr "文章元"
+
+#: classes/views/xml/map_csv_fields.php:96
+#: classes/views/xml/map_csv_fields.php:97
+msgid "Created at"
+msgstr "创建于"
+
+#: classes/views/frmpro-entries/new-selection.php:7
+#: classes/views/frmpro-entries/new-selection.php:13
+#: classes/views/frmpro-entries/new.php:13
+#: classes/views/frmpro-entries/new.php:26
+msgid "Add New Entry"
+msgstr "新建条目"
+
+#: classes/helpers/FrmProEntriesHelper.php:268
+msgid "Add New"
+msgstr "新建"
+
+#: classes/models/FrmProSettings.php:24
+msgid "Your submission was successfully saved."
+msgstr "您的提交成功保存。"
+
+#: classes/models/FrmProFileField.php:489
+msgid "This field is invalid"
+msgstr "该字段无效"
+
+#: classes/models/FrmProFileField.php:490
+msgid "is invalid"
+msgstr "无效"
+
+#: classes/views/frmpro-form-actions/post_options.php:9
+msgid "Post Type"
+msgstr "文章类型"
+
+#: classes/views/frmpro-entries/loading.php:8
+msgid "Uploading Files. Please Wait."
+msgstr "正在上传文件。请稍等。"
+
+#: classes/helpers/FrmProFieldsHelper.php:1436
+msgid "No Categories"
+msgstr "无类别"
+
+#: classes/views/frmpro-form-actions/post_options.php:75
+#: classes/views/frmpro-form-actions/post_options.php:87
+#: classes/views/frmpro-forms/add_form_style_options.php:12
+#: js/src/view/inspector.js:77
+msgid "None"
+msgstr "无"
+
+#: classes/views/xml/map_csv_fields.php:128
+msgid "Import"
+msgstr "导入"
+
+#: classes/views/styles/_sample_form.php:14
+msgid "Another field with a description"
+msgstr "另一个有描述信息的字段"
+
+#: classes/views/styles/_sample_form.php:12
+msgid "Text Area"
+msgstr "文本区域"
+
+#: classes/views/styles/_sample_form.php:32
+msgid "Check Boxes"
+msgstr "复选框"
+
+#: classes/views/styles/_sample_form.php:26
+#: classes/views/styles/_sample_form.php:38
+msgid "Option 2"
+msgstr "选项 2"
+
+#: classes/views/styles/_sample_form.php:22
+#: classes/views/styles/_sample_form.php:35
+msgid "Option 1"
+msgstr "选项 1"
+
+#: classes/controllers/FrmProLookupFieldsController.php:17
+#: classes/models/fields/FrmProFieldData.php:65
+#: classes/models/fields/FrmProFieldProduct.php:72
+#: classes/views/styles/_sample_form.php:18
+msgid "Radio Buttons"
+msgstr "单选按钮"
+
+#: classes/views/frmpro-statistics/show.php:90
+msgid "Median"
+msgstr "中间的"
+
+#: classes/controllers/FrmProGraphsController.php:1160
+#: classes/views/frmpro-statistics/show.php:78
+msgid "Average"
+msgstr "均值"
+
+#: classes/controllers/FrmProGraphsController.php:1158
+msgid "Total"
+msgstr "Total"
+
+#: classes/views/frmpro-statistics/select.php:13
+msgid "Go to Report"
+msgstr "转至报表"
+
+#: classes/views/frmpro-fields/back-end/calculations.php:10
+msgid "Calculation"
+msgstr "计算"
+
+#: classes/views/displays/mb_advanced.php:22
+msgid "Page Size"
+msgstr "页面大小"
+
+#: classes/views/displays/mb_advanced.php:13
+msgid "Limit"
+msgstr "限制"
+
+#: classes/views/displays/mb_advanced.php:37
+#: classes/views/frmpro-form-actions/post_options.php:183
+msgid "Order"
+msgstr "顺序"
+
+#: classes/views/displays/mb_advanced.php:88
+msgid "Advanced"
+msgstr "高级"
+
+#: classes/views/displays/mb_dyncontent.php:34
+#: classes/views/displays/mb_dyncontent.php:64
+msgid "optional"
+msgstr "可选"
+
+#: classes/views/displays/mb_form_disp_type.php:44
+msgid "Calendar &mdash; insert entries into a calendar"
+msgstr "日历 &mdash; 将条目插入到日历中"
+
+#: classes/views/displays/mb_form_disp_type.php:38
+msgid "Both (Dynamic) &mdash; list the entries that will link to a single entry page"
+msgstr "两者（动态） &mdash; 列出指向单个条目页面的条目"
+
+#: classes/views/displays/mb_form_disp_type.php:33
+msgid "Single Entry &mdash; display one entry"
+msgstr "单个条目 &mdash; 显示一个条目"
+
+#: classes/views/displays/mb_form_disp_type.php:28
+msgid "All Entries &mdash; list all entries in the specified form"
+msgstr "所有条目 &mdash; 列出指定表单中的所有条目"
+
+#: classes/views/displays/mb_excerpt.php:9
+msgid "This is not displayed anywhere, but is just for your reference. (optional)"
+msgstr "这不会在任何地方显示，仅是为方便您参考。（可选）"
+
+#: classes/views/displays/submitbox_actions.php:12
+msgid "Shortcodes"
+msgstr "短码"
+
+#: classes/controllers/FrmProFormsController.php:369
+#: classes/views/frmpro-form-actions/post_options.php:34
+msgid "Post Title"
+msgstr "文章标题"
+
+#: classes/views/styles/_progress-bars.php:7
+msgid "BG Color"
+msgstr "背景颜色"
+
+#: classes/controllers/FrmProFormsController.php:913
+msgid "Height"
+msgstr "高度"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:16
+msgid "Text"
+msgstr "文本"
+
+#: classes/views/styles/_section-fields.php:26
+msgid "BG color"
+msgstr "背景"
+
+#: classes/controllers/FrmProFormsController.php:914
+msgid "Width"
+msgstr "宽度"
+
+#: classes/views/styles/_section-fields.php:21
+msgid "Size"
+msgstr "尺寸"
+
+#: classes/views/styles/_section-fields.php:12
+msgid "Weight"
+msgstr "粗细"
+
+#: classes/views/styles/_section-fields.php:86
+msgid "right"
+msgstr "右侧"
+
+#: classes/views/styles/_section-fields.php:83
+msgid "left"
+msgstr "左侧"
+
+#: classes/widgets/FrmListEntries.php:301
+msgid "Entry Limit (leave blank to list all)"
+msgstr "条目限制（留空列出全部）"
+
+#: classes/widgets/FrmListEntries.php:294
+msgid "Show Entries Beneath Categories"
+msgstr "在类别下方显示条目"
+
+#: classes/widgets/FrmListEntries.php:289
+msgid "Show Only Category Name"
+msgstr "仅显示类别名称"
+
+#: classes/widgets/FrmListEntries.php:284
+msgid "Show Entry Counts"
+msgstr "显示条目数量"
+
+#: classes/widgets/FrmListEntries.php:268
+msgid "Category Field"
+msgstr "类别字段"
+
+#: classes/widgets/FrmListEntries.php:264
+msgid "List Entries by Category"
+msgstr "按类别列出条目"
+
+#: classes/widgets/FrmListEntries.php:246
+msgid "Title Field"
+msgstr "标题字段"
+
+#: classes/widgets/FrmListEntries.php:220
+msgid "Title"
+msgstr "标题"
+
+#: classes/widgets/FrmListEntries.php:13
+msgid "Formidable Entries List"
+msgstr "Formidable 条目列表"
+
+#: classes/widgets/FrmListEntries.php:12
+msgid "Display a list of Formidable entries"
+msgstr "显示 Formidable 条目列表"
+
+#: classes/views/styles/_section-fields.php:51
+msgid "Thickness"
+msgstr "厚度"
+
+#: classes/views/styles/_section-fields.php:68
+msgid "double"
+msgstr "双线"
+
+#: classes/views/styles/_section-fields.php:65
+msgid "dashed"
+msgstr "虚线"
+
+#: classes/views/styles/_section-fields.php:62
+msgid "dotted"
+msgstr "点状"
+
+#: classes/views/styles/_section-fields.php:59
+msgid "solid"
+msgstr "实线"
+
+#: classes/views/styles/_section-fields.php:56
+msgid "Style"
+msgstr "样式"
+
+#: classes/views/styles/_section-fields.php:31
+msgid "Padding"
+msgstr "填充"
+
+#: classes/views/styles/_section-fields.php:7
+#: classes/views/styles/_slider-fields.php:7
+msgid "Color"
+msgstr "颜色"
+
+#: classes/views/styles/_section-fields.php:46
+msgid "Border"
+msgstr "边框"
+
+#: classes/views/settings/form.php:19
+msgid "Date Format"
+msgstr "日期格式"
+
+#: classes/views/settings/general_style.php:33
+msgid "If you have manually created an accordion form, be sure to include the javascript for it."
+msgstr "如果您手动创建了一个手风琴表单，确保为表单包含了 javascript脚本。"
+
+#: classes/views/settings/general_style.php:30
+msgid "Include accordion javascript"
+msgstr "包含手风琴脚本"
+
+#: classes/views/settings/messages.php:33
+msgid "The message seen when a user attempts to submit a form for a second time if submissions are limited."
+msgstr "当一名用户尝试第二次提交一个提交受限的表单时看到的提示信息。"
+
+#: classes/views/settings/messages.php:32
+msgid "Previously Submitted Message"
+msgstr "之前已提交的提示信息"
+
+#: classes/controllers/FrmProFormsController.php:376
+msgid "A variable from the URL or value posted from previous page."
+msgstr "一个来自链接的变量或前页提交的值。"
+
+#: classes/views/frmpro-forms/add_form_options.php:41
+msgid "Saved Cookie"
+msgstr "保存的 Cookie"
+
+#: classes/views/frmpro-forms/add_form_options.php:33
+msgid "Logged-in User"
+msgstr "登录用户"
+
+#: classes/views/frmpro-forms/add_form_options.php:118
+msgid "Use Content from Page"
+msgstr "使用页面的内容"
+
+#: classes/views/frmpro-fields/back-end/field-rte.php:7
+msgid "These buttons are for illustrative purposes only. They will be functional in your form."
+msgstr "这些按钮仅用于说明目的。它们将在您的表单中起作用。"
+
+#: classes/views/frmpro-fields/back-end/scale-options.php:7
+msgid "Range"
+msgstr "范围"
+
+#: classes/views/frmpro-fields/back-end/file-options.php:20
+msgid "Attach this file to the email notification"
+msgstr "将文件附到邮件通知"
+
+#: classes/views/frmpro-fields/back-end/dates-advanced.php:9
+msgid "Calendar Localization"
+msgstr "日历语言"
+
+#: classes/controllers/FrmProEntriesController.php:1746
+#: classes/controllers/FrmProEntriesController.php:2152
+#: classes/controllers/FrmProEntriesController.php:2228
+#: classes/controllers/FrmProEntriesController.php:2648
+msgid "Are you sure you want to delete that entry?"
+msgstr "您确实要删除此条目吗？"
+
+#: classes/views/frmpro-entries/edit.php:13
+#: classes/views/frmpro-entries/edit.php:31
+msgid "Edit Entry"
+msgstr "编辑条目"
+
+#: classes/views/frmpro-fields/_logic_row.php:49
+#: classes/views/frmpro-forms/_logic_row.php:46
+#: classes/views/frmpro-forms/_submit_logic_row.php:58
+msgid "less than"
+msgstr "小于"
+
+#: classes/views/frmpro-fields/_logic_row.php:43
+#: classes/views/frmpro-forms/_logic_row.php:43
+#: classes/views/frmpro-forms/_submit_logic_row.php:52
+msgid "greater than"
+msgstr "大于"
+
+#: classes/views/displays/where_row.php:41
+msgid "is"
+msgstr "是"
+
+#: classes/views/displays/where_options.php:40
+msgid "Date options: 'NOW' or a date in yyyy-mm-dd format."
+msgstr "日期选项： 'NOW' 或者一个格式为 yyyy-mm-dd 的日期。"
+
+#: classes/controllers/FrmProFormsController.php:661
+msgid "Truncate text with a link to view more. If using Both (dynamic), the link goes to the detail page. Otherwise, it will show in-place."
+msgstr "用一个查看更多的链接截断文本。如果使用动态视图，那么该链接就指向详情页面。否则，将就地显示。"
+
+#: classes/controllers/FrmProFormsController.php:659
+msgid "Replaces all HTML entities with a URL safe string."
+msgstr "将所有HTML实体替换为链接安全字符串。"
+
+#: classes/controllers/FrmProFormsController.php:656
+msgid "Replaces spaces with dashes and lowercases all. Use if adding an HTML class or ID"
+msgstr "将空格替换为’-’并全部转小写。添加HTML类或ID时使用"
+
+#: classes/views/displays/mb_advanced.php:23
+msgid "The number of entries to show per page. Leave blank to not use pagination."
+msgstr "每页显示的条目数量。留空以停用分页。"
+
+#: classes/views/displays/mb_advanced.php:14
+msgid "If you don’t want all your entries displayed, you can insert the number limit here. Leave blank if you’d like all entries shown."
+msgstr "如果您不希望显示所有条目，您可以在这里输入限制值。如果您想要显示全部条目，请留空。"
+
+#: classes/views/displays/order_row.php:37
+msgid "Descending"
+msgstr "降序"
+
+#: classes/views/displays/order_row.php:34
+msgid "Ascending"
+msgstr "升序"
+
+#: classes/views/displays/order_row.php:23
+msgid "Random"
+msgstr "随机"
+
+#: classes/views/displays/mb_advanced.php:110
+msgid "Parameter Value"
+msgstr "参数值"
+
+#: classes/views/displays/mb_advanced.php:103
+msgid "Example: If parameter name is 'contact', the url would be like %1$s/selected-page?contact=2. If this entry is linked to a post, the post permalink will be used instead."
+msgstr "例如：如果参数名是 'contact'，那么链接地址形如 %1$s/selected-page?contact=2。如果这个条目指向一篇文章，那么文章的固定链接将会被使用。"
+
+#: classes/controllers/FrmProFormsController.php:1019
+msgid "Detail Link"
+msgstr "详情链接"
+
+#: classes/views/displays/mb_dyncontent.php:75
+msgid "The HTML for the entry on the dynamic page. This content will NOT be repeated, and will only show when the %1$s is clicked."
+msgstr "在动态页面上的条目的 HTML。该内容不会被重复，而且仅会在 %1$s 被点击时才显示。"
+
+#: classes/views/displays/mb_dyncontent.php:74
+msgid "Dynamic Content"
+msgstr "动态内容"
+
+#: classes/views/displays/mb_dyncontent.php:63
+msgid "This content will not be repeated. This would be a good place to close any HTML tags from the Before Content field."
+msgstr "该内容不会被重复。这是闭合之前’在内容前’字段的HTML标记的好位置。"
+
+#: classes/views/displays/mb_dyncontent.php:62
+msgid "After Content"
+msgstr "在内容后"
+
+#: classes/views/displays/mb_dyncontent.php:41
+msgid "Content"
+msgstr "内容"
+
+#: classes/views/displays/mb_dyncontent.php:34
+msgid "This content will not be repeated. This would be a good place to put any HTML table tags."
+msgstr "该内容不会被重复。这是放置HTML表格标签的好位置。"
+
+#: classes/views/displays/mb_dyncontent.php:33
+msgid "Before Content"
+msgstr "在内容前"
+
+#: classes/views/displays/mb_form_disp_type.php:11
+msgid "Use Entries from Form"
+msgstr "使用表单中的条目"
+
+#: classes/helpers/FrmProEntriesListHelper.php:120
+#: classes/helpers/FrmProFieldsHelper.php:2918
+#: classes/views/displays/order_row.php:17
+#: classes/views/displays/where_row.php:12
+#: classes/views/displays/_calendar_options.php:11
+#: classes/views/displays/_calendar_options.php:28
+msgid "Entry creation date"
+msgstr "条目创建日期"
+
+#: classes/views/displays/submitbox_actions.php:18
+msgid "Save to get ID"
+msgstr "保存以取得 ID"
+
+#: classes/models/FrmProSettings.php:26
+msgid "You have already submitted that form"
+msgstr "您已提交过该表单"
+
+#: classes/widgets/FrmListEntries.php:235
+msgid "Page"
+msgstr "页面"
+
+#: classes/controllers/FrmProFormsController.php:365
+#: classes/models/FrmProForm.php:459
+msgid "User ID"
+msgstr "用户ID"
+
+#: classes/helpers/FrmProFieldsHelper.php:2995
+msgid "Site URL"
+msgstr "网站地址"
+
+#: classes/helpers/FrmProFieldsHelper.php:2988
+msgid "Add a rotating 'even' or 'odd' class"
+msgstr "添加一个循环的'偶数'或'奇数'类"
+
+#: classes/helpers/FrmProFieldsHelper.php:2980
+msgid "Link to view single page if showing dynamic entries"
+msgstr "显示动态条目时查看单页面的链接"
+
+#: classes/helpers/FrmProFieldsHelper.php:2977
+msgid "Admin link to edit the entry"
+msgstr "编辑条目的管理链接"
+
+#: classes/helpers/FrmProFieldsHelper.php:2976
+msgid "Helpers"
+msgstr "辅助"
+
+#: classes/helpers/FrmProFieldsHelper.php:2950
+msgid "Full Size"
+msgstr "实际尺寸"
+
+#: classes/helpers/FrmProFieldsHelper.php:2947
+#: classes/models/FrmProImages.php:57
+msgid "Large"
+msgstr "大"
+
+#: classes/helpers/FrmProFieldsHelper.php:2944
+#: classes/models/FrmProImages.php:56
+msgid "Medium"
+msgstr "中"
+
+#: classes/helpers/FrmProFieldsHelper.php:2941
+msgid "Thumbnail"
+msgstr "缩略图"
+
+#: classes/helpers/FrmProFieldsHelper.php:2921
+msgid "Form Fields"
+msgstr "表单字段"
+
+#: classes/controllers/FrmProFormsController.php:1000
+#: classes/helpers/FrmProEntriesListHelper.php:121
+#: classes/helpers/FrmProFieldsHelper.php:2914
+#: classes/views/displays/order_row.php:11
+#: classes/views/displays/where_row.php:18
+#: classes/views/xml/map_csv_fields.php:114
+#: classes/views/xml/map_csv_fields.php:115
+msgid "Entry ID"
+msgstr "条目ID"
+
+#: classes/helpers/FrmProFieldsHelper.php:2912
+msgid "Select a value to insert into the box below"
+msgstr "选择要插入下框中的值"
+
+#: classes/helpers/FrmProFieldsHelper.php:2615
+msgid "Edit Uploaded File"
+msgstr "编辑上传的文件"
+
+#: classes/controllers/FrmProEntriesController.php:2100
+#: classes/controllers/FrmProFormsController.php:816
+#: classes/controllers/FrmProFormsController.php:852
+#: classes/helpers/FrmProEntriesListHelper.php:86
+msgid "Search"
+msgstr "查找"
+
+#: classes/helpers/FrmProEntriesListHelper.php:119
+msgid "All Fields"
+msgstr "所有字段"
+
+#: classes/controllers/FrmProFormsController.php:368
+#: classes/helpers/FrmProFieldsHelper.php:2916
+#: classes/views/displays/where_row.php:24
+#: classes/views/xml/map_csv_fields.php:95
+msgid "Post ID"
+msgstr "文章ID"
+
+#: classes/controllers/FrmProFormsController.php:366
+msgid "User Meta"
+msgstr "用户元"
+
+#: classes/controllers/FrmProFormsController.php:359
+msgid "Current Time"
+msgstr "当前时间"
+
+#: classes/controllers/FrmProFormsController.php:358
+msgid "Current Date"
+msgstr "当前日期"
+
+#: classes/controllers/FrmProEntriesController.php:276
+msgid "No entries were specified"
+msgstr "未指定条目"
+
+#: classes/controllers/FrmProEntriesController.php:164
+msgid "There was a problem duplicating that entry"
+msgstr "复制条目时遇到问题"
+
+#: classes/controllers/FrmProEntriesController.php:162
+msgid "Entry was Successfully Duplicated"
+msgstr "条目成功复制"
+
+#: classes/controllers/FrmProEntriesController.php:143
+msgid "Go Back to Entries"
+msgstr "返回条目"
+
+#: classes/controllers/FrmProEntriesController.php:103
+msgid "Entry was Successfully Created"
+msgstr "条目成功创建"
+
+#: classes/controllers/FrmProEntriesController.php:1681
+msgid "Entries Successfully Deleted"
+msgstr "条目成功删除"
+
+#: classes/controllers/FrmProEntriesController.php:1745
+msgid "No Entries Found"
+msgstr "未找到条目"
+
+#: classes/controllers/FrmProAppController.php:32
+msgid "Formidable Tag"
+msgstr "Formidable标签"
+
+#: classes/controllers/FrmProAppController.php:31
+msgid "Formidable Tags"
+msgstr "Formidable标签"
+
+#: classes/views/settings/messages.php:25
+msgid "The message seen when a user who is not logged-in views a form only logged-in users can submit."
+msgstr "当一名未登录用户查看一个仅已登录用户可以提交的表单时看到的提示信息。"
+
+#: classes/views/settings/messages.php:24
+msgid "Login Message"
+msgstr "登录提示信息"
+
+#: classes/views/settings/general_style.php:21
+msgid "The styling for the date field calendar. Some users may be using this css on pages other than just the ones that include a date field."
+msgstr "日期字段的日历样式。有些用户可能会在页面上使用该样式，而不仅仅是包含日期字段的页面。"
+
+#: classes/views/settings/general_style.php:19
+msgid "Include the jQuery CSS on ALL pages"
+msgstr "在所有页面包含 jQuery CSS"
+
+#: classes/controllers/FrmProFormActionsController.php:46
+msgid "Create"
+msgstr "创建"
+
+#: classes/controllers/FrmProEntriesController.php:1723
+#: classes/helpers/FrmProEntriesHelper.php:288
+#: classes/helpers/FrmProEntriesHelper.php:339
+#: classes/views/styles/_style_switcher.php:13
+msgid "Duplicate"
+msgstr "复制"
+
+#: classes/controllers/FrmProAppController.php:217
+#: classes/views/frmpro-statistics/select.php:7
+#: classes/views/frmpro-statistics/show.php:10
+msgid "Reports"
+msgstr "报表"
+
+#: classes/controllers/FrmProEntriesController.php:1945
+#: classes/controllers/FrmProEntriesController.php:2211
+#: classes/helpers/FrmProEntriesListHelper.php:11
+#: classes/views/frmpro-fields/back-end/image-selector.php:19
+msgid "Delete"
+msgstr "删除"
+
+#: classes/controllers/FrmProEntriesController.php:1931
+#: classes/controllers/FrmProEntriesController.php:2483
+#: classes/helpers/FrmProAppHelper.php:315
+#: classes/helpers/FrmProEntriesHelper.php:1107
+#: classes/models/FrmProSummaryFormatter.php:80
+msgid "Edit"
+msgstr "编辑"
+
+#: js/src/view/inspector.js:87
+msgid "Shortcode"
+msgstr "代码"
+
+#: classes/helpers/FrmProFieldsHelper.php:2937
+#: classes/helpers/FrmProFieldsHelper.php:2963
+#: classes/views/displays/mb_advanced.php:115
+#: classes/views/frmpro-entries/table.php:10
+#: classes/views/frmpro-entries/table.php:89
+msgid "ID"
+msgstr "ID"
+
+#: classes/controllers/FrmProEntriesController.php:2484
+#: classes/views/frmpro-form-actions/_custom_field_row.php:39
+msgid "Cancel"
+msgstr "取消"
+
+#: classes/controllers/FrmProEntriesController.php:2588
+#: classes/controllers/FrmProEntriesController.php:3188
+#: classes/models/FrmProSettings.php:25
+msgid "Update"
+msgstr "更新"
+
+#: classes/views/displays/submitbox_actions.php:11 js/src/view/viewselect.js:38
+msgid "View"
+msgstr "查看"
+
+#: classes/helpers/FrmProFieldsHelper.php:2938
+#: classes/helpers/FrmProFieldsHelper.php:2964
+#: classes/views/displays/mb_advanced.php:118
+msgid "Key"
+msgstr "键"
+
+#: classes/helpers/FrmProFieldsHelper.php:2915
+#: classes/views/displays/order_row.php:14
+#: classes/views/xml/map_csv_fields.php:117
+#: classes/views/xml/map_csv_fields.php:118
+msgid "Entry Key"
+msgstr "条目键"
+
+#: classes/controllers/FrmProFormsController.php:360
+msgid "Email"
+msgstr "邮箱"
+
+#: classes/views/frmpro-entries/show.php:42
+msgid "Submit"
+msgstr "提交"
+
+#: classes/controllers/FrmProFormsController.php:372
+#: classes/views/frmpro-forms/add_form_options.php:37
+#: classes/views/xml/map_csv_fields.php:109
+msgid "IP Address"
+msgstr "IP 地址"

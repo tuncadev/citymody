@@ -1,0 +1,72 @@
+2023-06-28T15:23:35+00:00 CRITICAL /home/citymody/citymody.com/www/wp-includes/category-template.php dosyasında 1288 numaralı satırda Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php on line 33 and exactly 2 expected in /home/citymody/citymody.com/www/wp-includes/category-template.php:1288
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php(33): get_the_terms(15246)
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-template-hooks.php(1307): civi_get_template('candidate/singl...')
+#3 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): single_candidate_about_me('')
+#4 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#5 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/content-single-candidate.php(28): do_action('civi_single_can...')
+#7 /home/citymody/citymody.com/www/wp-includes/template.php(785): require('/home/citymody/...')
+#8 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(133): load_template('/home/citymody/...', false)
+#9 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/single-candidate.php(52): civi_get_template_part('content', 'single-candidat...')
+#10 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#13 {main}
+  thrown
+
+2023-06-28T15:24:05+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php dosyasında 33 numaralı satırda Uncaught Error: Object of class WP_Error could not be converted to string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php:33
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-template-hooks.php(1307): civi_get_template('candidate/singl...')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): single_candidate_about_me('')
+#3 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#4 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/content-single-candidate.php(28): do_action('civi_single_can...')
+#6 /home/citymody/citymody.com/www/wp-includes/template.php(785): require('/home/citymody/...')
+#7 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(133): load_template('/home/citymody/...', false)
+#8 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/single-candidate.php(52): civi_get_template_part('content', 'single-candidat...')
+#9 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#12 {main}
+  thrown
+
+2023-06-28T15:24:12+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php dosyasında 33 numaralı satırda Uncaught Error: Object of class WP_Error could not be converted to string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php:33
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-template-hooks.php(1307): civi_get_template('candidate/singl...')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): single_candidate_about_me('')
+#3 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#4 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/content-single-candidate.php(28): do_action('civi_single_can...')
+#6 /home/citymody/citymody.com/www/wp-includes/template.php(785): require('/home/citymody/...')
+#7 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(133): load_template('/home/citymody/...', false)
+#8 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/single-candidate.php(52): civi_get_template_part('content', 'single-candidat...')
+#9 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#12 {main}
+  thrown
+
+2023-06-28T15:25:53+00:00 CRITICAL /home/citymody/citymody.com/www/wp-includes/class-wp-list-util.php dosyasında 110 numaralı satırda Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, int given in /home/citymody/citymody.com/www/wp-includes/class-wp-list-util.php:110
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/functions.php(5154): WP_List_Util->filter(15246, 'AND')
+#1 /home/citymody/citymody.com/www/wp-includes/taxonomy.php(248): wp_filter_object_list(Array, 15246, 'and', 'name')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/candidate/single/about-me.php(33): get_taxonomies(15246)
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#4 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-template-hooks.php(1307): civi_get_template('candidate/singl...')
+#5 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): single_candidate_about_me('')
+#6 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/content-single-candidate.php(28): do_action('civi_single_can...')
+#9 /home/citymody/citymody.com/www/wp-includes/template.php(785): require('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(133): load_template('/home/citymody/...', false)
+#11 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/single-candidate.php(52): civi_get_template_part('content', 'single-candidat...')
+#12 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#13 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#14 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#15 {main}
+  thrown
+

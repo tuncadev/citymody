@@ -1,0 +1,52 @@
+2023-06-17T16:44:09+00:00 CRITICAL Uncaught Error: Call to undefined function ereg_replace() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:26
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 26
+
+2023-06-17T16:44:16+00:00 CRITICAL Uncaught Error: Call to undefined function ereg_replace() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:26
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 26
+
+2023-06-17T17:22:52+00:00 CRITICAL Uncaught TypeError: rand(): Argument #2 ($max) must be of type int, string given in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php(18): rand(0, '1717-0606-20232...')
+#1 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#4 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 18
+
+2023-06-17T17:23:04+00:00 CRITICAL Uncaught TypeError: rand(): Argument #2 ($max) must be of type int, string given in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php(18): rand(0, '1717-0606-20232...')
+#1 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#4 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 18
+
+2023-06-17T17:23:22+00:00 CRITICAL Uncaught TypeError: rand(): Argument #2 ($max) must be of type int, string given in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php(18): rand(0, '17-06-2023')
+#1 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#4 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 18
+
+2023-06-17T17:23:46+00:00 CRITICAL Uncaught TypeError: rand(): Argument #2 ($max) must be of type int, string given in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php(18): rand(0, '2023-06-17')
+#1 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#4 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 18
+

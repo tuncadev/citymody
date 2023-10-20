@@ -1,0 +1,11 @@
+.iump-extended-shortcodes-for-ultimate-membership-pro-box {
+  /*background-color: #53ba73 !important;*/
+}
+
+/*.iump-extended-shortcodes-for-ultimate-membership-pro-box .fa-extended-shortcodes-for-ultimate-membership-pro-ihc:before {
+    content: "\f121";
+}*/
+
+.iump-extended-shortcodes-for-ultimate-membership-pro-box .fa-code:before {
+    content: "\f121";
+}

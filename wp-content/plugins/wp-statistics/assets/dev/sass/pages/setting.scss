@@ -1,0 +1,88 @@
+/**
+ * WP Statistics Setting Admin page
+ */
+.wp-statistics-settings {
+  .widefat {
+    float: left;
+  }
+
+  .note {
+    color: #ff0000;
+    font-size: 11px !important;
+    font-weight: bold;
+  }
+
+  .postbox-container {
+    margin-top: 51px;
+
+    .postbox {
+      padding: 12px !important;
+    }
+  }
+
+  ul.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 8px;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+    margin: 0;
+  }
+
+  ul.tabs li.current {
+    background: #ffffff;
+    color: #222;
+    border-right-color: #e5e5e5;
+    border-left-color: #e5e5e5;
+    border-bottom-color: #ffffff;
+    border-top-color: #e5e5e5;
+    padding-bottom: 11px;
+  }
+
+  .tab-content {
+    display: none;
+    margin: -1px 0 0 0;
+  }
+
+  .tab-content.current {
+    display: inherit;
+  }
+
+  #update_geoip {
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 5px 15px;
+    transform: translateY(-3px);
+  }
+
+  .geoip-update-loading {
+    transform: translateY(3px);
+    margin-left: 10px;
+    display: inline;
+  }
+
+  .update_geoip_result {
+    display: block;
+    border-radius: 2px;
+    background-color: #f2bb08;
+    padding: 8px;
+    margin-top: 10px;
+    transition: 0.3s all ease-out;
+    font-size: 12px;
+    color: #222;
+  }
+}
+
+/** WP Statistics Media Query Setting Admin page **/
+@media only screen and (max-width: 1327px) {
+  .wp-statistics-settings ul.tabs li {
+    padding: 10px 5px;
+  }
+}

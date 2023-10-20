@@ -1,0 +1,145 @@
+2023-06-29T11:13:24+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php dosyasında 10 numaralı satırda Uncaught TypeError: Unsupported operand types: null - string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php:10
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info.php(14): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#9 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#11 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#12 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#13 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#14 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#16 {main}
+  thrown
+
+2023-06-29T11:14:16+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php dosyasında 10 numaralı satırda Uncaught TypeError: Unsupported operand types: null - string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php:10
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info.php(14): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#9 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#11 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#12 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#13 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#14 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#16 {main}
+  thrown
+
+2023-06-29T11:14:29+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php dosyasında 10 numaralı satırda Uncaught TypeError: Unsupported operand types: null - string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php:10
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info.php(14): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#9 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#11 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#12 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#13 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#14 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#16 {main}
+  thrown
+
+2023-06-29T11:15:24+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php dosyasında 10 numaralı satırda Uncaught TypeError: Unsupported operand types: null - string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php:10
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info.php(14): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#9 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#11 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#12 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#13 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#14 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#16 {main}
+  thrown
+
+2023-06-29T11:15:39+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php dosyasında 10 numaralı satırda Uncaught TypeError: Unsupported operand types: null - string in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info/basic.php:10
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/info.php(14): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#7 [internal function]: do_shortcode_tag(Array)
+#8 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#9 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#11 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#12 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#13 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#14 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#15 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#16 {main}
+  thrown
+
+2023-06-29T13:28:33+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: null - array in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php:24
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(49): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#4 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#5 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php on line 24
+
+2023-06-29T13:28:46+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: null - array in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php:24
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(49): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#4 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#5 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php on line 24
+
+2023-06-29T13:30:46+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: null - array in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php:24
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(49): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#4 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#5 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php on line 24
+
+2023-06-29T13:30:50+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: null - array in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php:24
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(49): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#4 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#5 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/nav.php on line 24
+

@@ -1,0 +1,99 @@
+2023-06-19T00:25:15+00:00 CRITICAL Uncaught Error: Undefined constant "candidate_hesapturu" in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php:25
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#7 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#8 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#9 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#11 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#13 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#14 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 25
+
+2023-06-19T00:25:47+00:00 CRITICAL Uncaught Error: Undefined constant "candidate_hesapturu" in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php:24
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#7 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#8 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#9 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#11 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#13 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#14 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 24
+
+2023-06-19T00:26:08+00:00 CRITICAL Uncaught Error: Undefined constant "candidate_hesapturu" in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php:23
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#7 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#8 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#9 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#11 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#13 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#14 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 23
+
+2023-06-19T00:26:33+00:00 CRITICAL Uncaught Error: Undefined constant "candidate_hesapturu" in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php:23
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#7 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#8 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#9 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#11 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#13 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#14 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 23
+
+2023-06-19T00:26:44+00:00 CRITICAL Uncaught Error: Undefined constant "candidate_hesapturu" in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php:23
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include()
+#1 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile.php(137): civi_get_template('dashboard/candi...')
+#2 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/class-civi-shortcodes.php(477): civi_get_template('dashboard/candi...')
+#4 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(355): Civi_Shortcode_Jobs->candidate_profile('', '', 'civi_candidate_...')
+#5 [internal function]: do_shortcode_tag(Array)
+#6 /home/citymody/citymody.com/www/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(civi_c...', 'do_shortcode_ta...', '[civi_candidate...')
+#7 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): do_shortcode('[civi_candidate...')
+#8 /home/citymody/citymody.com/www/wp-includes/plugin.php(205): WP_Hook->apply_filters('[civi_candidate...', Array)
+#9 /home/citymody/citymody.com/www/wp-includes/post-template.php(255): apply_filters('the_content', '[civi_candidate...')
+#10 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(61): the_content()
+#11 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#13 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#14 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 23
+
+2023-06-19T07:35:06+00:00 CRITICAL Unclosed '{' on line 7 in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 53
+
+2023-06-19T07:35:17+00:00 CRITICAL Unclosed '{' on line 7 in /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/dashboard/candidate/profile/paymentinfo.php on line 53
+

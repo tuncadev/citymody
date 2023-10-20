@@ -1,0 +1,6474 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Package Name\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-07 07:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: ../civi/includes/class-breadcrumb.php:30
+msgid " &gt; "
+msgstr ""
+
+#: ../civi/templates/loop/blog/overlay.php:24
+msgid " Comment"
+msgstr ""
+
+#: ../civi/templates/loop/blog/overlay.php:24
+msgid " Comments"
+msgstr ""
+
+#. 1: Plugin name 2: Elementor
+#: ../civi/elementor/class-entry.php:148
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#. 1: Plugin name 2: Elementor 3: Required Elementor version
+#. 1: Plugin name 2: PHP 3: Required PHP version
+#: ../civi/elementor/class-entry.php:174 ../civi/elementor/class-entry.php:201
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: ../civi/templates/post/comment.php:15
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:271
+msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:259
+#: ../civi/customizer/settings/functions.php:294
+msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:247
+msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "&#8220;Reading&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:259
+#: ../civi/customizer/settings/functions.php:294
+msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:271
+msgid "&#8220;Self portrait&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:283
+#: ../civi/customizer/settings/functions.php:294
+msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:283
+msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:259
+#: ../civi/customizer/settings/functions.php:294
+msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
+msgstr ""
+
+#: ../civi/customizer/settings/defaults.php:114
+msgid "+84-65854332"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:49
+#: ../civi/elementor/widgets/team-member.php:62
+#: ../civi/elementor/widgets/pricing-table.php:68
+#: ../civi/elementor/widgets/icon-box.php:76
+#: ../civi/elementor/widgets/number-box.php:60
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:78
+msgid "01"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:365
+msgid "01 - Circle Bullets"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:50
+#: ../civi/elementor/widgets/team-member.php:63
+#: ../civi/elementor/widgets/pricing-table.php:69
+#: ../civi/elementor/widgets/icon-box.php:77
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:79
+msgid "02"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:366
+msgid "02 - Rectangle Bullets"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:64
+#: ../civi/elementor/widgets/icon-box.php:78
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:80
+msgid "03"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:367
+msgid "03 - Fraction"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:368
+msgid "04 - Circle Fraction & Arrows"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:369
+msgid "05 - Modern Circle Bullets"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:370
+msgid "06 - Fraction 02"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:207
+#: ../civi/elementor/widgets/number-box.php:69
+msgid "1"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:208
+msgid "2"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:89
+msgid "2 Columns"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:209
+msgid "3"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:426
+msgid "3D Depth"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:210
+msgid "4"
+msgstr ""
+
+#: ../civi/404.php:18
+msgid "404"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:34
+msgid "404 Error"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:20
+msgid "404 Not Found"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:211
+msgid "5"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:212
+msgid "6"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:445
+#, php-format
+msgid "[%s] Password Reset"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:223
+msgid "A new portfolio default theme for WordPress"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:105
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:110
+msgid "Above"
+msgstr ""
+
+#: ../civi/customizer/options/color.php:33
+msgid "Accent"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:241
+#: ../civi/templates/global/account.php:183
+#, php-format
+msgid "Accept the %1$s and %2$s"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:54
+msgid "Access Token"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:59
+msgid "Access Token Secret"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:80
+msgid "Accordion"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:117
+msgid "Accordion #1"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:121
+msgid "Accordion #2"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:125
+msgid "Accordion #3"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:108
+msgid "Accordion Content"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:98
+msgid "Accordion Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:108
+#: ../civi/templates/global/account.php:63
+msgid "Account or Email"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:63
+#: ../civi/elementor/widgets/table.php:114
+msgid "Action"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:1297
+#: ../civi/elementor/widgets/accordion.php:316
+#: ../civi/elementor/widgets/nav-menu.php:425
+#: ../civi/elementor/widgets/nav-menu.php:790
+msgid "Active"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:87
+msgid "Active First Item"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:166
+msgid "Active Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:66
+#: ../civi/elementor/widgets/carousel/image-carousel.php:52
+msgid "Add Images"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:69
+#: ../civi/elementor/widgets/table.php:120
+msgid "Add New Cell"
+msgstr ""
+
+#: ../civi/includes/class-init.php:235 ../civi/includes/class-init.php:244
+#: ../civi/includes/class-init.php:253 ../civi/includes/class-init.php:262
+msgid "Add widgets here."
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:73
+#: ../civi/elementor/widgets/carousel/modern-slider.php:156
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:158
+msgid "Add Your Heading Text Here"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:182
+msgid "Address or Coordinate"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:126
+msgctxt "Advanced Border Control"
+msgid "Border"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:25
+msgid "Advanced Button"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:25
+msgid "Advanced Flip Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:22
+msgid "Advanced Google Map"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:143
+msgid "After"
+msgstr ""
+
+#: ../civi/includes/class-import.php:12
+msgid ""
+"After importing this demo, your site will have all data like wp.getcivi.com"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:147
+msgid "After Post Number"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/animated-headline.php:117
+msgid "After Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:132
+msgid "Align"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:249
+#: ../civi/elementor/widgets/carousel/carousel-base.php:376
+msgid "Aligned By"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:61
+#: ../civi/elementor/widgets/image-layers.php:102
+#: ../civi/elementor/widgets/circle-progress-chart.php:133
+#: ../civi/elementor/widgets/attribute-list.php:195
+#: ../civi/elementor/widgets/banner.php:268
+#: ../civi/elementor/widgets/list.php:252
+#: ../civi/elementor/widgets/image-rotate.php:152
+#: ../civi/elementor/widgets/icon-box.php:334
+#: ../civi/elementor/widgets/button.php:362
+#: ../civi/elementor/widgets/separator.php:77
+#: ../civi/elementor/widgets/image-box.php:257
+#: ../civi/elementor/widgets/fancy-heading.php:69
+#: ../civi/elementor/widgets/fancy-heading.php:180
+#: ../civi/elementor/widgets/accordion.php:283
+#: ../civi/elementor/widgets/flip-box.php:458
+#: ../civi/elementor/widgets/flip-box.php:733
+#: ../civi/elementor/widgets/social-networks.php:241
+#: ../civi/elementor/widgets/icon.php:103
+#: ../civi/elementor/widgets/heading.php:230
+#: ../civi/elementor/widgets/testimonial-grid.php:275
+#: ../civi/elementor/widgets/testimonial-grid.php:442
+#: ../civi/elementor/widgets/popup-video.php:170
+#: ../civi/elementor/widgets/form/mailchimp-form.php:50
+#: ../civi/elementor/widgets/form/form-base.php:128
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:334
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:469
+#: ../civi/elementor/widgets/original/animated-headline.php:75
+#: ../civi/elementor/widgets/original/heading.php:103
+#: ../civi/elementor/widgets/posts/posts-base.php:297
+#: ../civi/elementor/widgets/posts/posts-base.php:452
+msgid "Alignment"
+msgstr ""
+
+#: ../civi/includes/class-templates.php:273
+#: ../civi/elementor/widgets/posts/posts-base.php:736
+msgid "All"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:118
+msgid "All Categories"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:682
+msgid "All items displayed."
+msgstr ""
+
+#: ../civi/templates/global/canvas-search.php:40
+msgid "All location"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:200
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:229
+msgid "Always"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:283
+msgid "Angle"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:94
+msgid "Animate Border"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:95
+msgid "Animate Border 02"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:90
+msgid "Animate Line"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:108
+msgid "Animate Number"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:126
+#: ../civi/elementor/widgets/fancy-heading.php:329
+msgid "Animated Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:185
+#: ../civi/elementor/widgets/nav-menu.php:206
+#: ../civi/elementor/widgets/nav-menu.php:227
+#: ../civi/elementor/widgets/nav-menu.php:254
+msgid "Animation"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:246
+msgid "Animation Delay"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:208
+#: ../civi/customizer/options/general.php:86
+msgid "Animation Type"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:554
+msgid "Apple Maps-esque"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:95
+#: ../civi/elementor/widgets/image-box.php:99
+#: ../civi/elementor/widgets/flip-box.php:311
+msgid "Apply Link On"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:962
+msgid "Arrow"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:217
+#: ../civi/elementor/widgets/carousel/carousel-base.php:228
+msgid "Arrows"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:216
+msgid "Arrows and Dots"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:52
+#: ../civi/elementor/widgets/image-layers.php:284
+msgid "Artboard"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:244
+#: ../civi/elementor/widgets/posts/posts-base.php:243
+msgid "Ascending"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:59
+msgid "Asides"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:25
+#, php-format
+msgctxt "attachment label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:102
+msgid "Attribute #1"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:106
+msgid "Attribute #2"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:21
+msgid "Attribute List"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-attribute-list.php:44
+msgid "Attribute: Name"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-attribute-list.php:47
+msgid "Attribute: Value"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:73
+msgid "Audios"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:57
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:104
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:158
+#: ../civi/elementor/widgets/posts/blog.php:250
+#: ../civi/elementor/widgets/posts/blog.php:314
+#: ../civi/elementor/widgets/posts/posts-base.php:56
+#: ../civi/elementor/widgets/posts/posts-base.php:103
+#: ../civi/elementor/widgets/posts/posts-base.php:157
+msgid "Author"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:24
+#, php-format
+msgctxt "author label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:156
+#: ../civi/customizer/options/blog.php:223
+#: ../civi/customizer/options/color.php:100
+#: ../civi/elementor/widgets/carousel/carousel-base.php:42
+msgid "Auto"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:43
+msgid "Auto - Fixed Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/form.php:77
+msgid "Auto Fit"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:117
+msgid "Auto Play"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:245
+msgid "Autoplay"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:519
+msgid "Autoplay animation speed"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:254
+msgid "Autoplay Speed"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:506
+msgid "Autoplay speed"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:190
+#: ../civi/elementor/widgets/testimonial-grid.php:560
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:643
+msgid "Avatar"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:259
+msgid "Avatar Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:200
+msgid "Back"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:719
+msgid "Back - Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:956
+msgid "Back - Description"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:932
+msgid "Back - Heading"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:875
+msgid "Back - Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:795
+msgid "Back - Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:151
+#: ../civi/templates/global/account.php:107
+msgid "Back to login"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:668
+#: ../civi/elementor/widgets/instagram.php:714
+#: ../civi/elementor/widgets/instagram.php:845
+#: ../civi/elementor/widgets/instagram.php:1028
+#: ../civi/elementor/widgets/instagram.php:1151
+#: ../civi/elementor/widgets/instagram.php:1211
+#: ../civi/elementor/widgets/instagram.php:1305
+#: ../civi/elementor/widgets/banner.php:261
+#: ../civi/elementor/widgets/banner.php:441
+#: ../civi/elementor/widgets/banner.php:479
+#: ../civi/elementor/widgets/nav-menu.php:172
+#: ../civi/elementor/widgets/flip-box.php:169
+#: ../civi/elementor/widgets/flip-box.php:325
+#: ../civi/customizer/options/color.php:70
+#: ../civi/elementor/widgets/carousel/modern-slider.php:238
+#: ../civi/elementor/widgets/posts/blog.php:910
+#: ../civi/elementor/widgets/posts/blog.php:932
+#: ../civi/elementor/widgets/posts/posts-base.php:520
+msgid "Background"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:242
+msgid "Background Animation"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:201
+#: ../civi/customizer/options/blog.php:268
+#: ../civi/customizer/options/color.php:145
+msgid "Background Attachment"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:178
+#: ../civi/elementor/widgets/button.php:226
+#: ../civi/elementor/widgets/button.php:293
+#: ../civi/elementor/widgets/job-search.php:320
+#: ../civi/elementor/widgets/job-search.php:366
+#: ../civi/elementor/widgets/number-box.php:147
+#: ../civi/elementor/widgets/number-box.php:247
+#: ../civi/elementor/widgets/nav-menu.php:600
+#: ../civi/elementor/widgets/nav-menu.php:631
+#: ../civi/elementor/widgets/nav-menu.php:736
+#: ../civi/elementor/widgets/nav-menu.php:773
+#: ../civi/elementor/widgets/nav-menu.php:809
+#: ../civi/elementor/widgets/social-networks.php:265
+#: ../civi/elementor/widgets/social-networks.php:296
+#: ../civi/elementor/widgets/popup-video.php:302
+#: ../civi/elementor/widgets/popup-video.php:316
+#: ../civi/elementor/widgets/popup-video.php:447
+#: ../civi/elementor/widgets/popup-video.php:480
+#: ../civi/customizer/options/general.php:133
+#: ../civi/customizer/options/header.php:23
+#: ../civi/customizer/options/blog.php:191
+#: ../civi/customizer/options/top-bar.php:56
+#: ../civi/elementor/widgets/form/form-base.php:76
+#: ../civi/elementor/widgets/form/form-base.php:106
+#: ../civi/elementor/widgets/form/form-base.php:213
+#: ../civi/elementor/widgets/form/form-base.php:243
+#: ../civi/elementor/widgets/carousel/modern-slider.php:440
+#: ../civi/elementor/widgets/carousel/carousel-base.php:565
+#: ../civi/elementor/widgets/carousel/carousel-base.php:600
+#: ../civi/elementor/widgets/posts/blog.php:821
+#: ../civi/elementor/widgets/posts/blog.php:851
+msgid "Background Color"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:51
+msgid "Background Color Header Sticky"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:142
+#: ../civi/customizer/options/blog.php:209
+msgid "Background Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:178
+#: ../civi/elementor/widgets/flip-box.php:334
+msgid "Background Overlay"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:181
+#: ../civi/customizer/options/blog.php:248
+#: ../civi/customizer/options/color.php:125
+msgid "Background Position"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:166
+#: ../civi/customizer/options/blog.php:233
+#: ../civi/customizer/options/color.php:110
+msgid "Background Repeat"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:151
+#: ../civi/customizer/options/blog.php:218
+#: ../civi/customizer/options/color.php:95
+msgid "Background Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/view-demo.php:146
+msgid "Badge"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:26
+msgid "Banner"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:67
+msgid "Banner Image"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:102
+msgid "Banner: Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:97
+msgid "Banner: Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:138
+#: ../civi/elementor/widgets/posts/blog.php:153
+msgid "Banners"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:141
+msgid "Bar Color"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:283
+msgid "Beautiful gardens painted by Berthe Morisot in the late 1800s"
+msgstr ""
+
+#: ../civi/customizer/settings/defaults.php:113
+msgid "Become searchable by top companies in your domain. Learn more"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:142
+msgid "Before"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/animated-headline.php:103
+msgid "Before Spacing"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:173
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:163
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:168
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:109
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:114
+msgid "Below"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:436
+msgid "Below Slider"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:247
+msgid "Berthe Morisot<br>(French, 1841-1895)"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:114
+#: ../civi/elementor/widgets/fancy-heading.php:131
+msgid "Better"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:119
+msgid "Big First"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:134
+msgid "Bigger"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:35
+msgid "Black"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:267
+msgid "Blend Mode"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:303
+msgctxt "Block pattern description"
+msgid ""
+"A block with 3 columns that display contact information and social media "
+"links."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:234
+msgctxt "Block pattern description"
+msgid "A huge text followed by social networks and email address links."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:293
+msgctxt "Block pattern description"
+msgid "A list of projects with thumbnail images."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:246
+msgctxt "Block pattern description"
+msgid ""
+"A Media & Text block with a big image on the left and a heading on the right."
+" The heading is followed by a separator and a description paragraph."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:270
+msgctxt "Block pattern description"
+msgid ""
+"A media & text block with a big image on the left and a smaller one with "
+"bordered frame on the right."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:282
+msgctxt "Block pattern description"
+msgid "An overlapping columns block with two images and a text description."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:258
+msgctxt "Block pattern description"
+msgid "Three images inside an overlapping columns block."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:304
+msgctxt "Block pattern sample content"
+msgid "123 Main Street"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:304
+msgctxt "Block pattern sample content"
+msgid "123-456-7890"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:304
+msgctxt "Block pattern sample content"
+msgid "Cambridge, MA, 02139"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:304
+msgctxt "Block pattern sample content"
+msgid "example@example.com"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:9
+#: ../civi/elementor/widgets/posts/blog.php:27
+msgid "Blog"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:15
+msgid "Blog Archive"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:22
+msgid "Blog Customize"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:557
+msgid "Blue Water"
+msgstr ""
+
+#: ../civi/customizer/options/color.php:77
+msgid "Body Background"
+msgstr ""
+
+#: ../civi/customizer/options/color.php:86
+msgid "Body BG Image"
+msgstr ""
+
+#: ../civi/customizer/options/typography.php:17
+msgid "Body Font"
+msgstr ""
+
+#: ../civi/customizer/options/typography.php:24
+msgid "Body Font Type"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:749
+#: ../civi/elementor/widgets/instagram.php:867
+#: ../civi/elementor/widgets/instagram.php:1038
+#: ../civi/elementor/widgets/instagram.php:1161
+#: ../civi/elementor/widgets/instagram.php:1221
+#: ../civi/elementor/widgets/instagram.php:1315
+#: ../civi/elementor/widgets/base.php:270
+#: ../civi/elementor/widgets/base.php:365
+#: ../civi/elementor/widgets/banner.php:449
+#: ../civi/elementor/widgets/banner.php:487
+#: ../civi/elementor/widgets/shapes.php:81
+#: ../civi/elementor/widgets/fancy-heading.php:350
+#: ../civi/elementor/widgets/fancy-heading.php:429
+#: ../civi/elementor/widgets/popup-video.php:408
+#: ../civi/customizer/options/color.php:60
+msgid "Border"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:381
+msgid "Border Bar Waiting"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:153
+msgid "Border Bottom"
+msgstr ""
+
+#: ../civi/elementor/widgets/shapes.php:54
+msgid "Border Circle"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:211
+#: ../civi/elementor/widgets/button.php:278
+#: ../civi/elementor/widgets/job-search.php:308
+#: ../civi/elementor/widgets/job-search.php:354
+#: ../civi/elementor/widgets/accordion.php:220
+#: ../civi/elementor/widgets/social-networks.php:273
+#: ../civi/elementor/widgets/social-networks.php:304
+#: ../civi/elementor/widgets/popup-video.php:247
+#: ../civi/elementor/widgets/popup-video.php:266
+#: ../civi/elementor/widgets/popup-video.php:456
+#: ../civi/elementor/widgets/popup-video.php:489
+#: ../civi/elementor/widgets/form/form-base.php:68
+#: ../civi/elementor/widgets/form/form-base.php:98
+#: ../civi/elementor/widgets/form/form-base.php:205
+#: ../civi/elementor/widgets/form/form-base.php:235
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:416
+#: ../civi/elementor/widgets/carousel/carousel-base.php:573
+#: ../civi/elementor/widgets/carousel/carousel-base.php:608
+#: ../civi/elementor/widgets/original/accordion.php:132
+#: ../civi/elementor/widgets/posts/blog.php:829
+#: ../civi/elementor/widgets/posts/blog.php:859
+msgid "Border Color"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:82
+msgctxt "Border Control"
+msgid "Color"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:73
+msgctxt "Border Control"
+msgid "Dashed"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:72
+msgctxt "Border Control"
+msgid "Dotted"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:71
+msgctxt "Border Control"
+msgid "Double"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:74
+msgctxt "Border Control"
+msgid "Groove"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:100
+msgctxt "Border Control"
+msgid "Rounded"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:70
+msgctxt "Border Control"
+msgid "Solid"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:65
+msgctxt "Border Control"
+msgid "Type"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-advanced-border.php:91
+msgctxt "Border Control"
+msgid "Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/form.php:262
+msgid "Border Focus Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:268
+#: ../civi/elementor/widgets/instagram.php:757
+#: ../civi/elementor/widgets/instagram.php:875
+#: ../civi/elementor/widgets/instagram.php:1046
+#: ../civi/elementor/widgets/instagram.php:1169
+#: ../civi/elementor/widgets/instagram.php:1229
+#: ../civi/elementor/widgets/instagram.php:1323
+#: ../civi/elementor/widgets/team-member.php:93
+#: ../civi/elementor/widgets/banner.php:286
+#: ../civi/elementor/widgets/banner.php:547
+#: ../civi/elementor/widgets/image-rotate.php:142
+#: ../civi/elementor/widgets/image-rotate.php:264
+#: ../civi/elementor/widgets/icon-box.php:576
+#: ../civi/elementor/widgets/button.php:346
+#: ../civi/elementor/widgets/image-box.php:442
+#: ../civi/elementor/widgets/fancy-heading.php:358
+#: ../civi/elementor/widgets/fancy-heading.php:438
+#: ../civi/elementor/widgets/number-box.php:291
+#: ../civi/elementor/widgets/nav-menu.php:551
+#: ../civi/elementor/widgets/nav-menu.php:672
+#: ../civi/elementor/widgets/nav-menu.php:846
+#: ../civi/elementor/widgets/flip-box.php:375
+#: ../civi/elementor/widgets/flip-box.php:581
+#: ../civi/elementor/widgets/flip-box.php:856
+#: ../civi/elementor/widgets/icon.php:218
+#: ../civi/elementor/widgets/testimonial-grid.php:330
+#: ../civi/elementor/widgets/popup-video.php:222
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:427
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:246
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:261
+#: ../civi/elementor/widgets/carousel/carousel-base.php:634
+#: ../civi/elementor/widgets/carousel/image-carousel.php:200
+#: ../civi/elementor/widgets/original/form.php:232
+#: ../civi/elementor/widgets/original/form.php:296
+#: ../civi/elementor/widgets/posts/blog.php:375
+msgid "Border Radius"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:918
+#: ../civi/elementor/widgets/popup-video.php:214
+#: ../civi/elementor/widgets/form/form-base.php:34
+#: ../civi/elementor/widgets/form/form-base.php:44
+#: ../civi/elementor/widgets/form/form-base.php:171
+#: ../civi/elementor/widgets/form/form-base.php:181
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:400
+#: ../civi/elementor/widgets/carousel/carousel-base.php:625
+#: ../civi/elementor/widgets/original/form.php:279
+#: ../civi/elementor/widgets/original/accordion.php:117
+msgid "Border Width"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:130
+#: ../civi/customizer/settings/functions.php:139
+#: ../civi/customizer/settings/functions.php:148
+#: ../civi/customizer/settings/functions.php:175
+#: ../civi/customizer/settings/functions.php:184
+msgid "Borders"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:61
+#: ../civi/elementor/class-widget-utils.php:79
+#: ../civi/elementor/widgets/flip-box.php:494
+#: ../civi/elementor/widgets/flip-box.php:769
+#: ../civi/elementor/widgets/testimonial-grid.php:113
+#: ../civi/elementor/controls/group-control-tooltip.php:48
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:118
+#: ../civi/elementor/widgets/carousel/carousel-base.php:432
+#: ../civi/elementor/widgets/grid/grid-base.php:76
+msgid "Bottom"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:52
+msgid "Bottom Left"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:53
+msgid "Bottom Right"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:253
+#: ../civi/elementor/widgets/image-rotate.php:137
+#: ../civi/elementor/widgets/icon-box.php:329
+#: ../civi/elementor/widgets/image-box.php:252
+#: ../civi/elementor/widgets/testimonial-grid.php:270
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:329
+msgid "Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:450
+msgid "Box Shadow"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:154
+#: ../civi/elementor/widgets/icon.php:68
+msgid "Bubble"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:89
+msgid "Butt"
+msgstr ""
+
+#: ../civi/elementor/widgets/base.php:198
+#: ../civi/elementor/widgets/banner.php:221
+#: ../civi/elementor/widgets/banner.php:420
+#: ../civi/elementor/widgets/button.php:50
+#: ../civi/elementor/widgets/button.php:59
+#: ../civi/elementor/widgets/button.php:60
+#: ../civi/elementor/widgets/button.php:159
+#: ../civi/elementor/widgets/job-search.php:280
+#: ../civi/elementor/widgets/popup-video.php:64
+#: ../civi/elementor/widgets/popup-video.php:333
+#: ../civi/elementor/controls/group-control-button.php:33
+#: ../civi/elementor/widgets/form/form-base.php:123
+#: ../civi/elementor/widgets/carousel/modern-slider.php:203
+#: ../civi/elementor/widgets/carousel/modern-slider.php:477
+#: ../civi/elementor/widgets/posts/posts-base.php:267
+msgid "Button"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/form.php:202
+msgid "Button Class"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:518
+msgid "Button Hover"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-button.php:66
+msgid "Button Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:189
+msgid "Button Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:99
+#: ../civi/elementor/widgets/image-box.php:103
+#: ../civi/elementor/widgets/flip-box.php:315
+msgid "Button Only"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-button.php:93
+msgid "Button Size"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-button.php:39
+msgid "Button Style"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:116
+#: ../civi/elementor/controls/group-control-button.php:46
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:173
+msgid "Button Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:178
+msgid "Button Type"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:82
+msgid "Button: Badge"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:87
+msgid "Button: Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:77
+msgid "Button: Text"
+msgstr ""
+
+#: ../civi/templates/post/content-meta.php:3
+#: ../civi/templates/loop/blog/overlay.php:15
+#: ../civi/templates/loop/blog/caption-03.php:19
+#: ../civi/templates/loop/blog/caption.php:10
+msgid "by"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:166
+msgid "Cache Time Duration"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:185
+#: ../civi/templates/global/account.php:121
+msgid "Candidate"
+msgstr ""
+
+#: ../civi/includes/class-init.php:261
+msgid "Candidate Sidebar"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:78 ../civi/includes/class-ajax.php:192
+msgid "Captcha failed"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:76 ../civi/includes/class-ajax.php:190
+msgid "Captcha success"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:889
+#: ../civi/elementor/widgets/popup-video.php:146
+#: ../civi/elementor/widgets/posts/blog.php:165
+#: ../civi/elementor/widgets/posts/blog.php:494
+msgid "Caption"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:511
+msgid "Carousel Arrows"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:658
+msgid "Carousel Dots"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:35
+msgid "Carousel Options"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:59
+#: ../civi/elementor/widgets/job-search.php:80
+msgid "Categories"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:189
+#: ../civi/elementor/widgets/posts/blog.php:290
+#: ../civi/elementor/widgets/posts/blog.php:618
+#: ../civi/elementor/widgets/posts/blog.php:884
+msgid "Category"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:21
+#, php-format
+msgctxt "category label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:17
+#: ../civi/elementor/class-widget-utils.php:35
+#: ../civi/elementor/class-widget-utils.php:97
+#: ../civi/elementor/class-widget-utils.php:115
+#: ../civi/elementor/class-widget-utils.php:133
+#: ../civi/elementor/widgets/modern-tabs.php:69
+#: ../civi/elementor/widgets/button.php:370
+#: ../civi/elementor/widgets/fancy-heading.php:77
+#: ../civi/elementor/widgets/fancy-heading.php:188
+#: ../civi/elementor/widgets/nav-menu.php:141
+#: ../civi/elementor/widgets/flip-box.php:467
+#: ../civi/elementor/widgets/flip-box.php:742
+#: ../civi/elementor/widgets/form/mailchimp-form.php:58
+#: ../civi/elementor/widgets/form/form-base.php:136
+#: ../civi/elementor/widgets/original/counter.php:53
+#: ../civi/elementor/widgets/grid/grid-base.php:96
+msgid "Center"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:194
+#: ../civi/customizer/options/blog.php:261
+#: ../civi/customizer/options/color.php:138
+msgid "Center Bottom"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:193
+#: ../civi/customizer/options/blog.php:260
+#: ../civi/customizer/options/color.php:137
+msgid "Center Center"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:463
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:227
+msgid "Center Mode"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:476
+msgid "Center padding"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:192
+#: ../civi/customizer/options/blog.php:259
+#: ../civi/customizer/options/color.php:136
+msgid "Center Top"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:130
+msgid "Centered"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:110
+#: ../civi/elementor/widgets/testimonial-grid.php:203
+#: ../civi/elementor/widgets/testimonial-grid.php:225
+#: ../civi/elementor/widgets/testimonial-grid.php:231
+#: ../civi/elementor/widgets/testimonial-grid.php:237
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:171
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:200
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:205
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:210
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:661
+msgid "CEO"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:53
+#: ../civi/elementor/widgets/circle-progress-chart.php:128
+msgid "Chart"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:75
+msgid "Chats"
+msgstr ""
+
+#: ../civi/includes/class-enqueue.php:272
+msgid "Checking your email,please wait..."
+msgstr ""
+
+#: ../civi/includes/class-enqueue.php:276
+msgid "Checking your password,please wait..."
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:282
+msgid "Chevron"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:247
+msgid "Choose an image that displays on left info box"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:98
+msgid "Choose default icon for all items."
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:66
+#: ../civi/elementor/widgets/banner.php:87
+#: ../civi/elementor/widgets/image-rotate.php:80
+#: ../civi/elementor/widgets/image-box.php:118
+#: ../civi/elementor/widgets/flip-box.php:109
+#: ../civi/elementor/widgets/flip-box.php:229
+msgid "Choose Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:95
+msgid "Choose Template"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:167
+#: ../civi/elementor/widgets/shapes.php:53
+#: ../civi/elementor/widgets/icon.php:82
+msgid "Circle"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:112
+msgid "Circle Chart: Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:20
+msgid "Circle Progress Chart"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:65
+msgid "Circle Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:59
+msgid "Circular Motion"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:133
+msgid "Cite Layout"
+msgstr ""
+
+#: ../civi/elementor/class-widget-init.php:195
+#: ../civi/elementor/class-entry.php:149 ../civi/elementor/class-entry.php:175
+#: ../civi/elementor/class-entry.php:202 ../civi/includes/class-import.php:11
+msgid "Civi"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:150
+#: ../civi/elementor/widgets/nav-menu.php:281
+msgid "Classic"
+msgstr ""
+
+#: ../civi/includes/class-customizer.php:57
+msgid "Clear"
+msgstr ""
+
+#: ../civi/includes/class-customizer.php:58
+msgid "Clear color"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:149
+msgid "Click and drag to change slides"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:157
+#: ../civi/elementor/widgets/flip-box.php:276
+msgid ""
+"Click edit button to change this text. Lorem ipsum dolor sit amet "
+"consectetur adipiscing elit dolor"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-rotate.php:107
+#: ../civi/elementor/widgets/image-box.php:219
+msgid ""
+"Click edit button to change this text. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, "
+"pulvinar dapibus leo."
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:238
+msgid "Click here"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/client-logo.php:21
+#: ../civi/elementor/widgets/grid/client-logo.php:128
+msgid "Client Logo"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:199
+#: ../civi/elementor/widgets/google-map.php:383
+#: ../civi/elementor/widgets/google-map.php:402
+#: ../civi/elementor/widgets/timeline.php:133
+#: ../civi/elementor/widgets/timeline.php:153
+#: ../civi/elementor/widgets/modern-tabs.php:177
+#: ../civi/elementor/widgets/attribute-list.php:227
+#: ../civi/elementor/widgets/attribute-list.php:247
+#: ../civi/elementor/widgets/attribute-list.php:261
+#: ../civi/elementor/widgets/instagram.php:827
+#: ../civi/elementor/widgets/instagram.php:924
+#: ../civi/elementor/widgets/instagram.php:984
+#: ../civi/elementor/widgets/instagram.php:1134
+#: ../civi/elementor/widgets/team-member.php:262
+#: ../civi/elementor/widgets/team-member.php:282
+#: ../civi/elementor/widgets/team-member.php:302
+#: ../civi/elementor/widgets/base.php:329
+#: ../civi/elementor/widgets/base.php:425
+#: ../civi/elementor/widgets/banner.php:333
+#: ../civi/elementor/widgets/banner.php:363
+#: ../civi/elementor/widgets/banner.php:392
+#: ../civi/elementor/widgets/image-rotate.php:345
+#: ../civi/elementor/widgets/image-rotate.php:380
+#: ../civi/elementor/widgets/button.php:496
+#: ../civi/elementor/widgets/button.php:518
+#: ../civi/elementor/widgets/separator.php:64
+#: ../civi/elementor/widgets/image-box.php:533
+#: ../civi/elementor/widgets/image-box.php:572
+#: ../civi/elementor/widgets/job-search.php:182
+#: ../civi/elementor/widgets/job-search.php:272
+#: ../civi/elementor/widgets/shapes.php:102
+#: ../civi/elementor/widgets/fancy-heading.php:339
+#: ../civi/elementor/widgets/fancy-heading.php:418
+#: ../civi/elementor/widgets/accordion.php:306
+#: ../civi/elementor/widgets/accordion.php:320
+#: ../civi/elementor/widgets/accordion.php:388
+#: ../civi/elementor/widgets/number-box.php:154
+#: ../civi/elementor/widgets/nav-menu.php:589
+#: ../civi/elementor/widgets/nav-menu.php:620
+#: ../civi/elementor/widgets/social-networks.php:256
+#: ../civi/elementor/widgets/social-networks.php:287
+#: ../civi/elementor/widgets/social-networks.php:406
+#: ../civi/elementor/widgets/social-networks.php:421
+#: ../civi/elementor/widgets/social-networks.php:461
+#: ../civi/elementor/widgets/social-networks.php:476
+#: ../civi/elementor/widgets/heading.php:374
+#: ../civi/elementor/widgets/gradation.php:131
+#: ../civi/elementor/widgets/gradation.php:151
+#: ../civi/elementor/widgets/gradation.php:165
+#: ../civi/elementor/widgets/testimonial-grid.php:472
+#: ../civi/elementor/widgets/testimonial-grid.php:501
+#: ../civi/elementor/widgets/testimonial-grid.php:521
+#: ../civi/elementor/widgets/testimonial-grid.php:541
+#: ../civi/elementor/widgets/popup-video.php:553
+#: ../civi/elementor/widgets/popup-video.php:568
+#: ../civi/elementor/controls/group-control-text-stroke.php:65
+#: ../civi/elementor/controls/group-control-text-gradient.php:130
+#: ../civi/customizer/options/color.php:9
+#: ../civi/customizer/options/top-bar.php:47
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:501
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:530
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:550
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:570
+#: ../civi/elementor/widgets/carousel/modern-slider.php:363
+#: ../civi/elementor/widgets/carousel/modern-slider.php:432
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:291
+#: ../civi/elementor/widgets/posts/blog.php:658
+#: ../civi/elementor/widgets/posts/blog.php:672
+#: ../civi/elementor/widgets/posts/blog.php:712
+#: ../civi/elementor/widgets/posts/blog.php:726
+#: ../civi/elementor/widgets/posts/blog.php:769
+#: ../civi/elementor/widgets/posts/blog.php:902
+#: ../civi/elementor/widgets/posts/blog.php:924
+#: ../civi/elementor/widgets/posts/posts-base.php:371
+#: ../civi/elementor/widgets/posts/posts-base.php:509
+#: ../civi/elementor/widgets/grid/view-demo.php:99
+msgid "Color"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:122
+msgid "Color Type"
+msgstr ""
+
+#: ../civi/includes/class-customizer.php:62
+msgid "Color value"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:200
+msgid "Column"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/grid-base.php:45
+msgid "Column Gutter"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/column.php:44
+msgid "Column Order"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:122
+msgid "Column Vertical Alignment"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:71
+#: ../civi/elementor/widgets/list.php:89
+#: ../civi/elementor/widgets/image-gallery.php:188
+#: ../civi/elementor/widgets/testimonial-grid.php:143
+#: ../civi/customizer/options/blog.php:84
+#: ../civi/elementor/widgets/posts/blog.php:345
+#: ../civi/elementor/widgets/grid/grid-base.php:31
+msgid "Columns"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/contact-form-7.php:117
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:153
+msgid "Columns Gap"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/view-demo.php:153
+msgid "Coming Soon"
+msgstr ""
+
+#: ../civi/comments.php:76
+msgid "Comment"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:253
+msgid "Comment Count"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:316
+msgid "Comments"
+msgstr ""
+
+#: ../civi/comments.php:70
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: ../civi/comments.php:32 ../civi/templates/post/content-meta.php:21
+#: ../civi/templates/loop/blog/caption-03.php:43
+#: ../civi/templates/loop/blog/caption.php:34
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post title
+#: ../civi/comments.php:28
+msgctxt "comments title"
+msgid "1 Comment"
+msgstr ""
+
+#. %s: post title
+#: ../civi/templates/post/content-meta.php:17
+#: ../civi/templates/loop/blog/caption-03.php:39
+#: ../civi/templates/loop/blog/caption.php:30
+msgctxt "comments title"
+msgid "One Comment"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:60
+msgid "Companies"
+msgstr ""
+
+#: ../civi/includes/class-init.php:252
+msgid "Company Sidebar"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:44
+msgid "Consumer Key"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:49
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/contact-form-7.php:19
+msgid "Contact Form 7"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:301
+msgid "Contact information"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:158
+#: ../civi/customizer/options/blog.php:225
+#: ../civi/customizer/options/color.php:102
+msgid "Contain"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:241
+#: ../civi/elementor/widgets/google-map.php:391
+#: ../civi/elementor/widgets/team-member.php:54
+#: ../civi/elementor/widgets/team-member.php:114
+#: ../civi/elementor/widgets/team-member.php:243
+#: ../civi/elementor/widgets/banner.php:162
+#: ../civi/elementor/widgets/banner.php:322
+#: ../civi/elementor/widgets/image-rotate.php:303
+#: ../civi/elementor/widgets/image-box.php:522
+#: ../civi/elementor/widgets/job-search.php:157
+#: ../civi/elementor/widgets/twitter.php:40
+#: ../civi/elementor/widgets/image-gallery.php:61
+#: ../civi/elementor/widgets/accordion.php:106
+#: ../civi/elementor/widgets/accordion.php:368
+#: ../civi/elementor/widgets/flip-box.php:85
+#: ../civi/elementor/widgets/flip-box.php:205
+#: ../civi/elementor/widgets/social-networks.php:60
+#: ../civi/elementor/widgets/testimonial-grid.php:168
+#: ../civi/elementor/widgets/testimonial-grid.php:185
+#: ../civi/elementor/widgets/testimonial-grid.php:415
+#: ../civi/customizer/options/color.php:17
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:159
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:442
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:638
+#: ../civi/elementor/widgets/carousel/modern-slider.php:94
+#: ../civi/elementor/widgets/carousel/modern-slider.php:141
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:70
+#: ../civi/elementor/widgets/carousel/image-carousel.php:48
+#: ../civi/elementor/widgets/grid/view-demo.php:79
+#: ../civi/elementor/widgets/grid/client-logo.php:42
+msgid "Content"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:200
+#: ../civi/elementor/widgets/original/section.php:110
+#: ../civi/elementor/widgets/grid/grid-base.php:90
+msgid "Content Alignment"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:71
+msgid "Content Layout"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:162
+msgid "Content Padding"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/grid-base.php:69
+msgid "Content Position"
+msgstr ""
+
+#: ../civi/customizer/options/layout.php:29
+msgid "Content Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:116
+msgid "Controls"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/image-carousel.php:115
+msgid "Controls the height of images. Use for slider per view auto."
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:66
+msgid "Controls the size of the pie chart circle."
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:75
+msgid "Controls the unit of chart."
+msgstr ""
+
+#: ../civi/customizer/options/footer.php:38
+msgid "Copyright"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:157
+#: ../civi/customizer/options/blog.php:224
+#: ../civi/customizer/options/color.php:101
+msgid "Cover"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:78
+msgid "CSS Animation"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:118
+msgid "Currency"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:82
+#: ../civi/elementor/widgets/posts/posts-base.php:81
+msgid "Current Query"
+msgstr ""
+
+#: ../civi/elementor/class-control-init.php:49
+msgid "Curve Alt"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/form.php:147
+#: ../civi/elementor/widgets/original/section.php:52
+#: ../civi/elementor/widgets/posts/blog.php:168
+#: ../civi/elementor/widgets/posts/blog.php:266
+msgid "Custom"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:268
+msgid "Custom Button"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:275
+msgid "Custom Button ID"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:103
+#: ../civi/elementor/widgets/banner.php:127
+#: ../civi/elementor/widgets/banner.php:143
+msgid "Custom Height"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:102
+msgid "Custom Mode"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:81
+#: ../civi/elementor/widgets/posts/posts-base.php:80
+msgid "Custom Query"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:109
+msgid "Custom Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:111
+#: ../civi/elementor/widgets/original/form.php:169
+msgid "Custom Width"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:50
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:202
+msgid "Dark gray"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:388
+msgid "Dashed"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:60
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:55
+#: ../civi/elementor/widgets/posts/blog.php:251
+#: ../civi/elementor/widgets/posts/blog.php:315
+#: ../civi/elementor/widgets/posts/posts-base.php:54
+msgid "Date"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:52
+msgid "Date:"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:171
+msgid "Day"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:28
+#, php-format
+msgctxt "day label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/includes/class-customizer.php:59
+#: ../civi/elementor/widgets/google-map.php:191
+#: ../civi/elementor/widgets/attribute-list.php:63
+#: ../civi/elementor/widgets/list.php:81
+#: ../civi/elementor/widgets/icon-box.php:152
+#: ../civi/elementor/widgets/icon.php:66
+#: ../civi/elementor/widgets/popup-video.php:182
+#: ../civi/elementor/controls/group-control-advanced-border.php:68
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:139
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:191
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:204
+#: ../civi/elementor/widgets/original/form.php:146
+#: ../civi/elementor/widgets/posts/blog.php:167
+#: ../civi/elementor/widgets/posts/blog.php:265
+#: ../civi/elementor/widgets/posts/posts-base.php:558
+#: ../civi/elementor/widgets/grid/grid-base.php:73
+#: ../civi/elementor/widgets/grid/grid-base.php:94
+msgid "Default"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:97
+msgid "Default Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:118
+msgid ""
+"Delay between transitions (in ms). For e.g: 3000. Leave blank to disabled. "
+"Input 1 to make smooth transition."
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:250
+msgid "Delay on Change"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:310
+msgid "Delayed"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:157
+msgid "Delete existing caching data"
+msgstr ""
+
+#: ../civi/elementor/widgets/number-box.php:223
+msgid "Desc"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:243
+#: ../civi/elementor/widgets/posts/posts-base.php:242
+msgid "Descending"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:72
+#: ../civi/elementor/widgets/timeline.php:141
+#: ../civi/elementor/widgets/banner.php:200
+#: ../civi/elementor/widgets/banner.php:386
+#: ../civi/elementor/widgets/pricing-table.php:91
+#: ../civi/elementor/widgets/image-rotate.php:102
+#: ../civi/elementor/widgets/image-rotate.php:360
+#: ../civi/elementor/widgets/icon-box.php:262
+#: ../civi/elementor/widgets/icon-box.php:714
+#: ../civi/elementor/widgets/image-box.php:208
+#: ../civi/elementor/widgets/image-box.php:552
+#: ../civi/elementor/widgets/number-box.php:101
+#: ../civi/elementor/widgets/flip-box.php:155
+#: ../civi/elementor/widgets/flip-box.php:274
+#: ../civi/elementor/widgets/heading.php:136
+#: ../civi/elementor/widgets/heading.php:401
+#: ../civi/elementor/widgets/gradation.php:57
+#: ../civi/elementor/widgets/gradation.php:139
+#: ../civi/elementor/widgets/carousel/modern-slider.php:191
+#: ../civi/elementor/widgets/carousel/modern-slider.php:197
+#: ../civi/elementor/widgets/carousel/modern-slider.php:448
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:168
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:307
+msgid "Description"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:201
+msgid "Description on the Banner"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/animated-headline.php:43
+#: ../civi/elementor/widgets/original/heading.php:71
+msgid "Dimension"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:387
+msgid "Direction"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:225
+msgid "Display"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:254
+#: ../civi/elementor/widgets/heading.php:126
+msgid "Display Divider"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:276
+msgid "Display Type Cursor"
+msgstr ""
+
+#: ../civi/elementor/widgets/shapes.php:55
+msgid "Distortion"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:100
+msgid "div"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:900
+#: ../civi/elementor/widgets/heading.php:475
+msgid "Divider"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:166
+msgid "Dividers"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:218
+#: ../civi/elementor/widgets/carousel/carousel-base.php:352
+msgid "Dots"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:387
+msgid "Dotted"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:386
+msgid "Double"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:170
+msgid "Double Line"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:413
+msgid "Down"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:110
+msgid "Draggable"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:235
+msgid "Dribbble"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:123
+#: ../civi/elementor/widgets/nav-menu.php:698
+msgid "Dropdown"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:562
+msgid "Easy Light"
+msgstr ""
+
+#: ../civi/templates/post/comment.php:28
+msgid "Edit"
+msgstr ""
+
+#: ../civi/elementor/class-font-elementor.php:42
+msgid "Eicons"
+msgstr ""
+
+#: ../civi/elementor/class-entry.php:150 ../civi/elementor/class-entry.php:176
+msgid "Elementor"
+msgstr ""
+
+#: ../civi/comments.php:81 ../civi/elementor/widgets/user-form.php:227
+#: ../civi/customizer/options/top-bar.php:39
+#: ../civi/templates/global/account.php:159
+msgid "Email"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:147
+msgid "Email already exists"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:58
+msgid "Email:"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:193
+#: ../civi/templates/global/account.php:129
+msgid "Employer"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:162
+msgid "Enable Badge"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:67
+msgid "Enable Float"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:105
+msgid "Enable Head Categories"
+msgstr ""
+
+#: ../civi/elementor/widgets/number-box.php:113
+msgid "Enable Icon"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:160
+msgid "Enable Page Title"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:42
+msgid "Enable Sticky"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:120
+#: ../civi/elementor/widgets/social-networks.php:101
+msgid "Enable Toggle (Mobie)"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:32
+msgid "Enable Top Bar"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:73
+#: ../civi/elementor/widgets/accordion.php:291
+msgid "End"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:405
+msgid "Enter a username or email address."
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:109
+#: ../civi/templates/global/account.php:64
+msgid "Enter Account or Email"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:254
+#: ../civi/templates/global/account.php:196
+msgid "Enter Code"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:228
+#: ../civi/templates/global/account.php:160
+msgid "Enter Email"
+msgstr ""
+
+#: ../civi/templates/global/account.php:44
+msgid "Enter new password"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:113
+#: ../civi/elementor/widgets/user-form.php:232
+#: ../civi/templates/global/account.php:68
+#: ../civi/templates/global/account.php:164
+msgid "Enter Password"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:224
+#: ../civi/templates/global/account.php:156
+msgid "Enter Username"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-rotate.php:108
+#: ../civi/elementor/widgets/icon-box.php:274
+#: ../civi/elementor/widgets/image-box.php:220
+#: ../civi/elementor/widgets/number-box.php:107
+#: ../civi/elementor/widgets/flip-box.php:158
+#: ../civi/elementor/widgets/flip-box.php:277
+msgid "Enter your description"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:186
+msgid "Enter your sub title"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:172
+#: ../civi/elementor/widgets/pricing-table.php:87
+#: ../civi/elementor/widgets/image-rotate.php:97
+#: ../civi/elementor/widgets/icon-box.php:231
+#: ../civi/elementor/widgets/image-box.php:186
+#: ../civi/elementor/widgets/number-box.php:79
+#: ../civi/elementor/widgets/flip-box.php:146
+#: ../civi/elementor/widgets/flip-box.php:266
+#: ../civi/elementor/widgets/heading.php:72
+#: ../civi/elementor/widgets/carousel/modern-slider.php:155
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:157
+msgid "Enter your title"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:144
+#: ../civi/templates/global/account.php:100
+msgid "Enter your username or email"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:235
+msgid "example@example.com"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:198
+#: ../civi/elementor/widgets/posts/blog.php:739
+msgid "Excerpt"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:207
+msgid "Excerpt Length"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:148
+#: ../civi/elementor/widgets/posts/posts-base.php:147
+msgid "Exclude"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:152
+#: ../civi/elementor/widgets/posts/posts-base.php:151
+msgid "Exclude By"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:48
+msgid "Extended"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:173
+msgid "Extra Large"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:169
+#: ../civi/elementor/controls/group-control-button.php:97
+msgid "Extra Small"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:171
+#: ../civi/elementor/widgets/social-networks.php:163
+msgid "Facebook"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:283
+#: ../civi/elementor/widgets/carousel/carousel-base.php:105
+msgid "Fade"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:24
+#: ../civi/elementor/widgets/fancy-heading.php:61
+msgid "Fancy Heading"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:137
+msgid "Faster"
+msgstr ""
+
+#: ../civi/templates/archive/layout-grid.php:63
+#: ../civi/templates/archive/layout-masonry.php:62
+#: ../civi/templates/archive/layout-list.php:67
+#: ../civi/templates/post/related.php:95
+msgid "Featured"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:141
+msgid "Features"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/form-base.php:20
+msgid "Field"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:387
+#: ../civi/elementor/widgets/posts/posts-base.php:428
+msgid "Filter"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:500
+msgid "Filter Counter"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:144
+msgid "First Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:210
+#: ../civi/templates/global/account.php:142
+msgid "First Name"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:207
+#: ../civi/customizer/options/blog.php:274
+#: ../civi/customizer/options/color.php:151
+msgid "Fixed"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:75
+msgid "Flat Rounded Icon"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:137
+msgid "Flip Box: Back Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:132
+msgid "Flip Box: Back Title"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:142
+msgid "Flip Box: Button Text"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:127
+msgid "Flip Box: Front Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:122
+msgid "Flip Box: Front Title"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:147
+msgid "Flip Box: Link"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:406
+msgid "Flip Direction"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:391
+msgid "Flip Effect"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:283
+msgid "Float"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:284
+msgid "Float-02"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:347
+msgid "Flow Button Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/form-base.php:86
+msgid "Focus"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:258
+msgid "Follow @"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:256
+msgid "Follow button Aditional text"
+msgstr ""
+
+#: ../civi/elementor/class-font-awesome-pro.php:68
+msgid "Font Awesome - Brands Pro"
+msgstr ""
+
+#: ../civi/elementor/class-font-awesome-pro.php:81
+msgid "Font Awesome - Light Pro"
+msgstr ""
+
+#: ../civi/elementor/class-font-awesome-pro.php:42
+msgid "Font Awesome - Regular Pro"
+msgstr ""
+
+#: ../civi/elementor/class-font-awesome-pro.php:55
+msgid "Font Awesome - Solid Pro"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:799
+#: ../civi/elementor/widgets/instagram.php:897
+#: ../civi/elementor/widgets/instagram.php:1000
+#: ../civi/elementor/widgets/base.php:479
+#: ../civi/elementor/widgets/banner.php:592
+#: ../civi/elementor/widgets/social-networks.php:386
+#: ../civi/customizer/options/general.php:214
+#: ../civi/customizer/options/blog.php:281
+msgid "Font Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:183
+#: ../civi/customizer/options/footer.php:9
+msgid "Footer"
+msgstr ""
+
+#: ../civi/customizer/options/footer.php:16
+msgid "Footer Customize"
+msgstr ""
+
+#: ../civi/customizer/options/footer.php:29
+msgid "Footer Default"
+msgstr ""
+
+#: ../civi/includes/class-init.php:217
+msgid "Footer Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:129
+#: ../civi/templates/global/account.php:86
+msgid "Forgot your password? "
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:58
+#: ../civi/elementor/widgets/form/contact-form-7.php:110
+msgid "Form"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/mailchimp-form.php:74
+msgid "Form Id"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:157
+msgid "Frame"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:171
+msgid "Framed"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:143
+msgid "Free Mode"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:80
+msgid "Front"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:444
+msgid "Front - Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:681
+msgid "Front - Description"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:657
+msgid "Front - Heading"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:600
+msgid "Front - Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:520
+msgid "Front - Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:132
+msgid "Fullscreen Control"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:61
+msgid "Galleries"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:68
+msgid "Gap Beside"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:82
+msgid "Gap Width"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:16
+msgid "General"
+msgstr ""
+
+#: ../civi/templates/global/account.php:48
+msgid "Generate Password"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:148
+#: ../civi/templates/global/account.php:104
+msgid "Get new password"
+msgstr ""
+
+#: ../civi/404.php:20
+msgid "Go to home page"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:108
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\" target=\"_blank\">Menus screen</a> to create one."
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:100
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\" target=\"_blank\">Menus screen</a> to manage your "
+"menus."
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-google-map.php:47
+msgid "Google Map: Marker Content"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-google-map.php:44
+msgid "Google Map: Marker Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:147
+msgid "Got Talent Meet"
+msgstr ""
+
+#: ../civi/elementor/widgets/gradation.php:23
+msgid "Gradation"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:88
+#: ../civi/elementor/widgets/flip-box.php:208
+msgid "Graphic Element"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:552
+msgid "Grayscale"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/client-logo.php:50
+msgid "Grayscale to normal"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:87
+#: ../civi/elementor/widgets/carousel/carousel-base.php:253
+#: ../civi/elementor/widgets/carousel/carousel-base.php:380
+#: ../civi/elementor/widgets/posts/blog.php:99
+msgid "Grid"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:184
+#: ../civi/elementor/widgets/testimonial-grid.php:139
+#: ../civi/elementor/widgets/posts/blog.php:335
+#: ../civi/elementor/widgets/grid/grid-base.php:27
+msgid "Grid Options"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:199
+#: ../civi/elementor/widgets/testimonial-grid.php:154
+#: ../civi/elementor/widgets/posts/blog.php:356
+msgid "Gutter"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:94
+msgid "H1"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:95
+msgid "H2"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:96
+msgid "H3"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:97
+msgid "H4"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:98
+msgid "H5"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:99
+msgid "H6"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:81
+#: ../civi/customizer/options/header.php:9
+msgid "Header"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:16
+msgid "Header Customize"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:127
+#: ../civi/elementor/widgets/list.php:129
+#: ../civi/elementor/widgets/list.php:277
+#: ../civi/elementor/widgets/image-rotate.php:91
+#: ../civi/elementor/widgets/number-box.php:184
+#: ../civi/elementor/widgets/social-networks.php:108
+#: ../civi/elementor/widgets/social-networks.php:110
+#: ../civi/elementor/widgets/social-networks.php:321
+#: ../civi/elementor/widgets/heading.php:63
+#: ../civi/elementor/widgets/heading.php:248
+msgid "Heading"
+msgstr ""
+
+#: ../civi/customizer/options/typography.php:43
+msgid "Heading Font Type"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:96
+msgid "Heading Tag"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:61
+#: ../civi/elementor/widgets/image-layers.php:79
+#: ../civi/elementor/widgets/image-layers.php:170
+#: ../civi/elementor/widgets/instagram.php:1057
+#: ../civi/elementor/widgets/instagram.php:1240
+#: ../civi/elementor/widgets/banner.php:524
+#: ../civi/elementor/widgets/separator.php:99
+#: ../civi/elementor/widgets/heading.php:357
+#: ../civi/elementor/widgets/heading.php:533
+#: ../civi/elementor/widgets/carousel/modern-slider.php:98
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:98
+#: ../civi/elementor/widgets/carousel/image-carousel.php:114
+#: ../civi/elementor/widgets/posts/blog.php:439
+msgid "Height"
+msgstr ""
+
+#: ../civi/customizer/settings/defaults.php:115
+msgid "hello@uxper.co"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:223
+#: ../civi/elementor/widgets/instagram.php:235
+#: ../civi/elementor/widgets/instagram.php:247
+#: ../civi/elementor/widgets/button.php:178
+#: ../civi/elementor/widgets/carousel/carousel-base.php:230
+#: ../civi/elementor/widgets/carousel/carousel-base.php:354
+#: ../civi/elementor/widgets/posts/blog.php:192
+#: ../civi/elementor/widgets/posts/blog.php:201
+#: ../civi/elementor/widgets/posts/blog.php:219
+#: ../civi/elementor/widgets/posts/blog.php:237
+#: ../civi/elementor/widgets/posts/blog.php:293
+#: ../civi/elementor/widgets/posts/blog.php:302
+msgid "Hide"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:135
+msgid "Highlight Active Items"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:317
+msgid "Highlight Words"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:385
+msgid "Highlight Words Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:380
+msgid "Highlight Words Typography"
+msgstr ""
+
+#: ../civi/404.php:16
+msgid "Hmm, that didn’t work"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:18
+msgid "Home"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:122
+#: ../civi/elementor/widgets/carousel/carousel-base.php:391
+msgid "Horizontal"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:189
+#: ../civi/elementor/widgets/popup-video.php:342
+#: ../civi/elementor/widgets/carousel/modern-slider.php:271
+#: ../civi/elementor/widgets/carousel/carousel-base.php:206
+#: ../civi/elementor/widgets/carousel/carousel-base.php:260
+#: ../civi/elementor/widgets/carousel/carousel-base.php:404
+msgid "Horizontal Align"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-rotate.php:192
+#: ../civi/elementor/widgets/image-rotate.php:317
+#: ../civi/elementor/widgets/icon-box.php:374
+#: ../civi/elementor/widgets/image-box.php:297
+msgid "Horizontal Alignment"
+msgstr ""
+
+#: ../civi/elementor/widgets/separator.php:49
+msgid "Horizontal Line"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:483
+msgid "Horizontal Offset"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:501
+#: ../civi/elementor/widgets/nav-menu.php:871
+msgid "Horizontal Padding"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:171
+#: ../civi/elementor/widgets/grid/view-demo.php:152
+msgid "Hot"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:170
+msgid "Hour"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:228
+#: ../civi/elementor/widgets/instagram.php:1127
+#: ../civi/elementor/widgets/base.php:341
+#: ../civi/elementor/widgets/banner.php:470
+#: ../civi/elementor/widgets/banner.php:619
+#: ../civi/elementor/widgets/list.php:319
+#: ../civi/elementor/widgets/list.php:361
+#: ../civi/elementor/widgets/list.php:466
+#: ../civi/elementor/widgets/image-rotate.php:231
+#: ../civi/elementor/widgets/icon-box.php:413
+#: ../civi/elementor/widgets/icon-box.php:493
+#: ../civi/elementor/widgets/icon-box.php:610
+#: ../civi/elementor/widgets/icon-box.php:657
+#: ../civi/elementor/widgets/icon-box.php:696
+#: ../civi/elementor/widgets/icon-box.php:741
+#: ../civi/elementor/widgets/button.php:258
+#: ../civi/elementor/widgets/button.php:511
+#: ../civi/elementor/widgets/image-box.php:336
+#: ../civi/elementor/widgets/image-box.php:484
+#: ../civi/elementor/widgets/job-search.php:231
+#: ../civi/elementor/widgets/job-search.php:334
+#: ../civi/elementor/widgets/image-gallery.php:273
+#: ../civi/elementor/widgets/accordion.php:257
+#: ../civi/elementor/widgets/nav-menu.php:355
+#: ../civi/elementor/widgets/nav-menu.php:613
+#: ../civi/elementor/widgets/nav-menu.php:751
+#: ../civi/elementor/widgets/social-networks.php:283
+#: ../civi/elementor/widgets/social-networks.php:363
+#: ../civi/elementor/widgets/social-networks.php:417
+#: ../civi/elementor/widgets/social-networks.php:472
+#: ../civi/elementor/widgets/icon.php:153
+#: ../civi/elementor/widgets/icon.php:252
+#: ../civi/elementor/widgets/heading.php:304
+#: ../civi/elementor/widgets/heading.php:599
+#: ../civi/elementor/widgets/testimonial-grid.php:377
+#: ../civi/elementor/widgets/popup-video.php:262
+#: ../civi/elementor/widgets/popup-video.php:312
+#: ../civi/elementor/widgets/popup-video.php:467
+#: ../civi/elementor/widgets/popup-video.php:564
+#: ../civi/elementor/widgets/form/form-base.php:223
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:120
+#: ../civi/elementor/widgets/carousel/carousel-base.php:588
+#: ../civi/elementor/widgets/carousel/image-carousel.php:167
+#: ../civi/elementor/widgets/posts/blog.php:456
+#: ../civi/elementor/widgets/posts/blog.php:601
+#: ../civi/elementor/widgets/posts/blog.php:668
+#: ../civi/elementor/widgets/posts/blog.php:722
+#: ../civi/elementor/widgets/posts/blog.php:839
+#: ../civi/elementor/widgets/posts/blog.php:920
+#: ../civi/elementor/widgets/posts/posts-base.php:347
+#: ../civi/elementor/widgets/posts/posts-base.php:484
+msgid "Hover"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:323
+msgid "Hover Animation"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:185
+#: ../civi/elementor/widgets/banner.php:343
+#: ../civi/elementor/widgets/heading.php:383
+#: ../civi/elementor/widgets/carousel/modern-slider.php:371
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:299
+msgid "Hover Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:71
+#: ../civi/elementor/widgets/banner.php:74
+#: ../civi/elementor/widgets/image-box.php:76
+#: ../civi/elementor/widgets/image-gallery.php:112
+#: ../civi/elementor/widgets/testimonial-grid.php:122
+#: ../civi/elementor/widgets/popup-video.php:155
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:70
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:86
+#: ../civi/elementor/widgets/posts/blog.php:107
+#: ../civi/elementor/widgets/grid/view-demo.php:60
+msgid "Hover Effect"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/client-logo.php:46
+msgid "Hover Type"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:230
+msgid ""
+"How long should the word/string stay visible? Set a value in milliseconds."
+msgstr ""
+
+#: ../civi/elementor/widgets/image-rotate.php:115
+#: ../civi/elementor/widgets/icon-box.php:236
+#: ../civi/elementor/widgets/image-box.php:191
+#: ../civi/elementor/widgets/fancy-heading.php:91
+#: ../civi/elementor/widgets/number-box.php:84
+#: ../civi/elementor/widgets/heading.php:102
+#: ../civi/elementor/widgets/heading.php:165
+msgid "HTML Tag"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:121
+#: ../civi/elementor/widgets/team-member.php:146
+#: ../civi/elementor/widgets/banner.php:211
+#: ../civi/elementor/widgets/list.php:156
+#: ../civi/elementor/widgets/icon-box.php:90
+#: ../civi/elementor/widgets/button.php:81
+#: ../civi/elementor/widgets/image-box.php:94
+#: ../civi/elementor/widgets/job-search.php:109
+#: ../civi/elementor/widgets/flip-box.php:306
+#: ../civi/elementor/widgets/social-networks.php:130
+#: ../civi/elementor/widgets/icon.php:99
+#: ../civi/elementor/controls/group-control-button.php:59
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:177
+#: ../civi/elementor/widgets/carousel/modern-slider.php:165
+#: ../civi/elementor/widgets/carousel/modern-slider.php:226
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:183
+#: ../civi/elementor/widgets/grid/view-demo.php:136
+#: ../civi/elementor/widgets/grid/client-logo.php:87
+msgid "https://your-link.com"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:87
+msgid "Hybrid"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:679
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:685
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:691
+msgid ""
+"I am slide content. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:155
+#: ../civi/elementor/widgets/google-map.php:192
+#: ../civi/elementor/widgets/google-map.php:210
+#: ../civi/elementor/widgets/instagram.php:289
+#: ../civi/elementor/widgets/instagram.php:787
+#: ../civi/elementor/widgets/team-member.php:156
+#: ../civi/elementor/widgets/base.php:304
+#: ../civi/elementor/widgets/base.php:400
+#: ../civi/elementor/widgets/base.php:457
+#: ../civi/elementor/widgets/banner.php:242
+#: ../civi/elementor/widgets/banner.php:556
+#: ../civi/elementor/widgets/pricing-table.php:154
+#: ../civi/elementor/widgets/list.php:146
+#: ../civi/elementor/widgets/list.php:379
+#: ../civi/elementor/widgets/icon-box.php:133
+#: ../civi/elementor/widgets/icon-box.php:139
+#: ../civi/elementor/widgets/icon-box.php:458
+#: ../civi/elementor/widgets/button.php:129
+#: ../civi/elementor/widgets/button.php:435
+#: ../civi/elementor/widgets/accordion.php:139
+#: ../civi/elementor/widgets/accordion.php:275
+#: ../civi/elementor/widgets/number-box.php:118
+#: ../civi/elementor/widgets/number-box.php:239
+#: ../civi/elementor/widgets/flip-box.php:101
+#: ../civi/elementor/widgets/flip-box.php:131
+#: ../civi/elementor/widgets/flip-box.php:221
+#: ../civi/elementor/widgets/flip-box.php:251
+#: ../civi/elementor/widgets/social-networks.php:140
+#: ../civi/elementor/widgets/social-networks.php:381
+#: ../civi/elementor/widgets/icon.php:49 ../civi/elementor/widgets/icon.php:53
+#: ../civi/elementor/widgets/icon.php:118
+msgid "Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:77
+msgid "Icon + Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:103
+msgid "Icon Alignment"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:69
+msgid "Icon Border"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:68
+msgid "Icon Box"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:187
+msgid "Icon Box: Button"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:192
+msgid "Icon Box: Button Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:177
+msgid "Icon Box: Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:182
+msgid "Icon Box: Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:172
+msgid "Icon Box: Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:150
+#: ../civi/elementor/widgets/popup-video.php:438
+#: ../civi/elementor/widgets/popup-video.php:471
+msgid "Icon Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:60
+msgid "Icon List"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-list.php:47
+msgid "Icon List Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-list.php:44
+msgid "Icon List Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:451
+#: ../civi/elementor/widgets/list.php:475
+msgid "Icon Marker"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:138
+#: ../civi/elementor/widgets/popup-video.php:101
+#: ../civi/elementor/controls/group-control-button.php:72
+msgid "Icon Position"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:535
+#: ../civi/elementor/widgets/original/form.php:122
+msgid "Icon Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:446
+msgid "Icon Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:283
+msgid "Icon SVG Animate"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/form.php:105
+msgid "Icon Top Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:550
+#: ../civi/elementor/widgets/icon.php:192
+msgid "Icon View"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:162
+msgid "Icon: Link"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:73
+msgid "Icons"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:436
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:246
+#: ../civi/elementor/widgets/google-map.php:322
+#: ../civi/elementor/widgets/timeline.php:52
+#: ../civi/elementor/widgets/image-animation.php:263
+#: ../civi/elementor/widgets/image-layers.php:130
+#: ../civi/elementor/widgets/image-layers.php:134
+#: ../civi/elementor/widgets/instagram.php:285
+#: ../civi/elementor/widgets/instagram.php:303
+#: ../civi/elementor/widgets/team-member.php:83
+#: ../civi/elementor/widgets/image-rotate.php:259
+#: ../civi/elementor/widgets/image-box.php:112
+#: ../civi/elementor/widgets/image-box.php:364
+#: ../civi/elementor/widgets/job-search.php:135
+#: ../civi/elementor/widgets/flip-box.php:97
+#: ../civi/elementor/widgets/flip-box.php:217
+#: ../civi/elementor/widgets/popup-video.php:183
+#: ../civi/elementor/widgets/popup-video.php:206
+#: ../civi/customizer/options/general.php:79
+#: ../civi/customizer/options/general.php:108
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:164
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:589
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:144
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:255
+#: ../civi/elementor/widgets/grid/view-demo.php:118
+msgid "Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:92
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:96
+msgid "Image Above"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:23
+#: ../civi/elementor/widgets/image-animation.php:51
+msgid "Image Animation"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:95
+msgid "Image Bottom"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-box.php:27
+#: ../civi/elementor/widgets/image-box.php:61
+msgid "Image Box"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:217
+msgid "Image Box: Button"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:207
+msgid "Image Box: Content"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:212
+msgid "Image Box: Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:202
+msgid "Image Box: Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/image-carousel.php:22
+msgid "Image Carousel"
+msgstr ""
+
+#: ../civi/templates/global/site-loading.php:25
+msgid "Image Effect"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:24
+msgid "Image Gallery"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:142
+msgid "Image Height"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:90
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:91
+msgid "Image Inline"
+msgstr ""
+
+#: ../civi/includes/class-helper.php:320
+msgid "Image is BMP. Please use either JPG or PNG."
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:22
+msgid "Image Layers"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:97
+msgid "Image Left"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-box.php:139
+#: ../civi/elementor/widgets/testimonial-grid.php:99
+msgid "Image Position"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:141
+msgid "Image Ratio"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-rotate.php:27
+#: ../civi/elementor/widgets/image-rotate.php:59
+msgid "Image Rotate"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:131
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:135
+msgid "Image Size"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:63
+msgid "Image size"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:91
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:92
+msgid "Image Stacked"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:94
+msgid "Image Top"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:93
+msgid "Image Top Overlap"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:240
+#: ../civi/templates/page/page-title.php:63
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:87
+#: ../civi/elementor/widgets/carousel/image-carousel.php:109
+msgid "Images"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:414
+msgid "In Grid"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "In the Bois de Boulogne"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:94
+#: ../civi/elementor/widgets/posts/posts-base.php:93
+msgid "Include"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:98
+#: ../civi/elementor/widgets/posts/posts-base.php:97
+msgid "Include By"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:1375
+msgid "Incorrect access token specified."
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:269
+#: ../civi/elementor/widgets/carousel/carousel-base.php:124
+msgid "Infinite Loop"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:269
+msgid "Infinite Scroll"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:104
+msgid "Info Position"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:159
+#: ../civi/customizer/options/blog.php:226
+#: ../civi/customizer/options/color.php:103
+msgid "Initial"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:67
+#: ../civi/elementor/widgets/list.php:85
+#: ../civi/elementor/widgets/social-networks.php:87
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:143
+msgid "Inline"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:105
+msgid "Inner Content"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:276
+msgid ""
+"Input id of custom button to load more posts when click. For e.g: #product-"
+"load-more-btn"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/mailchimp-form.php:75
+msgid "Input the id of form. Leave blank to show default form."
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:70
+msgid ""
+"Input Youtube video url or Vimeo video url. For e.g: \"https://www.youtube."
+"com/watch?v=XHOmBV4js_E\""
+msgstr ""
+
+#: ../civi/elementor/widgets/original/progress.php:51
+msgid "Inside"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:74
+#: ../civi/elementor/widgets/instagram.php:114
+#: ../civi/elementor/widgets/team-member.php:195
+#: ../civi/elementor/widgets/social-networks.php:187
+#: ../civi/customizer/settings/functions.php:235
+msgid "Instagram"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:147
+msgid "Instagram Access Token"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:102
+msgid "Install Plugins"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:98
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:103
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:420
+msgid "Invalid username"
+msgstr ""
+
+#: ../civi/templates/post/content-none.php:37
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:705
+msgid "Item"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:187
+msgid "Item Limit"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/grid-base.php:110
+msgid "Item Padding"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:210
+msgid "Item Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:77
+#: ../civi/elementor/widgets/attribute-list.php:97
+#: ../civi/elementor/widgets/list.php:189
+#: ../civi/elementor/widgets/accordion.php:61
+#: ../civi/elementor/widgets/accordion.php:112
+#: ../civi/elementor/widgets/social-networks.php:158
+#: ../civi/elementor/widgets/gradation.php:62
+#: ../civi/elementor/widgets/testimonial-grid.php:217
+#: ../civi/elementor/widgets/grid/static-grid.php:25
+#: ../civi/elementor/widgets/grid/static-grid.php:33
+msgid "Items"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:204
+#: ../civi/elementor/widgets/posts/posts-base.php:203
+msgid "Items per page"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:217
+msgid "Items Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:160
+#: ../civi/elementor/widgets/social-networks.php:225
+msgid "Items Vertical Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:24
+#: ../civi/elementor/widgets/job-search.php:52
+msgid "Job Search"
+msgstr ""
+
+#: ../civi/includes/class-init.php:243
+msgid "Jobs Sidebar"
+msgstr ""
+
+#: ../civi/templates/global/canvas-search.php:34
+msgid "Jobs title or keywords"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:104
+#: ../civi/elementor/widgets/testimonial-grid.php:197
+#: ../civi/elementor/widgets/testimonial-grid.php:224
+#: ../civi/elementor/widgets/testimonial-grid.php:230
+#: ../civi/elementor/widgets/testimonial-grid.php:236
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:155
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:199
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:204
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:209
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:655
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:680
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:686
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:692
+msgid "John Doe"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:58
+msgid "Jump"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:141
+#: ../civi/elementor/widgets/form/form-base.php:144
+msgid "Justified"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:248
+msgid "Ken Burns"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:172
+#: ../civi/elementor/controls/group-control-button.php:100
+msgid "Large"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:74
+msgid "Large Icons"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:220
+msgid "Large text"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:59
+#: ../civi/elementor/widgets/posts/posts-base.php:58
+msgid "Last modified date"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:216
+#: ../civi/templates/global/account.php:148
+#: ../civi/templates/global/account.php:149
+msgid "Last Name"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:560
+msgid "Latest"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:117
+msgid "Layers"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:132
+msgid "Layers Animation"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:46
+#: ../civi/elementor/widgets/modern-tabs.php:55
+#: ../civi/elementor/widgets/attribute-list.php:42
+#: ../civi/elementor/widgets/attribute-list.php:58
+#: ../civi/elementor/widgets/banner.php:58
+#: ../civi/elementor/widgets/pricing-table.php:61
+#: ../civi/elementor/widgets/list.php:75 ../civi/elementor/widgets/table.php:42
+#: ../civi/elementor/widgets/image-gallery.php:80
+#: ../civi/elementor/widgets/image-gallery.php:84
+#: ../civi/elementor/widgets/nav-menu.php:84
+#: ../civi/elementor/widgets/nav-menu.php:118
+#: ../civi/elementor/widgets/social-networks.php:84
+#: ../civi/elementor/widgets/gradation.php:44
+#: ../civi/elementor/widgets/testimonial-grid.php:82
+#: ../civi/elementor/widgets/testimonial-grid.php:86
+#: ../civi/customizer/options/layout.php:9
+#: ../civi/elementor/widgets/form/mailchimp-form.php:44
+#: ../civi/elementor/widgets/form/contact-form-7.php:81
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:66
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:69
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:87
+#: ../civi/elementor/widgets/posts/blog.php:92
+#: ../civi/elementor/widgets/posts/blog.php:96
+#: ../civi/elementor/widgets/grid/view-demo.php:56
+msgid "Layout"
+msgstr ""
+
+#: ../civi/customizer/options/layout.php:16
+msgid "Layout Content"
+msgstr ""
+
+#: ../civi/customizer/options/layout.php:50
+msgid "Layout Sidebar"
+msgstr ""
+
+#: ../civi/comments.php:84
+msgid "Leave your thought here"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:13
+#: ../civi/elementor/class-widget-utils.php:31
+#: ../civi/elementor/class-widget-utils.php:93
+#: ../civi/elementor/class-widget-utils.php:111
+#: ../civi/elementor/class-widget-utils.php:129
+#: ../civi/elementor/widgets/image-animation.php:78
+#: ../civi/elementor/widgets/banner.php:566
+#: ../civi/elementor/widgets/image-rotate.php:72
+#: ../civi/elementor/widgets/icon-box.php:184
+#: ../civi/elementor/widgets/button.php:366
+#: ../civi/elementor/widgets/image-box.php:144
+#: ../civi/elementor/widgets/fancy-heading.php:73
+#: ../civi/elementor/widgets/fancy-heading.php:184
+#: ../civi/elementor/widgets/nav-menu.php:137
+#: ../civi/elementor/widgets/flip-box.php:410
+#: ../civi/elementor/widgets/flip-box.php:463
+#: ../civi/elementor/widgets/flip-box.php:738
+#: ../civi/elementor/widgets/popup-video.php:106
+#: ../civi/elementor/controls/group-control-button.php:76
+#: ../civi/elementor/controls/group-control-tooltip.php:49
+#: ../civi/elementor/widgets/form/mailchimp-form.php:54
+#: ../civi/elementor/widgets/form/form-base.php:132
+#: ../civi/elementor/widgets/original/counter.php:49
+#: ../civi/elementor/widgets/grid/grid-base.php:95
+msgid "Left"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:298
+msgid "Left Arrow"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:188
+#: ../civi/customizer/options/blog.php:255
+#: ../civi/customizer/options/color.php:132
+msgid "Left Bottom"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:187
+#: ../civi/customizer/options/blog.php:254
+#: ../civi/customizer/options/color.php:131
+msgid "Left Center"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:186
+#: ../civi/customizer/options/blog.php:253
+#: ../civi/customizer/options/color.php:130
+msgid "Left Top"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:235
+msgid "Let&#8217;s Connect."
+msgstr ""
+
+#: ../civi/customizer/options/general.php:228
+#: ../civi/customizer/options/blog.php:295
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:125
+msgid "Lightbox"
+msgstr ""
+
+#: ../civi/elementor/widgets/base.php:321
+#: ../civi/elementor/widgets/base.php:417
+#: ../civi/elementor/widgets/banner.php:457
+#: ../civi/elementor/widgets/banner.php:495
+#: ../civi/elementor/widgets/heading.php:350
+#: ../civi/elementor/widgets/gradation.php:159
+#: ../civi/elementor/widgets/popup-video.php:538
+msgid "Line"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:86
+msgid "Line Cap"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:500
+#: ../civi/elementor/widgets/carousel/modern-slider.php:532
+#: ../civi/elementor/widgets/original/animated-headline.php:131
+msgid "Line Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:97
+msgid "Line Width"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:152
+#: ../civi/elementor/widgets/team-member.php:144
+#: ../civi/elementor/widgets/banner.php:206
+#: ../civi/elementor/widgets/list.php:151
+#: ../civi/elementor/widgets/icon-box.php:85
+#: ../civi/elementor/widgets/button.php:76
+#: ../civi/elementor/widgets/image-box.php:89
+#: ../civi/elementor/widgets/job-search.php:104
+#: ../civi/elementor/widgets/flip-box.php:301
+#: ../civi/elementor/widgets/social-networks.php:128
+#: ../civi/elementor/widgets/icon.php:94
+#: ../civi/elementor/widgets/heading.php:78
+#: ../civi/elementor/controls/group-control-button.php:54
+#: ../civi/elementor/widgets/carousel/modern-slider.php:160
+#: ../civi/elementor/widgets/carousel/modern-slider.php:221
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:178
+#: ../civi/elementor/widgets/grid/view-demo.php:134
+#: ../civi/elementor/widgets/grid/client-logo.php:85
+msgid "Link"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:90
+msgid "Link Animate"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:591
+#: ../civi/elementor/widgets/posts/blog.php:605
+#: ../civi/elementor/widgets/posts/posts-base.php:336
+#: ../civi/elementor/widgets/posts/posts-base.php:351
+#: ../civi/elementor/widgets/posts/posts-base.php:474
+#: ../civi/elementor/widgets/posts/posts-base.php:488
+msgid "Link Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/heading.php:49
+msgid "Link Hover Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:463
+msgid "Link Typography"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:199
+msgid "Linkedin"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:69
+msgid "Links"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:231
+msgid "Links area"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:207
+#: ../civi/elementor/widgets/social-networks.php:88
+#: ../civi/elementor/widgets/posts/blog.php:101
+msgid "List"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:165
+#: ../civi/elementor/widgets/list.php:194
+msgid "List Item #1"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:168
+#: ../civi/elementor/widgets/list.php:197
+msgid "List Item #2"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:171
+#: ../civi/elementor/widgets/list.php:200
+msgid "List Item #3"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:668
+msgid "Load More"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:212
+msgid "Loading Bar"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:365
+msgid "Loading Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:61
+msgid "Locations"
+msgstr ""
+
+#: ../civi/templates/global/account.php:25
+msgid "Log in"
+msgstr ""
+
+#: ../civi/includes/class-templates.php:470
+msgid "Login"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:93 ../civi/includes/class-ajax.php:373
+#: ../civi/includes/class-ajax.php:391 ../civi/includes/class-ajax.php:499
+#: ../civi/includes/class-ajax.php:519
+msgid "Login success"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:648
+#: ../civi/elementor/widgets/grid/client-logo.php:77
+msgid "Logo"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:31
+msgid "Logo Dark"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:40
+msgid "Logo Dark Retina"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:49
+msgid "Logo Light"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:58
+msgid "Logo Light Retina"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:125
+msgid "Logo Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:245
+#: ../civi/elementor/widgets/image-layers.php:249
+msgid "Loop"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:261
+msgid "Loop the Typing"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:118
+#: ../civi/elementor/widgets/accordion.php:122
+#: ../civi/elementor/widgets/accordion.php:126
+#: ../civi/elementor/widgets/testimonial-grid.php:223
+#: ../civi/elementor/widgets/testimonial-grid.php:229
+#: ../civi/elementor/widgets/testimonial-grid.php:235
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, "
+"luctus nec ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:273
+#: ../civi/elementor/widgets/number-box.php:106
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, "
+"luctus nec ullamcorper mattis."
+msgstr ""
+
+#: ../civi/elementor/widgets/form/mailchimp-form.php:19
+msgid "Mailchimp Form"
+msgstr ""
+
+#: ../civi/includes/class-init.php:210
+#: ../civi/elementor/widgets/nav-menu.php:307
+msgid "Main Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:57
+msgid "Map"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:75
+msgid "Map Style"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:82
+msgid "Map Type"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:677
+#: ../civi/elementor/widgets/instagram.php:723
+#: ../civi/elementor/widgets/instagram.php:947
+#: ../civi/elementor/widgets/base.php:230
+#: ../civi/elementor/widgets/testimonial-grid.php:486
+#: ../civi/elementor/widgets/form/form-base.php:153
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:515
+#: ../civi/elementor/widgets/carousel/modern-slider.php:348
+#: ../civi/elementor/widgets/carousel/modern-slider.php:399
+#: ../civi/elementor/widgets/carousel/modern-slider.php:454
+#: ../civi/elementor/widgets/carousel/modern-slider.php:483
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:276
+#: ../civi/elementor/widgets/carousel/carousel-base.php:176
+#: ../civi/elementor/widgets/original/form.php:218
+#: ../civi/elementor/widgets/original/counter.php:70
+#: ../civi/elementor/widgets/posts/blog.php:524
+#: ../civi/elementor/widgets/posts/blog.php:552
+#: ../civi/elementor/widgets/posts/blog.php:627
+#: ../civi/elementor/widgets/posts/blog.php:691
+#: ../civi/elementor/widgets/posts/blog.php:748
+#: ../civi/elementor/widgets/posts/blog.php:790
+msgid "Margin"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:158
+msgid "Margin Bottom"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:178
+msgid "Marker"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:162
+msgid "Marker Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:151
+msgid "Marker Style"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:147
+#: ../civi/elementor/widgets/google-map.php:257
+msgid "Markers"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:281
+msgid "Markers Popup"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:88
+#: ../civi/elementor/widgets/posts/blog.php:100
+msgid "Masonry"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:295
+#: ../civi/elementor/widgets/image-rotate.php:170
+#: ../civi/elementor/widgets/icon-box.php:352
+#: ../civi/elementor/widgets/icon-box.php:777
+#: ../civi/elementor/widgets/image-box.php:275
+#: ../civi/elementor/widgets/fancy-heading.php:299
+#: ../civi/elementor/widgets/heading.php:202
+#: ../civi/elementor/widgets/heading.php:442
+#: ../civi/elementor/widgets/heading.php:635
+#: ../civi/elementor/widgets/testimonial-grid.php:284
+#: ../civi/elementor/widgets/testimonial-grid.php:420
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:343
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:447
+#: ../civi/elementor/widgets/carousel/modern-slider.php:311
+#: ../civi/elementor/widgets/original/animated-headline.php:47
+#: ../civi/elementor/widgets/original/heading.php:75
+msgid "Max Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:74
+msgid "Measuring unit"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:243
+msgid "Media and text article title"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:171
+msgid "Medium"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:94
+msgid "Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:62
+#: ../civi/elementor/widgets/posts/posts-base.php:61
+msgid "Menu order/Page Order"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:241
+#: ../civi/elementor/widgets/posts/blog.php:543
+msgid "Meta"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:321
+msgid "Meta Data"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:228
+#: ../civi/elementor/widgets/posts/posts-base.php:227
+msgid "Meta key"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:63
+#: ../civi/elementor/widgets/posts/posts-base.php:62
+msgid "Meta value"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:64
+#: ../civi/elementor/widgets/posts/posts-base.php:63
+msgid "Meta value number"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:89
+msgid "Metro"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:217
+msgid "Metro Layout"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:57
+#: ../civi/elementor/class-widget-utils.php:75
+#: ../civi/elementor/widgets/flip-box.php:490
+#: ../civi/elementor/widgets/flip-box.php:765
+#: ../civi/elementor/widgets/carousel/carousel-base.php:428
+#: ../civi/elementor/widgets/grid/grid-base.php:75
+msgid "Middle"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:556
+msgid "Midnight Commander"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:360
+msgid "Min Height"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:412
+msgid "Min Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:169
+msgid "Minute"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:293
+msgid "Mobile Dropdown"
+msgstr ""
+
+#: ../civi/includes/class-init.php:214
+msgid "Mobile Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:601
+msgid "Mobile Phone"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:643
+msgid "Mobile Resolution"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:22
+msgid "Modern Accordion/Toggle"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:23
+msgid "Modern Carousel"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-carousel.php:56
+msgid "Modern Carousel: Slide Button"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-carousel.php:53
+msgid "Modern Carousel: Slide Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-carousel.php:59
+msgid "Modern Carousel: Slide Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-carousel.php:50
+msgid "Modern Carousel: Slide Tags"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-carousel.php:47
+msgid "Modern Carousel: Slide Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:23
+msgid "Modern Heading"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:62
+msgid "Modern Heading: Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:57
+msgid "Modern Heading: Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:52
+msgid "Modern Heading: Primary"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:67
+msgid "Modern Heading: Secondary"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon.php:21
+msgid "Modern Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:23
+msgid "Modern Icon Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:21
+msgid "Modern Icon List"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:27
+msgid "Modern Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/number-box.php:23
+msgid "Modern Number Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:23
+msgid "Modern Pricing"
+msgstr ""
+
+#: ../civi/elementor/widgets/shapes.php:20
+msgid "Modern Shapes"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-slider.php:22
+msgid "Modern Slider"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-slider.php:52
+msgid "Modern Slider: Slide Button"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-slider.php:49
+msgid "Modern Slider: Slide Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-slider.php:55
+msgid "Modern Slider: Slide Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-modern-slider.php:46
+msgid "Modern Slider: Slide Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:21
+msgid "Modern Tabs"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:23
+msgid "Modern User Form"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:173
+msgid "Month"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:27
+#, php-format
+msgctxt "month label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:132
+msgid "Monthly"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:52
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:52
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../civi/elementor/class-control-init.php:65
+msgid "Mountain Alt"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:104
+msgid "Mouse Scroll Wheel Zoom"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:155
+msgid "Mousewheel"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:254
+msgid "Move - Horizontal"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:255
+msgid "Move - Vertical"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:80
+#: ../civi/elementor/widgets/image-box.php:82
+#: ../civi/elementor/widgets/image-gallery.php:118
+#: ../civi/elementor/widgets/grid/view-demo.php:66
+msgid "Move Up"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/view-demo.php:67
+msgid "Move Up - Drop Shadow"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:36
+msgid "My account"
+msgstr ""
+
+#: ../civi/comments.php:80 ../civi/elementor/widgets/user-form.php:211
+#: ../civi/elementor/widgets/user-form.php:217
+#: ../civi/elementor/widgets/attribute-list.php:85
+#: ../civi/elementor/widgets/attribute-list.php:87
+#: ../civi/elementor/widgets/attribute-list.php:215
+#: ../civi/elementor/widgets/team-member.php:102
+#: ../civi/elementor/widgets/team-member.php:276
+#: ../civi/elementor/widgets/testimonial-grid.php:195
+#: ../civi/elementor/widgets/testimonial-grid.php:515
+#: ../civi/templates/global/account.php:143
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:153
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:544
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:653
+msgid "Name"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:47
+msgid "Narrow"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:212
+#: ../civi/elementor/widgets/carousel/carousel-base.php:160
+#: ../civi/elementor/widgets/posts/posts-base.php:266
+msgid "Navigation"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/view-demo.php:151
+msgid "New"
+msgstr ""
+
+#: ../civi/elementor/class-widget-init.php:75
+#: ../civi/includes/class-enqueue.php:210
+msgid "Next"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:419
+msgid "Next icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:697
+msgid "Next Projects"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:449
+#: ../civi/elementor/widgets/twitter.php:83
+#: ../civi/elementor/widgets/fancy-heading.php:264
+#: ../civi/elementor/widgets/fancy-heading.php:280
+#: ../civi/elementor/widgets/original/section.php:72
+msgid "No"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:190
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../civi/elementor/widgets/form/contact-form-7.php:43
+msgid "No contact forms found"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:46
+msgid "No Gap"
+msgstr ""
+
+#: ../civi/includes/class-helper.php:274
+msgid "No image URL has been entered."
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:551
+msgid "No Label Bright Colors"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:171
+#: ../civi/customizer/options/blog.php:238
+#: ../civi/customizer/options/color.php:115
+msgid "No Repeat"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:252
+#: ../civi/elementor/widgets/team-member.php:74
+#: ../civi/elementor/widgets/banner.php:77
+#: ../civi/elementor/widgets/icon-box.php:75
+#: ../civi/elementor/widgets/image-box.php:68
+#: ../civi/elementor/widgets/image-box.php:79
+#: ../civi/elementor/widgets/image-gallery.php:115
+#: ../civi/elementor/widgets/nav-menu.php:167
+#: ../civi/elementor/widgets/nav-menu.php:280
+#: ../civi/elementor/widgets/flip-box.php:93
+#: ../civi/elementor/widgets/flip-box.php:213
+#: ../civi/elementor/widgets/heading.php:93
+#: ../civi/elementor/widgets/testimonial-grid.php:125
+#: ../civi/elementor/widgets/popup-video.php:89
+#: ../civi/elementor/widgets/popup-video.php:158
+#: ../civi/elementor/controls/group-control-advanced-border.php:69
+#: ../civi/customizer/options/general.php:77
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:73
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:77
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:219
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:384
+#: ../civi/elementor/widgets/carousel/modern-slider.php:247
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:89
+#: ../civi/elementor/widgets/posts/blog.php:110
+#: ../civi/elementor/widgets/posts/posts-base.php:264
+#: ../civi/elementor/widgets/grid/view-demo.php:63
+#: ../civi/elementor/widgets/grid/view-demo.php:150
+#: ../civi/elementor/widgets/grid/client-logo.php:49
+msgid "None"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:977
+#: ../civi/elementor/widgets/instagram.php:1203
+#: ../civi/elementor/widgets/base.php:246
+#: ../civi/elementor/widgets/banner.php:432
+#: ../civi/elementor/widgets/banner.php:608
+#: ../civi/elementor/widgets/list.php:68 ../civi/elementor/widgets/list.php:308
+#: ../civi/elementor/widgets/list.php:350
+#: ../civi/elementor/widgets/list.php:442
+#: ../civi/elementor/widgets/image-rotate.php:210
+#: ../civi/elementor/widgets/icon-box.php:392
+#: ../civi/elementor/widgets/icon-box.php:482
+#: ../civi/elementor/widgets/icon-box.php:594
+#: ../civi/elementor/widgets/icon-box.php:646
+#: ../civi/elementor/widgets/icon-box.php:685
+#: ../civi/elementor/widgets/icon-box.php:730
+#: ../civi/elementor/widgets/button.php:192
+#: ../civi/elementor/widgets/button.php:489
+#: ../civi/elementor/widgets/image-box.php:315
+#: ../civi/elementor/widgets/image-box.php:453
+#: ../civi/elementor/widgets/job-search.php:220
+#: ../civi/elementor/widgets/job-search.php:289
+#: ../civi/elementor/widgets/image-gallery.php:247
+#: ../civi/elementor/widgets/accordion.php:246
+#: ../civi/elementor/widgets/accordion.php:302
+#: ../civi/elementor/widgets/nav-menu.php:330
+#: ../civi/elementor/widgets/nav-menu.php:582
+#: ../civi/elementor/widgets/nav-menu.php:717
+#: ../civi/elementor/widgets/social-networks.php:252
+#: ../civi/elementor/widgets/social-networks.php:352
+#: ../civi/elementor/widgets/social-networks.php:402
+#: ../civi/elementor/widgets/social-networks.php:457
+#: ../civi/elementor/widgets/icon.php:142
+#: ../civi/elementor/widgets/icon.php:236
+#: ../civi/elementor/widgets/heading.php:270
+#: ../civi/elementor/widgets/heading.php:293
+#: ../civi/elementor/widgets/heading.php:588
+#: ../civi/elementor/widgets/testimonial-grid.php:346
+#: ../civi/elementor/widgets/popup-video.php:243
+#: ../civi/elementor/widgets/popup-video.php:298
+#: ../civi/elementor/widgets/popup-video.php:434
+#: ../civi/elementor/widgets/popup-video.php:549
+#: ../civi/elementor/controls/group-control-button.php:99
+#: ../civi/elementor/widgets/form/form-base.php:56
+#: ../civi/elementor/widgets/form/form-base.php:193
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:94
+#: ../civi/elementor/widgets/carousel/carousel-base.php:553
+#: ../civi/elementor/widgets/carousel/image-carousel.php:136
+#: ../civi/elementor/widgets/original/countdown.php:40
+#: ../civi/elementor/widgets/original/section.php:45
+#: ../civi/elementor/widgets/posts/blog.php:391
+#: ../civi/elementor/widgets/posts/blog.php:579
+#: ../civi/elementor/widgets/posts/blog.php:654
+#: ../civi/elementor/widgets/posts/blog.php:708
+#: ../civi/elementor/widgets/posts/blog.php:808
+#: ../civi/elementor/widgets/posts/blog.php:898
+#: ../civi/elementor/widgets/posts/posts-base.php:332
+#: ../civi/elementor/widgets/posts/posts-base.php:470
+msgid "Normal"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/client-logo.php:52
+msgid "Normal to opacity"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:292
+msgid "Note: Animate works only with Stroke SVG Icon."
+msgstr ""
+
+#: ../civi/templates/post/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:57
+#: ../civi/elementor/widgets/number-box.php:67
+#: ../civi/elementor/widgets/number-box.php:136
+msgid "Number"
+msgstr ""
+
+#: ../civi/elementor/widgets/number-box.php:53
+msgid "Number Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:156
+msgid "Number Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:69
+msgid "Number Items"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:61
+#: ../civi/elementor/widgets/posts/posts-base.php:60
+msgid "Number of comments"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:205
+#: ../civi/elementor/widgets/posts/posts-base.php:204
+msgid ""
+"Number of items to show per page. Input \"-1\" to show all posts. Leave "
+"blank to use global setting."
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:261
+msgid "Number of posts"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:265
+msgid "Numbers"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:272
+#: ../civi/elementor/widgets/flip-box.php:429
+msgid "Off"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:223
+#: ../civi/elementor/widgets/popup-video.php:375
+#: ../civi/elementor/widgets/carousel/carousel-base.php:303
+#: ../civi/elementor/widgets/carousel/carousel-base.php:321
+msgid "Offset"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-box.php:383
+msgid "Offset Top"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:271
+#: ../civi/elementor/widgets/flip-box.php:428
+msgid "On"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:706
+msgid ""
+"On desktop, this will affect the submenu. On mobile, this will affect the "
+"entire menu."
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:312
+msgid "One By One"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:188
+msgid ""
+"One social per line. Icon class & url separator with |. For eg: fab fa-"
+"facebook|https://facebook.com"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:164
+msgid "One tag per line"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:287
+#: ../civi/elementor/widgets/image-rotate.php:283
+#: ../civi/elementor/widgets/image-box.php:467
+#: ../civi/elementor/widgets/image-box.php:498
+#: ../civi/elementor/widgets/image-gallery.php:256
+#: ../civi/elementor/widgets/image-gallery.php:282
+#: ../civi/elementor/widgets/flip-box.php:560
+#: ../civi/elementor/widgets/flip-box.php:835
+#: ../civi/elementor/widgets/testimonial-grid.php:360
+#: ../civi/elementor/widgets/testimonial-grid.php:391
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:103
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:129
+#: ../civi/elementor/widgets/carousel/image-carousel.php:150
+#: ../civi/elementor/widgets/carousel/image-carousel.php:181
+#: ../civi/elementor/widgets/posts/blog.php:405
+#: ../civi/elementor/widgets/posts/blog.php:470
+msgid "Opacity"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/client-logo.php:51
+msgid "Opacity to normal"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:160
+#: ../civi/templates/global/account.php:215
+msgid "Or Continue with"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:217
+#: ../civi/elementor/widgets/posts/posts-base.php:216
+msgid "Order by"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:47
+msgid "Order number:"
+msgstr ""
+
+#: ../civi/customizer/settings/defaults.php:136
+msgid "Our Blog"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:151
+msgid "Outline"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/progress.php:52
+msgid "Outside"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:121
+msgid "Overlap"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:255
+msgid "Overlapping images"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:279
+msgid "Overlapping images and text"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:228
+#: ../civi/elementor/widgets/popup-video.php:288
+#: ../civi/elementor/widgets/posts/blog.php:263
+#: ../civi/elementor/widgets/posts/blog.php:876
+msgid "Overlay"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:768
+msgid "Overlay Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:169
+msgid "Overline"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:102
+msgid "p"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:291
+#: ../civi/elementor/widgets/instagram.php:690
+#: ../civi/elementor/widgets/instagram.php:736
+#: ../civi/elementor/widgets/instagram.php:854
+#: ../civi/elementor/widgets/instagram.php:935
+#: ../civi/elementor/widgets/instagram.php:1111
+#: ../civi/elementor/widgets/banner.php:277
+#: ../civi/elementor/widgets/banner.php:538
+#: ../civi/elementor/widgets/image-rotate.php:161
+#: ../civi/elementor/widgets/image-rotate.php:308
+#: ../civi/elementor/widgets/icon-box.php:343
+#: ../civi/elementor/widgets/icon-box.php:559
+#: ../civi/elementor/widgets/button.php:418
+#: ../civi/elementor/widgets/image-box.php:266
+#: ../civi/elementor/widgets/table.php:170
+#: ../civi/elementor/widgets/table.php:201
+#: ../civi/elementor/widgets/fancy-heading.php:369
+#: ../civi/elementor/widgets/accordion.php:373
+#: ../civi/elementor/widgets/number-box.php:277
+#: ../civi/elementor/widgets/nav-menu.php:684
+#: ../civi/elementor/widgets/flip-box.php:449
+#: ../civi/elementor/widgets/flip-box.php:724
+#: ../civi/elementor/widgets/icon.php:201
+#: ../civi/elementor/widgets/testimonial-grid.php:306
+#: ../civi/elementor/widgets/form/form-base.php:25
+#: ../civi/elementor/widgets/form/form-base.php:162
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:370
+#: ../civi/elementor/widgets/carousel/modern-slider.php:333
+#: ../civi/elementor/widgets/carousel/modern-slider.php:408
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:237
+#: ../civi/elementor/widgets/carousel/carousel-base.php:191
+#: ../civi/elementor/widgets/original/form.php:247
+#: ../civi/elementor/widgets/posts/blog.php:533
+msgid "Padding"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:153
+msgid "Padding Bottom"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:458
+msgid "Padding Prefix"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:471
+msgid "Padding Suffix"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:139
+msgid "Padding Top"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:65
+msgid "Page Loading Effect"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:115
+#: ../civi/customizer/options/blog.php:140
+#: ../civi/customizer/options/blog.php:147
+msgid "Page Title"
+msgstr ""
+
+#: ../civi/templates/post/content-single.php:32
+#: ../civi/templates/post/content-single.php:58
+#: ../civi/templates/page/content-page.php:18
+msgid "Pages:"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:1188
+#: ../civi/elementor/widgets/posts/posts-base.php:257
+#: ../civi/elementor/widgets/posts/posts-base.php:261
+#: ../civi/elementor/widgets/posts/posts-base.php:289
+msgid "Pagination"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:555
+msgid "Pale Dawn"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:559
+msgid "Paper"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:112
+#: ../civi/elementor/widgets/user-form.php:231
+#: ../civi/templates/global/account.php:67
+#: ../civi/templates/global/account.php:163
+msgid "Password"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:236
+msgid "Pause on Hover"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:453
+msgid "Pause on Hover?"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:228
+msgid "Pause Time (Milliseconds)"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:34
+msgid "Pay"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/payment.php:26
+msgid "Payment method"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:70
+msgid "Payment method:"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/progress.php:71
+msgid "Percentage Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:130
+msgid "Period"
+msgstr ""
+
+#: ../civi/customizer/options/top-bar.php:31
+msgid "Phone"
+msgstr ""
+
+#: ../civi/elementor/class-entry.php:203
+msgid "PHP"
+msgstr ""
+
+#: ../civi/elementor/widgets/separator.php:55
+msgid "Play Animate"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:667
+msgid "Play Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:302
+msgid "Play on hover"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:247
+msgid "Playing in the Sand"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:257
+#: ../civi/templates/global/account.php:199
+msgid ""
+"Please check your email and enter the verification code to activate your "
+"account."
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:205
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:1359
+msgid "Please enter your access token."
+msgstr ""
+
+#: ../civi/woocommerce/checkout/payment.php:36
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: ../civi/templates/global/account.php:31
+msgid "Please login role Candidate to view"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:452
+msgid "Please, Check your email to get new password"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:465
+msgid "Please, re-login!"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:182
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:195
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:284
+msgid "Plus"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:163
+msgid "Pointer"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:401
+#: ../civi/elementor/widgets/nav-menu.php:444
+msgid "Pointer Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:474
+msgid "Pointer Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:207
+msgid "Popular"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:559
+msgid "Popularity"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:221
+msgid "Popup"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:269
+msgid "Popup Image Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:23
+msgid "Popup Video"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:242
+msgid "Popup Video: Caption"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:237
+msgid "Popup Video: Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:232
+msgid "Popup Video: Text"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:291
+msgid "Portfolio list"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:147
+#: ../civi/elementor/widgets/team-member.php:108
+#: ../civi/elementor/widgets/team-member.php:296
+#: ../civi/elementor/widgets/banner.php:562
+#: ../civi/elementor/widgets/icon-box.php:179
+#: ../civi/elementor/widgets/testimonial-grid.php:201
+#: ../civi/elementor/widgets/testimonial-grid.php:535
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:169
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:564
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:659
+#: ../civi/elementor/widgets/original/progress.php:48
+msgid "Position"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-rotate.php:63
+msgid "Position Animation"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:449
+msgid "Possible reason: your host may have disabled the mail() function."
+msgstr ""
+
+#: ../civi/includes/class-templates.php:525
+#: ../civi/includes/class-templates.php:534
+msgid "Post a job"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:56
+#: ../civi/elementor/widgets/posts/posts-base.php:55
+msgid "Post ID"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:29
+#, php-format
+msgctxt "post type label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:60
+#: ../civi/elementor/widgets/posts/posts-base.php:59
+msgid "Post/page parent ID"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:63
+msgid "Poster"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:127
+msgid "Poster Image"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:74
+msgid "Postion"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:86
+msgid "Posts Per Page"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:145
+msgid "Prefix"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:404
+msgid "Prefix & Suffix"
+msgstr ""
+
+#: ../civi/elementor/class-widget-init.php:74
+#: ../civi/includes/class-enqueue.php:209
+msgid "Prev"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:693
+msgid "Prev Projects"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:403
+msgid "Previous icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:124
+msgid "Price"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:562
+msgid "Price: high to low"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:561
+msgid "Price: low to high"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:114
+msgid "Pricing"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:277
+msgid "Pricing Table: Button"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:282
+msgid "Pricing Table: Button Link"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:262
+msgid "Pricing Table: Currency"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:257
+msgid "Pricing Table: Description"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-pricing-table.php:43
+msgid "Pricing Table: Feature Text"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:252
+msgid "Pricing Table: Heading"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:272
+msgid "Pricing Table: Period"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:267
+msgid "Pricing Table: Price"
+msgstr ""
+
+#: ../civi/includes/class-init.php:88
+#: ../civi/elementor/controls/group-control-tooltip.php:37
+#: ../civi/customizer/options/color.php:42
+msgid "Primary"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:666
+msgid "Primary Color"
+msgstr ""
+
+#: ../civi/includes/class-init.php:206
+msgid "Primary Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:241
+#: ../civi/templates/global/account.php:183
+msgid "Privacy Policy"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/review-order.php:27
+msgid "Products"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:119
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:175
+msgid "Profile"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:74
+#: ../civi/elementor/widgets/posts/posts-base.php:73
+msgid "Query"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:67
+msgid "Quotes"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:65
+#: ../civi/elementor/widgets/posts/posts-base.php:64
+msgid "Random order"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:207
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:665
+msgid "Rating"
+msgstr ""
+
+#: ../civi/templates/archive/layout-grid.php:77
+#: ../civi/templates/archive/layout-masonry.php:76
+#: ../civi/templates/archive/layout-list.php:81
+#: ../civi/elementor/widgets/posts/blog.php:216
+#: ../civi/elementor/widgets/posts/blog.php:227
+#: ../civi/elementor/widgets/posts/blog.php:781
+msgid "Read More"
+msgstr ""
+
+#: ../civi/templates/loop/blog/caption-03.php:77
+#: ../civi/templates/loop/blog/caption.php:77
+#: ../civi/templates/loop/widgets/blog/style-one-left-featured.php:51
+msgid "Read more"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:225
+msgid "Read More Text"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "Reading"
+msgstr ""
+
+#: ../civi/templates/post/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:217
+msgid "Register success"
+msgstr ""
+
+#: ../civi/templates/post/related.php:32
+msgid "Related Articles"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:172
+#: ../civi/customizer/options/blog.php:239
+#: ../civi/customizer/options/color.php:116
+msgid "Repeat"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:173
+#: ../civi/customizer/options/blog.php:240
+#: ../civi/customizer/options/color.php:117
+msgid "Repeat X"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:174
+#: ../civi/customizer/options/blog.php:241
+#: ../civi/customizer/options/color.php:118
+msgid "Repeat Y"
+msgstr ""
+
+#: ../civi/templates/post/comment.php:27
+msgid "Reply"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:130
+#: ../civi/templates/global/account.php:87
+msgid "Reset password."
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:537
+msgid "Result Count & Sorting"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:558
+msgid "Retro"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:178
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:81
+msgid "Reverse animation and arc draw"
+msgstr ""
+
+#: ../civi/elementor/widgets/pricing-table.php:196
+msgid "Ribbon"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:21
+#: ../civi/elementor/class-widget-utils.php:39
+#: ../civi/elementor/class-widget-utils.php:101
+#: ../civi/elementor/class-widget-utils.php:119
+#: ../civi/elementor/class-widget-utils.php:137
+#: ../civi/elementor/widgets/banner.php:570
+#: ../civi/elementor/widgets/icon-box.php:192
+#: ../civi/elementor/widgets/button.php:374
+#: ../civi/elementor/widgets/image-box.php:152
+#: ../civi/elementor/widgets/fancy-heading.php:81
+#: ../civi/elementor/widgets/fancy-heading.php:192
+#: ../civi/elementor/widgets/nav-menu.php:145
+#: ../civi/elementor/widgets/flip-box.php:411
+#: ../civi/elementor/widgets/flip-box.php:471
+#: ../civi/elementor/widgets/flip-box.php:746
+#: ../civi/elementor/widgets/popup-video.php:114
+#: ../civi/elementor/controls/group-control-button.php:80
+#: ../civi/elementor/controls/group-control-tooltip.php:47
+#: ../civi/elementor/widgets/form/mailchimp-form.php:62
+#: ../civi/elementor/widgets/form/form-base.php:140
+#: ../civi/elementor/widgets/original/counter.php:57
+#: ../civi/elementor/widgets/grid/grid-base.php:97
+msgid "Right"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:316
+msgid "Right Arrow"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:191
+#: ../civi/customizer/options/blog.php:258
+#: ../civi/customizer/options/color.php:135
+msgid "Right Bottom"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:190
+#: ../civi/customizer/options/blog.php:257
+#: ../civi/customizer/options/color.php:134
+msgid "Right Center"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:189
+#: ../civi/customizer/options/blog.php:256
+#: ../civi/customizer/options/color.php:133
+msgid "Right Top"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:85
+msgid "Roadmap"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:68
+msgid "Role"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "Roses Trémières"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:253
+#: ../civi/elementor/widgets/icon-box.php:538
+#: ../civi/elementor/widgets/flip-box.php:641
+#: ../civi/elementor/widgets/flip-box.php:916
+#: ../civi/elementor/widgets/icon.php:180
+msgid "Rotate"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:219
+msgid "Rotate Style"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:162
+#: ../civi/elementor/widgets/circle-progress-chart.php:90
+msgid "Round"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:160
+#: ../civi/elementor/widgets/carousel/modern-slider.php:417
+msgid "Rounded"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/grid-base.php:57
+msgid "Row Gutter"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/contact-form-7.php:138
+msgid "Rows Gap"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:76
+#: ../civi/elementor/widgets/table.php:127
+msgid "Sample"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:86
+msgid "Satellite"
+msgstr ""
+
+#: ../civi/templates/global/account.php:49
+msgid "Save password"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:127
+msgid "Scale Control"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:206
+#: ../civi/customizer/options/blog.php:273
+#: ../civi/customizer/options/color.php:150
+msgid "Scroll"
+msgstr ""
+
+#: ../civi/searchform.php:19 ../civi/templates/global/canvas-search.php:48
+msgid "Search"
+msgstr ""
+
+#: ../civi/searchform.php:15
+msgid "Search for:"
+msgstr ""
+
+#: ../civi/searchform.php:10
+msgid "Search posts..."
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:19
+#, php-format
+msgid "Search Result of \"%s\""
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:57
+#, php-format
+msgid "Search Results: \"%s\""
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:170
+msgid "Second Color"
+msgstr ""
+
+#: ../civi/customizer/options/color.php:51
+msgid "Secondary"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:677
+msgid "Secondary Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:153
+#: ../civi/elementor/widgets/heading.php:572
+msgid "Secondary Heading"
+msgstr ""
+
+#: ../civi/includes/class-customizer.php:61
+msgid "Select Color"
+msgstr ""
+
+#: ../civi/includes/class-customizer.php:60
+msgid "Select default color"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:152
+msgid "Select default style for all markers"
+msgstr ""
+
+#: ../civi/elementor/widgets/form/contact-form-7.php:88
+msgid "Select Form"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:309
+msgid "Select Meta"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:218
+#: ../civi/elementor/widgets/posts/posts-base.php:217
+msgid ""
+"Select order type. If \"Meta value\" or \"Meta value Number\" is chosen then "
+"meta key is required."
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:147
+#: ../civi/templates/global/account.php:51
+#: ../civi/templates/global/account.php:103
+msgid "Sending info,please wait..."
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:134
+#: ../civi/templates/global/account.php:82
+msgid "Sending login info,please wait..."
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:244
+#: ../civi/elementor/widgets/user-form.php:256
+#: ../civi/templates/global/account.php:186
+#: ../civi/templates/global/account.php:198
+msgid "Sending register info,please wait..."
+msgstr ""
+
+#: ../civi/includes/class-enqueue.php:268
+msgid "Sending user info,please wait..."
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:255
+#: ../civi/elementor/widgets/separator.php:20
+#: ../civi/elementor/widgets/separator.php:41
+msgid "Separator"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:201
+msgid "Set how many slides are scrolled per swipe."
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:175
+#: ../civi/elementor/widgets/flip-box.php:356
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:177
+msgid "Settings"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:561
+msgid "Shades Of Grey"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:164
+#: ../civi/elementor/widgets/button.php:106
+#: ../civi/elementor/widgets/shapes.php:46
+#: ../civi/elementor/widgets/icon.php:79
+msgid "Shape"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:234
+msgid "Share"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:222
+#: ../civi/elementor/widgets/instagram.php:234
+#: ../civi/elementor/widgets/instagram.php:246
+#: ../civi/elementor/widgets/pricing-table.php:200
+#: ../civi/elementor/widgets/button.php:177
+#: ../civi/elementor/widgets/carousel/carousel-base.php:231
+#: ../civi/elementor/widgets/carousel/carousel-base.php:355
+#: ../civi/elementor/widgets/posts/blog.php:191
+#: ../civi/elementor/widgets/posts/blog.php:200
+#: ../civi/elementor/widgets/posts/blog.php:218
+#: ../civi/elementor/widgets/posts/blog.php:236
+#: ../civi/elementor/widgets/posts/blog.php:292
+#: ../civi/elementor/widgets/posts/blog.php:301
+msgid "Show"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:117
+msgid "Show Add Jobs/Update Profile"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:339
+msgid "Show Always"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:98
+msgid "Show button"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:77
+msgid "Show Canvas Menu"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:220
+msgid "Show Caption"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:405
+msgid "Show Counter"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:80
+msgid "Show date"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:391
+msgid "Show Filter"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:244
+msgid "Show Follow Button"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:232
+msgid "Show Light Box"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:93
+msgid "Show Login"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:85
+msgid "Show Main Menu"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:101
+msgid "Show Notification"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:547
+msgid "Show Order"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/posts-base.php:541
+msgid "Show Result Count"
+msgstr ""
+
+#: ../civi/customizer/options/header.php:109
+msgid "Show Search (Mobile)"
+msgstr ""
+
+#: ../civi/elementor/widgets/job-search.php:93
+msgid "Show total posts"
+msgstr ""
+
+#: ../civi/includes/class-init.php:234
+msgid "Sidebar"
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:35
+#: ../civi/customizer/options/blog.php:127
+msgid "Sidebar Layout"
+msgstr ""
+
+#: ../civi/includes/class-init.php:220
+msgid "Sidebar Menu"
+msgstr ""
+
+#: ../civi/customizer/options/layout.php:64
+#: ../civi/customizer/options/blog.php:49
+msgid "Sidebar Width"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:137
+#: ../civi/elementor/widgets/user-form.php:247
+#: ../civi/templates/global/account.php:92
+#: ../civi/templates/global/account.php:92
+#: ../civi/templates/global/account.php:189
+msgid "Sign in"
+msgstr ""
+
+#: ../civi/templates/global/account.php:26
+msgid "Sign Up"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:247
+#: ../civi/templates/global/account.php:189
+msgid "Sign up"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:156
+#: ../civi/elementor/widgets/google-map.php:193
+msgid "Signal"
+msgstr ""
+
+#. $1 and $2 opening and closing emphasis tags respectively
+#: ../civi/woocommerce/checkout/payment.php:45
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: ../civi/customizer/options/blog.php:120
+msgid "Single Post"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:22
+msgid "Site Identity"
+msgstr ""
+
+#: ../civi/elementor/widgets/list.php:398
+#: ../civi/elementor/widgets/icon-box.php:524
+#: ../civi/elementor/widgets/button.php:119
+#: ../civi/elementor/widgets/button.php:465
+#: ../civi/elementor/widgets/shapes.php:62
+#: ../civi/elementor/widgets/accordion.php:332
+#: ../civi/elementor/widgets/number-box.php:260
+#: ../civi/elementor/widgets/nav-menu.php:646
+#: ../civi/elementor/widgets/flip-box.php:542
+#: ../civi/elementor/widgets/flip-box.php:627
+#: ../civi/elementor/widgets/flip-box.php:817
+#: ../civi/elementor/widgets/flip-box.php:902
+#: ../civi/elementor/widgets/icon.php:166
+#: ../civi/elementor/widgets/testimonial-grid.php:579
+#: ../civi/elementor/widgets/popup-video.php:390
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:611
+#: ../civi/elementor/widgets/carousel/carousel-base.php:519
+msgid "Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:99
+msgid "Size Mode"
+msgstr ""
+
+#: ../civi/elementor/widgets/base.php:239
+msgid "Skin"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:282
+#: ../civi/elementor/widgets/carousel/carousel-base.php:104
+msgid "Slide"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:269
+#: ../civi/elementor/widgets/carousel/carousel-base.php:252
+#: ../civi/elementor/widgets/carousel/carousel-base.php:379
+msgid "Slider"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:390
+msgid "Slider Arrow"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:492
+msgid "Slider auto play"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:218
+msgid "Slider Bottom"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:185
+msgid "Slider Container"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:435
+msgid "Slider dots"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:170
+msgid "Slider Inner"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:531
+#: ../civi/elementor/widgets/instagram.php:573
+#: ../civi/elementor/widgets/instagram.php:628
+msgid "Slider item to scroll"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:375
+#: ../civi/elementor/widgets/instagram.php:558
+#: ../civi/elementor/widgets/instagram.php:613
+msgid "Slider Items"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:216
+msgid "Slider Left"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:365
+msgid "Slider Option"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:215
+msgid "Slider Right"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:217
+msgid "Slider Top"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:303
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:311
+#: ../civi/elementor/widgets/carousel/modern-slider.php:554
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:187
+#: ../civi/elementor/widgets/carousel/static-carousel.php:26
+#: ../civi/elementor/widgets/carousel/static-carousel.php:34
+msgid "Slides"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:39
+msgid "Slides Per View"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:199
+msgid "Slides to Scroll"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:187
+msgid "Slides to Show"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:57
+msgid "Slides Width"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:170
+#: ../civi/elementor/controls/group-control-button.php:98
+msgid "Small"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:166
+#: ../civi/elementor/widgets/social-networks.php:21
+msgid "Social Networks"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:187
+msgid "Socials"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:385
+msgid "Solid"
+msgstr ""
+
+#: ../civi/elementor/widgets/social-networks.php:76
+msgid "Solid Rounded Icon"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:433
+msgid "Someone has requested a password reset for the following account:"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:105
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../civi/templates/post/content-none.php:28
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:157
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:121
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:139
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/woocommerce/checkout/payment.php:36
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:35
+msgid "Sorry, we couldn't find that page."
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:240
+#: ../civi/elementor/widgets/posts/posts-base.php:239
+msgid "Sort order"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:78
+#: ../civi/elementor/widgets/posts/posts-base.php:77
+msgid "Source"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:533
+#: ../civi/elementor/widgets/carousel/carousel-base.php:92
+msgid "Space Between"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:350
+#: ../civi/elementor/widgets/modern-tabs.php:139
+#: ../civi/elementor/widgets/base.php:464
+#: ../civi/elementor/widgets/banner.php:378
+#: ../civi/elementor/widgets/banner.php:406
+#: ../civi/elementor/widgets/banner.php:510
+#: ../civi/elementor/widgets/banner.php:578
+#: ../civi/elementor/widgets/list.php:291
+#: ../civi/elementor/widgets/list.php:384
+#: ../civi/elementor/widgets/image-rotate.php:366
+#: ../civi/elementor/widgets/icon-box.php:506
+#: ../civi/elementor/widgets/icon-box.php:754
+#: ../civi/elementor/widgets/image-box.php:397
+#: ../civi/elementor/widgets/image-box.php:558
+#: ../civi/elementor/widgets/job-search.php:192
+#: ../civi/elementor/widgets/job-search.php:246
+#: ../civi/elementor/widgets/accordion.php:346
+#: ../civi/elementor/widgets/number-box.php:195
+#: ../civi/elementor/widgets/flip-box.php:528
+#: ../civi/elementor/widgets/flip-box.php:608
+#: ../civi/elementor/widgets/flip-box.php:689
+#: ../civi/elementor/widgets/flip-box.php:803
+#: ../civi/elementor/widgets/flip-box.php:883
+#: ../civi/elementor/widgets/flip-box.php:964
+#: ../civi/elementor/widgets/social-networks.php:335
+#: ../civi/elementor/widgets/heading.php:420
+#: ../civi/elementor/widgets/heading.php:483
+#: ../civi/elementor/widgets/heading.php:612
+#: ../civi/elementor/widgets/gradation.php:105
+#: ../civi/elementor/widgets/testimonial-grid.php:565
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:594
+#: ../civi/elementor/widgets/posts/posts-base.php:307
+#: ../civi/elementor/widgets/posts/posts-base.php:436
+msgid "Spacing"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/accordion.php:82
+msgid "Spacing Between"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:101
+msgid "span"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:436
+msgid "Special Line"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:161
+#: ../civi/elementor/widgets/circle-progress-chart.php:91
+#: ../civi/elementor/widgets/icon-box.php:168
+#: ../civi/elementor/widgets/icon.php:83
+msgid "Square"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:153
+#: ../civi/elementor/widgets/icon.php:67
+msgid "Stacked"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:65
+#: ../civi/elementor/widgets/accordion.php:287
+msgid "Start"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:68
+#: ../civi/elementor/widgets/table.php:119
+msgid "Start New Row"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:123
+msgid "Static Layer"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:71
+msgid "Statuses"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:82
+#: ../civi/elementor/widgets/gradation.php:67
+msgid "Step #1"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:86
+#: ../civi/elementor/widgets/gradation.php:71
+msgid "Step #2"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:90
+#: ../civi/elementor/widgets/gradation.php:75
+msgid "Step #3"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:94
+msgid "Step #4"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:137
+msgid "Street View Control"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:43
+#: ../civi/elementor/class-widget-utils.php:83
+#: ../civi/elementor/widgets/nav-menu.php:149
+msgid "Stretch"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:188
+#: ../civi/elementor/widgets/image-animation.php:55
+#: ../civi/elementor/widgets/image-layers.php:234
+#: ../civi/elementor/widgets/attribute-list.php:46
+#: ../civi/elementor/widgets/instagram.php:121
+#: ../civi/elementor/widgets/instagram.php:659
+#: ../civi/elementor/widgets/team-member.php:58
+#: ../civi/elementor/widgets/banner.php:62
+#: ../civi/elementor/widgets/banner.php:226
+#: ../civi/elementor/widgets/pricing-table.php:65
+#: ../civi/elementor/widgets/list.php:64
+#: ../civi/elementor/widgets/icon-box.php:72
+#: ../civi/elementor/widgets/separator.php:45
+#: ../civi/elementor/widgets/image-box.php:65
+#: ../civi/elementor/widgets/job-search.php:130
+#: ../civi/elementor/widgets/table.php:46
+#: ../civi/elementor/widgets/accordion.php:65
+#: ../civi/elementor/widgets/accordion.php:215
+#: ../civi/elementor/widgets/number-box.php:57
+#: ../civi/elementor/widgets/social-networks.php:70
+#: ../civi/elementor/widgets/social-networks.php:220
+#: ../civi/elementor/widgets/form/mailchimp-form.php:80
+#: ../civi/elementor/widgets/form/contact-form-7.php:95
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:73
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:381
+#: ../civi/elementor/widgets/carousel/modern-slider.php:209
+#: ../civi/elementor/widgets/carousel/modern-slider.php:262
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:74
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:216
+#: ../civi/elementor/widgets/carousel/carousel-base.php:238
+#: ../civi/elementor/widgets/carousel/carousel-base.php:362
+#: ../civi/elementor/widgets/original/countdown.php:37
+#: ../civi/elementor/widgets/original/accordion.php:70
+#: ../civi/elementor/widgets/posts/blog.php:178
+#: ../civi/elementor/widgets/posts/blog.php:280
+#: ../civi/elementor/widgets/posts/posts-base.php:396
+msgid "Style"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/countdown.php:41
+msgid "Style 01"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:128
+msgid "Style Four"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:125
+msgid "Style One"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:127
+msgid "Style Three"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:126
+msgid "Style Two"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:116
+#: ../civi/elementor/widgets/attribute-list.php:155
+#: ../civi/elementor/widgets/list.php:212
+#: ../civi/elementor/widgets/gradation.php:90
+msgid "Styling"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:196
+msgid "Sub Heading"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:194
+#: ../civi/elementor/widgets/banner.php:357
+#: ../civi/elementor/widgets/carousel/modern-slider.php:175
+#: ../civi/elementor/widgets/carousel/modern-slider.php:393
+msgid "Sub Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:276
+msgid "Submenu Indicator"
+msgstr ""
+
+#: ../civi/comments.php:87
+msgid "Submit"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:553
+msgid "Subtle Grayscale"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/review-order.php:60
+msgid "Subtotal"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:159
+msgid "Suffix"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:83
+#: ../civi/elementor/widgets/timeline.php:87
+#: ../civi/elementor/widgets/timeline.php:91
+#: ../civi/elementor/widgets/timeline.php:95
+#: ../civi/elementor/widgets/gradation.php:68
+#: ../civi/elementor/widgets/gradation.php:72
+#: ../civi/elementor/widgets/gradation.php:76
+msgid ""
+"Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim Lorem "
+"ipsum dolor sit amet, consectetur cium"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:297
+msgid "SVG Animate"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:311
+msgid "Sync"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:21
+msgid "Table"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-table.php:101
+msgid "Table Body: Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:108
+#: ../civi/elementor/widgets/table.php:191
+msgid "Table Content"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-table.php:43
+msgid "Table Head: Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:57
+#: ../civi/elementor/widgets/table.php:159
+msgid "Table Header"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:546
+msgid "Tablet"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:588
+msgid "Tablet Resolution"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:104
+#: ../civi/elementor/widgets/modern-tabs.php:128
+msgid "Tabs"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:109
+msgid "Tabs 01"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:112
+msgid "Tabs 02"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:115
+msgid "Tabs 03"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:22
+#, php-format
+msgctxt "tag label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:162
+msgid "Tags"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:37
+msgid "Tags: "
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:23
+#, php-format
+msgctxt "taxonomy label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:24
+msgid "Team Member"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:22
+msgid "Team Member Carousel"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-team-member-carousel.php:49
+msgid "Team Member Carousel: Content"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-team-member-carousel.php:46
+msgid "Team Member Carousel: Name"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-team-member-carousel.php:52
+msgid "Team Member Carousel: Position"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-team-member-carousel.php:55
+msgid "Team Member Carousel: Profile"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:306
+msgid "Team Member: Content"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:301
+msgid "Team Member: Name"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:311
+msgid "Team Member: Position"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-wpml-translatable-nodes.php:316
+msgid "Team Member: Profile"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:103
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:157
+#: ../civi/elementor/widgets/posts/posts-base.php:102
+#: ../civi/elementor/widgets/posts/posts-base.php:156
+msgid "Term"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:241
+#: ../civi/templates/global/account.php:183
+msgid "Terms"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:88
+msgid "Terrain"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:28
+msgid "Testimonial Carousel"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-testimonial-carousel.php:52
+msgid "Testimonial Carousel: Content"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-testimonial-carousel.php:49
+msgid "Testimonial Carousel: Name"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-testimonial-carousel.php:55
+msgid "Testimonial Carousel: Position"
+msgstr ""
+
+#: ../civi/elementor/wpml/class-translate-widget-testimonial-carousel.php:46
+msgid "Testimonial Carousel: Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:39
+msgid "Testimonial Masonry"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:115
+#: ../civi/elementor/widgets/team-member.php:256
+#: ../civi/elementor/widgets/base.php:289
+#: ../civi/elementor/widgets/base.php:384
+#: ../civi/elementor/widgets/base.php:442
+#: ../civi/elementor/widgets/banner.php:233
+#: ../civi/elementor/widgets/pricing-table.php:147
+#: ../civi/elementor/widgets/pricing-table.php:149
+#: ../civi/elementor/widgets/list.php:139
+#: ../civi/elementor/widgets/list.php:141
+#: ../civi/elementor/widgets/list.php:169
+#: ../civi/elementor/widgets/list.php:337
+#: ../civi/elementor/widgets/icon-box.php:225
+#: ../civi/elementor/widgets/icon-box.php:268
+#: ../civi/elementor/widgets/button.php:57
+#: ../civi/elementor/widgets/image-box.php:180
+#: ../civi/elementor/widgets/image-box.php:214
+#: ../civi/elementor/widgets/table.php:74
+#: ../civi/elementor/widgets/table.php:125
+#: ../civi/elementor/widgets/fancy-heading.php:112
+#: ../civi/elementor/widgets/nav-menu.php:173
+#: ../civi/elementor/widgets/social-networks.php:439
+#: ../civi/elementor/widgets/heading.php:67
+#: ../civi/elementor/widgets/heading.php:140
+#: ../civi/elementor/widgets/heading.php:157
+#: ../civi/elementor/widgets/testimonial-grid.php:495
+#: ../civi/elementor/widgets/popup-video.php:510
+#: ../civi/customizer/options/color.php:24
+#: ../civi/customizer/options/top-bar.php:23
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:524
+#: ../civi/elementor/widgets/carousel/modern-slider.php:150
+#: ../civi/elementor/widgets/carousel/modern-slider.php:181
+#: ../civi/elementor/widgets/carousel/modern-slider.php:216
+#: ../civi/elementor/widgets/grid/view-demo.php:126
+#: ../civi/elementor/widgets/grid/view-demo.php:158
+#: ../civi/elementor/widgets/grid/view-demo.php:163
+msgid "Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:165
+msgid "Text after Fancy text"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:205
+#: ../civi/elementor/widgets/team-member.php:248
+#: ../civi/elementor/widgets/list.php:262
+#: ../civi/elementor/widgets/table.php:180
+#: ../civi/elementor/widgets/table.php:211
+#: ../civi/elementor/widgets/heading.php:192
+#: ../civi/elementor/widgets/gradation.php:95
+#: ../civi/elementor/widgets/testimonial-grid.php:455
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:482
+#: ../civi/elementor/widgets/carousel/modern-slider.php:300
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:226
+#: ../civi/elementor/widgets/original/counter.php:43
+#: ../civi/elementor/widgets/posts/blog.php:514
+#: ../civi/elementor/widgets/grid/view-demo.php:84
+msgid "Text Align"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:86
+msgid "Text Animate"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:148
+msgid "Text before Fancy text"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:199
+#: ../civi/elementor/widgets/button.php:266
+#: ../civi/elementor/widgets/job-search.php:296
+#: ../civi/elementor/widgets/job-search.php:342
+#: ../civi/elementor/widgets/nav-menu.php:337
+#: ../civi/elementor/widgets/nav-menu.php:362
+#: ../civi/elementor/widgets/nav-menu.php:383
+#: ../civi/elementor/widgets/nav-menu.php:432
+#: ../civi/elementor/widgets/nav-menu.php:724
+#: ../civi/elementor/widgets/nav-menu.php:758
+#: ../civi/elementor/widgets/nav-menu.php:797
+#: ../civi/customizer/options/general.php:124
+#: ../civi/customizer/options/blog.php:200
+#: ../civi/elementor/widgets/form/form-base.php:60
+#: ../civi/elementor/widgets/form/form-base.php:90
+#: ../civi/elementor/widgets/form/form-base.php:197
+#: ../civi/elementor/widgets/form/form-base.php:227
+#: ../civi/elementor/widgets/carousel/modern-slider.php:469
+#: ../civi/elementor/widgets/carousel/modern-slider.php:492
+#: ../civi/elementor/widgets/carousel/modern-slider.php:524
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:313
+#: ../civi/elementor/widgets/carousel/carousel-base.php:557
+#: ../civi/elementor/widgets/carousel/carousel-base.php:592
+#: ../civi/elementor/widgets/posts/blog.php:583
+#: ../civi/elementor/widgets/posts/blog.php:812
+#: ../civi/elementor/widgets/posts/blog.php:843
+msgid "Text Color"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:196
+msgctxt "Text Gradient Control"
+msgid "Angle"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:101
+msgctxt "Text Gradient Control"
+msgid "Gradient"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:155
+#: ../civi/elementor/controls/group-control-text-gradient.php:181
+msgctxt "Text Gradient Control"
+msgid "Location"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-gradient.php:97
+msgctxt "Text Gradient Control"
+msgid "Solid"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-text-stroke.php:107
+msgctxt "Text Stroke Control"
+msgid "Text Stroke"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:42
+#: ../civi/woocommerce/checkout/thankyou.php:84
+msgid "Thank you. Your order has been received.  Waiting admin approved."
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:339
+msgid "The code is incorrect or has expired."
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:449
+msgid "The email could not be sent."
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:127
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:186
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:151
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:145
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "The Garden at Bougival"
+msgstr ""
+
+#: ../civi/404.php:17
+msgid "The page you're looking for cannot be found"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:644
+msgid "The resolution to mobile."
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:589
+msgid "The resolution to tablet."
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:108
+msgid "There are no menus in your site."
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:133
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-ajax.php:412
+msgid "There is no user registered with that email address."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:193
+msgid "Thick"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:376 ../civi/includes/class-ajax.php:502
+msgid "This email has been used to register"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:171
+#: ../civi/elementor/widgets/image-rotate.php:96
+#: ../civi/elementor/widgets/icon-box.php:230
+#: ../civi/elementor/widgets/image-box.php:185
+#: ../civi/elementor/widgets/number-box.php:78
+#: ../civi/elementor/widgets/flip-box.php:145
+#: ../civi/elementor/widgets/flip-box.php:265
+msgid "This is the heading"
+msgstr ""
+
+#: ../civi/includes/class-plugins.php:115
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/includes/class-plugins.php:109
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:174
+#: ../civi/elementor/widgets/testimonial-grid.php:325
+#: ../civi/elementor/widgets/posts/blog.php:370
+msgid "Thumbnail"
+msgstr ""
+
+#: ../civi/elementor/widgets/testimonial-grid.php:249
+msgid "Thumbnail Size"
+msgstr ""
+
+#: ../civi/elementor/class-control-init.php:57
+msgid "Tile Curve"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:25
+msgid "Timeline"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:235
+#: ../civi/elementor/widgets/google-map.php:372
+#: ../civi/elementor/widgets/timeline.php:65
+#: ../civi/elementor/widgets/timeline.php:67
+#: ../civi/elementor/widgets/timeline.php:121
+#: ../civi/elementor/widgets/team-member.php:137
+#: ../civi/elementor/widgets/team-member.php:139
+#: ../civi/elementor/widgets/banner.php:166
+#: ../civi/elementor/widgets/banner.php:327
+#: ../civi/elementor/widgets/pricing-table.php:85
+#: ../civi/elementor/widgets/pricing-table.php:205
+#: ../civi/elementor/widgets/image-rotate.php:339
+#: ../civi/elementor/widgets/icon-box.php:219
+#: ../civi/elementor/widgets/icon-box.php:633
+#: ../civi/elementor/widgets/image-box.php:174
+#: ../civi/elementor/widgets/image-box.php:527
+#: ../civi/elementor/widgets/job-search.php:78
+#: ../civi/elementor/widgets/job-search.php:171
+#: ../civi/elementor/widgets/accordion.php:96
+#: ../civi/elementor/widgets/accordion.php:233
+#: ../civi/elementor/widgets/number-box.php:73
+#: ../civi/elementor/widgets/social-networks.php:78
+#: ../civi/elementor/widgets/social-networks.php:121
+#: ../civi/elementor/widgets/social-networks.php:123
+#: ../civi/elementor/widgets/gradation.php:50
+#: ../civi/elementor/widgets/gradation.php:52
+#: ../civi/elementor/widgets/gradation.php:119
+#: ../civi/elementor/widgets/testimonial-grid.php:179
+#: ../civi/elementor/widgets/testimonial-grid.php:466
+#: ../civi/customizer/options/blog.php:169
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:495
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:632
+#: ../civi/elementor/widgets/carousel/modern-slider.php:145
+#: ../civi/elementor/widgets/carousel/modern-slider.php:342
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:152
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:270
+#: ../civi/elementor/widgets/carousel/posts-carousel-base.php:58
+#: ../civi/elementor/widgets/posts/blog.php:299
+#: ../civi/elementor/widgets/posts/blog.php:685
+#: ../civi/elementor/widgets/posts/posts-base.php:57
+#: ../civi/elementor/widgets/grid/view-demo.php:93
+msgid "Title"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:143
+#: ../civi/elementor/widgets/flip-box.php:263
+msgid "Title & Description"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:675
+msgid "Title Divider"
+msgstr ""
+
+#: ../civi/elementor/widgets/banner.php:177
+#: ../civi/elementor/widgets/accordion.php:194
+msgid "Title HTML Tag"
+msgstr ""
+
+#: ../civi/elementor/widgets/modern-tabs.php:88
+msgid "Title Tabs"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:437
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: ../civi/elementor/widgets/accordion.php:81
+msgid "Toggle"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:572
+msgid "Toggle Button"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:65
+msgctxt "Tooltip Control"
+msgid "Tooltip"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:43
+msgid "Tooltip Position"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:32
+msgid "Tooltip Skin"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:53
+#: ../civi/elementor/class-widget-utils.php:71
+#: ../civi/elementor/widgets/image-animation.php:77
+#: ../civi/elementor/widgets/image-rotate.php:68
+#: ../civi/elementor/widgets/icon-box.php:188
+#: ../civi/elementor/widgets/image-box.php:148
+#: ../civi/elementor/widgets/flip-box.php:486
+#: ../civi/elementor/widgets/flip-box.php:761
+#: ../civi/elementor/widgets/popup-video.php:110
+#: ../civi/elementor/controls/group-control-tooltip.php:46
+#: ../civi/elementor/widgets/carousel/carousel-base.php:424
+#: ../civi/elementor/widgets/grid/grid-base.php:74
+msgid "Top"
+msgstr ""
+
+#: ../civi/customizer/options/top-bar.php:9
+msgid "Top Bar"
+msgstr ""
+
+#: ../civi/customizer/options/top-bar.php:16
+msgid "Top Bar Customize"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:50
+msgid "Top Left"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:51
+msgid "Top Right"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/review-order.php:107
+msgid "Total"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:64
+msgid "Total:"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:148
+msgid "Touchable"
+msgstr ""
+
+#: ../civi/elementor/widgets/circle-progress-chart.php:150
+msgid "Track Color"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:278
+#: ../civi/elementor/widgets/carousel/carousel-base.php:101
+msgid "Transition"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:261
+#: ../civi/elementor/widgets/icon-box.php:318
+#: ../civi/elementor/widgets/carousel/carousel-base.php:111
+msgid "Transition Duration"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:291
+msgid "Transition Speed"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:114
+msgid "TranslateX"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:141
+msgid "TranslateX (0)"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:194
+msgid "TranslateX (100%)"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:87
+msgid "TranslateY"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:168
+msgid "TranslateY (0)"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-animation.php:220
+msgid "TranslateY (100%)"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:183
+#: ../civi/elementor/widgets/twitter.php:19
+#: ../civi/elementor/widgets/social-networks.php:175
+#: ../civi/customizer/settings/functions.php:235
+msgid "Twitter"
+msgstr ""
+
+#: ../civi/elementor/widgets/twitter.php:64
+msgid "Twitter Username"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:267
+msgid "Two images showcase"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:307
+#: ../civi/elementor/widgets/button.php:95
+#: ../civi/elementor/widgets/job-search.php:56
+#: ../civi/elementor/widgets/shapes.php:50
+#: ../civi/elementor/widgets/accordion.php:77
+#: ../civi/elementor/widgets/popup-video.php:59
+msgid "Type"
+msgstr ""
+
+#: ../civi/customizer/options/general.php:73
+msgid "Type Loading Effect"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:211
+msgid "Typing"
+msgstr ""
+
+#: ../civi/elementor/widgets/fancy-heading.php:240
+msgid "Typing Speed"
+msgstr ""
+
+#: ../civi/elementor/widgets/timeline.php:128
+#: ../civi/elementor/widgets/timeline.php:148
+#: ../civi/elementor/widgets/modern-tabs.php:134
+#: ../civi/elementor/widgets/attribute-list.php:222
+#: ../civi/elementor/widgets/attribute-list.php:242
+#: ../civi/elementor/widgets/team-member.php:271
+#: ../civi/elementor/widgets/team-member.php:291
+#: ../civi/elementor/widgets/team-member.php:311
+#: ../civi/elementor/widgets/list.php:286
+#: ../civi/elementor/widgets/list.php:343
+#: ../civi/elementor/widgets/accordion.php:239
+#: ../civi/elementor/widgets/accordion.php:383
+#: ../civi/elementor/widgets/social-networks.php:330
+#: ../civi/elementor/widgets/gradation.php:126
+#: ../civi/elementor/widgets/gradation.php:146
+#: ../civi/elementor/widgets/testimonial-grid.php:481
+#: ../civi/elementor/widgets/testimonial-grid.php:510
+#: ../civi/elementor/widgets/testimonial-grid.php:530
+#: ../civi/elementor/widgets/testimonial-grid.php:550
+#: ../civi/customizer/options/typography.php:9
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:510
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:539
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:559
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:579
+#: ../civi/elementor/widgets/carousel/modern-slider.php:358
+#: ../civi/elementor/widgets/carousel/modern-slider.php:427
+#: ../civi/elementor/widgets/carousel/modern-slider.php:464
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:286
+#: ../civi/elementor/widgets/posts/blog.php:565
+#: ../civi/elementor/widgets/posts/blog.php:640
+#: ../civi/elementor/widgets/posts/blog.php:701
+#: ../civi/elementor/widgets/posts/blog.php:761
+#: ../civi/elementor/widgets/posts/blog.php:891
+#: ../civi/elementor/widgets/grid/view-demo.php:108
+msgid "Typography"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:560
+msgid "Ultra Light with Labels"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:168
+msgid "Underline"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/thankyou.php:31
+msgid ""
+"Unfortunately your order cannot be processed as the originating "
+"bank/merchant has declined your transaction. Please attempt your purchase "
+"again."
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:412
+msgid "Up"
+msgstr ""
+
+#: ../civi/includes/class-templates.php:530
+msgid "Update Profile"
+msgstr ""
+
+#: ../civi/woocommerce/checkout/payment.php:47
+msgid "Update totals"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:159
+msgid "Use Default Thumbnail Size"
+msgstr ""
+
+#: ../civi/elementor/widgets/button.php:175
+msgid "Use Gradient Background"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:54
+msgid "User Form"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:223
+#: ../civi/templates/global/account.php:155
+msgid "Username"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:145
+msgid "Username already exists"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:97
+msgid "Username or password is wrong. Please try again"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:241
+msgid "Username/Email address is existing"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:435
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:92
+#: ../civi/elementor/widgets/attribute-list.php:235
+msgid "Value"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:103
+msgid "Value #1"
+msgstr ""
+
+#: ../civi/elementor/widgets/attribute-list.php:107
+msgid "Value #2"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:259
+#: ../civi/templates/global/account.php:201
+#: ../civi/templates/global/account.php:201
+msgid "Verify"
+msgstr ""
+
+#: ../civi/elementor/widgets/user-form.php:253
+#: ../civi/templates/global/account.php:195
+msgid "Verify Code"
+msgstr ""
+
+#: ../civi/includes/class-ajax.php:315
+msgid "Verify success"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:395
+msgid "Vertical"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-layers.php:205
+#: ../civi/elementor/widgets/popup-video.php:358
+#: ../civi/elementor/widgets/carousel/carousel-base.php:213
+#: ../civi/elementor/widgets/carousel/carousel-base.php:277
+#: ../civi/elementor/widgets/carousel/carousel-base.php:420
+msgid "Vertical Align"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:204
+#: ../civi/elementor/widgets/image-box.php:163
+#: ../civi/elementor/widgets/carousel/modern-slider.php:285
+msgid "Vertical Alignment"
+msgstr ""
+
+#: ../civi/elementor/widgets/separator.php:48
+msgid "Vertical Line"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:456
+msgid "Vertical Offset"
+msgstr ""
+
+#: ../civi/elementor/widgets/nav-menu.php:517
+#: ../civi/elementor/widgets/nav-menu.php:884
+msgid "Vertical Padding"
+msgstr ""
+
+#: ../civi/elementor/widgets/flip-box.php:481
+#: ../civi/elementor/widgets/flip-box.php:756
+msgid "Vertical Position"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:55
+msgid "Video"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:77
+msgid "Video Text"
+msgstr ""
+
+#: ../civi/elementor/widgets/popup-video.php:69
+msgid "Video Url"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:65
+msgid "Videos"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:149
+#: ../civi/elementor/widgets/image-box.php:241
+#: ../civi/elementor/widgets/accordion.php:133
+#: ../civi/elementor/widgets/social-networks.php:64
+#: ../civi/elementor/widgets/icon.php:63
+#: ../civi/elementor/widgets/heading.php:119
+msgid "View"
+msgstr ""
+
+#: ../civi/elementor/widgets/posts/blog.php:252
+msgid "View Count"
+msgstr ""
+
+#: ../civi/elementor/widgets/grid/view-demo.php:22
+msgid "View Demo"
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "Villa with Orange Trees, Nice"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/carousel-base.php:334
+msgid "Visibility"
+msgstr ""
+
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:681
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:687
+#: ../civi/elementor/widgets/carousel/testimonial-carousel.php:693
+msgid "Web Design"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:172
+msgid "Week"
+msgstr ""
+
+#: ../civi/elementor/controls/group-control-tooltip.php:36
+msgid "White"
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:98
+#: ../civi/elementor/widgets/image-box.php:102
+#: ../civi/elementor/widgets/flip-box.php:314
+msgid "Whole Box"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:49
+msgid "Wide"
+msgstr ""
+
+#: ../civi/elementor/widgets/original/section.php:50
+msgid "Wider"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:300
+#: ../civi/elementor/widgets/google-map.php:328
+#: ../civi/elementor/widgets/image-layers.php:56
+#: ../civi/elementor/widgets/image-layers.php:151
+#: ../civi/elementor/widgets/attribute-list.php:176
+#: ../civi/elementor/widgets/instagram.php:1084
+#: ../civi/elementor/widgets/instagram.php:1267
+#: ../civi/elementor/widgets/base.php:211
+#: ../civi/elementor/widgets/list.php:233
+#: ../civi/elementor/widgets/button.php:386
+#: ../civi/elementor/widgets/separator.php:85
+#: ../civi/elementor/widgets/image-box.php:414
+#: ../civi/elementor/widgets/number-box.php:162
+#: ../civi/elementor/widgets/heading.php:505
+#: ../civi/elementor/controls/group-control-text-stroke.php:74
+#: ../civi/elementor/widgets/posts/blog.php:420
+msgid "Width"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:252
+msgid "Width 1 - Height 1"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:255
+msgid "Width 1 - Height 130%"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:253
+msgid "Width 1 - Height 2"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:254
+msgid "Width 1 - Height 70%"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:256
+msgid "Width 2 - Height 1"
+msgstr ""
+
+#: ../civi/elementor/class-widget-utils.php:257
+msgid "Width 2 - Height 2"
+msgstr ""
+
+#: ../civi/elementor/widgets/heading.php:74
+msgid ""
+"Wrap any words with &lt;mark&gt;&lt;/mark&gt; tag to make them highlight."
+msgstr ""
+
+#: ../civi/elementor/widgets/icon-box.php:466
+#: ../civi/elementor/widgets/image-box.php:369
+#: ../civi/elementor/widgets/icon.php:126
+msgid "Wrap Height"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:286
+#: ../civi/elementor/widgets/base.php:255
+#: ../civi/elementor/widgets/base.php:350
+#: ../civi/elementor/widgets/fancy-heading.php:295
+#: ../civi/elementor/widgets/heading.php:188
+#: ../civi/elementor/widgets/carousel/modern-slider.php:266
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:221
+msgid "Wrapper"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:563
+msgid "WY"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:174
+msgid "Year"
+msgstr ""
+
+#: ../civi/includes/class-breadcrumb.php:26
+#, php-format
+msgctxt "year label"
+msgid "%s"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:54
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../civi/templates/page/page-title.php:54
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:450
+#: ../civi/elementor/widgets/twitter.php:82
+#: ../civi/elementor/widgets/fancy-heading.php:263
+#: ../civi/elementor/widgets/fancy-heading.php:279
+#: ../civi/elementor/widgets/original/section.php:73
+msgid "Yes"
+msgstr ""
+
+#: ../civi/elementor/widgets/table.php:64
+#: ../civi/elementor/widgets/table.php:115
+msgid ""
+"You have started a new row. Please add new cells in your row by clicking Add "
+"Item button below."
+msgstr ""
+
+#: ../civi/woocommerce/checkout/form-checkout.php:27
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: ../civi/customizer/settings/functions.php:294
+msgid "Young Woman in Mauve"
+msgstr ""
+
+#: ../civi/templates/post/comment.php:30
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:207
+msgid "Youtube Channel"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:95
+msgid "Zigzag Height"
+msgstr ""
+
+#: ../civi/elementor/widgets/image-gallery.php:104
+msgid "Zigzag Reversed?"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:122
+msgid "Zoom Control"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:331
+msgid "Zoom Icon"
+msgstr ""
+
+#: ../civi/elementor/widgets/instagram.php:281
+msgid "Zoom Icon Type"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:75
+#: ../civi/elementor/widgets/banner.php:78
+#: ../civi/elementor/widgets/image-box.php:80
+#: ../civi/elementor/widgets/fancy-heading.php:213
+#: ../civi/elementor/widgets/image-gallery.php:116
+#: ../civi/elementor/widgets/testimonial-grid.php:126
+#: ../civi/elementor/widgets/popup-video.php:159
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:74
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:90
+#: ../civi/elementor/widgets/posts/blog.php:111
+#: ../civi/elementor/widgets/grid/view-demo.php:64
+msgid "Zoom In"
+msgstr ""
+
+#: ../civi/elementor/widgets/google-map.php:94
+msgid "Zoom Level"
+msgstr ""
+
+#: ../civi/elementor/widgets/team-member.php:76
+#: ../civi/elementor/widgets/banner.php:79
+#: ../civi/elementor/widgets/image-box.php:81
+#: ../civi/elementor/widgets/fancy-heading.php:214
+#: ../civi/elementor/widgets/image-gallery.php:117
+#: ../civi/elementor/widgets/testimonial-grid.php:127
+#: ../civi/elementor/widgets/popup-video.php:160
+#: ../civi/elementor/widgets/carousel/team-member-carousel.php:75
+#: ../civi/elementor/widgets/carousel/modern-carousel.php:91
+#: ../civi/elementor/widgets/posts/blog.php:112
+#: ../civi/elementor/widgets/grid/view-demo.php:65
+msgid "Zoom Out"
+msgstr ""
+
+#: ../civi/customizer/settings/defaults.php:124
+msgid "© 2023 Uxper. All Right Reserved."
+msgstr ""

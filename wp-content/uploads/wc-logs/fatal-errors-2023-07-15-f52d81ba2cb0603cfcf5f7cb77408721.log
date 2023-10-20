@@ -1,0 +1,28 @@
+2023-07-15T00:36:24+00:00 CRITICAL Uncaught Error: Failed opening required 'social_apps/.php' (include_path='.:/usr/local/pear/php82') in /home/citymody/citymody.com/www/wp-content/plugins/miniorange-login-openid/mo-openid-social-login-functions.php:91
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/miniorange-login-openid/class-mo-openid-login-widget.php(1480): mo_openid_process_custom_app_callback()
+#1 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): mo_openid_login_validate('')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/citymody/citymody.com/www/wp-settings.php(623): do_action('init')
+#5 /home/citymody/citymody.com/www/wp-config.php(96): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/wp-load.php(50): require_once('/home/citymody/...')
+#7 /home/citymody/citymody.com/www/wp-blog-header.php(13): require_once('/home/citymody/...')
+#8 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#9 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/miniorange-login-openid/mo-openid-social-login-functions.php on line 91
+
+2023-07-15T00:36:24+00:00 CRITICAL Uncaught Error: Failed opening required 'social_apps/.php' (include_path='.:/usr/local/pear/php82') in /home/citymody/citymody.com/www/wp-content/plugins/miniorange-login-openid/mo-openid-social-login-functions.php:91
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/plugins/miniorange-login-openid/class-mo-openid-login-widget.php(1480): mo_openid_process_custom_app_callback()
+#1 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(308): mo_openid_login_validate('')
+#2 /home/citymody/citymody.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/citymody/citymody.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/citymody/citymody.com/www/wp-settings.php(623): do_action('init')
+#5 /home/citymody/citymody.com/www/wp-config.php(96): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/wp-load.php(50): require_once('/home/citymody/...')
+#7 /home/citymody/citymody.com/www/wp-blog-header.php(13): require_once('/home/citymody/...')
+#8 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#9 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/plugins/miniorange-login-openid/mo-openid-social-login-functions.php on line 91
+

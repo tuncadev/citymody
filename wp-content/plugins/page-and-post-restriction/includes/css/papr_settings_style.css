@@ -1,0 +1,455 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.papr_table_col {
+    vertical-align: top;
+    width: 75%;
+}
+
+.papr_support_col {
+    vertical-align: top;
+}
+
+.papr_restrict_option {
+    float: left;
+    width: 50%;
+}
+
+.papr_container {
+    display: block;
+    margin-top: 1px;
+    background-color: rgba(255, 255, 255, 255);
+    padding: 0 10px;
+    border: solid 1px #CCCCCC;
+}
+
+
+/* Slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    cursor: pointer;
+    margin-top: -1.5rem;
+    text-indent: -9999px;
+    width: 56px;
+    height: 30px;
+    background: #bfbdbd;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.slider:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: .3s;
+}
+
+input:checked+.slider {
+    background-color: #173f7b;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #0085ba;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+input:disabled+.slider {
+    background-color: #ebebeb;
+    cursor: default;
+}
+
+
+/* Slider */
+
+
+/*Flex container and Capsule*/
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    left: 45%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+}
+
+.close:hover {
+    background: #eee;
+    top: 50%;
+    right: 0;
+    left: 45%;
+}
+/*Flex container and Capsule*/
+
+
+/* New UI CSS */
+.papr-bg-main {
+    background: #f4f4f4;
+}
+
+.papr-margin-left {
+    margin-left: -20px;
+}
+
+.papr-p-text {
+    font-size: 1rem;
+}
+
+.papr-bg-cstm {
+    background: #f1f6ff;
+}
+
+.papr-form-head:after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #1f3668;
+    /* margin-top: 24px; */
+    margin-top: 9px;
+    border-radius: 30px;
+}
+
+.papr-form-head-bar:after {
+    width: 50px;
+}
+
+.papr-shadow {
+    box-shadow: 0 2px 5px rgb(0 0 0 / 12%);
+}
+
+.papr-btn-cstm {
+    background: linear-gradient(0deg, rgb(14 42 71) 0, rgb(26 69 138) 100%)!important;
+    border: none;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    padding: .3rem 1.5rem;
+    color: #fff!important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.papr-btn-cstm-role-create {
+    background: linear-gradient(0deg, rgb(14 42 71) 0, rgb(26 69 138) 100%)!important;
+    border: none;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    padding: .3rem 1.5rem;
+    color: #fff!important;
+    cursor: pointer;
+}
+
+.papr-btn-cstm-role-create[disabled] {
+    background: linear-gradient(0deg, rgb(14 42 71) 0, rgb(26 69 138) 100%);
+    color: #fff!important;
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+.papr-pagination-btn {
+    background: linear-gradient(0deg, rgb(14 42 71) 0, rgb(26 69 138) 100%);
+    color: #fff;
+    display: inline-block;
+    vertical-align: baseline;
+    min-width: 30px;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 4px;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+}
+
+.papr-pagination-btn[disabled] {
+    background: linear-gradient(0deg, rgb(14 42 71) 0, rgb(26 69 138) 100%);
+    color: #fff!important;
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+.papr-pagination-btn:hover,
+.papr-btn-cstm:hover {
+    text-decoration: none;
+    opacity: .9;
+    color: #fff;
+}
+
+.papr-prem-info {
+    padding: 1rem;
+    background: #f4f4f4;
+    border: 4px solid #d5e2ff;
+    border-radius: 5px;
+}
+
+.papr-nav-tab {
+    background: none;
+    color: #1d2238;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .9rem 1rem;
+    cursor: pointer;
+    transition: .3s cubic-bezier(.4, 0, .2, 1);
+    border: none;
+}
+
+.papr-nav-tab:hover {
+    text-decoration: none;
+    background-color: #e5e7e9;
+}
+
+.papr-nav-tab:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-tab-active {
+    border-bottom: 3px solid #384e7e!important;
+}
+
+.papr-lic-head {
+    background: #133664!important;
+    color: #fff;
+}
+
+.papr-license-plan tr:nth-child(odd) {
+    background-color: #e9f0ff;
+}
+
+.papr-price {
+    font-weight: 400;
+}
+
+.papr-prem-icn {
+    position: absolute;
+    z-index: 10;
+    display: inline-flex;
+    left: 30%;
+}
+
+.papr-prem-icn-log {
+    left: 66%;
+}
+
+.papr-prem-cat-icn {
+    position: absolute;
+    justify-content: right;
+    display: flex;
+    left: 66%;
+}
+
+.papr-prem-info-text {
+    display: none;
+    width: 388px;
+    background-color: #000000d4;
+    color: #fff !important;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 6px;
+    padding: .6em .5em;
+    left: -22em;
+    bottom: -2.5em;
+    position: absolute;
+    z-index: 1;
+}
+
+.papr-prem-info-text::after {
+    content: " ";
+    position: absolute;
+    top: 77%;
+    right: 100%;
+    margin-top: -28px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #000000fa;
+    left: 100%;
+}
+
+.papr-prem-icn:hover .papr-prem-info-text {
+    display: block;
+}
+
+.papr-prem-btn {
+    line-height: 7px;
+    box-shadow: inset 2px 2px 2px 0 rgb(255 255 255 / 50%), 7px 7px 20px 0 rgb(0 0 0 / 10%), 4px 4px 5px 0 rgb(0 0 0 / 10%);
+    border-radius: 80px;
+    color: #fff;
+    text-decoration: none;
+    background-color: orange;
+}
+
+.papr-prem-btn:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+
+/** INFO BUTTONS CSS **/
+.papr-info-global {
+    position: absolute;
+    z-index: 10;
+    display: inline-flex;
+}
+.papr-info-text-global {
+    display: none;
+    width: 400px;
+    background-color: #f4f4f4;
+    color: darkslategray;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    padding: .6em .5em;
+    left: 1.6em;
+    bottom: -2.5em;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 1px #0085ba;
+}
+.papr-info-text-global::after {
+    content: " ";
+    position: absolute;
+    margin-top: -3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #dcdcde transparent transparent;
+    left: -10.7px;
+}
+.papr-info-global:hover .papr-info-text-global {
+    display: block;
+}
+.papr-info-global:hover {
+    cursor: pointer;
+}
+.papr-editor-block {
+    width: 100%;
+    align-content: center;
+    height: 8em;
+}
+
+/* custom roles css */
+
+.roles_buttons{
+    text-decoration: none;
+    color:black;
+}
+
+.roles_buttons:hover{
+    cursor:pointer !important;
+    color:black;
+}
+.div_button:hover{
+    background-color: #f1f6ff !important;
+}
+
+.flex-container-custom-role {
+    display: flex;
+    margin-left:-30px;
+}
+
+.flex-container-custom-role > div {
+    margin: 0px;
+}
+
+.display_custom_role_nav {
+    font-size:18px;
+    width:200px;
+    padding-left:0px;
+}
+
+.display_custom_role_table_edit {
+    font-size: 17px;
+    background-color:#f1f6ff;
+    padding-left:10px;
+    min-height: 450px;
+}
+
+ul.role_usability {
+    display: table;
+    width: auto;
+    text-align: center;
+}
+
+ul.role_usability > li {
+    display: table-cell;
+    padding-right:5px;
+}
+
+.form-head{
+    position: relative;
+}
+
+.form-head:after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #1f3668;
+    margin-top: 9px;
+    border-radius: 30px;
+}
+
+.text-end {
+    text-align:right!important
+}
+
+.role_table_width{
+    width:750px !important;
+}
+
+@media screen and (width:1396.36px)
+{
+    .role_table_width{
+        width:655px !important;
+    }
+}
+@media screen and (width:1228.80px) {
+    .role_table_width{
+        width:535px !important;
+    } 
+}
+@media screen and (width:1706.67px) {
+    .role_table_width{
+        width:880px !important;
+    }
+}
+@media screen and (width:1920px) {
+    .role_table_width{
+        width:1030px !important;
+    }
+}

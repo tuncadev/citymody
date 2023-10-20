@@ -1,0 +1,60 @@
+2023-07-05T05:28:19+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php dosyasında 21 numaralı satırda Uncaught Error: Call to undefined method Civi_Templates::footer_menu() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php:21
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(66): get_template_part('templates/foote...')
+#4 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#7 {main}
+  thrown
+
+2023-07-05T05:28:19+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php dosyasında 21 numaralı satırda Uncaught Error: Call to undefined method Civi_Templates::footer_menu() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php:21
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(66): get_template_part('templates/foote...')
+#4 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#7 {main}
+  thrown
+
+2023-07-05T23:11:24+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php dosyasında 21 numaralı satırda Uncaught Error: Call to undefined method Civi_Templates::footer_menu() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php:21
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(66): get_template_part('templates/foote...')
+#4 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#7 {main}
+  thrown
+
+2023-07-05T23:11:24+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php dosyasında 21 numaralı satırda Uncaught Error: Call to undefined method Civi_Templates::footer_menu() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php:21
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(66): get_template_part('templates/foote...')
+#4 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#7 {main}
+  thrown
+
+2023-07-05T23:13:34+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php dosyasında 21 numaralı satırda Uncaught Error: Call to undefined method Civi_Templates::footer_menu() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/footer/copyright.php:21
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/page-dashboard.php(66): get_template_part('templates/foote...')
+#4 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#6 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#7 {main}
+  thrown
+

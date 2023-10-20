@@ -1,0 +1,14 @@
+.with_frm_style .frm_scale input[type=radio] {
+	position: relative;
+	width: 18px;
+	height: 18px;
+}
+
+.with_frm_style .frm_scale input[type=radio]:before {
+	position: absolute;
+	left: calc(50% - 6px);
+	top: calc(50% - 6px);
+	width: 12px !important;
+	height: 12px !important;
+	margin: 0 !important;
+}

@@ -1,0 +1,74 @@
+.frm-display-flex {
+	display: flex !important;
+}
+
+.frm-flex {
+	flex: 1;
+}
+
+.taxonomy-frm_application #frm_top_bar + .wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+#frm_applications_search_wrapper .frm-search {
+	width: 100%;
+	float: none;
+	margin-bottom: 0;
+}
+
+#frm_applications_search_wrapper {
+	align-self: flex-end;
+}
+
+#frm_no_applications_placeholder {
+	max-width: 500px;
+	text-align: center;
+	margin: 0 auto 50px;
+}
+
+#frm_no_applications_placeholder h3 {
+	font-size: 22px;
+	font-weight: 400;
+	color: var(--medium-grey);
+}
+
+#frm_no_applications_placeholder .frm-new-application-button {
+	margin-top: 20px;
+}
+
+@media only screen and (min-width: 1050px) {
+	/* Make Count Columns Smaller */
+	#frm-custom-applications-index-container th:nth-of-type(2),
+	#frm-custom-applications-index-container th:nth-of-type(3),
+	#frm-custom-applications-index-container th:nth-of-type(4) {
+		width: 100px;
+	}
+
+	/* Make Timestamp Columns Smaller */
+	#frm-custom-applications-index-container th:nth-of-type(5),
+	#frm-custom-applications-index-container th:nth-of-type(6) {
+		width: 150px;
+	}
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 768px) {
+	#frm-custom-applications-index-container th:nth-of-type(2),
+	#frm-custom-applications-index-container th:nth-of-type(3),
+	#frm-custom-applications-index-container th:nth-of-type(4) {
+		width: 50px;
+	}
+
+	#frm-custom-applications-index-container th:nth-of-type(5),
+	#frm-custom-applications-index-container th:nth-of-type(6) {
+		width: 120px;
+	}
+}
+
+.taxonomy-frm_application #frm_top_bar {
+	position: relative;
+}
+
+.taxonomy-frm_application #frm_top_bar h1 {
+	width: auto;
+}

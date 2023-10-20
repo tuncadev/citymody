@@ -1,0 +1,5 @@
+user_email,user_login,user_pass,level_slug,start_time,expire_time,first_name,last_name
+user_1@exemple.com,User_1,password,free_demo,,2027-03-14 09:45:58,User,One
+user_1@exemple.com,,,onetime_demo,,2027-03-14 09:45:58,,
+user_2@exemple.com,User_2;123456,,,,,
+user_3@exemple.com,,987654321,free_demo,,,User,Three

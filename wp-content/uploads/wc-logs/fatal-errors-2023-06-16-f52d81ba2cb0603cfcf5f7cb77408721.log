@@ -1,0 +1,16 @@
+2023-06-16T06:57:17+00:00 CRITICAL Uncaught Error: Undefined constant "php" in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:51
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 51
+
+2023-06-16T06:57:23+00:00 CRITICAL Uncaught Error: Undefined constant "php" in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:51
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 51
+

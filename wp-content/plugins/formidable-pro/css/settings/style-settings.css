@@ -1,0 +1,135 @@
+/*
+This file is added to the visual styler admin page, accessed from the style tab.
+*/
+#general-style .frm_image_preview_wrapper .frm_image_styling_frame {
+	margin-left: 0;
+}
+
+#general-style .frm_image_preview_wrapper {
+	margin: 5px 0 10px;
+}
+
+#frm_default_style_cards_wrapper .dropdown-item.frm-delete-style,
+#frm_default_style_cards_wrapper .dropdown-item.frm-set-as-default-style {
+	/* Not every dropdown option makes sense for a default style - Set as a default, and delete. */
+	/* It also doesn't make sense that you would delete the selected style, so that is hidden as well. */
+	display: none;
+}
+
+#frm_style_sidebar .frm-style-card .frm-dropdown-menu {
+	/*
+	This is set to 200px for other .frm-dropdown-menu elements.
+	When the dropdown includes all 6 items it exceeds the limit and shows a scroll bar.
+	This can be in Pro as there are fewer dropdown items in lite so it never exceeds 200px.
+	*/
+	max-height: none;
+}
+
+#frm_new_style_trigger {
+	box-shadow: none;
+}
+
+#frm_new_style_trigger svg {
+	position: relative;
+	bottom: 1px;
+}
+
+#frm_style_preview .frm_cc_number {
+	/**
+	 * Avoid a conflict .with_frm_style form .frm_combo_inputs_container > .form-field { margin-bottom: 0; } style in frm_admin.css
+	 * This should not be hard coded to a 20px value but for now this works okay.
+	 */
+	margin-bottom: 20px;
+}
+
+#frm_style_preview .frm_image_option_container svg {
+	/**
+	 * Avoid a conflict with a .frm_image_option_container svg { margin: 10px auto 0; } style in frm_admin.css
+	 * The checkbox used for the "image" layout option in radios/checkboxes shouldn't have any margin at the top.
+	 * Otherwise the checkmark appears lower than it should.
+	 */
+	margin-top: 0;
+}
+
+#frm_style_preview .frm_logic_form {
+	/* Avoid a form with conditiaonl logic and the "fade" setting from never appearing in the preview. */
+	display: block;
+}
+
+#frm_style_preview .frm-star-group input + label {
+	/* I set line-height to normal for labels in the preview to avoid admin page styles. But star ratings need a line-height of 1 or they appear cut off. */
+	line-height: 1;
+}
+
+/**
+ * Normally buttons have 100% width on admin pages. We don't want the repeat/collapse icon dropdowns to be that large.
+ */
+#frm_repeat_icon_select button.dropdown-toggle,
+#frm_collapse_icon_select button.dropdown-toggle {
+	width: auto;
+}
+
+.frm-style-card-preview {
+	position: relative;
+}
+
+#frm_style_preview .frm_add_form_row,
+#frm_style_preview .frm_remove_form_row {
+	box-sizing: border-box;
+}
+
+#frm_apply_style {
+	transform: translateX(-20px);
+}
+
+#frm_edit_style.frm_hidden ~ #frm_apply_style {
+	display: flex !important;
+}
+
+/* Avoid conflicts with style rules for front end Toggle fields by overwriting the CSS variables. */
+#frm_style_sidebar input + .frm_switch .frm_slider {
+	--toggle-off-color: #eaeaea;
+}
+
+#frm_style_sidebar input:checked + .frm_switch .frm_slider {
+	--toggle-on-color: #579AF6;
+}
+
+#frm_style_sidebar .frm_switch_opt {
+	--toggle-font-size: 15px;
+	--check-label-color: #444444;
+}
+/* End style rules for front end Toggle fields */
+
+#frm_style_preview ul.frm_rootline {
+	flex-wrap: nowrap !important;
+	overflow: hidden;
+}
+
+#frm_style_preview .frm_rootline:not(.frm_show_titles) > li:nth-child(5) ~ li,
+#frm_style_preview .frm_rootline.frm_show_titles > li:nth-child(2) ~ li {
+	display: none;
+}
+
+#frm_style_preview ul.frm_rootline.frm_page_bar > li:nth-last-child(-n+3) ~ li {
+	display: flex !important;
+}
+
+@media only screen and (min-width: 1250px) {
+	#frm_style_preview ul.frm_rootline.frm_rootline_6:not(.frm_show_titles) .frm_rootline_show_hidden_steps_btn,
+	#frm_style_preview ul.frm_rootline.frm_rootline_5:not(.frm_show_titles) .frm_rootline_show_hidden_steps_btn,
+	#frm_style_preview ul.frm_page_bar.frm_rootline.frm_rootline_4 .frm_rootline_show_hidden_steps_btn,
+	#frm_style_preview ul.frm_page_bar.frm_rootline.frm_rootline_3 .frm_rootline_show_hidden_steps_btn {
+		display: none !important;
+	}
+
+	#frm_style_preview ul.frm_page_bar.frm_rootline.frm_rootline_4 li:not(.frm_rootline_show_hidden_steps_btn) {
+		display: flex !important;
+	}
+}
+
+@media only screen and (max-width: 1250px) {
+	#frm_style_preview ul.frm_rootline > li:nth-child(1) ~ li {
+		display: none;
+	}
+}

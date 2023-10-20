@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+	  "UmpESh\\": "classes/",
+	  "UmpESh\\Admin\\": "classes/admin/"
+	}
+  },
+  "config": {
+    "autoloader-suffix": "UmpESh"
+  }
+}

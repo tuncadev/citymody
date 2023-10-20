@@ -1,0 +1,134 @@
+2023-06-27T10:00:29+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php dosyasında 17 numaralı satırda Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php:17
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#4 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#6 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#7 /home/citymody/citymody.com/www/wp-content/themes/civi/page.php(15): get_header()
+#8 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#9 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#11 {main}
+  thrown
+
+2023-06-27T10:00:36+00:00 CRITICAL Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php:17
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#4 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#6 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#7 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/archive-candidates.php(9): get_header('civi')
+#8 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/includes/civi-helper.php(160): include('/home/citymody/...')
+#9 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/taxonomy-candidates.php(10): civi_get_template('archive-candida...')
+#10 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#13 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php on line 17
+
+2023-06-27T10:00:38+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php dosyasında 17 numaralı satırda Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php:17
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#4 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#6 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#7 /home/citymody/citymody.com/www/wp-content/themes/civi/page.php(15): get_header()
+#8 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#9 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#11 {main}
+  thrown
+
+2023-06-27T10:07:37+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php dosyasında 18 numaralı satırda Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#4 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#6 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#7 /home/citymody/citymody.com/www/wp-content/themes/civi/page.php(15): get_header()
+#8 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#9 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#11 {main}
+  thrown
+
+2023-06-27T10:07:57+00:00 CRITICAL Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#4 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#6 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#7 /home/citymody/citymody.com/www/wp-content/plugins/civi-framework/templates/single-candidate.php(12): get_header('civi')
+#8 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#9 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#11 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php on line 18
+
+2023-06-27T10:08:07+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php dosyasında 18 numaralı satırda Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php:18
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template.php(785): require()
+#1 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#2 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#4 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#5 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#6 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#7 /home/citymody/citymody.com/www/wp-content/themes/civi/page.php(15): get_header()
+#8 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#9 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#10 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#11 {main}
+  thrown
+
+2023-06-27T10:45:53+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/includes/class-templates.php dosyasında 182 numaralı satırda Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/includes/class-templates.php:182
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi-child/includes/class-templates.php(215): Civi_Templates::mobile_menu()
+#1 /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php(5): Civi_Templates::canvas_menu()
+#2 /home/citymody/citymody.com/www/wp-includes/template.php(785): require('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#4 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#6 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#7 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#8 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#9 /home/citymody/citymody.com/www/wp-content/themes/civi/page.php(15): get_header()
+#10 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#13 {main}
+  thrown
+
+2023-06-27T10:46:01+00:00 CRITICAL /home/citymody/citymody.com/www/wp-content/themes/civi-child/includes/class-templates.php dosyasında 182 numaralı satırda Uncaught Error: Call to undefined function e_() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/includes/class-templates.php:182
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-content/themes/civi-child/includes/class-templates.php(215): Civi_Templates::mobile_menu()
+#1 /home/citymody/citymody.com/www/wp-content/themes/civi-child/templates/header/header.php(5): Civi_Templates::canvas_menu()
+#2 /home/citymody/citymody.com/www/wp-includes/template.php(785): require('/home/citymody/...')
+#3 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', false, Array)
+#4 /home/citymody/citymody.com/www/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#5 /home/citymody/citymody.com/www/wp-content/themes/civi/header.php(113): get_template_part('templates/heade...')
+#6 /home/citymody/citymody.com/www/wp-includes/template.php(783): require_once('/home/citymody/...')
+#7 /home/citymody/citymody.com/www/wp-includes/template.php(718): load_template('/home/citymody/...', true, Array)
+#8 /home/citymody/citymody.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#9 /home/citymody/citymody.com/www/wp-content/themes/civi/page.php(15): get_header()
+#10 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include('/home/citymody/...')
+#11 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#12 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#13 {main}
+  thrown
+

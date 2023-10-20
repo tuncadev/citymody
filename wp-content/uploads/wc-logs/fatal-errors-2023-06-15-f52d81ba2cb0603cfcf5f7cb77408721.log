@@ -1,0 +1,36 @@
+2023-06-15T21:06:44+00:00 CRITICAL Uncaught Error: Call to undefined function wp_header() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:2
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 2
+
+2023-06-15T23:12:55+00:00 CRITICAL syntax error, unexpected identifier "list_my_childs", expecting "," or ";" in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 50
+
+2023-06-15T23:14:55+00:00 CRITICAL syntax error, unexpected identifier "list_my_childs", expecting "," or ";" in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 50
+
+2023-06-15T23:16:23+00:00 CRITICAL Uncaught Error: Call to undefined function list_my_childs() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:50
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 50
+
+2023-06-15T23:16:27+00:00 CRITICAL Uncaught Error: Call to undefined function list_my_childs() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:50
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 50
+
+2023-06-15T23:17:05+00:00 CRITICAL Uncaught Error: Call to undefined function list_my_childs() in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php:42
+Stack trace:
+#0 /home/citymody/citymody.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/citymody/citymody.com/www/wp-blog-header.php(19): require_once('/home/citymody/...')
+#2 /home/citymody/citymody.com/www/index.php(17): require('/home/citymody/...')
+#3 {main}
+  thrown in /home/citymody/citymody.com/www/wp-content/themes/civi-child/page-post-project.php on line 42
+

@@ -1,0 +1,68 @@
+
+#form_reports_page form {
+	margin-bottom: var(--gap-lg);
+	justify-content: start;
+}
+
+.frm-report-filter.tablenav {
+	height: auto;
+}
+
+#form_reports_page button {
+    display: none;
+    margin-left: var(--gap-xs);
+}
+
+#frm_stats_start_date {
+    margin-right: 0;
+    border-radius: var(--small-radius) 0 0 var(--small-radius);
+}
+
+#frm_stats_end_date {
+    margin-left: 0;
+    border-radius: 0 var(--small-radius) var(--small-radius) 0;
+	border-left-width: 0;
+}
+
+.frm_stats_date_wrapper input::-webkit-datetime-edit-fields-wrapper {
+	cursor: text;
+}
+
+.frm_stats_date_wrapper input[type=date]::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18" fill="%2398A2B3"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.4.8c.4 0 .7.3.7.7v.8H11v-.8a.8.8 0 011.5 0v.8h3.3c.9 0 1.6.6 1.6 1.5v12c0 .8-.7 1.4-1.6 1.4H2.3c-.9 0-1.5-.6-1.5-1.4v-12c0-.9.6-1.5 1.4-1.5h3.4v-.8c0-.4.4-.8.8-.8zm-.8 3H2.3v3h13.4v-3h-3.3v.7a.8.8 0 01-1.5 0v-.8H7v.8a.8.8 0 01-1.5 0v-.8zm10.2 4.5h-3.4v3h3.3v-3zm0 4.4h-3.4v3h3.3v-3zm-5 3v-3H7.2v3H11zm-5.2 0v-3H2.3v3h3.3zm-3.3-4.4h3.3v-3H2.3v3zm4.8-3v3H11v-3H7z"></path></svg>');
+}
+
+.frm_stats_date_wrapper:not(.frm_invisible) input:disabled::-webkit-calendar-picker-indicator {
+	visibility: visible;
+	opacity: .5;
+}
+
+/* Inline Pro Tip */
+.frm-inline-pro-tip,
+.frm-inline-pro-tip .frm-pro-tip {
+	display: flex;
+	align-items: center;
+}
+
+.frm-inline-pro-tip .frm-pro-tip {
+	gap: 6px;
+}
+
+.frm-inline-pro-tip .frm-pro-tip.frm-pro-tip-end {
+	margin-left: auto;
+}
+
+
+body.rtl .frm-inline-pro-tip .frm-pro-tip.frm-pro-tip-end {
+	margin-left: unset;
+	margin-right: auto;
+}
+
+/* PRINT */
+@media print {
+	#form_reports_page .google-visualization-table > div {
+		overflow: visible !important;
+		height: auto !important;
+	}
+}
