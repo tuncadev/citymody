@@ -23,6 +23,15 @@ class FrmProAppHelper {
 	}
 
 	/**
+	 * @since 6.4.2
+	 *
+	 * @return string
+	 */
+	public static function get_svg_folder_path() {
+		return self::plugin_path() . '/images/svg/';
+	}
+
+	/**
 	 * Get the Pro settings
 	 *
 	 * @since 2.0
@@ -70,23 +79,101 @@ class FrmProAppHelper {
 		if ( is_callable( 'FrmAppHelper::icon_by_class' ) ) {
 			return FrmAppHelper::icon_by_class( $class, $atts );
 		}
+	}
 
-		// For reverse compatibility. Can be removed by v4.01.
-		$echo = ! isset( $atts['echo'] ) || $atts['echo'];
+	/**
+	 * Load an independent svg file from the external folder. Returns the svg html or the inner HTML tags of the svg.
+	 *
+	 * @since 6.4.2
+	 * @param string $slug
+	 * @param boolean $inner_html_only
+	 * @param array $atts
+	 * @return string|array|false
+	 */
+	private static function init_svg_by_slug( $slug, $inner_html_only = false, $atts = array() ) {
+		$svg_file_path = self::get_svg_folder_path() . $slug . '.svg';
 
-		$html = '';
-		if ( ! empty( $atts ) ) {
-			foreach ( $atts as $key => $value ) {
-				$html .= ' ' . esc_attr( $key ) . '="' . esc_attr( $value ) . '"';
-			}
+		if ( false === file_exists( $svg_file_path ) ) {
+			return false;
 		}
 
-		$icon = '<i class="' . esc_attr( $class ) . '"' . $html . '></i>';
-		if ( $echo ) {
-			echo $icon; // WPCS: XSS ok.
-		} else {
-			return $icon;
+		$svg = file_get_contents( $svg_file_path );
+
+		if ( false === $inner_html_only ) {
+			return $svg;
 		}
+
+		$svg_atts = array_merge(
+			array(
+				'viewBox' => '',
+			),
+			$atts
+		);
+
+		$svg_element = array(
+			'inner_html'  => '',
+			'atts'        => $svg_atts,
+			'atts_string' => '',
+		);
+
+		preg_match( '/viewBox\s*=\s*["\'](.*?)["\']/i', $svg, $matches );
+		if ( $matches[1] ) {
+			$svg_element['atts']['viewBox'] = $matches[1];
+		}
+
+		$html_params = $svg_element['atts'];
+		unset( $html_params['echo'] );
+		$svg_element['atts_string'] = FrmAppHelper::array_to_html_params( $html_params );
+
+		$svg_element['inner_html'] = preg_replace( '/^<svg[^>]*>|<\/svg>$/i', '', $svg );
+
+		return $svg_element;
+	}
+
+	/**
+	 * Get svg icon by slug.
+	 *
+	 * @since 6.4.2
+	 *
+	 * @param string $slug
+	 * @param string $classnames
+	 * @param array  $atts
+	 * @return string
+	 */
+	public static function get_svg_icon( $slug, $classnames, $atts = array() ) {
+		$echo        = isset( $atts['echo'] ) ? $atts['echo'] : false;
+		$inner_html  = ( isset( $classnames ) && '' !== $classnames ) || ! empty( $atts );
+		$svg_context = self::init_svg_by_slug( $slug, $inner_html, $atts );
+
+		if ( false === $svg_context ) {
+			return self::echo_or_return( '', $echo );
+		}
+
+		if ( ! is_array( $svg_context ) && false === $inner_html ) {
+			return self::echo_or_return( $svg_context, $echo );
+		}
+
+		return self::echo_or_return(
+			'<svg ' . $svg_context['atts_string'] . ' class="' . esc_attr( $classnames ) . '">' . $svg_context['inner_html'] . '</svg>',
+			$echo
+		);
+	}
+
+	/**
+	 * Echo the string or return it.
+	 *
+	 * @since 6.4.2
+	 *
+	 * @param string $string
+	 * @param boolean $echo
+	 */
+	private static function echo_or_return( $string, $echo = true ) {
+		if ( true === $echo ) {
+			echo $string; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			return;
+		}
+
+		return $string;
 	}
 
 	/**
@@ -151,13 +238,16 @@ class FrmProAppHelper {
 	 * Get a value from the current user profile
 	 *
 	 * @since 2.0
+	 *
+	 * @param string $value
+	 * @param bool   $return_array
 	 * @return string|array
 	 */
 	public static function get_current_user_value( $value, $return_array = false ) {
 		global $current_user;
-		$new_value = isset($current_user->{$value}) ? $current_user->{$value} : '';
-		if ( is_array($new_value) && ! $return_array ) {
-			$new_value = implode(', ', $new_value);
+		$new_value = isset( $current_user->{$value} ) ? $current_user->{$value} : '';
+		if ( is_array( $new_value ) && ! $return_array ) {
+			$new_value = implode( ', ', $new_value );
 		}
 
 		return $new_value;
@@ -321,6 +411,7 @@ class FrmProAppHelper {
 	public static function get_custom_post_types() {
 		$custom_posts = get_post_types( array(), 'object');
 		foreach ( array( 'revision', 'attachment', 'nav_menu_item' ) as $unset ) {
+			// @phpstan-ignore-next-line
 			unset( $custom_posts[ $unset ] );
 		}
 
@@ -578,7 +669,7 @@ class FrmProAppHelper {
 		$filter_args = array( 'is_draft' => $args['drafts'] );
 
 		// If the field is from a repeating section (or embedded form?) get the parent ID.
-		$filter_args['return_parent_id'] = ( $where_field->form_id != $args['form_id'] );
+		$filter_args['return_parent_id'] = is_array( $args['form_id'] ) ? ! in_array( $where_field->form_id, $args['form_id'], true ) : $where_field->form_id != $args['form_id'];
 
 		// Add entry IDs to $where_statement.
 		if ( $args['use_ids'] ) {
@@ -834,6 +925,24 @@ class FrmProAppHelper {
 	}
 
 	/**
+	 * Handles missing mime_content_type function.
+	 *
+	 * @since 6.4.3
+	 *
+	 * @param string $file
+	 *
+	 * @return string|false
+	 */
+	public static function get_mime_content_type( $file ) {
+		if ( function_exists( 'mime_content_type' ) ) {
+			return mime_content_type( $file );
+		}
+
+		$filetype = wp_check_filetype( $file );
+		return $filetype['type'];
+	}
+
+	/**
 	 * Let WordPress process the uploads
 	 *
 	 * @codeCoverageIgnore
@@ -930,5 +1039,24 @@ class FrmProAppHelper {
 	 */
 	public static function reset_keys( $arr ) {
 		return FrmProDisplaysController::deprecated_function( __METHOD__, 'FrmViewsAppHelper::reset_keys', $arr );
+	}
+
+	/**
+	 * Get the server OS
+	 *
+	 * @since 6.4.2
+	 *
+	 * @return string
+	 */
+	public static function get_server_os() {
+
+		if ( is_callable( 'FrmAppHelper::get_server_os' ) ) {
+			return FrmAppHelper::get_server_os();
+		}
+		if ( function_exists( 'php_uname' ) ) {
+			return php_uname( 's' );
+		}
+
+		return '';
 	}
 }

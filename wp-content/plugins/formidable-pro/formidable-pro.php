@@ -2,7 +2,7 @@
 /*
 Plugin Name: Formidable Forms Pro
 Description: Add more power to your forms, and bring your reports and data management to the front-end.
-Version: 6.3.3
+Version: 6.5.2
 Plugin URI: https://formidableforms.com/
 Author URI: https://formidableforms.com/
 Author: Strategy11
@@ -95,6 +95,34 @@ if ( ! function_exists( 'load_formidable_pro' ) ) {
 	}
 }
 
+/**
+ * Handles plugin activation.
+ *
+ * This hook is executed upon plugin activation.
+ */
+register_activation_hook(
+	__FILE__,
+	function() {
+		// Check if free version of Formidable Forms is installed.
+		$is_free_installed = function_exists( 'load_formidable_forms' );
+		if ( ! $is_free_installed ) {
+			return;
+		}
+
+		// Register autoloader for Formidable Pro classes.
+		spl_autoload_register( 'frm_pro_forms_autoloader' );
+
+		// Updates the default stylesheet.
+		FrmProHooksController::load_pro();
+		FrmProAppController::update_stylesheet();
+	}
+);
+
+/**
+ * Handles plugin deactivation.
+ *
+ * This hook is executed upon plugin deactivation.
+ */
 register_deactivation_hook(
 	__FILE__,
 	function() {
@@ -103,6 +131,22 @@ register_deactivation_hook(
 			require_once __DIR__ . '/classes/controllers/FrmProCronController.php';
 		}
 
+		// Remove any scheduled cron jobs associated with the plugin.
 		FrmProCronController::remove_cron();
+
+		// Check if free version of Formidable Forms is installed.
+		$is_free_installed = function_exists( 'load_formidable_forms' );
+		if ( ! $is_free_installed ) {
+			return;
+		}
+
+		// Register autoloader for Formidable Pro classes.
+		spl_autoload_register( 'frm_pro_forms_autoloader' );
+
+		// Updates the default stylesheet.
+		remove_action( 'frm_include_front_css', 'FrmProStylesController::include_front_css' );
+		remove_filter( 'frm_default_style_settings', 'FrmProStylesController::add_defaults' );
+		remove_filter( 'frm_override_default_styles', 'FrmProStylesController::override_defaults' );
+		FrmProAppController::update_stylesheet();
 	}
 );

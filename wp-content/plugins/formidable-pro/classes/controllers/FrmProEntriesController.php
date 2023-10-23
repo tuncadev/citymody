@@ -179,7 +179,7 @@ class FrmProEntriesController {
 	public static function autoincrement_on_duplicate( $metas ) {
 		foreach ( $metas as $meta ) {
 			$field = FrmField::getOne( $meta->field_id );
-			if ( ! is_string( $field->default_value ) ) {
+			if ( ! isset( $field->default_value ) || ! is_string( $field->default_value ) ) {
 				continue;
 			}
 
@@ -1883,7 +1883,12 @@ class FrmProEntriesController {
 		$cb_item = array( 'cb' => '<input type="checkbox" />' );
 		$columns = $cb_item + (array) $columns;
 		$columns[ $form_id . '_post_id' ] = __( 'Post', 'formidable-pro' );
-		$columns[ $form_id . '_is_draft' ] = __( 'Draft', 'formidable-pro' );
+
+		// Draft column moved to lite from version 6.4.2 and renamed to entry statuses.
+		if ( version_compare( FrmAppHelper::plugin_version(), '6.4.2', '<' ) ) {
+			$columns[ $form_id . '_is_draft' ] = __( 'Draft', 'formidable-pro' );
+		}
+
 		$columns[ $form_id . '_parent_item_id' ] = __( 'Parent Entry ID', 'formidable-pro' );
 
 		$frm_vars['cols'] = $columns;
@@ -2809,8 +2814,8 @@ class FrmProEntriesController {
 			$atts['title'] = $atts['label'];
 		}
 
-		$value   = htmlspecialchars( addslashes( $atts['value'] ) );
-		$message = htmlspecialchars( addslashes( $atts['message'] ) );
+		$value   = htmlspecialchars( addslashes( $atts['value'] ), ENT_COMPAT );
+		$message = htmlspecialchars( addslashes( $atts['message'] ), ENT_COMPAT );
 		$onclick = "frmUpdateField({$entry_id},{$field->id},'{$value}','{$message}',{$frm_update_link_count});return false;";
 
 		$html_id = "frm_update_field_{$entry_id}_{$field->id}_{$frm_update_link_count}";
@@ -3845,6 +3850,21 @@ class FrmProEntriesController {
 		);
 
 		wp_send_json_success();
+	}
+
+	/**
+	 * Add navigation buttons to the "View Entry" page.
+	 *
+	 * @since 6.4.1
+	 *
+	 * @param array $args Associative array with 'id' for entry ID and 'form' for form object.
+	 * @return void
+	 */
+	public static function add_show_page_navigation( $args ) {
+		$id = $args['id'];
+		$form = $args['form'];
+
+		FrmProEntriesHelper::get_entry_navigation( $id, $form->id, 'show' );
 	}
 
 	/**

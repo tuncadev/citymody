@@ -5,6 +5,114 @@
 		// initialize color picker
 		$( '.cn_color' ).wpColorPicker();
 
+		// consent logs
+		$( '.cn-consent-log-item input[type="checkbox"]' ).on( 'change', function() {
+			var el = $( this );
+			var trEl = el.closest( 'tr' );
+			var trDetailsId = trEl.attr( 'id' ) + '_details';
+			var trDetailsIdHash = '#' + trDetailsId;
+			var trDetailsRow = trEl.attr( 'id' ) + '_row';
+
+			if ( el.is( ':checked' ) ) {
+				// remove fake row
+				$( '#' + trDetailsRow ).remove();
+
+				// valid data already downloaded?
+				if ( $( trDetailsIdHash ).length && $( trDetailsIdHash ).data( 'status' ) === 1 ) {
+					$( trDetailsIdHash ).show();
+				} else {
+					var trDetailsDataEl = null;
+
+					if ( $( trDetailsIdHash ).length ) {
+						$( trDetailsIdHash ).show();
+
+						trDetailsDataEl = $( trDetailsIdHash + ' .cn-consent-logs-data' );
+
+						trDetailsDataEl.addClass( 'loading' );
+						trDetailsDataEl.html( '<span class="spinner is-active"></span>' );
+					} else {
+						trEl.after( cnArgs.consentLogsTemplate );
+						trEl.next().attr( 'id', trDetailsId );
+
+						trDetailsDataEl = $( trDetailsIdHash + ' .cn-consent-logs-data' );
+					}
+
+					$.ajax( {
+						url: cnArgs.ajaxURL,
+						type: 'POST',
+						dataType: 'json',
+						data: {
+							action: 'cn_get_consent_logs_by_date',
+							nonce: cnArgs.nonceConsentLogs,
+							date: el.closest( 'tr' ).data( 'date' )
+						}
+					} ).done( function( result ) {
+						if ( result.success ) {
+							$( trDetailsIdHash ).data( 'status', 1 );
+
+							displayConsentLogsResults( trDetailsDataEl, result.data, false );
+						} else {
+							$( trDetailsIdHash ).data( 'status', 0 );
+
+							displayConsentLogsResults( trDetailsDataEl, cnArgs.consentLogsError, true );
+						}
+					} ).fail( function( result ) {
+						$( trDetailsIdHash ).data( 'status', 0 );
+
+						displayConsentLogsResults( trDetailsDataEl, cnArgs.consentLogsError, true );
+					} );
+				}
+			} else {
+				$( trDetailsIdHash ).hide();
+				$( trDetailsIdHash ).after( '<tr id="' + trDetailsRow + '" class="cn-consent-logs-row"><td colspan="6"></td></tr>' );
+			}
+		} );
+
+		// display consent logs data
+		function displayConsentLogsResults( el, data, error ) {
+			// hide spinner
+			el.removeClass( 'loading' );
+
+			// add table rows or display error
+			el.find( '.spinner' ).replaceWith( data );
+
+			// valid data?
+			if ( ! error ) {
+				// get table body
+				var tableBody = el.find( 'table tbody' );
+
+				// prepare array with table rows
+				var dataRows = el.find( 'table' ).find( 'tbody tr' ).toArray();
+
+				// set flag
+				var firstTime = true;
+
+				// add pagination
+				el.pagination( {
+					dataSource: dataRows,
+					pageSize: 10,
+					showPrevious: true,
+					showNext: true,
+					callback: function( data, pagination ) {
+						// skip showing/hiding table rows on init
+						if ( firstTime ) {
+							firstTime = false;
+
+							return;
+						}
+
+						// hide all table rows
+						tableBody.find( 'tr' ).hide();
+
+						// display table rows
+						for ( const el of data ) {
+							$( el ).show();
+						}
+					}
+				} );
+			}
+		}
+
 		// purge cache
 		$( '#cn_app_purge_cache a' ).on( 'click', function( e ) {
 			e.preventDefault();

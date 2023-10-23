@@ -287,7 +287,12 @@ class FrmEntriesListHelper extends FrmListHelper {
 				$val  = '<abbr title="' . esc_attr( FrmAppHelper::get_formatted_time( $item->{$col_name}, '', 'g:i:s A' ) ) . '">' . $date . '</abbr>';
 				break;
 			case 'is_draft':
-				$val = empty( $item->is_draft ) ? esc_html__( 'No', 'formidable' ) : esc_html__( 'Yes', 'formidable' );
+				$entry_status = FrmEntriesHelper::get_entry_status_label( $item->is_draft );
+				$val = sprintf(
+					'<span class="frm-entry-status frm-entry-status-%s">%s</span>',
+					sanitize_html_class( $item->is_draft ),
+					esc_html( $entry_status )
+				);
 				break;
 			case 'form_id':
 				$form_id             = $item->form_id;
@@ -394,6 +399,18 @@ class FrmEntriesListHelper extends FrmListHelper {
 	 * @return string
 	 */
 	protected function confirm_bulk_delete() {
-		return __( 'ALL selected entries in this form will be permanently deleted. Want to proceed?', 'formidable' );
+		return sprintf(
+			/* translators: %1$s: HTML break line, %2$s: HTML bold text */
+			esc_html__( 'ALL entries in this form will be permanently deleted.%1$sWant to proceed? Type %2$s below.', 'formidable' ),
+			'<br/>',
+			'<b>DELETE ALL</b>'
+		);
+	}
+
+	/**
+	 * @return string
+	 */
+	protected function loaded_from() {
+		return 'entries-list';
 	}
 }

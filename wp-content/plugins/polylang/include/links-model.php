@@ -36,6 +36,13 @@ abstract class PLL_Links_Model {
 	public $home;
 
 	/**
+	 * Whether rewrite rules can be filtered or not. Default to `false`.
+	 *
+	 * @var boolean
+	 */
+	protected static $can_filter_rewrite_rules = false;
+
+	/**
 	 * Constructor.
 	 *
 	 * @since 1.5
@@ -48,12 +55,32 @@ abstract class PLL_Links_Model {
 
 		$this->home = home_url();
 
-		// Hooked with normal priority because it needs to be run after static pages is set in language data.
+		// Hooked with normal priority because it needs to be run after static pages is set in language data. Must be done early (before languages objects are created).
 		add_filter( 'pll_additional_language_data', array( $this, 'set_language_home_urls' ), 10, 2 );
 
 		// Adds our domains or subdomains to allowed hosts for safe redirection.
 		add_filter( 'allowed_redirect_hosts', array( $this, 'allowed_redirect_hosts' ) );
+
+		// Allows secondary domains for home and search URLs in `PLL_Language`.
+		add_filter( 'pll_language_home_url', array( $this, 'set_language_home_url' ), 10, 2 );
+		add_filter( 'pll_language_search_url', array( $this, 'set_language_search_url' ), 10, 2 );
+
+		if ( did_action( 'pll_init' ) ) {
+			$this->init();
+		} else {
+			add_action( 'pll_init', array( $this, 'init' ) );
+		}
 	}
+
+	/**
+	 * Initializes the links model.
+	 * Does nothing by default.
+	 *
+	 * @since 3.5
+	 *
+	 * @return void
+	 */
+	public function init() {}
 
 	/**
 	 * Adds the language code in url.
@@ -175,8 +202,8 @@ abstract class PLL_Links_Model {
 	 */
 	public function set_language_home_urls( $additional_data, $language ) {
 		$language = array_merge( $language, $additional_data );
-		$additional_data['search_url'] = $this->home_url( $language['slug'] );
-		$additional_data['home_url']   = empty( $language['page_on_front'] ) || $this->options['redirect_lang'] ? $additional_data['search_url'] : $this->front_page_url( $language );
+		$additional_data['search_url'] = $this->set_language_search_url( '', $language );
+		$additional_data['home_url']   = $this->set_language_home_url( '', $language );
 
 		return $additional_data;
 	}
@@ -191,5 +218,47 @@ abstract class PLL_Links_Model {
 	 */
 	public function allowed_redirect_hosts( $hosts ) {
 		return array_unique( array_merge( $hosts, array_values( $this->get_hosts() ) ) );
+	}
+
+	/**
+	 * Returns language home URL property according to the current domain.
+	 *
+	 * @since 3.4.4
+	 *
+	 * @param string $url      Home URL.
+	 * @param array  $language Array of language props.
+	 * @return string Filtered home URL.
+	 */
+	public function set_language_home_url( $url, $language ) {
+		if ( empty( $language['page_on_front'] ) || $this->options['redirect_lang'] ) {
+			return $this->home_url( $language['slug'] );
+		}
+
+		return $this->front_page_url( $language );
+	}
+
+	/**
+	 * Returns language search URL property according to the current domain.
+	 *
+	 * @since 3.4.4
+	 *
+	 * @param string $url      Search URL.
+	 * @param array  $language Array of language props.
+	 * @return string Filtered search URL.
+	 */
+	public function set_language_search_url( $url, $language ) {
+		return $this->home_url( $language['slug'] );
+	}
+
+	/**
+	 * Used to remove hooks in child classes, called when switching blog @see {PLL_Base::switch_blog()}.
+	 * Does nothing by default.
+	 *
+	 * @since 3.5
+	 *
+	 * @return void
+	 */
+	public function remove_filters() {
+		self::$can_filter_rewrite_rules = false;
 	}
 }

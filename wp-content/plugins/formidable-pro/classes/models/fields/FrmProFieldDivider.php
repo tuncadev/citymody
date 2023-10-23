@@ -296,11 +296,12 @@ DEFAULT_HTML;
 	 * @return void
 	 */
 	private function maybe_add_collapse_icon( $trigger, &$html, $section_is_open = false ) {
-		if ( empty( $trigger ) ) {
+		if ( ! $trigger ) {
 			return;
 		}
 
-		$style = FrmStylesController::get_form_style( $this->field['form_id'] );
+		$style          = FrmStylesController::get_form_style( $this->field['form_id'] );
+		$style_settings = FrmStylesHelper::get_settings_for_output( $style );
 
 		preg_match_all( "/\<h[2-6]\b(.*?)(?:(\/))?\>(.*?)(?:(\/))?\<\/h[2-6]>/su", $html, $headings, PREG_PATTERN_ORDER);
 
@@ -313,14 +314,37 @@ DEFAULT_HTML;
 		$old_header_html    = reset( $headings[0] );
 		$aria_expanded      = $section_is_open ? 'true' : 'false';
 
-		$icon = '<i class="frm_icon_font frm_arrow_icon" aria-expanded="' . esc_attr( $aria_expanded ) . '" aria-label="' . esc_attr__( 'Toggle fields', 'formidable-pro' ) . '"></i>';
-		if ( 'before' == $style->post_content['collapse_pos'] ) {
-			$new_header_html = str_replace( $search_header_text, '>' . $icon . ' ' . $header_text . '<', $old_header_html );
-		} else {
-			$new_header_html = str_replace( $search_header_text, '>' . $header_text . $icon . '<', $old_header_html );
+		$collapse_icon  = isset( $style_settings['collapse_icon'] ) ? $style_settings['collapse_icon'] : 1;
+		$svg_args       = array(
+			'echo'          => false,
+			'width'         => '1em',
+			'height'        => '1em',
+			'aria-expanded' => $aria_expanded,
+			'aria-label'    => __( 'Toggle fields', 'formidable-pro' ),
+		);
+
+		$icons_order = array( '+', '-' );
+
+		// Reverse order for arrow icons
+		if ( is_numeric( $collapse_icon ) ) {
+			$icons_order = array_reverse( $icons_order );
 		}
 
-		$html = str_replace( $old_header_html, $new_header_html, $html );
+		$icon_visible_svg_slug   = FrmStylesHelper::icon_key_to_class( $collapse_icon, $icons_order[0] );
+		$icon_invisible_svg_slug = FrmStylesHelper::icon_key_to_class( $collapse_icon, $icons_order[1] );
+
+		$icon_visible   = FrmProAppHelper::get_svg_icon( $icon_visible_svg_slug, 'frmsvg frm-svg-icon', $svg_args );
+		$icon_invisible = FrmProAppHelper::get_svg_icon( $icon_invisible_svg_slug, 'frmsvg frm-svg-icon', $svg_args );
+		$icon           = $icon_visible . $icon_invisible;
+
+		if ( 'before' === $style_settings['collapse_pos'] ) {
+			$replace_with = '>' . $icon . ' ' . $header_text . '<';
+		} else {
+			$replace_with = '>' . $header_text . ' ' . $icon . '<';
+		}
+
+		$new_header_html = str_replace( $search_header_text, $replace_with, $old_header_html );
+		$html            = str_replace( $old_header_html, $new_header_html, $html );
 	}
 
 	public function get_label_class() {

@@ -115,6 +115,14 @@ This file is added to the visual styler admin page, accessed from the style tab.
 	display: flex !important;
 }
 
+.frm_repeat_buttons .frmsvg {
+	color: var(--submit-text-color);
+}
+
+.frm_repeat_buttons .frm_button .frmsvg {
+	color: var(--repeat-icon-color);
+}
+
 @media only screen and (min-width: 1250px) {
 	#frm_style_preview ul.frm_rootline.frm_rootline_6:not(.frm_show_titles) .frm_rootline_show_hidden_steps_btn,
 	#frm_style_preview ul.frm_rootline.frm_rootline_5:not(.frm_show_titles) .frm_rootline_show_hidden_steps_btn,

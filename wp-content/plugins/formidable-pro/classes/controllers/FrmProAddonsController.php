@@ -21,12 +21,12 @@ class FrmProAddonsController extends FrmAddonsController {
 		}
 
 		$addon = self::get_addon( $plugin );
-		$atts = array(
-			'addon'         => $addon,
-			'license_type'  => self::get_license_type(),
-			'plan_required' => FrmFormsHelper::get_plan_required( $addon ),
-			'upgrade_link'  => FrmAppHelper::admin_upgrade_link( $upgrade_link_args ),
-		);
+
+		$atts                  = is_array( $upgrade_link_args ) ? $upgrade_link_args : array();
+		$atts['addon']         = $addon;
+		$atts['license_type']  = self::get_license_type();
+		$atts['plan_required'] = FrmFormsHelper::get_plan_required( $addon );
+		$atts['upgrade_link']  = FrmAppHelper::admin_upgrade_link( $upgrade_link_args );
 
 		self::show_conditional_action_button( $atts );
 	}
@@ -49,30 +49,53 @@ class FrmProAddonsController extends FrmAddonsController {
 		$license_type  = $atts['license_type'];
 		$plan_required = $atts['plan_required'];
 		$upgrade_link  = $atts['upgrade_link'];
+		$class         = self::set_button_class( $atts );
+
 		if ( ! $addon ) {
 			self::addon_upgrade_link( $addon, $upgrade_link );
 
 		} elseif ( $addon['status']['type'] === 'installed' ) {
+			$class .= empty( $addon['activate_url'] ) ? ' frm_hidden' : '';
 			?>
-			<a href="#" rel="<?php echo esc_attr( $addon['plugin'] ); ?>" class="button button-primary frm-button-primary frm-button-sm frm-activate-addon <?php echo esc_attr( empty( $addon['activate_url'] ) ? 'frm_hidden' : '' ); ?>">
+			<a href="#" rel="<?php echo esc_attr( $addon['plugin'] ); ?>" class="button-primary frm-button-primary frm-activate-addon <?php echo esc_attr( $class ); ?>">
 				<?php esc_html_e( 'Activate', 'formidable' ); ?>
 			</a>
 			<?php
 		} elseif ( ! empty( $addon['url'] ) ) {
+			if ( ! current_user_can( 'activate_plugins' ) ) {
+				$class .= ' frm_hidden';
+			}
 			?>
-			<a href="#" class="frm-install-addon button button-primary frm-button-primary frm-button-sm" rel="<?php echo esc_attr( $addon['url'] ); ?>" aria-label="<?php esc_attr_e( 'Install', 'formidable' ); ?>">
+			<a href="#" class="frm-install-addon button-primary frm-button-primary <?php echo esc_attr( $class ); ?>" rel="<?php echo esc_attr( $addon['url'] ); ?>" aria-label="<?php esc_attr_e( 'Install', 'formidable' ); ?>">
 				<?php esc_html_e( 'Install', 'formidable' ); ?>
 			</a>
 			<?php
 		} elseif ( $license_type && $license_type === strtolower( $plan_required ) ) {
 			?>
-			<a class="install-now button button-secondary frm-button-secondary frm-button-sm" href="<?php echo esc_url( FrmAppHelper::admin_upgrade_link( 'addons', 'account/downloads/' ) . '&utm_content=' . $addon['slug'] ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Upgrade Now', 'formidable' ); ?>">
+			<a class="install-now button-secondary frm-button-secondary <?php echo esc_attr( $class ); ?>" href="<?php echo esc_url( FrmAppHelper::admin_upgrade_link( 'addons', 'account/downloads/' ) . '&utm_content=' . $addon['slug'] ); ?>" target="_blank" aria-label="<?php esc_attr_e( 'Upgrade Now', 'formidable' ); ?>">
 				<?php esc_html_e( 'Renew Now', 'formidable' ); ?>
 			</a>
 			<?php
 		} else {
 			self::addon_upgrade_link( $addon, $upgrade_link );
 		}
+	}
+
+	/**
+	 * @since 6.5.1
+	 *
+	 * @param array $atts
+	 *
+	 * @return string
+	 */
+	protected static function set_button_class( $atts ) {
+		$class  = empty( $atts['class'] ) ? '' : $atts['class'];
+		$class .= ' button';
+		if ( strpos( $class, 'frm-button-' ) === false ) {
+			// Only add small class if no other button class.
+			$class .= ' frm-button-sm';
+		}
+		return $class;
 	}
 
 	/**
@@ -577,8 +600,9 @@ class FrmProAddonsController extends FrmAddonsController {
 	private static function add_filters_to_disable_registered_actions( $actions ) {
 		$keys = array_keys( $actions );
 
+		$lite_actions = self::get_lite_actions();
 		foreach ( $keys as $key ) {
-			if ( 'email' === $key ) {
+			if ( in_array( $key, $lite_actions, true ) ) {
 				continue;
 			}
 
@@ -589,7 +613,7 @@ class FrmProAddonsController extends FrmAddonsController {
 				 * @return array
 				 */
 				function( $options ) {
-					$options['active']   = false;
+					$options['active'] = false;
 					if ( false === strpos( $options['classes'], 'frm_show_upgrade' ) ) {
 						$options['classes'] .= ' frm_show_upgrade';
 					}
@@ -599,20 +623,15 @@ class FrmProAddonsController extends FrmAddonsController {
 				99
 			);
 		}
+	}
 
-		add_filter(
-			'frm_action_groups',
-			/**
-			 * @param array $groups
-			 * @return array
-			 */
-			function( $groups ) {
-				if ( isset( $groups['payment'] ) && is_array( $groups['payment'] ) && isset( $groups['payment']['icon'] ) ) {
-					$groups['payment']['icon'] .= ' frm_show_expired_modal';
-				}
-				return $groups;
-			}
-		);
+	/**
+	 * Get a list of actions that are available in Lite.
+	 *
+	 * @return string[]
+	 */
+	private static function get_lite_actions() {
+		return array( 'email', 'on_submit', 'payment' );
 	}
 
 	/**
@@ -621,9 +640,133 @@ class FrmProAddonsController extends FrmAddonsController {
 	public static function before_add_form_action() {
 		if ( self::is_expired_outside_grace_period() ) {
 			$action_type = FrmAppHelper::get_param( 'type', '', 'post', 'sanitize_text_field' );
-			if ( 'email' !== $action_type ) {
+			if ( ! in_array( $action_type, self::get_lite_actions(), true ) ) {
 				wp_die( -1 );
 			}
 		}
+	}
+
+	/**
+	 * @since 6.5.1
+	 *
+	 * @return void
+	 */
+	private static function show_warning_overlay_expired_license() {
+		if ( ! class_exists( 'FrmOverlayController' ) ) {
+			return;
+		}
+
+		$overlay_wrapper = new FrmOverlayController(
+			array(
+				'config-option-name'  => 'expired-license-warning',
+				'execution-frequency' => '1 year',
+			)
+		);
+
+		$overlay_wrapper->open_overlay(
+			array(
+				'hero_image' => FrmProAppHelper::plugin_url() . '/images/license-warning-overlay/lock.svg',
+				'heading'    => esc_html__( 'Heads up! Your license has expired', 'formidable' ),
+				'copy'       => esc_html__( 'An active license is needed to access new features, add-ons, plugin updates, and our world class support!', 'formidable' ),
+				'buttons'    => array(
+					array(
+						'url'    => FrmAppHelper::admin_upgrade_link( 'expired-full', 'knowledgebase/manage-licenses-and-sites/renewing-an-expired-license/' ),
+						'target' => '_blank',
+						'label'  => esc_html__( 'Learn More', 'formidable' ),
+					),
+					array(
+						'url'   => FrmAppHelper::admin_upgrade_link( 'expired-full', 'account/downloads/' ),
+						'label' => esc_html__( 'Renew License Now', 'formidable' ),
+					),
+				),
+			)
+		);
+
+	}
+
+	/**
+	 * @since 6.5.1
+	 *
+	 * @return void
+	 */
+	private static function show_warning_overlay_nulled_license( $error = array() ) {
+		if ( ! class_exists( 'FrmOverlayController' ) ) {
+			return;
+		}
+
+		$overlay_wrapper = new FrmOverlayController(
+			array(
+				'config-option-name'  => 'nulled-license-warning',
+				'execution-frequency' => '1 month',
+			)
+		);
+
+		$copy = sprintf(
+			/* translators: %1$s: HTML break line + open link, %2$s: HTML start b tag, %3$s: HTML close b tag & link */
+			esc_html__( 'Your version of Formidable Forms has been altered and may contain malware!%1$sSwitch to the official version now for %2$s50%% off%3$s', 'formidable' ),
+			'<br/> <a class="frm-nulled-license-green-cta" href="' . FrmAppHelper::admin_upgrade_link( 'nulled-full' ) . '" target="_blank">',
+			'<b>',
+			'</b></a>'
+		);
+		if ( isset( $error['message'] ) ) {
+			$copy = str_replace( array( 'utm_medium=nulled', '50% off', '<a ', '</a>.' ), array( 'utm_medium=nulled-full', '<b>50% off</b>', '<a class="frm-nulled-license-green-cta" ', '</a>' ), html_entity_decode( $error['message'] ) );
+		}
+
+		$overlay_wrapper->open_overlay(
+			array(
+				'hero_image' => FrmProAppHelper::plugin_url() . '/images/license-warning-overlay/lock.svg',
+				'heading'    => esc_html__( 'Heads up! Your plugin has been altered!', 'formidable' ),
+				'copy'       => $copy,
+				'buttons'    => array(
+					array(
+						'url'    => FrmAppHelper::admin_upgrade_link( 'nulled-full', 'formidable-forms-pro-nulled/' ),
+						'target' => '_blank',
+						'label'  => esc_html__( 'Learn More', 'formidable' ),
+					),
+					array(
+						'url'    => FrmAppHelper::admin_upgrade_link( 'nulled-full' ),
+						'target' => '_blank',
+						'label'  => esc_html__( 'Get 50% Off!', 'formidable' ),
+					),
+				),
+			)
+		);
+
+	}
+
+	/**
+	 * @since 6.5.1
+	 *
+	 * @return void
+	 */
+	public static function show_warning_overlay_for_expired_or_null_license() {
+		if ( ! FrmAppHelper::is_full_screen() || ! class_exists( 'FrmOverlayController' ) ) {
+			return;
+		}
+
+		$inline_style = '.frm-overlay--copy .frm-nulled-license-green-cta, .frm-overlay--copy .frm-nulled-license-green-cta:hover {
+			background: #14b66a;
+			display: inline-block;
+			padding: 8px 14px;
+			border-radius: 8px;
+			font-weight: 500;
+			color: white;
+			margin-top: 5px;
+		}';
+
+		$license_is_expired = FrmAddonsController::is_license_expired();
+
+		if ( empty( $license_is_expired ) ) {
+			return;
+		}
+
+		wp_add_inline_style( FrmOverlayController::$assets_handle_name, $inline_style );
+
+		if ( isset( $license_is_expired['type'] ) && 'invalid' === $license_is_expired['type'] ) {
+			self::show_warning_overlay_nulled_license( $license_is_expired );
+			return;
+		}
+
+		self::show_warning_overlay_expired_license();
 	}
 }

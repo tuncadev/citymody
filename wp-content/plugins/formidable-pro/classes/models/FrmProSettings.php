@@ -16,6 +16,7 @@ class FrmProSettings extends FrmSettings {
 	public $date_format;
 	public $menu_icon;
 	public $inbox;
+	public $repeater_row_delete_confirmation;
 
 	/**
 	 * @return array
@@ -36,6 +37,7 @@ class FrmProSettings extends FrmSettings {
 				'news'     => 1,
 				'feedback' => 1,
 			),
+			'repeater_row_delete_confirmation' => __( 'Are you sure you want to delete this row?', 'formidable-pro' ),
 		);
 	}
 
@@ -47,7 +49,7 @@ class FrmProSettings extends FrmSettings {
 	 * @since 4.06.01
 	 */
 	public function fill_with_defaults( $params = array() ) {
-		$params['additional_filter_keys'] = array( 'edit_msg', 'update_value', 'already_submitted' );
+		$params['additional_filter_keys'] = array( 'edit_msg', 'update_value', 'already_submitted', 'repeater_row_delete_confirmation' );
 		parent::fill_with_defaults( $params );
 		$this->fill_inbox_defaults();
 	}

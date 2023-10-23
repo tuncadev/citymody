@@ -51,13 +51,21 @@ class PLL_CRUD_Terms {
 	private $pre_term_name = '';
 
 	/**
+	 * Reference to the Polylang options array.
+	 *
+	 * @var array
+	 */
+	protected $options;
+
+	/**
 	 * Constructor
 	 *
 	 * @since 2.4
 	 *
-	 * @param object $polylang
+	 * @param object $polylang The Polylang object.
 	 */
 	public function __construct( &$polylang ) {
+		$this->options     = &$polylang->options;
 		$this->model       = &$polylang->model;
 		$this->curlang     = &$polylang->curlang;
 		$this->filter_lang = &$polylang->filter_lang;
@@ -82,12 +90,12 @@ class PLL_CRUD_Terms {
 	}
 
 	/**
-	 * Allows to set a language by default for terms if it has no language yet
+	 * Allows to set a language by default for terms if it has no language yet.
 	 *
 	 * @since 1.5.4
 	 *
-	 * @param int    $term_id
-	 * @param string $taxonomy
+	 * @param int    $term_id  Term ID.
+	 * @param string $taxonomy Taxonomy name.
 	 * @return void
 	 */
 	protected function set_default_language( $term_id, $taxonomy ) {
@@ -101,9 +109,12 @@ class PLL_CRUD_Terms {
 			} elseif ( isset( $this->pref_lang ) ) {
 				// Always defined on admin, never defined on frontend
 				$this->model->term->set_language( $term_id, $this->pref_lang );
-			} else {
+			} elseif ( ! empty( $this->curlang ) ) {
 				// Only on frontend due to the previous test always true on admin
 				$this->model->term->set_language( $term_id, $this->curlang );
+			} else {
+				// In all other cases set to default language.
+				$this->model->term->set_language( $term_id, $this->options['default_lang'] );
 			}
 		}
 	}

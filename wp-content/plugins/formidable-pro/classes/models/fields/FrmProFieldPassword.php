@@ -182,8 +182,12 @@ class FrmProFieldPassword extends FrmFieldType {
 			$field_id = $args['field_id'];
 
 			$input_html .= '<div id="frm_password_strength_' . esc_attr( $field_id ) . '" class="frm-password-strength">';
+
 			foreach ( $this->password_checks() as $type => $check ) {
-				$input_html .= '<span id="frm-pass-' . esc_attr( $type ) . '-' . esc_attr( $field_id ) . '" class="frm-pass-req frm_icon_font">' . esc_html( $check['label'] ) . '</span>' . "\r\n";
+				$input_html .= '<span id="frm-pass-' . esc_attr( $type ) . '-' . esc_attr( $field_id ) . '" class="frm-pass-req">';
+				$input_html .= FrmProAppHelper::get_svg_icon( 'frm-cancel-circle-icon', 'frmsvg frm_cancel1_icon failed_svg', array( 'echo' => false ) );
+				$input_html .= FrmProAppHelper::get_svg_icon( 'frm-check-circle-icon', 'frmsvg frm_check1_icon passed_svg', array( 'echo' => false ) );
+				$input_html .= esc_html( $check['label'] ) . '</span>' . "\r\n";
 			}
 			$input_html .= '</div>';
 		}
@@ -194,7 +198,7 @@ class FrmProFieldPassword extends FrmFieldType {
 	/**
 	 * Maybe add show password HTML.
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @param string $input_html Input HTML.
 	 * @param bool   $force      Force adding show password HTML.

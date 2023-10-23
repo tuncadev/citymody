@@ -1,0 +1,332 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-09-20T16:33:33+00:00\n"
+"PO-Revision-Date: 2021-07-14 14:56:06+0000\n"
+"Language: az\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0\n"
+
+#: classes/views/frmpro-form-actions/_stripe_address.php:8
+msgid "Address"
+msgstr "Ünvan"
+
+#: classes/views/frmpro-entries/navigation.php:30
+#: classes/views/frmpro-entries/navigation.php:34
+msgid "Next page"
+msgstr "Sonrakı səhifə"
+
+#: classes/views/frmpro-statistics/show.php:42
+msgid "Apply"
+msgstr "اويقولا"
+
+#: classes/controllers/FrmProSiteHealthController.php:30
+msgid "Active"
+msgstr "Aktiv"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:9
+#: classes/views/styles/_repeater-fields.php:7
+#: classes/views/styles/_section-fields.php:98
+msgid "Icons"
+msgstr "İkonlar"
+
+#: classes/helpers/FrmProFieldsHelper.php:2592
+msgid "Confirm"
+msgstr "Təsdiqlə"
+
+#: classes/controllers/FrmProGraphsController.php:2526
+msgid "Custom"
+msgstr "Özəl"
+
+#: classes/controllers/FrmProFieldsController.php:414
+msgid "Other"
+msgstr "Digər"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:9
+#: js/admin/taxonomy/frm_application.js:744
+msgid "Type"
+msgstr "Növ"
+
+#: classes/controllers/FrmProXMLController.php:109
+msgid "Styles"
+msgstr "Stillər"
+
+#: classes/models/fields/FrmProFieldToggle.php:34
+msgid "No"
+msgstr "Xeyr"
+
+#: classes/models/fields/FrmProFieldToggle.php:33
+msgid "Yes"
+msgstr "Bəli"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:46
+msgid "Description"
+msgstr "آنلاتما"
+
+#: classes/controllers/FrmProSettingsController.php:257
+#: classes/views/frmpro-fields/back-end/image-selector.php:13
+msgid "Image ID"
+msgstr "Təsvir ID"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:52
+#: classes/views/displays/mb_advanced.php:41
+#: classes/views/displays/mb_advanced.php:64
+#: classes/views/frmpro-fields/back-end/logic.php:45
+#: classes/views/styles/_sample_form.php:51
+#: js/admin/applications/applications.js:240
+msgid "Add"
+msgstr "Əlavə et"
+
+#: classes/models/FrmProForm.php:280
+msgid "Status"
+msgstr "Status"
+
+#: classes/controllers/FrmProEntriesController.php:1889
+#: classes/views/displays/where_options.php:31
+#: js/admin/taxonomy/frm_application.js:801
+msgid "Draft"
+msgstr "Qaralama"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:53
+#: classes/views/styles/_sample_form.php:55
+msgid "Remove"
+msgstr "Sil"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:43
+msgid "Default"
+msgstr "Mövcud"
+
+#: classes/controllers/FrmProSimpleBlocksController.php:31
+#: classes/controllers/FrmProXMLController.php:108
+#: js/admin/applications/applications.js:209
+#: js/admin/taxonomy/frm_application_list.js:103
+#: js/src/view/viewselect.js:39
+msgid "Views"
+msgstr "Baxışlar"
+
+#: classes/views/xml/import_csv.php:13
+#: classes/views/xml/map_csv_fields.php:13
+msgid "Import/Export"
+msgstr "İdxal/İxrac"
+
+#: classes/models/fields/FrmProFieldBreak.php:31
+#: js/admin/taxonomy/frm_application.js:588
+msgid "Next"
+msgstr "ايلري"
+
+#: classes/controllers/FrmProFormsController.php:616
+#: classes/helpers/FrmProFormsHelper.php:579
+#: classes/models/fields/FrmProFieldBreak.php:71
+msgid "Previous"
+msgstr "Öncəki"
+
+#: classes/controllers/FrmProFormsController.php:376
+msgid "Last Name"
+msgstr "Soyad"
+
+#: classes/controllers/FrmProFormsController.php:374
+msgid "Display Name"
+msgstr "Görünən Ad"
+
+#: classes/views/displays/submitbox_actions.php:15
+msgid "Show"
+msgstr "Göstər"
+
+#: classes/views/displays/submitbox_actions.php:31
+msgid "Hide"
+msgstr "Gizlət"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:16
+msgid "United States"
+msgstr "ABŞ"
+
+#: classes/views/styles/_section-fields.php:41
+msgid "Bottom Margin"
+msgstr "Alt Sahə"
+
+#: classes/views/xml/map_csv_fields.php:148
+msgid "Import"
+msgstr "İdxal"
+
+#: classes/views/frmpro-form-actions/post_options.php:75
+#: classes/views/frmpro-form-actions/post_options.php:87
+#: classes/views/frmpro-forms/add_form_button_options.php:56
+#: classes/views/frmpro-forms/add_form_style_options.php:12
+#: js/src/view/inspector.js:77
+msgid "None"
+msgstr "Heç biri"
+
+#: classes/controllers/FrmProGraphsController.php:1339
+msgid "Total"
+msgstr "Cəmi"
+
+#: classes/views/displays/mb_advanced.php:88
+msgid "Advanced"
+msgstr "Qabaqcıl"
+
+#: classes/helpers/FrmProEntriesHelper.php:268
+msgid "Add New"
+msgstr "Yenisini Əlavə Et"
+
+#: classes/views/styles/_section-fields.php:21
+msgid "Size"
+msgstr "Ölçü"
+
+#: classes/controllers/FrmProFormsController.php:1026
+msgid "Width"
+msgstr "En"
+
+#: classes/controllers/FrmProFormsController.php:1025
+msgid "Height"
+msgstr "Hündürlük"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:16
+msgid "Text"
+msgstr "Mətn"
+
+#: classes/views/styles/_section-fields.php:46
+msgid "Border"
+msgstr "Kənar"
+
+#: classes/views/styles/_section-fields.php:31
+msgid "Padding"
+msgstr "Dolğu"
+
+#: classes/views/styles/_section-fields.php:7
+#: classes/views/styles/_slider-fields.php:7
+msgid "Color"
+msgstr "Rəng"
+
+#: classes/views/styles/_section-fields.php:83
+msgid "left"
+msgstr "sol"
+
+#: classes/views/styles/_section-fields.php:86
+msgid "right"
+msgstr "sağ"
+
+#: classes/views/applications/buttons/export.php:7
+msgid "Export"
+msgstr "ixrac"
+
+#: classes/widgets/FrmListEntries.php:220
+msgid "Title"
+msgstr "Başlıq"
+
+#: classes/controllers/FrmProFormsController.php:380
+#: classes/helpers/FrmProFieldsHelper.php:3160
+#: classes/views/displays/where_row.php:24
+#: classes/views/xml/map_csv_fields.php:115
+msgid "Post ID"
+msgstr "Yazı ID"
+
+#: classes/helpers/FrmProFieldsHelper.php:3239
+msgid "Site URL"
+msgstr "Sayt URL-i"
+
+#: classes/views/settings/form.php:19
+msgid "Date Format"
+msgstr "Tarix Formatı"
+
+#: classes/views/styles/_section-fields.php:56
+msgid "Style"
+msgstr "Stil"
+
+#: classes/controllers/FrmProEntriesController.php:2284
+#: classes/controllers/FrmProFormsController.php:928
+#: classes/controllers/FrmProFormsController.php:964
+#: classes/helpers/FrmProEntriesListHelper.php:86
+msgid "Search"
+msgstr "Axtar"
+
+#: classes/views/displays/mb_dyncontent.php:41
+msgid "Content"
+msgstr "İçərik"
+
+#: classes/views/frmpro-entries/show.php:42
+msgid "Submit"
+msgstr "Göndər"
+
+#: classes/controllers/FrmProEntriesController.php:2776
+#: classes/controllers/FrmProEntriesController.php:3526
+#: classes/models/FrmProSettings.php:27
+msgid "Update"
+msgstr "Yenilə"
+
+#: classes/controllers/FrmProAppController.php:360
+#: classes/views/frmpro-statistics/select.php:7
+#: classes/views/frmpro-statistics/show.php:9
+#: classes/views/frmpro-statistics/show.php:17
+msgid "Reports"
+msgstr "Raportlar"
+
+#: classes/controllers/FrmProEntriesController.php:1907
+#: classes/helpers/FrmProEntriesHelper.php:288
+#: classes/helpers/FrmProEntriesHelper.php:339
+#: js/admin/settings/style-settings.js:248
+msgid "Duplicate"
+msgstr "Dublikat"
+
+#: classes/views/applications/buttons/settings.php:9
+msgid "Settings"
+msgstr "Parametrlər"
+
+#: classes/helpers/FrmProFieldsHelper.php:3181
+#: classes/helpers/FrmProFieldsHelper.php:3207
+#: classes/views/displays/mb_advanced.php:115
+#: classes/views/frmpro-entries/table.php:10
+#: classes/views/frmpro-entries/table.php:89
+msgid "ID"
+msgstr "ID"
+
+#: classes/controllers/FrmProEntriesController.php:2669
+#: classes/views/applications/buttons/settings.php:20
+#: classes/views/frmpro-form-actions/_custom_field_row.php:39
+#: js/admin/settings/style-settings.js:130
+#: js/admin/settings/style-settings.js:275
+#: js/admin/settings/style-settings.js:343
+msgid "Cancel"
+msgstr "İmtina"
+
+#: classes/helpers/FrmProFieldsHelper.php:3182
+#: classes/helpers/FrmProFieldsHelper.php:3208
+#: classes/views/displays/mb_advanced.php:118
+msgid "Key"
+msgstr "Açar"
+
+#: classes/controllers/FrmProEntriesController.php:2115
+#: classes/controllers/FrmProEntriesController.php:2668
+#: classes/helpers/FrmProAppHelper.php:405
+#: classes/helpers/FrmProEntriesHelper.php:1107
+#: classes/models/FrmProSummaryFormatter.php:80
+#: js/admin/taxonomy/frm_application.js:853
+#: js/admin/taxonomy/frm_application_list.js:174
+msgid "Edit"
+msgstr "Redaktə et"
+
+#: classes/views/displays/submitbox_actions.php:11
+#: js/admin/applications/common.js:242
+#: js/src/view/viewselect.js:38
+msgid "View"
+msgstr "Bax"
+
+#: classes/controllers/FrmProEntriesController.php:2129
+#: classes/controllers/FrmProEntriesController.php:2395
+#: classes/helpers/FrmProEntriesListHelper.php:11
+#: classes/views/frmpro-fields/back-end/image-selector.php:21
+#: classes/views/styles/_bg-image.php:15
+#: js/admin/settings/style-settings.js:99
+#: js/admin/taxonomy/frm_application_list.js:178
+msgid "Delete"
+msgstr "Sil"
+
+#: classes/controllers/FrmProFormsController.php:372
+#: classes/helpers/FrmProFieldsHelper.php:4153
+msgid "Email"
+msgstr "ايميل"

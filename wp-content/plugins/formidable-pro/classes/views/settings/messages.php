@@ -34,3 +34,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</label>
 	<input type="text" id="frm_already_submitted" name="frm_already_submitted" class="frm8 frm_form_field" value="<?php echo esc_attr($frmpro_settings->already_submitted); ?>" />
 </p>
+
+<p>
+	<label for="frm_repeater_row_delete_confirmation" class="frm_left_label"><?php esc_html_e( 'Repeater row delete confirmation', 'formidable-pro' ); ?>
+			<span class="frm_help frm_icon_font frm_tooltip_icon"
+				title="<?php esc_attr_e( 'The confirmation message displayed when deleting a Repeater row.', 'formidable-pro' ); ?>"></span>
+		</label>
+		<input type="text" id="frm_repeater_row_delete_confirmation" name="frm_repeater_row_delete_confirmation"
+			class="frm_with_left_label"
+			value="<?php echo esc_attr( $frmpro_settings->repeater_row_delete_confirmation ); ?>"/>
+</p>

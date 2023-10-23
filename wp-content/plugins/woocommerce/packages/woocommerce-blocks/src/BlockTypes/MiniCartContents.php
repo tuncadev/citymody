@@ -4,7 +4,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 use Automattic\WooCommerce\Blocks\Utils\StyleAttributesUtils;
 
 /**
- * Mini Cart class.
+ * Mini-Cart Contents class.
  *
  * @internal
  */
@@ -40,13 +40,22 @@ class MiniCartContents extends AbstractBlock {
 	 * @return null
 	 */
 	protected function get_block_type_script( $key = null ) {
-		// The frontend script is a dependency of the Mini Cart block so it's
+		// The frontend script is a dependency of the Mini-Cart block so it's
 		// already lazy-loaded.
 		return null;
 	}
 
 	/**
-	 * Render the markup for the Mini Cart contents block.
+	 * Get the frontend style handle for this block type.
+	 *
+	 * @return string[]
+	 */
+	protected function get_block_type_style() {
+		return array_merge( parent::get_block_type_style(), [ 'wc-blocks-packages-style' ] );
+	}
+
+	/**
+	 * Render the markup for the Mini-Cart Contents block.
 	 *
 	 * @param array    $attributes Block attributes.
 	 * @param string   $content    Block content.
@@ -66,23 +75,16 @@ class MiniCartContents extends AbstractBlock {
 	/**
 	 * Enqueue frontend assets for this block, just in time for rendering.
 	 *
-	 * @param array $attributes  Any attributes that currently are available from the block.
+	 * @param array    $attributes  Any attributes that currently are available from the block.
+	 * @param string   $content    The block content.
+	 * @param WP_Block $block    The block object.
 	 */
-	protected function enqueue_assets( array $attributes ) {
-		parent::enqueue_assets( $attributes );
+	protected function enqueue_assets( array $attributes, $content, $block ) {
+		parent::enqueue_assets( $attributes, $content, $block );
 		$text_color = StyleAttributesUtils::get_text_color_class_and_style( $attributes );
 		$bg_color   = StyleAttributesUtils::get_background_color_class_and_style( $attributes );
 
 		$styles = array(
-			array(
-				'selector'   => '.wc-block-mini-cart__drawer .components-modal__header',
-				'properties' => array(
-					array(
-						'property' => 'color',
-						'value'    => $text_color ? $text_color['value'] : false,
-					),
-				),
-			),
 			array(
 				'selector'   => array(
 					'.wc-block-mini-cart__footer .wc-block-mini-cart__footer-actions .wc-block-mini-cart__footer-checkout',
@@ -141,7 +143,7 @@ class MiniCartContents extends AbstractBlock {
 	}
 
 	/**
-	 * Get list of Mini Cart block & its inner-block types.
+	 * Get list of Mini-Cart Contents block & its inner-block types.
 	 *
 	 * @return array;
 	 */

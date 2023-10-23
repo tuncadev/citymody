@@ -6,9 +6,7 @@ class WP_Statistics_Mail
     private $cc = array();
     private $bcc = array();
     private $headers = array();
-    private $attachments = array();
     private $sendAsHTML = true;
-    private $subject = '';
     private $from = '';
     private $headerTemplate = false;
     private $headerVariables = array();
@@ -16,7 +14,9 @@ class WP_Statistics_Mail
     private $variables = array();
     private $afterTemplate = false;
     private $footerVariables = array();
-    private $body;
+    public $body;
+    public $attachments = array();
+    public $subject = '';
 
     /**
      * Init WordPress Mail
@@ -415,6 +415,8 @@ class WP_Statistics_Mail
         if ($this->sendAsHTML) {
             add_filter('wp_mail_content_type', array($this, 'HTMLFilter'));
         }
+
+        $this->attachments = apply_filters('wp_statistics_mail_attachments', $this->attachments, $this);
 
         return wp_mail($this->to, $this->buildSubject(), $this->body, $this->buildHeaders(), $this->attachments);
     }

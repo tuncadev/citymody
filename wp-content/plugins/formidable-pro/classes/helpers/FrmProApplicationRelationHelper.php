@@ -52,7 +52,7 @@ class FrmProApplicationRelationHelper {
 	/**
 	 * @var array<int,int> $parent_form_ids_by_embedded_form_id
 	 */
-	private $parent_form_id_by_embedded_form_id;
+	private $parent_form_ids_by_embedded_form_id;
 
 	/**
 	 * @var array

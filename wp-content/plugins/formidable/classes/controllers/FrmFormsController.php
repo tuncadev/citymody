@@ -890,12 +890,12 @@ class FrmFormsController {
 	 */
 	public static function get_columns( $columns ) {
 		$columns['cb']         = '<input type="checkbox" />';
-		$columns['name']       = __( 'Form Title', 'formidable' );
-		$columns['entries']    = __( 'Entries', 'formidable' );
+		$columns['name']       = esc_html__( 'Form Title', 'formidable' );
+		$columns['entries']    = esc_html__( 'Entries', 'formidable' );
 		$columns['id']         = 'ID';
-		$columns['form_key']   = __( 'Key', 'formidable' );
-		$columns['shortcode']  = __( 'Actions', 'formidable' );
-		$columns['created_at'] = __( 'Date', 'formidable' );
+		$columns['form_key']   = esc_html__( 'Key', 'formidable' );
+		$columns['shortcode']  = esc_html__( 'Actions', 'formidable' );
+		$columns['created_at'] = esc_html__( 'Date', 'formidable' );
 
 		add_screen_option(
 			'per_page',
@@ -1270,6 +1270,19 @@ class FrmFormsController {
 					)
 				),
 			),
+			'abandonment'   => array(
+				'name'       => __( 'Form Abandonment', 'formidable' ),
+				'icon'       => 'frm_icon_font frm_abandoned_icon',
+				'html_class' => 'frm_show_upgrade_tab frm_noallow',
+				'data'       => FrmAppHelper::get_upgrade_data_params(
+					'abandonment',
+					array(
+						'upgrade'    => __( 'Form abandonment settings', 'formidable' ),
+						'message'    => __( 'Unlock the power of data capture to boost lead generation and master the art of form optimization.', 'formidable' ),
+						'screenshot' => 'abandonment.png',
+					)
+				),
+			),
 			'html'        => array(
 				'name'     => __( 'Customize HTML', 'formidable' ),
 				'class'    => __CLASS__,
@@ -1278,7 +1291,7 @@ class FrmFormsController {
 			),
 		);
 
-		foreach ( array( 'landing', 'chat' ) as $feature ) {
+		foreach ( array( 'landing', 'chat', 'abandonment' ) as $feature ) {
 			if ( ! FrmAppHelper::show_new_feature( $feature ) ) {
 				unset( $sections[ $feature ] );
 			}
@@ -2550,7 +2563,7 @@ class FrmFormsController {
 	/**
 	 * Prints open in new tab js with fallback handler.
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @param string $success_url Success URL.
 	 * @param array  $args        See {@see FrmFormsController::redirect_after_submit()}.
@@ -2571,7 +2584,7 @@ class FrmFormsController {
 	/**
 	 * Gets response data for redirect action when AJAX submitting.
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @param array $args See {@see FrmFormsController::run_success_action()}.
 	 * @return array
@@ -2667,7 +2680,7 @@ class FrmFormsController {
 	/**
 	 * Gets fallback message when redirecting failed.
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @param string $success_url Redirect URL.
 	 * @param array  $args        Contains `form` object.

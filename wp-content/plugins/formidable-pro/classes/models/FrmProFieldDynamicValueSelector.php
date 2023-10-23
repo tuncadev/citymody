@@ -29,7 +29,7 @@ class FrmProFieldDynamicValueSelector extends FrmProFieldValueSelector {
 	protected function set_options() {
 		if ( $this->field_settings->get_linked_field_id() > 0 ) {
 			$where = array( 'it.field_id' => $this->field_settings->get_linked_field_id() );
-			$linked_entries = FrmEntryMeta::getAll( $where, '', ' LIMIT 300', true );
+			$linked_entries = FrmEntryMeta::getAll( $where, '', '', true );
 
 			if ( ! empty( $linked_entries ) ) {
 				foreach ( $linked_entries as $entry ) {

@@ -194,6 +194,9 @@ class FrmProFieldsHelper {
 			}
 			$value = $new_value;
 		} else {
+			if ( is_null( $new_value ) ) {
+				$new_value = '';
+			}
 			$value = str_replace( $args['matches'][0][ $args['match_key'] ], $new_value, $value );
 		}
 	}
@@ -549,9 +552,33 @@ class FrmProFieldsHelper {
 					// escape any shortcodes in the value input to prevent them from processing
 					$new_value = str_replace( '[', '&#91;', $new_value );
 				}
+
+				$new_value = self::maybe_get_option_label_for_shortcode_value( $new_value, $shortcode, $atts );
+
 				$value = str_replace( $val, $new_value, $value );
 			}
 		}
+	}
+
+	/**
+	 * Maybe get option label for shortcode value.
+	 *
+	 * @param string $value    Option value.
+	 * @param int    $field_id Field ID.
+	 * @param array  $atts     Shortcode atts.
+	 * @return string
+	 */
+	private static function maybe_get_option_label_for_shortcode_value( $value, $field_id, $atts = array() ) {
+		if ( empty( $atts['show'] ) ) {
+			return $value;
+		}
+
+		$field = FrmField::getOne( $field_id );
+		if ( ! $field ) {
+			return $value;
+		}
+
+		return FrmProEntriesController::get_option_label_for_saved_value( $value, $field, $atts );
 	}
 
 	/**
@@ -3217,8 +3244,13 @@ class FrmProFieldsHelper {
 	<?php
 	}
 
+	/**
+	 * @param array $field_types
+	 * @return array
+	 */
 	public static function modify_available_fields( $field_types ) {
-		// only show the credit card field when an add-on says so
+		// TODO We only need this filter now when Stripe Lite isn't available.
+		// Only show the credit card field when an add-on says so.
 		$show_credit_card = apply_filters( 'frm_include_credit_card', false );
 		if ( $show_credit_card ) {
 			$field_types['credit_card']['icon'] = str_replace( ' frm_show_upgrade', '', $field_types['credit_card']['icon'] );
@@ -4204,7 +4236,7 @@ class FrmProFieldsHelper {
 	/**
 	 * Adds show password HTML to the input HTML.
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @param string $input_html Input HTML.
 	 * @return string
@@ -4236,7 +4268,7 @@ class FrmProFieldsHelper {
 	/**
 	 * Gets show password icons.
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @return array Always contains `show` and `hide`.
 	 */
@@ -4249,7 +4281,7 @@ class FrmProFieldsHelper {
 		/**
 		 * Filters the show/hide password icons.
 		 *
-		 * @since 6.x
+		 * @since 6.3.1
 		 *
 		 * @param array $icons Contains `show` and `hide` keys, values are the HTML of icons.
 		 */

@@ -43,6 +43,8 @@ class FrmSettings {
 	public $current_form = 0;
 	public $tracking;
 
+	public $currency;
+
 	/**
 	 * @since 6.0
 	 *
@@ -162,6 +164,10 @@ class FrmSettings {
 			if ( ! isset( $this->$frm_role ) ) {
 				$this->$frm_role = 'administrator';
 			}
+		}
+
+		if ( ! isset( $this->currency ) ) {
+			$this->currency = 'USD';
 		}
 	}
 
@@ -341,14 +347,15 @@ class FrmSettings {
 	private function update_settings( $params ) {
 		$this->active_captcha   = $params['frm_active_captcha'];
 		$this->hcaptcha_pubkey  = trim( $params['frm_hcaptcha_pubkey'] );
-		$this->hcaptcha_privkey = $params['frm_hcaptcha_privkey'];
+		$this->hcaptcha_privkey = trim( $params['frm_hcaptcha_privkey'] );
 		$this->pubkey           = trim( $params['frm_pubkey'] );
-		$this->privkey          = $params['frm_privkey'];
+		$this->privkey          = trim( $params['frm_privkey'] );
 		$this->re_type          = $params['frm_re_type'];
 		$this->re_lang          = $params['frm_re_lang'];
 		$this->re_threshold     = floatval( $params['frm_re_threshold'] );
 		$this->load_style       = $params['frm_load_style'];
 		$this->custom_css       = $params['frm_custom_css'];
+		$this->currency         = $params['frm_currency'];
 
 		$checkboxes = array( 'mu_menu', 're_multi', 'use_html', 'jquery_css', 'accordion_js', 'fade_form', 'no_ips', 'custom_header_ip', 'tracking', 'admin_bar' );
 		foreach ( $checkboxes as $set ) {

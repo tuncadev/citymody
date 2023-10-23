@@ -248,7 +248,7 @@ class FrmProFileImport {
 			finfo_close( $finfo );
 			unset( $finfo );
 		} else {
-			$type = mime_content_type( $file );
+			$type = FrmProAppHelper::get_mime_content_type( $file );
 		}
 		$attachment['post_mime_type'] = $type;
 	}

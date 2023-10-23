@@ -13,6 +13,7 @@ class DismissibleNoticeService
 {
     const PHP_7_2_REQUIREMENT_NOTICE = 'tidio-php-7-2-requirement-notice';
     const NEW_WOOCOMMERCE_FEATURES_NOTICE = 'tidio-new-woocommerce-features-notice';
+    const LYRO_AI_CHATBOT_NOTICE = 'tidio-lyro-ai-chatbot-notice';
 
     /**
      * @return string[]
@@ -22,6 +23,7 @@ class DismissibleNoticeService
         return [
             self::PHP_7_2_REQUIREMENT_NOTICE,
             self::NEW_WOOCOMMERCE_FEATURES_NOTICE,
+            self::LYRO_AI_CHATBOT_NOTICE,
         ];
     }
 

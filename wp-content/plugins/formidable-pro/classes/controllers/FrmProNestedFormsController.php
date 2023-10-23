@@ -944,9 +944,9 @@ class FrmProNestedFormsController {
 			'remove_icon'             => '',
 			'add_label'               => __( 'Add', 'formidable' ),
 			'remove_label'            => __( 'Remove', 'formidable' ),
-			'add_classes'             => ' frm_button',
-			'remove_classes'          => ' frm_button',
 			'is_repeat_limit_reached' => false,
+			'add_classes'             => '',
+			'remove_classes'          => '',
 		);
 
 		$args = wp_parse_args( $args, $defaults );
@@ -955,14 +955,26 @@ class FrmProNestedFormsController {
 			$args['end_format'] = $args['format'];
 		}
 
-		if ( 'both' == $args['end_format'] ) {
-			$args['remove_icon'] = '<i class="frm_icon_font frm_minus_icon"> </i> ';
-			$args['add_icon'] = '<i class="frm_icon_font frm_plus_icon"> </i> ';
-		} else if ( 'text' != $args['end_format'] ) {
-			$args['add_label']      = '';
-			$args['remove_label']   = '';
-			$args['add_classes']    = ' frm_icon_font frm_plus_icon';
-			$args['remove_classes'] = ' frm_icon_font frm_minus_icon';
+		if ( 'text' !== $args['end_format'] ) {
+			$form_style     = FrmStylesController::get_form_style( $args['form'] );
+			$style_settings = FrmStylesHelper::get_settings_for_output( $form_style );
+			$repeat_icon    = isset( $style_settings['repeat_icon'] ) ? $style_settings['repeat_icon'] : 1;
+			$svg_args       = array(
+				'echo'   => false,
+				'width'  => '1em',
+				'height' => '1em',
+			);
+
+			$args['remove_icon'] = FrmProAppHelper::get_svg_icon( FrmStylesHelper::icon_key_to_class( $repeat_icon, '-', '' ), 'frmsvg frm-svg-icon', $svg_args ) . ' ';
+			$args['add_icon']    = FrmProAppHelper::get_svg_icon( FrmStylesHelper::icon_key_to_class( $repeat_icon, '+', '' ), 'frmsvg frm-svg-icon', $svg_args ) . ' ';
+		}
+
+		if ( 'icon' === $args['end_format'] ) {
+			$args['add_label']    = '';
+			$args['remove_label'] = '';
+		} else {
+			$args['add_classes']    = ' frm_button';
+			$args['remove_classes'] = ' frm_button';
 		}
 
 		if ( $args['is_repeat_limit_reached'] ) {

@@ -27,33 +27,19 @@ class AdminNotice
     private $dismissibleNoticeService;
 
     /**
-     * @var WooCommerceIntegrationService
-     */
-    private $wooCommerceIntegrationService;
-
-    /**
-     * @var IntegrationState
-     */
-    private $integrationState;
-
-    /**
      * @param ErrorTranslator $errorTranslator
      * @param DismissibleNoticeService $dismissibleNoticeService
-     * @param WooCommerceIntegrationService $wooCommerceIntegrationService
-     * @param IntegrationState $integrationState
      */
-    public function __construct($errorTranslator, $dismissibleNoticeService, $wooCommerceIntegrationService, $integrationState)
+    public function __construct($errorTranslator, $dismissibleNoticeService)
     {
         $this->errorTranslator = $errorTranslator;
         $this->dismissibleNoticeService = $dismissibleNoticeService;
-        $this->wooCommerceIntegrationService = $wooCommerceIntegrationService;
-        $this->integrationState = $integrationState;
     }
 
     public function load()
     {
         add_action('admin_notices', [$this, 'addAdminErrorNotice']);
-        add_action('admin_notices', [$this, 'addNewWoocommerceFeaturesNotice']);
+        add_action('admin_notices', [$this, 'addLyroAIChatbotNotice']);
     }
 
     public function addAdminErrorNotice()
@@ -67,17 +53,11 @@ class AdminNotice
         echo sprintf('<div class="notice notice-error is-dismissible"><p>%s</p></div>', $errorMessage);
     }
 
-    public function addNewWoocommerceFeaturesNotice()
+    public function addLyroAIChatbotNotice()
     {
-        if ($this->wooCommerceIntegrationService->isWooCommerceActivated() === false
-            || $this->integrationState->isWooCommerceIntegrated()
-        ) {
-            return;
-        }
-
         $this->displayDismissibleNotice(
-            __DIR__ . '/Notice/Views/NewWoocommerceFeaturesNotice.php',
-            DismissibleNoticeService::NEW_WOOCOMMERCE_FEATURES_NOTICE
+            __DIR__ . '/Notice/Views/LyroAIChatbotNotice.php',
+            DismissibleNoticeService::LYRO_AI_CHATBOT_NOTICE
         );
     }
 

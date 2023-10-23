@@ -201,7 +201,7 @@ class FrmProFieldTime extends FrmFieldType {
 		if ( $time_string ) {
 			$aria_label .= ' ... ' . esc_attr( $time_string );
 		}
-		$aria_label .= '"';
+		$aria_label .= '" ';
 		return str_replace( '<select ', '<select ' . $aria_label, $select_box );
 	}
 

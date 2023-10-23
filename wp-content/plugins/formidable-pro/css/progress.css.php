@@ -140,6 +140,14 @@ ul.frm_rootline_hidden_steps li {
 	border-style: solid;
 	border-color: <?php echo esc_html( FrmStylesHelper::adjust_brightness( $defaults['progress_border_color'], -10 ) ) ?>;
 	border-color: var(--progress-border-color-b) <?php echo esc_html( $important ); ?>;
+	cursor: pointer <?php echo esc_html( $important ); ?>;
+}
+
+.frm_forms .frm_page_bar input:hover,
+.frm_forms .frm_page_bar input:focus{
+	background-color: <?php echo esc_html( FrmStylesHelper::adjust_brightness( $defaults['progress_bg_color'], -20 ) . $important ) ?>;
+	color: <?php echo esc_html( FrmStylesHelper::adjust_brightness( $defaults['progress_color'], -20 ) ) ?>;
+	background-color: <?php echo esc_html( FrmStylesHelper::adjust_brightness( $defaults['progress_bg_color'], -20 ) ) ?>;
 }
 
 .frm_forms .frm_rootline input {
@@ -169,6 +177,12 @@ ul.frm_rootline_hidden_steps li {
 	background-color: var(--progress-color)<?php echo esc_html( $important ); ?>;
 	color: <?php echo esc_html( $defaults['progress_bg_color'] . $important ) ?>;
 	color: var(--progress-bg-color)<?php echo esc_html( $important ); ?>;
+}
+
+.frm_forms .frm_rootline input.frm_page_back:hover,
+.frm_forms .frm_rootline input.frm_page_back:focus{
+	background-color: <?php echo esc_html( FrmStylesHelper::adjust_brightness( $defaults['progress_color'], 45 ) . $important ) ?>;
+	color: <?php echo esc_html( FrmStylesHelper::adjust_brightness( $defaults['progress_bg_color'], 45 ) . $important ) ?>;
 }
 
 .frm_forms .frm_page_bar .frm_current_page input[type="button"]{
@@ -394,27 +408,11 @@ ul.frm_rootline_hidden_steps li {
 	color: transparent !important;
 }
 
-.frm_rootline_bar_top_text.frm_rootline_title {
+.frm_rootline_show_hidden_steps_btn:not(.active)>.frm_rootline_title{
 	display: none;
 }
 
 @media only screen and (max-width: 700px) {
-	.frm_progress span.frm_rootline_title,
-	.frm_rootline > .frm_rootline_single > span.frm_rootline_title,
-	.frm_rootline.frm_rootline_10 span.frm_rootline_title,
-	.frm_rootline.frm_rootline_9 span.frm_rootline_title,
-	.frm_rootline.frm_rootline_8 span.frm_rootline_title,
-	.frm_rootline.frm_rootline_7 span.frm_rootline_title,
-	.frm_rootline.frm_rootline_6 span.frm_rootline_title,
-	.frm_rootline.frm_rootline_5 span.frm_rootline_title{
-		display:none;
-	}
-
-	.frm_rootline_bar_top_text.frm_rootline_title {
-		display: flex;
-		justify-content: center;
-	}
-
 	.frm_show_titles ul.frm_rootline_hidden_steps {
 		min-width: 16px;
 	}

@@ -4,9 +4,9 @@ Tags: facebook, open graph, twitter card, social media, open graph protocol, sha
 Author: WPExperts
 Author URI: https://wpexperts.io/
 Requires at least: 5.0
-Tested up to: 6.0
+Tested up to: 6.3
 Requires PHP: 7.0
-Stable tag: 3.3.0
+Stable tag: 3.3.1
 
 Improve social media sharing by inserting Facebook Open Graph, Twitter Card, and SEO Meta Tags on your WordPress website pages, posts, WooCommerce products, or any other custom post type.
 
@@ -136,6 +136,9 @@ Then set up our plugin as you wish and you're ready to go.
 We like to work with everybody, so (if you want to) our plugin can even integrate with Yoast SEO and use it's title, description and canonical URL on the Facebook and Twitter tags.
 
 == Changelog ==
+
+= 3.3.1 - 2023-08-16 =
+* Tested up to WordPress v6.3
 
 = 3.3.0 - 2023-02-01 =
 * Last release from PT Woo Plugins (by Webdados) before transferring ownership to WPExperts, who will maintain this plugin from now on, something we weren't unable to do for the past few years. Thanks for keep using this plugin.

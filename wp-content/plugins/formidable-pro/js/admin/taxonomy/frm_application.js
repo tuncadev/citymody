@@ -230,7 +230,8 @@
 			const inputWrapper = input.parentNode;
 			const hookArgs = {
 				applicationId: id,
-				onValidationCallback
+				onValidationCallback,
+				validateOnInit: false
 			};
 			wp.hooks.doAction( hookName, inputWrapper, hookArgs );
 

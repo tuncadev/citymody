@@ -377,7 +377,8 @@ class FrmProEntryMetaHelper {
 		}
 
 		if ( ! $field ) {
-			return '';
+			$max = '';
+			return $max;
 		}
 
 		$max = FrmDb::get_var( 'frm_item_metas', array( 'field_id' => $field->id ), 'meta_value', array( 'order_by' => 'item_id DESC' ) );
@@ -428,11 +429,15 @@ class FrmProEntryMetaHelper {
 	/**
 	 * If an auto_id field includes a prefix or suffix, strip them from the last value
 	 *
-	 * @param string $max
+	 * @param string|null $max
 	 * @param stdClass $field
 	 * @return string
 	 */
 	private static function get_increment_from_value( $max, $field ) {
+		if ( is_null( $max ) ) {
+			return '0';
+		}
+
 		$default_value = $field->default_value;
 		if ( strpos( $default_value, '[auto_id') !== false ) {
 			list( $prefix, $shortcode ) = explode( '[auto_id', $default_value );

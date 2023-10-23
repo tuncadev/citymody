@@ -1,15 +1,17 @@
-# Translation of Formidable Pro in Persian
-# This file is distributed under the same license as the Formidable Pro package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-02-15 18:44:38+0000\n"
+"Project-Id-Version: Formidable Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-09-20T16:33:33+00:00\n"
+"PO-Revision-Date: 2023-02-15 18:44:38+0000\n"
+"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: GlotPress/3.0.0\n"
-"Language: fa\n"
-"Project-Id-Version: Formidable Pro\n"
 
 #: classes/models/FrmProFileField.php:61
 #: classes/views/frmpro-fields/front-end/file.php:65
@@ -29,7 +31,8 @@ msgstr "متاسفانه این نوع فایل مجاز نمی باشد. به �
 msgid "Maximum upload size: %sMB"
 msgstr "حداکثر حجم فایل برای بارگذاری: %sMB"
 
-#: classes/models/FrmProFileField.php:56 classes/models/FrmProFileField.php:381
+#: classes/models/FrmProFileField.php:56
+#: classes/models/FrmProFileField.php:381
 #: classes/models/FrmProFileField.php:392
 #, gp-priority: high
 msgid "That file is too big. It must be less than %sMB."
@@ -228,10 +231,6 @@ msgstr "شناسه کاربری"
 #: classes/views/frmpro-statistics/show.php:10
 msgid "Reports"
 msgstr "گزارش ها"
-
-#: js/src/view/inspector.js:87
-msgid "Shortcode"
-msgstr "کدکوتاه"
 
 #: classes/controllers/FrmProFormsController.php:360
 msgid "Email"

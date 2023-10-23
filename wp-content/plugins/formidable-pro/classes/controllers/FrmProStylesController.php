@@ -375,17 +375,53 @@ class FrmProStylesController extends FrmStylesController {
 	}
 
 	/**
+	 * Encodes image as a base64 data.
+	 *
+	 * @since 6.4.3
+	 *
+	 * @param string $file File path.
+	 * @param string $mime_type
+	 * @return string
+	 */
+	public static function base64_encode_image( $file, $mime_type = '' ) {
+		if ( ! $file || ! file_exists( $file ) ) {
+			return '';
+		}
+
+		if ( ! $mime_type ) {
+			$mime_type = FrmProAppHelper::get_mime_content_type( $file );
+			if ( ! $mime_type ) {
+				return '';
+			}
+		}
+
+		$file_content = file_get_contents( $file );
+		if ( ! $file_content ) {
+			return '';
+		}
+
+		return 'data:' . $mime_type . ';base64,' . base64_encode( $file_content );
+	}
+
+	/**
 	 * Maybe read the font icons CSS when including additional CSS for the front end.
-	 * Various Pro fields require this including: Collapsible sections, strong password meters, star ratings, repeater buttons, datepicker arrows, and signature toggle buttons.
-	 * This version check is to make sure that we do not include the font icon CSS twice as Lite version before 5.5.1 include font icons in front end CSS.
-	 * We plan to migrate away from this in the near future in favour of using SVG instead of font icons.
+	 * As of v6.4 this is now only required for old versions of the signatures add on.
+	 * Signatures v3.0.4 no longer requires the font icons either.
 	 *
 	 * @return void
 	 */
 	private static function maybe_include_icon_font_css() {
-		if ( version_compare( FrmAppHelper::plugin_version(), '5.5.1', '>=' ) ) {
-			readfile( FrmAppHelper::plugin_path() . '/css/font_icons.css' );
+		$signature_add_on_is_active = class_exists( 'FrmSigAppHelper', false );
+		if ( ! $signature_add_on_is_active ) {
+			return;
 		}
+
+		if ( is_callable( 'FrmSigAppHelper::get_svg_icon' ) ) {
+			// This is no longer required in newer versions of the signatures add on.
+			return;
+		}
+
+		readfile( FrmAppHelper::plugin_path() . '/css/font_icons.css' );
 	}
 
 	/**

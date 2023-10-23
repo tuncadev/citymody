@@ -147,7 +147,7 @@ class Cookie_Notice_Welcome {
 
 		wp_add_inline_script( 'cookie-notice-welcome', 'var cnWelcomeArgs = ' . wp_json_encode( $script_data ) . ";\n", 'before' );
 
-		wp_enqueue_style( 'cookie-notice-welcome', COOKIE_NOTICE_URL . '/css/admin-welcome.css' );
+		wp_enqueue_style( 'cookie-notice-welcome', COOKIE_NOTICE_URL . '/css/admin-welcome.css', [], $cn->defaults['version'] );
 	}
 
 	/**

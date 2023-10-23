@@ -6,9 +6,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class FrmProField {
 
+	/**
+	 * @param array $field_data
+	 * @return array
+	 */
 	public static function create( $field_data ) {
 
-		if ( $field_data['field_options']['label'] != 'none' ) {
+		if ( $field_data['field_options']['label'] !== 'none' ) {
 			$field_data['field_options']['label'] = '';
 		}
 
@@ -21,7 +25,7 @@ class FrmProField {
 				break;
 			case 'divider':
 				if ( isset($field_data['field_options']['repeat']) && $field_data['field_options']['repeat'] ) {
-					// create the repeatable form
+					// Create the repeatable form.
 					$field_data['field_options']['form_select'] = self::create_repeat_form( 0, array( 'parent_form_id' => $field_data['form_id'], 'field_name' => $field_data['name'] ) );
 				}
 				break;
@@ -43,15 +47,17 @@ class FrmProField {
 	 * Change the default in_section value to the ID of the section where a new field was dragged and dropped
 	 *
 	 * @since 2.0.24
+	 *
 	 * @param array $field_data
+	 * @return void
 	 */
 	private static function switch_in_section_field_option( &$field_data ) {
-		if ( in_array( $field_data['type'], array( 'divider', 'end_divider', 'form' ) ) ) {
+		if ( in_array( $field_data['type'], array( 'divider', 'end_divider', 'form' ), true ) ) {
 			return;
 		}
 
 		$ajax_action = FrmAppHelper::get_post_param( 'action', '', 'sanitize_title' );
-		if ( 'frm_insert_field' == $ajax_action ) {
+		if ( 'frm_insert_field' === $ajax_action ) {
 			$section_id = FrmAppHelper::get_post_param( 'section_id', 0, 'absint' );
 			$field_data['field_options']['in_section'] = $section_id;
 		}

@@ -57,6 +57,11 @@ class FrmProApplicationTaxonomyController {
 		wp_register_script( 'formidable_custom_applications_index', $plugin_url . '/js/admin/taxonomy/frm_application_list.js', $js_dependencies, $version, true );
 		wp_register_style( 'formidable_custom_applications_index', $plugin_url . '/css/admin/taxonomy/frm_application_list.css', array(), $version );
 
+		if ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'formidable_edit_application_term', 'formidable-pro', FrmProAppHelper::plugin_path() . '/languages' );
+			wp_set_script_translations( 'formidable_custom_applications_index', 'formidable-pro', FrmProAppHelper::plugin_path() . '/languages' );
+		}
+
 		if ( self::should_set_applications_in_submenu() ) {
 			self::set_applications_active_in_submenu();
 		}

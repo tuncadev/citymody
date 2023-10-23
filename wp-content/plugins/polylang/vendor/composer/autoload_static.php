@@ -4,9 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit57e007bdf76a1fe336cb43b59389545b
+class ComposerStaticInit7dc73dfbbc007ce0d677088d041ad7d4
 {
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PLL_AS3CF' => __DIR__ . '/../..' . '/integrations/wp-offload-media/as3cf.php',
         'PLL_Abstract_Sitemaps' => __DIR__ . '/../..' . '/modules/sitemaps/abstract-sitemaps.php',
         'PLL_Accept_Language' => __DIR__ . '/../..' . '/frontend/accept-language.php',
@@ -48,6 +49,7 @@ class ComposerStaticInit57e007bdf76a1fe336cb43b59389545b
         'PLL_Domain_Mapping' => __DIR__ . '/../..' . '/integrations/domain-mapping/domain-mapping.php',
         'PLL_Duplicate_Post' => __DIR__ . '/../..' . '/integrations/duplicate-post/duplicate-post.php',
         'PLL_Featured_Content' => __DIR__ . '/../..' . '/integrations/jetpack/featured-content.php',
+        'PLL_Filter_REST_Routes' => __DIR__ . '/../..' . '/include/filter-rest-routes.php',
         'PLL_Filters' => __DIR__ . '/../..' . '/include/filters.php',
         'PLL_Filters_Links' => __DIR__ . '/../..' . '/include/filters-links.php',
         'PLL_Filters_Sanitization' => __DIR__ . '/../..' . '/include/filters-sanitization.php',
@@ -140,7 +142,7 @@ class ComposerStaticInit57e007bdf76a1fe336cb43b59389545b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit57e007bdf76a1fe336cb43b59389545b::$classMap;
+            $loader->classMap = ComposerStaticInit7dc73dfbbc007ce0d677088d041ad7d4::$classMap;
 
         }, null, ClassLoader::class);
     }

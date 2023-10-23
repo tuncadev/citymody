@@ -50,9 +50,11 @@ class PLL_Admin_Filters_Term {
 	protected $default_term;
 
 	/**
-	 * Constructor: setups filters and actions
+	 * Constructor: setups filters and actions.
 	 *
-	 * @param object $polylang
+	 * @since 1.2
+	 *
+	 * @param object $polylang The Polylang object.
 	 */
 	public function __construct( &$polylang ) {
 		$this->links        = &$polylang->links;
@@ -247,7 +249,7 @@ class PLL_Admin_Filters_Term {
 	 *
 	 * @since 1.7
 	 *
-	 * @param int $post_id
+	 * @param int $post_id Post ID.
 	 * @return void
 	 */
 	public function pre_post_update( $post_id ) {
@@ -257,12 +259,12 @@ class PLL_Admin_Filters_Term {
 	}
 
 	/**
-	 * Saves language
+	 * Saves the language of a term.
 	 *
 	 * @since 1.5
 	 *
-	 * @param int    $term_id
-	 * @param string $taxonomy
+	 * @param int    $term_id  Term ID.
+	 * @param string $taxonomy Taxonomy name.
 	 * @return void
 	 */
 	protected function save_language( $term_id, $taxonomy ) {
@@ -364,7 +366,7 @@ class PLL_Admin_Filters_Term {
 	 *
 	 * @since 1.5
 	 *
-	 * @param int $term_id The term id of teh term being saved.
+	 * @param int $term_id The term id of the term being saved.
 	 * @return int[] The array of translated term ids.
 	 */
 	protected function save_translations( $term_id ) {
@@ -392,9 +394,9 @@ class PLL_Admin_Filters_Term {
 	 *
 	 * @since 0.1
 	 *
-	 * @param int    $term_id
-	 * @param int    $tt_id    term taxonomy id
-	 * @param string $taxonomy
+	 * @param int    $term_id  Term ID.
+	 * @param int    $tt_id    Term taxonomy ID.
+	 * @param string $taxonomy Taxonomy name.
 	 * @return void
 	 */
 	public function save_term( $term_id, $tt_id, $taxonomy ) {
@@ -489,7 +491,7 @@ class PLL_Admin_Filters_Term {
 	}
 
 	/**
-	 * Ajax response for input in translation autocomplete input box
+	 * Ajax response for input in translation autocomplete input box.
 	 *
 	 * @since 1.5
 	 *
@@ -537,23 +539,28 @@ class PLL_Admin_Filters_Term {
 
 		// Format the ajax response.
 		foreach ( $terms as $term ) {
-			if ( $term instanceof WP_Term ) {
-				$return[] = array(
-					'id'    => $term->term_id,
-					'value' => rtrim( // Trim the seperator added at the end by WP.
-						get_term_parents_list(
-							$term->term_id,
-							$term->taxonomy,
-							array(
-								'separator' => ' > ',
-								'link' => false,
-							)
-						),
-						' >'
-					),
-					'link'  => $this->links->edit_term_translation_link( $term->term_id, $term->taxonomy, $post_type ),
-				);
+			if ( ! $term instanceof WP_Term ) {
+				continue;
 			}
+
+			$parents_list = get_term_parents_list(
+				$term->term_id,
+				$term->taxonomy,
+				array(
+					'separator' => ' > ',
+					'link'      => false,
+				)
+			);
+
+			if ( ! is_string( $parents_list ) ) {
+				continue;
+			}
+
+			$return[] = array(
+				'id'    => $term->term_id,
+				'value' => rtrim( $parents_list, ' >' ), // Trim the seperator added at the end by WP.
+				'link'  => $this->links->edit_term_translation_link( $term->term_id, $term->taxonomy, $post_type ),
+			);
 		}
 
 		wp_die( wp_json_encode( $return ) );
@@ -565,10 +572,10 @@ class PLL_Admin_Filters_Term {
 	 *
 	 * @since 1.7
 	 *
-	 * @param int    $term_id          Shared term_id
-	 * @param int    $new_term_id
-	 * @param int    $term_taxonomy_id
-	 * @param string $taxonomy
+	 * @param int    $term_id          ID of the formerly shared term.
+	 * @param int    $new_term_id      ID of the new term created for the $term_taxonomy_id.
+	 * @param int    $term_taxonomy_id ID for the term_taxonomy row affected by the split.
+	 * @param string $taxonomy         Taxonomy name.
 	 * @return void
 	 */
 	public function split_shared_term( $term_id, $new_term_id, $term_taxonomy_id, $taxonomy ) {

@@ -109,7 +109,7 @@ if ( isset( $values['open_editable'] ) && empty( $values['open_editable'] ) ) {
 			<input type="checkbox" name="options[protect_files]" id="protect_files" value="1" <?php checked( $values['protect_files'], 1 ); ?> onchange="document.getElementById('noindex_files').disabled=!this.checked;document.querySelector('label[for=\'noindex_files\']').classList.toggle('frm_noallow',!this.checked);" />
 			<?php
 				esc_html_e( 'Protect all files uploaded in this form', 'formidable-pro' );
-				if ( php_uname( 's' ) === 'Windows NT' ) {
+				if ( 'Windows NT' === FrmProAppHelper::get_server_os() ) {
 			?>
 					<span class="howto"> <?php
 						if ( stripos( FrmAppHelper::get_server_value( 'SERVER_SOFTWARE' ), 'apache' ) !== false ) {

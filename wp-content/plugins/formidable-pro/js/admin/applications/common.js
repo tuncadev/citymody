@@ -21,7 +21,7 @@
 	addAction( 'frm_trigger_delete_application_modal', triggerDeleteApplicationModal );
 	addAction( 'frm_application_item_option', addApplicationItemOption );
 
-	function addApplicationNameValidation( inputWrapper, { applicationId, onValidationCallback }) {
+	function addApplicationNameValidation( inputWrapper, { applicationId, onValidationCallback, validateOnInit = true }) {
 		const validationStatus = div();
 		validationStatus.style.marginTop = '5px';
 		validationStatus.style.fontSize = '11px';
@@ -41,7 +41,7 @@
 		input.addEventListener( 'change', listener );
 
 		const initialName = input.value.trim();
-		if ( initialName.length ) {
+		if ( validateOnInit && initialName.length ) {
 			validateApplicationName( initialName );
 		}
 

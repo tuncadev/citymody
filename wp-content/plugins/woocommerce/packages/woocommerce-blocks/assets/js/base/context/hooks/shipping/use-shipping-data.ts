@@ -94,6 +94,10 @@ export const useShippingData = (): ShippingData => {
 		): void => {
 			let selectPromise;
 
+			if ( typeof newShippingRateId === 'undefined' ) {
+				return;
+			}
+
 			/**
 			 * Picking location handling
 			 *
@@ -120,11 +124,7 @@ export const useShippingData = (): ShippingData => {
 					processErrorResponse( error );
 				} );
 		},
-		[
-			hasSelectedLocalPickup,
-			dispatchSelectShippingRate,
-			dispatchCheckoutEvent,
-		]
+		[ dispatchSelectShippingRate, dispatchCheckoutEvent ]
 	);
 
 	return {

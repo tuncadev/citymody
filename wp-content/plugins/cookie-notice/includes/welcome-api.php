@@ -352,9 +352,9 @@ class Cookie_Notice_Welcome_API {
 
 				// set token
 				if ( $network )
-					set_site_transient( 'cookie_notice_app_token', $response->data, 24 * HOUR_IN_SECONDS );
+					set_site_transient( 'cookie_notice_app_token', $response->data, DAY_IN_SECONDS );
 				else
-					set_transient( 'cookie_notice_app_token', $response->data, 24 * HOUR_IN_SECONDS );
+					set_transient( 'cookie_notice_app_token', $response->data, DAY_IN_SECONDS );
 
 				// multisite?
 				if ( is_multisite() ) {
@@ -553,9 +553,9 @@ class Cookie_Notice_Welcome_API {
 
 				// set token
 				if ( $network )
-					set_site_transient( 'cookie_notice_app_token', $response->data, 24 * HOUR_IN_SECONDS );
+					set_site_transient( 'cookie_notice_app_token', $response->data, DAY_IN_SECONDS );
 				else
-					set_transient( 'cookie_notice_app_token', $response->data, 24 * HOUR_IN_SECONDS );
+					set_transient( 'cookie_notice_app_token', $response->data, DAY_IN_SECONDS );
 
 				// get apps and check if one for the current domain already exists
 				$response = $this->request( 'list_apps', [] );
@@ -643,9 +643,9 @@ class Cookie_Notice_Welcome_API {
 
 				// set subscriptions data
 				if ( $network )
-					set_site_transient( 'cookie_notice_app_subscriptions', $subscriptions, 24 * HOUR_IN_SECONDS );
+					set_site_transient( 'cookie_notice_app_subscriptions', $subscriptions, DAY_IN_SECONDS );
 				else
-					set_transient( 'cookie_notice_app_subscriptions', $subscriptions, 24 * HOUR_IN_SECONDS );
+					set_transient( 'cookie_notice_app_subscriptions', $subscriptions, DAY_IN_SECONDS );
 
 				// update options: app ID and secret key
 				$cn->options['general'] = wp_parse_args( [ 'app_id' => $app_exists->AppID, 'app_key' => $app_exists->SecretKey ], $cn->options['general'] );
@@ -905,9 +905,9 @@ class Cookie_Notice_Welcome_API {
 
 				// set options
 				if ( $network )
-					set_site_transient( 'cookie_notice_app_quick_config', $options, 24 * HOUR_IN_SECONDS );
+					set_site_transient( 'cookie_notice_app_quick_config', $options, DAY_IN_SECONDS );
 				else
-					set_transient( 'cookie_notice_app_quick_config', $options, 24 * HOUR_IN_SECONDS );
+					set_transient( 'cookie_notice_app_quick_config', $options, DAY_IN_SECONDS );
 				break;
 
 			case 'select_plan':
@@ -1002,6 +1002,11 @@ class Cookie_Notice_Welcome_API {
 				}
 
 				$api_args['headers'] = array_merge( $api_args['headers'], $app_data );
+				break;
+
+			case 'get_consent_logs_by_date':
+				$api_url = $cn->get_url( 'transactional_api', '/api/transactional/analytics/consent-logs' );
+				$api_args['method'] = 'POST';
 				break;
 
 			case 'get_config':
@@ -1215,6 +1220,41 @@ class Cookie_Notice_Welcome_API {
 	}
 
 	/**
+	 * Get consent logs.
+	 *
+	 * @param string $date
+	 * @return string|array
+	 */
+	public function get_consent_logs_by_date( $date ) {
+		// get main instance
+		$cn = Cookie_Notice();
+
+		// get consent logs for specific date
+		$result = $this->request(
+			'get_consent_logs_by_date',
+			[
+				'AppID'			=> $cn->options['general']['app_id'],
+				'AppSecretKey'	=> $cn->options['general']['app_key'],
+				'Date'			=> $date
+			]
+		);
+
+		// message?
+		if ( ! empty( $result->message ) )
+			$result = $result->message;
+		// error?
+		elseif ( ! empty( $result->error ) )
+			$result = $result->error;
+		// valid data?
+		elseif ( ! empty( $result->data ) )
+			$result = $result->data;
+		else
+			$result = [];
+
+		return $result;
+	}
+
+	/**
 	 * Get app analytics.
 	 *
 	 * @param string $app_id
@@ -1292,6 +1332,9 @@ class Cookie_Notice_Welcome_API {
 				update_option( 'cookie_notice_app_analytics', $result, false );
 				update_option( 'cookie_notice_status', $status_data, false );
 			}
+
+			// update status data
+			$cn->set_status_data();
 		}
 	}
 
@@ -1399,6 +1442,9 @@ class Cookie_Notice_Welcome_API {
 			update_site_option( 'cookie_notice_status', $status_data );
 		else
 			update_option( 'cookie_notice_status', $status_data, false );
+
+		// update status data
+		$cn->set_status_data();
 
 		return $status_data;
 	}

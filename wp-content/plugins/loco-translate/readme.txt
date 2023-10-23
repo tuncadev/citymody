@@ -3,8 +3,8 @@ Contributors: timwhitlock
 Tags: translation, translators, localization, localisation, l10n, i18n, Gettext, PO, MO, productivity, multilingual, internationalization
 Requires at least: 5.2
 Requires PHP: 5.6.20
-Tested up to: 6.1.1
-Stable tag: 2.6.4
+Tested up to: 6.3.1
+Stable tag: 2.6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,23 @@ We don't collect your data or snoop on you. See the [plugin privacy notice](http
 
 
 == Changelog ==
+
+= 2.6.6 =
+* Replaced open_basedir check with error capturing
+
+= 2.6.5 =
+* Added syntax checking function
+* Removed deepl_api_url config. Free API detected from :fx key suffix.
+* Fixed bug in relative path calculations
+* Fixed API suggestions for plural forms
+* Fixed bug clearing unsaved state icons
+* Added total strings count to PO file tables
+* Sharper flags and spinners (@x2 pixel support)
+* Handling upload_tmp_dir values outside of open_basedir
+* Suppressing E_WARNING when testing file is_readable
+* Bundle debug screen is deprecated (moving into Setup)
+* Showing System Diagnostics when debug is off
+* Bumped WordPress compatibility to 6.3.1
 
 = 2.6.4 =
 * Bumped WordPress version to 6.1.1
@@ -482,7 +499,7 @@ We don't collect your data or snoop on you. See the [plugin privacy notice](http
 
 == Upgrade Notice ==
 
-= 2.6.4 =
+= 2.6.6 =
 * Various improvements and bug fixes
 
 

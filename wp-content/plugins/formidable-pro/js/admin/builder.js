@@ -8,8 +8,43 @@
 		document.addEventListener( 'change', handleChangeEvent );
 	}
 
+	hooks.addFilter( 'frm_conditional_logic_field_options', 'formidable-pro', updateFieldOptions );
+
+	function updateFieldOptions( fieldOptions, hookArgs ) {
+		if ( 'scale' === hookArgs.type ) {
+			fieldOptions = getScaleFieldOptions( hookArgs.fieldId );
+		}
+		return fieldOptions;
+	}
+
+	function getScaleFieldOptions( fieldId ) {
+		let opts = [];
+		const optVals = document.querySelectorAll( 'input[name^="item_meta[' + fieldId + ']"]' );
+
+		optVals.forEach( opt => {
+			opts.push( opt.value );
+		});
+
+		return opts;
+	}
+
+	function updateConditionalLogicsDependentOnThis( target ) {
+		setTimeout( function() {
+			let fieldId = target.closest( '.frm-single-settings' ).dataset.fid;
+
+			if ( ! fieldId ) {
+				return;
+			}
+
+			frmAdminBuild.adjustConditionalLogicOptionOrders( fieldId, 'scale' );
+		}, 0 );
+	}
+
 	function handleChangeEvent( e ) {
 		const target = e.target;
+		if ( target.matches( '.frm_scale_opt' ) ) {
+			updateConditionalLogicsDependentOnThis( target );
+		}
 
 		if ( isACurrencySetting( target ) ) {
 			const settingsContainer = target.closest( '.frm-type-range' );

@@ -101,7 +101,7 @@ class FrmProPageField {
 				$page_array[ $page_number ] = array(
 					'data-page'  => '',
 					'class'      => '',
-					'disabled'   => 'disabled',
+					'aria-disabled'   => 'true',
 					'data-field' => $field_id,
 				);
 				$current_page = $page_number;
@@ -123,10 +123,10 @@ class FrmProPageField {
 		if ( $current_page == 0 ) {
 			// show current page if last
 			$page_array[ $page_number ] = array(
-				'data-page'  => '',
-				'class'      => '',
-				'disabled'   => 'disabled',
-				'data-field' => $field_id,
+				'data-page'     => '',
+				'class'         => '',
+				'aria-disabled' => 'true',
+				'data-field'    => $field_id,
 			);
 		}
 
@@ -149,16 +149,26 @@ class FrmProPageField {
 
 		$title_atts = compact( 'show_titles', 'type' );
 
-		$current_page = 0;
 		$page_count = count( $args['page_array'] );
 
 		$classes = array( 'frm_page_bar', 'frm_rootline_' . $page_count, 'frm_' . $type, 'frm_' . $type . '_line' );
 		$classes[] = $hide_numbers ? 'frm_no_numbers' : '';
 		$classes[] = $hide_lines ? '' : 'frm_show_lines';
 		$classes[] = $show_titles ? 'frm_show_titles' : '';
-		$output = '<div class="frm_rootline_group">';
+		$current_page = array_filter(
+			$args['page_array'],
+			function( $page ) {
+				return isset( $page['aria-disabled'] );
+			}
+		);
+
+		$keys = array_keys( $current_page );
+		$current_page = reset( $keys );
+
+		$output = '<div class="frm_rootline_group" role="group" tabindex="0" aria-label="' . sprintf( __( 'Page %1$s of %2$s', 'formidable-pro' ), $current_page, $page_count ) . '" >';
 		$output .= '<ul class="' . esc_attr( implode( ' ', $classes ) ) . '">';
 
+		$current_page = 0;
 		$page_numbers     = array_keys( $args['page_array'] );
 		$last_page_number = $page_numbers[ count( $page_numbers ) - 1 ];
 
@@ -169,7 +179,7 @@ class FrmProPageField {
 			}
 
 			$page['class'] .= ' frm_page_' . $page_number;
-			$current_class  = ( isset( $page['disabled'] ) ) ? ' frm_current_page' : '';
+			$current_class  = ( isset( $page['aria-disabled'] ) ) ? ' frm_current_page' : '';
 			$output        .= '<li class="frm_rootline_single' . $current_class . '">';
 
 			$title_atts['title'] = $page['aria-label'];
@@ -187,7 +197,7 @@ class FrmProPageField {
 
 			$output .= '</li>';
 
-			if ( isset( $page['disabled'] ) ) {
+			if ( isset( $page['aria-disabled'] ) ) {
 				$current_page = $page_number;
 			}
 		}

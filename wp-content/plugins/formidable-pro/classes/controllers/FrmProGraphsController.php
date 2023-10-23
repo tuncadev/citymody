@@ -1703,8 +1703,8 @@ class FrmProGraphsController {
 			return;
 		}
 
-		$atts['form_id'] = $atts['fields'][0]->form_id;
-
+		$form_ids = wp_list_pluck( $atts['fields'], 'form_id' );
+		$atts['form_id'] = $form_ids;
 		self::maybe_add_x_start_and_x_end( $atts );
 
 		self::check_field_filters( $atts );

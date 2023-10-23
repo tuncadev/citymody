@@ -36,7 +36,7 @@ class Loco_fs_File {
 
     /**
      * Check if a path is absolute and return fixed slashes for readability
-     * @param string
+     * @param string $path
      * @return string fixed path, or "" if not absolute
      */
     public static function abs( $path ){
@@ -55,14 +55,31 @@ class Loco_fs_File {
                 }
             }
         }
-        // else path is relative, so return falsey string
+        // else path is relative, so return falsy string
         return '';
     }
-    
+
+
+    /**
+     * Call PHP is_readable() but suppress E_WARNING when path is outside open_basedir.
+     * @param string $path
+     * @return bool
+     */
+    public static function is_readable( $path ){
+        if( '' === $path || '.' === $path[0] ){
+            throw new InvalidArgumentException('Relative paths disallowed');
+        }
+        // Reduce PHP errors from is_readable to debug messages
+        Loco_error_AdminNotices::capture(E_NOTICE|E_WARNING);
+        $bool = is_readable($path);
+        restore_error_handler();
+        return $bool;
+    }
+
 
     /**
      * Create file with initial, unvalidated path
-     * @param string
+     * @param string $path
      */    
     public function __construct( $path ){
         $this->setPath( $path );
@@ -71,7 +88,7 @@ class Loco_fs_File {
 
     /**
      * Internally set path value and flag whether relative or absolute
-     * @param string
+     * @param string $path
      * @return void
      */
     private function setPath( $path ){
@@ -108,7 +125,7 @@ class Loco_fs_File {
 
     /**
      * Copy write context with our file reference
-     * @param Loco_fs_FileWriter|null
+     * @param Loco_fs_FileWriter|null $context
      * @return void
      */
     private function cloneWriteContext( Loco_fs_FileWriter $context = null ){
@@ -141,10 +158,12 @@ class Loco_fs_File {
 
 
     /**
+     * Checks if a file exists, and is within open_basedir restrictions.
+     * This does NOT check if file permissions allow PHP to read it. Call is_readable.
      * @return bool
      */
     public function exists(){
-        return file_exists( $this->path );
+        return file_exists($this->path);
     }
 
 
@@ -153,6 +172,15 @@ class Loco_fs_File {
      */
     public function writable(){
         return $this->getWriteContext()->writable();
+    }
+
+
+    /**
+     * Check if the file exists and is readable by the current PHP process.
+     * @return bool
+     */
+    public function readable(){
+        return self::is_readable($this->path);
     }
 
 
@@ -317,8 +345,8 @@ class Loco_fs_File {
 
     /**
      * Set file mode
-     * @param int file mode integer e.g 0664
-     * @param bool whether to set recursively (directories)
+     * @param int $mode file mode integer e.g 0664
+     * @param bool $recursive whether to set recursively (directories)
      * @return Loco_fs_File
      */
     public function chmod( $mode, $recursive = false ){
@@ -355,7 +383,7 @@ class Loco_fs_File {
 
     /**
      * Check if passed path is equal to ours
-     * @param string
+     * @param string $path
      * @return bool
      */
     public function equal( $path ){
@@ -365,7 +393,7 @@ class Loco_fs_File {
 
     /**
      * Normalize path for string comparison, resolves redundant dots and slashes.
-     * @param string path to prefix
+     * @param string $base path to prefix
      * @return string
      */
     public function normalize( $base = '' ){
@@ -394,8 +422,24 @@ class Loco_fs_File {
 
 
     /**
-     * @param string
-     * @param string[]
+     * Get real path if file is real, but without altering internal path property.
+     * Also skips call to realpath() when likely to raise E_WARNING due to open_basedir
+     * @return string
+     */
+    public function getRealPath(){
+        if( $this->readable() ){
+            $path = realpath( $this->getPath() );
+            if( is_string($path) ){
+                return $path;
+            }
+        }
+        return '';
+    } 
+
+
+    /**
+     * @param string $path
+     * @param string[] $b
      * @return array
      */
     private static function explode( $path, array $b ){
@@ -422,19 +466,18 @@ class Loco_fs_File {
 
     /**
      * Get path relative to given location, unless path is already relative
-     * @param string base path
+     * @param string $base Base path
      * @return string path relative to given base
      */
     public function getRelativePath( $base ){
         $path = $this->normalize();
         if( self::abs($path) ){
-            // base may needs require normalizing
+            // base may require normalizing
             $file = new Loco_fs_File($base);
             $base = $file->normalize();
-            $length = strlen($base);
+            $length = strlen($base)+1;
             // if we are below given base path, return ./relative
-            if( substr($path,0,$length) === $base ){
-                ++$length;
+            if( substr($path,0,$length) === $base.'/' ){
                 if( strlen($path) > $length ){
                     return substr( $path, $length );
                 }
@@ -463,7 +506,7 @@ class Loco_fs_File {
      * @return bool
      */
     public function isDirectory(){
-        if( file_exists($this->path) ){
+        if( $this->readable() ){
             return is_dir($this->path);
         }
         return '' === $this->extension();
@@ -541,7 +584,7 @@ class Loco_fs_File {
 
     /**
      * Copy this file for real
-     * @param string new path
+     * @param string $dest new path
      * @throws Loco_error_WriteException
      * @return Loco_fs_File new file
      */
@@ -556,7 +599,7 @@ class Loco_fs_File {
 
     /**
      * Move/rename this file for real
-     * @param Loco_fs_File target file with new path
+     * @param Loco_fs_File $dest target file with new path
      * @throws Loco_error_WriteException
      * @return Loco_fs_File original file that should no longer exist
      */

@@ -128,7 +128,7 @@ class FrmProForm {
 	}
 
 	private static function get_file_folders_for_form_that_should_have_htaccess( $file_ids ) {
-		return array_filter( self::get_all_file_folders_for_form( $file_ids ), 'self::file_folder_should_have_htaccess' );
+		return array_filter( self::get_all_file_folders_for_form( $file_ids ), self::class . '::file_folder_should_have_htaccess' );
 	}
 
 	/**

@@ -141,7 +141,7 @@ class PLL_Model {
 
 			$this->is_creating_language_objects = true;
 
-			if ( defined( 'PLL_CACHE_LANGUAGES' ) && ! PLL_CACHE_LANGUAGES ) {
+			if ( ! pll_get_constant( 'PLL_CACHE_LANGUAGES', true ) ) {
 				// Create the languages from taxonomies.
 				$languages = $this->get_languages_from_taxonomies();
 			} else {
@@ -465,6 +465,8 @@ class PLL_Model {
 	 * @param int                 $parent    Parent term id.
 	 * @param string|PLL_Language $language  The language slug or object.
 	 * @return int The `term_id` of the found term. 0 otherwise.
+	 *
+	 * @phpstan-return int<0, max>
 	 */
 	public function term_exists( $term_name, $taxonomy, $parent, $language ) {
 		global $wpdb;
@@ -488,7 +490,8 @@ class PLL_Model {
 		}
 
 		// PHPCS:ignore WordPress.DB.PreparedSQL.NotPrepared
-		return $wpdb->get_var( $select . $join . $where );
+		$term_id = $wpdb->get_var( $select . $join . $where );
+		return max( 0, (int) $term_id );
 	}
 
 	/**

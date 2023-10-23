@@ -27,22 +27,22 @@ class PLL_Frontend_Auto_Translate {
 	 *
 	 * @since 1.1
 	 *
-	 * @param object $polylang
+	 * @param object $polylang The Polylang object.
 	 */
 	public function __construct( &$polylang ) {
 		$this->model = &$polylang->model;
 		$this->curlang = &$polylang->curlang;
 
-		add_action( 'pre_get_posts', array( $this, 'pre_get_posts' ) ); // after main Polylang filter
+		add_action( 'parse_query', array( $this, 'translate_included_ids_in_query' ), 100 ); // After all Polylang filters.
 		add_filter( 'get_terms_args', array( $this, 'get_terms_args' ), 20, 2 );
 	}
 
 	/**
-	 * Helper function to get the translated post in the current language
+	 * Helper function to get the translated post in the current language.
 	 *
 	 * @since 1.8
 	 *
-	 * @param int $post_id
+	 * @param int $post_id The ID of the post to translate.
 	 * @return int
 	 *
 	 * @phpstan-return int<0, max>
@@ -52,11 +52,11 @@ class PLL_Frontend_Auto_Translate {
 	}
 
 	/**
-	 * Helper function to get the translated term in the current language
+	 * Helper function to get the translated term in the current language.
 	 *
 	 * @since 1.8
 	 *
-	 * @param int $term_id
+	 * @param int $term_id The ID of the term to translate.
 	 * @return int
 	 *
 	 * @phpstan-return int<0, max>
@@ -73,7 +73,7 @@ class PLL_Frontend_Auto_Translate {
 	 * @param WP_Query $query WP_Query object
 	 * @return void
 	 */
-	public function pre_get_posts( $query ) {
+	public function translate_included_ids_in_query( $query ) {
 		global $wpdb;
 		$qv = &$query->query_vars;
 
@@ -212,13 +212,13 @@ class PLL_Frontend_Auto_Translate {
 	}
 
 	/**
-	 * Filters terms query to automatically translate included ids
+	 * Filters the terms query to automatically translate included ids.
 	 *
 	 * @since 1.1.1
 	 *
-	 * @param array $args
-	 * @param array $taxonomies
-	 * @return array modified $args
+	 * @param array $args       An array of get_terms() arguments.
+	 * @param array $taxonomies An array of taxonomy names.
+	 * @return array
 	 */
 	public function get_terms_args( $args, $taxonomies ) {
 		if ( ! isset( $args['lang'] ) && ! empty( $args['include'] ) && ( empty( $taxonomies ) || $this->model->is_translated_taxonomy( $taxonomies ) ) ) {
@@ -239,8 +239,8 @@ class PLL_Frontend_Auto_Translate {
 	 *
 	 * @since 1.7
 	 *
-	 * @param array $tax_queries
-	 * @return array translated tax queries
+	 * @param array $tax_queries An array of tax queries.
+	 * @return array Translated tax queries.
 	 */
 	protected function translate_tax_query_recursive( $tax_queries ) {
 		foreach ( $tax_queries as $key => $q ) {

@@ -37,6 +37,13 @@ if ( ! empty( $vars ) && is_callable( 'FrmStylesHelper::output_vars' ) ) {
 	display:inline;
 }
 
+<?php if ( function_exists( 'twenty_twenty_one_setup' ) ) : ?>
+	body:not(.wp-admin) .frm_time_select {
+		padding-left: var(--form--spacing-unit) !important;
+		padding-right: calc(3 * var(--form--spacing-unit)) !important;
+	}
+<?php endif; ?>
+
 /* Sections */
 
 .with_frm_style .frm-show-form  .frm_section_heading h3{
@@ -55,6 +62,25 @@ if ( ! empty( $vars ) && is_callable( 'FrmStylesHelper::output_vars' ) ) {
 	border:none<?php echo esc_html( $important ); ?>;
 	background-color:<?php echo esc_html( $defaults['section_bg_color'] ); ?>;
 	background-color:var(--section-bg-color)<?php echo esc_html( $important ); ?>;
+}
+
+.frm_trigger .frmsvg {
+	width: 20px;
+	height: 20px;
+}
+
+.frm_trigger > svg.frmsvg:nth-child(1) {
+	display:inline-block;
+}
+.frm_trigger > svg.frmsvg:nth-child(2) {
+	display:none;
+}
+
+.frm_trigger.active > svg.frmsvg:nth-child(2) {
+	display:inline-block;
+}
+.frm_trigger.active > svg.frmsvg:nth-child(1) {
+	display:none;
 }
 
 .with_frm_style .frm_repeat_sec{
@@ -121,6 +147,15 @@ if ( ! empty( $vars ) && is_callable( 'FrmStylesHelper::output_vars' ) ) {
 .frm_form_fields .frm_section_heading.frm_hidden {
 	display: none;
 }
+.frm_repeat_buttons a.frm_remove_form_row,
+.frm_repeat_buttons a.frm_add_form_row {
+	line-height: 1.8;
+}
+.frm_form_field.frm_repeat_buttons .frm_remove_form_row:not(.frm_button) svg.frm-svg-icon,
+.frm_form_field.frm_repeat_buttons .frm_add_form_row:not(.frm_button) svg.frm-svg-icon {
+	fill: <?php echo esc_html( $defaults['submit_text_color'] . $important ); ?>;
+	fill: var(--submit-text-color) <?php echo esc_html( $important ); ?>;
+}
 
 .frm_repeat_inline .frm_repeat_buttons a.frm_icon_font{
 	vertical-align: sub;
@@ -128,6 +163,11 @@ if ( ! empty( $vars ) && is_callable( 'FrmStylesHelper::output_vars' ) ) {
 
 .frm_repeat_inline .frm_repeat_buttons a.frm_icon_font:before{
     vertical-align: text-top;
+}
+
+.frm_repeat_buttons .frmsvg {
+	width: 20px;
+	height: 20px;
 }
 
 .frm_repeat_grid .frm_button,
@@ -264,6 +304,7 @@ if ( ! empty( $vars ) && is_callable( 'FrmStylesHelper::output_vars' ) ) {
 <?php
 $use_default_date = ( empty( $defaults['theme_css'] ) || 'ui-lightness' === $defaults['theme_css'] );
 $datepicker_class = FrmProFieldsHelper::get_datepicker_class();
+$arrow_up         = FrmProStylesController::base64_encode_image( FrmProAppHelper::plugin_path() . '/images/arrowup.svg', 'image/svg+xml' );
 ?>
 
 .<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-title select.ui-datepicker-month,
@@ -324,6 +365,30 @@ $datepicker_class = FrmProFieldsHelper::get_datepicker_class();
 }
 <?php } ?>
 
+.<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-prev:before{
+	background-image: url( <?php echo $arrow_up; ?> );
+	content: '' !important;
+}
+
+.<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-prev:before, .<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-next:before{
+	position: absolute;
+	top: 10px;
+	left: 6px;
+}
+
+.<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-next:before{
+	background-image: url( <?php echo $arrow_up; ?> );
+	content: '' !important;
+}
+
+.<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-prev{
+	transform: rotate(-90deg) !important;
+}
+
+.<?php echo esc_html( $datepicker_class ); ?> .ui-datepicker-next{
+	transform: rotate(90deg) !important;
+}
+
 /* Graphs */
 .google-visualization-tooltip-item-list,
 .google-visualization-tooltip-item-list .google-visualization-tooltip-item:first-child {
@@ -348,12 +413,6 @@ $datepicker_class = FrmProFieldsHelper::get_datepicker_class();
 	margin:0;
 }
 
-.with_frm_style .frm_radio input[type=radio]:checked:before,
-.with_frm_style .frm_scale input[type=radio]:checked:before,
-.with_frm_style .frm_checkbox input[type=checkbox]:checked:before {
-	box-shadow: inset 10px 10px var(--progress-active-bg-color);
-}
-
 .with_frm_style .frm_scale input[type=radio]:checked:before {
 	transform: scale(1);
 }
@@ -362,33 +421,31 @@ $datepicker_class = FrmProFieldsHelper::get_datepicker_class();
 
 .frm-star-group input {
 	opacity: 0;
-	position: absolute;
+	position: absolute !important;
 	z-index: -1;
 }
 
-.frm-star-group .star-rating,
-.frm-star-group input + label {
-	float:left;
+.frm-star-group .frmsvg,
+.frm-star-group input + label.star-rating {
+	float:none;
 	width:25px;
 	height:25px;
 	font-size:25px;
 	line-height:1;
 	cursor:pointer;
-	display:block;
 	background:transparent;
 	overflow:hidden !important;
 	clear:none;
 	font-style:normal;
-	margin-right:5px;
+	display: inline;
 }
 
-.frm-star-group input + label:before,
-.frm-star-group .star-rating:before{
-	font-family:'s11-fp';
-	content:'\e9d7';
-	color:#F0AD4E;
-	display: inline-block;
-	vertical-align: top;
+.frm-star-group .frmsvg {
+	fill: #F0AD4E;
+}
+
+.frm-star-group input + label.star-rating:before {
+	content: '';
 }
 
 .frm-star-group input[type=radio]:checked + label:before,
@@ -396,21 +453,31 @@ $datepicker_class = FrmProFieldsHelper::get_datepicker_class();
 	color:#F0AD4E;
 }
 
-.frm-star-group:not(.frm-star-hovered) input[type=radio]:checked + label:before,
-.frm-star-group input + label:hover:before,
-.frm-star-group:hover input + label:hover:before,
-.frm-star-group .star-rating-on:before,
-.frm-star-group .star-rating-hover:before{
-	content:'\e9d9';
+.frm-star-group:not(.frm-star-hovered) input[type=radio]:checked + label,
+.frm-star-group input + label:hover,
+.frm-star-group:hover input + label:hover ,
+.frm-star-group .star-rating-on,
+.frm-star-group .star-rating-hover {
 	color:#F0AD4E;
-}
-
-.frm-star-group .frm_half_star:before{
-	content:'\e9d8';
 }
 
 .frm-star-group .star-rating-readonly{
 	cursor:default !important;
+}
+
+.frm-star-group > svg + svg {
+	margin-left: 5px;
+}
+
+.frm-star-group .star-rating .frmsvg:last-of-type,
+.frm-star-group .star-rating-on .frmsvg:first-of-type,
+.frm-star-group .star-rating-hover .frmsvg:first-of-type {
+	display: none;
+}
+
+.frm-star-group .star-rating-on .frmsvg:last-of-type,
+.frm-star-group .star-rating-hover .frmsvg:last-of-type {
+	display: inline;
 }
 
 /* Other input */
@@ -791,15 +858,26 @@ $text_color = '#ffffff' . $important;
 	background-color:var(--bg-color) <?php echo esc_html( $important ); ?>;
 }
 
-.with_frm_style .frm_dropzone .frm_upload_icon:before,
+.with_frm_style .frm_dropzone .frm_upload_icon,
 .with_frm_style .frm_dropzone .dz-remove{
 	color: <?php echo esc_html( $defaults['text_color'] ); ?>;
 	color: var(--text-color) <?php echo esc_html( $important ); ?>;
 }
 
-.with_frm_style .frm_compact .frm_dropzone .frm_upload_icon:before {
+.with_frm_style .frm_compact .frm_dropzone .frm_upload_icon {
 	color: <?php echo esc_html( $defaults['submit_text_color'] . $important ); ?>;
 	color: var(--submit-text-color) <?php echo esc_html( $important ); ?>;
+}
+
+.with_frm_style .frm_dropzone .frmsvg {
+	width: 40px;
+	height: 40px;
+}
+
+.with_frm_style .frm_dropzone .frm_remove_link .frmsvg {
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
 }
 
 .with_frm_style .frm_blank_field .frm_dropzone{
@@ -1032,6 +1110,8 @@ input[type="checkbox"]:checked + .frm_image_option_container .frm_selected_check
 }
 
 .frm-pass-req, .frm-pass-verified {
+    display: flex;
+    align-items: center;
     float: left;
     width: 20%;
     line-height: 20px;
@@ -1040,18 +1120,18 @@ input[type="checkbox"]:checked + .frm_image_option_container .frm_selected_check
     min-width: 175px;
 }
 
-.frm-pass-req:before, .frm-pass-verified:before {
-    padding-right: 4px;
-    font-size: 12px !important;
-    vertical-align: middle !important;
+.frm-pass-req .frmsvg, .frm-pass-verified .frmsvg {
+	width: 12px;
+	height: 12px;
+	padding-right: 4px;
 }
 
-span.frm-pass-verified::before {
-    content: '\e606';
+.passed_svg, .failed_svg {
+    display: none !important;
 }
-
-span.frm-pass-req::before {
-    content: '\e608';
+.frm-pass-verified .passed_svg,
+.frm-pass-req .failed_svg {
+    display: inline-block !important;
 }
 
 div.frm-password-strength {
@@ -1267,6 +1347,27 @@ ul.frm_inline_list li{
 	box-shadow:0 0 5px 1px rgba(0,0,0,0.075);
 <?php } ?>
 }
+/* Repeater Fields */
+.with_frm_style .frm_repeat_sec .frm_form_field.frm_repeat_buttons .frm-svg-icon {
+	fill:<?php echo esc_html( $defaults['repeat_icon_color'] . $important ); ?>;
+	fill:var(--repeat-icon-color)<?php echo esc_html( $important ); ?>;
+}
+.frm_style_frm_style_template .frm_form_field.frm_repeat_buttons .frm-svg-icon {
+	fill: var(--submit-text-color)!important;
+}
+.frm_remove_form_row:hover,
+.frm_add_form_row:hover {
+	background: var(--submit-hover-bg-color);
+	border-color: var(--submit-hover-border-color);
+	color: var(--submit-hover-color);
+}
+.frm_repeat_sec .frm_form_field.frm_repeat_buttons .frm_add_form_row:hover svg.frm-svg-icon,
+.frm_repeat_sec .frm_form_field.frm_repeat_buttons .frm_remove_form_row:hover svg.frm-svg-icon,
+.frm_repeat_sec .frm_form_field.frm_repeat_buttons .frm_add_form_row:hover svg.frmsvg,
+.frm_repeat_sec .frm_form_field.frm_repeat_buttons .frm_remove_form_row:hover svg.frmsvg {
+	fill: var(--submit-hover-color);
+}
+/* End Repeater Fields */
 
 .frm_tiles h3{
 	margin-top:5px;
@@ -1282,7 +1383,6 @@ ul.frm_inline_list li{
 .frm_slidein .frm_form_fields  > fieldset{
 	animation-name: frmSlideInRight;
 	animation-duration: 1s;
-	animation-fill-mode: both;
 }
 
 .frm_slidein.frm_going_back .frm_form_fields  > fieldset {

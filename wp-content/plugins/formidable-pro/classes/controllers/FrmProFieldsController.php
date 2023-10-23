@@ -59,7 +59,11 @@ class FrmProFieldsController {
 			return;
 		}
 
-		if ( FrmProForm::is_ajax_on( $form ) && FrmAppHelper::doing_ajax() && empty( $frm_vars['inplace_edit'] ) ) {
+		/**
+		 * We should always pass this check for 'range' field to avoid an issue for ajax
+		 * form submission in multi-page forms when slider is formatted as currency.
+		 */
+		if ( $field['type'] !== 'range' && FrmProForm::is_ajax_on( $form ) && FrmAppHelper::doing_ajax() && empty( $frm_vars['inplace_edit'] ) ) {
 			return;
 		}
 
@@ -95,9 +99,9 @@ class FrmProFieldsController {
 	}
 
 	public static function build_field_class( $classes, $field ) {
-		if ( 'inline' == $field['conf_field'] ) {
+		if ( 'inline' === $field['conf_field'] ) {
 			$classes .= ' frm_conf_inline';
-		} else if ( 'below' == $field['conf_field'] ) {
+		} elseif ( 'below' === $field['conf_field'] ) {
 			$classes .= ' frm_conf_below';
 		}
 
@@ -117,7 +121,24 @@ class FrmProFieldsController {
 
 		$classes = str_replace( ' frmstart ', ' frmstart ' . $columns . ' ', $classes );
 
+		self::add_pro_field_class( $field, $classes );
+
 		return $classes;
+	}
+
+	/**
+	 * @since 6.5.1
+	 *
+	 * @param array  $field
+	 * @param string $classes
+	 *
+	 * @return void
+	 */
+	private static function add_pro_field_class( $field, &$classes ) {
+		$pro_fields = FrmField::pro_field_selection();
+		if ( isset( $pro_fields[ $field['type'] ] ) && FrmProAddonsController::is_expired_outside_grace_period() ) {
+			$classes .= ' frm_noallow frm_show_upgrade frm_show_expired_modal';
+		}
 	}
 
 	public static function input_html( $field, $echo = true ) {
@@ -518,6 +539,16 @@ class FrmProFieldsController {
 
 		if ( ! isset( $atts['display']['autopopulate'] ) || ! $atts['display']['autopopulate'] ) {
 			unset( $types['get_values_field'] );
+		}
+
+		// In-product education for Date calculation.
+		if ( ! function_exists( 'frm_dates_autoloader' ) && isset( $atts['display']['type'] ) && 'date' === $atts['display']['type'] ) {
+			$types['date_calc'] = array(
+				'class' => 'frm_noallow',
+				'title' => __( 'Default Value (Date Calculation)', 'formidable-pro' ),
+				'icon'  => 'frm_icon_font frm_calculator_icon',
+				'data'  => FrmProFieldDate::get_dates_add_on_upgrade_link_data(),
+			);
 		}
 
 		return $types;
@@ -1886,6 +1917,33 @@ class FrmProFieldsController {
 	 * @return array
 	 */
 	public static function change_radio_display_format_args( $args, array $method_args ) {
+		return self::change_field_display_format_args( $args, $method_args );
+	}
+
+	/**
+	 * Changes arguments of Display format setting of Checkbox field.
+	 *
+	 * @since 6.4.1
+	 *
+	 * @param array $args        The arguments.
+	 * @param array $method_args The arguments from the method. Contains `field`, `options`.
+	 * @return array
+	 */
+	public static function change_checkbox_display_format_args( $args, $method_args ) {
+		return self::change_field_display_format_args( $args, $method_args );
+	}
+
+	/**
+	 * Changes arguments of Display format setting of a field.
+	 *
+	 * @since 6.4.1
+	 *
+	 * @param array $args        The arguments.
+	 * @param array $method_args The arguments from the method. Contains `field`, `options`.
+	 *
+	 * @return array
+	 */
+	private static function change_field_display_format_args( $args, $method_args ) {
 		$field            = $method_args['field'];
 		$args['selected'] = ! empty( $field['image_options'] ) ? '1' : '0';
 

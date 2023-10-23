@@ -115,6 +115,42 @@ class FrmProFieldRte extends FrmFieldType {
 	}
 
 	/**
+	 * Enqueues missing media gallery scripts, that happens when 'wp_editor()' is called in post edit page.
+	 * Related issue: #4392
+	 * Otherwise the featured image pop up is broken when previewing a rich text field in the Gutenberg editor.
+	 *
+	 * @since 6.5
+	 *
+	 * @return void
+	 */
+	public static function enqueue_missing_media_gallery_scripts() {
+		global $pagenow;
+		if ( 'post.php' !== $pagenow ) {
+			return;
+		}
+
+		if ( wp_script_is( 'media-audiovideo', 'enqueued' ) && wp_style_is( 'media-views', 'enqueued' ) ) {
+			return;
+		}
+
+		global $frm_vars;
+
+		if ( empty( $frm_vars['forms_loaded'] ) ) {
+			return;
+		}
+
+		$forms_loaded = array_filter( $frm_vars['forms_loaded'], 'is_object' );
+
+		$forms_loaded = array_unique( wp_list_pluck( $forms_loaded, 'id' ) );
+		$rte_fields   = FrmDb::get_var( 'frm_fields', array( 'form_id' => $forms_loaded, 'type' => 'rte' ), 'id' );
+		if ( ! $rte_fields ) {
+			return;
+		}
+		wp_enqueue_style( 'media-views' );
+		wp_enqueue_script( 'media-audiovideo' );
+	}
+
+	/**
 	 * If submitting with Ajax or on preview page and tinymce is not loaded yet, load it now
 	 */
 	protected function load_field_scripts( $args ) {

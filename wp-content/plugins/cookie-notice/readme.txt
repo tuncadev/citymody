@@ -4,7 +4,7 @@ Tags: gdpr, ccpa, cookies, consent, compliance, privacy
 Requires at least: 4.9.6
 Requires PHP: 5.4
 Tested up to: 6.3
-Stable tag: 2.4.10
+Stable tag: 2.4.11.1
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -120,6 +120,13 @@ Yes! The plugin + web appliaction version includes technical compliance features
 4. Cookie Compliance settings
 
 == Changelog ==
+
+= 2.4.11 =
+* New: Dedicated Consent Logs page
+* New: Google AMP support for Cookie Compliance
+* New: Settings navigation through tabs and menu items
+* Fix: Saving App ID/Key not working in edge cases
+* Tweak: Chart.js updated to 4.4.0
 
 = 2.4.10 =
 * New: Option to enable/disable caching compatibility
@@ -478,5 +485,5 @@ Initial release
 
 == Upgrade Notice ==
 
-= 2.4.10 =
-New: Option to enable/disable caching compatibility, WP Fastest Cache plugin compatibility, Fix: Potential security issue with purging cache
+= 2.4.11.1 =
+Dedicated Consent Logs page, Google AMP support for Cookie Compliance, Settings navigation through tabs and menu items

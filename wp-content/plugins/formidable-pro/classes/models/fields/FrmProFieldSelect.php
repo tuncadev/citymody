@@ -33,8 +33,9 @@ class FrmProFieldSelect extends FrmFieldSelect {
 		if ( ! isset( $field['post_field'] ) || $field['post_field'] !== 'post_category' ) {
 			include( FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/back-end/other-option.php' );
 			include( FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/back-end/separate-values.php' );
-			include( FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/back-end/multi-select.php' );
 		}
+
+		include( FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/back-end/multi-select.php' );
 
 		parent::show_extra_field_choices( $args );
 	}

@@ -47,6 +47,11 @@ class FrmProFileField {
 	private static $added_xlsx_filter = false;
 
 	/**
+	 * @var int The maximum number of chars allowed for the 'post_name' field.
+	 */
+	private static $post_name_limit = 200;
+
+	/**
 	 * @param array $field (no array for field options)
 	 * @param array $atts
 	 */
@@ -983,7 +988,7 @@ class FrmProFileField {
 
 		$field                = self::$active_upload_field;
 		$upload_dir           = self::get_upload_dir_for_form( $field->form_id );
-		$is_in_formidable_dir = 0 === strpos( $meta_value, $upload_dir );
+		$is_in_formidable_dir = '' !== $upload_dir && 0 === strpos( $meta_value, $upload_dir );
 
 		if ( $is_in_formidable_dir ) {
 			self::$new_temporary_file_ids[] = $object_id;
@@ -1094,7 +1099,7 @@ class FrmProFileField {
 	private static function maybe_truncate_long_file_name( $name ) {
 		$max_filename_length = apply_filters( 'frm_max_filename_length', 100, compact( 'name' ) );
 
-		if ( strlen( $name ) < $max_filename_length ) {
+		if ( strlen( $name ) < $max_filename_length && strlen( rawurlencode( $name ) ) <= self::$post_name_limit ) {
 			return $name;
 		}
 
@@ -1102,8 +1107,33 @@ class FrmProFileField {
 		$extension = array_pop( $split );
 		$name      = implode( '.', $split );
 		$name      = substr( $name, 0, $max_filename_length - strlen( $extension ) - 1 );
+
+		self::check_filename_against_max_post_name( $name, $extension );
+
 		return $name . '.' . $extension;
 	}
+
+	/**
+	 * Checks a file name against WP post_name limit and truncates it if needed.
+	 *
+	 * @since 6.4
+	 *
+	 * @param string $name
+	 * @param string $extension
+	 *
+	 * @return void
+	 */
+	private static function check_filename_against_max_post_name( &$name, $extension ) {
+		$max_name_part_length = self::$post_name_limit - strlen( $extension ) - 1;
+		$encoded_name_length  = strlen( rawurlencode( $name ) );
+
+		while ( $encoded_name_length > $max_name_part_length ) {
+			$name                = mb_substr( $name, 0, -1 );
+			$encoded_name        = rawurlencode( $name );
+			$encoded_name_length = strlen( $encoded_name );
+		}
+	}
+
 
 	/**
 	 * @param string|array $file_id Index (or array of Indices) of the $_FILES array that the file was sent.

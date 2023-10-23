@@ -35,7 +35,7 @@
 			children: [
 				img({ src: getProPluginUrl() + '/images/expired.svg' }),
 				tag( 'h3', __( 'Your account license has expired', 'formidable-pro' ) ),
-				div( __( 'In order to access more Pro features, please renew your subscription.', 'formidable-pro' ) ),
+				div( __( 'In order to access Pro features, please renew your subscription.', 'formidable-pro' ) ),
 				tag( 'br' ),
 				div({
 					child: footerButton({

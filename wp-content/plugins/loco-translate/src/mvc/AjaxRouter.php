@@ -17,8 +17,8 @@ class Loco_mvc_AjaxRouter extends Loco_hooks_Hookable {
 
     /**
      * Generate a GET request URL containing required routing parameters
-     * @param string
-     * @param array
+     * @param string $route
+     * @param array $args
      * @return string
      */
     public static function generate( $route, array $args = [] ){
@@ -66,7 +66,7 @@ class Loco_mvc_AjaxRouter extends Loco_hooks_Hookable {
 
     
     /**
-     * @param string
+     * @param string $route
      * @return string
      */
     private static function routeToClass( $route ){
@@ -164,6 +164,7 @@ class Loco_mvc_AjaxRouter extends Loco_hooks_Hookable {
             // respond with deferred failure from initAjax
             if( ! $this->ctrl ){
                 $route = isset($_REQUEST['route']) ? $_REQUEST['route'] : '';
+                // translators: Fatal error where %s represents an unexpected value
                 throw new Loco_error_Exception( sprintf( __('Ajax route not found: "%s"','loco-translate'), $route ) );
             }
             // else execute controller to get json output
@@ -173,11 +174,11 @@ class Loco_mvc_AjaxRouter extends Loco_hooks_Hookable {
             }
         }
         catch( Loco_error_Exception $e ){
-            $json = json_encode( [ 'error' => $e->jsonSerialize(), 'notices' => Loco_error_AdminNotices::destroyAjax() ] );
+            $json = json_encode( [ 'error' => $e->jsonSerialize(), 'notices' => Loco_error_AdminNotices::destroy() ] );
         }
         catch( Exception $e ){
             $e = Loco_error_Exception::convert($e);
-            $json = json_encode( [ 'error' => $e->jsonSerialize(), 'notices' => Loco_error_AdminNotices::destroyAjax() ] );
+            $json = json_encode( [ 'error' => $e->jsonSerialize(), 'notices' => Loco_error_AdminNotices::destroy() ] );
         }
         $this->buffer->discard();
         return $json;

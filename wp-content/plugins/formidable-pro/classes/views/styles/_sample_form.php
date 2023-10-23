@@ -2,6 +2,12 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'You are not allowed to call this page directly.' );
 }
+
+FrmAppHelper::include_svg();
+$svg_args = array(
+	'width'  => '1em',
+	'height' => '1em',
+);
 ?>
 <div class="frm_form_field frm_section_heading form-field frm_half frm_first">
 	<h3 class="frm_pos_top frm_section_spacing"><?php esc_html_e( 'Repeatable Section', 'formidable-pro' ); ?></h3>
@@ -41,11 +47,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
             <div class="frm_form_field frm_repeat_buttons frm_hidden_container">
 				<a href="javascript:void(0)" class="frm_button frm_add_form_row">
-					<i class="frm_icon_font frm_plus_icon"> </i>
+					<?php FrmAppHelper::icon_by_class( 'frmfont frm_plus1_icon', $svg_args ); ?>
 					<?php esc_html_e( 'Add', 'formidable-pro' ); ?>
 				</a>
 				<a href="javascript:void(0)" class="frm_button frm_remove_form_row">
-					<i class="frm_icon_font frm_minus_icon"> </i>
+					<?php FrmAppHelper::icon_by_class( 'frmfont frm_minus1_icon', $svg_args ); ?>
 					<?php esc_html_e( 'Remove', 'formidable-pro' ); ?>
 				</a>
             </div>

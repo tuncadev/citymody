@@ -99,7 +99,8 @@ function frmProFormJS() {
 	}
 
 	function toggleSection( e ) {
-		var arrow;
+		var useTag, oldIcon,
+			attrNS = 'http://www.w3.org/1999/xlink';
 
 		if ( e.key !== undefined ) {
 			if ( e.key !== ' ' ) {
@@ -113,14 +114,14 @@ function frmProFormJS() {
 
 		/*jshint validthis:true */
 		jQuery( this ).parent().children( '.frm_toggle_container' ).slideToggle( 'fast' );
-		arrow = jQuery( this ).children( '.frm_arrow_icon' );
 
 		if ( -1 !== this.className.indexOf( 'active' ) ) {
 			this.className = this.className.replace( ' active', '' );
-			arrow.attr( 'aria-expanded', 'false' );
+			this.setAttribute( 'aria-expanded', 'false' );
+
 		} else {
 			this.className += ' active';
-			arrow.attr( 'aria-expanded', 'true' );
+			this.setAttribute( 'aria-expanded', 'true' );
 		}
 	}
 
@@ -262,11 +263,7 @@ function frmProFormJS() {
 
 				this.on( 'sending', function( file, xhr, formData ) {
 
-					if ( ! anyPrecedingRequiredFieldsCompleted( uploadFields[ i ], selector ) ) {
-						this.removeFile( file );
-						alert( frm_js.empty_fields );
-						return false;
-					} else if ( isSpam( uploadFields[ i ].parentFormID, uploadField.checkHoneypot ) ) {
+					if ( isSpam( uploadFields[ i ].parentFormID, uploadField.checkHoneypot ) ) {
 						this.removeFile( file );
 						alert( frm_js.file_spam );
 						return false;
@@ -454,7 +451,9 @@ function frmProFormJS() {
 		'<div class="dz-filename"><span data-dz-name></span></div>\n' +
 		' ' + // add white space between file name and file size.
 		'<div class="dz-size"><span data-dz-size></span></div>\n' +
-		'<a class="dz-remove frm_icon_font frm_cancel1_icon" href="javascript:undefined;" data-dz-remove title="' + field.remove + '"></a>' +
+		'<a class="dz-remove frm_remove_link" href="javascript:undefined;" data-dz-remove title="' + field.remove + '">' +
+		'<svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm3.6-13L10 8.6 6.4 5 5 6.4 8.6 10 5 13.6 6.4 15l3.6-3.6 3.6 3.6 1.4-1.4-3.6-3.6L15 6.4z"/></svg>' +
+		'</a>' +
 		'</div>\n' +
 		'<div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>\n' +
 		'<div class="dz-error-message"><span data-dz-errormessage></span></div>\n' +
@@ -534,60 +533,6 @@ function frmProFormJS() {
 			window.emit || //couchjs
 			window.spawn  //rhino
 		);
-	}
-
-	/**
-	 * Check that at least one preceding required field is complete
-	 *
-	 * @since 2.03.08
-	 *
-	 * @param {object} uploadField
-	 * @param {string} uploadField.htmlID
-	 * @param {string} uploadField.fieldID
-	 * @returns {boolean}
-	 */
-	function anyPrecedingRequiredFieldsCompleted( uploadField, fileSelector ) {
-		var prevPage, requiredFields,
-			fieldsComplete = true,
-			dropzoneDiv = jQuery( fileSelector ),
-			form = dropzoneDiv.closest( 'form' );
-
-		if ( form.length < 1 ) {
-			return false;
-		}
-
-		prevPage = form.find( 'input[name="frm_prev_page"]' );
-		if ( prevPage.length ) {
-			// Only check if on the first page of the form.
-			return true;
-		}
-
-		requiredFields = jQuery( form ).find(
-			'.frm_required_field:visible input, .frm_required_field:visible select, .frm_required_field:visible textarea, ' + fileSelector
-		);
-
-		if ( requiredFields.length < 1 ) {
-			return true;
-		} else {
-			for ( var r = 0, rl = requiredFields.length; r < rl; r++ ) {
-				if ( '#' + requiredFields[ r ].id === fileSelector ) {
-					break;
-				}
-
-				if ( requiredFields[ r ].className.indexOf( 'frm_optional' ) > -1 || requiredFields[ r ].getAttribute( 'data-frmfile' ) !== null ) {
-					continue;
-				}
-
-				if ( frmFrontForm.checkRequiredField( requiredFields[ r ], []).length < 1 ) {
-					fieldsComplete = true;
-					break;
-				} else {
-					fieldsComplete = false;
-				}
-			}
-
-			return fieldsComplete;
-		}
 	}
 
 	/**
@@ -3742,7 +3687,9 @@ function frmProFormJS() {
 		total = '';
 		dec = '';
 
-		if ( thisCalc.calc_type === 'text' ) {
+		if ( 'function' === typeof window[ 'frmProGetCalcTotal' + thisCalc.calc_type ]) {
+			total = window[ 'frmProGetCalcTotal' + thisCalc.calc_type ].call( thisCalc, thisFullCalc );
+		} else if ( thisCalc.calc_type === 'text' ) {
 			total = thisFullCalc;
 		} else {
 			// Set the number of decimal places
@@ -3807,6 +3754,11 @@ function frmProFormJS() {
 		if ( ! updatedTotal ) {
 			totalField.val( total );
 		}
+
+		triggerEvent( document, 'frmCalcUpdatedTotal', {
+			totalField: totalField,
+			total: total
+		});
 
 		if ( triggerField === null || typeof triggerField === 'undefined' || totalField.attr( 'name' ) != triggerField.attr( 'name' ) ) {
 			triggerChange( totalField, fieldKey );
@@ -3874,13 +3826,8 @@ function frmProFormJS() {
 
 			field = getCallForField( field, allCalcs );
 
-			if ( thisCalc.calc_type === 'text' ) {
-				field.valKey = 'text' + field.valKey;
-				vals = getTextCalcFieldId( field, vals );
-				if ( typeof vals[ field.valKey ] === 'undefined' ) {
-					vals[ field.valKey ] = '';
-				}
-			} else {
+			if ( ! thisCalc.calc_type ) {
+				// Math calc type.
 				field.valKey = 'num' + field.valKey;
 				vals = getCalcFieldId( field, allCalcs, vals );
 
@@ -3897,6 +3844,13 @@ function frmProFormJS() {
 					}
 				} else if ( 0 === vals[ field.valKey ] && field.thisField.type === 'date' && dateValueShouldBeClearedForDateCalculation( field, fieldInfo ) ) {
 					thisFullCalc = '';
+				}
+			} else {
+				// Text calc type.
+				field.valKey = 'text' + field.valKey;
+				vals = getTextCalcFieldId( field, vals );
+				if ( typeof vals[ field.valKey ] === 'undefined' ) {
+					vals[ field.valKey ] = '';
 				}
 			}
 
@@ -4705,6 +4659,10 @@ function frmProFormJS() {
 	/** Repeating Fields **/
 
 	function removeRow() {
+		if ( ! confirmRowRemoval() ) {
+			return;
+		}
+
 		/*jshint validthis:true */
 		var rowNum = jQuery( this ).data( 'key' ),
 			sectionID = jQuery( this ).data( 'parent' ),
@@ -4745,6 +4703,13 @@ function frmProFormJS() {
 		});
 
 		return false;
+	}
+
+	function confirmRowRemoval() {
+		if ( ! frm_js.repeaterRowDeleteConfirmation ) {
+			return true;
+		}
+		return confirm( frm_js.repeaterRowDeleteConfirmation );
 	}
 
 	function hideAddButton( sectionID ) {
@@ -5163,7 +5128,7 @@ function frmProFormJS() {
 
 	function updateStars( hovered ) {
 		var starGroup = hovered.parentElement,
-			stars = starGroup.childNodes,
+			stars = starGroup.children,
 			current = parseInt( hovered.value ),
 			starClass = 'star-rating',
 			selectLabel = false;
@@ -5171,7 +5136,7 @@ function frmProFormJS() {
 		starGroup.className += ' frm-star-hovered';
 
 		for ( var i = 0; i < stars.length; i++ ) {
-			if ( typeof stars[ i ].className !== 'undefined' && stars[ i ].className.indexOf( starClass ) > -1 ) {
+			if ( stars[ i ].matches( '.' + starClass ) ) {
 				if ( selectLabel ) {
 					stars[ i ].className += ' star-rating-hover';
 				} else {
@@ -5188,12 +5153,13 @@ function frmProFormJS() {
 		var input = this.previousSibling,
 			starGroup = input.parentElement;
 		starGroup.classList.remove( 'frm-star-hovered' );
-		var stars = starGroup.childNodes;
+		var stars = starGroup.children;
 		var selected = jQuery( starGroup ).find( 'input:checked' ).attr( 'id' );
 		var isSelected = '';
+		var starClass = 'star-rating';
 
 		for ( var i = stars.length - 1; i > 0; i-- ) {
-			if ( typeof stars[ i ].className !== 'undefined' && stars[ i ].className.indexOf( 'star-rating' ) > -1 ) {
+			if ( stars[ i ].matches( '.' + starClass ) ) {
 				stars[ i ].classList.remove( 'star-rating-hover' );
 				if ( isSelected === '' && typeof selected !== 'undefined' && stars[ i ].getAttribute( 'for' ) == selected ) {
 					isSelected = ' star-rating-on';
@@ -6094,11 +6060,22 @@ function frmProFormJS() {
 		 * @param {HTMLElement} formEl Form element.
 		 */
 		function resetInputs( formEl ) {
+			var inputs = getInputs( formEl );
+
+			// Remove repeater sections.
 			document.querySelectorAll( '.frm_repeat_sec:not(:first-of-type)' ).forEach( function( el ) {
 				el.remove();
 			});
 
-			clearValueForInputs( getInputs( formEl ), '', true );
+			// Clear field value.
+			clearValueForInputs( inputs, '', true );
+
+			// Remove "disabled" attribute added by limit selections option.
+			inputs.forEach( function( input ) {
+				if ( input.disabled && input.getAttribute( 'data-frmlimit' ) ) {
+					input.removeAttribute( 'disabled' );
+				}
+			});
 		}
 
 		/**
@@ -6245,6 +6222,7 @@ function frmProFormJS() {
 			rootlineSteps = listWrapper.children;
 
 			wrappingElementsCount = countOverflowPages( rootlineSteps );
+
 			if ( ! wrappingElementsCount ) {
 				continue;
 			}
@@ -6306,7 +6284,7 @@ function frmProFormJS() {
 	}
 
 	function moveRootlineTitles( hiddenStepsWrapper, listWrapper, showMoreButton ) {
-		var currentPageTitle, currentStepTitle, rootlineGroup, rootlineCurrentStep,
+		var currentPageTitle, currentStepTitle, rootlineGroup,
 			activeHiddenStepLink = hiddenStepsWrapper.querySelector( 'input:not(.frm_page_back):not(.frm_page_skip)' );
 
 		if ( activeHiddenStepLink ) {
@@ -6314,6 +6292,7 @@ function frmProFormJS() {
 
 			maybeUpdateRootlineTitles( activeHiddenStepLink.parentElement.previousElementSibling, hiddenStepsWrapper );
 
+			showMoreButton.parentElement.className += ' active';
 			showMoreButton.className += ' active';
 		} else {
 			currentPageTitle = listWrapper.querySelector( '.frm_current_page' ).querySelector( '.frm_rootline_title' );
@@ -6330,14 +6309,15 @@ function frmProFormJS() {
 
 		// Add current step on top of rootline bar.
 		rootlineGroup = listWrapper.closest( '.frm_rootline_group' );
-		if ( ! rootlineGroup.querySelector( '.frm_rootline_bar_top_text' ) ) {
-			rootlineCurrentStep = document.createElement( 'span' );
-			rootlineCurrentStep.className = 'frm_rootline_bar_top_text frm_rootline_title';
-			rootlineCurrentStep.textContent = currentStepTitle;
-			rootlineGroup.insertBefore( rootlineCurrentStep, rootlineGroup.querySelector( '.frm_page_bar' ) );
-		} else {
-			rootlineGroup.firstChild.textContent = currentStepTitle;
-		}
+
+		showCurrentHiddenStepText( currentStepTitle );
+	}
+
+	function showCurrentHiddenStepText( currentStepTitle ) {
+		var rootlineCurrentStep = document.createElement( 'span' );
+		rootlineCurrentStep.className = 'frm_rootline_title';
+		rootlineCurrentStep.textContent = currentStepTitle;
+		document.querySelector( '.frm_rootline_show_hidden_steps_btn' ).appendChild( rootlineCurrentStep );
 	}
 
 	function copyRootlines( listWrappers ) {
@@ -6519,7 +6499,7 @@ function frmProFormJS() {
 	/**
 	 * Does the same as jQuery( document ).on( 'event', 'selector', handler ).
 	 *
-	 * @since 6.x
+	 * @since 6.3.1
 	 *
 	 * @param {String}         event    Event name.
 	 * @param {String}         selector Selector.
@@ -6542,6 +6522,28 @@ function frmProFormJS() {
 				}
 			}
 		}, options );
+	}
+
+	/**
+	 * @since 6.5.1
+	 */
+	function handleElementorPopupConflicts() {
+		var elementorPopupWrapper = document.querySelector( '.elementor-popup-modal' );
+
+		if ( null !== elementorPopupWrapper ) {
+			// Make dropzone items clickable.
+			elementorPopupWrapper.querySelectorAll( '.frm_dropzone' ).forEach( function( item ) {
+				item.classList.remove( 'dz-clickable' );
+			});
+
+			// Remove field chosen containers.
+			elementorPopupWrapper.querySelectorAll( '.frm_form_field .chosen-container' ).forEach( function( chosenContainer ) {
+				chosenContainer.remove();
+			});
+		}
+
+		loadDropzones();
+		loadChosen();
 	}
 
 	return {
@@ -6605,6 +6607,9 @@ function frmProFormJS() {
 					jQuery( this ).next( '.frm_toggle_container' ).hide();
 				}
 			});
+
+			// Elementor popup show event. Fix Elementor Popup && FF PRO fields( file upload | dynamic field ) conflicts
+			jQuery( document ).on( 'elementor/popup/show', handleElementorPopupConflicts );
 
 			addTopAddRowBtnForRepeater();
 

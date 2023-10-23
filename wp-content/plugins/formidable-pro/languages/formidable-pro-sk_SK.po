@@ -1,0 +1,306 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-09-20T16:33:33+00:00\n"
+"PO-Revision-Date: 2023-09-20 16:01:26+0000\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n >= 2 && n <= 4) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0\n"
+
+#: classes/models/fields/FrmProFieldFile.php:98
+#, gp-priority: high
+msgid "Choose File"
+msgstr "Vybrať súbor"
+
+#. Author of the plugin
+msgid "Strategy11"
+msgstr "Strategy11"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://formidableforms.com/"
+msgstr "https://formidableforms.com/"
+
+#: classes/views/displays/where_row.php:38
+msgid "IP"
+msgstr "IP"
+
+#: classes/views/styles/_section-fields.php:109
+msgid "Before Heading"
+msgstr "Pred Nadpisom"
+
+#: classes/views/styles/_section-fields.php:106
+msgid "After Heading"
+msgstr "Po Nadpise"
+
+#: classes/views/styles/_section-fields.php:103
+msgid "Icon Position"
+msgstr "Pozícia Ikony"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:9
+#: classes/views/styles/_repeater-fields.php:7
+#: classes/views/styles/_section-fields.php:98
+msgid "Icons"
+msgstr "Ikony"
+
+#: classes/views/styles/_section-fields.php:80
+msgid "bottom"
+msgstr "spodný"
+
+#: classes/views/styles/_section-fields.php:74
+msgid "Border Position"
+msgstr "Okraj"
+
+#: classes/views/styles/_section-fields.php:36
+msgid "Top Margin"
+msgstr "Vrchné Odsadenie (margin)"
+
+#: classes/helpers/FrmProFieldsHelper.php:2592
+msgid "Confirm"
+msgstr "Potvrdiť"
+
+#: classes/views/frmpro-fields/options-form-top.php:10
+msgid "Collapsible"
+msgstr "Skladatelné"
+
+#: classes/controllers/FrmProXMLController.php:109
+msgid "Styles"
+msgstr "Štýly"
+
+#: classes/controllers/FrmProFieldsController.php:414
+msgid "Other"
+msgstr "Iné"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:46
+msgid "Description"
+msgstr "Opis"
+
+#: classes/models/fields/FrmProFieldToggle.php:33
+msgid "Yes"
+msgstr "Áno"
+
+#: classes/models/fields/FrmProFieldToggle.php:34
+msgid "No"
+msgstr "Nie"
+
+#: classes/controllers/FrmProEntriesController.php:1889
+#: classes/views/displays/where_options.php:31
+#: js/admin/taxonomy/frm_application.js:801
+msgid "Draft"
+msgstr "Koncept"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:53
+#: classes/views/styles/_sample_form.php:55
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: classes/views/frmpro-forms/add_form_options.php:49
+msgid "hours"
+msgstr "hodiny"
+
+#: classes/controllers/FrmProSimpleBlocksController.php:31
+#: classes/controllers/FrmProXMLController.php:108
+#: js/admin/applications/applications.js:209
+#: js/admin/taxonomy/frm_application_list.js:103
+#: js/src/view/viewselect.js:39
+msgid "Views"
+msgstr "Zobrazenia"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:43
+msgid "Default"
+msgstr "Predvolene"
+
+#: classes/controllers/FrmProFormsController.php:376
+msgid "Last Name"
+msgstr "Priezvisko"
+
+#: classes/controllers/FrmProFormsController.php:375
+msgid "First Name"
+msgstr "Kstné meno"
+
+#: classes/controllers/FrmProFormsController.php:374
+msgid "Display Name"
+msgstr "Zobraziť meno"
+
+#: classes/views/frmpro-fields/back-end/logic.php:30
+#: classes/views/frmpro-form-actions/_form_action.php:32
+#: classes/views/frmpro-forms/_submit_conditional.php:29
+#: classes/views/styles/_section-fields.php:89
+msgid "all"
+msgstr "celý obvod"
+
+#: classes/controllers/FrmProEntriesController.php:3254
+msgid "no one"
+msgstr "nikto"
+
+#: classes/controllers/FrmProEntriesController.php:1885
+msgid "Post"
+msgstr "Článok"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:16
+msgid "United States"
+msgstr "Spojené štáty americké"
+
+#: classes/views/xml/map_csv_fields.php:148
+msgid "Import"
+msgstr "Import"
+
+#: classes/views/styles/_section-fields.php:41
+msgid "Bottom Margin"
+msgstr "Spodné Odsadenie (margin)"
+
+#: classes/views/frmpro-form-actions/post_options.php:75
+#: classes/views/frmpro-form-actions/post_options.php:87
+#: classes/views/frmpro-forms/add_form_button_options.php:56
+#: classes/views/frmpro-forms/add_form_style_options.php:12
+#: js/src/view/inspector.js:77
+msgid "None"
+msgstr "Žiadne"
+
+#: classes/models/FrmProFileField.php:713
+msgid "This field is invalid"
+msgstr "Toto pole je neplatné"
+
+#: classes/views/styles/_sample_form.php:32
+#: classes/views/styles/_sample_form.php:44
+msgid "Option 2"
+msgstr "Možnosť 2"
+
+#: classes/views/styles/_sample_form.php:28
+#: classes/views/styles/_sample_form.php:41
+msgid "Option 1"
+msgstr "Možnosť 1"
+
+#: classes/widgets/FrmListEntries.php:220
+msgid "Title"
+msgstr "Nadpis"
+
+#: classes/views/styles/_section-fields.php:7
+#: classes/views/styles/_slider-fields.php:7
+msgid "Color"
+msgstr "Farba"
+
+#: classes/views/styles/_section-fields.php:51
+msgid "Thickness"
+msgstr "Hrúbka"
+
+#: classes/views/styles/_section-fields.php:46
+msgid "Border"
+msgstr "Ohraničenie"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:16
+msgid "Text"
+msgstr "Text"
+
+#: classes/views/styles/_section-fields.php:12
+msgid "Weight"
+msgstr "Váha"
+
+#: classes/controllers/FrmProFormsController.php:1025
+msgid "Height"
+msgstr "Výška"
+
+#: classes/controllers/FrmProFormsController.php:1026
+msgid "Width"
+msgstr "Šírka"
+
+#: classes/views/styles/_section-fields.php:21
+msgid "Size"
+msgstr "Veľkosť"
+
+#: classes/controllers/FrmProEntriesController.php:2284
+#: classes/controllers/FrmProFormsController.php:928
+#: classes/controllers/FrmProFormsController.php:964
+#: classes/helpers/FrmProEntriesListHelper.php:86
+msgid "Search"
+msgstr "Hľadať"
+
+#: classes/views/styles/_section-fields.php:56
+msgid "Style"
+msgstr "Štýl"
+
+#: classes/views/settings/form.php:19
+msgid "Date Format"
+msgstr "Formát dátumu"
+
+#: classes/controllers/FrmProFormsController.php:377
+#: classes/models/FrmProForm.php:520
+msgid "User ID"
+msgstr "Užívateľské ID"
+
+#: classes/views/displays/mb_dyncontent.php:41
+msgid "Content"
+msgstr "Obsah"
+
+#: classes/controllers/FrmProEntriesController.php:2776
+#: classes/controllers/FrmProEntriesController.php:3526
+#: classes/models/FrmProSettings.php:27
+msgid "Update"
+msgstr "Aktualizovať"
+
+#: classes/controllers/FrmProFormActionsController.php:46
+msgid "Create"
+msgstr "Vytvoriť"
+
+#: classes/views/frmpro-entries/show.php:42
+msgid "Submit"
+msgstr "Odoslať"
+
+#: classes/controllers/FrmProEntriesController.php:1907
+#: classes/helpers/FrmProEntriesHelper.php:288
+#: classes/helpers/FrmProEntriesHelper.php:339
+#: js/admin/settings/style-settings.js:248
+msgid "Duplicate"
+msgstr "Duplikovať"
+
+#: classes/controllers/FrmProEntriesController.php:2129
+#: classes/controllers/FrmProEntriesController.php:2395
+#: classes/helpers/FrmProEntriesListHelper.php:11
+#: classes/views/frmpro-fields/back-end/image-selector.php:21
+#: classes/views/styles/_bg-image.php:15
+#: js/admin/settings/style-settings.js:99
+#: js/admin/taxonomy/frm_application_list.js:178
+msgid "Delete"
+msgstr "Vymazať"
+
+#: classes/views/displays/submitbox_actions.php:11
+#: js/admin/applications/common.js:242
+#: js/src/view/viewselect.js:38
+msgid "View"
+msgstr "Zobraziť všetko"
+
+#: classes/controllers/FrmProFormsController.php:384
+#: classes/views/frmpro-forms/add_form_options.php:37
+#: classes/views/xml/map_csv_fields.php:129
+msgid "IP Address"
+msgstr "IP Adresa"
+
+#: classes/controllers/FrmProEntriesController.php:2115
+#: classes/controllers/FrmProEntriesController.php:2668
+#: classes/helpers/FrmProAppHelper.php:405
+#: classes/helpers/FrmProEntriesHelper.php:1107
+#: classes/models/FrmProSummaryFormatter.php:80
+#: js/admin/taxonomy/frm_application.js:853
+#: js/admin/taxonomy/frm_application_list.js:174
+msgid "Edit"
+msgstr "Upraviť"
+
+#: classes/controllers/FrmProEntriesController.php:2669
+#: classes/views/applications/buttons/settings.php:20
+#: classes/views/frmpro-form-actions/_custom_field_row.php:39
+#: js/admin/settings/style-settings.js:130
+#: js/admin/settings/style-settings.js:275
+#: js/admin/settings/style-settings.js:343
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: classes/controllers/FrmProFormsController.php:372
+#: classes/helpers/FrmProFieldsHelper.php:4153
+msgid "Email"
+msgstr "Email"

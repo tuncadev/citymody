@@ -11,7 +11,7 @@ class FrmProDb {
 	/**
 	 * @since 3.0.02
 	 */
-	public static $plug_version = '6.3.3';
+	public static $plug_version = '6.5.2';
 
 	/**
 	 * @since 2.3
@@ -134,7 +134,7 @@ class FrmProDb {
 		global $wpdb;
 		$row = $wpdb->get_row(
 			$wpdb->prepare(
-				'SELECT 1 FROM information_schema.statistics 
+				'SELECT 1 FROM information_schema.statistics
 					WHERE table_schema = database()
 						AND table_name = %s
 						AND index_name = %s

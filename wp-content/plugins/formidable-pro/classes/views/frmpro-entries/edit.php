@@ -27,8 +27,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<div id="post-body-content">
 			<div class="frm-entry-container frm-fields <?php echo FrmFormsHelper::get_form_style_class($values); ?>">
-			<h2>
-				<?php esc_html_e( 'Edit Entry', 'formidable-pro' ); ?>
+			<h2 class="frm-entry-title">
+				<span><?php esc_html_e( 'Edit Entry', 'formidable-pro' ); ?></span>
 				<span class="frm-sub-label">
 					<?php
 					printf(
@@ -44,6 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						'new_link' => admin_url( 'admin.php?page=formidable-entries&frm_action=new&form=' . $form->id ),
 					)
 				);
+				FrmProEntriesHelper::get_entry_navigation( $id, $form->id, 'edit' );
 				?>
 			</h2>
 

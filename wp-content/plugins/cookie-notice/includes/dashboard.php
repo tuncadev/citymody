@@ -122,7 +122,7 @@ class Cookie_Notice_Dashboard {
 			return;
 
 		// scripts
-		wp_register_script( 'cookie-notice-admin-chartjs', COOKIE_NOTICE_URL . '/assets/chartjs/chart.min.js', [ 'jquery' ], '4.3.2', true );
+		wp_register_script( 'cookie-notice-admin-chartjs', COOKIE_NOTICE_URL . '/assets/chartjs/chart.min.js', [ 'jquery' ], '4.4.0', true );
 		wp_enqueue_script( 'cookie-notice-admin-dashboard', COOKIE_NOTICE_URL . '/js/admin-dashboard.js', [ 'jquery', 'cookie-notice-admin-chartjs' ], $cn->defaults['version'], true );
 
 		// cycle usage data

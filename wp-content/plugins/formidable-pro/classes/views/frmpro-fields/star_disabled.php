@@ -5,17 +5,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="frm-star-group">
 <?php
-
 for ( $i = 1; $i <= $max; $i++ ) {
 
-	$class = 'star-rating-readonly star-rating';
+	$star_icon_svg_slug = null;
+
 	if ( $i <= $numbers['value'] ) {
-		$class .= ' star-rating-on';
+		$star_icon_svg_slug = 'frm-star-full-icon';
 	} elseif ( $numbers['decimal'] && ( $i - 1 ) == $numbers['digit'] ) {
-		$class .= ' frm_half_star';
+		$star_icon_svg_slug = 'frm-star-half-icon';
+	} else {
+		$star_icon_svg_slug = 'frm-star-icon';
 	}
 
-	?><i class="<?php echo esc_attr( $class ); ?>"></i><?php
+	FrmProAppHelper::get_svg_icon( $star_icon_svg_slug, 'frmsvg', array( 'echo' => true ) );
+
+	?><?php
 }
 ?>
 </div>

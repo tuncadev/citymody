@@ -1,5 +1,5 @@
 ( function() {
-	/* globals frmDom, wp, jQuery, Dropzone, frmStylerFunctions */
+	/* globals frmDom, wp, jQuery, Dropzone, frmStylerFunctions, frmProStyleSettingsSVGs */
 	'use strict';
 
 	if ( 'object' !== typeof window.frmStylerFunctions ) {
@@ -650,6 +650,7 @@
 		initializeInlineDatepickers();
 		initializeDropzoneFields();
 		initializeStarRatingFields();
+		initializeSVGIcons();
 
 		/**
 		 * Initialize datepickers as formidablepro.js does not get loaded in the visual styler.
@@ -838,6 +839,119 @@
 				}
 			}
 		} // End initializeStarRatingFields.
+
+		function initializeSVGIcons() {
+			// Collapse icon position.
+			frmDom.util.documentOn( 'change', '#frm_collapse_pos', function( event ) {
+				const wrapperEls = document.querySelectorAll( '.frm_section_heading .frm_trigger' );
+				if ( ! wrapperEls ) {
+					return;
+				}
+
+				const position = event.target.value;
+
+				wrapperEls.forEach( wrapperEl => {
+					const svgs = wrapperEl.querySelectorAll( '.frmsvg' );
+					svgs.forEach( svg => {
+						if ( 'before' === position ) {
+							wrapperEl.prepend( ' ' );
+							wrapperEl.prepend( svg );
+						} else {
+							wrapperEl.append( ' ' );
+							wrapperEl.append( svg );
+						}
+					});
+				});
+			});
+
+			/**
+			 * Live update Repeater and Section icons.
+			 */
+			function changeRepeaterAndCollapseSVGIcon() {
+				if ( 'object' !== typeof frmProStyleSettingsSVGs ) {
+					return;
+				}
+
+				const svgIcons = frmProStyleSettingsSVGs;
+
+				/**
+				 * Changes the SVG icon when changing icon setting from Styles page.
+				 *
+				 * @param {String} inputSelector  CSS selector of the setting input.
+				 * @param {String} svgTagSelector CSS selector of the <svg> tag of the SVG icon.
+				 * @param {String} iconNameFormat Icon name format, contains `{key}`, which is replaced by the setting value.
+				 */
+				function changeSVGIcon( inputSelector, svgTagSelector, iconNameFormat ) {
+					frmDom.util.documentOn( 'change', inputSelector, function( event ) {
+						if ( ! event.target.checked ) {
+							return;
+						}
+
+						const svgs = document.querySelectorAll( svgTagSelector );
+						if ( ! svgs ) {
+							return;
+						}
+
+						const iconKey= event.target.value && '0' !== event.target.value ? event.target.value : '';
+						const newIconKey = iconNameFormat.replace( '{key}', iconKey );
+
+						if ( ! svgIcons[ newIconKey ] ) {
+							return;
+						}
+
+						svgs.forEach( svg => {
+							const newSvg = createElementFromString( svgIcons[ newIconKey ] );
+							newSvg.setAttribute( 'width', '1em' );
+							newSvg.setAttribute( 'height', '1em' );
+							svg.replaceWith( newSvg );
+						});
+					});
+				}
+
+				const createElementFromString = ( str ) => {
+					const placeholder = document.createElement( 'div' );
+					placeholder.innerHTML = str;
+					return placeholder.firstElementChild;
+				};
+
+				// Add row icon.
+				changeSVGIcon(
+					'input[name="frm_style_setting[post_content][repeat_icon]"]',
+					'.frm_repeat_buttons .frm_add_form_row svg',
+					'frm_plus{key}_icon'
+				);
+
+				// Remove row icon.
+				changeSVGIcon(
+					'input[name="frm_style_setting[post_content][repeat_icon]"]',
+					'.frm_repeat_buttons .frm_remove_form_row svg',
+					'frm_minus{key}_icon'
+				);
+
+				// Collapse icon.
+				changeSVGIcon(
+					'input[name="frm_style_setting[post_content][collapse_icon]"]',
+					'.frm_section_heading .frm_trigger svg',
+					'frm_arrowdown{key}_icon'
+				);
+
+				function syncTriggerIconsWithSetting() {
+					const checkedRadio = document.querySelector( 'input[name="frm_style_setting[post_content][repeat_icon]"]:checked' );
+					if ( ! checkedRadio ) {
+						return;
+					}
+					const event = new Event( 'change', {
+						bubbles: true,
+						cancelable: true
+					});
+
+					checkedRadio.dispatchEvent( event );
+				}
+
+				syncTriggerIconsWithSetting();
+			}
+			changeRepeaterAndCollapseSVGIcon();
+		}
 	}
 
 	/**

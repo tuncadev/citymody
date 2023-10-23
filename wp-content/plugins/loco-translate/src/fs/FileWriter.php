@@ -15,7 +15,7 @@ class Loco_fs_FileWriter {
     private $fs;
 
     /**
-     * @param Loco_fs_File
+     * @param Loco_fs_File $file
      */
     public function __construct( Loco_fs_File $file ){
         $this->file = $file;
@@ -24,7 +24,7 @@ class Loco_fs_FileWriter {
     
     
     /**
-     * @param Loco_fs_File
+     * @param Loco_fs_File $file
      * @return Loco_fs_FileWriter
      */
     public function setFile( Loco_fs_File $file ){
@@ -36,8 +36,8 @@ class Loco_fs_FileWriter {
     /**
      * Connect to alternative file system context
      * 
-     * @param WP_Filesystem_Base
-     * @param bool whether reconnect required
+     * @param WP_Filesystem_Base $fs
+     * @param bool $disconnected whether reconnect required
      * @return Loco_fs_FileWriter
      * @throws Loco_error_WriteException
      */
@@ -77,7 +77,7 @@ class Loco_fs_FileWriter {
 
     /**
      * Map virtual path for remote file system
-     * @param string
+     * @param string $path
      * @return string
      */
     private function mapPath( $path ){
@@ -121,14 +121,15 @@ class Loco_fs_FileWriter {
 
 
     /**
-     * @param int file mode integer e.g 0664
-     * @param bool whether to set recursively (directories)
+     * @param int $mode file mode integer e.g 0664
+     * @param bool $recursive whether to set recursively (directories)
      * @return Loco_fs_FileWriter
      * @throws Loco_error_WriteException
      */
     public function chmod( $mode, $recursive = false ){
         $this->authorize();
         if( ! $this->fs->chmod( $this->getPath(), $mode, $recursive ) ){
+            // translators: %s refers to a file name, for which the chmod operation failed.
             throw new Loco_error_WriteException( sprintf( __('Failed to chmod %s','loco-translate'), $this->file->basename() ) );
         }
         return $this;
@@ -136,7 +137,7 @@ class Loco_fs_FileWriter {
 
 
     /**
-     * @param Loco_fs_File target for copy
+     * @param Loco_fs_File $copy target for copy
      * @return Loco_fs_FileWriter
      * @throws Loco_error_WriteException
      */
@@ -157,7 +158,8 @@ class Loco_fs_FileWriter {
         // perform WP file system copy method
         if( ! $this->fs->copy($source,$target,true) ){
             Loco_error_AdminNotices::debug(sprintf('Failed to copy %s to %s via "%s" method',$source,$target,$this->fs->method));
-            throw new Loco_error_WriteException( sprintf( __('Failed to copy %s to %s','loco-translate'), basename($source), basename($target) ) );
+            // translators: (1) Source file name (2) Target file name
+            throw new Loco_error_WriteException( sprintf( __('Failed to copy %1$s to %2$s','loco-translate'), basename($source), basename($target) ) );
         }
 
         return $this;
@@ -165,7 +167,7 @@ class Loco_fs_FileWriter {
 
 
     /**
-     * @param Loco_fs_File target file with new path
+     * @param Loco_fs_File $dest target file with new path
      * @return Loco_fs_FileWriter
      * @throws Loco_error_WriteException
      */
@@ -195,6 +197,7 @@ class Loco_fs_FileWriter {
     public function delete( $recursive = false ){
         $this->authorize();
         if( ! $this->fs->delete( $this->getPath(), $recursive ) ){
+            // translators: %s refers to a file name, for which a delete operation failed.
             throw new Loco_error_WriteException( sprintf( __('Failed to delete %s','loco-translate'), $this->file->basename() ) );
         }
 
@@ -211,6 +214,7 @@ class Loco_fs_FileWriter {
         $this->authorize();
         $file = $this->file;
         if( $file->isDirectory() ){
+            // translators: %s refers to a directory name which was expected to be an ordinary file
             throw new Loco_error_WriteException( sprintf( __('"%s" is a directory, not a file','loco-translate'), $file->basename() ) );
         }
         // file having no parent directory is likely an error, like a relative path.
@@ -261,7 +265,7 @@ class Loco_fs_FileWriter {
 
     /**
      * Create current directory context
-     * @param Loco_fs_File optional directory
+     * @param Loco_fs_File|null $here optional working directory
      * @return bool
      * @throws Loco_error_WriteException
      */
@@ -278,7 +282,7 @@ class Loco_fs_FileWriter {
         /* @var $parent Loco_fs_Directory */
         while( $parent = $here->getParent() ){
             array_unshift( $stack, $this->mapPath( $here->getPath() ) );
-            if( $parent->exists() ){
+            if( '/' === $parent->getPath() || $parent->readable() ){
                 // have existent directory, now build full path
                 foreach( $stack as $path ){
                     if( ! $fs->mkdir($path,$mode) ){

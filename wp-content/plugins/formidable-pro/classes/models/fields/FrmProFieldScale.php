@@ -105,4 +105,43 @@ class FrmProFieldScale extends FrmFieldType {
 	public function echo_option_label( $opt ) {
 		echo esc_html( $opt );
 	}
+
+	/**
+	 * Returns an array containing options for a Scale field, using the field settings.
+	 *
+	 * @since 6.4
+	 *
+	 * @param $values
+	 *
+	 * @return array
+	 */
+	public function get_options( $values ) {
+		if ( empty( $values ) ) {
+			$values = (array) $this->field;
+		}
+		FrmAppHelper::unserialize_or_decode( $values['field_options'] );
+		$max = FrmField::get_option( $values, 'maxnum' );
+
+		if ( $max === '' ) {
+			return $values['options'];
+		}
+
+		$max = (int) $max;
+		$min = FrmField::get_option( $values, 'minnum' );
+		if ( $min !== '' ) {
+			$min = (int) $min;
+			if ( $min === $max ) {
+				return array( $min );
+			}
+
+			$step_value = (int) FrmField::get_option( $values, 'step' );
+			$step       = $step_value ? $step_value : 1;
+			if ( $step > absint( $max - $min ) ) {
+				return array( $min );
+			}
+			$options = range( $min, $max, $step );
+		}
+
+		return ! empty( $options ) ? $options : $values['options'];
+	}
 }

@@ -1,9 +1,9 @@
-=== Tidio – Live Chat & Chatbots ===
+=== Tidio – Live Chat & AI Chatbots ===
 Contributors: tytus-tytus, lucastidio, marcingwizdala, kkopaczyktidio, ksladek, adrianmtidio
 Tags: free live chat, live chat, chat, chatbot, livechat, tidio, widget, zendesk, mailchimp, messenger
 Requires at least: 4.7
-Tested up to: 6.2
-Stable tag: 6.0.8
+Tested up to: 6.3
+Stable tag: 6.0.10
 Requires PHP: 7.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Add Tidio Live Chat to your WordPress for free to answer customers’ questions,
 
 == Description ==
 
-**Tidio is an all-in-one customer experience solution with live chat, chatbots, and multichannel communication.**
+**Tidio is an all-in-one customer experience solution with live chat, AI chatbots, and multichannel communication.**
 
 It is a customer experience platform that enables online stores to provide excellent customer service and turn passive visitors into active buyers. Its pre-built chatbots for sales and support are readily available to boost sales and promptly address customers' frequently asked questions.
 
@@ -24,6 +24,7 @@ Managing all your customer messages in one place makes Tidio a simple, yet stron
 
 - Talk to your visitors on the live chat – quickly solve issues and sell proactively
 - Use pre-made chatbot strategies to solve problems and increase sales
+- Automatically answer up to 70% of customer questions with Lyro AI for faster support
 - Preview carts, check order history, and recommend products directly in the chat
 - Add Tidio to your WordPress website in 30 seconds – just click “Download”
 - Manage and resolve customers' requests with a simple ticketing system
@@ -43,37 +44,38 @@ Managing all your customer messages in one place makes Tidio a simple, yet stron
 - Manage all your **live chat, e-mail and Messenger** messages from **one panel**
 - Stay in touch with your visitors on mobile and tablet thanks to Tidio’s **free iOS and Android apps**
 
-## 2. Chatbots will generate leads much more effectively by engaging your visitors exactly when they need it
+## 2. AI Chatbots will generate leads much more effectively by engaging your visitors exactly when they need it
 
-- Use chatbots that **engage your potential customers** exactly when they are most likely to share their contact info
+- Use AI chatbots that **engage your potential customers** exactly when they are most likely to share their contact info
 - Present your services **much more effectively** with automated conversations
 - **Collect emails** proactively
 - Provide **the best content and information tailored** to your visitors' profiles and interests
 - Provide answers to the most common questions **instantly, at any time, 24/7**
 - Add **tags** and other properties to your visitors and **send valuable information to your CRM**
-- Once you combine chatbots with live chat, you can be sure that **no customer will ever be left without an answer**
-
-## 3. Chatbots that will increase sales in your online store by acting as a virtual assistant 24/7
-
 - Choose from over a dozen **chatbot templates** that will recover abandoned shopping carts, give discounts to returning customers, and automatically collect and qualify leads
 OR
-- Use our unique, **drag-and-drop visual editor** to create chatbots from scratch. No coding is required!
+- Use our unique, **drag-and-drop visual editor** to create chatbots from scratch. No coding is required.
+
+## 3. Solve up to 70% of customer problems with Lyro AI
+
+- Use Lyro - a conversational AI - to **offer personalized assistance**
+- Lyro learns from your FAQs in seconds and **formulates complex answers to solve your customers’ problems**
+- The **AI stays within the boundaries of your knowledge base**, and you can update its information at any time
+- Lyro is easy to implement and **doesn’t require training**
+- Use a playground environment so you can **see how Lyro will respond to customer questions** and adapt your FAQs accordingly
+- You can activate the **AI in under 3 minutes** and it supports your customers 24/7.
 
 ## 4. WOOCOMMERCE PRODUCT CARDS THAT PROVIDE THE BEST SHOPPING EXPERIENCE
 
 To sell more efficiently, you can browse all WooCommerce products in your Tidio panel and send them as product cards in chat conversations with your customers. Just click on a product, and it will be sent to your customer via selected channels: live chat and Messenger.
 
-## 5. AUTOMATED CUSTOMER SUPPORT – FOR EVEN BETTER EXPERIENCE
-
-Built-in chatbots can automatically answer the most common customer questions about order status, product availability and delivery time. This kind of virtual assistant will not only support your customers 24/7 but save you time.
-
-## 6. SMART POP-UPS THAT IMPROVE CONVERSION WITHOUT IRRITATING YOUR CUSTOMERS
+## 5. SMART POP-UPS THAT IMPROVE CONVERSION WITHOUT IRRITATING YOUR CUSTOMERS
 
 We all know that pop-ups can boost sales, but they can also be frustrating for visitors. Ready-made Tidio chatbot scenarios can turn the live chat widget into smart pop-ups. They can be triggered by defined actions and fully customized. You can edit all the conditions, text and images using our drag&drop chatbot editor.
 
 ## TESTIMONIALS
 
-Tidio Live Chat and Chatbots is the **highest-rated plugin of this type for WordPress**. The solution is actively used by more than **300,000 users**.
+Tidio Live Chat and AI Chatbots is the **highest-rated plugin of this type for WordPress**. The solution is actively used by more than **300,000 users**.
 
 Hard to believe it? Read the testimonials, because our users say it’s best:
 
@@ -199,6 +201,16 @@ Tidio offers four language versions; English, French, Spanish, Italian, and Port
 8. Engage your visitors. Add Tidio to your WordPress website in less than 5 minutes.
 
 == Changelog ==
+
+= 6.0.10 =
+
+- Tested up to WordPress 6.3
+
+= 6.0.9 =
+
+- Update the readme and assets
+- Add notification about Tidio Lyro AI Chatbot
+- Remove ru_RU translations
 
 = 6.0.8 =
 

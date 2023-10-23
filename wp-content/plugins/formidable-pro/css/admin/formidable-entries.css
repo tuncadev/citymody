@@ -12,3 +12,120 @@
 	height: 12px !important;
 	margin: 0 !important;
 }
+
+/* Entry title */
+.frm-entry-title {
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+	flex-wrap: wrap;
+}
+
+.frm-entry-title .button {
+	align-self: center;
+}
+
+/* Entry navigation */
+.frm-entry-navigation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: var(--gap-xs);
+	margin-left: auto;
+}
+
+body.rtl .frm-entry-navigation {
+	margin-left: unset;
+	margin-right: auto;
+	flex-direction: row-reverse;
+}
+
+#form_show_entry_page .frm-entry-navigation {
+	margin-right: var(--gap-md);
+}
+
+.frm-entry-navigation .frmsvg {
+	display: block;
+	width: var(--text-sm);
+	height: var(--text-sm);
+}
+
+.frm-entry-navigation .frm-entry-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border: 1px solid var(--grey-300);
+	border-radius: var(--small-radius);
+	color: var(--grey-900);
+	transition: color 300ms ease-out, background-color 300ms ease-out;
+}
+
+.frm-entry-navigation .frm-entry-link:hover {
+	color: var(--primary-color);
+	background-color: var(--light-blue);
+}
+
+.frm-entry-navigation .frm-entry-link.frm-disabled {
+	background-color: var(--grey-25);
+	color: var(--grey-300);
+}
+
+.frm-entry-navigation .frm-entry-count {
+	color: var(--grey-500);
+	font-size: var(--text-sm);
+	font-weight: 500;
+}
+
+/* Support star ratings with font icons on the entries list page */
+.frm-star-group i.star-rating {
+	width: 25px;
+	height: 25px;
+	font-size: 25px;
+	line-height: 1;
+	display: inline;
+	background: transparent;
+	overflow: hidden !important;
+	font-style: normal;
+	margin-right: 5px;
+}
+
+.frm-star-group i.star-rating:before {
+	font-family: 's11-fp';
+	content: '\e9d7';
+	color:#F0AD4E;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.frm-star-group i.star-rating-on:before {
+	content: '\e9d9';
+}
+
+/* Delete All Entries Modal Confirmation */
+.frm-delete-all-entries-modal-confirmation {
+	text-align: left;
+}
+.frm-delete-all-entries-modal-confirmation h2 {
+	font-weight: 500;
+}
+.frm-delete-all-entries-modal-confirmation b {
+	color: var(--error-500);
+}
+.frm-delete-all-entries-modal-confirmation input {
+	display: block;
+	width: 100%;
+	height: 36px;
+	box-sizing: border-box;
+	margin-top: var(--gap-sm);
+	border-radius: var(--small-radius);
+	border: 1px solid var(--grey-300);
+}
+#frm-confirmed-click.button.frm-btn-inactive {
+	background-color: var(--error-300) !important;
+	border: 1px solid var(--error-300);
+}
+#frm-confirmed-click.button.frm-btn-inactive:hover {
+	border-color: var(--error-300) !important;
+}
+/* End Delete All Entries Modal Confirmation */

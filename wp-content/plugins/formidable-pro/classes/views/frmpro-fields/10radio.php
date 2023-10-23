@@ -3,14 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'You are not allowed to call this page directly.' );
 }
 
-$max = FrmField::get_option( $field, 'maxnum' );
-if ( $max !== '' ) {
-	$min = FrmField::get_option( $field, 'minnum' );
-	if ( $min !== '' ) {
-		$step = FrmField::get_option( $field, 'step' );
-		$field['options'] = range( (int) $min, (int) $max, $step ? $step : 1 );
-	}
-}
+$field['options'] = $this->get_options( array() );
 
 if ( is_array($field['options']) ) {
 	if ( ! isset($field['value']) ) {

@@ -85,11 +85,29 @@ class FrmProFieldStar extends FrmFieldType {
 		$numbers = $this->get_rounded_decimal( $value );
 
 		ob_start();
-		include FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/star_disabled.php';
+
+		if ( $this->should_use_font_icons() ) {
+			include FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/star_disabled_font_icons.php';
+		} else {
+			include FrmProAppHelper::plugin_path() . '/classes/views/frmpro-fields/star_disabled.php';
+		}
+
 		$contents = ob_get_contents();
 		ob_end_clean();
 
 		return $contents;
+	}
+
+	/**
+	 * FrmProEntriesController::filter_display_value sanitizes the HTML through wp_kses_post.
+	 * So on some admin pages (currently just the entries list page) we'll use font icons instead.
+	 *
+	 * @since 6.4.2
+	 *
+	 * @return bool
+	 */
+	private function should_use_font_icons() {
+		return FrmAppHelper::is_admin_page( 'formidable-entries' ) && in_array( FrmAppHelper::simple_get( 'frm_action' ), array( 'list', '' ), true );
 	}
 
 	/**

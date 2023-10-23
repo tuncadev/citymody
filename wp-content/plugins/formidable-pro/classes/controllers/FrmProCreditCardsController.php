@@ -6,6 +6,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class FrmProCreditCardsController extends FrmProComboFieldsController {
 
+	/**
+	 * @param array  $field
+	 * @param string $field_name
+	 * @param array  $atts
+	 * @return void
+	 */
 	public static function show_in_form( $field, $field_name, $atts ) {
 		$frm_settings = FrmAppHelper::get_settings();
 

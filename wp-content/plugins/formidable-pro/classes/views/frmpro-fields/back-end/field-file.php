@@ -9,7 +9,7 @@ $file_size_range = $this->get_file_size_range();
 		<span class="frm_icon_font frm_upload_icon"></span>
 		<?php echo esc_html( $field['drop_msg'] ); ?>
 		<div class="frm_small_text">
-			<p><?php echo esc_html( sprintf( __( 'Required upload size: %s', 'formidable-pro' ), $file_size_range ) ); ?></p>
+			<p><?php echo esc_html( $this->get_range_string( $file_size_range ) ); ?></p>
 		</div>
 	</div>
 </div>

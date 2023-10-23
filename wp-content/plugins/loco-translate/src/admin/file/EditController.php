@@ -114,6 +114,7 @@ class Loco_admin_file_EditController extends Loco_admin_file_BaseController {
                     try {
                         $potdata = Loco_gettext_Data::load( $potfile );
                         if( ! $potdata->equalSource($data) ){
+                            // translators: %s refers to the name of a POT file
                             Loco_error_AdminNotices::info( sprintf( __("Translations don't match template. Run sync to update from %s",'loco-translate'), $potfile->basename() ) )
                             ->addLink( apply_filters('loco_external','https://localise.biz/wordpress/plugin/manual/sync'), __('Documentation','loco-translate') );
                         }
@@ -203,6 +204,8 @@ class Loco_admin_file_EditController extends Loco_admin_file_BaseController {
              'revert'   => _x('Revert','Editor','loco-translate'),
              // Translators: Button that opens window for auto-translating
              'auto'     => _x('Auto','Editor','loco-translate'),
+             // Translators: Button that validates current translation formatting
+             'lint'     => _x('Check','Editor','loco-translate'),
              // Translators: Button for downloading a PO, MO or POT file
              'download' => _x('Download','Editor','loco-translate'),
              // Translators: Placeholder text for text filter above editor
@@ -215,10 +218,10 @@ class Loco_admin_file_EditController extends Loco_admin_file_BaseController {
 
         // Download form params
         $hidden = new Loco_mvc_HiddenFields( [
-            'path'   => '',
-            'source' => '',
             'route'  => 'download',
             'action' => 'loco_download',
+            'path'   => '',
+            'source' => '',
         ] );
         $this->set( 'dlFields', $hidden->setNonce('download') );
         $this->set( 'dlAction', admin_url('admin-ajax.php','relative') );

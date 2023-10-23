@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php esc_html_e( 'File Upload Options', 'formidable-pro' ); ?>
 	<?php FrmAppHelper::icon_by_class( 'frmfont frm_arrowdown6_icon', array( 'aria-hidden' => 'true' ) ); ?>
 </h3>
-<div class="frm_grid_container frm-collapse-me">
+<div class="frm_grid_container frm-collapse-me" role="group">
 	<?php if ( ! empty( $public_files_tooltip ) && ! empty( $settings_url ) ) { ?>
 		<div class="frm_warning_style frm-mt-0" style="padding: 10px;">
 			<?php

@@ -71,6 +71,10 @@ class FrmProSettingsController {
 		add_action( 'frm_messages_settings_form', 'FrmProSettingsController::message_settings' );
 		add_action( 'frm_settings_form', 'FrmProSettingsController::more_settings', 1 );
 
+		if ( FrmProAddonsController::is_expired_outside_grace_period() ) {
+			return $sections;
+		}
+
 		$sections['white_label'] = array(
 			'class'    => __CLASS__,
 			'function' => 'white_label_settings',
@@ -89,7 +93,7 @@ class FrmProSettingsController {
 	}
 
 	public static function general_style_settings( $frm_settings ) {
-		include( FrmProAppHelper::plugin_path() . '/classes/views/settings/general_style.php' );
+		include FrmProAppHelper::plugin_path() . '/classes/views/settings/general_style.php';
 	}
 
 	/**
@@ -97,12 +101,19 @@ class FrmProSettingsController {
 	 */
 	public static function message_settings( $frm_settings ) {
 		$frmpro_settings = FrmProAppHelper::get_settings();
-		require( FrmProAppHelper::plugin_path() . '/classes/views/settings/messages.php' );
+		require FrmProAppHelper::plugin_path() . '/classes/views/settings/messages.php';
 	}
 
+	/**
+	 * Display additional Global settings in the "Other" section at the bottom of "General Settings".
+	 * This includes Date Format and Currency settings.
+	 *
+	 * @param FrmSettings $frm_settings
+	 * @return void
+	 */
 	public static function more_settings( $frm_settings ) {
 		$frmpro_settings = FrmProAppHelper::get_settings();
-		require( FrmProAppHelper::plugin_path() . '/classes/views/settings/form.php' );
+		require FrmProAppHelper::plugin_path() . '/classes/views/settings/form.php';
 	}
 
 	/**
@@ -111,7 +122,7 @@ class FrmProSettingsController {
 	public static function white_label_settings() {
 		$frm_settings    = FrmAppHelper::get_settings();
 		$frmpro_settings = FrmProAppHelper::get_settings();
-		include( FrmProAppHelper::plugin_path() . '/classes/views/settings/white-label.php' );
+		include FrmProAppHelper::plugin_path() . '/classes/views/settings/white-label.php';
 	}
 
 	/**
@@ -121,7 +132,7 @@ class FrmProSettingsController {
 		$settings      = FrmProAppHelper::get_settings();
 		$message_types = $settings->inbox_types();
 		$has_access    = self::has_current_access();
-		include( FrmProAppHelper::plugin_path() . '/classes/views/settings/inbox.php' );
+		include FrmProAppHelper::plugin_path() . '/classes/views/settings/inbox.php';
 	}
 
 	/**
@@ -129,7 +140,7 @@ class FrmProSettingsController {
 	 */
 	private static function has_current_access() {
 		$user_type = FrmProAddonsController::license_type();
-		return in_array( $user_type, array( 'elite', 'business', 'personal', 'grandfathered' ) );
+		return in_array( $user_type, array( 'elite', 'business', 'personal', 'grandfathered' ), true );
 	}
 
 	/**
@@ -205,6 +216,7 @@ class FrmProSettingsController {
 	 *
 	 * @param array $helpers
 	 * @param array $atts
+	 * @return array
 	 */
 	public static function advanced_helpers( $helpers, $atts ) {
 		$repeat_field  = 0;
@@ -257,6 +269,7 @@ class FrmProSettingsController {
 	 * Add extra field shortcodes in the shortcode lists
 	 *
 	 * @since 3.04.01
+	 * @return void
 	 */
 	public static function field_sidebar( $atts ) {
 		$field = $atts['field'];

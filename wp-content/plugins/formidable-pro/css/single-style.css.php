@@ -231,11 +231,11 @@ if ( isset( $settings['progress_border_color'] ) && $settings['progress_border_c
 /* End other */
 
 /* Start Password field */
-.<?php echo esc_html( $settings['style_class'] ); ?> span.frm-pass-verified::before {
+.<?php echo esc_html( $settings['style_class'] ); ?> span.frm-pass-verified .frmsvg {
 	color:<?php echo esc_html( $settings['success_text_color'] . $important ); ?>;
 }
 
-.<?php echo esc_html( $settings['style_class'] ); ?> span.frm-pass-req::before {
+.<?php echo esc_html( $settings['style_class'] ); ?> span.frm-pass-req .frmsvg {
 	color:<?php echo esc_html( $settings['error_text'] . $important ); ?>;
 }
 /* End Password field */

@@ -166,11 +166,11 @@ class PLL_Settings extends PLL_Admin_Base {
 	}
 
 	/**
-	 * Manages the user input for the languages pages
+	 * Manages the user input for the languages pages.
 	 *
 	 * @since 1.9
 	 *
-	 * @param string $action
+	 * @param string $action The action name.
 	 * @return void
 	 */
 	public function handle_actions( $action ) {
@@ -185,7 +185,7 @@ class PLL_Settings extends PLL_Admin_Base {
 					}
 				} else {
 					add_settings_error( 'general', 'pll_languages_created', __( 'Language added.', 'polylang' ), 'updated' );
-					$locale = sanitize_text_field( wp_unslash( $_POST['locale'] ) ); // phpcs:ignore WordPress.Security
+					$locale = sanitize_locale_name( $_POST['locale'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotValidated
 
 					if ( 'en_US' !== $locale && current_user_can( 'install_languages' ) ) {
 						// Attempts to install the language pack

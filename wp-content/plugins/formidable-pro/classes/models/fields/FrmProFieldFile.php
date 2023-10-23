@@ -53,6 +53,25 @@ class FrmProFieldFile extends FrmFieldType {
 		return $file_size_range;
 	}
 
+	/**
+	 * @since 6.4
+	 *
+	 * @param string $file_size_range File size range text.
+	 *
+	 * @return string Range string.
+	 */
+	public function get_range_string( $file_size_range ) {
+		if ( strpos( $file_size_range, '-' ) !== false ) {
+			/* translators: %s: File size range, ex. 1MB - 5MB */
+			$range_string = sprintf( __( 'Required upload size: %s', 'formidable-pro' ), $file_size_range );
+		} else {
+			/* translators: %s: Maximum File size, ex. 5MB */
+			$range_string = sprintf( __( 'Maximum file size: %s', 'formidable-pro' ), $file_size_range );
+		}
+
+		return $range_string;
+	}
+
 	protected function field_settings_for_type() {
 		$settings = array(
 			'invalid'       => true,

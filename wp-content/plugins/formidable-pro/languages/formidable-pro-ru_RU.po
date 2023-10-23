@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-09-20T16:33:33+00:00\n"
+"PO-Revision-Date: 2023-02-15 18:58:28+0000\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0\n"
+
+#: classes/models/fields/FrmProFieldPassword.php:259
+msgid "One special character"
+msgstr "Один специальный символ"
+
+#: classes/models/fields/FrmProFieldPassword.php:254
+msgid "One number"
+msgstr "Одно число"
+
+#: classes/models/fields/FrmProFieldPassword.php:244
+msgid "One lowercase letter"
+msgstr "Одна строчная буква"
+
+#: classes/models/fields/FrmProFieldPassword.php:249
+msgid "One uppercase letter"
+msgstr "Одна заглавная буква"
+
+#: classes/views/frmpro-fields/back-end/password-options.php:16
+msgid "Show password strength meter"
+msgstr "Показать измеритель надежности пароля"
+
+#: classes/views/frmpro-fields/back-end/password-options.php:9
+msgid "Require a strong password"
+msgstr "Требовать надежный пароль"
+
+#. Author of the plugin
+msgid "Strategy11"
+msgstr "Strategy11"
+
+#: classes/views/displays/where_row.php:38
+msgid "IP"
+msgstr "IP адрес"
+
+#: classes/views/styles/_section-fields.php:103
+msgid "Icon Position"
+msgstr "Позиция иконки"
+
+#: classes/views/frmpro-fields/back-end/repeat-buttons.php:9
+#: classes/views/styles/_repeater-fields.php:7
+#: classes/views/styles/_section-fields.php:98
+msgid "Icons"
+msgstr "Иконки"
+
+#: classes/helpers/FrmProFieldsHelper.php:2592
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: classes/views/frmpro-form-actions/post_action.php:18
+msgid "Create Post"
+msgstr "Создать запись"
+
+#: classes/controllers/FrmProFieldsController.php:414
+msgid "Other"
+msgstr "Другое"
+
+#: classes/helpers/FrmProFieldsHelper.php:973
+msgid "The entered values do not match"
+msgstr "Введенные значения не совпадают"
+
+#: classes/views/frmpro-fields/back-end/default-placeholder.php:46
+msgid "Description"
+msgstr "описание"
+
+#: classes/models/fields/FrmProFieldToggle.php:33
+msgid "Yes"
+msgstr "Да"
+
+#: classes/models/fields/FrmProFieldToggle.php:34
+msgid "No"
+msgstr "Нет"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:9
+#: js/admin/taxonomy/frm_application.js:744
+msgid "Type"
+msgstr "Тип"
+
+#: classes/controllers/FrmProFormsController.php:326
+msgid "Button Label"
+msgstr "Текст кнопки"
+
+#: classes/controllers/FrmProFormsController.php:635
+#: classes/helpers/FrmProFormsHelper.php:580
+#: classes/views/frmpro-forms/add_form_button_options.php:33
+msgid "Save Draft"
+msgstr "Сохранить черновик"
+
+#: classes/controllers/FrmProEntriesController.php:1889
+#: classes/views/displays/where_options.php:31
+#: js/admin/taxonomy/frm_application.js:801
+msgid "Draft"
+msgstr "Черновик"
+
+#: classes/views/xml/import_csv.php:13
+#: classes/views/xml/map_csv_fields.php:13
+msgid "Import/Export"
+msgstr "Импорт/Экспорт"
+
+#: classes/views/frmpro-forms/add_form_button_options.php:43
+msgid "Default"
+msgstr "По умолчанию"
+
+#: classes/models/fields/FrmProFieldEndDivider.php:53
+#: classes/views/styles/_sample_form.php:55
+msgid "Remove"
+msgstr "Удалить"
+
+#: classes/controllers/FrmProFormsController.php:376
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: classes/controllers/FrmProFormsController.php:375
+msgid "First Name"
+msgstr "Имя"
+
+#: classes/controllers/FrmProFormsController.php:374
+msgid "Display Name"
+msgstr "Показать название"
+
+#: classes/views/xml/map_csv_fields.php:116
+msgid "Timestamp"
+msgstr "Временной штамп"
+
+#: classes/helpers/FrmProFieldsHelper.php:3240
+msgid "Site Name"
+msgstr "Имя сайта"
+
+#: classes/helpers/FrmProFieldsHelper.php:3161
+msgid "User IP"
+msgstr "IP пользователя"
+
+#: classes/controllers/FrmProGraphsController.php:1358
+msgid "Fields"
+msgstr "Поля"
+
+#: classes/views/displays/submitbox_actions.php:31
+msgid "Hide"
+msgstr "Скрыть"
+
+#: classes/views/combo-fields/addresses/back-end-field-opts.php:16
+msgid "United States"
+msgstr "Соединённые Штаты Америки"
+
+#: classes/views/xml/map_csv_fields.php:148
+msgid "Import"
+msgstr "Импорт"
+
+#: classes/views/frmpro-form-actions/post_options.php:75
+#: classes/views/frmpro-form-actions/post_options.php:87
+#: classes/views/frmpro-forms/add_form_button_options.php:56
+#: classes/views/frmpro-forms/add_form_style_options.php:12
+#: js/src/view/inspector.js:77
+msgid "None"
+msgstr "Отсутствует"
+
+#: classes/helpers/FrmProEntriesHelper.php:268
+msgid "Add New"
+msgstr "Добавить новое"
+
+#: classes/widgets/FrmListEntries.php:220
+msgid "Title"
+msgstr "Название"
+
+#: classes/views/styles/_section-fields.php:26
+msgid "BG color"
+msgstr "Цвет фона"
+
+#: classes/views/styles/_section-fields.php:7
+#: classes/views/styles/_slider-fields.php:7
+msgid "Color"
+msgstr "Цвет"
+
+#: classes/views/styles/_section-fields.php:31
+msgid "Padding"
+msgstr "Внутренний отступ"
+
+#: classes/views/styles/_section-fields.php:46
+msgid "Border"
+msgstr "Граница"
+
+#: classes/views/frmpro-fields/back-end/calculation-settings.php:16
+msgid "Text"
+msgstr "Текстовое поле"
+
+#: classes/controllers/FrmProFormsController.php:1025
+msgid "Height"
+msgstr "Высота"
+
+#: classes/controllers/FrmProFormsController.php:1026
+msgid "Width"
+msgstr "Ширина"
+
+#: classes/views/styles/_section-fields.php:21
+msgid "Size"
+msgstr "Размер"
+
+#: classes/controllers/FrmProFormsController.php:380
+#: classes/helpers/FrmProFieldsHelper.php:3160
+#: classes/views/displays/where_row.php:24
+#: classes/views/xml/map_csv_fields.php:115
+msgid "Post ID"
+msgstr "ID записи"
+
+#: classes/controllers/FrmProEntriesController.php:2284
+#: classes/controllers/FrmProFormsController.php:928
+#: classes/controllers/FrmProFormsController.php:964
+#: classes/helpers/FrmProEntriesListHelper.php:86
+msgid "Search"
+msgstr "Поиск"
+
+#: classes/views/settings/form.php:19
+msgid "Date Format"
+msgstr "Формат даты"
+
+#: classes/views/displays/submitbox_actions.php:12
+msgid "Shortcodes"
+msgstr "Шорткоды"
+
+#: classes/controllers/FrmProApplicationTaxonomyController.php:416
+#: js/admin/applications/common.js:241
+msgid "Form"
+msgstr "Форма"
+
+#: classes/controllers/FrmProFormsController.php:377
+#: classes/models/FrmProForm.php:520
+msgid "User ID"
+msgstr "ID Пользователя"
+
+#: classes/views/displays/mb_dyncontent.php:41
+msgid "Content"
+msgstr "Текст записи"
+
+#: classes/controllers/FrmProEntriesController.php:2776
+#: classes/controllers/FrmProEntriesController.php:3526
+#: classes/models/FrmProSettings.php:27
+msgid "Update"
+msgstr "Обновить"
+
+#: classes/controllers/FrmProFormActionsController.php:46
+msgid "Create"
+msgstr "Создать"
+
+#: classes/views/frmpro-entries/show.php:42
+msgid "Submit"
+msgstr "Отправить"
+
+#: classes/controllers/FrmProEntriesController.php:2129
+#: classes/controllers/FrmProEntriesController.php:2395
+#: classes/helpers/FrmProEntriesListHelper.php:11
+#: classes/views/frmpro-fields/back-end/image-selector.php:21
+#: classes/views/styles/_bg-image.php:15
+#: js/admin/settings/style-settings.js:99
+#: js/admin/taxonomy/frm_application_list.js:178
+msgid "Delete"
+msgstr "Удалить"
+
+#: classes/views/displays/submitbox_actions.php:11
+#: js/admin/applications/common.js:242
+#: js/src/view/viewselect.js:38
+msgid "View"
+msgstr "Смотреть"
+
+#: classes/controllers/FrmProFormsController.php:384
+#: classes/views/frmpro-forms/add_form_options.php:37
+#: classes/views/xml/map_csv_fields.php:129
+msgid "IP Address"
+msgstr "IP-адрес"
+
+#: classes/controllers/FrmProEntriesController.php:2115
+#: classes/controllers/FrmProEntriesController.php:2668
+#: classes/helpers/FrmProAppHelper.php:405
+#: classes/helpers/FrmProEntriesHelper.php:1107
+#: classes/models/FrmProSummaryFormatter.php:80
+#: js/admin/taxonomy/frm_application.js:853
+#: js/admin/taxonomy/frm_application_list.js:174
+msgid "Edit"
+msgstr "Изменить"
+
+#: classes/helpers/FrmProFieldsHelper.php:3182
+#: classes/helpers/FrmProFieldsHelper.php:3208
+#: classes/views/displays/mb_advanced.php:118
+msgid "Key"
+msgstr "Ключ"
+
+#: classes/controllers/FrmProEntriesController.php:2669
+#: classes/views/applications/buttons/settings.php:20
+#: classes/views/frmpro-form-actions/_custom_field_row.php:39
+#: js/admin/settings/style-settings.js:130
+#: js/admin/settings/style-settings.js:275
+#: js/admin/settings/style-settings.js:343
+msgid "Cancel"
+msgstr "Отмена"
+
+#: classes/helpers/FrmProFieldsHelper.php:3181
+#: classes/helpers/FrmProFieldsHelper.php:3207
+#: classes/views/displays/mb_advanced.php:115
+#: classes/views/frmpro-entries/table.php:10
+#: classes/views/frmpro-entries/table.php:89
+msgid "ID"
+msgstr "ID"
+
+#: classes/controllers/FrmProFormsController.php:372
+#: classes/helpers/FrmProFieldsHelper.php:4153
+msgid "Email"
+msgstr "Емейл"

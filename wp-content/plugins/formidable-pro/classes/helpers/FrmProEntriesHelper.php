@@ -241,11 +241,11 @@ class FrmProEntriesHelper {
 	/**
 	 * @since 4.0
 	 */
-	private static function show_list_entry_buttons( $form ) {
+	private static function show_list_entry_buttons( $form, $args = array() ) {
 		$form_id = is_numeric( $form ) ? $form : $form->id;
 		echo '<div class="actions alignleft frm-button-group">';
 		self::insert_download_csv_button( $form_id );
-		self::delete_all_button( $form_id );
+		self::delete_all_button( $form_id, $args );
 		echo '</div>';
 	}
 
@@ -359,13 +359,13 @@ class FrmProEntriesHelper {
 		return $link;
 	}
 
-	public static function before_table( $footer, $form_id = false ) {
+	public static function before_table( $footer, $form_id = false, $args = array() ) {
 		if ( FrmAppHelper::simple_get( 'page', 'sanitize_title' ) != 'formidable-entries' || ! $form_id ) {
 			return;
 		}
 
 		if ( ! $footer ) {
-			self::show_list_entry_buttons( $form_id );
+			self::show_list_entry_buttons( $form_id, $args );
 			do_action( 'frm_before_entries_table', $form_id );
 		}
 	}
@@ -374,14 +374,17 @@ class FrmProEntriesHelper {
 	 * @since 4.0
 	 * @param int $form_id
 	 */
-	private static function delete_all_button( $form_id ) {
+	private static function delete_all_button( $form_id, $args = array() ) {
 		if ( ! apply_filters( 'frm_show_delete_all', current_user_can( 'frm_delete_entries' ), $form_id ) ) {
 			return;
 		}
 
+		$entries_count = ( isset( $args['entries_count'] ) ? $args['entries_count'] : 0 );
+		$verify        = ( isset( $args['bulk_delete_confirmation_message'] ) ? $args['bulk_delete_confirmation_message'] : '' );
+
 		?>
 		<span class="frm_uninstall">
-			<a href="<?php echo esc_url( wp_nonce_url( '?page=formidable-entries&frm_action=destroy_all' . ( $form_id ? '&form=' . absint( $form_id ) : '' ) ) ); ?>" class="button frm-button-secondary" data-frmverify="<?php esc_attr_e( 'ALL entries in this form will be permanently deleted. Want to proceed?', 'formidable-pro' ); ?>"  data-frmverify-btn="frm-button-red">
+			<a href="<?php echo esc_url( wp_nonce_url( '?page=formidable-entries&frm_action=destroy_all' . ( $form_id ? '&form=' . absint( $form_id ) : '' ) ) ); ?>" class="button frm-button-secondary" data-loaded-from="entries-list" data-total-entries="<?php echo esc_attr( $entries_count ); ?>" data-frmverify="<?php echo esc_attr( $verify ); ?>" data-frmverify-btn="frm-button-red">
 				<?php esc_html_e( 'Delete All Entries', 'formidable-pro' ); ?>
 			</a>
 		</span>
@@ -1108,5 +1111,44 @@ class FrmProEntriesHelper {
 			</a>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Outputs navigation links for a given current entry post.
+	 *
+	 * This function generates the HTML for the "previous" and "next" navigation
+	 * buttons for a given set of entries and the currently selected entry.
+	 *
+	 * @since 6.4.1
+	 *
+	 * @param int    $current_entry_id The ID of the current entry.
+	 * @param int    $form_id          The ID of the form that the entries belong to.
+	 * @param string $action           The action to determine the base URL for navigation.
+	 * @return void
+	 */
+	public static function get_entry_navigation( $current_entry_id, $form_id, $action ) {
+		// Get all the ids from the entries of the form.
+		$entry_ids = (array) FrmDb::get_col( 'frm_items', array( 'form_id' => $form_id ), 'id', array( 'order_by' => 'created_at DESC' ) );
+
+		// Get the count of all entries.
+		$total_entries_count = count( $entry_ids );
+
+		// Find the current position of the current entry within the array.
+		$current_entry_position = array_search( $current_entry_id, $entry_ids );
+
+		// If the current entry is not found, return.
+		if ( $current_entry_position === false ) {
+			return;
+		}
+
+		// Determine the IDs for the previous and next entries.
+		$previous_entry_id = $current_entry_position !== 0 ? $entry_ids[ $current_entry_position - 1 ] : null;
+		$next_entry_id     = ( $current_entry_position < $total_entries_count - 1 ) ? $entry_ids[ $current_entry_position + 1 ] : null;
+
+		// Determine the base URL for the specified action.
+		$base_url = admin_url( 'admin.php?page=formidable-entries&frm_action=' . $action . '&id=' );
+
+		// Include the navigation view.
+		require FrmProAppHelper::plugin_path() . '/classes/views/frmpro-entries/navigation.php';
 	}
 }

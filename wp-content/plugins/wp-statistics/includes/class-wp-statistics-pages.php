@@ -225,6 +225,12 @@ class Pages
         // Get Page uri
         $page_uri = self::sanitize_page_uri();
 
+        // If the length of URI is more than 190 characters
+        // Crop it, so it can be stored in the database
+        if (strlen($page_uri) > 190) {
+            $page_uri = substr($page_uri, 0, 190);
+        }
+
         // Check if we have already been to this page today.
         $exist = $wpdb->get_row("SELECT `page_id` FROM `" . DB::table('pages') . "` WHERE `date` = '" . TimeZone::getCurrentDate('Y-m-d') . "' " . (array_key_exists("search_query", $current_page) === true ? "AND `uri` = '" . esc_sql($page_uri) . "'" : "") . "AND `type` = '{$current_page['type']}' AND `id` = '{$current_page['id']}'", ARRAY_A);
 
@@ -478,7 +484,7 @@ class Pages
             $list[] = array(
                 'title'     => $page_info['title'],
                 'link'      => $page_info['link'],
-                'str_url'   => urldecode(sanitize_text_field($item->uri)),
+                'str_url'   => urldecode($item->uri),
                 'hits_page' => Menus::admin_url('pages', array('ID' => $item->id, 'type' => $item->type)),
                 'number'    => number_format_i18n($item->count_sum)
             );
@@ -544,5 +550,15 @@ class Pages
         }
 
         return $result;
+    }
+
+    public static function checkIfPageIsHome($postID = false)
+    {
+        if (get_option('show_on_front') == 'page') {
+            if (get_option('page_on_front') == $postID or get_option('page_for_posts') == $postID) {
+                return true;
+            }
+        }
+        return false;
     }
 }

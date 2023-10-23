@@ -25,8 +25,12 @@ class FrmProEntriesListHelper extends FrmEntriesListHelper {
 
 	protected function extra_tablenav( $which ) {
 		parent::extra_tablenav( $which );
-		$is_footer = ( $which !== 'top' );
-		FrmProEntriesHelper::before_table( $is_footer, $this->params['form'] );
+		$is_footer    = ( $which !== 'top' );
+		$entries_args = array(
+			'entries_count'                    => $this->total_items,
+			'bulk_delete_confirmation_message' => $this->confirm_bulk_delete(),
+		);
+		FrmProEntriesHelper::before_table( $is_footer, $this->params['form'], $entries_args );
 	}
 
 	public function search_box( $text, $input_id ) {

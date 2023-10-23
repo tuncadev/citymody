@@ -179,9 +179,7 @@ class Container
     {
         return new AdminNotice(
             $this->get(ErrorTranslator::class),
-            $this->get(DismissibleNoticeService::class),
-            $this->get(WooCommerceIntegrationService::class),
-            $this->get(IntegrationState::class)
+            $this->get(DismissibleNoticeService::class)
         );
     }
 

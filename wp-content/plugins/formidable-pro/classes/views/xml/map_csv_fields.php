@@ -128,7 +128,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                                             <option value="ip" <?php selected( 'ip', strtolower( $header ) ); ?>>
                                                 <?php esc_html_e( 'IP Address', 'formidable-pro' ); ?>
                                             </option>
-                                            <option value="is_draft" <?php selected( 'is_draft', strtolower( $header ) ) . selected( 'draft', strtolower( $header ) ); ?>>
+                                            <option value="is_draft" <?php selected( in_array( strtolower( $header ), array( 'draft', 'entry status' ), true ) ); ?>>
                                                 <?php esc_html_e( 'Is Draft', 'formidable-pro' ); ?>
                                             </option>
                                             <option value="id" <?php selected( __( 'Entry ID', 'formidable-pro' ), htmlspecialchars( $header ) ) . selected( 'id', strtolower( htmlspecialchars( $header ) ) ); ?>>

@@ -49,6 +49,10 @@ class FrmProAppController {
 		return $location;
 	}
 
+	/**
+	 * @param array $files
+	 * @return array
+	 */
 	public static function combine_js_files( $files ) {
 		$pro_js = self::get_pro_js_files( '.min', false );
 		foreach ( $pro_js as $js ) {
@@ -64,6 +68,9 @@ class FrmProAppController {
 		return is_readable( FrmProAppHelper::plugin_path() . '/js/frm.min.js' );
 	}
 
+	/**
+	 * @return void
+	 */
 	public static function register_scripts() {
 		$suffix = FrmAppHelper::js_suffix();
 
@@ -84,7 +91,36 @@ class FrmProAppController {
 		}
 		FrmAppHelper::localize_script( 'front' );
 
+		self::localize_global_messages();
 		self::add_password_checks_data_to_js();
+		FrmProStrpLiteController::maybe_register_stripe_scripts();
+	}
+
+	/**
+	 * Localizes the global settings messages.
+	 *
+	 * @since 6.4.1
+	 *
+	 * @return void
+	 */
+	private static function localize_global_messages() {
+
+		/**
+		 * Allows turning the repeater delete confirmation on/off.
+		 *
+		 * @since 6.4.1
+		 *
+		 * @param bool Whether a confirmation is required before deleting a repeater row.
+		 */
+		$enable_repeater_row_delete_confirmation = apply_filters( 'frm_enable_repeater_row_delete_confirmation', true );
+
+		if ( $enable_repeater_row_delete_confirmation ) {
+			$frmpro_settings = FrmProAppHelper::get_settings();
+
+			if ( ! empty( $frmpro_settings->repeater_row_delete_confirmation ) ) {
+				wp_add_inline_script( 'formidable', 'window.frm_js.repeaterRowDeleteConfirmation = "' . esc_js( $frmpro_settings->repeater_row_delete_confirmation ) . '";' );
+			}
+		}
 	}
 
 	/**
@@ -523,6 +559,17 @@ class FrmProAppController {
 	}
 
 	/**
+	 * Init admin head. It's called via action hook admin_head.
+	 *
+	 * @since 6.5.1
+	 *
+	 * @return void
+	 */
+	public static function admin_init_head() {
+		FrmProAddonsController::show_warning_overlay_for_expired_or_null_license();
+	}
+
+	/**
 	 * @since 5.0.17
 	 *
 	 * @return void
@@ -533,6 +580,11 @@ class FrmProAppController {
 		}
 		self::maybe_enqueue_styles_for_admin_page_action( 'formidable-entries' );
 		self::maybe_enqueue_styles_for_admin_page_action( 'formidable', 'reports' );
+
+		if ( FrmAppHelper::is_admin_page( 'formidable-entries' ) ) {
+			self::register_and_enqueue_admin_script( 'entries' );
+			return;
+		}
 
 		if ( ! FrmAppHelper::is_admin_page( 'formidable' ) ) {
 			return;
@@ -783,7 +835,54 @@ class FrmProAppController {
 		}
 
 		wp_register_script( 'formidable_pro_style_settings', self::get_settings_js_url() . 'style-settings.js', $dependencies, $version, true );
+
+		self::preload_svgs_for_style_settings();
+
 		wp_enqueue_script( 'formidable_pro_style_settings' );
+	}
+
+	/**
+	 * Preloads SVG icons for live updating in style settings.
+	 *
+	 * @since 6.4.2
+	 */
+	private static function preload_svgs_for_style_settings() {
+		$svgs      = array();
+		$svg_names = array(
+			'frm_plus_icon',
+			'frm_plus1_icon',
+			'frm_plus2_icon',
+			'frm_plus3_icon',
+			'frm_plus4_icon',
+			'frm_minus_icon',
+			'frm_minus1_icon',
+			'frm_minus2_icon',
+			'frm_minus3_icon',
+			'frm_minus4_icon',
+			'frm_arrowdown_icon',
+			'frm_arrowdown1_icon',
+			'frm_arrowdown2_icon',
+			'frm_arrowdown3_icon',
+			'frm_arrowdown4_icon',
+			'frm_arrowdown5_icon',
+			'frm_arrowdown6_icon',
+		);
+
+		foreach ( $svg_names as $svg_name ) {
+			$svgs[ $svg_name ] = FrmProAppHelper::get_svg_icon( $svg_name, 'frmsvg' );
+		}
+
+		wp_localize_script( 'formidable_pro_style_settings', 'frmProStyleSettingsSVGs', $svgs );
+	}
+
+	/**
+	 * Updates the default stylesheet.
+	 *
+	 * @since 6.4.1
+	 */
+	public static function update_stylesheet() {
+		$frm_style = new FrmStyle();
+		$frm_style->update( 'default' );
 	}
 
 	public static function load_genesis() {

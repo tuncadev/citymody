@@ -18,6 +18,10 @@ class FrmProApplicationsController {
 		$js_dependencies = array( 'formidable_applications', 'popper', 'bootstrap_tooltip' );
 		wp_register_script( 'formidable_pro_applications', $plugin_url . '/js/admin/applications/applications.js', $js_dependencies, $version, true );
 
+		if ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'formidable_pro_applications', 'formidable-pro', FrmProAppHelper::plugin_path() . '/languages' );
+		}
+
 		$can_add_views         = FrmProApplicationsHelper::views_is_active_and_supports_applications();
 		$expected_views_folder = WP_PLUGIN_DIR . '/formidable-views/';
 		$views_exists          = file_exists( $expected_views_folder . 'formidable-views.php' );

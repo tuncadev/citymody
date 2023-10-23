@@ -78,15 +78,10 @@ class FrmProFieldDate extends FrmFieldType {
 	 */
 	public function show_options( $field, $display, $values ) {
 		if ( ! function_exists( 'frm_dates_autoloader' ) && is_callable( 'FrmProAddonsController::install_link' ) ) {
-			$install_data = '';
-			$class        = ' frm_noallow';
-			$upgrading    = FrmProAddonsController::install_link( 'dates' );
-			if ( isset( $upgrading['url'] ) ) {
-				$install_data = json_encode( $upgrading );
-				$class        = '';
-				$requires     = '';
-			} else {
-				$requires = self::get_dates_add_on_required_plan();
+			$upgrade_data = self::get_dates_add_on_upgrade_link_data( true );
+			$class        = '';
+			if ( empty( $upgrade_data['oneclick'] ) ) {
+				$class = ' frm_noallow';
 			}
 		}
 
@@ -97,6 +92,38 @@ class FrmProFieldDate extends FrmFieldType {
 	}
 
 	/**
+	 * Gets data attributes for dates add on upgrade link.
+	 *
+	 * @param bool $prepend_data Prepend `data-` to the array key.
+	 * @return array
+	 */
+	public static function get_dates_add_on_upgrade_link_data( $prepend_data = false ) {
+		$data = array(
+			'oneclick' => '',
+			'requires' => '',
+			'upgrade'  => __( 'Extra Datepicker options', 'formidable-pro' ),
+			'medium'   => 'datepicker-options',
+		);
+
+		$upgrading = FrmProAddonsController::install_link( 'dates' );
+		if ( isset( $upgrading['url'] ) ) {
+			$data['oneclick'] = json_encode( $upgrading );
+		} else {
+			$data['requires'] = self::get_dates_add_on_required_plan();
+		}
+
+		if ( $prepend_data ) {
+			$new_data = array();
+			foreach ( $data as $key => $value ) {
+				$new_data[ 'data-' . $key ] = $value;
+			}
+			return $new_data;
+		}
+
+		return $data;
+	}
+
+	/**
 	 * Get required plan for Dates add on.
 	 *
 	 * @since 5.3
@@ -104,6 +131,10 @@ class FrmProFieldDate extends FrmFieldType {
 	 * @return string Empty string if no plan is required for active license.
 	 */
 	private static function get_dates_add_on_required_plan() {
+		if ( method_exists( 'FrmAddonsController', 'get_addon_required_plan' ) ) {
+			return FrmAddonsController::get_addon_required_plan( 20247260 );
+		}
+
 		$api      = new FrmFormApi();
 		$addons   = $api->get_api_info();
 		$dates_id = 20247260;
