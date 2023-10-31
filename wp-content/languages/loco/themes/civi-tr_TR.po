@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-21 23:02+0000\n"
-"PO-Revision-Date: 2023-07-15 03:43+0000\n"
+"PO-Revision-Date: 2023-10-31 11:33+0000\n"
 "Last-Translator: \n"
 "Language-Team: Türkçe\n"
 "Language: tr_TR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.4; wp-6.2.2"
+"X-Loco-Version: 2.6.6; wp-6.3.2"
 
 #: ../civi/includes/class-breadcrumb.php:30
 msgid " &gt; "
@@ -3306,7 +3306,7 @@ msgstr ""
 
 #: ../civi/comments.php:84
 msgid "Leave your thought here"
-msgstr ""
+msgstr "Düşünceni buraya bırak"
 
 #: ../civi/elementor/class-widget-utils.php:13
 #: ../civi/elementor/class-widget-utils.php:31
@@ -5627,7 +5627,7 @@ msgstr ""
 
 #: ../civi/comments.php:87
 msgid "Submit"
-msgstr ""
+msgstr "Gönder"
 
 #: ../civi/elementor/widgets/google-map.php:553
 msgid "Subtle Grayscale"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Package Name\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-21 23:02+0000\n"
-"PO-Revision-Date: 2023-07-15 02:50+0000\n"
+"PO-Revision-Date: 2023-07-15 03:43+0000\n"
 "Last-Translator: \n"
 "Language-Team: Türkçe\n"
 "Language: tr_TR\n"
@@ -47,6 +47,13 @@ msgstr ""
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "%s ago"
+msgstr ""
+
+#. 1: plugin name.
+#: ../civi/includes/class-tgm-plugin-activation.php:3791
+#: ../civi/includes/class-tgm-plugin-activation.php:3799
+#, php-format
+msgid "%s updated successfully."
 msgstr ""
 
 #: ../civi/customizer/settings/functions.php:271
@@ -251,6 +258,17 @@ msgstr "Kullanıcı adı veya E-Posta"
 msgid "Action"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2981
+msgid "Activate"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: ../civi/includes/class-tgm-plugin-activation.php:2863
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2555
 #: ../civi/elementor/widgets/instagram.php:1297
 #: ../civi/elementor/widgets/accordion.php:316
 #: ../civi/elementor/widgets/nav-menu.php:425
@@ -376,6 +394,14 @@ msgstr ""
 msgid "All Categories"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:3792
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3800
+msgid "All installations have been completed."
+msgstr ""
+
 #: ../civi/elementor/widgets/posts/posts-base.php:682
 msgid "All items displayed."
 msgstr ""
@@ -384,6 +410,8 @@ msgstr ""
 msgid "All location"
 msgstr ""
 
+#. 1: dashboard link.
+#: ../civi/includes/class-tgm-plugin-activation.php:409
 #: ../civi/includes/class-plugins.php:200
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
@@ -391,6 +419,12 @@ msgstr ""
 
 #: ../civi/elementor/widgets/google-map.php:229
 msgid "Always"
+msgstr ""
+
+#. 1: plugin name, 2: error message.
+#: ../civi/includes/class-tgm-plugin-activation.php:3783
+#, php-format
+msgid "An error occurred while updating %1$s: %2$s"
 msgstr ""
 
 #: ../civi/elementor/widgets/nav-menu.php:283
@@ -460,6 +494,11 @@ msgstr ""
 #: ../civi/elementor/widgets/image-layers.php:52
 #: ../civi/elementor/widgets/image-layers.php:284
 msgid "Artboard"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2725
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
 msgstr ""
 
 #: ../civi/elementor/widgets/carousel/posts-carousel-base.php:244
@@ -551,6 +590,10 @@ msgstr ""
 
 #: ../civi/elementor/widgets/instagram.php:506
 msgid "Autoplay speed"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2753
+msgid "Available version:"
 msgstr ""
 
 #: ../civi/elementor/widgets/testimonial-grid.php:190
@@ -734,18 +777,21 @@ msgstr ""
 msgid "Before Spacing"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:395
 #: ../civi/includes/class-plugins.php:173
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:385
 #: ../civi/includes/class-plugins.php:163
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:390
 #: ../civi/includes/class-plugins.php:168
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
@@ -1852,6 +1898,10 @@ msgstr ""
 msgid "Direction"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:410
+msgid "Dismiss this notice"
+msgstr ""
+
 #: ../civi/elementor/widgets/google-map.php:225
 msgid "Display"
 msgstr ""
@@ -1940,7 +1990,7 @@ msgstr "E-Posta"
 
 #: ../civi/includes/class-ajax.php:147
 msgid "Email already exists"
-msgstr ""
+msgstr "E-Posta zaten kayıtlı"
 
 #: ../civi/woocommerce/checkout/thankyou.php:58
 msgid "Email:"
@@ -2081,6 +2131,10 @@ msgstr ""
 
 #: ../civi/elementor/widgets/original/section.php:48
 msgid "Extended"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2527
+msgid "External Source"
 msgstr ""
 
 #: ../civi/elementor/class-widget-utils.php:173
@@ -3042,14 +3096,43 @@ msgstr ""
 msgid "Instagram Access Token"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2972
+msgid "Install"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: ../civi/includes/class-tgm-plugin-activation.php:2852
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:343
 #: ../civi/includes/class-plugins.php:102
 msgid "Install Plugins"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:342
 #: ../civi/includes/class-plugins.php:98
 msgid "Install Required Plugins"
 msgstr ""
 
+#. 1: install status, 2: update status
+#: ../civi/includes/class-tgm-plugin-activation.php:2574
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2553
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2733
+msgid "Installed version:"
+msgstr ""
+
+#. %s: plugin name.
+#: ../civi/includes/class-tgm-plugin-activation.php:345
 #: ../civi/includes/class-plugins.php:103
 #, php-format
 msgid "Installing Plugin: %s"
@@ -3636,6 +3719,10 @@ msgstr ""
 msgid "Min Width"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2741
+msgid "Minimum required version:"
+msgstr ""
+
 #: ../civi/elementor/widgets/instagram.php:169
 msgid "Minute"
 msgstr ""
@@ -3870,6 +3957,8 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#. 1: plugin name.
+#: ../civi/includes/class-tgm-plugin-activation.php:405
 #: ../civi/includes/class-plugins.php:190
 #, php-format
 msgid "No action taken. Plugin %1$s was already active."
@@ -3889,6 +3978,34 @@ msgstr ""
 
 #: ../civi/elementor/widgets/google-map.php:551
 msgid "No Label Bright Colors"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3190
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3056
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3058
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2777
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3164
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3013
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3015
+msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
 #: ../civi/customizer/options/general.php:171
@@ -3990,6 +4107,10 @@ msgstr ""
 
 #: ../civi/elementor/widgets/grid/client-logo.php:52
 msgid "Normal to opacity"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2549
+msgid "Not Installed"
 msgstr ""
 
 #: ../civi/elementor/widgets/icon-box.php:292
@@ -4312,8 +4433,16 @@ msgid ""
 "account."
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:412
 #: ../civi/includes/class-plugins.php:205
 msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:1077
+#: ../civi/includes/class-tgm-plugin-activation.php:1083
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
 msgstr ""
 
 #: ../civi/elementor/widgets/instagram.php:1359
@@ -4336,16 +4465,43 @@ msgstr ""
 msgid "Please, re-login!"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2792
+msgid "Plugin"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:1273
+#: ../civi/includes/class-tgm-plugin-activation.php:3204
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:402
+#: ../civi/includes/class-tgm-plugin-activation.php:3429
 #: ../civi/includes/class-plugins.php:182
 msgid "Plugin activated successfully."
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:3428
+msgid "Plugin activation failed."
+msgstr ""
+
+#. 1: plugin name.
+#: ../civi/includes/class-tgm-plugin-activation.php:407
 #: ../civi/includes/class-plugins.php:195
 #, php-format
 msgid ""
 "Plugin not activated. A higher version of %s is needed for this theme. "
 "Please update the plugin."
 msgstr ""
+
+#. 1: number of plugins.
+#: ../civi/includes/class-tgm-plugin-activation.php:2623
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../civi/elementor/widgets/nav-menu.php:284
 msgid "Plus"
@@ -4457,6 +4613,10 @@ msgstr ""
 
 #: ../civi/elementor/widgets/job-search.php:86
 msgid "Posts Per Page"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2530
+msgid "Pre-Packaged"
 msgstr ""
 
 #: ../civi/elementor/widgets/fancy-heading.php:145
@@ -4604,6 +4764,10 @@ msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2506
+msgid "Recommended"
+msgstr ""
+
 #: ../civi/includes/class-ajax.php:217
 msgid "Register success"
 msgstr ""
@@ -4634,6 +4798,18 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2503
+msgid "Required"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2561
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2563
+msgid "Requires Update"
+msgstr ""
+
 #: ../civi/elementor/widgets/user-form.php:130
 #: ../civi/templates/global/account.php:87
 msgid "Reset password."
@@ -4647,8 +4823,16 @@ msgstr ""
 msgid "Retro"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:400
 #: ../civi/includes/class-plugins.php:178
 msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:401
+#: ../civi/includes/class-tgm-plugin-activation.php:967
+#: ../civi/includes/class-tgm-plugin-activation.php:2777
+#: ../civi/includes/class-tgm-plugin-activation.php:3865
+msgid "Return to the Dashboard"
 msgstr ""
 
 #: ../civi/elementor/widgets/circle-progress-chart.php:81
@@ -4841,19 +5025,19 @@ msgstr ""
 #: ../civi/templates/global/account.php:51
 #: ../civi/templates/global/account.php:103
 msgid "Sending info,please wait..."
-msgstr ""
+msgstr "Kullanıcı bilgileri gönderiliyor, bekleyiniz"
 
 #: ../civi/elementor/widgets/user-form.php:134
 #: ../civi/templates/global/account.php:82
 msgid "Sending login info,please wait..."
-msgstr ""
+msgstr "Giriş bilgileri gönderiliyor, bekleyiniz"
 
 #: ../civi/elementor/widgets/user-form.php:244
 #: ../civi/elementor/widgets/user-form.php:256
 #: ../civi/templates/global/account.php:186
 #: ../civi/templates/global/account.php:198
 msgid "Sending register info,please wait..."
-msgstr ""
+msgstr "Kayıt bilgileri gönderiliyor, bekleyiniz"
 
 #: ../civi/includes/class-enqueue.php:268
 msgid "Sending user info,please wait..."
@@ -5173,6 +5357,7 @@ msgstr ""
 msgid "Someone has requested a password reset for the following account:"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:348
 #: ../civi/includes/class-plugins.php:105
 msgid "Something went wrong with the plugin API."
 msgstr ""
@@ -5226,11 +5411,18 @@ msgstr ""
 msgid "Sorry, we couldn't find that page."
 msgstr ""
 
+#: ../civi/404.php:17
+msgid ""
+"Sorry, we couldn't find the page you were looking for. The page you are "
+"looking for may be moved, removed, renamed or never found."
+msgstr ""
+
 #: ../civi/elementor/widgets/carousel/posts-carousel-base.php:240
 #: ../civi/elementor/widgets/posts/posts-base.php:239
 msgid "Sort order"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2793
 #: ../civi/elementor/widgets/carousel/posts-carousel-base.php:78
 #: ../civi/elementor/widgets/posts/posts-base.php:77
 msgid "Source"
@@ -5313,6 +5505,10 @@ msgstr ""
 
 #: ../civi/elementor/widgets/image-layers.php:123
 msgid "Static Layer"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2799
+msgid "Status"
 msgstr ""
 
 #: ../civi/templates/page/page-title.php:71
@@ -5735,6 +5931,12 @@ msgctxt "Text Stroke Control"
 msgid "Text Stroke"
 msgstr ""
 
+#. %s: version number
+#: ../civi/includes/class-tgm-plugin-activation.php:2195
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
 #: ../civi/woocommerce/checkout/thankyou.php:42
 #: ../civi/woocommerce/checkout/thankyou.php:84
 msgid "Thank you. Your order has been received.  Waiting admin approved."
@@ -5746,8 +5948,9 @@ msgstr ""
 
 #: ../civi/includes/class-ajax.php:449
 msgid "The email could not be sent."
-msgstr ""
+msgstr "Bu E-Posta gönderilemez."
 
+#: ../civi/includes/class-tgm-plugin-activation.php:361
 #: ../civi/includes/class-plugins.php:127
 #, php-format
 msgid ""
@@ -5759,10 +5962,13 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:403
+#: ../civi/includes/class-tgm-plugin-activation.php:3208
 #: ../civi/includes/class-plugins.php:186
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:379
 #: ../civi/includes/class-plugins.php:151
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
@@ -5770,6 +5976,7 @@ msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:373
 #: ../civi/includes/class-plugins.php:145
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
@@ -5781,8 +5988,34 @@ msgstr[1] ""
 msgid "The Garden at Bougival"
 msgstr ""
 
-#: ../civi/404.php:17
-msgid "The page you're looking for cannot be found"
+#: ../civi/includes/class-tgm-plugin-activation.php:3789
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. 1: plugin name.
+#: ../civi/includes/class-tgm-plugin-activation.php:3785
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:3797
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:1083
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:1077
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
 msgstr ""
 
 #: ../civi/elementor/widgets/instagram.php:644
@@ -5797,6 +6030,13 @@ msgstr ""
 msgid "There are no menus in your site."
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:411
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:367
 #: ../civi/includes/class-plugins.php:133
 #, php-format
 msgid "There is an update available for: %1$s."
@@ -5826,6 +6066,11 @@ msgstr ""
 msgid "This is the heading"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:640
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:355
 #: ../civi/includes/class-plugins.php:115
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
@@ -5833,6 +6078,7 @@ msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:349
 #: ../civi/includes/class-plugins.php:109
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
@@ -5919,6 +6165,22 @@ msgstr ""
 #: ../civi/elementor/widgets/modern-tabs.php:88
 msgid "Title Tabs"
 msgstr ""
+
+#. 1: number of plugins.
+#: ../civi/includes/class-tgm-plugin-activation.php:2635
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. 1: number of plugins.
+#: ../civi/includes/class-tgm-plugin-activation.php:2627
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
 
 #: ../civi/includes/class-ajax.php:437
 msgid "To reset your password, visit the following address:"
@@ -6046,6 +6308,7 @@ msgstr ""
 msgid "Two images showcase"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2794
 #: ../civi/elementor/widgets/icon-box.php:307
 #: ../civi/elementor/widgets/button.php:95
 #: ../civi/elementor/widgets/job-search.php:56
@@ -6123,12 +6386,56 @@ msgstr ""
 msgid "Up"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2978
+msgid "Update"
+msgstr ""
+
+#. %2$s: plugin name in screen reader markup
+#: ../civi/includes/class-tgm-plugin-activation.php:2857
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. 1: number of plugins.
+#: ../civi/includes/class-tgm-plugin-activation.php:2631
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
 #: ../civi/includes/class-templates.php:530
 msgid "Update Profile"
 msgstr ""
 
+#: ../civi/includes/class-tgm-plugin-activation.php:2565
+msgid "Update recommended"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:641
+msgid "Update Required"
+msgstr ""
+
 #: ../civi/woocommerce/checkout/payment.php:47
 msgid "Update totals"
+msgstr ""
+
+#. 1: plugin name, 2: action number 3: total number of actions.
+#: ../civi/includes/class-tgm-plugin-activation.php:3780
+#: ../civi/includes/class-tgm-plugin-activation.php:3794
+#: ../civi/includes/class-tgm-plugin-activation.php:3802
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. %s: plugin name.
+#: ../civi/includes/class-tgm-plugin-activation.php:347
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2937
+msgid "Upgrade message from the plugin author:"
 msgstr ""
 
 #: ../civi/elementor/widgets/image-gallery.php:159
@@ -6154,7 +6461,7 @@ msgstr ""
 
 #: ../civi/includes/class-ajax.php:97
 msgid "Username or password is wrong. Please try again"
-msgstr ""
+msgstr "Kullanıcı ismi veya parola yanlış."
 
 #: ../civi/includes/class-ajax.php:241
 msgid "Username/Email address is existing"
@@ -6191,6 +6498,10 @@ msgstr ""
 
 #: ../civi/includes/class-ajax.php:315
 msgid "Verify success"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2798
+msgid "Version"
 msgstr ""
 
 #: ../civi/elementor/widgets/carousel/carousel-base.php:395
@@ -6339,6 +6650,10 @@ msgstr ""
 
 #: ../civi/elementor/class-widget-utils.php:257
 msgid "Width 2 - Height 2"
+msgstr ""
+
+#: ../civi/includes/class-tgm-plugin-activation.php:2524
+msgid "WordPress Repository"
 msgstr ""
 
 #: ../civi/elementor/widgets/heading.php:74
