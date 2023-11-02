@@ -24,7 +24,7 @@ $en_IDS = [
     "my_jobs" => 15381,
 		"my_favorites" => 15381,
     "candidate_reviews" => '',
-    "candidate_company" => '',
+    "candidate_company" => '17528',
     "candidate_messages" => '',
     "candidate_meetings" => '',
     "candidate_settings" => 15379,
@@ -77,8 +77,9 @@ if (empty($profile_strength_percent)) {
 										$value = $key === "candidate_membership" ? "<span style='color: #ffb229;'>" . $value . "</span>" . __(" Upgrade", "civi-framework") : $value;
 										$class_active =
 												is_page($id) && $key !== "candidate_logout" && !isset($_GET["wishlist"]) ? "active" : "";
-
+										$wish_url = "/dashboard/candidates/my-jobs/";
 										if($language != "tr") { 
+												$wish_url = "/dashboard-en/candidates-en/my-jobs-en/";
 												if($nID != '') { $id = $nID; }
 										} 
 										$link_url = "";
@@ -121,7 +122,7 @@ if (empty($profile_strength_percent)) {
 											</li>
 										<?php } else { ?>
 											<li class="nav-item <?php esc_html_e($favActive); ?>">
-												<a href="<?php echo $loc; ?>/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>"  style="padding:5px 17px;">
+												<a href="<?php echo $loc; ?><?php echo $wish_url; ?>?wishlist" data-title="<?php echo $value; ?>"  style="padding:5px 17px;">
 													<span class="image" style="margin-right: 13px;">
 														<img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
 													</span>

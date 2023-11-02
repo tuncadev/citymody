@@ -299,8 +299,9 @@ if (!class_exists("Civi_Templates")) {
 				"candidate_dashboard" => 15370,
 				"candidate_profile" => 15375,
 				"my_jobs" => 15381,
+				"my_favorites" => 15381,
 				"candidate_reviews" => '',
-				"candidate_company" => '',
+				"candidate_company" => '17528',
 				"candidate_messages" => '',
 				"candidate_meetings" => '',
 				"candidate_settings" => 15379,
@@ -442,13 +443,15 @@ if (!class_exists("Civi_Templates")) {
 
 											$class_active =
 												is_page($id) && $key !== "candidate_logout" && !isset($_GET["wishlist"]) ? "active" : "";
+												$wish_url = "/dashboard/candidates/my-jobs/";
 											if($language != "tr") { 
+												$wish_url = "/dashboard-en/candidates-en/my-jobs-en/";
 												$nID = $en_IDS[$key];
 												if($nID === '') { $id = $id; } else { $id = $nID ; }
 											} 
 											$link_url = '';
 											$link_url = $key === "candidate_logout" ? wp_logout_url(home_url()) : get_permalink($id);
-
+											$loc = get_site_url();
 											$html_icon = '';
 											if (!empty($image_candidate['url'])) {
 												if (civi_get_option("type_icon_candidate") === "svg") {
@@ -484,7 +487,7 @@ if (!class_exists("Civi_Templates")) {
 											</li>
 										<?php } else { ?>
 											<li class="nav-item <?php esc_html_e($favActive); ?>">
-												<a href="https://www.citymody.com/dashboard/candidates/my-jobs/?wishlist" data-title="<?php echo $value; ?>" style="padding:5px 14px;">
+												<a href="<?php echo $loc; ?><?php echo $wish_url; ?>?wishlist" data-title="<?php echo $value; ?>" style="padding:5px 14px;">
 													<span class="image" style="margin-right: 16px;">
 														<img src="https://www.citymody.com/wp-content/uploads/2023/08/favorites.svg" width="20" style="opacity: 0.95" />
 													</span>
