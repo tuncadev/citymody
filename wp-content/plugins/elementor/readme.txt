@@ -2,9 +2,9 @@
 Contributors: elemntor
 Tags: page builder, editor, landing page, drag-and-drop, elementor, visual editor, wysiwyg, design, maintenance mode, coming soon, under construction, website builder, landing page builder, front-end builder
 Requires at least: 6.0
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.3
-Stable tag: 3.17.1
+Stable tag: 3.17.2
 Beta tag: 3.17.0-beta4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -240,6 +240,10 @@ You can also add a new language via [translate.wordpress.org](https://go.element
 == Changelog ==
 
 See Elementor Developer Edition versions changelog [here](https://go.elementor.com/dev-changelog/)
+
+= 3.17.2 - 2023-11-01 =
+
+* Modified controls sanitization to enforce better security policies in Heading, Icon, Image Box, and Testimonial widgets
 
 = 3.17.1 - 2023-10-25 =
 
