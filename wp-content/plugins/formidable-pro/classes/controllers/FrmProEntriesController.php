@@ -452,6 +452,17 @@ class FrmProEntriesController {
 	public static function process_update_entry( $params, $errors, $form, $args ) {
 		self::maybe_autosave_on_page_turn( $errors, $form );
 
+		/**
+		 * Filter hook enables to manipulate the params and make changes to the
+		 * entry submission to force the entry to create or update.
+		 *
+		 * @since 6.5.3
+		 *
+		 * @param array $params Parameters from FrmForm::get_params.
+		 * @param object $form Form.
+		 */
+		$params = apply_filters( 'frm_pro_process_update_entry', $params, $form );
+
 		if ( $params['action'] === 'create' && FrmFormsController::just_created_entry( $form->id ) ) {
 			self::success_after_create( $params, $form, $args );
 		} elseif ( $params['action'] === 'update' && empty( $errors ) ) {

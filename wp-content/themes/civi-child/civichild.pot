@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CiviChild\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 09:41+0000\n"
+"POT-Creation-Date: 2023-10-31 11:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Account or Email"
 msgstr ""
 
-#: page-project-offer.php:278
+#: page-project-offer.php:279
 msgid "Additional Notes"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgstr ""
 msgid "Checking your password,please wait..."
 msgstr ""
 
-#: page-project-offer.php:233 page-post-project-en.php:138
+#: page-project-offer.php:234 page-post-project-en.php:138
 #: page-post-project.php:165
 msgid "City"
 msgstr ""
@@ -109,21 +109,29 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: page-project-offer.php:193
+#: comments.php:76
+msgid "Comment"
+msgstr ""
+
+#: comments.php:70
+msgid "Comments are closed."
+msgstr ""
+
+#: page-project-offer.php:194
 msgid "Company Details"
 msgstr ""
 
-#: page-project-offer.php:204 page-post-project-en.php:94
+#: page-project-offer.php:205 page-post-project-en.php:94
 #: page-post-project.php:121
 msgid "Company E-mail"
 msgstr ""
 
-#: page-project-offer.php:200 page-post-project-en.php:102
+#: page-project-offer.php:201 page-post-project-en.php:102
 #: page-post-project.php:129
 msgid "Company Name"
 msgstr ""
 
-#: page-project-offer.php:212
+#: page-project-offer.php:213
 msgid "Company Web Site"
 msgstr ""
 
@@ -131,7 +139,7 @@ msgstr ""
 msgid "Copyright @2023 Citymody. All rights reserved"
 msgstr ""
 
-#: page-project-offer.php:249
+#: page-project-offer.php:250
 msgid "Daily Budget"
 msgstr ""
 
@@ -139,7 +147,7 @@ msgstr ""
 msgid "Does not matter"
 msgstr ""
 
-#: templates/global/account.php:162
+#: comments.php:81 templates/global/account.php:162
 msgid "Email"
 msgstr ""
 
@@ -175,7 +183,7 @@ msgstr ""
 msgid "Enter your username or email"
 msgstr ""
 
-#: page-project-offer.php:221 page-post-project-en.php:107
+#: page-project-offer.php:222 page-post-project-en.php:107
 #: page-post-project.php:134
 msgid "Example: Looking for a female hostess for the TV program."
 msgstr ""
@@ -200,7 +208,7 @@ msgstr ""
 msgid "Forgot your password? "
 msgstr ""
 
-#: page-project-offer.php:196 page-post-project-en.php:90
+#: page-project-offer.php:197 page-post-project-en.php:90
 #: page-post-project.php:117
 msgid "Full Name"
 msgstr ""
@@ -234,7 +242,7 @@ msgstr ""
 msgid "Hmm, that didn’t work"
 msgstr ""
 
-#: page-project-offer.php:241
+#: page-project-offer.php:242
 msgid "Hourly Budget"
 msgstr ""
 
@@ -250,11 +258,15 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
+#: comments.php:84
+msgid "Leave your thought here"
+msgstr ""
+
 #: footer.php:70
 msgid "Link to profile was copied to clipboard!"
 msgstr ""
 
-#: page-project-offer.php:224
+#: page-project-offer.php:225
 msgid "Link to project (if exists)"
 msgstr ""
 
@@ -270,7 +282,7 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: page-project-offer.php:129
+#: page-project-offer.php:130
 msgid "Make an offer for your project"
 msgstr ""
 
@@ -282,7 +294,7 @@ msgstr ""
 msgid "Mobile Menu"
 msgstr ""
 
-#: templates/global/account.php:146
+#: comments.php:80 templates/global/account.php:146
 msgid "Name"
 msgstr ""
 
@@ -306,12 +318,12 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: page-project-offer.php:208 page-post-project-en.php:98
+#: page-project-offer.php:209 page-post-project-en.php:98
 #: page-post-project.php:125
 msgid "Phone Number"
 msgstr ""
 
-#: page-project-offer.php:279
+#: page-project-offer.php:280
 msgid "Please add  here if you have any additional notes"
 msgstr ""
 
@@ -321,15 +333,15 @@ msgid ""
 "account."
 msgstr ""
 
-#: page-project-offer.php:260
+#: page-project-offer.php:261
 msgid "Please Enter Your Budget for the Project"
 msgstr ""
 
-#: page-project-offer.php:252
+#: page-project-offer.php:253
 msgid "Please Enter Your Daily Budget"
 msgstr ""
 
-#: page-project-offer.php:244
+#: page-project-offer.php:245
 msgid "Please Enter Your Hourly Budget"
 msgstr ""
 
@@ -357,7 +369,7 @@ msgstr ""
 msgid "Please Select Category First"
 msgstr ""
 
-#: page-project-offer.php:235 page-post-project-en.php:140
+#: page-project-offer.php:236 page-post-project-en.php:140
 #: page-post-project.php:167
 msgid "Please Select City"
 msgstr ""
@@ -397,7 +409,7 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: page-project-offer.php:257
+#: page-project-offer.php:258
 msgid "Project Based Payment"
 msgstr ""
 
@@ -409,31 +421,31 @@ msgstr ""
 msgid "Project Day - Requirements - Event Details"
 msgstr ""
 
-#: page-project-offer.php:229
+#: page-project-offer.php:230
 msgid "Project Day - Requirements - Event Details, Project Rate"
 msgstr ""
 
-#: page-project-offer.php:228
+#: page-project-offer.php:229
 msgid "Project Description"
 msgstr ""
 
-#: page-project-offer.php:217
+#: page-project-offer.php:218
 msgid "Project Details"
 msgstr ""
 
-#: page-project-offer.php:274
+#: page-project-offer.php:275
 msgid "Project End Date"
 msgstr ""
 
-#: page-project-offer.php:137
+#: page-project-offer.php:138
 msgid "Project Offer For Candidate:"
 msgstr ""
 
-#: page-project-offer.php:270
+#: page-project-offer.php:271
 msgid "Project Start Date"
 msgstr ""
 
-#: page-project-offer.php:220 page-post-project-en.php:106
+#: page-project-offer.php:221 page-post-project-en.php:106
 #: page-post-project.php:133
 msgid "Project Title"
 msgstr ""
@@ -455,7 +467,7 @@ msgstr ""
 msgid "Save password"
 msgstr ""
 
-#: page-project-offer.php:283 page-post-project.php:205
+#: page-project-offer.php:284 page-post-project.php:205
 msgid "Send"
 msgstr ""
 
@@ -505,6 +517,10 @@ msgid ""
 "looking for may be moved, removed, renamed or never found."
 msgstr ""
 
+#: comments.php:87
+msgid "Submit"
+msgstr ""
+
 #: templates/global/account.php:186
 msgid "Terms"
 msgstr ""
@@ -543,7 +559,7 @@ msgstr ""
 msgid "We will contact you as soon as our moderators review your submission"
 msgstr ""
 
-#: page-project-offer.php:132
+#: page-project-offer.php:133
 msgid ""
 "You can send us information about the project via the form below. Our "
 "managers will contact you shortly."

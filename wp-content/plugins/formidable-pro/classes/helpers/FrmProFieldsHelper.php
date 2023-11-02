@@ -4242,8 +4242,6 @@ class FrmProFieldsHelper {
 	 * @return string
 	 */
 	public static function add_show_password_html( $input_html ) {
-		FrmProAppHelper::include_svg();
-
 		$show_label = __( 'Show password', 'formidable-pro' );
 
 		$button_attrs = array(
@@ -4274,8 +4272,8 @@ class FrmProFieldsHelper {
 	 */
 	private static function get_show_password_icons() {
 		$icons = array(
-			'show' => FrmAppHelper::icon_by_class( 'frmfont frm_eye_icon', array( 'echo' => false ) ),
-			'hide' => FrmAppHelper::icon_by_class( 'frmfont frm_eye_slash_icon', array( 'echo' => false ) ),
+			'show' => FrmProAppHelper::get_svg_icon( 'frm_eye_icon', 'frmsvg', array( 'echo' => false ) ),
+			'hide' => FrmProAppHelper::get_svg_icon( 'frm_eye_slash_icon', 'frmsvg', array( 'echo' => false ) ),
 		);
 
 		/**

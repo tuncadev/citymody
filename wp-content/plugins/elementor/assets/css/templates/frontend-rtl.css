@@ -1771,10 +1771,10 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
   --min-height: initial;
   --height: auto;
   --text-align: initial;
-  --margin-block-start: 0;
-  --margin-inline-end: 0;
-  --margin-block-end: 0;
-  --margin-inline-start: 0;
+  --margin-block-start: 0px;
+  --margin-inline-end: 0px;
+  --margin-block-end: 0px;
+  --margin-inline-start: 0px;
   --padding-block-start: var(--container-default-padding-block-start, 10px);
   --padding-inline-end: var(--container-default-padding-inline-end, 10px);
   --padding-block-end: var(--container-default-padding-block-end, 10px);
@@ -5590,6 +5590,56 @@ body.elementor-page .elementor-widget-menu-anchor {
 .e-con-inner > .elementor-widget-video {
   width: var(--container-widget-width);
   --flex-grow: var( --container-widget-flex-grow );
+}
+
+.elementor-widget-rating {
+  --e-rating-gap: 0px;
+  --e-rating-icon-font-size: 16px;
+  --e-rating-icon-color: #CCD6DF;
+  --e-rating-icon-marked-color: #f0ad4e;
+  --e-rating-icon-marked-width: 100%;
+  --e-rating-justify-content: flex-start;
+}
+.elementor-widget-rating .e-rating {
+  display: flex;
+  justify-content: var(--e-rating-justify-content);
+}
+.elementor-widget-rating .e-rating-wrapper {
+  display: flex;
+  justify-content: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin-block-end: calc(0px - var(--e-rating-gap));
+  margin-inline-end: calc(0px - var(--e-rating-gap));
+}
+.elementor-widget-rating .e-rating .e-icon {
+  position: relative;
+  margin-block-end: var(--e-rating-gap);
+  margin-inline-end: var(--e-rating-gap);
+}
+.elementor-widget-rating .e-rating .e-icon-wrapper.e-icon-marked {
+  --e-rating-icon-color: var(--e-rating-icon-marked-color);
+  width: var(--e-rating-icon-marked-width);
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.elementor-widget-rating .e-rating .e-icon-wrapper :is(i, svg) {
+  display: flex;
+  flex-shrink: 0;
+}
+.elementor-widget-rating .e-rating .e-icon-wrapper i {
+  font-size: var(--e-rating-icon-font-size);
+  color: var(--e-rating-icon-color);
+}
+.elementor-widget-rating .e-rating .e-icon-wrapper svg {
+  width: auto;
+  height: var(--e-rating-icon-font-size);
+  fill: var(--e-rating-icon-color);
 }
 
 /*# sourceMappingURL=frontend-rtl.css.map */

@@ -51,11 +51,15 @@ class FrmProFieldPassword extends FrmFieldType {
 		);
 	}
 
+	/**
+	 * @return array
+	 */
 	public function get_new_field_defaults() {
 		$field = parent::get_new_field_defaults();
 
 		// Setting `show_password` to 1 in the `extra_field_opts()` method will cause that option is always enabled.
 		$field['field_options']['show_password'] = 1;
+		$field['field_options']['invalid']       = __( 'Passwords must contain at least one special character', 'formidable-pro' );
 
 		return $field;
 	}

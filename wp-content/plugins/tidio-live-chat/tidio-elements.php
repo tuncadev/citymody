@@ -8,7 +8,7 @@ if (!defined('WPINC')) {
  * Plugin Name: Tidio Chat
  * Plugin URI: http://www.tidio.com
  * Description: Tidio Live Chat - live chat boosted with chatbots for your online business. Integrates with your website in less than 20 seconds.
- * Version: 6.0.10
+ * Version: 6.0.11
  * Requires at least: 4.7
  * Requires PHP: 7.2
  * Author: Tidio Ltd.
@@ -20,7 +20,7 @@ if (!defined('WPINC')) {
  * Update URI: https://wordpress.org/plugins/tidio-live-chat/
  */
 
-define('TIDIOCHAT_VERSION', '6.0.10');
+define('TIDIOCHAT_VERSION', '6.0.11');
 define('AFFILIATE_CONFIG_FILE_PATH', get_template_directory() . '/tidio_affiliate_ref_id.txt');
 
 require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';

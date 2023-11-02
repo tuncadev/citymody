@@ -4065,7 +4065,8 @@ function frmProFormJS() {
 
 				if ( n !== '' && n !== 0 ) {
 					n = n.trim();
-					n = parseFloat( n.replace( /,/g, '' ).match( /-?[\d\.]+$/ ) );
+					// Include e to support scientific notation like 10e2.
+					n = parseFloat( n.replace( /,/g, '' ).match( /-?[\d\.e]+$/ ) );
 				}
 
 				if ( typeof n === 'undefined' || isNaN( n ) || n === '' ) {
@@ -4218,7 +4219,7 @@ function frmProFormJS() {
 
 		if ( container.length || repeatArgs.repeatRow !== '' ) {
 			if ( container.length ) {
-				fields = container.find( siblingFieldCall );
+				fields = container.find( siblingFieldCall + ',' + siblingFieldCall.replace( 'input[', 'select[' ) );
 			} else {
 				fields = jQuery( siblingFieldCall );
 			}
@@ -4250,7 +4251,7 @@ function frmProFormJS() {
 	}
 
 	function getNonSiblingField( field ) {
-		var nonSiblingField = jQuery( field.thisFieldCall );
+		var nonSiblingField = jQuery( field.thisFieldCall + ',' + field.thisFieldCall.replace( 'input[', 'select[' ) );
 		if ( ! nonSiblingField.length && 'input[' === field.thisFieldCall.substr( 0, 6 ) ) {
 			if ( 'undefined' !== typeof field.triggerField && field.triggerField.is( 'div' ) && field.triggerField.hasClass( 'frm_form_field' ) ) {
 				nonSiblingField = field.triggerField.find( field.thisFieldCall.replace( 'input[', 'textarea[' ) );

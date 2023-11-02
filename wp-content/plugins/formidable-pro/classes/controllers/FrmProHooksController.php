@@ -165,7 +165,6 @@ class FrmProHooksController {
 		add_filter( 'frm_email_control_settings', 'FrmProFormActionsController::email_action_control' );
 		add_filter( 'frm_trigger_create_action', 'FrmProFormActionsController::maybe_trigger_draft_actions', 10, 2 );
 		add_action( 'frm_after_update_entry', 'FrmProFormActionsController::trigger_update_actions', 10, 2 );
-		add_action( 'frm_before_destroy_entry', 'FrmProFormActionsController::trigger_delete_actions', 20, 2 );
 		add_action( 'frm_on_submit_control_settings', 'FrmProFormActionsController::change_on_submit_action_ops' );
 
 		// Forms Controller
@@ -199,8 +198,10 @@ class FrmProHooksController {
 
 		// Posts model
 		add_action( 'frm_trigger_wppost_action', 'FrmProPost::save_post', 10, 3 );
-		add_action( 'frm_before_destroy_entry', 'FrmProPost::destroy_post', 10, 2 );
 		add_action( 'frm_after_duplicate_entry', 'FrmProPost::duplicate_post_data', 10, 3 );
+
+		// FrmProPost::destroy_post also handles deleting of child entries.
+		add_action( 'frm_before_destroy_entry', 'FrmProPost::destroy_post', 10, 2 );
 
 		// Stats Controller
 		add_shortcode( 'frm-stats', 'FrmProStatisticsController::stats_shortcode' );

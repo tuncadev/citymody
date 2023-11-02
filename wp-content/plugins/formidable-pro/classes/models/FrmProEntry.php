@@ -603,6 +603,7 @@ class FrmProEntry {
 	 */
 	public static function is_draft( $entry_id ) {
 		$entry = FrmEntry::getOne( $entry_id );
-		return ( $entry && $entry->is_draft );
+		$draft_entry_status = defined( 'FrmEntriesHelper::DRAFT_ENTRY_STATUS' ) ? FrmEntriesHelper::DRAFT_ENTRY_STATUS : 1;
+		return ( $entry && $draft_entry_status === (int) $entry->is_draft );
 	}
 }

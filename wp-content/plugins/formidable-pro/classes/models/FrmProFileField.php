@@ -1620,7 +1620,16 @@ class FrmProFileField {
 	 * @param string $path
 	 */
 	private static function set_to_read_only( $path ) {
-		self::chmod( $path, self::READ_ONLY );
+		self::chmod( $path, self::get_readonly_permission() );
+	}
+
+	/**
+	 * @since 6.5.3
+	 *
+	 * @return int
+	 */
+	public static function get_readonly_permission() {
+		return apply_filters( 'frm_protected_file_readonly_permission', self::READ_ONLY );
 	}
 
 	/**
@@ -1993,7 +2002,7 @@ class FrmProFileField {
 
 		// If wp_filesystem->chmod didn't work, try using chmod.
 		if ( ! is_readable( $download['path'] ) ) {
-			chmod( $download['path'], self::READ_ONLY );
+			chmod( $download['path'], self::get_readonly_permission() );
 		}
 
 		$mime_type   = FrmProAppHelper::get_mime_type( $download['path'] );
@@ -2250,7 +2259,7 @@ class FrmProFileField {
 		$leave = array( $chmod );
 
 		if ( $protected ) {
-			$leave[] = self::READ_ONLY;
+			$leave[] = self::get_readonly_permission();
 		}
 
 		if ( ! in_array( self::get_chmod( array( 'file' => $file ) ), $leave, true ) ) {

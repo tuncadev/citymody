@@ -33,7 +33,7 @@ if ( ! is_callable( 'FrmSettingsController::message_settings' ) ) {
 	<?php
 	/**
 	 * Include the global currency setting for backward compatibility when Lite is not up to date.
-	 * As of version x.x the global currency setting is now in Lite.
+	 * As of version 6.5 the global currency setting is now in Lite.
 	 */
 	?>
 	<p class="frm_grid_container">

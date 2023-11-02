@@ -18,20 +18,30 @@ if ( 'select' === $field['data_type'] ) {
 	// If there are field options, show them in a dropdown
 	if ( ! empty( $field['options'] ) ) {
 		?>
-		<select <?php echo $disabled; ?> name="<?php echo esc_attr( $field_name ); ?>" id="<?php echo esc_attr( $html_id ); ?>" <?php do_action('frm_field_input_html', $field); ?>>
+		<select <?php echo $disabled; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> name="<?php echo esc_attr( $field_name ); ?>" id="<?php echo esc_attr( $html_id ); ?>" <?php do_action('frm_field_input_html', $field); ?>>
 			<?php
 			$placeholder = FrmField::get_option( $field, 'placeholder' );
 			foreach ( $field['options'] as $opt ) {
 				$is_placeholder = ( $opt == $placeholder );
-				if ( $is_placeholder && ( $field['multiple'] || $field['autocom'] ) ) {
+				if ( $is_placeholder && $field['autocom'] ) {
 					$opt = '';
 				}
 
-				$opt_value = $is_placeholder ? '' : $opt;
-				$selected  = ( in_array( $opt_value, $saved_value_array ) && $opt_value !== '' ) ? ' selected="selected"' : '';
+				$opt_value     = $is_placeholder ? '' : $opt;
+				$option_params = array(
+					'value' => $opt_value,
+				);
+
+				if ( in_array( $opt_value, $saved_value_array ) && $opt_value !== '' ) {
+					$option_params['selected'] = 'selected';
+				}
+
+				if ( $is_placeholder ) {
+					$option_params['class'] = 'frm-select-placeholder';
+				}
 				?>
-				<option value="<?php echo esc_attr( $opt_value ); ?>"<?php echo $selected; ?>>
-					<?php echo ( $opt == '' ) ? ' ' : esc_html( $opt ); ?>
+				<option <?php FrmAppHelper::array_to_html_params( $option_params, true ); ?>>
+					<?php echo $opt == '' ? ' ' : esc_html( $opt ); ?>
 				</option>
 				<?php
 			}
@@ -80,7 +90,7 @@ if ( 'select' === $field['data_type'] ) {
 
 	$value = is_array( $field['value'] ) ? reset( $field['value'] ) : $field['value'];
 	?>
-	<input type="text" id="<?php echo esc_attr( $html_id ); ?>" name="<?php echo esc_attr( $field_name ); ?>" value="<?php echo esc_attr( $value ); ?>" <?php do_action('frm_field_input_html', $field); ?><?php echo $disabled; ?>/>
+	<input type="text" id="<?php echo esc_attr( $html_id ); ?>" name="<?php echo esc_attr( $field_name ); ?>" value="<?php echo esc_attr( $value ); ?>" <?php do_action('frm_field_input_html', $field); ?><?php echo $disabled; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>/>
 	<?php
 } elseif ( $field['data_type'] === 'data' && ! empty( $field['watch_lookup'] ) && is_numeric( $field['get_values_field'] ) ) {
 	$value = implode( ', ', $saved_value_array );

@@ -1,4 +1,4 @@
-/*! elementor - v3.16.0 - 17-10-2023 */
+/*! elementor - v3.17.0 - 25-10-2023 */
 .dialog-widget-content {
   background-color: var(--e-a-bg-default);
   position: absolute;
@@ -3142,23 +3142,23 @@ body:not(.elementor-device-mobile) .elementor-control.elementor-control-responsi
   display: flex;
   outline: none;
   border: none;
-  background-color: var(--e-a-btn-bg);
-  color: var(--e-a-btn-color-invert);
+  background-color: var(--e-a-bg-active);
+  color: var(--e-a-color-black);
   transition: var(--e-a-transition-hover);
   cursor: pointer;
 }
 .elementor-add-section-area-button:hover {
-  background-color: var(--e-a-btn-bg-hover);
-  color: var(--e-a-btn-color-invert);
+  background-color: var(--e-a-bg-active-bold);
+  color: var(--e-a-color-black);
 }
 .elementor-add-section-area-button i {
   margin: 0;
 }
-.elementor-add-section-area-button.elementor-add-section-button {
+.elementor-add-section-area-button.e-button-primary {
   background-color: var(--e-a-btn-bg-primary);
   color: var(--e-a-btn-color);
 }
-.elementor-add-section-area-button.elementor-add-section-button:hover {
+.elementor-add-section-area-button.e-button-primary:hover {
   background-color: var(--e-a-btn-bg-primary-hover);
   color: var(--e-a-btn-color);
 }

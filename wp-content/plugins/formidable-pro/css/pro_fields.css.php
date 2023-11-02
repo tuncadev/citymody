@@ -437,7 +437,8 @@ $arrow_up         = FrmProStylesController::base64_encode_image( FrmProAppHelper
 	overflow:hidden !important;
 	clear:none;
 	font-style:normal;
-	display: inline;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .frm-star-group .frmsvg {

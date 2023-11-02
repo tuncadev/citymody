@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Formidable Forms Pro plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Formidable Forms Pro 6.5.2\n"
+"Project-Id-Version: Formidable Forms Pro 6.5.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/formidable-pro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-10-06T12:35:16+00:00\n"
+"POT-Creation-Date: 2023-10-25T15:41:09+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.0\n"
 "X-Domain: formidable-pro\n"
@@ -235,70 +235,70 @@ msgstr ""
 msgid "No form was found"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1385
+#: classes/controllers/FrmProEntriesController.php:1396
 msgid "Create Entry in Form"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1441
+#: classes/controllers/FrmProEntriesController.php:1452
 msgid "Copied from Post"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1485
-#: classes/controllers/FrmProEntriesController.php:1563
+#: classes/controllers/FrmProEntriesController.php:1496
+#: classes/controllers/FrmProEntriesController.php:1574
 msgid "You are trying to access an entry that does not exist."
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1553
+#: classes/controllers/FrmProEntriesController.php:1564
 msgid "Save"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1860
+#: classes/controllers/FrmProEntriesController.php:1871
 msgid "Entries Successfully Deleted"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1864
+#: classes/controllers/FrmProEntriesController.php:1875
 msgid "No Entries Selected"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1885
+#: classes/controllers/FrmProEntriesController.php:1896
 msgid "Post"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1889
+#: classes/controllers/FrmProEntriesController.php:1900
 #: classes/views/displays/where_options.php:31
 #: js/admin/taxonomy/frm_application.js:801
 msgid "Draft"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1892
+#: classes/controllers/FrmProEntriesController.php:1903
 msgid "Parent Entry ID"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1907
+#: classes/controllers/FrmProEntriesController.php:1918
 #: classes/helpers/FrmProEntriesHelper.php:288
 #: classes/helpers/FrmProEntriesHelper.php:339
 #: js/admin/settings/style-settings.js:248
 msgid "Duplicate"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1929
+#: classes/controllers/FrmProEntriesController.php:1940
 msgid "No Entries Found"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1930
-#: classes/controllers/FrmProEntriesController.php:2336
-#: classes/controllers/FrmProEntriesController.php:2412
-#: classes/controllers/FrmProEntriesController.php:2836
+#: classes/controllers/FrmProEntriesController.php:1941
+#: classes/controllers/FrmProEntriesController.php:2347
+#: classes/controllers/FrmProEntriesController.php:2423
+#: classes/controllers/FrmProEntriesController.php:2847
 msgid "Are you sure you want to delete that entry?"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:1947
+#: classes/controllers/FrmProEntriesController.php:1958
 msgid "There are no matching fields. Please check your formresults shortcode to make sure you are using the correct form and field IDs."
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2115
-#: classes/controllers/FrmProEntriesController.php:2668
-#: classes/helpers/FrmProAppHelper.php:405
+#: classes/controllers/FrmProEntriesController.php:2126
+#: classes/controllers/FrmProEntriesController.php:2679
+#: classes/helpers/FrmProAppHelper.php:410
 #: classes/helpers/FrmProEntriesHelper.php:1110
 #: classes/models/FrmProSummaryFormatter.php:80
 #: js/admin/taxonomy/frm_application.js:853
@@ -306,8 +306,8 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2129
-#: classes/controllers/FrmProEntriesController.php:2395
+#: classes/controllers/FrmProEntriesController.php:2140
+#: classes/controllers/FrmProEntriesController.php:2406
 #: classes/helpers/FrmProEntriesListHelper.php:11
 #: classes/views/frmpro-fields/back-end/image-selector.php:21
 #: classes/views/styles/_bg-image.php:15
@@ -316,14 +316,14 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2284
+#: classes/controllers/FrmProEntriesController.php:2295
 #: classes/controllers/FrmProFormsController.php:928
 #: classes/controllers/FrmProFormsController.php:964
 #: classes/helpers/FrmProEntriesListHelper.php:90
 msgid "Search"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2669
+#: classes/controllers/FrmProEntriesController.php:2680
 #: classes/views/applications/buttons/settings.php:20
 #: classes/views/frmpro-form-actions/_custom_field_row.php:39
 #: js/admin/settings/style-settings.js:130
@@ -332,46 +332,46 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2776
-#: classes/controllers/FrmProEntriesController.php:3526
+#: classes/controllers/FrmProEntriesController.php:2787
+#: classes/controllers/FrmProEntriesController.php:3537
 #: classes/models/FrmProSettings.php:27
 msgid "Update"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2786
+#: classes/controllers/FrmProEntriesController.php:2797
 msgid "You are missing options in your shortcode. A field_id is required."
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2887
-#: classes/controllers/FrmProEntriesController.php:3217
+#: classes/controllers/FrmProEntriesController.php:2898
+#: classes/controllers/FrmProEntriesController.php:3228
 msgid "Your entry was successfully deleted"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:2941
+#: classes/controllers/FrmProEntriesController.php:2952
 msgid "You are missing options in your shortcode. field_id is required."
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:3233
+#: classes/controllers/FrmProEntriesController.php:3244
 msgid "There was an error deleting that entry"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:3254
+#: classes/controllers/FrmProEntriesController.php:3265
 msgid "no one"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:3257
+#: classes/controllers/FrmProEntriesController.php:3268
 msgid "Resent to %s"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:3260
+#: classes/controllers/FrmProEntriesController.php:3271
 msgid "Resent to No one! You do not have permission"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:3281
+#: classes/controllers/FrmProEntriesController.php:3292
 msgid "Not receiving emails?"
 msgstr ""
 
-#: classes/controllers/FrmProEntriesController.php:3283
+#: classes/controllers/FrmProEntriesController.php:3294
 msgid "Setup SMTP."
 msgstr ""
 
@@ -1308,68 +1308,68 @@ msgstr ""
 msgid "Your styling settings have been deleted."
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:773
+#: classes/controllers/FrmProStylesController.php:777
 msgid "Unable to set style as default"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:782
+#: classes/controllers/FrmProStylesController.php:786
 msgid "Missing target style ID"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:791
+#: classes/controllers/FrmProStylesController.php:795
 msgid "Invalid target style ID"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:908
+#: classes/controllers/FrmProStylesController.php:912
 msgid "This style does not yet exist in the database. Click Update to create this new style."
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:912
+#: classes/controllers/FrmProStylesController.php:916
 msgid "Fields from all pages are shown."
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:942
+#: classes/controllers/FrmProStylesController.php:946
 msgid "conditionally hidden fields"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:945
+#: classes/controllers/FrmProStylesController.php:949
 msgid "lookup data"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:948
+#: classes/controllers/FrmProStylesController.php:952
 msgid "dynamic field data"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:951
+#: classes/controllers/FrmProStylesController.php:955
 msgid "calculations"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:954
+#: classes/controllers/FrmProStylesController.php:958
 msgid "autocomplete"
 msgstr ""
 
 #. translators: %s: List of disabled features.
-#: classes/controllers/FrmProStylesController.php:960
+#: classes/controllers/FrmProStylesController.php:964
 msgid "The following Pro features are disabled: %s."
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:979
+#: classes/controllers/FrmProStylesController.php:983
 msgid "Unable to preview style template"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:993
+#: classes/controllers/FrmProStylesController.php:997
 msgid "Template key not specified"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:1002
+#: classes/controllers/FrmProStylesController.php:1006
 msgid "Template did not match with API"
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:1025
+#: classes/controllers/FrmProStylesController.php:1029
 msgid "Unable to successfully install template from API data."
 msgstr ""
 
-#: classes/controllers/FrmProStylesController.php:1036
+#: classes/controllers/FrmProStylesController.php:1040
 msgid "API XML data is not formatted as expected and is not possible to preview."
 msgstr ""
 
@@ -1397,11 +1397,11 @@ msgstr ""
 msgid "CSV cannot be opened."
 msgstr ""
 
-#: classes/helpers/FrmProAppHelper.php:911
+#: classes/helpers/FrmProAppHelper.php:921
 msgid "Add/Edit Applications"
 msgstr ""
 
-#: classes/helpers/FrmProAppHelper.php:912
+#: classes/helpers/FrmProAppHelper.php:922
 msgid "Access Application Dashboard"
 msgstr ""
 
@@ -1843,11 +1843,11 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: classes/helpers/FrmProFieldsHelper.php:4247
+#: classes/helpers/FrmProFieldsHelper.php:4245
 msgid "Show password"
 msgstr ""
 
-#: classes/helpers/FrmProFieldsHelper.php:4254
+#: classes/helpers/FrmProFieldsHelper.php:4252
 msgid "Hide password"
 msgstr ""
 
@@ -1954,39 +1954,43 @@ msgstr ""
 msgid "Get Options From"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:239
+#: classes/models/fields/FrmProFieldPassword.php:62
+msgid "Passwords must contain at least one special character"
+msgstr ""
+
+#: classes/models/fields/FrmProFieldPassword.php:243
 msgid "Eight characters minimum"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:241
+#: classes/models/fields/FrmProFieldPassword.php:245
 msgid "Passwords require at least 8 characters"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:244
+#: classes/models/fields/FrmProFieldPassword.php:248
 msgid "One lowercase letter"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:246
+#: classes/models/fields/FrmProFieldPassword.php:250
 msgid "Passwords must include at least one lowercase letter"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:249
+#: classes/models/fields/FrmProFieldPassword.php:253
 msgid "One uppercase letter"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:251
+#: classes/models/fields/FrmProFieldPassword.php:255
 msgid "Passwords must include at least one uppercase letter"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:254
+#: classes/models/fields/FrmProFieldPassword.php:258
 msgid "One number"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:256
+#: classes/models/fields/FrmProFieldPassword.php:260
 msgid "Passwords must include at least one number"
 msgstr ""
 
-#: classes/models/fields/FrmProFieldPassword.php:259
+#: classes/models/fields/FrmProFieldPassword.php:263
 msgid "One special character"
 msgstr ""
 
@@ -2134,60 +2138,60 @@ msgstr ""
 msgid "File upload failed"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2041
+#: classes/models/FrmProFileField.php:2050
 msgid "Oops! That file no longer exists"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2043
+#: classes/models/FrmProFileField.php:2052
 msgid "Oops! That file is protected"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2301
+#: classes/models/FrmProFileField.php:2310
 msgid "payload is not the right size"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2305
-#: classes/models/FrmProFileField.php:2366
+#: classes/models/FrmProFileField.php:2314
+#: classes/models/FrmProFileField.php:2375
 msgid "payload does not match the expected format"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2314
+#: classes/models/FrmProFileField.php:2323
 msgid "if sanitized data is empty, do not try to download"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2322
+#: classes/models/FrmProFileField.php:2331
 msgid "temporary files can only be accessed by privileged users"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2346
+#: classes/models/FrmProFileField.php:2355
 msgid "referer value either does not exist or it is unusable"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2356
+#: classes/models/FrmProFileField.php:2365
 msgid "referer check failed"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2383
+#: classes/models/FrmProFileField.php:2392
 msgid "url is not an exact match"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2391
+#: classes/models/FrmProFileField.php:2400
 msgid "no file found"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2400
+#: classes/models/FrmProFileField.php:2409
 msgid "if the filename requested does not match our filename, do not return the file"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2407
+#: classes/models/FrmProFileField.php:2416
 msgid "prevent downloads for other uploads. We only want to allow valid connected formidable data"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2414
+#: classes/models/FrmProFileField.php:2423
 msgid "user does not fit any of the set roles, do not serve a file"
 msgstr ""
 
-#: classes/models/FrmProFileField.php:2450
+#: classes/models/FrmProFileField.php:2459
 msgid "file does not exist"
 msgstr ""
 

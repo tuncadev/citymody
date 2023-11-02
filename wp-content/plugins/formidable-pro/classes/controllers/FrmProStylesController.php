@@ -370,7 +370,11 @@ class FrmProStylesController extends FrmStylesController {
 		self::maybe_include_icon_font_css();
 		include FrmProAppHelper::plugin_path() . '/css/pro_fields.css.php';
 		include FrmProAppHelper::plugin_path() . '/css/chosen.css.php';
-		include FrmProAppHelper::plugin_path() . '/css/dropzone.css';
+
+		// Using include on a CSS file causes a fatal error when using the Snuffleupagus security module.
+		// So for the dropzone CSS, use readfile instead of include.
+		readfile( FrmProAppHelper::plugin_path() . '/css/dropzone.css' );
+
 		include FrmProAppHelper::plugin_path() . '/css/progress.css.php';
 	}
 

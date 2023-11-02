@@ -129,3 +129,9 @@ body.rtl .frm-entry-navigation {
 	border-color: var(--error-300) !important;
 }
 /* End Delete All Entries Modal Confirmation */
+
+.frm-admin-page-entries a.frm_add_form_row:hover,
+.frm-admin-page-entries a.frm_remove_form_row:hover {
+	/* Overwrite an frm_admin.css rule that sets a tags to var(--primary-color) on hover */
+	color: var(--submit-hover-color);
+}

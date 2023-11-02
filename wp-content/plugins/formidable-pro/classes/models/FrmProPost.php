@@ -116,10 +116,6 @@ class FrmProPost {
 			FrmEntry::destroy( $child_entry );
 		}
 
-		// Remove hook to make things consistent
-		// Due to a WP bug, this hook won't be used for parent entry when there are child entries
-		remove_action( 'frm_before_destroy_entry', 'FrmProFormActionsController::trigger_delete_actions', 20, 2 );
-
 		// Trigger delete actions for parent entry
 		FrmProFormActionsController::trigger_delete_actions( $entry_id, $entry );
 

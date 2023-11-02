@@ -1,4 +1,4 @@
-/*! elementor - v3.16.0 - 17-10-2023 */
+/*! elementor - v3.17.0 - 25-10-2023 */
 .elementor-control-unit-1 {
   width: 27px;
 }
@@ -3667,12 +3667,17 @@ body:not(.elementor-device-mobile) .elementor-control.elementor-control-responsi
   transform: translateY(-50%);
   background-color: var(--e-a-bg-default);
   box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.3s opacity;
 }
 #elementor-mode-switcher:hover {
   background-color: var(--e-a-bg-hover);
 }
 #elementor-mode-switcher:focus-within {
   background-color: var(--e-a-bg-active);
+}
+.e-panel-block-interactions #elementor-mode-switcher {
+  opacity: 0;
+  pointer-events: none;
 }
 #elementor-mode-switcher-preview i {
   display: flex;

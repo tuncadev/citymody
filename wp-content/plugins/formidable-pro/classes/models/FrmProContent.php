@@ -578,7 +578,7 @@ class FrmProContent {
 			} elseif ( 'foreach' === $condition ) {
 				$content_len    = $end_pos - ( $start_pos + $start_pos_len );
 				$repeat_content = substr( $content, $start_pos + $start_pos_len, $content_len );
-				self::foreach_shortcode( $replace_with, $args, $repeat_content );
+				self::foreach_shortcode( $replace_with, $args, $repeat_content, $atts );
 				$content = substr_replace( $content, $repeat_content, $start_pos, $total_len );
 			} else {
 				$substring = self::get_conditional_substring( $substring_args );
@@ -636,12 +636,21 @@ class FrmProContent {
 	}
 
 	/**
-	 * Loop through each entry linked through a repeating field when using [foreach]
+	 * Loop through each entry linked through a repeating field when using [foreach].
+	 *
+	 * @param array|string $replace_with
+	 * @param array        $args
+	 * @param string       $repeat_content
+	 * @param array        $atts
 	 */
-	public static function foreach_shortcode( $replace_with, $args, &$repeat_content ) {
+	public static function foreach_shortcode( $replace_with, $args, &$repeat_content, $atts = array() ) {
 		$foreach_content = '';
+		$sub_entries     = is_array( $replace_with ) ? $replace_with : explode( ',', $replace_with );
 
-		$sub_entries = is_array( $replace_with ) ? $replace_with : explode( ',', $replace_with );
+		if ( ! empty( $atts['order'] ) && 'desc' === $atts['order'] ) {
+			$sub_entries = array_reverse( $sub_entries );
+		}
+
 		foreach ( $sub_entries as $sub_entry ) {
 			$sub_entry = trim( $sub_entry );
 			if ( ! is_numeric( $sub_entry ) ) {

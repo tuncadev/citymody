@@ -136,7 +136,7 @@ class FrmAppController {
 			'formidable-applications',
 		);
 
-		if ( ! class_exists( 'FrmTransHooksController', false ) ) {
+		if ( ! class_exists( 'FrmTransHooksController', false ) && ! FrmTransLiteAppHelper::should_fallback_to_paypal() ) {
 			// Only consider the payments page as a "white page" when the Payments submodule is off.
 			// Otherwise this causes a lot of styling issues when the Stripe add-on (or Authorize.Net) is active.
 			$white_pages[] = 'formidable-payments';
@@ -645,7 +645,12 @@ class FrmAppController {
 		$version    = FrmAppHelper::plugin_version();
 
 		FrmAppHelper::load_admin_wide_js();
-		FrmOverlayController::register_assets();
+
+		if ( class_exists( 'FrmOverlayController' ) ) {
+			// This should always exist.
+			// But it may not have loaded properly when updating the plugin.
+			FrmOverlayController::register_assets();
+		}
 
 		wp_register_style( 'formidable_admin_global', $plugin_url . '/css/admin/frm_admin_global.css', array(), $version );
 		wp_enqueue_style( 'formidable_admin_global' );

@@ -6,6 +6,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class FrmProAppHelper {
 
+	/**
+	 * @var bool
+	 */
+	private static $included_svg = false;
+
 	public static function plugin_folder() {
 		return basename( self::plugin_path() );
 	}
@@ -891,12 +896,17 @@ class FrmProAppHelper {
 	}
 
 	/**
-	 * Include svg images for pro.
+	 * Include svg images for Pro.
 	 *
 	 * @since 5.3
 	 */
 	public static function include_svg() {
-		include_once self::plugin_path() . '/images/icons.svg';
+		if ( self::$included_svg ) {
+			return;
+		}
+
+		readfile( self::plugin_path() . '/images/icons.svg' );
+		self::$included_svg = true;
 	}
 
 	/**
